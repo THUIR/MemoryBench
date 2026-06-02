@@ -33,6 +33,15 @@ class MemorySystemSpec:
     # — typically because the baseline is too slow for that combination.
     skip_combinations: List[Tuple[str, str]] = field(default_factory=list)
 
+    # Whether this baseline is shown in normal CLI/frontend choices. Experimental
+    # baselines that need external, non-vendored assets should stay registered
+    # but not advertised by default.
+    available_by_default: bool = True
+
+    # Whether the public MemoryBench dataset already contains the pre-generated
+    # dialog_<name> fields needed by off-policy/train-performance runs.
+    has_public_pregenerated_dialogs: bool = True
+
     def dialog_key(self, prefix: str = "dialog_") -> str:
         return prefix + (self.dialog_stem or self.name)
 
@@ -52,13 +61,27 @@ def get(name: str) -> MemorySystemSpec:
     return _REGISTRY[name]
 
 
-def all_names() -> List[str]:
+def registered_names() -> List[str]:
+    """All baselines known to the registry, including experimental ones."""
     return list(_REGISTRY.keys())
+
+
+def all_names() -> List[str]:
+    """Baselines available through normal runner/frontend choices."""
+    return [n for n, spec in _REGISTRY.items() if spec.available_by_default]
 
 
 def names_with_memory() -> List[str]:
     """All registered methods except the no-memory baseline."""
-    return [n for n in _REGISTRY if n != "wo_memory"]
+    return [n for n in all_names() if n != "wo_memory"]
+
+
+def off_policy_names() -> List[str]:
+    """Baselines safe for public off-policy data that ships pre-generated dialogs."""
+    return [
+        n for n, spec in _REGISTRY.items()
+        if spec.available_by_default and spec.has_public_pregenerated_dialogs
+    ]
 
 
 def is_registered(name: str) -> bool:
@@ -142,6 +165,7 @@ register(MemorySystemSpec(
     config_class="src.solver.light.LightAgentConfig",
     config_file="configs/memory_systems/light.json",
     paper_name="LIGHT",
+    has_public_pregenerated_dialogs=False,
 ))
 
 register(MemorySystemSpec(
@@ -150,4 +174,6 @@ register(MemorySystemSpec(
     config_class="src.solver.tencentdb.TencentDBAgentConfig",
     config_file="configs/memory_systems/tencentdb.json",
     paper_name="TencentDB",
+    available_by_default=False,
+    has_public_pregenerated_dialogs=False,
 ))

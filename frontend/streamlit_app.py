@@ -27,7 +27,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 from src import memory_systems  # noqa: E402
 
-OFF_POLICY_MEMORYS = memory_systems.all_names()
+OFF_POLICY_MEMORYS = memory_systems.off_policy_names()
 ON_POLICY_MEMORYS = memory_systems.names_with_memory()
 
 # ---------------------------------------------------------------------------
@@ -134,6 +134,7 @@ def build_runtime_memory_config(
     embedder_model: str,
     embedder_base_url: str,
     embedder_dim: int,
+    embedder_api_key: str = "",
     gateway_port: int = 8430,
     gateway_llm_base_url: str = "http://localhost:12366/v1",
     gateway_llm_api_key: str = "noop",
@@ -169,11 +170,13 @@ def build_runtime_memory_config(
             if llm_api_key:
                 cfg["embedder_config"]["api_key"] = llm_api_key
 
-    if memory_system.startswith("embedder"):
+    if memory_system.startswith("embedder") or memory_system == "light":
         cfg["embedder_provider"] = embedder_provider
         cfg["embedder_model"] = embedder_model
         cfg["embedder_base_url"] = embedder_base_url
         cfg["embedding_dim"] = embedder_dim
+        if embedder_api_key:
+            cfg["embedder_api_key"] = embedder_api_key
 
     if memory_system in _BASELINES_NEED_GATEWAY_LLM:
         cfg["gateway_port"] = gateway_port
@@ -660,6 +663,7 @@ def run_page():
         with e3:
             embedder_base_url = st.text_input("Embedder base URL", value="http://localhost:12377/v1")
         embedder_dim = st.number_input("Embedder dimension", min_value=128, max_value=4096, value=1024, step=1)
+        embedder_api_key = st.text_input("Embedder API key (optional)", value="", type="password")
     else:
         # Inert defaults — they're ignored by build_runtime_memory_config for
         # baselines that don't read the embedder fields.
@@ -667,6 +671,7 @@ def run_page():
         embedder_model = ""
         embedder_base_url = ""
         embedder_dim = 1024
+        embedder_api_key = ""
 
     # ------------------------------------------------------------------
     # Gateway LLM — only shown for TencentDB which runs a Node.js sidecar
@@ -836,6 +841,7 @@ def run_page():
             embedder_model=embedder_model,
             embedder_base_url=embedder_base_url,
             embedder_dim=int(embedder_dim),
+            embedder_api_key=embedder_api_key,
             gateway_port=int(gateway_port),
             gateway_llm_base_url=gateway_llm_base_url,
             gateway_llm_api_key=gateway_llm_api_key,

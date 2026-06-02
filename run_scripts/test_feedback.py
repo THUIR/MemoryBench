@@ -46,7 +46,7 @@ for dataset in dataset_config.keys():
 for dataset in dataset_config.keys():
     if _corpus_format_for(dataset, dataset_config) != "locomo":
         continue
-    for method in memory_systems.names_with_memory():
+    for method in [n for n in memory_systems.off_policy_names() if n != "wo_memory"]:
         run_script(
             f"python -m src.test_feedback --dataset {dataset} --memory_system {method}"
         )

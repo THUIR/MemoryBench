@@ -224,7 +224,7 @@ Results are written to `off-policy/results/domain/Open-Domain/bm25_message/start
 python run_scripts/off-policy.py
 ```
 
-The sweep iterates `memory_systems.all_names()` × `domain.json` and `task.json`, automatically skipping known-incompatible combinations declared in the registry (e.g. `mem0` on `Open-Domain`).
+The sweep iterates `memory_systems.off_policy_names()` × `domain.json` and `task.json`, automatically skipping known-incompatible combinations declared in the registry (e.g. `mem0` on `Open-Domain`). Experimental baselines without public pre-generated dialogs stay registered but are not included in this sweep by default.
 
 </details>
 

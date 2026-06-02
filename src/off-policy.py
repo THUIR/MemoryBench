@@ -97,6 +97,13 @@ def main(args):
                 dialog_key = get_dialog_key(args.memory_system)
             for data in dataset.dataset["train"].to_list():
                 test_idx = data["test_idx"]
+                if dialog_key not in data:
+                    raise ValueError(
+                        f"Dataset {dataset_name} is missing '{dialog_key}', which is required "
+                        f"for off-policy runs with memory_system='{args.memory_system}'. "
+                        "Run src.generate_dialogs.reading for this memory system and update "
+                        "the dataset, or choose a baseline with public pre-generated dialogs."
+                    )
                 dialog = data[dialog_key]
                 total_dialogs.append({
                     "test_idx": test_idx,
@@ -192,7 +199,7 @@ if __name__ == "__main__":
         type=str,
         required=True,
         help="The memory system to use",
-        choices=memory_systems.all_names(),
+        choices=memory_systems.off_policy_names(),
     )
     parser.add_argument(
         "--memory_system_config",

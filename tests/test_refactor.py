@@ -24,6 +24,7 @@ Secrets handling:
 from __future__ import annotations
 
 import json
+import importlib.util
 import os
 import shutil
 import sys
@@ -41,8 +42,9 @@ PROJECT_ROOT = REPO_ROOT.parent               # code/
 TINY = PROJECT_ROOT / "TinyDataset"
 API_CONFIG_PATH = PROJECT_ROOT / "API_config.json"
 
-assert TINY.exists(), f"TinyDataset not found at {TINY}"
-os.environ["MEMORY_BENCH_PATH"] = str(TINY)
+HAS_TINY = TINY.exists()
+if HAS_TINY:
+    os.environ["MEMORY_BENCH_PATH"] = str(TINY)
 
 # Make `src.*` and `memorybench` importable when running this file directly.
 sys.path.insert(0, str(REPO_ROOT))
@@ -100,15 +102,26 @@ class TestRegistry(unittest.TestCase):
 
     def test_all_eight_baselines_registered(self):
         from src import memory_systems
-        self.assertEqual(set(memory_systems.all_names()), set(LEGACY_CONFIG_MAP))
+        self.assertEqual(set(memory_systems.registered_names()), set(LEGACY_CONFIG_MAP))
+
+    def test_default_available_baselines_exclude_external_experimental(self):
+        from src import memory_systems
+        self.assertNotIn("tencentdb", memory_systems.all_names())
+        self.assertIn("light", memory_systems.all_names())
 
     def test_names_with_memory_excludes_wo_memory(self):
         from src import memory_systems
         self.assertNotIn("wo_memory", memory_systems.names_with_memory())
         self.assertEqual(
             set(memory_systems.names_with_memory()),
-            set(LEGACY_CONFIG_MAP) - {"wo_memory"},
+            set(LEGACY_CONFIG_MAP) - {"wo_memory", "tencentdb"},
         )
+
+    def test_off_policy_names_exclude_baselines_without_public_dialogs(self):
+        from src import memory_systems
+        self.assertIn("bm25_message", memory_systems.off_policy_names())
+        self.assertNotIn("light", memory_systems.off_policy_names())
+        self.assertNotIn("tencentdb", memory_systems.off_policy_names())
 
     def test_config_files_match_legacy(self):
         from src.utils import get_memory_system_config_file
@@ -121,6 +134,8 @@ class TestRegistry(unittest.TestCase):
             self.assertEqual(get_dialog_key(name), expected, name)
 
     def test_solver_factory_class_map_matches_legacy(self):
+        if importlib.util.find_spec("openai") is None:
+            self.skipTest("openai SDK not installed")
         from src.solver import SolverFactory
         for name, (solver_cls, cfg_cls) in LEGACY_SOLVER_CLASSES.items():
             self.assertEqual(SolverFactory.method_to_class[name], (solver_cls, cfg_cls))
@@ -157,6 +172,7 @@ class TestDatasetAttributes(unittest.TestCase):
         self.assertIsNone(DialSim_Dataset.summary_group_name)
 
 
+@unittest.skipUnless(HAS_TINY, f"TinyDataset not found at {TINY}")
 class TestDatasetLoadingTiny(unittest.TestCase):
     """Load the TinyDataset and exercise the public memorybench API."""
 
@@ -193,6 +209,7 @@ class TestDatasetLoadingTiny(unittest.TestCase):
             self.assertIn(key, first_row, f"{name}: dialog field {key} missing")
 
 
+@unittest.skipUnless(HAS_TINY, f"TinyDataset not found at {TINY}")
 class TestCorpusDispatch(unittest.TestCase):
     """End-to-end: load Tiny Locomo corpus into BM25 via the new attribute dispatch."""
 
@@ -324,8 +341,9 @@ class TestAllBaselinesContract(unittest.TestCase):
         """
         # On-policy = all memory baselines minus wo_memory.
         self.assertNotIn("wo_memory", self.baselines)
-        # Off-policy = all baselines including wo_memory.
+        # Registry still knows about experimental baselines even when hidden.
         self.assertIn("wo_memory", self.memory_systems.all_names())
+        self.assertIn("tencentdb", self.memory_systems.registered_names())
 
 
 class TestLightOnAndOffPolicyContract(unittest.TestCase):
@@ -438,6 +456,7 @@ class TestLightOnAndOffPolicyContract(unittest.TestCase):
         self.assertEqual(len(solver.agent.episodic_meta), 6)   # 2 steps * 3 dialogs
 
 
+@unittest.skipUnless(HAS_TINY, f"TinyDataset not found at {TINY}")
 class TestEvaluateAndSummary(unittest.TestCase):
     """`evaluate` + `summary_results` over Tiny Locomo with synthetic predictions."""
 

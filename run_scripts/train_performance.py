@@ -21,7 +21,7 @@ DOMAINS = [r"Academic\&Knowledge", "Legal", "Open-Domain"]
 # TASKS = ["Long-Long", "Short-Short", "Short-Long", "Long-Short"]
 
 
-for method in memory_systems.names_with_memory():
+for method in [n for n in memory_systems.off_policy_names() if n != "wo_memory"]:
     spec = memory_systems.get(method)
     for d in DOMAINS:
         if ("domain", d) in spec.skip_combinations:

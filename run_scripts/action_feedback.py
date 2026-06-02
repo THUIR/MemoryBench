@@ -22,7 +22,7 @@ TASKS = ["Long-Long", "Short-Short", "Short-Long", "Long-Short"]
 
 for action in ["like", "copy"]:
     for d in DOMAINS:
-        for method in memory_systems.names_with_memory():
+        for method in [n for n in memory_systems.off_policy_names() if n != "wo_memory"]:
             command = " ".join([
                 "python -m src.action_feedback.predict_with_implicit_feedback",
                 "--dataset_type", "domain",
