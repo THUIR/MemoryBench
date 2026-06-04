@@ -28,7 +28,7 @@
   <a href="#-datasets">Datasets</a> •
   <a href="#-baselines">Baselines</a> •
   <a href="#-experiments">Experiments</a> •
-  <a href="#-frontend">Frontend</a> •
+  <a href="frontend/README.md">Frontend</a> •
   <a href="#-extending-memorybench">Extending</a> •
   <a href="#citation">Citation</a>
 </p>
@@ -71,7 +71,7 @@ MemoryBench tests the harder regime: **multi-task, multi-domain, multilingual ev
 - [Baselines](#-baselines)
 - [Experiments](#-experiments)
 - [Python API](#-python-api)
-- [Frontend](#-frontend)
+- [Frontend](frontend/README.md)
 - [Extending MemoryBench](#-extending-memorybench)
 - [Repository Layout](#-repository-layout)
 - [Citation](#citation)
@@ -101,7 +101,7 @@ python -c "import nltk; [nltk.download(p) for p in ('punkt','wordnet','stopwords
 
 ```bash
 python smoke_test.py
-python -m unittest tests.test_refactor -v   # 25 offline tests
+python -m unittest tests.test_refactor -v   # 23 offline tests
 ```
 
 ### Hello World
@@ -296,7 +296,7 @@ By default `load_memory_bench` pulls from `THUIR/MemoryBench` and caches under `
 
 ---
 
-## 🖥️ Frontend
+## 🖥 Frontend
 
 ```bash
 python -m streamlit run frontend/streamlit_app.py
@@ -334,7 +334,7 @@ The parametric test [`tests/test_refactor.py::TestAllBaselinesContract`](tests/t
 
 ---
 
-## 🏗️ Repository Layout
+## 🏗 Repository Layout
 
 ```text
 MemoryBench/
@@ -367,7 +367,7 @@ MemoryBench/
 - **`bert_score` truncation bug.** Some datasets (e.g. `JRE-L`) evaluate with [`bert_score`](https://github.com/Tiiiger/bert_score). Locally-loaded models don't truncate inputs — load from Hugging Face Hub to avoid "exceeding max length" errors.
 - **WritingBench evaluator.** Long-form writing datasets use a 7 B critic; we recommend serving [WritingBench-Critic-Model-Qwen-7B](https://huggingface.co/AQuarterMile/WritingBench-Critic-Model-Qwen-7B) via vLLM and pointing `WRITINGBENCH_EVAL_BASE_URL` at it.
 - **Mem0 cost.** `mem0` is slow on `Open-Domain` and `Long-Short`; the run scripts skip these combinations by default — `skip_combinations` in the registry entry.
-- **Secrets.** `API_config.json`, `.env*` (except `.env.example`), `frontend/runtime_configs/`, and `baselines/BEAM/` are all gitignored — see [`.gitignore`](.gitignore).
+- **Secrets.** `API_config.json`, `.env*` (except `.env.example`), and `frontend/runtime_configs/` are all gitignored — see [`.gitignore`](.gitignore).
 
 ---
 
