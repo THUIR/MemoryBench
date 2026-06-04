@@ -7,11 +7,6 @@ API_config.json
 *.api_keys.json
 *_secret*.json
 
-# Upstream baselines kept as local clones rather than tracked source.
-# See baselines/README.md for the clone instructions. LIGHT does not import
-# anything from baselines/BEAM at runtime — it's a reference mirror only.
-baselines/BEAM/
-
 # checkpoint files
 *.ckpt
 *.pth

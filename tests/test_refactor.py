@@ -61,7 +61,6 @@ LEGACY_CONFIG_MAP = {
     "embedder_dialog": "configs/memory_systems/embedder.json",
     "mem0": "configs/memory_systems/mem0.json",
     "memoryos": "configs/memory_systems/memoryos.json",
-    "light": "configs/memory_systems/light.json",
     "tencentdb": "configs/memory_systems/tencentdb.json",
 }
 
@@ -74,7 +73,6 @@ LEGACY_DIALOG_KEYS = {
     "a_mem": "dialog_a_mem",
     "mem0": "dialog_mem0",
     "memoryos": "dialog_memoryos",
-    "light": "dialog_light",
     "tencentdb": "dialog_tencentdb",
 }
 
@@ -87,7 +85,6 @@ LEGACY_SOLVER_CLASSES = {
     "a_mem": ("src.solver.a_mem.AMemSolver", "src.solver.a_mem.AMemAgentConfig"),
     "mem0": ("src.solver.mem0.Mem0Solver", "src.solver.mem0.Mem0AgentConfig"),
     "memoryos": ("src.solver.memoryos.MemoryOSSolver", "src.solver.memoryos.MemoryOSAgentConfig"),
-    "light": ("src.solver.light.LightSolver", "src.solver.light.LightAgentConfig"),
     "tencentdb": ("src.solver.tencentdb.TencentDBSolver", "src.solver.tencentdb.TencentDBAgentConfig"),
 }
 
@@ -176,8 +173,8 @@ class TestDatasetLoadingTiny(unittest.TestCase):
         self.assertEqual(len(self.locomo.dataset["test"]), 2)
 
     # Baselines whose pre-generated dialogs were materialised into TinyDataset.
-    # New baselines (e.g. `light`) need a fresh `generate_dialogs.reading` run
-    # before this assertion can extend to them — see CONTRIBUTING.md.
+    # Newly added baselines need a fresh `generate_dialogs.reading` run before
+    # this assertion can extend to them — see CONTRIBUTING.md.
     _BASELINES_WITH_PREBUILT_DIALOGS = {
         "bm25_message", "bm25_dialog",
         "embedder_message", "embedder_dialog",
@@ -326,116 +323,6 @@ class TestAllBaselinesContract(unittest.TestCase):
         self.assertNotIn("wo_memory", self.baselines)
         # Off-policy = all baselines including wo_memory.
         self.assertIn("wo_memory", self.memory_systems.all_names())
-
-
-class TestLightOnAndOffPolicyContract(unittest.TestCase):
-    """LIGHT must satisfy the surface every runner expects:
-
-    Off-policy:
-      - SolverFactory.create("light", ...)
-      - solver.create_or_load_memory(dialogs)  (delegates to _create_or_load_memory)
-      - load_corpus_to_memory(solver, dataset) -> solver.memory_<fmt>_conversation
-      - solver.predict_test(dataset)
-
-    On-policy:
-      - solver.predict_single_data(dataset, data)
-      - solver.agent.llm.generate_response(messages)  (follow-up rounds)
-      - solver.agent.add_conversation_to_memory(dialog, test_idx)
-      - solver.predict_test(dataset)
-
-    This test exercises each surface with synthetic data + a stubbed LLM and
-    embedder, so it runs offline.
-    """
-
-    def _build_solver(self):
-        import tempfile
-        from src.solver import SolverFactory
-        cache = tempfile.mkdtemp(prefix="light-onpolicy-test-")
-        solver = SolverFactory.create(
-            method_name="light",
-            config={
-                "llm_provider": "openai",
-                "llm_config": {"model": "stub", "api_key": "noop"},
-                "embedder_provider": "openai",
-                "embedder_base_url": "http://127.0.0.1:1/v1",
-                "embedder_api_key": "noop",
-                "enable_summary": False,        # avoid LLM summarisation calls
-                "working_memory_size": 8,
-                "retrieve_k": 3,
-                "embedding_dim": 16,            # tiny vector keeps the index cheap
-            },
-            memory_cache_dir=cache,
-        )
-
-        # Stub out LLM + embedder so the test is hermetic.
-        import numpy as np
-        stub_vec = np.ones(solver.agent.config.embedding_dim, dtype=np.float32)
-        solver.agent._embed = lambda text: stub_vec  # type: ignore[assignment]
-
-        class _StubLlm:
-            def generate_response(self, messages, **kw):
-                return "stub-response"
-
-        solver.agent.llm = _StubLlm()
-        return solver
-
-    def test_off_policy_add_conversation_round_trip(self):
-        solver = self._build_solver()
-        dialog = [
-            {"role": "user", "content": "What is my favourite colour?"},
-            {"role": "assistant", "content": "Blue."},
-            {"role": "user", "content": "Remember that."},
-            {"role": "assistant", "content": "Got it."},
-        ]
-        solver.agent.add_conversation_to_memory(dialog, conversation_idx=42)
-
-        self.assertEqual(len(solver.agent.working_memory), 4)
-        self.assertEqual(len(solver.agent.episodic_meta), 2)  # two user/assistant pairs
-        self.assertGreater(solver.agent.episodic_index.ntotal, 0)
-        # enable_summary=False appends the raw exchange to the scratchpad.
-        self.assertIn("favourite colour", solver.agent.scratchpad)
-
-    def test_retrieve_assembles_all_three_memories(self):
-        solver = self._build_solver()
-        solver.agent.add_conversation_to_memory(
-            [
-                {"role": "user", "content": "Alice lives in Paris."},
-                {"role": "assistant", "content": "Noted."},
-            ],
-            conversation_idx=1,
-        )
-        ctx = solver.agent.retrieve_memory("Where does Alice live?", k=2)
-        self.assertIn("Running Summary", ctx)
-        self.assertIn("Recent Turns", ctx)
-        self.assertIn("Episodic Retrieval", ctx)
-        self.assertIn("Alice", ctx)
-
-    def test_on_policy_followup_round_path(self):
-        """The on-policy runner calls solver.agent.llm.generate_response for
-        follow-up rounds. Verify that the stubbed LLM is reachable through that path."""
-        solver = self._build_solver()
-        out = solver.agent.llm.generate_response(
-            messages=[{"role": "user", "content": "ok?"}]
-        )
-        self.assertEqual(out, "stub-response")
-
-    def test_on_policy_per_step_memory_growth(self):
-        """Simulate two on-policy steps of 3 dialogs each and verify all three
-        memories grow / cap as expected."""
-        solver = self._build_solver()
-        # working_memory_size = 8; we'll push more than that to test the cap.
-        for step in range(2):
-            for i in range(3):
-                solver.agent.add_conversation_to_memory(
-                    [
-                        {"role": "user", "content": f"Q step={step} i={i}"},
-                        {"role": "assistant", "content": f"A step={step} i={i}"},
-                    ],
-                    conversation_idx=f"s{step}_d{i}",
-                )
-
-        self.assertEqual(len(solver.agent.working_memory), 8)  # capped
-        self.assertEqual(len(solver.agent.episodic_meta), 6)   # 2 steps * 3 dialogs
 
 
 class TestEvaluateAndSummary(unittest.TestCase):

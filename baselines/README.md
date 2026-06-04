@@ -13,34 +13,19 @@ for the corresponding baselines to load.
 | `MemoryOS/`       | https://github.com/BAI-LAB/MemoryOS                     | Tracked in git |
 | `mem0/`           | https://github.com/mem0ai/mem0                          | Tracked in git (editable install — see below) |
 | `raptor/`         | https://github.com/parthsarthi03/raptor                 | Tracked in git |
-| `BEAM/` (LIGHT)   | https://github.com/mohammadtavakoli78/BEAM              | **Reference-only — not tracked.** See below. |
 
-## Why some are tracked and some aren't
+## Why these are vendored
 
-The four baselines `src/agent/*.py` actually imports from (`a_mem`, `mem0`,
+The baselines `src/agent/*.py` actually imports from (`a_mem`, `mem0`,
 `memoryos`, `raptor`) are vendored in-tree so a fresh `git clone` of
 MemoryBench is enough to run experiments — no extra fetching, no submodule
 dance.
 
-LIGHT is the exception. The MemoryBench implementation of LIGHT lives
-entirely in [`../src/agent/light.py`](../src/agent/light.py) — it doesn't
-import anything from `baselines/BEAM/`. The BEAM clone here is a
-**reference mirror** kept on the developer's machine for code-reading,
-not a runtime dependency. To keep `git status` clean we list it in the
-top-level [`.gitignore`](../.gitignore).
-
-## Getting the BEAM mirror locally (optional)
-
-If you want to read the upstream LIGHT source alongside the MemoryBench
-implementation:
-
-```bash
-cd baselines/
-git clone --depth 1 https://github.com/mohammadtavakoli78/BEAM.git
-```
-
-Nothing else is required — no install, no PYTHONPATH change. MemoryBench
-won't try to import from it.
+A baseline that reimplements its algorithm in MemoryBench style (no
+upstream import) needs no vendored source at all. If you keep the upstream
+around purely for code-reading, treat it as a **reference-only mirror**:
+keep it on your machine and list the folder in the top-level
+[`.gitignore`](../.gitignore) so `git status` stays clean.
 
 ## Editable-install requirement for `mem0`
 
@@ -70,8 +55,8 @@ git add <Name>
 ```
 
 If your baseline reimplements the algorithm in MemoryBench style (no
-upstream import — like LIGHT does), keep the upstream as a
-reference-only mirror and add the folder to `.gitignore`:
+upstream import), keep the upstream as a reference-only mirror and add
+the folder to `.gitignore`:
 
 ```
 baselines/<Name>/

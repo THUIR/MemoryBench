@@ -53,7 +53,7 @@ MemoryBench tests the harder regime: **multi-task, multi-domain, multilingual ev
 ### Highlights
 
 - **28 datasets** across 3 domains (Academic & Knowledge, Legal, Open-Domain) and 4 task shapes (Long-Long, Long-Short, Short-Long, Short-Short).
-- **9 memory-system baselines** with a one-call registry interface (vanilla, BM25-M/S, Emb-M/S, A-Mem, Mem0, MemoryOS, LIGHT).
+- **8 memory-system baselines** with a one-call registry interface (vanilla, BM25-M/S, Emb-M/S, A-Mem, Mem0, MemoryOS).
 - **4 experiment regimes**: off-policy, stepwise off-policy, on-policy, and training-set performance.
 - **User-feedback simulator** based on `Mistral-Small-3.2-24B-Instruct-2506`.
 - **LLM providers**: vLLM, OpenAI-compatible, and Anthropic — wired through one `LlmFactory`.
@@ -183,9 +183,8 @@ All baselines are registered in [`src/memory_systems.py`](src/memory_systems.py)
 | A-Mem      | `a_mem`             | Note-based associative     | [`a_mem.json`](configs/memory_systems/a_mem.json)    |
 | Mem0       | `mem0`              | Fact-extraction memory     | [`mem0.json`](configs/memory_systems/mem0.json)      |
 | MemoryOS   | `memoryos`          | Hierarchical OS-style      | [`memoryos.json`](configs/memory_systems/memoryos.json) |
-| **LIGHT**  | `light`             | Episodic + working + scratchpad | [`light.json`](configs/memory_systems/light.json) |
 
-Upstream sources for `a_mem`, `mem0`, `memoryos`, `raptor` are vendored under [`baselines/`](baselines/). LIGHT's upstream (BEAM) is a [reference-only mirror](baselines/README.md) — `src/agent/light.py` is a fresh MemoryBench-style implementation, no upstream dependency.
+Upstream sources for `a_mem`, `mem0`, `memoryos`, `raptor` are vendored under [`baselines/`](baselines/).
 
 ---
 
@@ -308,7 +307,7 @@ The frontend covers off-policy and on-policy runs end to end. It auto-hides irre
 
 - **LLM provider** dropdown is filtered per baseline — `mem0` / `a_mem` / `memoryos` don't expose the Anthropic option because they route through their own provider abstractions.
 - **LLM base URL** default updates when you switch providers (vllm / openai / anthropic).
-- **Embedder section** only appears for baselines that consume embeddings (`embedder_*`, `mem0`, `light`).
+- **Embedder section** only appears for baselines that consume embeddings (`embedder_*`, `mem0`).
 - **Retrieve k** is hidden for `wo_memory`.
 - **Dataset source** is an explicit radio: Hugging Face Hub vs Local path, with live path validation.
 
@@ -329,7 +328,7 @@ Everything else — CLI choices, frontend dropdowns, sweep scripts, dialog-field
 
 **Add a new dataset**: subclass `BaseDataset`, add one entry to `configs/datasets/each.json`, and (for corpus-style datasets) set `corpus_format = "<name>"` on the class.
 
-Full step-by-step walkthrough with LIGHT as the worked example: **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+Full step-by-step walkthrough: **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
 The parametric test [`tests/test_refactor.py::TestAllBaselinesContract`](tests/test_refactor.py) walks every registered baseline and asserts the off-policy + on-policy method contract — your new baseline is auto-tested.
 
@@ -398,6 +397,6 @@ Released under the MIT License. Upstream baseline code under [`baselines/`](base
 
 ## Acknowledgements
 
-MemoryBench builds on prior datasets and memory systems from many open-source efforts: [LoCoMo](https://snap-research.github.io/locomo/), [DialSim](https://dialsim.github.io/), [HelloBench](https://github.com/Quehry/HelloBench), [WritingBench](https://github.com/X-PLUG/WritingBench), [IdeaBench](https://github.com/IdeaBench/IdeaBench), [LimitGen](https://github.com/zhenfenglu/LimitGen), [JRE-L](https://github.com/JRE-L), [JuDGE](https://github.com/JuDGE), [LexEval](https://github.com/CSHaitao/LexEval), [NFCats](https://github.com/NFCats), [WritingPrompts](https://github.com/aitorparra/writingprompts), [A-Mem](https://github.com/agiresearch/A-mem), [Mem0](https://github.com/mem0ai/mem0), [MemoryOS](https://github.com/BAI-LAB/MemoryOS), [RAPTOR](https://github.com/parthsarthi03/raptor), and [BEAM (LIGHT)](https://github.com/mohammadtavakoli78/BEAM). Thank you to all upstream authors.
+MemoryBench builds on prior datasets and memory systems from many open-source efforts: [LoCoMo](https://snap-research.github.io/locomo/), [DialSim](https://dialsim.github.io/), [HelloBench](https://github.com/Quehry/HelloBench), [WritingBench](https://github.com/X-PLUG/WritingBench), [IdeaBench](https://github.com/IdeaBench/IdeaBench), [LimitGen](https://github.com/zhenfenglu/LimitGen), [JRE-L](https://github.com/JRE-L), [JuDGE](https://github.com/JuDGE), [LexEval](https://github.com/CSHaitao/LexEval), [NFCats](https://github.com/NFCats), [WritingPrompts](https://github.com/aitorparra/writingprompts), [A-Mem](https://github.com/agiresearch/A-mem), [Mem0](https://github.com/mem0ai/mem0), [MemoryOS](https://github.com/BAI-LAB/MemoryOS), and [RAPTOR](https://github.com/parthsarthi03/raptor). Thank you to all upstream authors.
 
 For questions and feedback, open an issue on GitHub or contact the maintainers.

@@ -40,7 +40,7 @@ ON_POLICY_MEMORYS = memory_systems.names_with_memory()
 _BASELINES_NO_ANTHROPIC = {"mem0", "a_mem", "memoryos"}
 
 # Baselines that consume an embedder (text-embedding model).
-_BASELINES_NEED_EMBEDDER = {"embedder_message", "embedder_dialog", "mem0", "light"}
+_BASELINES_NEED_EMBEDDER = {"embedder_message", "embedder_dialog", "mem0"}
 
 # Baselines that run a Node.js gateway sidecar for memory extraction.
 # These need a second "Gateway LLM" section in the UI.

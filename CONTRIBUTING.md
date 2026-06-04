@@ -44,9 +44,9 @@ Two integration points decide whether new code is picked up everywhere:
 
 ## Adding a new memory-system baseline
 
-We'll use the **LIGHT** baseline as a fully worked example. All files
-referenced below already exist on `main`, so you can read them while
-following along.
+The steps below use generic `<name>` / `<Name>` placeholders for your
+baseline. The existing baselines on `main` (`mem0`, `memoryos`, `a_mem`,
+the `embedder_*` family) are good references to read alongside this guide.
 
 ### Step 1 — Vendor the upstream code (optional but recommended)
 
@@ -67,7 +67,7 @@ whether your MemoryBench agent imports anything from the upstream code:
 | Pattern | When to use it | Example |
 |---|---|---|
 | **Vendored & tracked.** Upstream source is committed in-tree; runs after a fresh `git clone`. | `src/agent/<name>.py` imports from `baselines/<Name>/` (so the source must be present). | `mem0`, `a_mem`, `memoryos`, `raptor` |
-| **Reference-only mirror.** Upstream source is cloned locally for reading but `.gitignore`'d. | Your agent reimplements the algorithm in MemoryBench style and doesn't import from the upstream. | LIGHT — `baselines/BEAM/` is documented in [baselines/README.md](baselines/README.md) and listed in `.gitignore`. |
+| **Reference-only mirror.** Upstream source is cloned locally for reading but `.gitignore`'d. | Your agent reimplements the algorithm in MemoryBench style and doesn't import from the upstream. | Keep the clone on your machine, list the folder in `.gitignore`, and note the upstream URL in [baselines/README.md](baselines/README.md). |
 
 For the reference-only pattern, add the folder to the top-level
 [`.gitignore`](.gitignore) so it doesn't pollute `git status`, and add a
@@ -95,16 +95,16 @@ for `llm_provider` if your agent routes through `LlmFactory`; pin it to
 `Literal["openai", "vllm"]` if it wires to an upstream provider
 abstraction that doesn't understand Anthropic.
 
-The reference implementation for LIGHT is [`src/agent/light.py`](src/agent/light.py).
-Three things worth copying from it:
+Patterns worth borrowing from the existing agents in [`src/agent/`](src/agent/):
 
-- **Vector store + summary embedding.** LIGHT embeds the LLM-generated
-  summary of each chunk (denser, more queryable) rather than raw turns.
+- **Vector store + summary embedding.** Embedding an LLM-generated
+  summary of each chunk (denser, more queryable) usually retrieves better
+  than embedding raw turns.
 - **FIFO working memory.** A `collections.deque(maxlen=N)` makes
   bounded-size recent-turn retention free.
 - **Defensive embedding loop.** When you pipe long texts at vllm/openai
   embeddings, the body sometimes exceeds the token limit — shrink-and-retry
-  (see `_embed` in `embedder.py` and `light.py`).
+  (see `_embed` in [`src/agent/embedder.py`](src/agent/embedder.py)).
 
 ### Step 3 — Write the solver
 
@@ -116,15 +116,15 @@ but for corpus datasets (LoCoMo, DialSim) it must implement
 Minimum body:
 
 ```python
-from src.agent.light import LightAgent, LightAgentConfig
+from src.agent.<name> import <Name>Agent, <Name>AgentConfig
 from src.solver.base import BaseSolver
 
-class LightSolver(BaseSolver):
-    AGENT_CLASS = LightAgent
+class <Name>Solver(BaseSolver):
+    AGENT_CLASS = <Name>Agent
 
     def __init__(self, config, memory_cache_dir):
         super().__init__(config, memory_cache_dir)
-        self.method_name = "LIGHT"
+        self.method_name = "<Name>"
 
     def create_or_load_memory(self, dialogs):
         return super()._create_or_load_memory(dialogs, can_thread=False)
@@ -141,13 +141,13 @@ If you don't ship a `memory_<format>_conversation` for a corpus format,
 runs your baseline on a Locomo/DialSim dataset. That's the right
 behavior — failing fast is better than silently skipping the corpus.
 
-Full reference: [`src/solver/light.py`](src/solver/light.py).
+For full references, read the existing solvers under [`src/solver/`](src/solver/).
 
 ### Step 4 — Default config
 
 Drop a JSON file under `configs/memory_systems/<name>.json` with the
-fields your `<Name>AgentConfig` expects.
-[`configs/memory_systems/light.json`](configs/memory_systems/light.json) is a good template.
+fields your `<Name>AgentConfig` expects. The existing files under
+[`configs/memory_systems/`](configs/memory_systems/) are good templates.
 
 ### Step 5 — Register in the central registry
 
@@ -155,11 +155,11 @@ Add one entry to [`src/memory_systems.py`](src/memory_systems.py):
 
 ```python
 register(MemorySystemSpec(
-    name="light",
-    solver_class="src.solver.light.LightSolver",
-    config_class="src.solver.light.LightAgentConfig",
-    config_file="configs/memory_systems/light.json",
-    paper_name="LIGHT",
+    name="<name>",
+    solver_class="src.solver.<name>.<Name>Solver",
+    config_class="src.solver.<name>.<Name>AgentConfig",
+    config_file="configs/memory_systems/<name>.json",
+    paper_name="<Name>",
     # Optional fields:
     # dialog_stem="my_stem"  # → field name "dialog_my_stem" on HF rows;
     #                        # defaults to "dialog_<name>".
@@ -185,7 +185,7 @@ missing baseline deps surface immediately at startup:
 Edit [`src/solver/__init__.py`](src/solver/__init__.py) and add:
 
 ```python
-from src.solver.light import LightAgentConfig
+from src.solver.<name> import <Name>AgentConfig
 ```
 
 next to the other eager imports. Skip this step only if your baseline
@@ -193,8 +193,9 @@ has heavy optional dependencies you want to keep lazy.
 
 ### Step 7 — Wire frontend hints (only if you need an embedder)
 
-If your baseline consumes a text-embedding model (LIGHT does), add it
-to `_BASELINES_NEED_EMBEDDER` in [`frontend/streamlit_app.py`](frontend/streamlit_app.py).
+If your baseline consumes a text-embedding model (like `mem0` and the
+`embedder_*` family do), add it to `_BASELINES_NEED_EMBEDDER` in
+[`frontend/streamlit_app.py`](frontend/streamlit_app.py).
 The frontend will auto-show the Embedder section when your baseline is selected.
 
 If your baseline can't use the Anthropic provider (e.g. it routes
@@ -241,16 +242,16 @@ with a dummy provider and exercise `add_memory` / `retrieve_memory`
 offline:
 
 ```python
-from src.agent.light import LightAgent, LightAgentConfig
-cfg = LightAgentConfig(
+from src.agent.<name> import <Name>Agent, <Name>AgentConfig
+cfg = <Name>AgentConfig(
     llm_provider="openai",
     llm_config={"model": "noop", "api_key": "noop"},
     embedder_provider="openai",
     embedder_base_url="http://127.0.0.1:1/v1",
-    memory_cache_dir="/tmp/light-smoke",
-    enable_summary=False,   # ← skip LLM calls
+    memory_cache_dir="/tmp/<name>-smoke",
+    # disable any options that would trigger live LLM calls
 )
-agent = LightAgent(cfg)
+agent = <Name>Agent(cfg)
 ```
 
 ---
@@ -427,7 +428,7 @@ dialogs at runtime.
 
 | If you want to... | Read these files in this order |
 |---|---|
-| Add a memory baseline | [`src/memory_systems.py`](src/memory_systems.py) → [`src/agent/light.py`](src/agent/light.py) → [`src/solver/light.py`](src/solver/light.py) → [`src/solver/base.py`](src/solver/base.py) |
+| Add a memory baseline | [`src/memory_systems.py`](src/memory_systems.py) → [`src/agent/embedder.py`](src/agent/embedder.py) → [`src/solver/embedder.py`](src/solver/embedder.py) → [`src/solver/base.py`](src/solver/base.py) |
 | Add a dataset | [`src/dataset/base.py`](src/dataset/base.py) → [`src/dataset/Locomo.py`](src/dataset/Locomo.py) → [`src/dataset/utils.py`](src/dataset/utils.py) |
 | Understand the evaluation pipeline | [`memorybench.py`](memorybench.py) → [`src/dataset/base.py`](src/dataset/base.py) (`evaluate`, `evaluate_test`) |
 | Understand how runners are wired | [`src/off-policy.py`](src/off-policy.py) → [`src/solver/base.py`](src/solver/base.py) (`predict_test`, `predict_test_with_corpus`) |
