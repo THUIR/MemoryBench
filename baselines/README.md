@@ -12,12 +12,11 @@ for the corresponding baselines to load.
 | `A_mem/`          | https://github.com/agiresearch/A-mem                    | Tracked in git |
 | `MemoryOS/`       | https://github.com/BAI-LAB/MemoryOS                     | Tracked in git |
 | `mem0/`           | https://github.com/mem0ai/mem0                          | Tracked in git (editable install — see below) |
-| `raptor/`         | https://github.com/parthsarthi03/raptor                 | Tracked in git |
 
 ## Why these are vendored
 
 The baselines `src/agent/*.py` actually imports from (`a_mem`, `mem0`,
-`memoryos`, `raptor`) are vendored in-tree so a fresh `git clone` of
+`memoryos`) are vendored in-tree so a fresh `git clone` of
 MemoryBench is enough to run experiments — no extra fetching, no submodule
 dance.
 

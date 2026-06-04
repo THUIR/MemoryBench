@@ -66,7 +66,7 @@ whether your MemoryBench agent imports anything from the upstream code:
 
 | Pattern | When to use it | Example |
 |---|---|---|
-| **Vendored & tracked.** Upstream source is committed in-tree; runs after a fresh `git clone`. | `src/agent/<name>.py` imports from `baselines/<Name>/` (so the source must be present). | `mem0`, `a_mem`, `memoryos`, `raptor` |
+| **Vendored & tracked.** Upstream source is committed in-tree; runs after a fresh `git clone`. | `src/agent/<name>.py` imports from `baselines/<Name>/` (so the source must be present). | `mem0`, `a_mem`, `memoryos` |
 | **Reference-only mirror.** Upstream source is cloned locally for reading but `.gitignore`'d. | Your agent reimplements the algorithm in MemoryBench style and doesn't import from the upstream. | Keep the clone on your machine, list the folder in `.gitignore`, and note the upstream URL in [baselines/README.md](baselines/README.md). |
 
 For the reference-only pattern, add the folder to the top-level

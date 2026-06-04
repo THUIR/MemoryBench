@@ -101,7 +101,6 @@ python -c "import nltk; [nltk.download(p) for p in ('punkt','wordnet','stopwords
 
 ```bash
 python smoke_test.py
-python -m unittest tests.test_refactor -v   # 23 offline tests
 ```
 
 ### Hello World
@@ -134,6 +133,7 @@ python -m src.off-policy \
 # The TinyDataset ships 3 train + 2 test rows per dataset; no HF download needed.
 export MEMORY_BENCH_PATH=$(pwd)/../TinyDataset
 python -m src.off-policy --memory_system bm25_message --dataset_type single --set_name Locomo-0
+python -m unittest tests.test_refactor -v
 ```
 
 ---
@@ -184,7 +184,7 @@ All baselines are registered in [`src/memory_systems.py`](src/memory_systems.py)
 | Mem0       | `mem0`              | Fact-extraction memory     | [`mem0.json`](configs/memory_systems/mem0.json)      |
 | MemoryOS   | `memoryos`          | Hierarchical OS-style      | [`memoryos.json`](configs/memory_systems/memoryos.json) |
 
-Upstream sources for `a_mem`, `mem0`, `memoryos`, `raptor` are vendored under [`baselines/`](baselines/).
+Upstream sources for `a_mem`, `mem0`, and `memoryos` are vendored under [`baselines/`](baselines/).
 
 ---
 
@@ -353,7 +353,7 @@ MemoryBench/
 │   ├── off-policy.py · on-policy.py · stepwise_off-policy.py · train_performance.py
 │   └── utils.py
 ├── run_scripts/                # Sweep drivers (loops over every registered baseline)
-├── baselines/                  # Vendored upstream baselines (mem0, A-Mem, MemoryOS, RAPTOR)
+├── baselines/                  # Vendored upstream baselines (mem0, A-Mem, MemoryOS)
 ├── frontend/                   # Streamlit app
 ├── tests/                      # Unit + integration tests
 ├── CONTRIBUTING.md             # How to add baselines / datasets
@@ -397,6 +397,6 @@ Released under the MIT License. Upstream baseline code under [`baselines/`](base
 
 ## Acknowledgements
 
-MemoryBench builds on prior datasets and memory systems from many open-source efforts: [LoCoMo](https://snap-research.github.io/locomo/), [DialSim](https://dialsim.github.io/), [HelloBench](https://github.com/Quehry/HelloBench), [WritingBench](https://github.com/X-PLUG/WritingBench), [IdeaBench](https://github.com/IdeaBench/IdeaBench), [LimitGen](https://github.com/zhenfenglu/LimitGen), [JRE-L](https://github.com/JRE-L), [JuDGE](https://github.com/JuDGE), [LexEval](https://github.com/CSHaitao/LexEval), [NFCats](https://github.com/NFCats), [WritingPrompts](https://github.com/aitorparra/writingprompts), [A-Mem](https://github.com/agiresearch/A-mem), [Mem0](https://github.com/mem0ai/mem0), [MemoryOS](https://github.com/BAI-LAB/MemoryOS), and [RAPTOR](https://github.com/parthsarthi03/raptor). Thank you to all upstream authors.
+MemoryBench builds on prior datasets and memory systems from many open-source efforts: [LoCoMo](https://snap-research.github.io/locomo/), [DialSim](https://dialsim.github.io/), [HelloBench](https://github.com/Quehry/HelloBench), [WritingBench](https://github.com/X-PLUG/WritingBench), [IdeaBench](https://github.com/IdeaBench/IdeaBench), [LimitGen](https://github.com/zhenfenglu/LimitGen), [JRE-L](https://github.com/JRE-L), [JuDGE](https://github.com/JuDGE), [LexEval](https://github.com/CSHaitao/LexEval), [NFCats](https://github.com/NFCats), [WritingPrompts](https://github.com/aitorparra/writingprompts), [A-Mem](https://github.com/agiresearch/A-mem), [Mem0](https://github.com/mem0ai/mem0), and [MemoryOS](https://github.com/BAI-LAB/MemoryOS). Thank you to all upstream authors.
 
 For questions and feedback, open an issue on GitHub or contact the maintainers.

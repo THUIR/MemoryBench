@@ -190,9 +190,7 @@ if __name__ == "__main__":
         type=str,
         required=True,
         help="The memory system to use",
-        # `raptor` is intentionally accepted here even though the solver is not
-        # imported by default — kept for parity with the original signature.
-        choices=memory_systems.all_names() + ["raptor"],
+        choices=memory_systems.all_names(),
     )
     parser.add_argument(
         "--memory_system_config",
