@@ -61,7 +61,6 @@ LEGACY_CONFIG_MAP = {
     "embedder_dialog": "configs/memory_systems/embedder.json",
     "mem0": "configs/memory_systems/mem0.json",
     "memoryos": "configs/memory_systems/memoryos.json",
-    "tencentdb": "configs/memory_systems/tencentdb.json",
 }
 
 LEGACY_DIALOG_KEYS = {
@@ -73,7 +72,6 @@ LEGACY_DIALOG_KEYS = {
     "a_mem": "dialog_a_mem",
     "mem0": "dialog_mem0",
     "memoryos": "dialog_memoryos",
-    "tencentdb": "dialog_tencentdb",
 }
 
 LEGACY_SOLVER_CLASSES = {
@@ -85,7 +83,6 @@ LEGACY_SOLVER_CLASSES = {
     "a_mem": ("src.solver.a_mem.AMemSolver", "src.solver.a_mem.AMemAgentConfig"),
     "mem0": ("src.solver.mem0.Mem0Solver", "src.solver.mem0.Mem0AgentConfig"),
     "memoryos": ("src.solver.memoryos.MemoryOSSolver", "src.solver.memoryos.MemoryOSAgentConfig"),
-    "tencentdb": ("src.solver.tencentdb.TencentDBSolver", "src.solver.tencentdb.TencentDBAgentConfig"),
 }
 
 

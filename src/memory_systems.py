@@ -135,11 +135,3 @@ register(MemorySystemSpec(
     config_file="configs/memory_systems/memoryos.json",
     paper_name="MemoryOS",
 ))
-
-register(MemorySystemSpec(
-    name="tencentdb",
-    solver_class="src.solver.tencentdb.TencentDBSolver",
-    config_class="src.solver.tencentdb.TencentDBAgentConfig",
-    config_file="configs/memory_systems/tencentdb.json",
-    paper_name="TencentDB",
-))

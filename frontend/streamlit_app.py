@@ -42,10 +42,6 @@ _BASELINES_NO_ANTHROPIC = {"mem0", "a_mem", "memoryos"}
 # Baselines that consume an embedder (text-embedding model).
 _BASELINES_NEED_EMBEDDER = {"embedder_message", "embedder_dialog", "mem0"}
 
-# Baselines that run a Node.js gateway sidecar for memory extraction.
-# These need a second "Gateway LLM" section in the UI.
-_BASELINES_NEED_GATEWAY_LLM = {"tencentdb"}
-
 _PROVIDER_DEFAULT_URL = {
     "vllm": "http://localhost:12366/v1",
     "openai": "https://api.openai.com/v1",
@@ -62,10 +58,6 @@ def provider_choices_for(memory_system: str) -> List[str]:
 
 def memory_system_needs_embedder(memory_system: str) -> bool:
     return memory_system in _BASELINES_NEED_EMBEDDER
-
-
-def memory_system_needs_gateway_llm(memory_system: str) -> bool:
-    return memory_system in _BASELINES_NEED_GATEWAY_LLM
 
 
 def memory_system_needs_retrieve_k(memory_system: str) -> bool:
@@ -134,10 +126,6 @@ def build_runtime_memory_config(
     embedder_model: str,
     embedder_base_url: str,
     embedder_dim: int,
-    gateway_port: int = 8430,
-    gateway_llm_base_url: str = "http://localhost:12366/v1",
-    gateway_llm_api_key: str = "noop",
-    gateway_llm_model: str = "Qwen/Qwen3-8B",
 ) -> Dict:
     cfg = copy.deepcopy(load_memory_template(memory_system))
 
@@ -174,12 +162,6 @@ def build_runtime_memory_config(
         cfg["embedder_model"] = embedder_model
         cfg["embedder_base_url"] = embedder_base_url
         cfg["embedding_dim"] = embedder_dim
-
-    if memory_system in _BASELINES_NEED_GATEWAY_LLM:
-        cfg["gateway_port"] = gateway_port
-        cfg["gateway_llm_base_url"] = gateway_llm_base_url
-        cfg["gateway_llm_api_key"] = gateway_llm_api_key or "noop"
-        cfg["gateway_llm_model"] = gateway_llm_model
 
     return cfg
 
@@ -668,52 +650,6 @@ def run_page():
         embedder_base_url = ""
         embedder_dim = 1024
 
-    # ------------------------------------------------------------------
-    # Gateway LLM — only shown for TencentDB which runs a Node.js sidecar
-    # that needs its own LLM for L0→L1 memory extraction.
-    # ------------------------------------------------------------------
-    gateway_port = 8430
-    gateway_llm_base_url = "http://localhost:12366/v1"
-    gateway_llm_api_key = ""
-    gateway_llm_model = "Qwen/Qwen3-8B"
-    if memory_system_needs_gateway_llm(memory_system):
-        st.markdown("### Gateway LLM (for L1 memory extraction — TencentDB sidecar)")
-        st.caption(
-            "The TencentDB gateway runs a Node.js sidecar that extracts structured "
-            "memories (L1 Atoms) from raw conversations. It uses its own LLM endpoint, "
-            "which can differ from the main answer-generation LLM above. "
-            "Run `npm install` in `baselines/TencentDB-Agent-Memory` before starting."
-        )
-        g1, g2, g3, g4 = st.columns(4)
-        with g1:
-            gateway_port = st.number_input(
-                "Gateway port",
-                min_value=1024,
-                max_value=65535,
-                value=8430,
-                step=1,
-                help="Port for the Node.js gateway HTTP server. Change if 8430 is already in use.",
-            )
-        with g2:
-            gateway_llm_model = st.text_input(
-                "Gateway LLM model",
-                value="Qwen/Qwen3-8B",
-                help="Model used by the gateway for L1 memory extraction.",
-            )
-        with g3:
-            gateway_llm_base_url = st.text_input(
-                "Gateway LLM base URL",
-                value="http://localhost:12366/v1",
-                help="OpenAI-compatible endpoint for the gateway's extraction LLM.",
-            )
-        with g4:
-            gateway_llm_api_key = st.text_input(
-                "Gateway LLM API key (optional)",
-                value="",
-                type="password",
-                help="API key for the gateway's LLM endpoint. Leave blank for local/no-auth deployments.",
-            )
-
     st.markdown("### Runtime")
     r1, r2, r3 = st.columns(3)
     with r1:
@@ -836,10 +772,6 @@ def run_page():
             embedder_model=embedder_model,
             embedder_base_url=embedder_base_url,
             embedder_dim=int(embedder_dim),
-            gateway_port=int(gateway_port),
-            gateway_llm_base_url=gateway_llm_base_url,
-            gateway_llm_api_key=gateway_llm_api_key,
-            gateway_llm_model=gateway_llm_model,
         )
         memory_cfg_path = write_runtime_config(memory_cfg, f"{mode}_{memory_system}_memory")
 
@@ -873,12 +805,6 @@ def run_page():
         if llm_api_key:
             extra_env["OPENAI_API_KEY"] = llm_api_key
             extra_env["VLLM_API_KEY"] = llm_api_key
-        if memory_system in _BASELINES_NEED_GATEWAY_LLM:
-            extra_env["TDAI_GATEWAY_PORT"] = str(int(gateway_port))
-            extra_env["TDAI_GATEWAY_HOST"] = "127.0.0.1"
-            extra_env["TDAI_LLM_BASE_URL"] = gateway_llm_base_url
-            extra_env["TDAI_LLM_MODEL"] = gateway_llm_model
-            extra_env["TDAI_LLM_API_KEY"] = gateway_llm_api_key or "noop"
         if memory_bench_path.strip():
             extra_env["MEMORY_BENCH_PATH"] = memory_bench_path.strip()
         if evaluate_base_url.strip():
