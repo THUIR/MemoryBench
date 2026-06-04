@@ -19,8 +19,8 @@ from src.agent.base_agent import BaseAgent
 
 
 class EmbedderDialogAgentConfig(BaseModel):
-    llm_provider: Literal["openai", "vllm"] = Field(
-        default="openai", 
+    llm_provider: Literal["openai", "vllm", "anthropic"] = Field(
+        default="openai",
         description="The LLM provider to use for the agent."
     )
     llm_config: dict = Field(

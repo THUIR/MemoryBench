@@ -1,3 +1,12 @@
+# Secrets — never commit. API_config.json holds the user's auth token.
+.env
+.env.*
+!.env.example
+API_config.json
+**/API_config.json
+*.api_keys.json
+*_secret*.json
+
 # checkpoint files
 *.ckpt
 *.pth

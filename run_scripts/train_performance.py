@@ -1,7 +1,11 @@
-import json
-import subprocess
 import os
+import sys
+import subprocess
 from termcolor import colored
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from src import memory_systems
 
 
 def run_script(command):
@@ -13,29 +17,30 @@ def run_script(command):
     print(colored(f"Finished command: {command}\n\n===", "green"))
 
 
+DOMAINS = [r"Academic\&Knowledge", "Legal", "Open-Domain"]
+# TASKS = ["Long-Long", "Short-Short", "Short-Long", "Long-Short"]
 
-domain = ["Academic\&Knowledge", "Legal", "Open-Domain"]
-# task = ["Long-Long", "Short-Short", "Short-Long", "Long-Short"]
-for method in ["bm25_message", "bm25_dialog", "embedder_message", "embedder_dialog", "a_mem", "mem0", "memoryos"]:
-    for d in domain:
-        if d == "Open-Domain" and method == "mem0":
-            continue # mem0 does not support Open-Domain
-        command = [
+
+for method in memory_systems.names_with_memory():
+    spec = memory_systems.get(method)
+    for d in DOMAINS:
+        if ("domain", d) in spec.skip_combinations:
+            print(colored(f"Skipping {method} on domain {d} (per registry)", "yellow"))
+            continue
+        command = " ".join([
             "python -m src.train_performance",
             "--dataset_type", "domain",
             "--set_name", d,
             "--memory_system", method,
-        ]
-        command = " ".join(command)
+        ])
         run_script(command)
-    # for t in task:
-    #     if t == "Long-Short" and method == "mem0":
-    #         continue # mem0 does not support Long-Short
-    #     command = [
+    # for t in TASKS:
+    #     if ("task", t) in spec.skip_combinations:
+    #         continue
+    #     command = " ".join([
     #         "python -m src.train_performance",
     #         "--dataset_type", "task",
     #         "--set_name", t,
     #         "--memory_system", method,
-    #     ]
-    #     command = " ".join(command)
+    #     ])
     #     run_script(command)

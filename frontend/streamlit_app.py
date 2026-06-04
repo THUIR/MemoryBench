@@ -22,26 +22,50 @@ RUNTIME_CONFIG_DIR.mkdir(parents=True, exist_ok=True)
 DATASET_CONFIG_DIR = ROOT / "configs" / "datasets"
 MEMORY_CONFIG_DIR = ROOT / "configs" / "memory_systems"
 
-OFF_POLICY_MEMORYS = [
-    "wo_memory",
-    "bm25_message",
-    "bm25_dialog",
-    "embedder_message",
-    "embedder_dialog",
-    "a_mem",
-    "mem0",
-    "memoryos",
-]
+# Make the in-repo `src.memory_systems` registry importable.
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from src import memory_systems  # noqa: E402
 
-ON_POLICY_MEMORYS = [
-    "bm25_message",
-    "bm25_dialog",
-    "embedder_message",
-    "embedder_dialog",
-    "a_mem",
-    "mem0",
-    "memoryos",
-]
+OFF_POLICY_MEMORYS = memory_systems.all_names()
+ON_POLICY_MEMORYS = memory_systems.names_with_memory()
+
+# ---------------------------------------------------------------------------
+# Capability helpers — describe which fields each memory_system / provider
+# combination actually consumes, so the UI can hide irrelevant inputs.
+# ---------------------------------------------------------------------------
+
+# Baselines wired to upstream provider abstractions (Mem0, A-Mem, MemoryOS)
+# that don't yet route through MemoryBench's AnthropicLLM.
+_BASELINES_NO_ANTHROPIC = {"mem0", "a_mem", "memoryos"}
+
+# Baselines that consume an embedder (text-embedding model).
+_BASELINES_NEED_EMBEDDER = {"embedder_message", "embedder_dialog", "mem0"}
+
+_PROVIDER_DEFAULT_URL = {
+    "vllm": "http://localhost:12366/v1",
+    "openai": "https://api.openai.com/v1",
+    "anthropic": "https://api.anthropic.com",
+}
+
+
+def provider_choices_for(memory_system: str) -> List[str]:
+    """Allowed LLM providers for the given memory system."""
+    if memory_system in _BASELINES_NO_ANTHROPIC:
+        return ["vllm", "openai"]
+    return ["vllm", "openai", "anthropic"]
+
+
+def memory_system_needs_embedder(memory_system: str) -> bool:
+    return memory_system in _BASELINES_NEED_EMBEDDER
+
+
+def memory_system_needs_retrieve_k(memory_system: str) -> bool:
+    return memory_system != "wo_memory"
+
+
+def default_llm_url_for(provider: str) -> str:
+    return _PROVIDER_DEFAULT_URL.get(provider, "")
 
 
 def _load_json(path: Path, default):
@@ -63,17 +87,10 @@ def load_dataset_choices() -> Dict[str, List[str]]:
 
 
 def load_memory_template(memory_system: str) -> Dict:
-    default_map = {
-        "wo_memory": "base.json",
-        "a_mem": "a_mem.json",
-        "bm25_message": "bm25.json",
-        "bm25_dialog": "bm25.json",
-        "embedder_message": "embedder.json",
-        "embedder_dialog": "embedder.json",
-        "mem0": "mem0.json",
-        "memoryos": "memoryos.json",
-    }
-    filename = default_map[memory_system]
+    # The registry returns a repo-relative path; use only the file name part
+    # so this works regardless of where Streamlit was launched from.
+    cfg_path = memory_systems.get(memory_system).config_file
+    filename = Path(cfg_path).name
     return _load_json(MEMORY_CONFIG_DIR / filename, {})
 
 
@@ -88,12 +105,12 @@ def build_llm_config(provider: str, model: str, base_url: str, api_key: str, tem
     }
     if provider == "openai":
         llm_cfg["openai_base_url"] = base_url
-        if api_key:
-            llm_cfg["api_key"] = api_key
+    elif provider == "anthropic":
+        llm_cfg["anthropic_base_url"] = base_url
     else:
         llm_cfg["vllm_base_url"] = base_url
-        if api_key:
-            llm_cfg["api_key"] = api_key
+    if api_key:
+        llm_cfg["api_key"] = api_key
     return llm_cfg
 
 
@@ -162,6 +179,8 @@ def build_runtime_feedback_config(
     }
     if provider == "openai":
         cfg["llm_config"]["openai_base_url"] = llm_base_url
+    elif provider == "anthropic":
+        cfg["llm_config"]["anthropic_base_url"] = llm_base_url
     else:
         cfg["llm_config"]["vllm_base_url"] = llm_base_url
     if llm_api_key:
@@ -517,6 +536,46 @@ def run_page():
 
     datasets = load_dataset_choices()
 
+    # ------------------------------------------------------------------
+    # Dataset source — let the user point explicitly at a local folder or
+    # let MemoryBench pull from the Hugging Face Hub.
+    # ------------------------------------------------------------------
+    st.markdown("### Dataset source")
+    env_path = os.getenv("MEMORY_BENCH_PATH", "")
+    default_source = "Local path" if env_path and not env_path.startswith("THUIR/") else "Hugging Face Hub"
+    dataset_source = st.radio(
+        "Where should MemoryBench read the dataset from?",
+        ["Hugging Face Hub", "Local path"],
+        horizontal=True,
+        index=0 if default_source == "Hugging Face Hub" else 1,
+        help=(
+            "Hugging Face Hub: downloads/caches `THUIR/MemoryBench` under "
+            "~/.cache/huggingface. Local path: reads directly from an HF-format "
+            "dataset directory (e.g. TinyDataset/) — nothing is downloaded."
+        ),
+    )
+    if dataset_source == "Hugging Face Hub":
+        hub_repo = st.text_input(
+            "Hub repo ID",
+            value=env_path if env_path.startswith("THUIR/") else "THUIR/MemoryBench",
+            help="`MEMORY_BENCH_PATH` is set to this hub repo when launching the run.",
+        )
+        memory_bench_path = hub_repo.strip()
+    else:
+        memory_bench_path = st.text_input(
+            "Local dataset path",
+            value=env_path if env_path and not env_path.startswith("THUIR/") else "",
+            help="Absolute or relative path to a directory in Hugging Face datasets format (e.g. ../TinyDataset).",
+        ).strip()
+        if memory_bench_path:
+            p = Path(memory_bench_path)
+            if not p.is_absolute():
+                p = (ROOT / memory_bench_path).resolve()
+            if p.exists():
+                st.success(f"Found: `{p}`")
+            else:
+                st.error(f"Path does not exist: `{p}`")
+
     col1, col2, col3 = st.columns(3)
     with col1:
         dataset_type = st.selectbox("Dataset type", ["single", "domain", "task"], index=1)
@@ -525,33 +584,71 @@ def run_page():
     with col3:
         memory_system = st.selectbox("Memory system", memory_choices)
 
-    if mode == "off-policy" and memory_system == "mem0" and set_name == "Open-Domain":
-        st.warning("mem0 is not supported for Open-Domain in existing scripts.")
-    if mode == "off-policy" and memory_system == "mem0" and set_name == "Long-Short":
-        st.warning("mem0 is not supported for Long-Short in existing scripts.")
+    if mode == "off-policy":
+        spec = memory_systems.get(memory_system)
+        if (dataset_type, set_name) in spec.skip_combinations:
+            st.warning(
+                f"{memory_system} is not supported for {set_name} ({dataset_type}) in existing scripts."
+            )
     if memory_system == "memoryos":
         st.info("If you use memoryos, OpenAI-compatible endpoint with provider=vllm is typically more stable in this repository.")
 
+    # ------------------------------------------------------------------
+    # API / Model — provider choices and the URL/key fields are scoped
+    # to whatever the selected memory_system actually uses.
+    # ------------------------------------------------------------------
     st.markdown("### API / Model")
+    allowed_providers = provider_choices_for(memory_system)
     c1, c2 = st.columns(2)
     with c1:
-        provider = st.selectbox("LLM provider", ["vllm", "openai"], index=0)
+        provider = st.selectbox(
+            "LLM provider",
+            allowed_providers,
+            index=0,
+            help=(
+                "Memory systems mem0 / a_mem / memoryos route through their own "
+                "upstream LLM client, so only vllm/openai are exposed for them."
+            ) if memory_system in _BASELINES_NO_ANTHROPIC else None,
+        )
         llm_model = st.text_input("LLM model", value="Qwen/Qwen3-8B")
-        llm_base_url = st.text_input("LLM base URL", value="http://localhost:12366/v1")
+        llm_base_url = st.text_input("LLM base URL", value=default_llm_url_for(provider))
     with c2:
-        llm_api_key = st.text_input("LLM API key (optional)", value="", type="password")
+        api_key_required = provider == "anthropic"
+        api_key_label = "LLM API key / auth token" if api_key_required else "LLM API key (optional)"
+        llm_api_key = st.text_input(api_key_label, value="", type="password")
         temperature = st.slider("Temperature", min_value=0.0, max_value=1.5, value=0.1, step=0.05)
-        retrieve_k = st.number_input("Retrieve k", min_value=1, max_value=50, value=5, step=1)
+        if memory_system_needs_retrieve_k(memory_system):
+            retrieve_k = st.number_input("Retrieve k", min_value=1, max_value=50, value=5, step=1)
+        else:
+            st.caption("Retrieve k — not used by `wo_memory`.")
+            retrieve_k = 5
 
-    st.markdown("### Embedder (for embedder_* / mem0)")
-    e1, e2, e3 = st.columns(3)
-    with e1:
-        embedder_provider = st.selectbox("Embedder provider", ["vllm", "openai", "huggingface"], index=0)
-    with e2:
-        embedder_model = st.text_input("Embedder model", value="Qwen/Qwen3-Embedding-0.6B")
-    with e3:
-        embedder_base_url = st.text_input("Embedder base URL", value="http://localhost:12377/v1")
-    embedder_dim = st.number_input("Embedder dimension", min_value=128, max_value=4096, value=1024, step=1)
+    if provider == "anthropic":
+        st.info(
+            "Anthropic provider selected. Set 'LLM base URL' to an Anthropic-compatible endpoint "
+            "(e.g. https://api.anthropic.com or your proxy). The auth token is sent as `api_key`."
+        )
+
+    # ------------------------------------------------------------------
+    # Embedder — only shown for memory systems that consume one.
+    # ------------------------------------------------------------------
+    if memory_system_needs_embedder(memory_system):
+        st.markdown(f"### Embedder (required by `{memory_system}`)")
+        e1, e2, e3 = st.columns(3)
+        with e1:
+            embedder_provider = st.selectbox("Embedder provider", ["vllm", "openai", "huggingface"], index=0)
+        with e2:
+            embedder_model = st.text_input("Embedder model", value="Qwen/Qwen3-Embedding-0.6B")
+        with e3:
+            embedder_base_url = st.text_input("Embedder base URL", value="http://localhost:12377/v1")
+        embedder_dim = st.number_input("Embedder dimension", min_value=128, max_value=4096, value=1024, step=1)
+    else:
+        # Inert defaults — they're ignored by build_runtime_memory_config for
+        # baselines that don't read the embedder fields.
+        embedder_provider = "vllm"
+        embedder_model = ""
+        embedder_base_url = ""
+        embedder_dim = 1024
 
     st.markdown("### Runtime")
     r1, r2, r3 = st.columns(3)
@@ -561,23 +658,37 @@ def run_page():
         cache_prefix = st.text_input("Memory cache prefix", value=f"frontend_cache/{mode}/")
     with r3:
         threads = st.number_input("Threads", min_value=1, max_value=32, value=4, step=1)
-    memory_bench_path = st.text_input(
-        "MEMORY_BENCH_PATH (optional)",
-        value=os.getenv("MEMORY_BENCH_PATH", ""),
-        help="Local dataset path. Leave empty to use default HuggingFace dataset path.",
-    )
 
     st.markdown("### Evaluation Env")
+    st.caption(
+        "**Fallback rules:** "
+        "(1) If the evaluator's API fields (EVALUATE_*) are left blank, the LLM API configured above will be used for evaluation. "
+        "(2) If the WritingBench eval API fields (WRITINGBENCH_EVAL_*) are left blank, the evaluator's API will be used."
+    )
     ev1, ev2 = st.columns(2)
     with ev1:
-        evaluate_base_url = st.text_input("EVALUATE_BASE_URL (optional)", value=os.getenv("EVALUATE_BASE_URL", ""))
-        evaluate_model = st.text_input("EVALUATE_MODEL (optional)", value=os.getenv("EVALUATE_MODEL", ""))
+        evaluate_base_url = st.text_input(
+            "EVALUATE_BASE_URL (optional)",
+            value=os.getenv("EVALUATE_BASE_URL", ""),
+            help="Base URL for the evaluator LLM. If left blank, falls back to the LLM API configured above.",
+        )
+        evaluate_model = st.text_input(
+            "EVALUATE_MODEL (optional)",
+            value=os.getenv("EVALUATE_MODEL", ""),
+            help="Model name for the evaluator LLM. If left blank, falls back to the LLM API configured above.",
+        )
         writingbench_eval_base_url = st.text_input(
             "WRITINGBENCH_EVAL_BASE_URL (optional)",
             value=os.getenv("WRITINGBENCH_EVAL_BASE_URL", os.getenv("WRITINGBENCH_VLLM_BASE_URL", "http://localhost:12388/v1")),
+            help="Base URL for the WritingBench evaluator. If left blank, falls back to the evaluator's API (EVALUATE_BASE_URL).",
         )
     with ev2:
-        evaluate_api_key = st.text_input("EVALUATE_API_KEY (optional)", value=os.getenv("EVALUATE_API_KEY", ""), type="password")
+        evaluate_api_key = st.text_input(
+            "EVALUATE_API_KEY (optional)",
+            value=os.getenv("EVALUATE_API_KEY", ""),
+            type="password",
+            help="API key for the evaluator LLM. If left blank, falls back to the LLM API key configured above.",
+        )
         writingbench_eval_provider = st.selectbox(
             "WRITINGBENCH_EVAL_PROVIDER",
             ["vllm", "openai"],
@@ -587,11 +698,12 @@ def run_page():
             "WRITINGBENCH_EVAL_API_KEY (optional)",
             value=os.getenv("WRITINGBENCH_EVAL_API_KEY", ""),
             type="password",
+            help="API key for the WritingBench evaluator. If left blank, falls back to the evaluator's API key (EVALUATE_API_KEY).",
         )
         writingbench_eval_model = st.text_input(
             "WRITINGBENCH_EVAL_MODEL (optional)",
             value=os.getenv("WRITINGBENCH_EVAL_MODEL", os.getenv("WRITINGBENCH_VLLM_MODEL", "")),
-            help="Override WritingBench evaluator model name/path (supports openai/vllm provider).",
+            help="Model name for the WritingBench evaluator. If left blank, falls back to the evaluator's model (EVALUATE_MODEL). Supports openai/vllm provider.",
         )
 
     step = 10
@@ -638,9 +750,14 @@ def run_page():
         st.warning("Stopping experiment...")
         st.rerun()
 
-    if (run_clicked or prepare_only_clicked) and mode == "off-policy" and memory_system == "mem0" and set_name in {"Open-Domain", "Long-Short"}:
-        st.error("Current scripts do not support this mem0 setting. Please change set_name or memory system.")
-        return
+    if (run_clicked or prepare_only_clicked) and mode == "off-policy":
+        spec = memory_systems.get(memory_system)
+        if (dataset_type, set_name) in spec.skip_combinations:
+            st.error(
+                f"Current scripts do not support {memory_system} on {set_name} ({dataset_type}). "
+                "Please change set_name or memory system."
+            )
+            return
 
     if run_clicked or prepare_only_clicked:
         memory_cfg = build_runtime_memory_config(

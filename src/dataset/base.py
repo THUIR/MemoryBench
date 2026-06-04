@@ -15,6 +15,16 @@ class BaseDataset:
     基础数据集类。提供了数据集的基本结构和方法
     """
 
+    # Subclasses that ship a multi-session corpus (LoCoMo, DialSim, ...) set
+    # this to a string. `load_corpus_to_memory` dispatches to
+    # `solver.memory_<corpus_format>_conversation`. None means "no corpus".
+    corpus_format: str = None
+
+    # Optional override used by `memorybench.summary_results` to merge a
+    # family of sub-datasets (e.g. Locomo-0..9) under one normalization key.
+    # None means: keep the dataset's own `dataset_name`.
+    summary_group_name: str = None
+
     def __init__(self, data_path: str = None, test_metrics: List[str] = None, max_output_len: int = None):
         """
         初始化数据集类

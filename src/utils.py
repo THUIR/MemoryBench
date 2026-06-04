@@ -5,56 +5,64 @@ import importlib
 from typing import List, Tuple, Dict
 
 from src.dataset import BaseDataset
+from src import memory_systems
 
 
 def get_memory_system_config_file(memory_system, memory_system_config=None):
-    """
-    根据 memory_system 获取对应的配置文件路径
-    """
+    """Return the config-file path for `memory_system` (registry-backed)."""
     if memory_system_config is not None:
         return memory_system_config
-    else:
-        config_map = {
-            "wo_memory": "configs/memory_systems/base.json",
-            "a_mem": "configs/memory_systems/a_mem.json",
-            "bm25_message": "configs/memory_systems/bm25.json",
-            "bm25_dialog": "configs/memory_systems/bm25.json",
-            "embedder_message": "configs/memory_systems/embedder.json",
-            "embedder_dialog": "configs/memory_systems/embedder.json",
-            "mem0": "configs/memory_systems/mem0.json",
-            "memoryos": "configs/memory_systems/memoryos.json",
-        }
-        if memory_system in config_map:
-            return config_map[memory_system]
-        else:
-            raise ValueError(f"Unsupported memory system: {memory_system}")
+    try:
+        return memory_systems.get(memory_system).config_file
+    except ValueError as e:
+        raise ValueError(f"Unsupported memory system: {memory_system}") from e
 
 
-def get_dialog_key(memory_system: str, prefix = "dialog_") -> str:
-    dialog_name = {
-        "wo_memory": "wo_memory",
-        "bm25_message": "bm25",
-        "embedder_message": "embedder",
-        "bm25_dialog": "bm25_dialog",
-        "embedder_dialog": "embedder_dialog",
-        "a_mem": "a_mem",
-        "mem0": "mem0",
-        "memoryos": "memoryos",
-    }
-    return prefix + dialog_name[memory_system]
+def get_dialog_key(memory_system: str, prefix="dialog_") -> str:
+    """Return the HF-dataset field name holding pre-generated dialogs for this method."""
+    return memory_systems.get(memory_system).dialog_key(prefix)
+
+
+def _resolve_corpus_format(dataset) -> str:
+    """Dispatch hint for solver corpus-loading methods.
+
+    Prefers the dataset's `corpus_format` attribute; falls back to name-prefix
+    matching for any legacy BaseDataset subclass that hasn't set it yet.
+    """
+    fmt = getattr(dataset, "corpus_format", None)
+    if fmt:
+        return fmt
+    name = dataset.dataset_name
+    if name.startswith("Locomo-"):
+        return "locomo"
+    if name.startswith("DialSim-"):
+        return "dialsim"
+    raise ValueError(
+        f"Dataset {name} has no corpus_format and is not a known corpus dataset"
+    )
 
 
 def load_corpus_to_memory(solver, dataset):
-    if dataset.dataset_name.startswith("Locomo-"):
-        solver.memory_locomo_conversation( 
-            dataset.corpus,
-            session_cnt=dataset.session_cnt,
+    """Load `dataset.corpus` into the solver's memory.
+
+    Dispatches to `solver.memory_<corpus_format>_conversation`, where
+    `corpus_format` is taken from the dataset class attribute (Locomo →
+    "locomo", DialSim → "dialsim"). Solvers register a corpus by defining
+    these per-format methods.
+    """
+    fmt = _resolve_corpus_format(dataset)
+    method = getattr(solver, f"memory_{fmt}_conversation", None)
+    if method is None:
+        raise NotImplementedError(
+            f"Solver {type(solver).__name__} does not implement "
+            f"`memory_{fmt}_conversation` for corpus format '{fmt}'."
         )
-    else:
-        solver.memory_dialsim_conversation(
-            dataset.corpus,
-            session_cnt=dataset.session_cnt,
-        )
+    method(dataset.corpus, session_cnt=dataset.session_cnt)
+
+
+def dataset_has_corpus(dataset) -> bool:
+    """Whether the dataset ships a multi-session corpus."""
+    return getattr(dataset, "corpus_format", None) is not None or getattr(dataset, "has_corpus", False)
 
 
 def extract_json(text):

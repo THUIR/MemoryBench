@@ -13,8 +13,9 @@ load_dotenv()
 
 from src.agent import AgentFactory
 from src.agent.base_agent import BaseAgent
-from src.utils import get_memory_system_config_file
+from src.utils import get_memory_system_config_file, load_corpus_to_memory
 from src.solver import SolverFactory
+from src import memory_systems
 
 from memorybench import load_memory_bench
 
@@ -89,12 +90,10 @@ def process_single_data(data, dataset, solver, feedback_agent: BaseAgent, max_ro
     }
 
 
-def solve_locomo(solver, feedback_agent, dataset, sample, args):
+def solve_corpus_dataset(solver, feedback_agent, dataset, sample, args):
+    """Generic driver for any dataset that ships a multi-session corpus."""
     total_dialogs = []
-    solver.memory_locomo_conversation( 
-        dataset.corpus,
-        session_cnt=dataset.session_cnt,
-    )
+    load_corpus_to_memory(solver, dataset)
 
     for i in tqdm(range(sample), desc=f"Chat with {args.memory_system}", ascii=True, dynamic_ncols=False, ncols=80):
         data = dataset.dataset["train"][i]
@@ -109,37 +108,20 @@ def solve_locomo(solver, feedback_agent, dataset, sample, args):
     return total_dialogs
 
 
-def solve_dialsim(solver, feedback_agent, dataset, sample, args):
-    total_dialogs = []
-    solver.memory_dialsim_conversation(
-        dataset.corpus,
-        dataset.session_cnt,
-    )
-
-    for i in tqdm(range(sample), desc=f"Chat with {args.memory_system}", ascii=True, dynamic_ncols=False, ncols=80):
-        total_dialogs.append(process_single_data(
-            data=dataset.dataset["train"][i],
-            dataset=dataset,
-            solver=solver,
-            feedback_agent=feedback_agent,
-            max_rounds=args.max_rounds,
-        ))
-    return total_dialogs
-
-
 def save_json_file(save_dir, filename, data):
     with open(os.path.join(save_dir, filename), "w") as fout:
         json.dump(data, fout, ensure_ascii=False, indent=4)
 
 
 def main(args):
-    assert args.dataset.startswith("Locomo-") or args.dataset.startswith("DialSim-"), f"Invalid dataset {args.dataset}"
-
     start_timestamp = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
     dataset = load_memory_bench(
         dataset_type="single",
         name=args.dataset,
         eval_mode=False,
+    )
+    assert dataset.has_corpus, (
+        f"Dataset {args.dataset} has no corpus — this script is only for corpus-based datasets"
     )
     
     run_config = vars(args)
@@ -181,12 +163,9 @@ def main(args):
         memory_cache_dir=memory_cache_dir,
     )
 
-    # communication    
+    # communication
     sample = len(dataset.dataset["train"])
-    if args.dataset.startswith("Locomo-"):
-        total_dialogs = solve_locomo(solver, feedback_agent, dataset, sample, args)
-    else:
-        total_dialogs = solve_dialsim(solver, feedback_agent, dataset, sample, args)
+    total_dialogs = solve_corpus_dataset(solver, feedback_agent, dataset, sample, args)
 
     # Sort by the original test_idx order in dataset.dataset["train"]
     origin_idx_to_pos = {
@@ -199,8 +178,8 @@ def main(args):
     save_json_file(save_dir, "run_config.json", run_config)
     save_json_file(save_dir, "dialogs.json", total_dialogs)
 
-    # evaluate first response
-    if args.dataset.startswith("Locomo-"):
+    # evaluate first response (only for Locomo-family datasets that use one-shot QA scoring)
+    if getattr(dataset, "summary_group_name", None) == "Locomo" or args.dataset.startswith("Locomo-"):
         predicts = []
         for dialog in total_dialogs:
             resp = ""
@@ -243,7 +222,7 @@ if __name__ == "__main__":
         "--memory_system",
         type=str,
         required=True,
-        choices=["bm25_message", "bm25_dialog", "embedder_message", "embedder_dialog", "a_mem", "mem0", "memoryos"],
+        choices=memory_systems.names_with_memory(),
         help="baseline name",
     )
     parser.add_argument(

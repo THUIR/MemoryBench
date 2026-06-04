@@ -52,6 +52,8 @@ def gpt_judge(question, true_answer, answer, openai_model, patience=3):
 
 class DialSim_Dataset(BaseDataset):
 
+    corpus_format = "dialsim"
+
     def __init__(self, data_path: str = None, dataset_name: str = "DialSim-friends", dataset_size: int = 3000, test_metrics: List[str] = ["accuracy"], max_output_len: int = 8192, eval_mode: bool = True):
         self.evaluate_threads = 4
         self.dataset_name = dataset_name

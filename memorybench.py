@@ -196,7 +196,24 @@ def summary_results(
             config = json.load(fin) 
 
         datasetname_to_class = {k: load_single_dataset(k, eval_mode=True) for k in config if len(config[k]["test_metrics"]) > 1} # datasets need to merge metrics
-        
+
+        def _summary_group(name):
+            """Map a per-row dataset name to its normalization group key.
+
+            Looks up the dataset class to read `summary_group_name`. Falls back
+            to a `startswith("Locomo")` rule so older subclasses keep working.
+            """
+            try:
+                cls = get_dataset_class(f"src.dataset.{config[name]['class_name']}")
+                grp = getattr(cls, "summary_group_name", None)
+                if grp:
+                    return grp
+            except Exception:
+                pass
+            if name.startswith("Locomo"):
+                return "Locomo"
+            return name
+
         values = {}
         for cur_idx, item in tqdm(
             enumerate(evaluate_details),
@@ -207,8 +224,7 @@ def summary_results(
             ncols=80,
         ):
             test_metrics = config[item["dataset"]]["test_metrics"]
-            if item["dataset"].startswith("Locomo"):
-                item["dataset"] = "Locomo"
+            item["dataset"] = _summary_group(item["dataset"])
             if item["dataset"] in datasetname_to_class: # merge metrics
                 dataset_class = datasetname_to_class[item["dataset"]]
                 predict_result = predicts[cur_idx]

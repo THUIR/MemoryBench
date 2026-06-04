@@ -128,6 +128,9 @@ def get_cat_5_answer(model_prediction, answer_key):
 
 class Locomo_Dataset(BaseDataset):
 
+    corpus_format = "locomo"
+    summary_group_name = "Locomo"
+
     def __init__(self, data_path: str = None, dataset_name: str = "Locomo-0", test_metrics: List[str] = ["f1"], max_output_len: int = 8192, eval_mode: bool = True):
         self.dataset_name = dataset_name
         assert int(self.dataset_name.split("-")[-1]) in list(range(10))

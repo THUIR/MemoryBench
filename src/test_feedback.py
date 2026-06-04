@@ -72,13 +72,13 @@ def save_json_file(save_dir, filename, data):
 
 def main(args):
     start_timestamp = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
-    assert not args.dataset.startswith("DialSim"), f"Dataset {args.dataset} not supported yet."
-    if args.dataset.startswith("Locomo"):
+    dataset = load_memory_bench("single", args.dataset)
+    corpus_format = getattr(dataset, "corpus_format", None)
+    assert corpus_format != "dialsim", f"Dataset {args.dataset} not supported yet."
+    if corpus_format == "locomo":
         assert args.memory_system != "wo_memory", f"Dataset {args.dataset} not supported for wo_memory system."
     else:
         assert args.memory_system == "wo_memory", f"Dataset {args.dataset} only supported for wo_memory system."
-
-    dataset = load_memory_bench("single", args.dataset)
 
     # load solver 
     with open(args.memory_system_config, "r") as fin:
@@ -99,7 +99,7 @@ def main(args):
         memory_cache_dir=tmp_memory_cache_dir,
     )
     solver.MAX_THREADS = args.threads
-    if args.dataset.startswith("Locomo"):
+    if corpus_format == "locomo":
         load_corpus_to_memory(solver, dataset)
 
     train_predicts = []

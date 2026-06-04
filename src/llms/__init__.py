@@ -4,6 +4,7 @@ from typing import Optional, Union, Dict
 from src.llms.base import BaseLlmConfig
 from src.llms.openai import OpenAIConfig
 from src.llms.vllm import VllmConfig
+from src.llms.anthropic import AnthropicConfig
 
 
 def load_class(class_type):
@@ -22,6 +23,7 @@ class LlmFactory:
     provider_to_class = {
         "openai": ("src.llms.openai.OpenAILLM", OpenAIConfig),
         "vllm": ("src.llms.vllm.VllmLLM", VllmConfig),
+        "anthropic": ("src.llms.anthropic.AnthropicLLM", AnthropicConfig),
     }
 
     @classmethod

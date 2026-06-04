@@ -5,8 +5,8 @@ from src.llms import LlmFactory
 
 
 class BaseAgentConfig(BaseModel):
-    llm_provider: Literal["openai", "vllm"] = Field(
-        default="openai", 
+    llm_provider: Literal["openai", "vllm", "anthropic"] = Field(
+        default="openai",
         description="The LLM provider to use for the agent."
     )
     llm_config: dict = Field(

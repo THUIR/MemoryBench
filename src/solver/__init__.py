@@ -1,6 +1,10 @@
 import importlib
 from typing import Optional, Union, Dict
 
+from src import memory_systems
+
+# Eager imports preserve the original behavior of failing fast at import time
+# if a baseline's dependencies are missing.
 from src.solver.base import BaseAgentConfig
 from src.solver.bm25 import BM25AgentConfig
 from src.solver.bm25_dialog import BM25DialogAgentConfig
@@ -17,27 +21,30 @@ def load_class(class_type):
     module = importlib.import_module(module_path)
     return getattr(module, class_name)
 
+
 class SolverFactory:
-    method_to_class = {
-        "wo_memory": ("src.solver.base.BaseSolver", "src.solver.base.BaseAgentConfig"),
-        "bm25_message": ("src.solver.bm25.BM25Solver", "src.solver.bm25.BM25AgentConfig"),
-        "bm25_dialog": ("src.solver.bm25_dialog.BM25DialogSolver", "src.solver.bm25_dialog.BM25DialogAgentConfig"),
-        "embedder_message": ("src.solver.embedder.EmbedderSolver", "src.solver.embedder.EmbedderAgentConfig"),
-        "embedder_dialog": ("src.solver.embedder_dialog.EmbedderDialogSolver", "src.solver.embedder_dialog.EmbedderDialogAgentConfig"),
-        "a_mem": ("src.solver.a_mem.AMemSolver", "src.solver.a_mem.AMemAgentConfig"),
-        "mem0": ("src.solver.mem0.Mem0Solver", "src.solver.mem0.Mem0AgentConfig"),
-        "memoryos": ("src.solver.memoryos.MemoryOSSolver", "src.solver.memoryos.MemoryOSAgentConfig"),
-        # "raptor": ("src.solver.raptor.RAPTORSolver", "src.solver.raptor.RAPTORAgentConfig"),
-    }
+    """Solver factory backed by `src.memory_systems`.
+
+    The `method_to_class` dict is kept as a backward-compatible view; the
+    source of truth is the registry.
+    """
+
+    @classmethod
+    def _build_method_to_class(cls):
+        return {
+            name: (spec.solver_class, spec.config_class)
+            for name, spec in memory_systems._REGISTRY.items()
+        }
+
+    # Snapshot at class-definition time so external code that reads
+    # SolverFactory.method_to_class continues to work.
+    method_to_class = None  # populated below
 
     @classmethod
     def create(cls, method_name: str, config: Dict, **kwargs):
-        if method_name not in cls.method_to_class:
-            raise ValueError(f"Unknown method name: {method_name}")
-        
-        class_type, config_class_type = cls.method_to_class[method_name]
-        solver_class = load_class(class_type)
-        config_class = load_class(config_class_type)
+        spec = memory_systems.get(method_name)
+        solver_class = load_class(spec.solver_class)
+        config_class = load_class(spec.config_class)
 
         memory_cache_dir = kwargs.get("memory_cache_dir", None)
         if memory_cache_dir is not None and "memory_cache_dir" in config_class.__init__.__code__.co_varnames:
@@ -47,3 +54,6 @@ class SolverFactory:
                 config[key] = value
         agent_config = config_class(**config)
         return solver_class(agent_config, memory_cache_dir=memory_cache_dir)
+
+
+SolverFactory.method_to_class = SolverFactory._build_method_to_class()

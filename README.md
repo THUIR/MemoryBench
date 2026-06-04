@@ -1,450 +1,402 @@
-# MemoryBench
+<h1 align="center">MemoryBench</h1>
 
-**MemoryBench** aims to provide a standardized and extensible benchmark for evaluating memory and continual learning in LLM systems — encouraging future work toward more adaptive, feedback-driven, and efficient LLM systems.
+<p align="center">
+  <b>A standardized, extensible benchmark for memory and continual learning in LLM systems.</b>
+</p>
 
-- 📢 **May 26, 2026 Updated**: This work has been accepted at ICML 2026 and selected for a SpotLight Paper!
-- 📢 **Apr. 15, 2026 Updated**: We released an easy-to-use frontend version of MemoryBench Evaluation! You can configure and run experiments with much less setup effort. See [frontend/README.md](frontend/README.md) for details.
-- 📢 **Dec. 8, 2025 Updated**: We released an [extended version of MemoryBench](https://huggingface.co/datasets/THUIR/MemoryBench-Full)!
-- 📢 **Dec. 5, 2025 Updated**: We released a new version of user feedback data where `Mistral-Small-3.2-24B-Instruct-2506` acts as the User Simulator!
+<p align="center">
+  <a href="https://huggingface.co/datasets/THUIR/MemoryBench">
+    <img alt="HF Dataset" src="https://img.shields.io/badge/🤗%20Dataset-THUIR%2FMemoryBench-yellow">
+  </a>
+  <a href="https://huggingface.co/datasets/THUIR/MemoryBench-Full">
+    <img alt="HF Dataset Full" src="https://img.shields.io/badge/🤗%20Dataset-Full-orange">
+  </a>
+  <a href="https://github.com/QingyaoAi/MemoryBench/stargazers">
+    <img alt="Stars" src="https://img.shields.io/github/stars/QingyaoAi/MemoryBench?style=social">
+  </a>
+  <a href="#license">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-blue">
+  </a>
+  <a href="#citation">
+    <img alt="ICML 2026" src="https://img.shields.io/badge/ICML-2026%20Spotlight-red">
+  </a>
+  <img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%2B-blue">
+</p>
 
-## 🌟 Introduction
+<p align="center">
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-datasets">Datasets</a> •
+  <a href="#-baselines">Baselines</a> •
+  <a href="#-experiments">Experiments</a> •
+  <a href="frontend/README.md">Frontend</a> •
+  <a href="#-extending-memorybench">Extending</a> •
+  <a href="#citation">Citation</a>
+</p>
 
-Scaling up data, parameters, and test-time computation has been the mainstream methods to improve LLM systems (LLMsys), but their upper bounds are almost reached due to the gradual depletion of high-quality data and marginal gains obtained from larger computational resource consumption. Inspired by the abilities of human and traditional AI systems in learning from practice, constructing memory and continual learning frameworks for LLMsys has become an important and popular research direction in recent literature. 
+---
 
-Yet, existing benchmarks for LLM memory often focus on evaluating the system on homogeneous reading comprehension tasks with long-form inputs rather than testing their abilities to learn from accumulated user feedback in service time. Therefore, we propose a user feedback simulation framework and a comprehensive benchmark covering multiple domains, languages, and types of tasks to evaluate the continual learning abilities of LLMsys. 
-Experiments show that the effectiveness and efficiency of state-ofthe-art baselines are far from satisfying, and we hope this benchmark could pave the way for future studies on LLM memory and optimization algorithms.
+## 📢 News
 
-> This repository provides a lightweight interface for **loading the MemoryBench dataset**,  **evaluations** and **follow our experiments**. For full experiments in the paper, please refer to [https://github.com/LittleDinoC/MemoryBench-code](https://github.com/LittleDinoC/MemoryBench-code).
+- **2026-05-26** — Accepted to **ICML 2026** as a **Spotlight paper**.
+- **2026-04-15** — Streamlit frontend released. Configure and run experiments without touching any YAML. See [frontend/README.md](frontend/README.md).
+- **2025-12-08** — Extended version released: [`THUIR/MemoryBench-Full`](https://huggingface.co/datasets/THUIR/MemoryBench-Full).
+- **2025-12-05** — User-feedback simulator upgraded to `Mistral-Small-3.2-24B-Instruct-2506`.
 
-## 🏡 Repository Structure
+---
 
-Below is the directory structure of MemoryBench.
-Please maintain this structure to ensure correct dataset execution.
-The rest of the repository contains implementations of memory systems and experiment scripts.
+## 🔍 Overview
 
+Scaling data, parameters, and test-time compute is hitting diminishing returns for LLM systems (LLMsys). MemoryBench evaluates a complementary axis: **can LLM systems learn from accumulated user feedback during service time?** Memory and continual-learning frameworks claim to enable this, but most existing benchmarks reduce the problem to long-form reading comprehension — a poor proxy for real feedback-driven adaptation.
 
-```plain
-configs/
-    datasets/           # Dataset configuration files
-    final_evaluate_summary_wo_details.json # Normalization data
-frontend/               # Streamlit frontend
-raw/                    # Raw datasets
-src/
-    datasets/           # Dataset classes
-    agents/             # Evaluation agents and memory system baselines
-    *.py                # Main script for some experiments
-memorybench.py          # Main entry of MemoryBench
-.env                    # Environment variables for evaluation configuration
-```
+MemoryBench tests the harder regime: **multi-task, multi-domain, multilingual evaluation with simulated user feedback**, across both **off-policy** (replay pre-recorded dialogs) and **on-policy** (generate dialogs on the fly) settings.
 
-Dataset configurations are located in `configs/datasets/`:
+### Highlights
 
-* `each.json` — metadata for each dataset
-* `domain.json` — datasets grouped by domain
-* `task.json` — datasets grouped by task
+- **28 datasets** across 3 domains (Academic & Knowledge, Legal, Open-Domain) and 4 task shapes (Long-Long, Long-Short, Short-Long, Short-Short).
+- **8 memory-system baselines** with a one-call registry interface (vanilla, BM25-M/S, Emb-M/S, A-Mem, Mem0, MemoryOS).
+- **4 experiment regimes**: off-policy, stepwise off-policy, on-policy, and training-set performance.
+- **User-feedback simulator** based on `Mistral-Small-3.2-24B-Instruct-2506`.
+- **LLM providers**: vLLM, OpenAI-compatible, and Anthropic — wired through one `LlmFactory`.
+- **Streamlit frontend** with conditional UI and explicit dataset-path support.
+- **Plug-and-play extension** via a single registry entry. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-The full dataset is publicly available on Hugging Face:
-👉 [https://huggingface.co/datasets/THUIR/MemoryBench](https://huggingface.co/datasets/THUIR/MemoryBench)
+> This repository hosts the lightweight benchmark interface and baseline implementations. The full reproduction code for the paper lives at [LittleDinoC/MemoryBench-code](https://github.com/LittleDinoC/MemoryBench-code).
 
-We also provide lightweight dataset loading and evaluation functions in `memorybench.py`.
+---
 
-## 🖥️ Easy-to-use Frontend Released
+## 📚 Table of Contents
 
-**Apr. 15, 2026**: We have released an easy-to-use frontend version of MemoryBench so you can configure and run experiments with much less setup effort. See [frontend/README.md](frontend/README.md) for details.
+- [Quick Start](#-quick-start)
+- [Datasets](#-datasets)
+- [Baselines](#-baselines)
+- [Experiments](#-experiments)
+- [Python API](#-python-api)
+- [Frontend](frontend/README.md)
+- [Extending MemoryBench](#-extending-memorybench)
+- [Repository Layout](#-repository-layout)
+- [Citation](#citation)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-## 🚀 Using MemoryBench
+---
 
-This part shows how to load the MemoryBench dataset and perform evaluation. If you would like to conduct experiments in our paper with your memory systems, please refer to the next section [🎯 Following Our Experiments](https://github.com/LittleDinoC/MemoryBench?tab=readme-ov-file#-following-our-experiments).
+## 🚀 Quick Start
 
-### Environment Setup
+### Installation
 
-Use the following commands to set up the conda environment:
-
-```
-conda create -n memorybench python=3.10
+```bash
+conda create -n memorybench python=3.10 -y
 conda activate memorybench
+
+git clone https://github.com/QingyaoAi/MemoryBench.git
+cd MemoryBench
+
 pip install -r requirements.txt
-cd baselines/mem0
-pip install -e .
+pip install -e baselines/mem0          # editable install required by Mem0
+
+python -c "import nltk; [nltk.download(p) for p in ('punkt','wordnet','stopwords')]"
 ```
 
-Please set up the `.env` file to specify evaluation models and OpenAI API configurations.
-If you have cloned our dataset locally, you can modify `MEMORY_BENCH_PATH` to point to your local folder to use the local data.
-We recommend that you use vLLM to deploy the official evaluation model [WritingBench-Critic-Model-Qwen-7B](https://huggingface.co/AQuarterMile/WritingBench-Critic-Model-Qwen-7B) and set the vLLM url in `.env`.
-The evaluation models you set are used for all other LLM-as-judge evaluations and integrated scoring across multiple metrics. 
+### Smoke test (no API keys, no downloads)
 
-### Load Dataset
-
-You can load datasets using the `load_memory_bench` function in `memorybench.py`.
-
-**Parameters:**
-
-* `dataset_type` (`single` | `domain` | `task`):
-  Choose to load a single dataset, or merge datasets by domain or by task.
-* `name` (str):
-  The name of the dataset/domain/task.
-
-  * Datasets are listed on the Hugging Face page.
-  * Domains include `Open-Domain`, `Academic&Knowledge`, and `Legal` (see `configs/datasets/domain.json`).
-  * Tasks include `Long-Short`, `Long-Long`, `Short-Long`, and `Short-Short` (see `configs/datasets/task.json`).
-* `eval_mode` (bool, default=False):
-  Whether to enable evaluation mode.
-
-If `dataset_type` is `single`, the function returns a dataset instance; if `domain` or `task`, it returns a list of dataset instances.
-
-The returned dataset class contains the following attributes and methods:
-
-+ `dataset_name` (str): Name of the dataset.
-+ `dataset`: HuggingFace dataset object, containing "train" and "test" splits.
-+ `has_corpus` (bool): Whether the dataset includes a corpus, such as LoCoMo and DialSim. If true, it also contains `corpus` (list[dict]) and `session_cnt` (int) representing the dialogue corpus and number of sessions.
-+ `get_data(test_idx: int) -> data`: Get the data point for the specified index, regardless of whether the data is in training set or test set.
-
-**Example usage:**
-
-```python
-from memorybench import load_memory_bench
-
-# Load a single dataset (JRE-L)
-dataset = load_memory_bench(dataset_type='single', name='JRE-L')
-print(dataset.dataset_name)  # Output: JRE-L
-print(dataset.dataset)
-"""
-DatasetDict({
-    train: Dataset({
-        features: ['test_idx', 'input_prompt', 'dataset_name', 'lang', 'info', 'dialog', 'implicit_feedback'],
-        num_rows: 200
-    })
-    test: Dataset({
-        features: ['test_idx', 'input_prompt', 'dataset_name', 'lang', 'info', 'dialog', 'implicit_feedback'],
-        num_rows: 50
-    })
-})
-"""
-
-# Load a domain (Open-Domain) without dataset instances
-dataset_list = load_memory_bench(dataset_type='domain', name='Open-Domain')
-
-# Load a task (Long-Short, LiSo) with evaluation mode
-dataset_list = load_memory_bench(dataset_type='task', name='Long-Short', eval_mode=True)
+```bash
+python smoke_test.py
 ```
 
-### Evaluation
-
-Before starting the evaluation, make sure you have correctly configured the evaluation models in the .env file:
-
-1. WritingBench Dataset 
-
-    For evaluating on the WritingBench dataset, please deploy the official evaluation model [WritingBench-Critic-Model-Qwen-7B](https://huggingface.co/AQuarterMile/WritingBench-Critic-Model-Qwen-7B). You can launch it with vLLM using the following command:
-
-    ```python
-    vllm serve AQuarterMile/WritingBench-Critic-Model-Qwen-7B --port 12388 # LLM as Judge (for WritingBench)
-    ```
-
-2. Other Datasets using LLM-as-judge (e.g., NFCats, IdeaBench, etc.)
-
-    For datasets that rely on black-box evaluation models, configure the corresponding API key in your `.env` file. All datasets requiring black-box evaluators will use this configuration.
-    
-    In our paper, we use DeepSeek-V3 as the evaluation model for these benchmarks.
-
-Once the environment is properly set up, you can run evaluation using the `evaluate` function.
-
-**❗Note:** Some datasets such as `JRE-L` use `bert_score` library to evaluate. And there is a bug in this lib: model loaded locally can't automatically truncate the inputs (see [Issues](https://github.com/Tiiiger/bert_score/issues?q=truncate)). So please load the model from huggingface as we do in this repo, instead of loading locally, or you will meet some "exceeding max length" errors during evaluating.
-
-**Parameters:**
-
-* `dataset_type` (`single` | `domain` | `task`): same as above.
-* `name` (str): dataset/domain/task name.
-* `predicts` (list of dict): list of model predictions.
-  Each element must include:
-
-  * `dataset` (str): dataset name.
-  * `test_idx` (int): index of the test sample.
-  * `response` (str): model’s response.
-
-The function loads the datasets, runs the evaluation, and returns a list of results:
-
+### Hello World
 
 ```python
-{
-    "dataset": str,      # Dataset name
-    "test_idx": int,     # Sample index
-    "metrics": {         # Evaluation metrics
-        "metric_name_1": value_1,
-    }
+from memorybench import load_memory_bench, evaluate, summary_results
+
+dataset = load_memory_bench(dataset_type="single", name="JRE-L")
+predicts = [
+    {"test_idx": int(row["test_idx"]), "response": "...", "dataset": "JRE-L"}
+    for row in dataset.dataset["test"]
+]
+details = evaluate("single", "JRE-L", predicts)
+print(summary_results("single", "JRE-L", predicts, details)["summary"])
+```
+
+### Run an experiment
+
+```bash
+# Off-policy with BM25 on the Open-Domain split
+python -m src.off-policy \
+    --memory_system bm25_message \
+    --dataset_type domain \
+    --set_name Open-Domain
+```
+
+### Develop offline against the TinyDataset
+
+```bash
+# The TinyDataset ships 3 train + 2 test rows per dataset; no HF download needed.
+export MEMORY_BENCH_PATH=$(pwd)/../TinyDataset
+python -m src.off-policy --memory_system bm25_message --dataset_type single --set_name Locomo-0
+python -m unittest tests.test_refactor -v
+```
+
+---
+
+## 📊 Datasets
+
+The full dataset is on Hugging Face: **[`THUIR/MemoryBench`](https://huggingface.co/datasets/THUIR/MemoryBench)**.
+
+| Domain                | Task Shape  | Datasets                                                                     |
+|-----------------------|-------------|-------------------------------------------------------------------------------|
+| **Open-Domain**       | Long-Short  | Locomo-0 … Locomo-9, DialSim-friends, DialSim-bigbang, DialSim-theoffice     |
+| Open-Domain           | Long-Long   | HelloBench-Creative&Design, WritingBench-Creative&Design                     |
+| Open-Domain           | Short-Long  | WritingPrompts                                                                |
+| Open-Domain           | Short-Short | NFCats                                                                        |
+| **Academic & Knowledge** | Long-Short  | LimitGen-Syn, IdeaBench                                                       |
+| Academic & Knowledge | Long-Long   | HelloBench-Academic&Knowledge-Writing, WritingBench-Academic&Engineering     |
+| Academic & Knowledge | Short-Long  | HelloBench-Academic&Knowledge-QA                                              |
+| Academic & Knowledge | Short-Short | JRE-L                                                                         |
+| **Legal**             | Long-Short  | LexEval-Summarization                                                         |
+| Legal                 | Long-Long   | LexEval-Judge, WritingBench-Politics&Law                                      |
+| Legal                 | Short-Long  | JuDGE                                                                         |
+| Legal                 | Short-Short | LexEval-QA                                                                    |
+
+The full list (28 datasets) lives in [`configs/datasets/each.json`](configs/datasets/each.json); domain and task groupings are in `domain.json` / `task.json`.
+
+**Corpus datasets.** LoCoMo and DialSim ship a multi-session conversation corpus that the memory system must ingest before answering. MemoryBench dispatches per-corpus loading by an attribute on the dataset class:
+
+```python
+class Locomo_Dataset(BaseDataset):
+    corpus_format = "locomo"      # → solver.memory_locomo_conversation
+    summary_group_name = "Locomo" # → collapse Locomo-0..9 under one normalization key
+```
+
+---
+
+## 🧠 Baselines
+
+All baselines are registered in [`src/memory_systems.py`](src/memory_systems.py). The runner CLI (`--memory_system <name>`), the frontend dropdown, and the run scripts all derive their lists from this single source of truth.
+
+| Paper Name | Code Name           | Type                       | Config File                                          |
+|------------|---------------------|----------------------------|------------------------------------------------------|
+| Vanilla    | `wo_memory`         | No memory (baseline)       | [`base.json`](configs/memory_systems/base.json)      |
+| BM25-M     | `bm25_message`      | Lexical, message-level     | [`bm25.json`](configs/memory_systems/bm25.json)      |
+| BM25-S     | `bm25_dialog`       | Lexical, session-level     | [`bm25.json`](configs/memory_systems/bm25.json)      |
+| Emb-M      | `embedder_message`  | Dense, message-level       | [`embedder.json`](configs/memory_systems/embedder.json) |
+| Emb-S      | `embedder_dialog`   | Dense, session-level       | [`embedder.json`](configs/memory_systems/embedder.json) |
+| A-Mem      | `a_mem`             | Note-based associative     | [`a_mem.json`](configs/memory_systems/a_mem.json)    |
+| Mem0       | `mem0`              | Fact-extraction memory     | [`mem0.json`](configs/memory_systems/mem0.json)      |
+| MemoryOS   | `memoryos`          | Hierarchical OS-style      | [`memoryos.json`](configs/memory_systems/memoryos.json) |
+
+Upstream sources for `a_mem`, `mem0`, and `memoryos` are vendored under [`baselines/`](baselines/).
+
+---
+
+## 🧪 Experiments
+
+MemoryBench evaluates memory systems under four complementary regimes. Each one ships with both a per-experiment Python entry point (`src/<experiment>.py`) and a sweep driver (`run_scripts/<experiment>.py`) that iterates every registered memory system.
+
+| Regime                | Train→Memory  | Test access     | When to use                                              | Entry point                       |
+|-----------------------|---------------|-----------------|----------------------------------------------------------|-----------------------------------|
+| **Off-policy**        | Bulk replay   | Read only       | Compare baselines on a fixed training-dialog corpus      | `python -m src.off-policy`        |
+| **Stepwise off-policy** | Replay in batches | Read between batches | Track scaling with training data                    | `python -m src.stepwise_off-policy` |
+| **On-policy**         | Live generation | Read between steps | Realistic continual-learning loop                      | `python -m src.on-policy`         |
+| **Training perf.**    | Bulk replay   | Re-eval on train | Detect overfit / catastrophic forgetting               | `python -m src.train_performance` |
+
+Common arguments: `--memory_system <name>`, `--dataset_type single|domain|task`, `--set_name <name>`. See `--help` on any entry point for the full list.
+
+<details>
+<summary><b>Example: off-policy run on the Open-Domain split</b></summary>
+
+```bash
+python -m src.off-policy \
+    --memory_system bm25_message \
+    --dataset_type domain \
+    --set_name Open-Domain \
+    --retrieve_k 5
+```
+
+Results are written to `off-policy/results/domain/Open-Domain/bm25_message/start_at_<timestamp>/`.
+
+</details>
+
+<details>
+<summary><b>Example: full sweep across all baselines × domains</b></summary>
+
+```bash
+python run_scripts/off-policy.py
+```
+
+The sweep iterates `memory_systems.all_names()` × `domain.json` and `task.json`, automatically skipping known-incompatible combinations declared in the registry (e.g. `mem0` on `Open-Domain`).
+
+</details>
+
+<details>
+<summary><b>Example: on-policy with live feedback generation</b></summary>
+
+```bash
+python -m src.on-policy \
+    --memory_system mem0 \
+    --dataset_type domain \
+    --set_name Legal \
+    --step 10 --batch_size 100 --max_rounds 3
+```
+
+</details>
+
+<details>
+<summary><b>Default vLLM deployment (only required to reproduce paper results)</b></summary>
+
+```bash
+vllm serve Qwen/Qwen3-32B  --port 12345 --chat-template qwen3_nonthinking.jinja   # Main LLM
+vllm serve Qwen/Qwen3-8B   --port 12366 --chat-template qwen3_nonthinking.jinja   # Memory-system LLM
+vllm serve Qwen/Qwen3-Embedding-0.6B --port 12377 --task embed                    # Embedder
+vllm serve AQuarterMile/WritingBench-Critic-Model-Qwen-7B --port 12388            # WritingBench evaluator
+```
+
+With these ports the default `configs/memory_systems/*.json` files work as-is.
+
+</details>
+
+---
+
+## 🐍 Python API
+
+The benchmark exposes three top-level functions in [`memorybench.py`](memorybench.py).
+
+### `load_memory_bench(dataset_type, name, eval_mode=False)`
+
+Returns a `BaseDataset` (when `dataset_type="single"`) or a `list[BaseDataset]` (for `"domain"` / `"task"`).
+
+```python
+ds = load_memory_bench("single", "JRE-L")
+ds.dataset_name           # "JRE-L"
+ds.dataset                # HF DatasetDict with "train" and "test" splits
+ds.has_corpus             # bool — True for LoCoMo/DialSim
+ds.get_data(test_idx=42)  # → row dict
+```
+
+### `evaluate(dataset_type, name, predicts) → list[dict]`
+
+```python
+predicts = [{"test_idx": 0, "response": "...", "dataset": "JRE-L"}, ...]
+details  = evaluate("single", "JRE-L", predicts)
+# [{"dataset": "JRE-L", "test_idx": 0, "metrics": {"Rouge-L": ..., ...}}, ...]
+```
+
+### `summary_results(dataset_type, name, predicts, evaluate_details)`
+
+Mean metrics for a single dataset; min-max-normalized + z-normalized aggregates for a domain or task.
+
+```python
+summary = summary_results("domain", "Open-Domain", predicts, details)
+summary["summary"]["weighted_average"]
+summary["minmax_normalized_average"]
+```
+
+### Local dataset path
+
+By default `load_memory_bench` pulls from `THUIR/MemoryBench` and caches under `~/.cache/huggingface/`. Override either via `MEMORY_BENCH_PATH=/abs/path/to/local/dataset` or the **Dataset source** selector in the frontend.
+
+---
+
+## 🖥 Frontend
+
+```bash
+python -m streamlit run frontend/streamlit_app.py
+# → http://localhost:8501
+```
+
+The frontend covers off-policy and on-policy runs end to end. It auto-hides irrelevant fields:
+
+- **LLM provider** dropdown is filtered per baseline — `mem0` / `a_mem` / `memoryos` don't expose the Anthropic option because they route through their own provider abstractions.
+- **LLM base URL** default updates when you switch providers (vllm / openai / anthropic).
+- **Embedder section** only appears for baselines that consume embeddings (`embedder_*`, `mem0`).
+- **Retrieve k** is hidden for `wo_memory`.
+- **Dataset source** is an explicit radio: Hugging Face Hub vs Local path, with live path validation.
+
+See [`frontend/README.md`](frontend/README.md) for the full walkthrough.
+
+---
+
+## 🧰 Extending MemoryBench
+
+Adding a new baseline or dataset is a single-file change plus one registry entry.
+
+**Add a new memory-system baseline**:
+1. Write `src/agent/<name>.py` (agent + pydantic config) and `src/solver/<name>.py` (solver).
+2. Drop `configs/memory_systems/<name>.json`.
+3. Add one `register(MemorySystemSpec(...))` call in `src/memory_systems.py`.
+
+Everything else — CLI choices, frontend dropdowns, sweep scripts, dialog-field lookups, skip rules — picks the new entry up automatically.
+
+**Add a new dataset**: subclass `BaseDataset`, add one entry to `configs/datasets/each.json`, and (for corpus-style datasets) set `corpus_format = "<name>"` on the class.
+
+Full step-by-step walkthrough: **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+
+The parametric test [`tests/test_refactor.py::TestAllBaselinesContract`](tests/test_refactor.py) walks every registered baseline and asserts the off-policy + on-policy method contract — your new baseline is auto-tested.
+
+---
+
+## 🏗 Repository Layout
+
+```text
+MemoryBench/
+├── memorybench.py              # Public API: load_memory_bench, evaluate, summary_results
+├── configs/
+│   ├── datasets/               # each.json, domain.json, task.json
+│   ├── memory_systems/         # one JSON per baseline
+│   └── final_evaluate_summary_wo_details.json  # min/max/mu/sigma stats
+├── src/
+│   ├── memory_systems.py       # ← central registry of baselines
+│   ├── dataset/                # BaseDataset + per-dataset subclasses
+│   ├── agent/                  # Agent implementations
+│   ├── solver/                 # Per-baseline solvers
+│   ├── llms/                   # OpenAI / vLLM / Anthropic clients
+│   ├── generate_dialogs/       # Dialog-generation scripts
+│   ├── off-policy.py · on-policy.py · stepwise_off-policy.py · train_performance.py
+│   └── utils.py
+├── run_scripts/                # Sweep drivers (loops over every registered baseline)
+├── baselines/                  # Vendored upstream baselines (mem0, A-Mem, MemoryOS)
+├── frontend/                   # Streamlit app
+├── tests/                      # Unit + integration tests
+├── CONTRIBUTING.md             # How to add baselines / datasets
+└── README.md
+```
+
+---
+
+## 📝 Notes & Caveats
+
+- **`bert_score` truncation bug.** Some datasets (e.g. `JRE-L`) evaluate with [`bert_score`](https://github.com/Tiiiger/bert_score). Locally-loaded models don't truncate inputs — load from Hugging Face Hub to avoid "exceeding max length" errors.
+- **WritingBench evaluator.** Long-form writing datasets use a 7 B critic; we recommend serving [WritingBench-Critic-Model-Qwen-7B](https://huggingface.co/AQuarterMile/WritingBench-Critic-Model-Qwen-7B) via vLLM and pointing `WRITINGBENCH_EVAL_BASE_URL` at it.
+- **Mem0 cost.** `mem0` is slow on `Open-Domain` and `Long-Short`; the run scripts skip these combinations by default — `skip_combinations` in the registry entry.
+- **Secrets.** `API_config.json`, `.env*` (except `.env.example`), and `frontend/runtime_configs/` are all gitignored — see [`.gitignore`](.gitignore).
+
+---
+
+## Citation
+
+If you use MemoryBench in your research, please cite:
+
+```bibtex
+@inproceedings{memorybench2026,
+  title     = {MemoryBench: A Benchmark for Memory and Continual Learning in LLM Systems},
+  author    = {Qingyao Ai, Yichen Tang, Changyue Wang, Jianming Long, Weihang Su, Yiqun Liu},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
+  year      = {2026},
+  note      = {Spotlight}
 }
 ```
 
+(Full BibTeX will be updated once the camera-ready DOI is available.)
 
-**Example usage:**
+---
 
-```python
-from memorybench import evaluate
+## License
 
-evaluate_details = evaluate(
-    dataset_type='domain',
-    name='Open-Domain',
-    predicts=[
-        {"test_idx": 0, "response": "Hello World!", "dataset": "WritingPrompts"},
-        {"test_idx": 1, "response": "Another response.", "dataset": "DialSim-friends"},
-    ]
-)
-```
+Released under the MIT License. Upstream baseline code under [`baselines/`](baselines/) retains its original license — see each subdirectory's `LICENSE` file.
 
+---
 
-### Summary and Normalization
+## Acknowledgements
 
-The `evaluate` function produces per-sample metrics.
-To compute overall performance scores, please use the `summary_results` function.
+MemoryBench builds on prior datasets and memory systems from many open-source efforts: [LoCoMo](https://snap-research.github.io/locomo/), [DialSim](https://dialsim.github.io/), [HelloBench](https://github.com/Quehry/HelloBench), [WritingBench](https://github.com/X-PLUG/WritingBench), [IdeaBench](https://github.com/IdeaBench/IdeaBench), [LimitGen](https://github.com/zhenfenglu/LimitGen), [JRE-L](https://github.com/JRE-L), [JuDGE](https://github.com/JuDGE), [LexEval](https://github.com/CSHaitao/LexEval), [NFCats](https://github.com/NFCats), [WritingPrompts](https://github.com/aitorparra/writingprompts), [A-Mem](https://github.com/agiresearch/A-mem), [Mem0](https://github.com/mem0ai/mem0), and [MemoryOS](https://github.com/BAI-LAB/MemoryOS). Thank you to all upstream authors.
 
-For single datasets, it computes the mean of each metric directly.
-For domains or tasks, it additionally performs normalization across datasets using precomputed statistics.
-
-
-**Parameters:**
-
-* `dataset_type` (`single` | `domain` | `task`): same as above.
-* `name` (str): dataset/domain/task name.
-* `predicts` (list of dict): model predictions.
-* `evaluate_details` (list of dict): detailed results from the `evaluate` function.
-* `min_max_config_file` (str, default=`configs/final_evaluate_summary_wo_details.json`):
-  Configuration file containing normalization parameters (min, max, mean, std).
-
-The function returns a dictionary whose core field is `summary`, containing the averaged or normalized results.
-
-**Example usage:**
-
-```python
-from memorybench import evaluate, summary_results
-
-predicts = [
-    {"test_idx": 0, "response": "Your model's response here.", "dataset": "WritingPrompts"},
-    {"test_idx": 1, "response": "Another response.", dataset: "DialSim-friends"},
-    # Add more predictions as needed
-]
-
-evaluate_details = evaluate(
-    dataset_type='domain',
-    name='Open-Domain',
-    predicts=predicts
-)
-
-summary = summary_results(
-    dataset_type='domain',
-    name='Open-Domain',
-    predicts=predicts,
-    evaluate_details=evaluate_details
-)
-```
-
-## 🎯 Following Our Experiments
-
-Next, we will introduce how you can use our dataset to evaluate the capabilities of LLM systems . This includes how to replicate our experimental process, test your own systems, and compare the results with the baselines we provide. The section consists of the following five parts:
-
-1. Preparation: Dialogues Generation
-
-2. Off-policy Experiments
-
-3. Stepwise Off-policy Experiments
-
-4. On-policy Experiments
-
-5. Training Performance
-
-For the full experiments described in our paper, please refer to our [reproduction code](https://github.com/LittleDinoC/MemoryBench-code).
-
-<details>
-<summary>If you would like to directly use our code to test the baselines, click to see what you need to prepare.</summary>
-
-Our experiments use vLLM to deploy LLM services. You need to deploy models in a similar way:
-
-```
-vllm serve Qwen/Qwen3-32B --port 12345 --chat-template qwen3_nonthinking.jinja     # Qwen3-32B
-vllm serve Qwen/Qwen3-8B --port 12366 --chat-template qwen3_nonthinking.jinja      # Qwen3-8B
-vllm serve Qwen/Qwen3-Embedding-0.6B --port 12377 --task embed                     # Embedding Model
-vllm serve AQuarterMile/WritingBench-Critic-Model-Qwen-7B --port 12388             # Evaluation Model for WritingBench
-```
-
-If you deploy using these commands, you don't need to modify configuration files in `configs/memory_systems`. Otherwise, adjust the configuration files based on your own setup. Model configuration details can be found in `src/llms/`.
-
-We use Qwen3’s non-thinking mode via the official vLLM configuration. You can find more details in the [documents](https://qwen.readthedocs.io/en/latest/deployment/vllm.html#thinking-non-thinking-modes).
-
-For each memory system, the correspondence between paper names, code names, and configuration files (in the `configs/memory_systems`) is shown below:
-
-| Paper Name |	Code Name	| Config File |
-|--------------|----------------|----------------|
-| Vanilla  | wo_memory           | base.json |
-| BM25-M | bm25_message       | bm25.json |
-| BM25-S | bm25_dialog | bm25.json |
-| Emb-M | embedder_message  | embedder.json |
-| Emb-S | embedder_dialog   | embedder.json |
-| A-Mem | a_mem | a_mem.json |
-| Mem0 | mem0 | mem0.json |
-| MemoryOS | memoryos | memoryos.json |
-
-You can modify these configuration files to adjust parameters of each memory system.
-Their implementations can be found under `src/agent/`.
-
-</details>
-
-If you want to use the main experimental scripts, you can also implement your own memory system by following the interfaces provided in `src/agent/` and `src/solver/`.
-
-
-### 1. Preparation: Dialogues Generation
-
-For general datasets, we provide dialogues between the vanilla LLM and the User Feedback Simulator, which can be found in the `dialog` field of each data point.
-
-For datasets with corpora, such as LoCoMo and DialSim, since different systems has different memory behaviors, we seperately generate dialogues for each system. We provide dialogues generated before, which can be found in the `dialog_xxx` fields of each data point. For new systems, you can follow the behavior of the main script `src/generate_dialogs/reading.py` to generate dialogues, mainly including:
-
-1. Store the corpus into the system’s memory.
-
-2. For all data points in the training set, conduct conversations with the User Feedback Simulator:
-
-+ In the first round, use the original question and the retrieved memories as input.
-
-+ In subsequent rounds, use only the user feedback without retrieving additional memories.
-
-<details>
-<summary>Click to view the instructions for the dialogue generation script.</summary>
-
-You can run `run_scripts/create_dialogs.py` to generate dialogues for each dataset.  
-
-For datasets without a corpus, the main script is `src/generate_dialogs/basic.py`, which by default uses configurations `base.json` and `feedback.json` in the `configs/memory_systems/` directory for the vanilla LLM agent and the feedback agent, respectively. You can specify the dataset name with `--dataset`.
-
-Example command:
-
-```bash
-python -m src.generate_dialogs.basic --dataset JRE-L
-```
-
-For LoCoMo and DialSim, the main script is `src/generate_dialogs/reading.py`.
-You need to specify the memory system using `--memory_system` (matching a config file in `configs/memory_systems/`) and the dataset name using `--dataset`.
-
-Example command:
-
-```bash
-python -m src.generate_dialogs.reading --memory_system bm25_message --dataset Locomo-0
-```
-
-</details>
-
-### 2. Off-policy Experiments
-
-For all baselines, you can run the off-policy experiments using `python run_scripts/off_policy.py`.
-
-For new systems, you can refer to our main script `src/off-policy.py` to implement the off-policy experiments. The process mainly consists of the following steps:
-
-1. Load all training dialogues from the datasets, mix and shuffle them, and store them in the system memory.
-
-2. For the test data in each dataset, retrieve relevant memories to answer the questions.
-For datasets containing a corpus, the memory will include both the training dialogues from all datasets and the corpus of the current dataset when answering questions from that dataset.
-
-<details>
-
-<summary>Click to view usage instructions of the main script.</summary>
-
-The main script for running all off-policy experiments is `src/predict.py`. You need to specify the memory system using `--memory_system`, the `--dataset_type` (`domain` or `task`), and the `--set_name`(the specific domain/task name). 
-
-Example command:
-
-```bash
-python -m src.off-policy --memory_system bm25_message --dataset_type domain --set_name Open-Domain
-```
-
-You can find more detailed parameter configuration in the code, including the number of single retrievals (`--retrieve_k`, default is 5), etc. The results are stored in `off-policy/results` by default.
-
-Since the Mem0 method takes too long to run on Open-Domain and LiSo tasks,
-`run_scripts/off_policy.py` skips it by default — you can enable it manually if needed.
-
-</details>
-
-### 3. Stepwise Off-policy Experiments
-
-For all baselines, you can run the stepwise off-policy experiments using `python run_scripts/stepwise_off-policy.py`.
-
-For new systems, you can refer to our main script `src/stepwise_off-policy.py` to implement the stepwise off-policy experiments. The process mainly consists of the following steps:
-
-1. If the dataset contains a corpus, load the corpus into memory first.
-
-2. Load all training dialogues, shuffle them, and split them into batches.
-
-3. For each step:
-
-    + Load the next batch of training dialogues into memory.
-
-    + Test the system on the test data after the new memory has been added.
-
-<details> 
-
-<summary>Click to view usage instructions of the main script.</summary>
-
-The main script is `src/stepwise_off-policy.py`, sharing most of configuration options with the off-policy setup.
-Specifically, you can specify the `--batch_size` of dialogues to be memorized in a single step, which defaults to 100.
-The results are stored in `step_off-policy/results` by default.
-
-Example command:
-
-```bash
-python -m src.stepwise_off-policy --memory_system bm25_message --dataset_type domain --set_name Open-Domain
-```
-
-</details>
-
-### 4. On-policy Experiments
-
-For all baselines, you can run the on-policy experiments using `python run_scripts/on-policy.py`.
-
-For new systems, you can refer to our main script `src/on-policy.py` to implement the on-policy experiments. The process mainly consists of the following steps:
-
-1. If the dataset contains a corpus, load the corpus into memory first.
-
-2. Load all training dialogues, shuffle them.
-
-3. For each step:
-
-    + Sample a batch of training data points randomly and conduct conversations with the User Feedback Simulator to generate new dialogues (similar to the dialogue generation process described above).
-
-    + Load the generated dialogues into memory.
-
-    + Test the system on the test data after the new memory has been added.
-
-<details>
-
-<summary>Click to view usage instructions of the main script.</summary>
-
-The main script is `src/on_policy.py`, sharing most of configuration options with the off-policy setup.
-You can set `--max_rounds` to specify the number of conversation rounds (default is 3), `--batch_size` to specify the number of conversations to remember at a time (default is 100), and `--step` to specify the number of runs (default is 10)
-The results are stored in `on-policy/results` by default.
-
-Example command:
-
-```bash
-python -m src.stepwise_off-policy --memory_system bm25_message --domain Open-Domain --dataset_config configs/datasets/domain.json
-```
-
-</details>
-
-### 5. Training Performance
-
-For all baselines, you can run the off-policy experiments on training sets using `python run_scripts/train_performance.py`.
-
-For new systems, you can refer to our main script `src/train_performance.py` to implement the off-policy experiments. The process mainly consists of the following steps:
-
-1. Load all training dialogues from the datasets, mix and shuffle them, and store them in the system memory.
-
-2. For the **training** data in each dataset, retrieve relevant memories to answer the questions.
-For datasets containing a corpus, the memory will include both the training dialogues from all datasets and the corpus of the current dataset when answering questions from that dataset.
-
-<details>
-
-<summary>Click to view usage instructions of the main script.</summary>
-
-This experiment shares all configurations with off-policy experiments,
-using the same dialogues — the only difference is that answers are generated for the questions in the training set.
-
-The main script is `src/train_performance.py` and the results are stored in `train_performance/results` by default.
-
-Example command:
-
-```bash
-python -m src.train_performance --memory_system bm25_message --dataset_type domain --set_name Open-Domain
-```
+For questions and feedback, open an issue on GitHub or contact the maintainers.

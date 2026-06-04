@@ -21,6 +21,7 @@ from src.utils import (
     evaluate_and_summary,
 )
 from src.solver import SolverFactory
+from src import memory_systems
 
 from memorybench import load_memory_bench
 
@@ -120,9 +121,9 @@ def main(args):
     
     memory_solver, dialog_memory_cache_dir = build_solver("memory_cache", args, None)
 
-    # Load RC dataset corpus first
+    # Load RC dataset corpus first (for any dataset that ships one).
     for dataset in dataset_lists:
-        if dataset.dataset_name.startswith("Locomo") or dataset.dataset_name.startswith("DialSim"):
+        if dataset.has_corpus:
             print(colored(f"\nLoading corpus of dataset {dataset.dataset_name} to memory...\n", "yellow"))
             load_corpus_to_memory(memory_solver, dataset)
             print(colored(f"\nLoaded corpus of dataset {dataset.dataset_name} to memory.\n", "green"))
@@ -204,9 +205,9 @@ if __name__ == "__main__":
     parser.add_argument(
         "--memory_system",
         type=str,
-        required=True, 
+        required=True,
         help="The memory system to use",
-        choices=["a_mem", "mem0", "memoryos", "bm25_message", "embedder_message", "bm25_dialog", "embedder_dialog"],
+        choices=memory_systems.names_with_memory(),
     )
     parser.add_argument(
         "--memory_system_config",
