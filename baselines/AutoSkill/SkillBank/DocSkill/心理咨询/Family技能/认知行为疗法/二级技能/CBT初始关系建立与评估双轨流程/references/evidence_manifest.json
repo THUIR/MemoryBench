@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "89230ac8-b262-584c-b458-700189e2c832",
+  "skill_name": "CBT初始关系建立与评估双轨流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "da89a68d-275c-5ffd-b00e-340b6cc49a7b",
+      "doc_id": "2dabba43-805f-5c52-9794-2aebbd77361c",
+      "document_title": "tppc20200211774-783.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20200211774-783.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 5703,
+        "end": 6311
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "4.1进程\n第一阶段是诊断评估与咨询关系建立阶段，为第1、2次咨询，充分尊重个案，用开放性问题收集个案的详细资料；通过倾听、共情、无条件积极关注，让个案尽情倾诉，与其建立良好的咨询关系。并进行鉴别与诊断，根据医生的诊断确定咨询的方向。\n\n第二阶段是咨询阶段，为第3-10次咨询，每次在咨询开始前确定咨询目标，并紧贴咨询目标展开，在每次咨询结束后进行咨询小结。主要工作是继续加深咨询关系，让其感受到安全的氛围，让其能够处于安全、放松的情况下进行自我探索，同时采用资源取向的方式帮助个案看到自己从小到大这么多年所做的努力，帮助其看到自己的能力，减少无能为力的感觉，让其能够体会到对生活的掌控感。\n\n第3、4次咨询主要工作是先缓解个案的焦虑，让其发现其焦虑的事情的普遍性，接着紧贴着个案，透过他讲的手心出汗、未检查赛艇等事情，发现并确认羞愧、内疚、自责情绪，探索背后的自动化思维和中间信念。在咨询中帮助个案熟悉情绪与自动化思维和中间信念的先后顺序，以及具体内容。给个案布置家庭作业：观察生活中羞愧、害怕、焦虑情绪出现的时间，以及想法。具体如下图2所示：\n\n![](images/13bf55612ed11c4de0f0fdb15cb8f29d54c5fbe76bb9f74a312ebfca1bac5ea6.jpg)  \n图2个案的认知概念化图  \nFigure 2 The case concepturalization",
+      "metadata": {
+        "document_title": "tppc20200211774-783.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT初始关系建立与评估双轨流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "同步建立治疗联盟与完成临床评估",
+        "task_family": "CBT初始阶段",
+        "method_family": "CBT",
+        "stage": "initial",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "022d3f46-2f93-55e5-8cfe-27ace3a3d448",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 背景",
+          "2评估与分析",
+          "3 目标与计划",
+          "5 案例评价及反思",
+          "基金项目"
+        ],
+        "subsection_headings": [
+          "4.1进程",
+          "4.2案例讨论",
+          "4.3咨询效果"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一阶段是诊断评估与咨询关系建立阶段，为第1、2次咨询，充分尊重个案，用开放性问题收集个案的详细资料；通过倾听、共情、无条件积极关注，让个案尽情倾诉，与其建立良好的咨询关系。并进行鉴别与诊断，根据医生的诊断确定咨询的方向。"
+      }
+    }
+  ]
+}

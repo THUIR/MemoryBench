@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "cb7fdbac-e222-5214-ad0a-2ef99b0d632c",
+  "skill_name": "ABC理论导入与初步问题分析",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "36116903-49b1-5f32-bd43-a1c9916f04c8",
+      "doc_id": "50a68450-26c5-5b1f-9687-e853f9980d8b",
+      "document_title": "大学生失恋心理咨询的典型案例分析——基于合理情绪疗法_张雪梅.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/大学生失恋心理咨询的典型案例分析——基于合理情绪疗法_张雪梅.md",
+      "section": "七、咨询过程",
+      "span": {
+        "start": 3706,
+        "end": 4692
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "咨询大致分为：心理评估诊断与咨访关系建立、心理帮助、结束与巩固等三个阶段。\n\n第一阶段(第一次咨询)。咨询师填写咨询记录表，详细询问求助者基本情况，并介绍心理咨询的性质、限制以及咨询过程中有关事项与规则，给求助者进行必要的心理测验，如SAS和SDS；运用摄入性谈话收集资料，探询求助者的心理矛盾及改变意愿，确立咨询的内容和范围；将心理测验结果反馈给求助者，并做出初步问题分析，与求助者一同协商,确定咨询目标；向求助者简单介绍合理情绪疗法的基本理论模型（ABC理论模型）。\n\n第二阶段分两次咨询展开。第二次咨询时求助者在咨询师的后发和引导下认真思考和评估了失恋对自己的影响，从深层次挖掘自己的不合理信念，如“我不想和他分手。如果真的分手，我不知道我该怎么面对以后的生活，我习惯了两个人的世界”；“以后我该怎么和他相处，毕竟大家都是班委，抬头不见低头见”；“别的同学知道了会说我脚踏两只船\"等。针对上述列出的不合理信念，咨询师布置咨询家庭作业：要求该求助者对上述列出的不合理信念进行认真思考，帮助求助者把注意从过分关注自己的情绪和诱发事件转移到关注自己的不合理信念上来，让求助者逐渐领悟到自己的负性情绪是由不合理信念导致的。第三次咨询时咨询师运用修通技术与求助者商讨、辩论，引导求助者转变思维角度，建立合理信念。如\"自己并没有做什么对不起男友的事情，是他误会了自己，尝试主动与他沟通，把事情的原委向他说明”；“如果男友真的不能原谅自己，自己也要好好的生活下去，毕竟恋爱不是生活的全部，自己还有很重要的任务要去完成”；“别人怎么看是他们的事情，我无法要求每个人都说我好，可能每个人在一生当中都有被别人误解的时候”。咨询师布置家庭作业：要求求助者将原来列出的不合理信念与合理信念列表一一对比；进行认真思考，使求助者认识到合理信念对个体情绪的调节和促进作用[4]。\n\n第三阶段(第四次咨询)。求助者已认识到自己的消极情绪并不是恋爱失败本身造成的，而是对恋爱失败产生的不合理信念所引起的。求助者慢慢接受了合理信念，自我感觉良好，睡眠、饮食均有明显改善。心理测验结果显示：焦虑自评量表测试结果标准分为43分，抑郁自评量表测试结果标准分为46分。焦虑、抑郁等消极情绪症状已基本消失。在对求助者进行正面积极鼓励的同时，咨询师进一步引导求助者将积极地思维方式和认知评价扩展到其生活的其他领域。",
+      "metadata": {
+        "document_title": "大学生失恋心理咨询的典型案例分析——基于合理情绪疗法_张雪梅.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ABC理论导入与初步问题分析",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "在首次咨询中完成心理教育、基线评估与问题概念化",
+        "task_family": "认知行为干预",
+        "method_family": "CBT",
+        "stage": "initial_session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "0733e835-9e6d-5328-a78d-cec7b85218ab",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "七、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、一般资料",
+          "二、主诉和个人陈述",
+          "三、观察和他人反映",
+          "四、评估与诊断",
+          "五、咨询目标的制定",
+          "六、咨询方案的制定"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询大致分为：心理评估诊断与咨访关系建立、心理帮助、结束与巩固等三个阶段。"
+      }
+    }
+  ]
+}

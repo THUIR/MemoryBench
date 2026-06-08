@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "family_name": "人本-存在主义",
+  "skill_id": "5af5cb38-b109-504e-93a0-d7ca8e380ebc",
+  "skill_name": "亲子联结导向的成长日记作业",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "838eb6f8-093b-5771-973f-09638f7a5bec",
+      "doc_id": "5099fad7-8ac2-546e-a69d-72620f4df9d4",
+      "document_title": "产后忧郁心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/het/产后忧郁心理咨询案例报告.md",
+      "section": "# 5咨询目标的制定",
+      "span": {
+        "start": 3031,
+        "end": 3230
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "3)建议求助者放松情绪，听一些舒缓的音乐；注意充分休息；适当约见几个知心的朋友谈谈心；天气好时在外散步；制定合理饮食，少吃多餐；“随心所欲”不勉强做自己不想做的事，心情差时强迫自己分散注意力，多想一些美好的事情；也可以画淡装，让美丽和自信回到脸上；\n\n4)布置咨询作业：在孩子的身上找出自己的“影子”，看孩子在那些地方与自己相像，并为孩子写成长日记，记录她的一一笑；\n\n5)建议下次丈夫一起来咨询。",
+      "metadata": {
+        "document_title": "产后忧郁心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "亲子联结导向的成长日记作业",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "激活正向注意偏向与存在性联结体验",
+        "task_family": "意义建构",
+        "method_family": "人本-存在主义",
+        "stage": "干预实施",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "241cf362-58c6-5b7c-bc62-2a85cab41913",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 27,
+        "paragraph_end": 29,
+        "heading_path": [
+          "# 5咨询目标的制定"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 产后忧郁心理咨询案例报告",
+          "# 1一般资料",
+          "# 2主诉",
+          "# 3咨询师观察",
+          "# 4评估与诊断",
+          "# 6 咨询方案的制定"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "目的："
+      }
+    }
+  ]
+}

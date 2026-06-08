@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "0489bcfb-8d88-5929-9b99-364daef14d0d",
+  "skill_name": "向下箭头法探查核心信念",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "ad4d000e-1a00-5df3-b389-076a9c7bdf41",
+      "doc_id": "45bbd2fd-a74a-5ef6-bfe8-7eb587aca876",
+      "document_title": "tppc20250708508-517.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20250708508-517.md",
+      "section": "3 咨询过程",
+      "span": {
+        "start": 6806,
+        "end": 7683
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "注：SUDs（Subjective Units of Distress Scale）指来访者因诱发线索产生的主观困扰程度；回避程度指来访者通过回避的方式应对该主观困扰的程度；等级 $1 \\sim 1 0$ 依据 SUDs分值从高到低排列。\n\n咨询师向小C介绍了暴露与反应阻止技术（ERP）的基本原理：小C许按照“主观困扰程度从低到高”的顺序，逐步面对引发不适感受的诱发线索，开展逐级暴露训练；过程中需要保持在焦虑状态中，感受焦虑、不适感的自然消退，同时将暴露训练的结果与自身预想结果进行对比，验证“担心的糟糕结果是否真的会发生”。此外，无论是在咨询中的暴露训练环节，还是在生活中面对“想要清洁”的情境，小C 都可以继续使用证据法干预强迫思维，以降低灾难化想法的强度。\n\n暴露训练均采用“与强迫思维干预相结合”的方式。咨询师与小C讨论感受后发现：在接触诱发线索后，若能立即识别当前的自动思维，并采用证据法进行干预，可以有效降低她当前的焦虑感——而此时她也正处在焦虑感的峰值阶段。这意味着，通过识别并干预不合理信念，有助于降低小C因强迫思维引发的焦虑峰值，焦虑峰值示意图如图3所示：\n\n![](images/f5598740ac08f034566a5dfcea970a5f4e885b6da85666fab284b2f644cc5c0b.jpg)  \n图3暴露后识别并干预不合理信念降低小C的焦虑峰值示意图  \nFigure 3Peak of anxiety of C reduced by identifying and intervening irational beliefs\n\n同时，在小C多次识别“引发焦虑和后续强迫行为的不合理信念”的过程中，她对自己的灾难化想法的描述也逐渐变得更加具体。在第11、12次咨询中，咨询师使用“向下箭头法帮”助小C进一步梳理灾难化想法，最终引出了“世界是不安全的”的核心信念。经过讨论，小C发现“空气中也有细菌，但自己每天接触并无异常”这一信念，对她“接触‘脏东西’、面对‘不安全的世界’”有所帮助，能减少部分担忧。",
+      "metadata": {
+        "document_title": "tppc20250708508-517.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "向下箭头法探查核心信念",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "揭示并命名核心信念",
+        "task_family": "CBT",
+        "method_family": "cognitive_exploration",
+        "stage": "belief_identification",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "133885af-0cdc-54d9-af76-ff9dff8ffef5",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 14,
+        "paragraph_end": 18,
+        "heading_path": [
+          "3 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 研究背景",
+          "2个案情况",
+          "4 总结与讨论"
+        ],
+        "subsection_headings": [
+          "3.1 信息收集阶段（第1-4次）",
+          "3.2不合理信念的发现与干预阶段（第5-8次）",
+          "3.3　暴露与反应阻止技术阶段（第9-16次）",
+          "3.4结束阶段及效果评估（第17次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "在这个阶段中，咨询的主要目的是了解小C的个人信息，同时建立良好的咨访关系，促进咨询的顺利推进。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "心理动力学",
+  "profile_id": "psychology::心理动力学",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "a54a9d58-2478-58d2-9a7c-27658304fca3",
+  "parent_name": "共建恐惧等级表与启动分级暴露",
+  "children": [
+    {
+      "skill_id": "dd2ec080-a7cc-55d4-a934-ff16e6e397b3",
+      "name": "中等焦虑暴露家庭作业布置",
+      "description": "指导来访者每周至少进行2次引发中等焦虑水平的社交活动，并使用结构化情绪监控表记录情境、预期焦虑值（0–10）、实际焦虑值（0–10）、应对方式及反思。用于强化认知—行为联结，促进自我觉察与问题归因。",
+      "child_type": "行为作业",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "a54a9d58-2478-58d2-9a7c-27658304fca3",
+      "level_label": "微技能",
+      "taxonomy_class": "心理动力学",
+      "applicable_when": "指导来访者每周至少进行2次引发中等焦虑水平的社交活动，并使用结构化情绪监控表记录情境、预期焦虑值（0–10）、实际焦虑值（0–10）、应对方式及反思。用于强化认知—行为联结，促进自我觉察与问题归因。",
+      "selector_terms": [
+        "来访者理解‘中等焦虑’概念",
+        "已演示情绪监控表填写",
+        "表达改善意愿且无现实阻抗（如课程冲突）",
+        "暴露作业",
+        "情绪监控",
+        "中等焦虑",
+        "行为实验",
+        "结构化记录",
+        "来访者能区分轻/中/重度焦虑体验",
+        "已在咨询中完成至少1次放松技术练习",
+        "对暴露原理表现出基本信任",
+        "中等焦虑暴露家庭作业布置",
+        "指导来访者每周至少进行2次引发中等焦虑水平的社交活动，并使用结构化情绪监控表记录情境、预期焦虑值（0–10）、实际焦虑值（0–10）、应对方式及反思。用于强化认知—行为联结，促进自我觉察与问题归因。"
+      ],
+      "relative_path": "心理咨询/Family技能/心理动力学/微技能/中等焦虑暴露家庭作业布置/SKILL.md"
+    }
+  ]
+}

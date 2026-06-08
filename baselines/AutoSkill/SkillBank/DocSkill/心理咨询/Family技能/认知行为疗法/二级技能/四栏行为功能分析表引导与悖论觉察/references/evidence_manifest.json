@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "41d6e95c-0749-50d6-adc8-3b23eb489627",
+  "skill_name": "四栏行为功能分析表引导与悖论觉察",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "e64d5382-fd29-5cf9-8eb8-a73777d5f561",
+      "doc_id": "6a74e5b9-336f-52f1-b519-0a5c86e13eb9",
+      "document_title": "1例人际适应不良引发焦虑情绪咨询案例报告_张小梅.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例人际适应不良引发焦虑情绪咨询案例报告_张小梅.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 5393,
+        "end": 5684
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "小Z：好的，我试试。\n\n4.3第三阶段：通过行为干预改变来访者的不合理行为（第7\\~9次）\n通过上一阶段对三联表的练习，Z能较为准确地识别自己的自动思维，并能与不良认知展开辩论，调整为较为合理的认知，烦躁、焦虑的情绪得到了缓解，但仍回避与舍友、同学的交往，人际交往仍给其带来困扰，有想改善人际交往状况的动机。考虑到人际关系的不当处理有很大可能引发焦虑情绪，且二者是一个相互作用、相互影响的过程，因此，本阶段主要采用行为功能分析表（即三栏表后面加了回避行为和回避后情绪两列），帮助来访者意识到回避行为的负面影响，激发其改变行为的动机，从而调整自身行为。咨询片\n\n段（第7次咨询）如下。",
+      "metadata": {
+        "document_title": "1例人际适应不良引发焦虑情绪咨询案例报告_张小梅.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "行为功能分析表（四栏表）应用",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "识别并挑战人际回避行为的功能性误解",
+        "task_family": "行为干预",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "行为改变阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "f56bf315-35b4-5566-8d14-c6b759cdcc52",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 42,
+        "paragraph_end": 44,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案基本情况",
+          "2 个案概念化",
+          "3 咨询目标",
+          "5 效果评估",
+          "6 总结与反思"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：咨访关系的建立与问题评估阶段（第1～3次）",
+          "4.2第二阶段：运用认知行为疗法改变来访者的不合理信念（第4～6次）",
+          "4.3第三阶段：通过行为干预改变来访者的不合理行为（第7\\~9次）",
+          "4.4 第四阶段：效果巩固，结束咨询（10～11次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "此阶段重点在于建立良好咨访关系。首先采用罗杰斯以来访者为中心的疗法，在咨询过程中贯注真诚、共情、无条件积极关注，让Z在一个温暖、安全的环境中缓解焦虑情绪。其次收集Z的基本信息，包括成长经历、人际关系，并进行心境检查了解最近一周情绪强烈程度，从而列出Z最想解决的问题清单以及做出评估。最后，针对Z的想法进行初步的认知心理教育，向Z介绍“认知三角”，即认知、情绪和"
+      }
+    }
+  ]
+}

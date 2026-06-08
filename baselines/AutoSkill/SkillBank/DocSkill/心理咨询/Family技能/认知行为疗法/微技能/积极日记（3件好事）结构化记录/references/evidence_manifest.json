@@ -1,0 +1,74 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "b4d8596b-50ee-5485-ac96-5eaa1342df89",
+  "skill_name": "积极日记（3件好事）结构化记录",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "cfb553f3-3047-5189-9e27-5b60453706be",
+      "doc_id": "1f102a2e-29c7-5ebe-b952-d1bf20f49012",
+      "document_title": "基于贝克认知疗法的1例大学生心理咨询案例_钟倩.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于贝克认知疗法的1例大学生心理咨询案例_钟倩.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 7104,
+        "end": 7599
+      },
+      "relation_type": "support",
+      "confidence": 0.96,
+      "quote": "咨询师：你说得很好，这些诸如乱贴标签、以偏概全、武断推论都是我们认知疗法中所说的认知偏差或者认知扭曲，只有改变这些认知偏差，我们才能发现更好的自己。\n\n咨询师：那么我们接下来要制定一些家庭作业，以帮助你更好地认识自己，接纳自己。\n\n小D：好的。\n\n形成治疗联盟是贝克认知疗法的一个重要治疗技术，即咨询师通过与小D共同商议布置家庭作业，讨论可能的困难以及如何更有效完成家庭作业[2]。在家庭作业制定的过程中需注意可操作性及完成度。咨询师教给小D在咨询之外的时间尝试采用苏格拉底式自我对话，以改变其不良认知。同时，督促小D完成积极日记（3件好事的记录），以促进积极改变。\n\n5.3第三阶段：咨询巩固，重拾自信（第8、9次咨询）\n经过咨询，小D的情况有好转。最后一次咨询是寒假结束开学后的某一天，小D说到自己与母亲的问题，态度更加平和。说到自己的朋友，舍友时态度也较为客观。从其自述来看，能感觉到小D在处理人际关系过程中的坦然与平静。\n\n睡眠质量问题：从之前的“我真的好想好好睡一觉，我真的真的睡不着”到现在的“我本来就睡眠不好，舍友打呼说梦话总是把我吵醒”的表述，小D睡眠问题也有了一定的改善。",
+      "metadata": {
+        "document_title": "基于贝克认知疗法的1例大学生心理咨询案例_钟倩.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "积极日记（3件好事）结构化记录",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "重建积极情绪记忆提取通路",
+        "task_family": "行为激活",
+        "method_family": "CBT",
+        "stage": "中前期至巩固期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "06b93115-3df4-5365-87d8-39a0150946c9",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "苏格拉底",
+          "阶段"
+        ],
+        "paragraph_start": 69,
+        "paragraph_end": 74,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "基于贝克认知疗法的1例大学生心理咨询案例",
+          "1理论背景介绍",
+          "2 个案简介",
+          "3 个案概念化",
+          "4 咨询方案",
+          "6 咨询效果评估"
+        ],
+        "subsection_headings": [
+          "5.1第一阶段：建立咨访关系，问题评估（第1、2次咨询）",
+          "5.2第二阶段：识别不良认知，做出改变（第3～7次咨询）",
+          "5.3第三阶段：咨询巩固，重拾自信（第8、9次咨询）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本阶段为咨询初始阶段，目的是搜集相关资料，建立咨访关系。对来访者的心理问题做出初步判断，并据此与来访者商讨确定咨询目标、制定咨询方案。"
+      }
+    }
+  ]
+}

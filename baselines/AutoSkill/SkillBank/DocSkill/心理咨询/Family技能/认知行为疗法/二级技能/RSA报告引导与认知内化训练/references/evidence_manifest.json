@@ -1,0 +1,74 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "8fdbc24b-e096-5719-bd31-b8481088b771",
+  "skill_name": "RSA报告引导与认知内化训练",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "53468f43-8577-5760-b715-30d4684a83ec",
+      "doc_id": "588958ef-26a9-5c37-8a3d-cc264775e889",
+      "document_title": "1例大学生人际交往中内心冲突咨询案例报告_张玉.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例大学生人际交往中内心冲突咨询案例报告_张玉.md",
+      "section": "8 咨询过程",
+      "span": {
+        "start": 6381,
+        "end": 6759
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "来访者：我好像明白了。\n\n布置家庭作业：尝试对其他引起内心冲突的事件进行分析，寻找所持有的不合理信念。\n\n8.3第三阶段：第8～9次咨询\n8.3.1任务：对修正认知进行进一步训练，巩固前几个阶段咨询中取得的成果，帮助来访者进一步摆脱原有不合理信念及思维方式，强化新的合理的认知方式，并内化为其自身信念。\n\n8.3.2 方法：指导技术、自我奖惩。\n\n8.3.3过程：结合来访者完成的合理自我分析（rationalself-analysis，RSA）报告使来访者进一步熟悉建立合理认知方式的方法，通过鼓励和肯定对来访者的进步进行强化，同时引导来访者通过自我奖惩的方法进行自我强化，最终达到使合理的认知方式内化的目的，日后能够指导来访者进行自我管理和积极应对其他问题。此外，指导来访者充分利用社会支持系统，亦可尝试应用“黄金规则”改善当前寝室同学较为紧张的关系。",
+      "metadata": {
+        "document_title": "1例大学生人际交往中内心冲突咨询案例报告_张玉.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "RSA报告引导与认知内化训练",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "巩固修正后的认知方式并促使其内化",
+        "task_family": "cognitive_restructuring",
+        "method_family": "CBT",
+        "stage": "consolidation",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "4a801d2b-eb10-56b3-8193-60e07909fe9e",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 47,
+        "paragraph_end": 51,
+        "heading_path": [
+          "8 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 个人成长史",
+          "3 主诉与个人陈述",
+          "4观察和收集的资料",
+          "5 评估与诊断",
+          "6 原因分析"
+        ],
+        "subsection_headings": [
+          "8.1第一阶段：第1～3次咨询",
+          "8.2第二阶段：第4～7次咨询",
+          "8.3第三阶段：第8～9次咨询",
+          "8.4第四阶段（第10次咨询）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询阶段的划分[3]： $\\textcircled{1}$ 建立咨访关系与心理诊断阶段；$\\textcircled{2}$ 领悟、修通、再教育阶段； $\\textcircled{3}$ 巩固、评估、结束阶段。说明：咨询过程的每一阶段均在上级心理咨询师的指导下进行。"
+      }
+    }
+  ]
+}

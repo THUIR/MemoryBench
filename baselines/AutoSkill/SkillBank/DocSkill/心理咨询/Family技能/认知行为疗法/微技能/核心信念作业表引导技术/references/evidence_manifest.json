@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "e75d951d-21c9-53c6-8c8e-e79a250dc922",
+  "skill_name": "核心信念作业表引导技术",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "0f244316-67d4-5eeb-bde5-d16ed56ca932",
+      "doc_id": "a645ab70-e131-5373-833b-9e4dd8ecbfe4",
+      "document_title": "认知行为疗法在心理咨询中的适用性——基于1例抑郁情绪的个案概念化研究_乔佳.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/认知行为疗法在心理咨询中的适用性——基于1例抑郁情绪的个案概念化研究_乔佳.md",
+      "section": "3 咨询过程",
+      "span": {
+        "start": 4869,
+        "end": 6156
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "咨：非常好。通过这次的行为实验，你发现了什么？\n\nA：就是，有一些想法可能并不是事实，只是我们比较坚信它是事实而已。咨：哦，很好。你认为为什么有这样的情况出现呢?A：为什么？我不太明白。咨：也就是说，你长时间没有联系你的高中同学，为什么她仍然把你当成她的好朋友，而你却不这样想。你们两人对待同一件事情的想法却不一样。A：因为我们是不同的个体，想法自然会不一样。咨：那你认为是什么原因导致你们在同一件事上会有想法上的差异？A：嗯，我们的经历不一样，成长的环境不一样，所受的家庭教育也不一样。我想是这样的。咨：非常好。其实一个人对事情的认知会受到个人成长经历的影响，对吗？通过核心信念工作表（见表1）以及各种认知技术，对A的核心信念进行工作，从而找到新的核心信念，替代旧的核心信念，从根本上改变来访者的情绪及反应。\n\n表1 核心信念作业表\n\n3.4结束阶段（第12次）：巩固咨询效果，处理分离焦虑，预防复发\n此阶段的主要任务是通过无条件积极关注、赞美等，引导A回顾自身发展变化，让其看到自己所发生的改变。与A共同回顾整个咨询过程，对探讨的问题进行梳理和概括，总结促使其发生变化行之有效的治疗方法，与其共同复习，确认已经熟练掌握，帮助A成为自己的治疗师。此外，还要帮助A慢慢接受与适应分离的现实，探讨脱离咨询后，自己如何去应对生活困境，建立对未来的现实期许，鼓励A在日后生活中继续使用CBT相关技术，以应对复发或新的问题。",
+      "metadata": {
+        "document_title": "认知行为疗法在心理咨询中的适用性——基于1例抑郁情绪的个案概念化研究_乔佳.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "核心信念工作表引导技术",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促成核心信念层面的认知重构",
+        "task_family": "cognitive_restructuring",
+        "method_family": "CBT",
+        "stage": "belief_level",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "a013e6b0-0a70-558b-ac59-bbead9a7ba30",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "工作表",
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 4,
+        "paragraph_end": 8,
+        "heading_path": [
+          "3 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案基本情况",
+          "2 个案概念化",
+          "4 咨询效果",
+          "5 讨论与反思"
+        ],
+        "subsection_headings": [
+          "3.1开始阶段（第1～2次）：收集资料，建立关系，对问题进行初步评估，商定咨询方案",
+          "3.2第二阶段（第3～6次）：引导情绪准确表达，识别与挑战自动思维，进行认知重建",
+          "3.3第三阶段（第7～11次），识别和矫正功能不良的中间信念与核心信念，进行行为实验，促使问题行为发生改变",
+          "3.4结束阶段（第12次）：巩固咨询效果，处理分离焦虑，预防复发"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "针对来访者A的咨询时间为每周1次，每次约 $5 0 \\mathrm { { m i n } }$ ，持续3个月，共计12次，咨询共分为4个阶段。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "f5214c81-b950-5b77-a63d-73f44bc8a114",
+  "skill_name": "想象脱敏等级训练",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "7a616841-2e86-5e6c-9f98-9dfca580218e",
+      "doc_id": "e0d3cec6-4f7d-5669-afdb-815bd310bb72",
+      "document_title": "一则考试焦虑症的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一则考试焦虑症的心理咨询案例报告.md",
+      "section": "1.一般资料",
+      "span": {
+        "start": 3216,
+        "end": 3514
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "咨询师首先让来访者想象一个中性的情境，然后让她想象等级列表中最轻的恐惧情境想象脱敏。\n\n通过想象唤醒小慧与人交往时的焦虑状态，评估焦虑水平，然后运用放松技术进入放松状态，再次评估焦虑水平，直至焦虑水平达到最低值为止，每次可进行1～3个等级，视情\n\n况而定。\n\n经过脱敏治疗后，小慧能够在放松状态下想象与人交往的焦虑等级表的所有项目。在实际情境中也可以放松了。之后，咨询师用同样的方法解决了小慧的考试焦虑问题。\n\n3.3巩固与结束阶段\n是咨询的提高和总结阶段，共做一次\n\n3.4 咨询效果评估\n第8次咨询，再一次对小慧施测SCL-90,SDS、SAS量表，将测量结果与咨询前对照，进行咨询效果评估。",
+      "metadata": {
+        "document_title": "一则考试焦虑症的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "想象脱敏等级训练",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "系统降低特定情境下的焦虑反应",
+        "task_family": "焦虑管理",
+        "method_family": "行为主义",
+        "stage": "干预阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "ac1d5380-abe1-5f75-855d-6abdb0b86ff6",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 64,
+        "paragraph_end": 69,
+        "heading_path": [
+          "1.一般资料"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "4.咨询总结"
+        ],
+        "subsection_headings": [
+          "1.2个人成长史",
+          "1.3 主诉与个人陈述",
+          "1.4 观察和他人反映",
+          "1.5诊断",
+          "1.5.4 鉴别诊断",
+          "1.5.5原因分析",
+          "2.1 咨询目标的确立",
+          "2.2 理论原理和方法",
+          "2.3评估",
+          "3.2咨询阶段",
+          "3.3巩固与结束阶段",
+          "3.4 咨询效果评估"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "1.1一般情况"
+      }
+    }
+  ]
+}

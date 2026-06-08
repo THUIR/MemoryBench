@@ -1,0 +1,76 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "6ed4b8b1-3184-5fcf-b22f-34306544839d",
+  "skill_name": "不合理信念苏格拉底式辩论引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "9b2f1d55-e3d2-50fe-91ae-761fb906b44c",
+      "doc_id": "acc23d7b-984b-5540-a909-3dcc66efd109",
+      "document_title": "1例人际交往障碍心理咨询案例报告_李婕.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例人际交往障碍心理咨询案例报告_李婕.md",
+      "section": "7咨询过程",
+      "span": {
+        "start": 3433,
+        "end": 4924
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "7.1第一阶段：诊断评估和咨访关系建立阶段（第1～2次）\n（1）主要目标：建立咨访关系。了解来访者的基本情况，收集临床资料，确定来访者的主要问题，通过有效沟通问询建立信任、合作的咨询关系；进行初步的心理评估和诊断，双方共同协商得出可行的咨询目标和方案。（2）方法：摄入性会谈法、贝克认知疗法。（3）主要过程： $\\textcircled{1}$ 来访者填写咨询记录表； $\\textcircled{2}$ 咨询师介绍咨询中的有关事项，包括咨询的保密与保密例外原则，时间设置原则； $\\textcircled{3}$ 明确来访者的咨询问题及问题形成的可能原因，咨询时充分尊重来访者、认真倾听、积极关注，适当运用开放性问题收集来访者的详细资料； $\\textcircled{4}$ 评估来访者的当前状况（精神状态、社会功能等）； $\\textcircled{5}$ 协商确定咨询目标，介绍咨询原理，介绍贝克认知疗法、艾利斯合理情绪疗法和来访者中心疗法的基本原理，帮助来访者分析目前问题的成因，做好心理教育工作；$\\textcircled{6}$ 布置家庭作业，确定下一次来访时间，运用贝克认知疗法的识别矫正技术，让来访者回忆人际交往时的负性自动想法，查找出负性假设和不合理信念。\n\n7.2第二阶段：心理帮助阶段（第3～5次）\n（1）主要目标：通过合理情绪疗法中的与不合理信念辩论技术，配合来访者中心疗法，改善来访者的焦虑情绪，并对来访者的不合理信念进行矫正。（2）方法：会谈法、贝壳认知疗法、合理情绪疗法、来访者中心疗法。（3）主要过程： $\\textcircled{1}$ 巩固家庭作业。同来访者一起找到引起本人人际交往障碍的情境、自动思维、负性假设等。 $\\textcircled{2}$ 行为激活。回避、逃避和压抑加重了人际交往障碍的症状，鼓励来访者尝试积极应对的方式，主动交流，表达自己的诉求，看看是否会遭受到不公正的对待。 $\\textcircled{3}$ 识别负性自动想法。帮助来访者认识到目前的焦虑情绪，并非简单来自与家人或室友的矛盾，更多的是因为自己的负性自动想法和随之产生的不合理信念导致。 $\\textcircled{4}$ 认识自己的不合理信念，并加以矫正。让来访者对自己遇到的问题进行分析，找到分析过程中暴露的不合理的信念，尝试与自己的不合理信念进行辩论，体会合理信念的力量。 $\\textcircled{5}$ 运用来访者中心疗法技术，引导来访者关注自身的积极力量。通过引发来访者的自省功能，从具体事件入手，使来访者从关注他人的问题转移到自身行为上。在转换过程中，咨询师要鼓励来访者进行换位思考，体验理解和宽容他人的快乐。 $\\textcircled{6}$ 布置家庭作业。要求来访者找出与之产生矛盾的同学的五条优点，并主动与其进行沟通。\n\n7.3第三阶段：巩固和结束阶段（第6次）\n（1）主要目标：巩固咨询成果，鼓励来访者坚持正确的信念，关爱他人，进一步认识自己何为正确健康的思维和行为模式，将咨询中学习领悟到的知识应用到实际生活中去。（2）方法：会谈法。（3）主要过程： $\\textcircled{1}$ 对前面的咨询工作进行小结； $\\textcircled{2}$ 检查来访者的作业，要求来访者谈谈自己的感受及人际关系的变； $\\textcircled{3}$ 表扬和鼓励来访者的行为，肯定来访者的咨询态度，鼓励来访者积极参加集体活动，主动与人交谈，提高人际交往能力，更好地适应校园生活； $\\textcircled{4}$ 咨询结束后分离的处理。",
+      "metadata": {
+        "document_title": "1例人际交往障碍心理咨询案例报告_李婕.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "不合理信念辩论引导脚本",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促发认知弹性，削弱绝对化、灾难化信念的自动化强度",
+        "task_family": "cognitive_debate",
+        "method_family": "CBT",
+        "stage": "mid_session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "a1fdc147-8c9d-517e-bbb1-955f43339b09",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "会谈",
+          "咨询目标",
+          "家庭作业",
+          "作业",
+          "行为激活"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "7咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 主诉与个人陈述",
+          "3评估与鉴别诊断",
+          "4 病因分析",
+          "5 制定咨询目标",
+          "6咨询原理"
+        ],
+        "subsection_headings": [
+          "7.1第一阶段：诊断评估和咨访关系建立阶段（第1～2次）",
+          "7.2第二阶段：心理帮助阶段（第3～5次）",
+          "7.3第三阶段：巩固和结束阶段（第6次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "（1）主要目标：建立咨访关系。了解来访者的基本情况，收集临床资料，确定来访者的主要问题，通过有效沟通问询建立信任、合作的咨询关系；进行初步的心理评估和诊断，双方共同协商得出可行的咨询目标和方案。（2）方法：摄入性会谈法、贝克认知疗法。（3）主要过程： $\\textcircled{1}$ 来访者填写咨询记录表； $\\textcircled{2}$ 咨询师介绍咨"
+      }
+    }
+  ]
+}

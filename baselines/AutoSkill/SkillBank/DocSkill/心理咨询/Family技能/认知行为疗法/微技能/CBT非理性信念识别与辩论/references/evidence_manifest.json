@@ -1,0 +1,141 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "4b2e125c-7e71-5842-b4d5-ac2150b9739b",
+  "skill_name": "CBT非理性信念识别与辩论",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "11e040c3-89ad-50ed-bb57-e0d064f779d0",
+      "doc_id": "2ab372b2-584a-5faf-ba89-e5f790672b24",
+      "document_title": "1例因入学适应与失恋引发心理问题的心理干预个案报告_王人立.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例因入学适应与失恋引发心理问题的心理干预个案报告_王人立.md",
+      "section": "6 咨询过程",
+      "span": {
+        "start": 7309,
+        "end": 7760
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "来：嗯，应该是的。\n\n通过帮助来访者意识到以往信念是不合理、不现实、不符合逻辑、没有依据的，从而意识到理性和非理性信念的区别，并用合理信念取代不合理信念，使其从更客观理性的角度分析，建立客观积极的自我认知，能够悦纳自我。运用支持性心理治疗给予来访者充分的关注和尊重，运用解释指导技术，梳理事实、理清思路，阐释来访者的问题，给予来访者建议，从而帮助来访者找到解决问题的恰当方式，提高其人际交往能力，缓解迷茫焦虑情绪。\n\n6.4第五次咨询\n运用合理情绪疗法，进一步帮助来访者意识和调整自身的不合理信念，并探索是否存在与本事件无关的非理性信念并与之辩论。\n\n来：我感觉各方面都不如别人，感觉身边人都比我优秀。\n\n咨：你觉得你认识的所有人都比你优秀。\n\n来：是的。\n\n咨：那你肯定是你认识人里面高考成绩最差的，平时课程作业成绩也是班级里最差的。\n\n来：这个倒不是，我高中成绩挺好的，平时作业成绩不太好，但也没有很差。\n\n咨：那你说感觉所有人都比你优秀，后面又说高考和平时成绩都还可以，存在前后矛盾，如何解释呢？",
+      "metadata": {
+        "document_title": "1例因入学适应与失恋引发心理问题的心理干预个案报告_王人立.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT非理性信念识别与辩论",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "识别并挑战非理性信念",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "认知干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "bce3c205-845f-532e-8479-f5fcd5b7a11c",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 23,
+        "paragraph_end": 31,
+        "heading_path": [
+          "6 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例因入学适应与失恋引发心理问题的心理干预个案报告",
+          "1一般资料",
+          "2主诉",
+          "3 评估诊断",
+          "4 咨询方案",
+          "5 咨询目标"
+        ],
+        "subsection_headings": [
+          "6.1第一次咨询",
+          "6.2第二次咨询",
+          "6.3第三、四次咨询",
+          "6.4第五次咨询",
+          "6.5第六次咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "通过摄入性会谈了解来访者的基本情况，进行资料收集，个案概念化。运用个人中心疗法和支持性心理治疗，关注、接纳、肯定来访者，建立信任、开放、平等的咨访关系。通过鉴别性会谈，进行初步诊断和鉴别诊断，运用合理情绪疗法进行心理诊断，挖掘来访者内心的情绪问题并进行分类，找到来访者最迫切希望解决的问题，共同协商咨询目标和方案。会谈结束时再次重申保密原则，建立信任的咨访关系"
+      }
+    },
+    {
+      "support_id": "e4bbc151-cca9-533e-a4d4-b48061a62528",
+      "doc_id": "e507e5e0-272c-5bd3-bf08-7d9f71931070",
+      "document_title": "一位高中男生焦虑情绪的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一位高中男生焦虑情绪的心理咨询案例报告.md",
+      "section": "# 一应高中男生焦虑情绪的心理咨询案例报告",
+      "span": {
+        "start": 6195,
+        "end": 6618
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "$\\textcircled{3}$ 巩固咨询效果。针对C所焦虑的威信降低问题，帮助C进行合理归因。首先，明确C所认为的威信高的同学有哪些，并尽可能全面地描述他们的特点。除了C所强调的对同学大吼大叫以外，还有别的方面，例如学习、生活、与同学相处等，与他们进行比较，明确自己还需要改进的方面，以及引导C思考改进的方法，并帮助C建立改进的信心 心。\n\n$\\textcircled{4}$ 布置咨询作业。有意识地改变C头脑中的不合理信念，多与同学沟通交流，提高自身多方面的素质，例如学习、生活、人际交往等。对于C班干部经验不足的问题，可以多向班级或年级里，甚至校外有经验的同学、朋友和老师请教，学习并实践班级管理的方法和经验，记录这段时间的心得与感受。\n\n# 六、咨询效果评估\n$\\textcircled{1}$ 前两次咨询结束后进行阶段评估，C的焦虑情绪问题逐步得到缓解。\n\n$\\textcircled{2}$ 班主任老师反映C情绪明显好转，更加自信。",
+      "metadata": {
+        "document_title": "一位高中男生焦虑情绪的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "威信焦虑的合理归因干预",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "修正威信相关不合理信念",
+        "task_family": "认知重构",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "咨询中后期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "201b085c-841d-5552-b12a-ba2e9e299e01",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 61,
+        "paragraph_end": 64,
+        "heading_path": [
+          "# 一应高中男生焦虑情绪的心理咨询案例报告"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "# 1.一般情况",
+          "# 2.问题表现",
+          "# 3.主诉和个人陈诉",
+          "# 4.咨询师观察",
+          "# 二、评估与诊断",
+          "2.对该来访者诊断的依据如下：",
+          "# 三、咨询目标的制定",
+          "# 四、咨询方案的制定",
+          "# 2.咨询原理：",
+          "# 1.咨询关系的建立与评估诊断阶段",
+          "第一次咨询的主要任务：",
+          "# ★第二次咨询：",
+          "第二次咨询的主要任务：",
+          "# 六、咨询效果评估",
+          "# 七、讨论与思考",
+          "# 专家点评"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "C，男，16岁，身高约1.70米，某中学高一年级重点班学生，身材中等，为本班班长。家庭经济条件较富裕，家中有一个弟弟。C无重大躯体疾病历史，家族成员无精神疾病史，父母婚姻状况良好，未接受过心理咨询。"
+      }
+    }
+  ]
+}

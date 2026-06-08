@@ -1,0 +1,37 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "人本-存在主义",
+  "profile_id": "psychology::人本_存在主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "2c230623-3688-59b4-93b9-736843808845",
+  "parent_name": "以人为中心疗法核心关系建构",
+  "children": [
+    {
+      "skill_id": "ac295c34-95a6-570c-a131-bdc8a24c7daa",
+      "name": "人本主义初始关系建立协议",
+      "description": "在首次咨询中，通过明确权责、签署保密协议、解释保密例外、摄入性谈话与共情倾听，系统建立安全、接纳的咨询关系。适用于求助者初访且存在人际信任脆弱性时。",
+      "child_type": "关系建立",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "2c230623-3688-59b4-93b9-736843808845",
+      "level_label": "二级技能",
+      "taxonomy_class": "人本-存在主义",
+      "applicable_when": "在首次咨询中，通过明确权责、签署保密协议、解释保密例外、摄入性谈话与共情倾听，系统建立安全、接纳的咨询关系。适用于求助者初访且存在人际信任脆弱性时。",
+      "selector_terms": [
+        "求助者为首次来访大学生",
+        "主诉涉及人际敏感或信任困难",
+        "需快速建立安全感与表达意愿",
+        "首咨",
+        "信任建立",
+        "保密协议",
+        "摄入性谈话",
+        "共情倾听",
+        "人本主义初始关系建立协议"
+      ],
+      "relative_path": "心理咨询/Family技能/人本-存在主义/二级技能/人本主义初始关系建立协议/SKILL.md"
+    }
+  ]
+}

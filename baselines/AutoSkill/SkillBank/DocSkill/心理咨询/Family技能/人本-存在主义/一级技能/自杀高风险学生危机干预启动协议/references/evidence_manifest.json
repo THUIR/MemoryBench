@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "family_name": "人本-存在主义",
+  "skill_id": "6aaacd70-dc4f-599e-b55a-784c9415a73c",
+  "skill_name": "自杀高风险学生危机干预启动协议",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "2aa7095f-530e-57f5-a8c8-81fa3630b79a",
+      "doc_id": "fa70259e-19e2-5ba7-928d-c54ffa1acd09",
+      "document_title": "1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/het/1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+      "section": "3 案例分析",
+      "span": {
+        "start": 2410,
+        "end": 3127
+      },
+      "relation_type": "constraint",
+      "confidence": 0.98,
+      "quote": "每当这样的情况出现小Y总是告诉自己不要想太多，但当得到的回应不是自己想要的时，就会回避和这位朋友的接触，以此来保护自己避免伤害。但同时又有交往的需求，在社交过程中处于敏感而矛盾的状态，让其感到很孤独和绝望，内心也非常痛苦和煎熬，想通过自杀让自己摆脱当下的痛苦。\n\n3.2评估与诊断\n3.2.1评估：本校使用症状自评量表（symptomchecklist-90，SCL-90）与大学生人格问卷（universitypersonalityinventory，UPI）进行对新生进行入学测评，小Y测评结果为一级预警，SCL-90中各维度均超过预警分数2分，其中抑郁维度4.1分、焦虑维度3.7分、人际敏感维度3.6分，UPI中25题选择“是”。据研究结果显示，抑郁（轻度、中度和重度抑郁症）、社会支持不足、药物滥用、自我耻辱感和创伤性生活事件与心理危机风险因素相关，并阻碍主观幸福感的体验，还有可能形成心理困扰和不良心理健康的根源[。所以在回访过程中就小Y的抑郁情绪持续时间、主观的痛苦程度、人际交往状况、自杀意念的强度、频率、是否有具体计划等，做了进一步的评估。小Y从高考结束后一直沉浸在抑郁情绪中，食欲差，情绪低落时易哭，主观感受痛苦想摆脱但摆脱不了从而出现自杀意念并有自杀计划。自杀意念强烈，频率为一周2次，并会受环境影响出现不同的自杀想法，例如看到高楼就会想跳楼、过马路时想冲到车流中。在学校时也多是独来独往，缺乏人际互动和支持。评估为自杀高风险学生，知情同意后采取了保密突破和启动危机干预。\n\n3.2.2专科医院诊断：初次诊断为抑郁状态，重度抑郁、中度焦虑、存在强迫症状。服用马来酸氟沙明片，并在医嘱上注明家属需做好患者自杀防护。",
+      "metadata": {
+        "document_title": "1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "自杀高风险学生危机干预启动协议",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "safety_module",
+        "asset_path": "family_root/safety_module",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "确保高危来访者即时安全并激活校内外支持系统",
+        "task_family": "危机响应",
+        "method_family": "人本-存在主义",
+        "stage": "危机初期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "ac7bbaec-b59c-58c0-aa38-5231fad215e8",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "危机干预"
+        ],
+        "paragraph_start": 2,
+        "paragraph_end": 4,
+        "heading_path": [
+          "3 案例分析"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案概况",
+          "2 案例介绍",
+          "4咨询方案与咨询目标",
+          "5 咨询过程",
+          "6 咨询效果与反思"
+        ],
+        "subsection_headings": [
+          "3.1来访者主诉",
+          "3.2评估与诊断",
+          "3.3个案概念化"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "小Y主要求助的问题是怎么在自己遇到不能承受的事情时避免出现自杀想法。“自己不能承受的事情”是指对于一些不符合自己期待的事情出现后放大的一种感受，例如对现有专业不感兴趣、和舍友关系不好等，反刍和自我否定，认为自己是不被爱的，继而出现持续性的情绪低落，并多次出现自杀意念。"
+      }
+    }
+  ]
+}

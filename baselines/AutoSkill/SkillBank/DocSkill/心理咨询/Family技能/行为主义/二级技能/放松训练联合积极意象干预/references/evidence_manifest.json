@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "3d62713c-31c0-5c83-b8db-cd659323a061",
+  "skill_name": "放松训练联合积极意象干预",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "31f79466-2f07-5fcf-a1e7-a0887a2a0cdc",
+      "doc_id": "cb61b3ab-94f9-598b-9a88-e0f8477ab3c1",
+      "document_title": "一例口吃患者的心理咨询案例报告_白春涛.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例口吃患者的心理咨询案例报告_白春涛.md",
+      "section": "# 六、咨询过程",
+      "span": {
+        "start": 4549,
+        "end": 4767
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "过程：在进行放松训练之前,通过面谈了解求助者以往的成功经验以及将来的理想生活。在进行放松训练时，让其想像其以往的成功体验或未来的理想生活来调动积极情绪，使之与原来的不良的刺激情境建立新的反射，产生新的积极情绪反应。\n\n布置家庭作业：每天晚上临睡前进行自我放松练习。\n\n# (三）巩固与结束阶段\n第六次2008年12月3日\n\n巩固训练效果。放松训练后对训练结果进行了一次初步检查，测得SAS标准分达到正常范围，鼓励他继续努力进行放松训练。",
+      "metadata": {
+        "document_title": "一例口吃患者的心理咨询案例报告_白春涛.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "放松训练联合积极意象干预",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "通过经典条件反射原理重构情绪反应",
+        "task_family": "行为矫正",
+        "method_family": "行为主义",
+        "stage": "情绪调节与反应替代",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "b9f1dc37-77e2-52d4-addc-11b8f5f2f29c",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 29,
+        "paragraph_end": 32,
+        "heading_path": [
+          "# 六、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、一般资料",
+          "三、评估与诊断",
+          "第五、六次咨询",
+          "# 四、咨询目标的制定",
+          "# 五、咨询方案的制定",
+          "# 七、咨询效果评估"
+        ],
+        "subsection_headings": [
+          "# （一）咨询关系建立和诊断阶段",
+          "# (二）实施心理帮助的咨询阶段",
+          "# (三）巩固与结束阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一次2008年11月11日"
+      }
+    }
+  ]
+}

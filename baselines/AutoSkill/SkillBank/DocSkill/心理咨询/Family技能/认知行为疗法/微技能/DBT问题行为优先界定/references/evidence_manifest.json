@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "e87987f3-f26d-5e62-8778-20433b130467",
+  "skill_name": "DBT问题行为优先界定",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "10939a8a-6880-503e-a97b-ec34b5800cfc",
+      "doc_id": "50dd0eed-ca18-5368-a1a8-373e2fd49b67",
+      "document_title": "1例青少年抑郁症辩证行为治疗的个案报告_杨天宇.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例青少年抑郁症辩证行为治疗的个案报告_杨天宇.md",
+      "section": "4治疗目标及过程",
+      "span": {
+        "start": 2367,
+        "end": 2679
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "第二次治疗：分为以下三个部分。 $\\textcircled{1}$ 介绍DBT。②问题行为界定。根据DBT问题行为优先原则，与来访者讨论后将问题行为界定为自伤行为。 $\\textcircled{3}$ 行为链分析。对问题行为进行分析。④制定日记卡。\n\n在行为链分析的基础上，治疗师运用认可技术，以辩证的视角对来访者自伤行为进行解读，表示自伤是面对问题时所采用的策略，并强调“使用技能并不会像自伤一样让你快速地离开痛苦，但技能的副作用很小。”以增强来访进入团体技能训练的动机。临近治疗结束时，与来访者一起制定日记卡并交给来访者。部分对话如下。\n\n治疗师：刚才我们一同完成了行为链分析，对自伤这个行为进行分析之后，你的感觉如何？",
+      "metadata": {
+        "document_title": "1例青少年抑郁症辩证行为治疗的个案报告_杨天宇.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "DBT问题行为优先界定",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "锚定DBT干预焦点，确保后续行为链分析与技能训练指向最高风险行为",
+        "task_family": "DBT行为评估",
+        "method_family": "CBT",
+        "stage": "early",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "07de2c96-91ae-5800-8a1d-1529bc2ff248",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 4,
+        "paragraph_end": 6,
+        "heading_path": [
+          "4治疗目标及过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例青少年抑郁症辩证行为治疗的个案报告",
+          "1个案情况",
+          "2 问题评估",
+          "3 个案概念化",
+          "5 治疗效果评估",
+          "6讨论"
+        ],
+        "subsection_headings": [
+          "4.1治疗目标",
+          "4.2治疗过程"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "遵循辩证行为疗法对来访者进行心理治疗。辩证行为疗法相信来访者受情绪控制困难之苦。尽管这些困难并非由来访者自己造成，但需要来访者自己解决。基于以上假设，并结合来访者实际，治疗目标如下：短期目标： $\\textcircled{1}$ 减少自伤行为； $\\textcircled{2}$ 增强治疗动机； $\\textcircled{3}$ 获得相应技能以应对问题；"
+      }
+    }
+  ]
+}

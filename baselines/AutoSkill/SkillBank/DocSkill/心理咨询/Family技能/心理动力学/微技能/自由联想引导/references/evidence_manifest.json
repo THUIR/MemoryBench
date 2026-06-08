@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "897d86df-a384-5707-a691-e78e1d44d1c0",
+  "skill_name": "自由联想引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "98fc5192-2f47-5104-91a0-afbcf2954a9a",
+      "doc_id": "d7d235f4-1e46-54ee-841d-71eb10144e5c",
+      "document_title": "pc202406122288-2292.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/pc202406122288-2292.md",
+      "section": "1自由联想技术",
+      "span": {
+        "start": 925,
+        "end": 1191
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "1.1　操作方法\n自由联想是一种基本的心理咨询技术，也可用作梦的分析。按照弗洛伊德（Sigmund Freud，1856—1939）的精神分析的理论，梦有显相和隐意之分。显相指的是梦中的情境和事件，而隐意则是隐藏在显相后面的无意识动机。显相是一种象征性的语言，例如一个女人梦见自己偷了闺蜜的结婚戒指来戴，这是梦的显相，其象征的真实欲望则可能是她爱上了闺蜜的丈夫。释梦工作就是通过梦的显相，来揭示梦之隐意，基本方法是对梦境的意象进行自由联想，然后综合梦中的情绪、联想结果等梦的隐意加以解析。\n\n对此，弗洛伊德构想出了梦的分析三个原则。",
+      "metadata": {
+        "document_title": "pc202406122288-2292.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "自由联想引导",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "激活无意识联想链",
+        "task_family": "释梦",
+        "method_family": "心理动力学",
+        "stage": "探索",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "e09f4976-5ed9-5e46-9b99-5877757781c8",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 1,
+        "heading_path": [
+          "1自由联想技术"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "释梦技术在心理咨询中的应用",
+          "2梦的对话",
+          "3 “回到梦境本身”",
+          "4 伦诺克斯释梦三步法",
+          "5讨论"
+        ],
+        "subsection_headings": [
+          "1.1　操作方法",
+          "1.2.1 梦境记录",
+          "1.2.2梦的解析",
+          "1.2.3梦的启示"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "自由联想是一种基本的心理咨询技术，也可用作梦的分析。按照弗洛伊德（Sigmund Freud，1856—1939）的精神分析的理论，梦有显相和隐意之分。显相指的是梦中的情境和事件，而隐意则是隐藏在显相后面的无意识动机。显相是一种象征性的语言，例如一个女人梦见自己偷了闺蜜的结婚戒指来戴，这是梦的显相，其象征的真实欲望则可能是她爱上了闺蜜的丈夫。释梦工作就是通过"
+      }
+    }
+  ]
+}

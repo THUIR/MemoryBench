@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "5a855d67-fbaf-58ca-8db1-705c38c34c0f",
+  "skill_name": "CBT社交恐惧症暴露练习结构化方案",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "d93be177-c915-564e-8859-0522732cef2e",
+      "doc_id": "43570a23-0421-59db-a6aa-a543d44b5ba7",
+      "document_title": "一例大学生社交恐怖症的心理分析与治疗_兰珊珊.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/一例大学生社交恐怖症的心理分析与治疗_兰珊珊.md",
+      "section": "一例大学生社交恐怖症的心理分析与治疗",
+      "span": {
+        "start": 3555,
+        "end": 3858
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "运用认知行为疗法进行第二次至第四次的咨询过程：\n\n(1)告诉求助者什么是社交恐惧,什么是焦虑，有些什么样的症状。认知行为疗法的治疗过程和要求，向求助者说明治疗不会一帆风顺,需要本人的积极配合，坚持完成治疗中的作业练习，才能使症状得到改善。\n\n（2)治疗求助者的回避行为：告知求助者，‘回避行为”使她的症状加重，可以通过暴露练习减少“回避行为”。进行暴露练习时,利用情绪监控表，记录自己焦虑的情绪变化，按照情绪监控表中记录下的产生中等焦虑的情景设计交往活动，规定求助者每周进行两次这样的交往活动。为提高治疗的效果，帮助求助者能主动发现问题和寻找对策，要求她在跟他人交往时记录下自己的心理反应，并及时进行反思。",
+      "metadata": {
+        "document_title": "一例大学生社交恐怖症的心理分析与治疗_兰珊珊.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT社交恐惧症暴露练习结构化方案",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "降低回避行为，增强对中等焦虑社交情景的耐受与应对能力",
+        "task_family": "exposure_therapy",
+        "method_family": "CBT",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "2734ceec-30d2-5e45-b324-5942f278fb46",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 33,
+        "paragraph_end": 35,
+        "heading_path": [
+          "一例大学生社交恐怖症的心理分析与治疗"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "一、求助者的一般资料",
+          "二、主诉和个人陈述",
+          "三、咨询师的观察和周围人的反映",
+          "(一)心理测验结果分析",
+          "(二)心理问题的评估与诊断",
+          "五、与求助者共同制定咨询目标",
+          "(一)咨询方案",
+          "(二)咨询过程",
+          "七、咨询效果的追踪调查与讨论"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "兰珊珊"
+      }
+    }
+  ]
+}

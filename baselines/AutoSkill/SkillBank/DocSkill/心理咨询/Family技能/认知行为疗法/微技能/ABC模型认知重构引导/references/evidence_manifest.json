@@ -1,0 +1,123 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "089c12a7-2d66-5a9a-8352-8614754fb8d9",
+  "skill_name": "ABC模型认知重构引导",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "f7f350b2-fabe-5e36-bcd6-cbbcb5d456c5",
+      "doc_id": "2b45d285-6007-5130-a957-95a319d75726",
+      "document_title": "基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+      "section": "# 6 咨询过程",
+      "span": {
+        "start": 3516,
+        "end": 3795
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "以下是咨询谈话摘录。\n\n咨询师：不同的想法会导致不同的情绪。你认为父母把你寄养在爷爷奶奶家，是因为你父母不喜欢你。你认为你父母不喜欢你，是因为你不如弟弟，比弟弟差。这是片面偏激的理念，是一种以偏概全的不合理思维方式。就算父母把你寄养在爷爷奶奶家，也不是因为父母不喜欢你啊，父母说你成绩不如弟弟好，但没说你什么都比不上弟弟啊。这种片面的自我否定会导致你觉得自己低人一等和焦虑不安。如果你能意识到你现在的情绪是自己的那些不合理的想法引起的，那么你就可以控制自己的情绪了。在心理学中有个理论叫合理情绪疗法（运用解释影响性技术）\n\n求助者：嗯，我明白了（略有所思）。",
+      "metadata": {
+        "document_title": "基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ABC模型认知重构引导",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "识别并松动不合理信念",
+        "task_family": "认知重构",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "咨询中期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "c5368fdd-53ed-5901-9bf2-bba56b555b2d",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 11,
+        "paragraph_end": 13,
+        "heading_path": [
+          "# 6 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1 基本情况",
+          "# 2 主诉和个人陈述",
+          "# 3 评估与诊断",
+          "# 4 咨询目标的制定",
+          "# 5咨询方法与原理",
+          "# 7咨询效果评估"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询过程大致分3阶段进行，第一阶段建立咨询关系（第1次咨询），完成心理测验，做出诊断和评估，商定咨询目标。第二阶段为心理咨询阶段（第2～5次咨询）， $\\textcircled{1}$ 帮助求助者深入剖析自身问题，发现自身存在的不合理认知并进行有效调整，逐渐正确认识自我，从而提高其自信心；$\\textcircled{2}$ 共同探讨人际吸引的影响因素以及人际"
+      }
+    },
+    {
+      "support_id": "f59a1790-2e26-5113-a392-ee0020cd52c1",
+      "doc_id": "0f50c561-4681-512f-98d3-f530b000f23f",
+      "document_title": "基于合理情绪疗法的1例大学生情感问题咨询案例_王文龙.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于合理情绪疗法的1例大学生情感问题咨询案例_王文龙.md",
+      "section": "7咨询阶段与实施过程",
+      "span": {
+        "start": 4237,
+        "end": 4726
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "咨询师：你在此之前有遇到过心动的女孩吗?\n\n小宇：有，每到一个阶段就会遇到这样的女孩，但是现在随着年龄的增大，可能这样的机遇会越来越少。\n\n咨询师：首先确认一点的是，你才20岁，对谈恋爱来说年龄一点都不大。如果你这么年轻的人都担心以后遇不见自己的另一半，那些三十多岁还单身的人岂不是没法活了！\n\n小宇：呵呵。\n\n咨询师：既然你也说了你每到一个阶段都会遇到那么一个心仪的女孩，那你凭什么认为以后就遇见不了这样的女孩呢？！\n\n小宇：我确实有点多虑了。\n\n咨询师：看来你已经意识到了自己认识上的一些问题，既然这样，那为什么不改变这些不合理的想法呢？！是时候振作起来了，承认现实，收拾心情，用积极的心态面对爱情、学习和生活吧！\n\n小宇：谢谢你，我会努力的。\n\n布置作业：继续让小宇记录每天想到对方的次数和时间；花更多的时间来从事自己的兴趣和爱好，最好找同学一起进行；每天用10min来积极地想象自己未来的爱情和生活画面；继续与自己的不合理信念进行辩论。\n\n# 7.4结束与巩固阶段（第6次）\n\n目的：巩固咨询效果，帮助小宇进一步强化新获得的合理认知，更好地适应现实人际关系、学习和生活。",
+      "metadata": {
+        "document_title": "基于合理情绪疗法的1例大学生情感问题咨询案例_王文龙.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "REBT认知辩论引导",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "修正不合理信念",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "问题评估与认知挑战",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "2770f7c3-4e68-5153-af09-e362446439eb",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "作业"
+        ],
+        "paragraph_start": 25,
+        "paragraph_end": 35,
+        "heading_path": [
+          "7咨询阶段与实施过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 主诉和个人陈述",
+          "3 外部信息",
+          "4心理问题评估",
+          "5 咨询目标",
+          "6 咨询方案"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 7.1问题评估阶段（第1次咨询）"
+      }
+    }
+  ]
+}

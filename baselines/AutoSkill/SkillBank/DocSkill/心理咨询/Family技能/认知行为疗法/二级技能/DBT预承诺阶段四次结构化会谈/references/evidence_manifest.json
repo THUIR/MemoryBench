@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "f74a4473-5e71-5138-8073-867bc35334e6",
+  "skill_name": "DBT预承诺阶段四次结构化会谈",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "4e21c239-bdac-5429-a391-989b3dbc6cc3",
+      "doc_id": "50dd0eed-ca18-5368-a1a8-373e2fd49b67",
+      "document_title": "1例青少年抑郁症辩证行为治疗的个案报告_杨天宇.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例青少年抑郁症辩证行为治疗的个案报告_杨天宇.md",
+      "section": "4治疗目标及过程",
+      "span": {
+        "start": 1862,
+        "end": 2491
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "4.1治疗目标\n遵循辩证行为疗法对来访者进行心理治疗。辩证行为疗法相信来访者受情绪控制困难之苦。尽管这些困难并非由来访者自己造成，但需要来访者自己解决。基于以上假设，并结合来访者实际，治疗目标如下：短期目标： $\\textcircled{1}$ 减少自伤行为； $\\textcircled{2}$ 增强治疗动机； $\\textcircled{3}$ 获得相应技能以应对问题； $\\textcircled{4}$ 改善抑郁情况。长期目标： $\\textcircled{1}$ 认可和接纳自己； $\\textcircled{2}$ 实现自己认为“值得过”的生活。\n\n4.2治疗过程\nDBT治疗力求将每个治疗阶段概念化，本案例中，治疗师将治疗设为三个阶段，具体记录如下。本案例研究及发表已征得来访者小D知情同意。\n\n4.2.1治疗前的定位与承诺阶段：本阶段为预治疗阶段，要求来访者对达成治疗目标做出相应承诺，与来访者建立牢固的协作关系。本阶段为个体治疗，共4次，每周1次，每次50 min。\n\n第一次治疗：收集资料并建立良好的治疗关系。运用认可技能拉近与来访者的距离，对来访者的问题进行个案概念化并讨论治疗目标。\n\n第二次治疗：分为以下三个部分。 $\\textcircled{1}$ 介绍DBT。②问题行为界定。根据DBT问题行为优先原则，与来访者讨论后将问题行为界定为自伤行为。 $\\textcircled{3}$ 行为链分析。对问题行为进行分析。④制定日记卡。",
+      "metadata": {
+        "document_title": "1例青少年抑郁症辩证行为治疗的个案报告_杨天宇.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "DBT预承诺阶段四次会谈结构",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "完成DBT治疗前心理准备、知识传递与工具落地，确保来访者理解‘为什么做’和‘怎么做’",
+        "task_family": "treatment_onboarding",
+        "method_family": "CBT",
+        "stage": "pre_treatment",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "dfe2d056-a1b6-5434-a232-9adcf7d1330b",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 4,
+        "heading_path": [
+          "4治疗目标及过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例青少年抑郁症辩证行为治疗的个案报告",
+          "1个案情况",
+          "2 问题评估",
+          "3 个案概念化",
+          "5 治疗效果评估",
+          "6讨论"
+        ],
+        "subsection_headings": [
+          "4.1治疗目标",
+          "4.2治疗过程"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "遵循辩证行为疗法对来访者进行心理治疗。辩证行为疗法相信来访者受情绪控制困难之苦。尽管这些困难并非由来访者自己造成，但需要来访者自己解决。基于以上假设，并结合来访者实际，治疗目标如下：短期目标： $\\textcircled{1}$ 减少自伤行为； $\\textcircled{2}$ 增强治疗动机； $\\textcircled{3}$ 获得相应技能以应对问题；"
+      }
+    }
+  ]
+}

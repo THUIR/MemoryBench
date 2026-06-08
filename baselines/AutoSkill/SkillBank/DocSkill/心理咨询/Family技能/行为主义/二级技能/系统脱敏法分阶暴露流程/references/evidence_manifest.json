@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "8cc51575-33a5-547e-abf0-5886c3a6c615",
+  "skill_name": "系统脱敏法分阶暴露流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "25462699-4bb3-5bf0-ab34-988fae80da60",
+      "doc_id": "4720279a-9932-59ce-992a-dc8c94b9c612",
+      "document_title": "一例社交恐怖症引发惊恐障碍心理咨询案例报告_王娟丽.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例社交恐怖症引发惊恐障碍心理咨询案例报告_王娟丽.md",
+      "section": "一例社交恐怖症引发惊恐障碍心理咨询案例报告",
+      "span": {
+        "start": 2002,
+        "end": 2428
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "同时与来访者家人取得联系，缓和来访者与商店老板之间的关系。与辅导员联系，鼓励宿舍同学和来访者保持积极沟通,利用来访者生病同学及时送医等事件激发来访者感受同学之间相互帮助等正性情感体验,改变来访者的负性思维,引导来访者树立合理的、正性的人际交往理念,来访者的压抑情绪得到了缓解。\n\n第三阶段利用系统脱敏法，进一步缓解来访者紧张焦虑情绪,逐步消除来访者恐怖症状。利用音乐放松让来访者头脑出现那个学生干部的模样，来访者表示紧张无法进行，随后读班里同学的名字，逐一呈现班级同学照片，在手机保存学生干部照片，有意无意中去看，来访者看到那个让自己恐怖的学生照片紧张情绪有所缓解后。让来访者画学生干部头像,对着画像疯狂的的喊叫、咆哮甚至骂脏话，充分发泄了愤怒、压抑的情绪，最好撕掉了画像，来访者认为压抑的情绪明显得到缓解。\n\n对来访者进行了积极的引导，来访者领悟到了自己的恐怖并非学生干部造成,而是与自己的性格、长期压抑的情绪,对人际关系的不合理的信念有很大的关系。",
+      "metadata": {
+        "document_title": "一例社交恐怖症引发惊恐障碍心理咨询案例报告_王娟丽.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "系统脱敏法分阶暴露流程",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "降低对特定人际对象的条件性恐惧反应",
+        "task_family": "暴露干预",
+        "method_family": "Behaviorism",
+        "stage": "中后期干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "42101b44-a033-57f2-b002-2e8786bdbc17",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 21,
+        "paragraph_end": 23,
+        "heading_path": [
+          "一例社交恐怖症引发惊恐障碍心理咨询案例报告"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "一、来访者一般资料",
+          "二、来访者主述资料",
+          "三、他人反映",
+          "四、诊断与评估",
+          "五、咨询目标的制定",
+          "六、咨询方案制定",
+          "七、咨询过程",
+          "八、咨询效果评估"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "王娟丽"
+      }
+    }
+  ]
+}

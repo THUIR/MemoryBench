@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "e4816f64-a462-5990-bf0c-059fb1087c40",
+  "parent_name": "CBT认知重构引导流程",
+  "children": [
+    {
+      "skill_id": "21eb7bd4-9e12-55b5-bb76-6392a6b2f04a",
+      "name": "职业认同再建构干预",
+      "description": "利用典型案例（如南丁格尔获奖者事迹）与职业测评结果联动，引导来访者对护理专业价值与个人发展路径进行意义重评，重建职业认同与学习动机。",
+      "child_type": "职业心理干预",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "e4816f64-a462-5990-bf0c-059fb1087c40",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "利用典型案例（如南丁格尔获奖者事迹）与职业测评结果联动，引导来访者对护理专业价值与个人发展路径进行意义重评，重建职业认同与学习动机。",
+      "selector_terms": [
+        "来访者对所学专业产生强烈疏离感",
+        "已有霍兰德等职业测评结果可用",
+        "具备基本情绪稳定性",
+        "职业认同",
+        "认知联结",
+        "榜样叙事",
+        "护理专业",
+        "霍兰德测评",
+        "表达‘学这个没意义’‘不是我选的，我不属于这里’等身份否定语句",
+        "回避讨论专业相关未来规划",
+        "测评反馈与专业要求存在表面冲突但未被探索",
+        "职业认同再建构干预",
+        "利用典型案例（如南丁格尔获奖者事迹）与职业测评结果联动，引导来访者对护理专业价值与个人发展路径进行意义重评，重建职业认同与学习动机。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/职业认同再建构干预/SKILL.md"
+    }
+  ]
+}

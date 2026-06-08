@@ -1,0 +1,42 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "b4d75f62-c093-527e-89e3-8d7fab98c919",
+  "parent_name": "正念练习技术教授",
+  "children": [
+    {
+      "skill_id": "061e20ac-6680-5406-9466-c7768742f345",
+      "name": "床旁正念呼吸引导",
+      "description": "在住院孕妇惊恐发作急性期，于床旁引导患者进行结构化正念呼吸练习，以快速缓解心慌、焦虑等躯体症状。适用于情绪高度唤醒但身体可平卧的妊娠中晚期患者。",
+      "child_type": "正念干预",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "b4d75f62-c093-527e-89e3-8d7fab98c919",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在住院孕妇惊恐发作急性期，于床旁引导患者进行结构化正念呼吸练习，以快速缓解心慌、焦虑等躯体症状。适用于情绪高度唤醒但身体可平卧的妊娠中晚期患者。",
+      "selector_terms": [
+        "患者主诉心慌、夜间惊醒",
+        "处于仰卧位且无产科禁忌",
+        "情绪唤醒度高但意识清晰",
+        "孕妇",
+        "惊恐发作",
+        "急性期",
+        "床旁干预",
+        "呼吸调节",
+        "呼吸急促（>20次/分）",
+        "手抖或冷汗",
+        "言语短促、重复表达‘要不行了’",
+        "瞳孔稍大但对光反射存在",
+        "床旁正念呼吸引导",
+        "在住院孕妇惊恐发作急性期，于床旁引导患者进行结构化正念呼吸练习，以快速缓解心慌、焦虑等躯体症状。适用于情绪高度唤醒但身体可平卧的妊娠中晚期患者。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/床旁正念呼吸引导/SKILL.md"
+    }
+  ]
+}

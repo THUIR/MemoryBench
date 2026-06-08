@@ -1,0 +1,66 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "5b17f051-68b9-53ec-a0cf-b02b5ae8673a",
+  "skill_name": "支持性沟通启动话术",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "a69d7f9a-47f1-5440-9018-691932749b69",
+      "doc_id": "d9c869a4-449d-56ce-96f2-f10cd8474a7e",
+      "document_title": "1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 6136,
+        "end": 7089
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "咨询方法：谈话法、正念疗法、渐进式肌肉放松训练等。\n\n第三次咨询时，主要解决的问题是宿舍人际关系问题，并以此为契机，让其了解在该情景中，她的负性自动思维是什么，负性思维的特点是什么，以及产生了什么样的情绪和行为。比如，在面对“室友中午没叫我吃饭”这一情景时，通过引导来访者A意识到，该情景引发了她的自动思维：“室友们不喜欢我了，觉得我很爱出风头”；“室友之间应该一起行动（吃饭、上课），如果不一起就是关系不好，就是不在乎我等”；“不一起=不在乎我=不喜欢我”等。这些负性自动思维带有“绝对化的要求、过度概括化、糟糕至极”等特点，且使来访者A产生了明显的难过、委屈、焦虑等不良情绪。在不良情绪的驱使下，来访者A采用了带有指责性的质问行为（“你们今天吃饭为什么不等我？”），引发了室友的防御性回应（“你也没说让等你啊”）。室友的回应行为又成为新的情境/刺激，强化了A原有的负面思维（“看吧，她们果然不在乎我，连解释都这么冷漠”）和负面情绪（“非常难受”），产生新的负面行为（减少沟通），从而形成了恶性循环：负面思维 $\\longrightarrow$ 强烈负面情绪 $\\longrightarrow$ 可能引发冲突或退缩的行为→得到负面反馈→强化负面思维一更强烈的负面情绪在这一阶段中，通过让来访者学会识别不良情绪、挑战消极思维、重构负面解释等，进而打破恶性循环，使其意识到问题产生的原因，并有做出改变的意愿。\n\n# 4.3第三阶段：心理修复阶段（第9～10次）\n\n$\\textcircled{1}$ 本阶段任务：改善人际关系，帮助来访者A分析宿舍同学冷漠的原因，并尝试与同学进行沟通，化解误会，引导其学习有效的沟通技巧，改善人际关系；修复童年创伤，引导其回顾童年经历，重新理解和接纳自我，构建积极的自我认知；鼓励其参加其他社会活动，结交新朋友，与家人改善沟通方式，扩大社会支持系统。 $\\textcircled{2}$ 本阶段的目标：帮助来访者重返现实生活，能够在生活中，自觉运用认知行为主义的理念解决生活中的实际问题，帮助她更好地应对压力，接纳自我，人际关系和谐，能够更好地适应生活。 $\\textcircled{3}$ 咨询方法：支持性干预技术。\n\n咨询师：今天看你状态很好，这周发生了什么美好的事情吗？",
+      "metadata": {
+        "document_title": "1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "支持性沟通启动话术",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "建立安全联结并激活来访者积极体验",
+        "task_family": "relationship building",
+        "method_family": "CBT",
+        "stage": "session opening",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "353bef9d-46eb-5793-bd37-5d28a360222d",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 14,
+        "paragraph_end": 18,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例基于认知行为主义疗法的大学生心理咨询报告",
+          "1一般资料",
+          "2评估",
+          "3 个案概念化",
+          "5 案例评价与反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本案例采用认知与行为主义疗法[，通过帮助来访者进行认知重构、情绪调节、行为激活、应对技能培养和持续监测与调整等途径，以帮助个体缓解心理危机，建立理性的认知模式，学会恰当的情绪表达方式，形成健康的行为习惯，以更好地帮助来访者应对压力，提升信心。本次咨询共持续12次，每周一次，每次50分钟，其中在每次咨询过后，都会和精神科医生进行沟通交流，以便取得更好的治疗效果"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "1cb19406-c930-5ea8-975b-8e3332219ffb",
+  "skill_name": "优势锚定与专长发现作业",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "45911888-eea3-5477-aad2-3a683d315099",
+      "doc_id": "5a8f72a1-5933-55fa-9f76-dd977e119c20",
+      "document_title": "tppc20190107318-328.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20190107318-328.md",
+      "section": "4 过程",
+      "span": {
+        "start": 6109,
+        "end": 6771
+      },
+      "relation_type": "support",
+      "confidence": 0.93,
+      "quote": "我：听说妈妈她加入了一个QQ群。你知道吗？  \n晓：是的。  \n我：群里的人都和你有些像。  \n晓：同样的症状。  \n我：我们用特征好吗？同样的特征。我们每个人都有不同的特征，不是吗？晓：是的。  \n我：你能接受自己和别人不一样吗？  \n晓：能。  \n我：说说你的优点吧，老师觉得你帅，白，高，记忆力好。  \n晓：能力不够强。  \n我：能力还在慢慢发掘中不是吗。  \n晓：是的。  \n我：缺点呢？  \n晓：学习不好（眼神躲闪欲言又止）。  \n我：你有时处理不好与同学的关系，对吗？  \n晓：嗯。  \n我：当别人伤害你的时候，你不知道该怎么办。于是通过打架来解决。晓：嗯。  \n我：问题解决了吗？  \n晓：没。\n\n我：老师教你一种办法，当下次与同学产生冲突，你怒火难耐的时候，请做深呼吸（带领他一起进行呼吸训练），然后到操场上跑两圈。我：妈妈送我一本书，我想让你帮我读一段。晓：（朗诵《阿斯伯格综合征信心宣言》）。我：真棒。这首诗表达了你心里的想法吗？晓：是的（肯定的语气）。我：回去把他背下来好吗？下次见我被给我听。晓：好。我：还有一个长期作业，发现你的专长。晓：上楼梯快。我：那说不定可以跨栏呢，下次问问体育老师好吗？晓：好的。\n\n本阶段通过网络和面谈的方式与张晓妈妈加强沟通，目的是希望父母在对待张晓时不要过分溺爱也不要过于严厉，更加不要轻易放弃，要营造一种温馨、和谐的家庭氛围，让孩子的心理产生安全感［4］；再者，要配合老师发掘张晓的优点和长处，对他在人际交往中的正向行为予以及时肯定和奖励，帮助其强化价值感和自信心。",
+      "metadata": {
+        "document_title": "tppc20190107318-328.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "优势锚定与专长发现作业",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "将零散优势转化为可验证、可发展的能力线索",
+        "task_family": "优势建构",
+        "method_family": "CBT",
+        "stage": "认知与行为整合期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "de94b963-2cdf-5780-a995-18ee981074ce",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 25,
+        "paragraph_end": 27,
+        "heading_path": [
+          "4 过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 背景",
+          "2评估与分析",
+          "3 目标与计划",
+          "5 总结与反思"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：情绪宣泄（第1\\~4次咨询）",
+          "4.2　第二阶段：认知转变（第 $5 \\sim 1 0$ 次)",
+          "4.3　第三阶段：行为转变（第11 $\\sim$ 15 次咨询）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "每周安排1次个体心理辅导，每次45分钟；分为3个阶段，共计15次辅导。"
+      }
+    }
+  ]
+}

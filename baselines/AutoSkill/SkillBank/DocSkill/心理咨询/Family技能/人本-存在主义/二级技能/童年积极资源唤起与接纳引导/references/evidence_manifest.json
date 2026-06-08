@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "family_name": "人本-存在主义",
+  "skill_id": "1c8b2fdf-97d6-5c47-94cd-04f2bebd96c3",
+  "skill_name": "童年积极资源唤起与接纳引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "2b9e0830-86ef-5d86-a861-176141d7c74a",
+      "doc_id": "20da7e44-53d5-5125-8ce0-29795820e0e9",
+      "document_title": "一例人际关系适应不良的心理咨询案例报告_张月.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/het/一例人际关系适应不良的心理咨询案例报告_张月.md",
+      "section": "第七次咨询",
+      "span": {
+        "start": 7214,
+        "end": 7618
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "1）任务：认识自我，悦纳自我，完善人格。\n\n2）方法：会谈法、以人为中心疗法。\n\n3）内容摘要：\n\n咨询师：觉得自己童年有没有什么美好的回忆啊？\n\n李某：有。可以和院子里的小伙伴一起玩耍，可以一起玩家家酒，可以一起去河边边洗衣服边玩水，可以漫山遍野的跑，奶奶叫我回去才回去。可能因为我比较乖，老师对我也都很好，很照顾我。\n\n咨询师：还是挺多的呀？\n\n李某：多吗？\n\n咨询师：你的童年有小伙伴的陪伴，自由的田野，奶奶的关心，老师的照顾。这些都是的呀，现在的孩子可不一定有那种自由和天真烂漫呢。\n\n李某：各有各的好吧！\n\n本次咨询主要是通过与李某对过去的探讨，引导李某意识到自己的童年有很多的美好，要学会爱自己，爱自己所经历的。这样，想起来不总是痛苦的，还有甜的。鼓励李某去悦纳自己的一切，无论是好的还是坏的，都是自己成长中不可缺少的。\n\n经过此次咨询，在咨询师的引导下，李某越来越多去接纳自己的过去，悦纳自己。",
+      "metadata": {
+        "document_title": "一例人际关系适应不良的心理咨询案例报告_张月.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "童年积极资源唤起与接纳引导",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "促进来访者对自身生命史的整合性接纳，增强自我价值感与内在连续性",
+        "task_family": "自我概念重构",
+        "method_family": "人本-存在主义",
+        "stage": "中期修通",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "cda5aebe-f984-50c8-a4cd-88bfae9b0fb2",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 10,
+        "heading_path": [
+          "第七次咨询"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1.一般资料",
+          "2．主诉和个人陈述",
+          "3.观察和他人反映",
+          "4.评估与诊断",
+          "5．病因分析",
+          "6.咨询目标与咨询方案"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "markdown",
+        "section_summary": "1）任务：认识自我，悦纳自我，完善人格。"
+      }
+    }
+  ]
+}

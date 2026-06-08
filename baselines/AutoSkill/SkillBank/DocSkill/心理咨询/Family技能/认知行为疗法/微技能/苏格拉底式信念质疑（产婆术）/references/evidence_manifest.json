@@ -1,0 +1,83 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "09d0f7d5-3cd8-54f6-a634-e3881ba1220b",
+  "skill_name": "苏格拉底式信念质疑（产婆术）",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "70ca2da1-d082-5f80-bc22-aaae9ffa4642",
+      "doc_id": "e0a0891c-4175-57b3-9083-4c33fdccc2a3",
+      "document_title": "一份初中女生的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一份初中女生的心理咨询案例报告.md",
+      "section": "一份初中女生的心理咨询案例报告",
+      "span": {
+        "start": 3234,
+        "end": 3605
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "# 2.方法与过程\n\n先和求助者讨论其家庭作业的完成情况,进一步挖掘其症状可能存在的深层原因。然后介绍合理情绪疗法的ABC理论，帮助求助者领悟到自己的情绪和行为不适的根本原因不在于事件，而在于自己对事件的看法和认识。找出这些不合理的信念，并结合求助者的问题作进一步的分析，促使其改变自身不合理的信念，从而改变其不良情绪和行为模式。其间通过苏格拉底辩论法(即\"产婆术\")对求助者的不合理信念进行质疑，启发求助者认识到自己持有的是绝对化和以偏概全的非理性信念，并启发其建立新的、合理的信念。\n\n(三)第3次咨询\n# 1.目标\n\n和求助者一起讨论家庭作业的完成情况，在进一步摒弃非理性信念和建立合理信念的同时，解释行为疗法的一些原理,学会肌肉放松训练技术和厌恶疗法,以消除有时仍然存在的焦虑情绪以及注意力分散、人睡困难等症状。\n\n# 2.方法与过程",
+      "metadata": {
+        "document_title": "一份初中女生的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "苏格拉底式信念质疑（产婆术）",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "激发认知弹性与自我质疑能力",
+        "task_family": "认知辩论",
+        "method_family": "CBT",
+        "stage": "认知重构",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "405ce19b-f01b-5294-8814-b06e16d739c3",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "苏格拉底",
+          "第3次咨询"
+        ],
+        "paragraph_start": 46,
+        "paragraph_end": 50,
+        "heading_path": [
+          "一份初中女生的心理咨询案例报告"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "一、一般资料",
+          "(一)父亲代诉",
+          "(二)个人自诉",
+          "三、咨询师观察了解到的情况",
+          "（一）评估",
+          "（二）诊断",
+          "（三）原因分析",
+          "（一)具体目标",
+          "(二)远期目标",
+          "(一)咨询阶段",
+          "(二)咨询方法",
+          "(一)第1次咨询",
+          "(二)第2次咨询",
+          "(三)第3次咨询",
+          "(四)第4次咨询",
+          "(一)求助者的自我评估",
+          "（三）心理测验结果",
+          "(四)咨询师的评估",
+          "九总结"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "陈阿芹"
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "fe7b2255-6148-5f6d-be35-7d83efd5f17d",
+  "skill_name": "CBT中间信念矫正工作表引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "1f017d9e-1254-57a9-a5b0-668f402e01fd",
+      "doc_id": "9b914d45-af5c-5bde-a72d-ff0472b0268b",
+      "document_title": "1例基于认知行为疗法的咨询案例报告_曾庆雪.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例基于认知行为疗法的咨询案例报告_曾庆雪.md",
+      "section": "5咨询过程",
+      "span": {
+        "start": 4049,
+        "end": 4596
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "小Q：是的，我是这么认为的。\n\n5.3第三阶段（第4次咨询）\n针对中间信念开展矫正信念的工作；制作自我肯定清单，帮助小Q建立自信。\n\n咨询师通过苏格拉底式提问和现实检验等技术矫正来访者适应不良的中间信念，并构建新的更符合现实的认知。具体见表1。\n\n表1 小Q的信念工作表\n\n<table><tr><td>小Q原来的中间信念</td><td>矫正后的新信念</td></tr><tr><td>我必须达成父母对我的期望，</td><td>我需要对自己有正确的认识，树立合理的目标，人没有办法每次都达到别人设置的目标，同时偶尔一次没有达成目</td></tr><tr><td>这样才能得到父母的爱</td><td>标也不能说明什么，考试的难度、努力程度都会影响成绩,我是有力量面对困难的,我不要求自己每次考试成绩都</td></tr><tr><td>我不能让父母失望</td><td>要完美，考试成绩不是自己是否有能力的唯一标准 父母无限的期待是不合理的，我要设定自已的目标</td></tr></table>\n\n咨询师鼓励小Q总结并运用所学的技术，在生活和学习中去使用，继续做思维记录练习，配合“自我肯定清单”，强化小Q对自身积极优势的发现和肯定，努力成为自己的咨询师。\n\n第四次咨询对话摘录。",
+      "metadata": {
+        "document_title": "1例基于认知行为疗法的咨询案例报告_曾庆雪.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT中间信念矫正工作表引导",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "矫正适应不良中间信念，构建更现实、灵活的新信念",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "中期干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "d55b2b34-50bd-58dc-a07f-8ee49fdb322e",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "清单",
+          "苏格拉底",
+          "现实检验",
+          "工作表",
+          "思维记录"
+        ],
+        "paragraph_start": 23,
+        "paragraph_end": 29,
+        "heading_path": [
+          "5咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 个案信息",
+          "2 咨询信息",
+          "3 个案概念化",
+          "4 咨询方案",
+          "6 咨询效果",
+          "7案例评价及反思"
+        ],
+        "subsection_headings": [
+          "5.1第一阶段（第1次咨询）",
+          "5.2第二阶段（第2～3次咨询）",
+          "5.3第三阶段（第4次咨询）",
+          "5.4第四阶段（第5次咨询）",
+          "5.5接受督导情况"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "建立关系、收集信息，初步评估和设定基本目标。"
+      }
+    }
+  ]
+}

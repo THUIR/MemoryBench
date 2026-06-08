@@ -1,0 +1,129 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "0fb7bec6-5a1a-5ce8-83a1-2bb5281c968d",
+  "skill_name": "叙事疗法首次咨询外化问话流程",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "da5eaf2b-0786-5be5-8729-d637e9501cd9",
+      "doc_id": "5d4e7045-672e-5310-b1f1-c0521f6cfde9",
+      "document_title": "叙事疗法用于高职生恋爱问题咨询的个案报告_叶璐杨.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/叙事疗法用于高职生恋爱问题咨询的个案报告_叶璐杨.md",
+      "section": "3咨询过程",
+      "span": {
+        "start": 3014,
+        "end": 4489
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "3.1第一次咨询\n第一次咨询的主要工作是和来访者建立起咨访关系，并了解来访者的问题。咨询的开始，咨询师首先简要介绍心理咨询的时长、频率等基本设置，介绍保密原则。接着，了解困扰来访者的问题，在了解问题的过程中，收集来访者的信息，包括个人基本信息，家庭成员情况，过往有无心理咨询经验，对心理咨询的期待等信息。叙事疗法了解问题的技术主要是外化问话，包括给问题命名，了解问题的历史，了解问题对来访者的影响，来访者如何看待这些影响，以及来访者对问题做了哪些回应等。\n\n关于问题历史的提问：“我想问题不是你一出生就在你生活中的，它应该是某个阶段才来到的，你还记得第一次发现这个问题出现在你生活中是什么时候吗？”“从三年级到现在，这个问题始终都在你生活中吗?还是有些时候它不存在？”“用10分代表问题最大时候的状态，0分是问题完全不在的状态，来看看问题在不同阶段的大小。小学三年级问题来到你生活中，从它出现到小学六年级，大小都差不多吗？那么初中呢？高中呢？目前是几分？”\n\n来访者一开始把问题定义为“对人际关系很敏感”，通过以上问题的探讨，发现问题只是主要存在于亲密关系领域。来访者还发现自己希望和问题保持一定的关系，他不希望问题完全消失，因为他发现问题也有好的影响，从而对咨询的期待效果的期待更为明确。在这些对话的基础上，咨询师邀请来访者对问题进行命名，命名有非常好的外化问题效果，来访者顺利完成了命名，这将帮助他进一步获得处理问题的信心。",
+      "metadata": {
+        "document_title": "叙事疗法用于高职生恋爱问题咨询的个案报告_叶璐杨.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "叙事疗法首次咨询外化问话流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立咨访关系并完成问题外化",
+        "task_family": "叙事评估",
+        "method_family": "后现代主义",
+        "stage": "初始评估",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "91491538-49ff-5be5-ac11-924e93ffd0e7",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 4,
+        "heading_path": [
+          "3咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1相关背景",
+          "2 案例描述与初步分析",
+          "4 咨询总结与案例启发"
+        ],
+        "subsection_headings": [
+          "3.1第一次咨询",
+          "3.2第二次咨询",
+          "3.3第三次咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一次咨询的主要工作是和来访者建立起咨访关系，并了解来访者的问题。咨询的开始，咨询师首先简要介绍心理咨询的时长、频率等基本设置，介绍保密原则。接着，了解困扰来访者的问题，在了解问题的过程中，收集来访者的信息，包括个人基本信息，家庭成员情况，过往有无心理咨询经验，对心理咨询的期待等信息。叙事疗法了解问题的技术主要是外化问话，包括给问题命名，了解问题的历史，了解"
+      }
+    },
+    {
+      "support_id": "8d37b575-5f34-5c6c-977a-dcb22fe3a529",
+      "doc_id": "920fdbec-1518-54df-a1d2-cd3a185b0c5d",
+      "document_title": "叙事疗法与德式桌游相结合在大学生心理咨询案例中的运用_蒲昕艳.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/叙事疗法与德式桌游相结合在大学生心理咨询案例中的运用_蒲昕艳.md",
+      "section": "四、两种方法运用于大学生心理咨询的案例分析",
+      "span": {
+        "start": 3292,
+        "end": 3947
+      },
+      "relation_type": "support",
+      "confidence": 0.87,
+      "quote": "在叙事疗法中，不太强调个案的家庭系统与结构，也不必去过多考虑症状，而是主要引导当事人如何去重新看待自己所发生的一切，进而协助当事人找到问题解决的办法，而非陷入在问题漩涡当中。在这个案子中，咨询师利用许多的经典叙事对话来将\"问题”与当事人之间进行切割，再搭配德式桌游的情商技巧来协助当事人处理,改变目前困扰自己的焦虑感。可以突出闪光点，如：“焦虑虽然困扰着你，但是你依然有勇气来找我进行心理咨询，这是面对困难愿意去解决的勇气啊！你认为呢？或者突出“奇迹”,如：“如果有天起床，你发现焦虑不再困扰着你，你认为发生了甚么？这些对话能够有效切开案主跟焦虑之间的关系，进而去看问题而非症状，并且找方法而非抱怨。\n\n(四)叙事疗法在心理咨询中的技术运用\n1.第一阶段：问题命名及情绪舒缓。咨询师让来访者挑选了三张情绪卡，从其中一张开始讲起情绪卡的\"故事”。通过“故事”的讲述，当事人描述了每当与母亲发生争执或者不愉快时都发生了哪些故事？在这些故事中，当事人都会产生哪些情绪？这些情绪是如何困扰着他。比如：假期他想要晚一点睡觉，母亲便会一直催促他快点睡觉。刚开始，当事人会回应：“好的，我忙完就睡了。”但是，每隔几分钟，母亲便会又来催促，最多一小时内催促二十几次，导致当事人愤怒，情绪无法控制，与母亲发生激烈的肢体冲突。此类事件反复发生，成为当事人和母亲之间沟通的压力，造成当事人情绪紧张，感觉有压力，无法入睡，焦虑异常，不愿意呆在家里。\n\n咨询师：当你母亲在催促你的时候，你会感觉到焦虑，你感觉那个焦虑情绪在跟你说什么呢？",
+      "metadata": {
+        "document_title": "叙事疗法与德式桌游相结合在大学生心理咨询案例中的运用_蒲昕艳.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "德式桌游情商技巧协同叙事干预",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "通过具身化游戏机制巩固叙事重构成果",
+        "task_family": "跨模态干预",
+        "method_family": "后现代主义",
+        "stage": "行动尝试与技能内化",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "f5046000-d4f4-5c15-8380-77166cb7af79",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 6,
+        "paragraph_end": 8,
+        "heading_path": [
+          "四、两种方法运用于大学生心理咨询的案例分析"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、叙事心理疗法介绍",
+          "二、叙事疗法与大学生心理咨询的契合点",
+          "三、桌游在心理咨询中的运用",
+          "五、结语"
+        ],
+        "subsection_headings": [
+          "(一)案例背景",
+          "（二)症状分析",
+          "（三)咨询目标",
+          "(四)叙事疗法在心理咨询中的技术运用",
+          "（五)个案的变化"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "小雨18岁，男，在父母及来访者同意的情况下进行焦虑症量表评量，评断为轻度焦虑症。来访者的母亲与父亲感情不睦，经常吵闹，教育方式也不一致，导致当事人从小在家庭中感到异常焦虑。来访者对外的人际关系非常好，外形高大帅气、阳光。但是,经常会为自己的未来人生以及与家人的相处模式烦恼。来访者母亲性格焦虑，在教育过程中要求严格，时常伴有打骂行为，因此，随着小雨年龄的增长，"
+      }
+    }
+  ]
+}

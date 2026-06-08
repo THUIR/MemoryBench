@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "0bdef813-8288-56b9-9469-0addb92adecf",
+  "parent_name": "CBT-I四阶段结构化治疗协议",
+  "children": [
+    {
+      "skill_id": "278cd7a9-ed6b-5edf-b28f-de6a76cca141",
+      "name": "CBT-I睡眠日记启动与结构化反馈循环",
+      "description": "在CBT-I治疗初期启动标准化睡眠日记作为客观行为评估工具，并在后续每次咨询中执行四步结构化复盘（完整性检查→指标计算→行为-体验链接→共识微调），形成‘记录-反馈-调适’临床闭环，强化治疗同盟与数据驱动决策。",
+      "child_type": "行为评估",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "0bdef813-8288-56b9-9469-0addb92adecf",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在CBT-I治疗初期启动标准化睡眠日记作为客观行为评估工具，并在后续每次咨询中执行四步结构化复盘（完整性检查→指标计算→行为-体验链接→共识微调），形成‘记录-反馈-调适’临床闭环，强化治疗同盟与数据驱动决策。",
+      "selector_terms": [
+        "来访者报告主观睡眠困难但缺乏客观行为数据",
+        "需将模糊主诉转化为可测量指标以增强治疗同盟",
+        "CBT-I",
+        "睡眠日记",
+        "行为监测",
+        "治疗同盟",
+        "结构化反馈",
+        "主诉含‘翻来覆去’‘醒后难再睡’‘白天疲惫’等非特异性描述",
+        "来访者对自身睡眠规律存在认知偏差（如高估入睡时间、低估觉醒次数）",
+        "治疗初期建立合作性评估关系的关键窗口",
+        "CBT-I睡眠日记启动与结构化反馈循环",
+        "在CBT-I治疗初期启动标准化睡眠日记作为客观行为评估工具，并在后续每次咨询中执行四步结构化复盘（完整性检查→指标计算→行为-体验链接→共识微调），形成‘记录-反馈-调适’临床闭环，强化治疗同盟与数据驱动决策。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/CBT-I睡眠日记启动与结构化反馈循环/SKILL.md"
+    },
+    {
+      "skill_id": "2195c56c-2437-5f9c-a8a5-1a8020a4fc03",
+      "name": "网络健康信息搜索行为问题解决训练",
+      "description": "结构化引导来访者定义‘过度搜索’问题、生成替代方案、评估可行性并实施最小行为实验，以减少无效信息搜索频次与时长。",
+      "child_type": "behavioral_problem_solving",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "0bdef813-8288-56b9-9469-0addb92adecf",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "结构化引导来访者定义‘过度搜索’问题、生成替代方案、评估可行性并实施最小行为实验，以减少无效信息搜索频次与时长。",
+      "selector_terms": [
+        "每日健康信息搜索超60分钟",
+        "搜索后焦虑未缓解反加重",
+        "来访者自述‘停不下来’但愿改变",
+        "网络疑病",
+        "健康焦虑",
+        "行为实验",
+        "数字行为干预",
+        "问题解决训练",
+        "来访者能识别搜索触发情境（如身体微感不适、夜间醒来）",
+        "具备基础时间记录能力（如可用手机计时或简单日志）",
+        "表达对行为改变的意愿而非仅认知认同",
+        "网络健康信息搜索行为问题解决训练",
+        "结构化引导来访者定义‘过度搜索’问题、生成替代方案、评估可行性并实施最小行为实验，以减少无效信息搜索频次与时长。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/网络健康信息搜索行为问题解决训练/SKILL.md"
+    }
+  ]
+}

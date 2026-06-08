@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "0ac2f8ca-a76e-5d7c-a59c-3df197f415bb",
+  "parent_name": "社会联结行为激活作业",
+  "children": [
+    {
+      "skill_id": "16417715-7ace-5cc1-a884-081d547e004c",
+      "name": "居家情境适配性行为激活协议",
+      "description": "通过‘如果……呢？’类假设性提问启动可控情境模拟，引导来访者分步骤描述现实应对行为，协同评估可行性与情绪影响，提升其在压力情境下的问题解决效能感与行为启动能力。",
+      "child_type": "行为激活",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "0ac2f8ca-a76e-5d7c-a59c-3df197f415bb",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "通过‘如果……呢？’类假设性提问启动可控情境模拟，引导来访者分步骤描述现实应对行为，协同评估可行性与情绪影响，提升其在压力情境下的问题解决效能感与行为启动能力。",
+      "selector_terms": [
+        "咨询转为线上且来访者居家",
+        "来访者既往对运动类作业依从性良好",
+        "无运动禁忌医学诊断",
+        "CBT",
+        "问题解决",
+        "情境模拟",
+        "假设性提问",
+        "行为演练",
+        "来访者能命名具体担忧但尚未尝试行为应对",
+        "表达‘就算这样我也只能认命’等无助感陈述",
+        "对替代方案持开放态度但缺乏执行路径",
+        "居家情境适配性行为激活协议",
+        "通过‘如果……呢？’类假设性提问启动可控情境模拟，引导来访者分步骤描述现实应对行为，协同评估可行性与情绪影响，提升其在压力情境下的问题解决效能感与行为启动能力。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/居家情境适配性行为激活协议/SKILL.md"
+    }
+  ]
+}

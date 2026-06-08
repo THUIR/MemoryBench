@@ -1,0 +1,74 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "72d74d4a-4aec-55f6-ae02-d81faf0135ca",
+  "skill_name": "苏格拉底式提问处理自动化思维",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "bec6d15d-dabd-5c93-aa52-d3a00a5b5755",
+      "doc_id": "40990c27-c69b-5828-96e9-79d1dffcc48f",
+      "document_title": "基于认知行为疗法的1例抑郁情绪咨询案例_高甜.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法的1例抑郁情绪咨询案例_高甜.md",
+      "section": "6 咨询过程",
+      "span": {
+        "start": 5150,
+        "end": 6058
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "心理咨询共进行10次。频率为每周1次，每次60min。按照咨询的进展，共分为三个阶段。\n\n6.1第一阶段（第1～3次）：关系建立与认知评估\n在这一阶段，咨询师运用来访者中心疗法、无条件积极关注等技术与来访者建立相互信任的资访关系，通过摄入性会谈收集来访者现阶段的困扰、症状反应、成长史、过往咨询史等相关信息，完成SCL-90、SDS、SAS量表的评估，进一步明确来访者的核心问题。\n\n来访者一直把学业当作唯一目标，将获得国家奖学金作为努力的方向。她不仅成绩优异，还积极帮助老师和同学，参与各种活动。在国家奖学金评选中落选后，她感到非常失落，觉得所有努力都白费了。当同学提到奖学金时，她认为是在刺激自己，因此不再愿意参加集体活动，并开始失眠、多梦、食欲下降。\n\n鉴于来访者所描述的生理症状，咨询师建议其前往医院进行相应的检查，以确认这些症状并非由器质性疾病引起。在咨询过程中，咨询师用真诚、尊重的态度倾听，让来访者感受到充分的支持与接纳，从而能够自由地表达内心的负面情绪。通过深入的交谈，咨询师细致地收集了来访者的相关信息。为了帮助来访者缓解情绪压力，咨询师引导其进行了渐进式放松训练。此外，咨询师还详细介绍了认知行为疗法的基本原理和应用方式，与来访者进行了充分的讨论并达成一致，确定采用认知行为疗法作为主要的干预手段，以有效应对和解决来访者当前的具体困扰。\n\n6.2第二阶段（第4～8次）：心理援助\n在这一阶段，咨询的核心任务聚焦于确立清晰的咨询目标，纠正来访者的认知误区，缓解其消极情绪，并引导其调整不适应的行为模式。\n\n咨询师向来访者分享了对她的个案概念化，通过在具体情境中挖掘相应的自动思维，确认其情绪和行为反应，针对来访者的错误认知，运用苏格拉底式提问，引导来访者进行思维改变，正视自己的问题，通过重构依恋叙事，咨询师引导来访者区分母亲“能力局限”与“情感忽视”的本质差异。同时，咨询师辅助来访者设计行为实验，进行渐进暴露练习，鼓励她主动参与奖学金话题讨论，以检验其灾难化预测的失真性。\n\n6.2.1 苏格拉底式提问处理自动化思维：第4次咨询对话节选如下。\n\n场景：来访者仍因国家奖学金落选而极度沮丧，认为自",
+      "metadata": {
+        "document_title": "基于认知行为疗法的1例抑郁情绪咨询案例_高甜.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "苏格拉底式提问处理自动化思维",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "解构并重构单一自动化思维",
+        "task_family": "cognitive_restructuring",
+        "method_family": "CBT",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "804ecf40-fc15-56c4-afee-49b532b75f2e",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "会谈",
+          "咨询目标",
+          "苏格拉底"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 7,
+        "heading_path": [
+          "6 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "基于认知行为疗法的1例抑郁情绪咨询案例",
+          "1一般资料",
+          "2量化评定与心理评估",
+          "3原因分析",
+          "4 个案概念化",
+          "5 咨询方案"
+        ],
+        "subsection_headings": [
+          "6.1第一阶段（第1～3次）：关系建立与认知评估",
+          "6.2第二阶段（第4～8次）：心理援助",
+          "6.3第三阶段（第9～10次）：巩固与自主成长"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "心理咨询共进行10次。频率为每周1次，每次60min。按照咨询的进展，共分为三个阶段。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "849a8e82-f07a-530d-acb4-334ce84b3853",
+  "skill_name": "系统脱敏等级建构",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "3e81c739-c24f-517d-bf21-420a6b7c831d",
+      "doc_id": "ccb32af1-7b79-5433-a0c4-1ca66269d3ff",
+      "document_title": "一例高中生考试焦虑心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例高中生考试焦虑心理咨询案例报告.md",
+      "section": "四、咨询过程",
+      "span": {
+        "start": 3211,
+        "end": 3464
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "3、第3次,2006/11/2\n\n方法与目的：采用会谈、系统脱敏法和积极自我暗示等方法巩固认知重建结果；建立焦虑事件等级，并开始实施系统脱敏;咨询进程如下：\n\n(1)反馈家庭作业：大声朗读优点及积极思维语言，自我感觉自信了,每天坚持两次放松训练，使自己的失眠得到了改善，觉得身体舒服多了。\n\n(2）建立焦虑等级：与张某商谈将个人的考试焦虑反应按程度轻重从弱到强顺序排列“焦虑等级\"。先把最弱的刺激情境即几乎不引起焦虑或只引起很小焦虑的情境排在第一位，依次顺序将上面所列刺激情境排列完毕。共分以下11个等级：",
+      "metadata": {
+        "document_title": "一例高中生考试焦虑心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "系统脱敏等级建构",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "建立可操作、由弱到强的11级考试焦虑情境等级表",
+        "task_family": "暴露准备",
+        "method_family": "Behaviorism（行为主义）",
+        "stage": "exposure_preparation",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "8f255fdf-1c14-547e-8509-7231ec939d00",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 11,
+        "paragraph_end": 14,
+        "heading_path": [
+          "四、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、个案基本资料",
+          "二、心理诊断",
+          "三、咨询目标",
+          "五、咨询效果评估"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "1、第1次,2006/10/19"
+      }
+    }
+  ]
+}

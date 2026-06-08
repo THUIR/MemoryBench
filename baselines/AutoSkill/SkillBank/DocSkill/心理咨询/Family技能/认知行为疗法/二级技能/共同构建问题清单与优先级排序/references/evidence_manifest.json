@@ -1,0 +1,76 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "9a1cdc07-76ad-5a20-b4af-e74ccde1884b",
+  "skill_name": "共同构建问题清单与优先级排序",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "d97dc30a-a78b-5007-a277-47cf0d1c003a",
+      "doc_id": "016b12a4-540d-53a5-adb6-fc0e8d0183b6",
+      "document_title": "tppc20230510765-773.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20230510765-773.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 6148,
+        "end": 6544
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "5.1　第一阶段：收集信息与概念化过程，在此基础上共同制订咨询目标和咨询计划\n了解来访者求助的原因，共同建立“问题清单”，引导来访者进行重要程度和优先等级的排序。\n\n学业规划方面：来访者考研准备没有成效、学不好、自述应该让方方面面都满意、应该超过身边学生才是成功，由此引发了低落、无助、担心的情绪症状。对来访进行自身学业能力、考研分析、就业的优、劣势评估，性格分析等，来访者很快意识到除了客观的情境因素外，自身比较敏感、计划性强、要求高等性格特点和思维方式与问题的出现密切相关。引导来访利用韦纳原理进行合理归因，进行内生涯和外生涯评估，与来访共同讨论学业咨询所能达到的目标。围绕这些咨询目标制订了相应的咨询计划。最后，来访者权衡后决定放弃考研，一方面决定重修前期落下的课程，另一方面决定寻找工作。\n\n失恋方面：了解当前问题发生、发展的过程及相关因素，收集相关的恋爱经历，形成初步的个案概念化。",
+      "metadata": {
+        "document_title": "tppc20230510765-773.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "共同构建问题清单与优先级排序",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立问题共识并锚定干预优先序",
+        "task_family": "case_formulation",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "初始评估",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "7911103e-b6bc-57c8-9f48-917c1db6d3d1",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标",
+          "清单"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "运用认知行为疗法对一名双相情感障碍学生的干预报告",
+          "1 个案信息",
+          "2咨询信息",
+          "3 个案概念化",
+          "4 咨询方案",
+          "6 咨询效果"
+        ],
+        "subsection_headings": [
+          "5.1　第一阶段：收集信息与概念化过程，在此基础上共同制订咨询目标和咨询计划",
+          "5.2　第二阶段：对来访进行正常化和心理教育",
+          "5.3　第三阶段：对来访躁狂发作（或抑郁发作）症状进行积极应对",
+          "5.4　第四阶段：对来访幻听症状进行积极应对",
+          "5.5　第五阶段：复发预防与管理",
+          "5.6　第六阶段：巩固性会谈"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "了解来访者求助的原因，共同建立“问题清单”，引导来访者进行重要程度和优先等级的排序。"
+      }
+    }
+  ]
+}

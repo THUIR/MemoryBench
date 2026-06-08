@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "874ca812-a486-5959-87d3-935a7ec9a123",
+  "skill_name": "不合理信念辩论技术实施",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "2b62b681-1bb5-5ca7-8ddd-9cca0e3db708",
+      "doc_id": "b95c43d9-6842-54c7-9391-fc072c4a140e",
+      "document_title": "大学生考前焦虑的心理咨询案例分析_黎晓琪.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/大学生考前焦虑的心理咨询案例分析_黎晓琪.md",
+      "section": "大学生考前焦虑的心理咨询案例分析",
+      "span": {
+        "start": 3730,
+        "end": 4231
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "# （5）小结\n\n咨询师根据家庭作业，展开了解求助者的问题，通过内容反应和影响性技术，确定求助者问题的原因，通过具体化问题将话题引向合理情绪疗法的ABC理论，并初步分析求助者的不合理信念，让求助者认识到是自己的不合理信念造成情绪问题。经过这次咨询，咨询师帮助求助者对学习考试和父亲的期待进行分析，帮助她认识到自己存在的一些不合理信念 。\n\n（6）布置家庭作业\n\n填写 RET自助表，让求助者写出事件A和结果C，然后写出符合自己情况的不合理信念B。\n\n2.第3次咨询（1）咨询任务\n\n①确定求助者心理问题的认知关键点是绝对化和以偏概全；  \n②帮助求助者领悟自己的行为和情绪与不合理信念的关系；  \n③帮助求助者建立改变不合理信念的决心;  \n④帮助求助者修正不合理信念。\n\n（2）咨询方法：与不合理信念辩论技术\n\n（3）咨询过程\n\n①检查反馈家庭作业，修正RET自助表\n\n②围绕求助者的不理性信念，与其不合理的 信念辩论，修正不合理信念\n\n# （4）咨询会谈摘要\n\n求助者：上次咨询完回去后，发现自己是有些不理性的想法。但我觉得我想成为一名优秀的人，所以我很努力学习，但为什么考试成绩没有预期那样好呢？",
+      "metadata": {
+        "document_title": "大学生考前焦虑的心理咨询案例分析_黎晓琪.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "不合理信念辩论技术实施",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "挑战并松动特定非理性信念",
+        "task_family": "cognitive disputation",
+        "method_family": "CBT",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "21bb1655-6784-5600-9a7f-0093323a5d9f",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "第3次咨询",
+          "会谈"
+        ],
+        "paragraph_start": 79,
+        "paragraph_end": 90,
+        "heading_path": [
+          "大学生考前焦虑的心理咨询案例分析"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "结束语"
+        ],
+        "subsection_headings": [
+          "一、一般资料",
+          "二、评估与诊断",
+          "三、协商制订咨询目标",
+          "四、心理咨询的主要方法与适用原理",
+          "五、心理咨询过程",
+          "六、效果评估"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "黎晓琪 黄彩微 于佩鑫（广州工商学院 广东广州 510000)"
+      }
+    }
+  ]
+}

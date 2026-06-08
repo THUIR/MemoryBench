@@ -1,0 +1,38 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "后现代主义",
+  "profile_id": "psychology::后现代主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "917ca294-8f3b-564f-8292-46ad1ade2b23",
+  "parent_name": "CBT咨询末期结构化回顾与强化",
+  "children": [
+    {
+      "skill_id": "08b37925-c59e-5b36-ab21-22b6dd2bec60",
+      "name": "CBT技能归因与生活化迁移训练",
+      "description": "在咨询结束阶段，将来访者在咨询中习得并实践的CBT工具（如三栏表、箭头向下、双重故事）明确归因于其自身能动性与选择，并协同其识别72小时内可及的真实生活情境，设定微小、可验证的行为证据收集任务，以支持新核心信念（如‘我有我价值’‘我有能力’）的持续内化与行动化。",
+      "child_type": "CBT技能泛化",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "917ca294-8f3b-564f-8292-46ad1ade2b23",
+      "level_label": "微技能",
+      "taxonomy_class": "后现代主义",
+      "applicable_when": "在咨询结束阶段，将来访者在咨询中习得并实践的CBT工具（如三栏表、箭头向下、双重故事）明确归因于其自身能动性与选择，并协同其识别72小时内可及的真实生活情境，设定微小、可验证的行为证据收集任务，以支持新核心信念（如‘我有我价值’‘我有能力’）的持续内化与行动化。",
+      "selector_terms": [
+        "来访者已稳定使用至少两项CBT工具（如能独立完成思维记录表、自发运用行为实验）",
+        "来访者出现外部归因表述（如‘要不是老师/咨询师帮我，我做不到’）",
+        "咨询进入第18–22次，目标达成度达80%以上",
+        "CBT",
+        "后现代主义",
+        "资源取向",
+        "技能迁移",
+        "归因训练",
+        "结束阶段",
+        "CBT技能归因与生活化迁移训练"
+      ],
+      "relative_path": "心理咨询/Family技能/后现代主义/微技能/CBT技能归因与生活化迁移训练/SKILL.md"
+    }
+  ]
+}

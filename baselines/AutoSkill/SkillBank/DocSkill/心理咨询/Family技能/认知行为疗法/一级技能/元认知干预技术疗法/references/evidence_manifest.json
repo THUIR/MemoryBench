@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "3c279cfa-7994-5712-90ad-2463a4779d73",
+  "skill_name": "元认知干预技术疗法",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "1ac91f18-a30e-585e-ad90-b7335880d144",
+      "doc_id": "f7d5fa8c-91cb-564a-862b-18e2bd8ff9b8",
+      "document_title": "1例大学生人际交往问题的元认知技术干预_王聪.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例大学生人际交往问题的元认知技术干预_王聪.md",
+      "section": "3 咨询方案",
+      "span": {
+        "start": 2485,
+        "end": 3136
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "3.1咨询方法\n心理咨询师在咨询中采用的是元认知干预技术疗法。元认知干预技术疗法是辽宁师范大学金洪源教授及其团队研发的高效的心理干预技术[2]。\n\n元认知干预技术疗法的核心过程是找到潜意识里引发不良心理、躯体和行为反应的外界刺激，即消极的条件性情绪反应，打破他们之间的联结，并通过临床暗示学习建立新的刺激反应联结[3]，即建立积极的条件性情绪反应。采用的情感组织者技术[4能够促进新的积极的条件性情绪反应更高效、更牢固地建立。情感组织者技术就是运用一个事件、目标等知识经验调动起来访者的积极的情绪情感体验，然后借助这种情感的同化迁移作用，使来访者对原本引发不良情绪反应的刺激能建立轻松、平和的情绪，甚至自信和喜欢的程度，以便建立后来的积极刺激反应联结，从而促使整个心理干预过程变得更加高效[5]。另外，元认知干预技术不仅能有效消除来访者的症状表现，同时还能完善和提升来访者的性格，帮助来访者塑造更加优秀的心理品质和人格。\n\n3.2咨询目标\n短期目标：心理咨询师帮助来访者解决当前问题，即消除对室友的敌意和恐惧，能够跟室友正常的相处；消除对与曾经霸凌过自己的同学外表、说话方式相似的人的恐惧，解决人际交往问题；帮助来访者解决目前的失眠问题。\n\n长期目标：提高来访者的人际交往能力；完善并提升来访者的性格，提高面对挫折，解决问题的能力；促进来访者心理状态达到健康水平。\n\n3.3 咨询时间\n与来访者商定每周一和周四中午12点半～13点半在心理健康教育中心进行心理咨询，根据来访者的实际情况可以调整咨询安排。",
+      "metadata": {
+        "document_title": "1例大学生人际交往问题的元认知技术干预_王聪.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "元认知干预技术疗法",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "重构潜意识层面的刺激-情绪反应模式",
+        "task_family": "情绪调节与人格发展",
+        "method_family": "CBT",
+        "stage": "treatment",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "5b70fae8-4566-520b-9281-fb0bd3a06c36",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "咨询目标"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 4,
+        "heading_path": [
+          "3 咨询方案"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 个案信息",
+          "2 个案心理问题分析和评估",
+          "4心理咨询过程",
+          "5心理咨询效果评价",
+          "6 案例的评价与反思",
+          "7 临床工作者的启示"
+        ],
+        "subsection_headings": [
+          "3.1咨询方法",
+          "3.2咨询目标",
+          "3.3 咨询时间"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "心理咨询师在咨询中采用的是元认知干预技术疗法。元认知干预技术疗法是辽宁师范大学金洪源教授及其团队研发的高效的心理干预技术[2]。"
+      }
+    }
+  ]
+}

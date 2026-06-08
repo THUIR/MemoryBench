@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "98c2da59-2e82-5152-93ee-a44cad946039",
+  "skill_name": "共建个体化ERP暴露等级表",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "af3de888-0440-5048-af89-6f095b16d8ad",
+      "doc_id": "45bbd2fd-a74a-5ef6-bfe8-7eb587aca876",
+      "document_title": "tppc20250708508-517.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20250708508-517.md",
+      "section": "3 咨询过程",
+      "span": {
+        "start": 5115,
+        "end": 6103
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "Table 2 The first thinking change record of C\n\n该阶段中，小C与咨询师共同探索并明确了她的不合理信念（主要涉及自动思维与中间信念），她学会了应对强迫思维的新方法，并能够在生活中自主使用，展现出了一定的干预效果。但仍然存在以下问题：1.干预前后，小C对自动思维的相信程度下降幅度较小，维持在10\\~20分区间；2.干预可以延长“强迫思维出现到实施强迫行为”的间隔时间，但并没有阻止强迫行为的发生；3.小C的强迫清洁行为仍存在反复、多次发生的情况。\n\n3.3　暴露与反应阻止技术阶段（第9-16次）\n在这个阶段中，咨询师应用暴露与反应阻止技术（ERP）对小C的强迫症状展开干预。咨询主要围绕“小C强迫症状的诱发线索”设计暴露训练，咨询师与小C共同确认的暴露等级表如下表3：\n\n# 表3小C的暴露等级表",
+      "metadata": {
+        "document_title": "tppc20250708508-517.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ERP暴露等级表共建流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "构建可操作、可进阶的暴露训练阶梯",
+        "task_family": "强迫症干预",
+        "method_family": "CBT",
+        "stage": "暴露与反应阻止阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "5d866b84-cb8e-51ec-9f41-d72b35961066",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 7,
+        "paragraph_end": 11,
+        "heading_path": [
+          "3 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 研究背景",
+          "2个案情况",
+          "4 总结与讨论"
+        ],
+        "subsection_headings": [
+          "3.1 信息收集阶段（第1-4次）",
+          "3.2不合理信念的发现与干预阶段（第5-8次）",
+          "3.3　暴露与反应阻止技术阶段（第9-16次）",
+          "3.4结束阶段及效果评估（第17次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "在这个阶段中，咨询的主要目的是了解小C的个人信息，同时建立良好的咨访关系，促进咨询的顺利推进。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "53c7a0bd-6735-5f6d-b27e-282961820f86",
+  "skill_name": "正念身体扫描卸载循环",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "cb734eca-8f1e-541e-85a4-6f6221d17345",
+      "doc_id": "79107a61-4dd5-5e0e-9da0-bce8142d18a6",
+      "document_title": "1例正念认知疗法应用于社交焦虑障碍的案例报告_魏倩倩.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例正念认知疗法应用于社交焦虑障碍的案例报告_魏倩倩.md",
+      "section": "3 治疗过程",
+      "span": {
+        "start": 11032,
+        "end": 11697
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "首先，站在一块垫子上（或者如果你想与地面亲密接触也可以不用站在垫子上），保持你的背部挺直，注意不是僵硬，头部与脊柱在一条直线上，膝盖放松，双脚平行站立，间隔15\\~20 cm。\n\n装载阶段：（伸展）慢慢地将手臂举过头顶，在不施加压力或自己添加疼痛感受的情况下，将手臂向背部伸展，对手臂施加压力，直到在手臂和双手上清楚地感受到紧张感，尽量保持30～40 s。\n\n卸载阶段：慢慢地放下手臂，注意这时手臂和双手的感受变化，感到一种渐渐清晰的放松感，就好像所有的紧张感都从手臂流淌出去了。手臂完全放下后，慢慢地弯曲膝盖，将手掌放在地面上，前额优雅地靠在双手之间的地面或垫子。如果你的膝盖很难弯曲，那么也不必勉强，放松阶段到手臂放松就可以了。想象你的头部接触垫子就好像有一根接地导线，这一下接触不仅卸下了你的身体感受，也卸下了你每时每刻都不想要有的想法或情感。一直保持这个姿势，直到所有的紧张感都消失不见。\n\n当减压阶段结束后，慢慢地抬起头，站起来，然后再一次举起手臂，伸过头顶，直到手臂感到紧张感，停下，保持30～40s，慢慢放下，注意观察手臂的紧张感如何消失，手臂和双手如何放松。然后双膝弯曲跪在地面上，再一次轻轻地将前额靠在地面或垫子上。\n\n（每一阶段持续 $3 0 \\sim 4 0 \\mathrm { ~ s ~ }$ ，但是每个人可以按照自己的步调连续进行七次）。\n\n当七次动作（装载和卸载）都完成后，平躺下来，闭上眼睛安静 $5 \\mathrm { { m i n } }$ ，用心去聆听你的身体、感受以及任何稍纵即逝的想法。",
+      "metadata": {
+        "document_title": "1例正念认知疗法应用于社交焦虑障碍的案例报告_魏倩倩.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "正念身体扫描卸载循环",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "降低躯体唤醒水平，增强身体觉察与接纳能力",
+        "task_family": "正念干预",
+        "method_family": "CBT",
+        "stage": "情绪调节训练",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "ce30925c-59c3-5c0d-9e92-f9f5ec8a3331",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 36,
+        "paragraph_end": 41,
+        "heading_path": [
+          "3 治疗过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案情况",
+          "2 个案概念化",
+          "4结果",
+          "5讨论"
+        ],
+        "subsection_headings": [
+          "3.1 第1\\~3次",
+          "3.2 第4\\~6次",
+          "3.3 第7\\~11次",
+          "3.4 第12次",
+          "3.5 第13\\~15次",
+          "3.6 第16\\~17次",
+          "3.7 第18\\~19次"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本案例在精神专科医院心理中心进行心理治疗，治疗设置为：1次/周， $5 0 \\mathrm { { m i n } } /$ 次，共进行19次治疗。"
+      }
+    }
+  ]
+}

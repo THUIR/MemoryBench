@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "a9704d9e-eeb7-5275-bf28-29e4a58960bd",
+  "skill_name": "正念接纳—情绪价值重评引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "bbcfa598-fc82-5ae2-aec9-d32b55adf523",
+      "doc_id": "74f68922-9412-5f81-9f95-d21a388908d7",
+      "document_title": "基于认知行为疗法：一例大一学生抑郁情绪咨询案例_魏一凡.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法：一例大一学生抑郁情绪咨询案例_魏一凡.md",
+      "section": "表2强迫思维记录表",
+      "span": {
+        "start": 3886,
+        "end": 4700
+      },
+      "relation_type": "support",
+      "confidence": 0.88,
+      "quote": "3.认知治疗过程。针对来访者的情况，指导其将反复出现的错误认知记录出来，同时记录随之而来的消极情绪、感受以及行为。咨询师试着引导其在咨询室较为安全放松的环境下，在脑海中重现这些紧张不适的场景，进而检验不良想法带来的后果，尝试对这些信念进行澄清和改变。\n\n在这个过程中，来访者出现了较强的负面情绪和躯体反应，并且表达了其中的不适。咨询师为其讲解了情绪的作用和价值，采用正念技术引导其接纳自己的情绪，重塑想法、情绪、体验与自我的关系。在此基础上，咨询师引导来访者对现实的不合理信念和行为进行矫正，仔细评估核心信念之后，找出并记录下相对应的替代信念。每一次出现不合理的信念时，反复暗示自己应当意识到这些信念是错误的，并用正确的信念取而代之，反复练习。\n\n根据表2“强迫思维记录表”，咨询师和来访者共同探索了三个核心的不合理信念，并引导其把相对应的正确信念写在下面。通过书写的方式强化正向信念的效果，同时利用“再现场景”的模拟训练帮助来访者形成正向暗示的认知思维习惯。咨询师建议可以将替代的正向信念写成标语贴在床头，强化暗示的效果。在难以克服的情景下拿出“强迫思维记录表”,默念或者朗读出相对应的正确信念，直到这些正向信念习惯成自然。\n\n第三阶段（第 $5 \\sim 8$ 次）：矫正错误信念，改善行为障碍\n在第 $5 \\sim 8$ 次咨询中，来访者已经熟悉了强迫思维记录表的使用，并且能够在生活中对一些不合理信念进行纠正，咨询师这阶段的目标是针对改善行为障碍。\n\n1．指导来访者每周来咨询前一天晚上准备一个3分钟的小演讲，中文和英文双式，自备主题，脱稿演讲。来访者自述很喜欢英语，在说英语的时候不会有那么强烈的焦虑感，因此练习英语演讲是一个很好的培养自我效能感的方式。咨询师旨在通过培养成功的语言经验，激发其第二语言的成长，由第二语言推动第二人格、主要人格的完善。来访者在英文演讲训练中表现良好，恢复了一定的自信，情绪得到一定改善。",
+      "metadata": {
+        "document_title": "基于认知行为疗法：一例大一学生抑郁情绪咨询案例_魏一凡.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "正念接纳—情绪价值重评引导",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "中断情绪-灾难化思维恶性循环，建立情绪耐受基线",
+        "task_family": "情绪调节",
+        "method_family": "CBT+正念整合",
+        "stage": "中期干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "0fd00a79-ac2d-5b99-b0d1-09200418805d",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "思维记录",
+          "阶段"
+        ],
+        "paragraph_start": 1,
+        "paragraph_end": 5,
+        "heading_path": [
+          "表2强迫思维记录表"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 基于认知行为疗法：一例大一学生抑郁情绪咨询案例",
+          "表1本案例的认知概念化"
+        ],
+        "subsection_headings": [
+          "第三阶段（第 $5 \\sim 8$ 次）：矫正错误信念，改善行为障碍",
+          "第四阶段(第 $9 \\sim 1 0$ 次巩固效果,预防教育",
+          "# (五)结果",
+          "# 五、总结和反思"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "<table><tr><td></td><td>诱发事件平时作业，食堂点餐，拿快递，日常交往等焦虑事件</td></tr><tr><td rowspan=\"3\"></td><td>我一定要把每件事都做好，如果我做不到，我就是没有能力的、差劲的</td></tr><tr><td>不良信念我是丑陋的，不完美的，我还是不要跟他们搭话了</td></tr><tr><"
+      }
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "0e3ee1f1-64eb-5003-b3ae-891a0c38d7bb",
+  "skill_name": "负性思维-情绪-行为恶性循环图解",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "31ba600d-af6f-5cea-b617-6b2fc438643c",
+      "doc_id": "d9c869a4-449d-56ce-96f2-f10cd8474a7e",
+      "document_title": "1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 6136,
+        "end": 7089
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "咨询方法：谈话法、正念疗法、渐进式肌肉放松训练等。\n\n第三次咨询时，主要解决的问题是宿舍人际关系问题，并以此为契机，让其了解在该情景中，她的负性自动思维是什么，负性思维的特点是什么，以及产生了什么样的情绪和行为。比如，在面对“室友中午没叫我吃饭”这一情景时，通过引导来访者A意识到，该情景引发了她的自动思维：“室友们不喜欢我了，觉得我很爱出风头”；“室友之间应该一起行动（吃饭、上课），如果不一起就是关系不好，就是不在乎我等”；“不一起=不在乎我=不喜欢我”等。这些负性自动思维带有“绝对化的要求、过度概括化、糟糕至极”等特点，且使来访者A产生了明显的难过、委屈、焦虑等不良情绪。在不良情绪的驱使下，来访者A采用了带有指责性的质问行为（“你们今天吃饭为什么不等我？”），引发了室友的防御性回应（“你也没说让等你啊”）。室友的回应行为又成为新的情境/刺激，强化了A原有的负面思维（“看吧，她们果然不在乎我，连解释都这么冷漠”）和负面情绪（“非常难受”），产生新的负面行为（减少沟通），从而形成了恶性循环：负面思维 $\\longrightarrow$ 强烈负面情绪 $\\longrightarrow$ 可能引发冲突或退缩的行为→得到负面反馈→强化负面思维一更强烈的负面情绪在这一阶段中，通过让来访者学会识别不良情绪、挑战消极思维、重构负面解释等，进而打破恶性循环，使其意识到问题产生的原因，并有做出改变的意愿。\n\n# 4.3第三阶段：心理修复阶段（第9～10次）\n\n$\\textcircled{1}$ 本阶段任务：改善人际关系，帮助来访者A分析宿舍同学冷漠的原因，并尝试与同学进行沟通，化解误会，引导其学习有效的沟通技巧，改善人际关系；修复童年创伤，引导其回顾童年经历，重新理解和接纳自我，构建积极的自我认知；鼓励其参加其他社会活动，结交新朋友，与家人改善沟通方式，扩大社会支持系统。 $\\textcircled{2}$ 本阶段的目标：帮助来访者重返现实生活，能够在生活中，自觉运用认知行为主义的理念解决生活中的实际问题，帮助她更好地应对压力，接纳自我，人际关系和谐，能够更好地适应生活。 $\\textcircled{3}$ 咨询方法：支持性干预技术。\n\n咨询师：今天看你状态很好，这周发生了什么美好的事情吗？",
+      "metadata": {
+        "document_title": "1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "负性思维-情绪-行为恶性循环图解",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立对心理问题维持机制的共同理解",
+        "task_family": "psychoeducation",
+        "method_family": "CBT",
+        "stage": "early to mid intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "353bef9d-46eb-5793-bd37-5d28a360222d",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 14,
+        "paragraph_end": 18,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例基于认知行为主义疗法的大学生心理咨询报告",
+          "1一般资料",
+          "2评估",
+          "3 个案概念化",
+          "5 案例评价与反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本案例采用认知与行为主义疗法[，通过帮助来访者进行认知重构、情绪调节、行为激活、应对技能培养和持续监测与调整等途径，以帮助个体缓解心理危机，建立理性的认知模式，学会恰当的情绪表达方式，形成健康的行为习惯，以更好地帮助来访者应对压力，提升信心。本次咨询共持续12次，每周一次，每次50分钟，其中在每次咨询过后，都会和精神科医生进行沟通交流，以便取得更好的治疗效果"
+      }
+    },
+    {
+      "support_id": "8ed757fa-b963-5bbb-996b-07b5160a3a27",
+      "doc_id": "b7e1781b-c35a-5045-8731-9fa503a74e60",
+      "document_title": "tppc20240604147-151.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20240604147-151.md",
+      "section": "2分析评估与辅导干预",
+      "span": {
+        "start": 1664,
+        "end": 2675
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "2.3个案概念化\n在前期评估的基础上，挑选出最具有代表性的线索进行具体分析，重点在于理解回避行为在短期内可以缓解焦虑，但这种负强化会维持焦虑进一步发展。小蕾主要表现出三类典型的焦虑信念：第一类是对未来的“灾难化”解释，如小蕾认为“我考不好就完了”“如果我成绩不好，就没人会喜欢我”；第二类是“低估自我”，小蕾认为“我没法保持之前的好成绩”“我注意力不集中，我学不进去，我没法参加考试”；第三类“无法忍受身体不适”，如小蕾认为“我喘不上气，感觉快要室息了”“我肚子太疼了，我没法参加考试”。\n\n2.4干预策略\n心理教育：首先，让小蕾认识到焦虑情绪、生理反应与灾难化认知和回避行为之间的关系，明确回避行为在短期内具体降低焦虑的效益，但是长期来看却是在维持焦虑，使自己陷入焦虑的恶性循环。通过行为功能分析表帮助小蕾看到焦虑的诱发线索和他自己的应对策略，了解应对策略的短期有效和长期维持焦虑的作用。其次，针对情绪敏感性，教会小蕾接纳和放松技术，再布置家庭作业让小蕾进行持续练习，降低其生理唤醒水平和总体焦虑水平。认知技术：聚焦于小蕾在某情境下的“解释”进行认知重评。例如，在某次结课考前的模拟考试这个情境中出现的灾难化解释“我这次要是考不好就完了”，通过证据法引导小蕾认识到考得不理想（没有达到自己预期的目标成绩）的可能性没有想的那么大，就算这次考试不理想，结果也没有自己想象的那么严重。行为技术：使用现实暴露技术让小蕾在现实的备考情境中，“习惯化”备考情景和气短、手心出汗、恶心等躯体感觉。",
+      "metadata": {
+        "document_title": "tppc20240604147-151.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "焦虑循环心理教育脚本",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "完成首次心理教育以建立治疗同盟与问题理解共识",
+        "task_family": "心理教育",
+        "method_family": "CBT",
+        "stage": "干预启动",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "81a6aa15-bed1-5b7b-bf41-f5c850d1a7cc",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 2,
+        "paragraph_end": 4,
+        "heading_path": [
+          "2分析评估与辅导干预"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一例考试焦虑的咨询报告",
+          "1 案例基本情况",
+          "3 效果与反思"
+        ],
+        "subsection_headings": [
+          "2.1 基础情绪评估",
+          "2.2　焦虑症状评估",
+          "2.3个案概念化",
+          "2.4干预策略"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "首次访谈中，小蕾焦虑自评量表的原始分为45，标准分为56常模为（ $2 9 . 7 8 \\pm 1 0 . 0 7$ ）。抑郁自评量表的原始分为44，标准分为55（常模为 $3 3 . 4 5 \\pm 8 . 5 5$ ）。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "2f11b330-84b3-5c3a-ab94-38c08c158a06",
+  "skill_name": "人际价值观调整团体辅导衔接协议",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "88017394-a5d0-5655-8bbc-f5cb470a72b6",
+      "doc_id": "e1056d31-5cd1-5ec8-8f19-6e8fecaf4247",
+      "document_title": "tppc20210310713-721.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20210310713-721.md",
+      "section": "3 辅导过程",
+      "span": {
+        "start": 6514,
+        "end": 7101
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "来访者在训练结束后表示，似乎这些事件并没有自己想象中那么可怕，就算是很多最坏的情况也是自己可以承受的，相信自己今后可以正确应对了。\n\n3.3.3家庭作业\n坚持之前的各项作业，闹钟时间提前到凌晨1点；根据认知重建的原则,坚持每天进行自我辩驳训练;自我暗示训练，即在遇到各种负性事件或感受时，用新的认知信念“问题只有一个，而解决问题的方法成百上千，我相信自己能够找到解决问题的方法”来挑战和替代原有的不合理信念。\n\n3.4认知巩固与咨询结束阶段（第7-8次面询）\n第7次咨询与来访者总结认知重建过程中的经验，巩固来访者的认知与行为改变成果。同时发现来访者在人际交往方面也存有不合理观念，不可能发展比较深的关系。因此这次咨询重点在于调整来访者在人际交往中存有的价值观问题，首先与来访者交流人际关系的重要性；讨论人际交往策略和方式方法。并安排来访者参加本科生团体辅导课程中的有关人际关系和沟通的团体辅导课程,每周一次，一次3小时，共2次课。与来访者约定间隔两周课程结束后见面。第8次咨询为结束辅导阶段。来访者称最近感觉学习压力增大但生活开始变得充实，与男朋友联系变少并且不想过多考虑异地恋的事情。作为每天紧张学习之余的休息放松，偶尔还是会阅读网络小说，一般每天阅读不会超过1小时。咨询师与来访者总结了这两周参加团体辅导课程的新收获；以及应用在生活中，特别是与同学交往中出现的新变化。",
+      "metadata": {
+        "document_title": "tppc20210310713-721.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "人际价值观调整团体辅导衔接协议",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "弥合个体咨询与团体辅导在人际认知调整上的干预断层，确保价值观层面改变获得多模态强化",
+        "task_family": "跨设置干预协同",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "认知巩固与结束阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "6ae35533-242a-5a46-90c8-4191a7b3f23e",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 21,
+        "paragraph_end": 23,
+        "heading_path": [
+          "3 辅导过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1引言",
+          "2对象与方法",
+          "4 结果",
+          "5 讨论"
+        ],
+        "subsection_headings": [
+          "3.1.1成瘾过程自述",
+          "3.1.2成瘾原因认知分析",
+          "3.1.3家庭作业",
+          "3.2.1恋爱经历与辅导",
+          "3.2.2恋爱观点认知分析",
+          "3.2.3家庭作业",
+          "3.3心理帮助阶段（第5-6次面询）",
+          "3.3.1积极情绪调整",
+          "3.3.2想象训练与认知分析",
+          "3.3.3家庭作业",
+          "3.4认知巩固与咨询结束阶段（第7-8次面询）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "当考上了研究生，男友却远在异地而且总是敷衍搪塞，常说要来看望却没有来，这令自己非常伤心。感觉自己是独自一人在校园里生活，很压抑。在放弃还是坚持这份感情中两难，又矛盾又伤心，只要一想到这件事就觉得无比痛苦。后来发现在阅读网络小说时看到患难中的情侣最后能在一起的情节才能使自己得到一种安慰和精神上的缓解，这种种感受使自己再次沉迷于小说。"
+      }
+    }
+  ]
+}

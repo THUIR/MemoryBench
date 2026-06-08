@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "2451cf3e-2393-5e4b-9f15-20dcd1fcbe1d",
+  "skill_name": "渐进式肌肉放松训练（PMR）会话技能",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "d9aaa343-8101-5425-ad63-31f16ed6ebd5",
+      "doc_id": "da90b9c3-c0a4-51b1-9fbc-a33d9d0fd749",
+      "document_title": "考研焦虑的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/考研焦虑的心理咨询案例报告.md",
+      "section": "七、咨询方案",
+      "span": {
+        "start": 2078,
+        "end": 2459
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "放松疗法就是训练人们随意地放松全身肌肉，以保持心情处于轻松状态的方法。该疗法认为一个人的心情反应包含“情绪”与“躯体\"两部分。如果“躯体\"反应改变了，“情绪\"也会随之改变。\n\n合理情绪疗法倡导引起人们情绪困扰的不是诱发事件本身，而是对事件的不正确解释和评价，个体可以通过改变这些因素来改变情绪。合理情绪疗法的主要目标就是减低求助者各种不良情绪体验，使他们在治疗后带着最少的焦虑、抑郁和敌意生活,帮助他们拥有一个较现实、较理性、较宽容的人生哲学。\n\n求助者的心理问题表现为焦虑和担心，这是错误认知负性信息的行为表现。如果任由其发展,就会严重影响求助者正常的生活、学习。求助者对自己的情绪问题有自知力，焦虑情绪尚未泛化，只是存在认知偏差和错误观念，自己难以调适焦虑情绪，因此适合采用放松训练，以放松代替焦虑,进而缓解症状。同时通过合理情绪疗法从根源上纠正其错误认知。",
+      "metadata": {
+        "document_title": "考研焦虑的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "放松疗法训练",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "缓解焦虑躯体症状并阻断情绪-躯体恶性循环",
+        "task_family": "焦虑干预",
+        "method_family": "CBT",
+        "stage": "症状缓解",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "d74b63af-088c-54c0-8ba0-24f368664778",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 1,
+        "paragraph_end": 3,
+        "heading_path": [
+          "七、咨询方案"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、一般情况",
+          "二、主诉和个人陈述",
+          "三、观察和他人反映",
+          "四、评估与诊断",
+          "五、病因分析",
+          "六、咨询目标"
+        ],
+        "subsection_headings": [
+          "(一)咨询方法与原理。",
+          "(二)双方责任与义务、时间安排与费用。"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "主要咨询方法和适用原理;放松疗法和合理情绪疗法。"
+      }
+    }
+  ]
+}

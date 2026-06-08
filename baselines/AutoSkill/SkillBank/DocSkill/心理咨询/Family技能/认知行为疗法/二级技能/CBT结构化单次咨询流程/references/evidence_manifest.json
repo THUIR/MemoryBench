@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "da8f7267-e118-53a8-b9ba-1019b41afd1f",
+  "skill_name": "CBT结构化单次咨询流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "be833429-0346-5dc8-b2ec-b920d000e79c",
+      "doc_id": "2a3d0974-290d-5a19-a2da-0fd1ea1818ab",
+      "document_title": "tppc20210311805-813.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20210311805-813.md",
+      "section": "4 咨询/治疗过程",
+      "span": {
+        "start": 3050,
+        "end": 3489
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "此个案共咨询十六次。从2019年6月26日开始，到2020年3月30日结束，共有十六次咨询，学校咨询免费。咨询师在第五次咨询后，接受认知行为的团体督导。\n\n每次咨询基本遵循以下的结构：目前的状况和心境检查；与上次咨询的联系；日程设置；家庭作业复习；日程问题讨论，新家庭作业安排和阶段总结；最后概括和反馈。\n\n# 4.1　第一阶段：建立良好的咨询关系，评估自杀风险，进行危机干预（1-3次咨询）\n\n这个阶段，主要是倾听，充分地理解和接纳来访者的情绪，让他充分倾诉。通过观察，倾听，询问，了解到来访者被医院确诊为重度抑郁，并正在服药，了解到目前仍然有频繁的自杀想法，让来访者做抑郁和焦虑测评，结合测评结果，综合评估来访者有一定的自杀风险。决定突破保密原则，采取保密例外，启动危机干预程序，并告知来访者启动危机干预程序，得到来访者的同意，告知家长和学院辅导员，强调来访者的自杀风险，告知注意事项，保障学生的生命健康安全。并留电话给来访者，以备有自杀危机时求助。\n\n第二次咨询过程摘录：",
+      "metadata": {
+        "document_title": "tppc20210311805-813.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT结构化单次咨询流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "维持CBT会谈结构一致性与可复制性",
+        "task_family": "会谈结构管理",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "单次会谈执行",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "4b137c80-aebe-51f3-b8fe-efda7427c87b",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "家庭作业",
+          "作业",
+          "危机干预"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 4,
+        "heading_path": [
+          "4 咨询/治疗过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一例抑郁症危机干预及认知行为治疗案例",
+          "背景",
+          "2评估与分析",
+          "3 咨询/治疗方案",
+          "表1来访者三栏表记录单",
+          "表2来访者的“思维记录”"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "此个案共咨询十六次。从2019年6月26日开始，到2020年3月30日结束，共有十六次咨询，学校咨询免费。咨询师在第五次咨询后，接受认知行为的团体督导。"
+      }
+    }
+  ]
+}

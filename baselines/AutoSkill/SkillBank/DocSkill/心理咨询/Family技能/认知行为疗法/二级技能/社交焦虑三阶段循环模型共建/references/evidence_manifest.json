@@ -1,0 +1,74 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "c0152e73-a06f-5ed4-9a90-e6ee649ab4c2",
+  "skill_name": "社交焦虑三阶段循环模型共建",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "84775a39-8de9-503d-89ec-2e0a0f038855",
+      "doc_id": "79107a61-4dd5-5e0e-9da0-bce8142d18a6",
+      "document_title": "1例正念认知疗法应用于社交焦虑障碍的案例报告_魏倩倩.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例正念认知疗法应用于社交焦虑障碍的案例报告_魏倩倩.md",
+      "section": "3 治疗过程",
+      "span": {
+        "start": 4882,
+        "end": 5513
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "3.2 第4\\~6次\n第四次治疗：通过对来访者进行正常焦虑情绪及病理性焦虑的心理教育后，重新归因焦虑的原因，由原80%父母造成，20%自己能力不足，调整为生理10%，心理40%，朋友$2 0 \\%$ ，父母 $3 0 \\%$ 。对恐惧的认识发生变化，期望SUDs分值从9分下降到3分。\n\n第五次治疗：围绕社交焦虑障碍的认知行为模型展开评估，并引入基于正念的认知行为疗法模型及治疗。具体过程： $\\textcircled{1}$ 引入自动思维的概念。 $\\textcircled{2}$ 通过苏格拉底提问和箭头向下技术识别与问题相关的自动思维，如“我会紧张”“我晃头了”“别人会觉得我奇怪”。 $\\textcircled{3}$ 以社交焦虑障碍的认知-行为模型为理论基础，结合患者自身症状，与其讨论分享社交焦虑障碍的三阶段模型，对每个阶段进行具体的横向解析，使其理解认知与行为及躯体的恶性循环，让患者意识到社交情景中的歪曲自动思维和消极自我形象是产生社交焦虑的主要原因。 $\\textcircled{4}$ 同时帮助来访者意识到躯体反应“晃头”在这个循环中的强化作用。 $\\textcircled{5}$ 通过对“安全行为”的利弊分析帮助来访者认识到症状持续存在并加重的维持因素，激发治疗动机。\n\n第六次治疗：明确来访者明确晃头的原因是特发性震颤，就病因及影响因素方面与来访者讨论，引入正念认知疗法模型，帮助来访者理解正念、接纳的概念，强化躯体感受在治疗中的作用。",
+      "metadata": {
+        "document_title": "1例正念认知疗法应用于社交焦虑障碍的案例报告_魏倩倩.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "社交焦虑障碍三阶段模型解析",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "心理教育与认知重构准备",
+        "task_family": "认知行为干预",
+        "method_family": "CBT",
+        "stage": "中期评估与模型共建",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "ae9f1b2c-3b58-56dd-951b-2e859f67df30",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "苏格拉底"
+        ],
+        "paragraph_start": 4,
+        "paragraph_end": 6,
+        "heading_path": [
+          "3 治疗过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案情况",
+          "2 个案概念化",
+          "4结果",
+          "5讨论"
+        ],
+        "subsection_headings": [
+          "3.1 第1\\~3次",
+          "3.2 第4\\~6次",
+          "3.3 第7\\~11次",
+          "3.4 第12次",
+          "3.5 第13\\~15次",
+          "3.6 第16\\~17次",
+          "3.7 第18\\~19次"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本案例在精神专科医院心理中心进行心理治疗，治疗设置为：1次/周， $5 0 \\mathrm { { m i n } } /$ 次，共进行19次治疗。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "10aa4a91-bae5-5b36-bc00-17aac45c366d",
+  "parent_name": "Persons个案概念化四步模型",
+  "children": [
+    {
+      "skill_id": "9a1cdc07-76ad-5a20-b4af-e74ccde1884b",
+      "name": "共同构建问题清单与优先级排序",
+      "description": "在咨询初始阶段，与来访者协作梳理当前困扰，形成结构化问题清单，并引导其依据主观重要性与紧迫性进行双维度评分与排序，为后续目标设定提供共识基础。",
+      "child_type": "case_formulation",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "10aa4a91-bae5-5b36-bc00-17aac45c366d",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在咨询初始阶段，与来访者协作梳理当前困扰，形成结构化问题清单，并引导其依据主观重要性与紧迫性进行双维度评分与排序，为后续目标设定提供共识基础。",
+      "selector_terms": [
+        "来访者主诉多维困扰且难以聚焦",
+        "需建立咨询目标共识",
+        "来访者存在过度概括或全或无思维倾向",
+        "CBT",
+        "结构化访谈",
+        "目标设定",
+        "优先级排序",
+        "问题清单",
+        "来访者使用‘所有’‘总是’‘完全不行’等绝对化语言描述问题",
+        "来访者表达‘不知道从哪开始’‘什么都糟’",
+        "咨询目标尚未明确或存在分歧",
+        "共同构建问题清单与优先级排序",
+        "在咨询初始阶段，与来访者协作梳理当前困扰，形成结构化问题清单，并引导其依据主观重要性与紧迫性进行双维度评分与排序，为后续目标设定提供共识基础。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/共同构建问题清单与优先级排序/SKILL.md"
+    }
+  ]
+}

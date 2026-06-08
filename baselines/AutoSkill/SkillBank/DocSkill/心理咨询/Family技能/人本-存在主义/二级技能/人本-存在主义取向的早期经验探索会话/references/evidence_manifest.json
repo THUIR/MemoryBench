@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "family_name": "人本-存在主义",
+  "skill_id": "fc25beed-54fa-5822-9fcb-93f42127275b",
+  "skill_name": "人本-存在主义取向的早期经验探索会话",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "efe534c2-5caf-52a4-987c-45549e072377",
+      "doc_id": "20da7e44-53d5-5125-8ce0-29795820e0e9",
+      "document_title": "一例人际关系适应不良的心理咨询案例报告_张月.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/het/一例人际关系适应不良的心理咨询案例报告_张月.md",
+      "section": "第四次咨询",
+      "span": {
+        "start": 5777,
+        "end": 6422
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "1）任务：加深咨访关系，进一步收集资料，对早期经历进行探索。\n\n2）方法：会谈、共情，以人为中心疗法。\n\n3）内容摘要：\n\n李某表述从小与奶奶和妹妹一同生活在农村，后来四年级下的时候转学到县城里，在姑姑家居住。\n\n生活环境发生了很大的变化。刚开始成绩不理想，后通过努力六年级成绩逐渐变好。\n\n初中和高中都是住校。初中的学校不好，班里同学也都不爱学习。当时宿舍附近有坟地，经常有办丧事的，李某在这种环境下极度害怕。其将头藏在被子里来抵御害怕，在被窝里用手电筒坚持学习。高中的时候考到了一个比较好的学校。在高二的时候发生了1个来月的抑郁。主要表现为情绪低落，腹部发凉，感觉冷清。其表达“当时很少和家人打电话，也害怕奶奶担心，身边没有要好的朋友”。后来因为换了同桌，使其好转。她说“同桌的积极乐观感染了她，她想到同桌的笑就会身体没有那么冷。她非常感谢那个同桌，觉得是她当时黑暗人生的阳光”。经过她自己的心理调节，症状好转，考取了大学。\n\n不难看出，儿童早期经验在其心理发展和人格发展中具有重大意义(代文叶，李晶，2011)，并且李某的这种留守经历对其影响也是一种长期效应。这几次对李某成长的梳理，发现李某一边经受着生活的考验，一边通过自己的努力在克服困难。虽然过去的经历，让其内心会产生恐惧、强迫和抑郁，但李某还是具有对抗挫折的潜能。本次咨询中，咨询师引导李某发现自己的力量和潜能。如：在如此艰难的情况下她一直坚持学习，依然考取了大学，内在的坚强和勤奋都是她的积极资源，并对李某表现好的给予肯定。",
+      "metadata": {
+        "document_title": "一例人际关系适应不良的心理咨询案例报告_张月.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "人本-存在主义取向的早期经验探索会话",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "促进自我觉察与积极资源识别",
+        "task_family": "成长史探索",
+        "method_family": "人本-存在主义",
+        "stage": "咨询中期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "14a76248-06fc-51a0-8233-4a84c2a7f74d",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 6,
+        "heading_path": [
+          "第四次咨询"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1.一般资料",
+          "2．主诉和个人陈述",
+          "3.观察和他人反映",
+          "4.评估与诊断",
+          "5．病因分析",
+          "6.咨询目标与咨询方案"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "markdown",
+        "section_summary": "1）任务：加深咨访关系，进一步收集资料，对早期经历进行探索。"
+      }
+    }
+  ]
+}

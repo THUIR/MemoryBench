@@ -1,0 +1,36 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "后现代主义",
+  "profile_id": "psychology::后现代主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "cbd3bd57-02f9-5e7d-86b5-4b41a3dee2ca",
+  "parent_name": "例外事件寻找与丰厚",
+  "children": [
+    {
+      "skill_id": "3a16ba00-8b40-5d04-80f6-ffa187113caf",
+      "name": "奇迹提问引导技术",
+      "description": "通过假设性未来场景提问（如'如果某天醒来焦虑消失了，你会注意到什么不同？'），激活来访者对例外经验与资源的觉察；用于增强希望感与行动线索。",
+      "child_type": "叙事治疗",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "cbd3bd57-02f9-5e7d-86b5-4b41a3dee2ca",
+      "level_label": "微技能",
+      "taxonomy_class": "后现代主义",
+      "applicable_when": "通过假设性未来场景提问（如'如果某天醒来焦虑消失了，你会注意到什么不同？'），激活来访者对例外经验与资源的觉察；用于增强希望感与行动线索。",
+      "selector_terms": [
+        "来访者陷入问题沉浸、缺乏改变动机",
+        "需快速锚定微小积极变化信号",
+        "叙事疗法",
+        "奇迹提问",
+        "资源取向",
+        "外化",
+        "感官细节",
+        "奇迹提问引导技术"
+      ],
+      "relative_path": "心理咨询/Family技能/后现代主义/微技能/奇迹提问引导技术/SKILL.md"
+    }
+  ]
+}

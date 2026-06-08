@@ -1,0 +1,66 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "887cb32d-271a-5be8-9cdf-93f59544e39e",
+  "skill_name": "CBT适应性人际技能具身化辅导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "1a0b92a9-81ad-5099-9457-946b424afc40",
+      "doc_id": "44fa1209-5fce-5cd5-8f7a-0907b747aa37",
+      "document_title": "公费师范生入学适应障碍辅导一例.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/公费师范生入学适应障碍辅导一例.md",
+      "section": "# 乡村振兴战略背景下乡村环境改造的现状与发展趋势",
+      "span": {
+        "start": 5273,
+        "end": 5640
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "(2)目的：帮助学会合理评价、接纳自己；探讨如何建立积极的人际关系。\n\n(3)方法：会谈法、合理情绪疗法。\n\n(4)过程： $\\textcircled{1}$ 放松训练，进一步熟悉放松训练的程序,减轻其紧张焦虑的情绪。 $\\textcircled{2}$ 与黄某的不合理信念辩论。使黄某认识到她的情绪问题是由她的不合理信念造成的，而不是诱发事件本身（自己是个无用的人)。只要正视自己的成长经历，改变对自我的认知,情绪问题或症状就会消失。 $\\textcircled{3}$ 人际交往技能辅导。如真诚相待，懂得分享，不计较得失等等。 $\\textcircled{4}$ 布置作业：黄某主动与同学进行沟通,勇敢的表达自己内心真实的想法;要求黄某用写日记的方式记录每天的心理感受和想法;尝试运用ABC理论分析自己的问题。\n\n8.5第5次咨询",
+      "metadata": {
+        "document_title": "公费师范生入学适应障碍辅导一例.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT适应性人际技能具身化辅导",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "将认知领悟转化为人际行为尝试",
+        "task_family": "行为激活",
+        "method_family": "CBT",
+        "stage": "行为干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "7cf4d833-ebe0-51dc-868f-25eb8eb2d01f",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈",
+          "作业"
+        ],
+        "paragraph_start": 9,
+        "paragraph_end": 12,
+        "heading_path": [
+          "# 乡村振兴战略背景下乡村环境改造的现状与发展趋势"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "公费师范生入学适应障碍辅导一例"
+        ],
+        "subsection_headings": [
+          "# 1乡村振兴战略背景下乡村环境现状及问题",
+          "# 2乡村振兴战略背景下乡村发展的具体策略"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "赵娜衡家龙朱帅（泰州职业技术学院 江苏 225300)"
+      }
+    }
+  ]
+}

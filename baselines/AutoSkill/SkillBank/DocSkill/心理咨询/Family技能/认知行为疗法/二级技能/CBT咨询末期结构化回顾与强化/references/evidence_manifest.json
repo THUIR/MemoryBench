@@ -1,0 +1,102 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+<<<<<<<< HEAD:SkillBank/DocSkill/心理咨询/Family技能/认知行为疗法/二级技能/CBT咨询末期结构化回顾与强化/references/evidence_manifest.json
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "6650d8c1-6f27-56ff-95db-063d382cef48",
+========
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "917ca294-8f3b-564f-8292-46ad1ade2b23",
+>>>>>>>> df073c1eb (updata new DocSkill):SkillBank/DocSkill/心理咨询/Family技能/后现代主义/二级技能/CBT咨询末期结构化回顾与强化/references/evidence_manifest.json
+  "skill_name": "CBT咨询末期结构化回顾与强化",
+  "support_count": 1,
+  "supports": [
+    {
+<<<<<<<< HEAD:SkillBank/DocSkill/心理咨询/Family技能/认知行为疗法/二级技能/CBT咨询末期结构化回顾与强化/references/evidence_manifest.json
+      "support_id": "86ffd4bc-0cfe-522c-835b-c4f494e69584",
+      "doc_id": "dce4feaa-320e-5b83-9644-26511b57d7f5",
+========
+      "support_id": "7a626f89-6918-5a9e-ad8d-4d8940d1aec6",
+      "doc_id": "cefaa7fb-a355-5ae5-87cf-ef5847ee6de5",
+>>>>>>>> df073c1eb (updata new DocSkill):SkillBank/DocSkill/心理咨询/Family技能/后现代主义/二级技能/CBT咨询末期结构化回顾与强化/references/evidence_manifest.json
+      "document_title": "认知行为疗法“和而不同__兼收并蓄”之案例研究——以家庭与叙事心理治疗为视角_张秀敏.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/认知行为疗法“和而不同__兼收并蓄”之案例研究——以家庭与叙事心理治疗为视角_张秀敏.md",
+      "section": "2案例介绍",
+      "span": {
+        "start": 8341,
+        "end": 8824
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "2.4.4.2回顾、总结、强化。咨询师与来访者回顾并讨论其问题改善的进程,帮助她总结在咨询中的收获,引导将改变的因素再次与CBT的原理结合并反复强化。在此过程中,咨询师特别将进程进行视觉性描述，让来访者看到进程中情况的改善往往因为停滞、波动或问题反复而(暂时性的)被打断。同时也向来访者强调咨询结束后生活中可能偶尔问题反复或困难,但来访者会有更重分的准备，自己独立解决这些问题。\n\n2.4.4.3把咨询进展归于来访者，向来访者传授并使用在咨询中学会的工具/技术(如运用三栏表、《思维记录表》箭头向下技术、行为实验、双重故事等),向来访者强调她可以现在及将来在很多情境中运用这些技术和工具。鼓励她在生活中持续地继续比较新旧信念，不断收集\"我有我价值”、“我有能力”的证据并积极按照新信念行动。\n\n2.4.4.4预防复发，为咨询结束后问题反复做好准备，建立期待。鼓励来访者做一张应对卡牌,具体写出咨询后如出现问题反复将要做什么，帮助她发现是什么妨碍她去应对问题的解决，鼓励她独立解决问题。随着期末考试的到来，咨询也接近尾声,最后，咨询师与来访者一同建立对未来的现实期待。",
+      "metadata": {
+        "document_title": "认知行为疗法“和而不同__兼收并蓄”之案例研究——以家庭与叙事心理治疗为视角_张秀敏.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT咨询末期结构化回顾与强化",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+<<<<<<<< HEAD:SkillBank/DocSkill/心理咨询/Family技能/认知行为疗法/二级技能/CBT咨询末期结构化回顾与强化/references/evidence_manifest.json
+        "objective": "巩固疗效、增强自我效能、预防复发",
+        "task_family": "CBT termination",
+========
+        "objective": "巩固疗效、增强自我效能感、建立对反复的现实预期",
+        "task_family": "CBT咨询结束阶段干预",
+>>>>>>>> df073c1eb (updata new DocSkill):SkillBank/DocSkill/心理咨询/Family技能/后现代主义/二级技能/CBT咨询末期结构化回顾与强化/references/evidence_manifest.json
+        "method_family": "CBT",
+        "stage": "termination",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+<<<<<<<< HEAD:SkillBank/DocSkill/心理咨询/Family技能/认知行为疗法/二级技能/CBT咨询末期结构化回顾与强化/references/evidence_manifest.json
+        "window_id": "e3196b3c-4559-566d-b0e3-acc36034a86c",
+========
+        "window_id": "f8b73a0f-ba57-514b-a504-b19e7dff6741",
+>>>>>>>> df073c1eb (updata new DocSkill):SkillBank/DocSkill/心理咨询/Family技能/后现代主义/二级技能/CBT咨询末期结构化回顾与强化/references/evidence_manifest.json
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "思维记录"
+        ],
+        "paragraph_start": 39,
+        "paragraph_end": 41,
+        "heading_path": [
+          "2案例介绍"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1问题的提出",
+          "3讨 论"
+        ],
+        "subsection_headings": [
+          "2.1.1基本信息及来访原因",
+          "2.1.2 第一印象",
+          "2.1.3主要问题",
+          "2.1.4个人成长史",
+          "2.2个案概念化",
+          "2.2.1促发因素",
+          "2.2.2当前认知与行为的横断分析",
+          "2.2.3认知与行为的纵向分析",
+          "2.2.4概念化总结",
+          "2.3咨询目标",
+          "2.4咨询过程",
+          "2.4.1第一阶段(第1\\~6次)",
+          "2.4.2第二阶段(第7\\~13次)",
+          "2.4.3第三阶段(第14\\~19次)",
+          "2.4.4第四阶段(第 20\\~22次)",
+          "2.5.1认知",
+          "2.5.2情绪",
+          "2.5.3社会功能"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "21岁,就读某高等院校，大二年级女生，与舍友关系紧张持续半个月后，与舍友大吵，发生激烈冲突，随后由辅导员要求到校心理中心咨询。此前无心理疾病史和咨询经历。"
+      }
+    }
+  ]
+}

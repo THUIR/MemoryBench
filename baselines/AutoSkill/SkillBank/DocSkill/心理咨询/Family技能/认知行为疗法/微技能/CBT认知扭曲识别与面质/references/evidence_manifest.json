@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "39e7575d-b6ff-545a-9168-49584d473fb7",
+  "skill_name": "CBT认知扭曲识别与面质",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "a2e81019-a1cb-59d1-8dcb-73ef506c628e",
+      "doc_id": "b51dd2b8-4e44-5fa3-803d-96845a3e810b",
+      "document_title": "tppc20240609540-546.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20240609540-546.md",
+      "section": "4 辅导过程与实施",
+      "span": {
+        "start": 3684,
+        "end": 4026
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "咨询师询问李某作为同学A被打的感受，李某表示当知道自己即将被打时，提前就感到很紧张，但是在被打后背的过程中感受到很愤怒，但是觉得自己是活该的。咨询师询问如果有其他的办法来代替被打的惩罚，自己作为同学A是否愿意，李某表示愿意。\n\n在角色扮演后，咨询师给李某留下了家庭作业并让其在下次咨询的时候带过来。李某回去需要跟父亲讨论父亲之前说的“如果学校里有人欺负你，你就打回去”的原因是什么，除了这个方法是否还有其他的解决方式。\n\n4.3　第三阶段：认知调整与家庭作业\n针对上次留下的家庭作业，咨询师和李某就家庭作业的内容进行了讨论。并运用情感反映、自我暴露、鼓励、澄清、面质等技术，促使其觉察出自身这种全或无、非黑即白的极端认知，并尝试做出改变。\n\n李某：爸爸说他让我打回去是不想我被人欺负。",
+      "metadata": {
+        "document_title": "tppc20240609540-546.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT认知扭曲识别与面质",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促发对极端认知模式的觉察与初步松动",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "认知调整",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "a8628cca-b87e-5c8a-9dac-896895a07fbe",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 19,
+        "paragraph_end": 22,
+        "heading_path": [
+          "4 辅导过程与实施"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 引言",
+          "2个案基本信息",
+          "3 问题成因分析",
+          "5 反思后记"
+        ],
+        "subsection_headings": [
+          "4.1　第一阶段：房树人绘画",
+          "4.2　第二阶段：角色扮演",
+          "4.3　第三阶段：认知调整与家庭作业",
+          "4.4　第四阶段：行为训练与家庭作业的结合"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本阶段通过房树人绘画将主体感受客体化，将李某的内心世界投射到绘画中，以便更加深入地了解李某的认知模式及其背后的内心冲突。"
+      }
+    }
+  ]
+}

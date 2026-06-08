@@ -1,0 +1,36 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "行为主义",
+  "profile_id": "psychology::行为主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "8cc51575-33a5-547e-abf0-5886c3a6c615",
+  "parent_name": "系统脱敏法分阶暴露流程",
+  "children": [
+    {
+      "skill_id": "cfa5bba4-1d47-53df-a312-acbd17afe9b5",
+      "name": "愤怒具身化宣泄技术",
+      "description": "引导来访者通过绘画、咆哮、辱骂、撕毁等身体化动作，将压抑的愤怒情绪定向投射至象征性客体（如学生干部画像），实现情绪安全释放与躯体张力松解。",
+      "child_type": "情绪调节",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "8cc51575-33a5-547e-abf0-5886c3a6c615",
+      "level_label": "微技能",
+      "taxonomy_class": "行为主义",
+      "applicable_when": "引导来访者通过绘画、咆哮、辱骂、撕毁等身体化动作，将压抑的愤怒情绪定向投射至象征性客体（如学生干部画像），实现情绪安全释放与躯体张力松解。",
+      "selector_terms": [
+        "来访者存在明显压抑型情绪表达模式",
+        "已识别具体人际冲突对象",
+        "能区分象征性宣泄与现实攻击行为",
+        "具身化",
+        "系统脱敏延伸",
+        "攻击性转化",
+        "象征性行为",
+        "愤怒具身化宣泄技术"
+      ],
+      "relative_path": "心理咨询/Family技能/行为主义/微技能/愤怒具身化宣泄技术/SKILL.md"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "1554ef13-7202-510e-a0a7-739aa2cb1dbc",
+  "parent_name": "情绪监测：疾病认知与自我关怀转移",
+  "children": [
+    {
+      "skill_id": "e695013b-7fcf-51ca-82ce-eeb19ef339fc",
+      "name": "照顾者焦点校准微干预",
+      "description": "当服务对象持续描述患者症状时，therapist 用固定话术打断并引导其转向自身体验，以即时中断对外部问题的单向沉浸，锚定当下躯体/情绪体验，服务于行为激活中‘行为-体验联结’的核心机制。",
+      "child_type": "抑郁干预",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "1554ef13-7202-510e-a0a7-739aa2cb1dbc",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "当服务对象持续描述患者症状时，therapist 用固定话术打断并引导其转向自身体验，以即时中断对外部问题的单向沉浸，锚定当下躯体/情绪体验，服务于行为激活中‘行为-体验联结’的核心机制。",
+      "selector_terms": [
+        "服务对象连续2轮以上仅描述患者行为或问题",
+        "出现‘我没事’‘都习惯了’等情绪回避表述",
+        "行为激活",
+        "照顾者支持",
+        "躯体化引导",
+        "焦点转移",
+        "电话干预",
+        "语言内容100%聚焦患者症状，无主语‘我’或第一人称感受词",
+        "语速加快、音调扁平、呼吸浅短",
+        "使用‘应该’‘必须’‘理所当然’等义务化表述",
+        "照顾者焦点校准微干预",
+        "当服务对象持续描述患者症状时，therapist 用固定话术打断并引导其转向自身体验，以即时中断对外部问题的单向沉浸，锚定当下躯体/情绪体验，服务于行为激活中‘行为-体验联结’的核心机制。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/照顾者焦点校准微干预/SKILL.md"
+    }
+  ]
+}

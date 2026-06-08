@@ -1,0 +1,74 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "301d5f07-801d-5bd0-a97c-273ac2b03b88",
+  "skill_name": "合理情绪疗法四阶段结构化治疗框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "a3337e6c-2226-57d0-8b0a-6b796506d174",
+      "doc_id": "f2068179-f120-5583-b0f0-9fd7fc2138a3",
+      "document_title": "tppc20190104199-211.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20190104199-211.md",
+      "section": "4 过程",
+      "span": {
+        "start": 5008,
+        "end": 6026
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "4.1　第一阶段为诊断阶段（第 $1 \\sim 2$ 次）\n了解求助者基本情况，收集临床资料，建立良好咨询关系，帮助求助者合理地宣泄情绪。向求助者解说合理情绪疗法，明确求助者的ABC，根据ABC 理论对求助者的问题进行初步分析诊断。\n\n初步诊断为一般心理问题，与求助者协商制定咨询目标和方案。\n\n总结本次咨询内容，布置家庭作业：\n\n（1）请求助者将自己的苦闷不良的情绪写出来。  \n（2）每天做 $2 \\sim 3$ 次放松训练。\n\n4.2　第二阶段为领悟阶段（第 $3 \\sim 4$ 次）\n帮助求助者领悟合理情绪疗法的原理，使求助者领悟自己的问题与不合理信念的关系，了解自己问题的根源在于她对事物的看法和信念。帮助求助者领悟要改变情绪困扰，就要改变不合理认知进而改变情绪。鼓励求助者寻找和发现其情绪、行为中的不合理信念。通过启发与引导，帮助求助者找出引起抑郁、焦虑情绪有关的不合理信念。求助者不合理信念的主要特征，一是绝对化要求：个体以自己的意愿为出发点，认为某事必定发生或不会发生的信念。当事物的发生于其对事物的绝对化要求相悖时就会感到难以接受和适应，易陷人情绪困扰中。二是过分概括化：个体以偏概全的不合理思维方式，以某一件或几件事来评价自身或他人的整体价值。三是糟糕至极：把事物的可能后果想象推理到非常可怕糟糕甚至是灾难的非理性信念。当遇到他认为糟糕透顶的事情发生时，就会陷入极度负性情绪体验中［2］。\n\n对求助者认为：本科生毕业就应该有毕业证和学位证的绝对化要求不合理信念的处理。",
+      "metadata": {
+        "document_title": "tppc20190104199-211.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "合理情绪疗法四阶段结构化流程",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "提供跨会话的阶段性治疗框架",
+        "task_family": "CBT",
+        "method_family": "认知行为疗法",
+        "stage": "treatment",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "156139b2-47c8-5e52-8e6c-b314a476833b",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 6,
+        "heading_path": [
+          "4 过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 背景",
+          "2评估与分析",
+          "3 目标与计划",
+          "5 咨询效果评估",
+          "6 讨论与总结"
+        ],
+        "subsection_headings": [
+          "4.1　第一阶段为诊断阶段（第 $1 \\sim 2$ 次）",
+          "4.2　第二阶段为领悟阶段（第 $3 \\sim 4$ 次）",
+          "4.3第三阶段为修通阶段（ $5 \\sim 6$ 次）",
+          "4.4第四阶段为再教育阶段、总结、结束咨询（ $7 \\sim 8$ 次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "了解求助者基本情况，收集临床资料，建立良好咨询关系，帮助求助者合理地宣泄情绪。向求助者解说合理情绪疗法，明确求助者的ABC，根据ABC 理论对求助者的问题进行初步分析诊断。"
+      }
+    }
+  ]
+}

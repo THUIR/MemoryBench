@@ -1,0 +1,74 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "ea3b28b7-03d7-5436-847c-8c0680c3982b",
+  "skill_name": "ACT创造性无望四问引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "545aaa63-0a01-56ef-974b-581467d89b0b",
+      "doc_id": "5bdbd9da-da36-54d1-801b-be0851a2e859",
+      "document_title": "1例短视频成瘾大学生的接纳承诺疗法咨询案例报告_叶腾.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例短视频成瘾大学生的接纳承诺疗法咨询案例报告_叶腾.md",
+      "section": "3 咨询过程",
+      "span": {
+        "start": 2385,
+        "end": 3528
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "3.1第一次咨询：收集资料，建立咨询关系，介绍ACT，确立咨询目标\n咨询师首先阐明咨询设置，重申保密原则。面对小G的迟疑，讲述“双山隐喻”让小G了解到咨询师是她人生之旅的同路人，并非高高在上、严肃刻板的大道理灌输者。\n\n在咨询师引导与鼓励下，小G讲述自己近来总是晚上睡不好觉，经常一个人玩手机到凌晨两三点，白天上课没精神，作业一直在拖延，每天都过得很无聊，没有什么朋友，在班级里面就是个小透明，觉着别人的生活挺精彩，而自己一无是处。咨询师依次采用ACT咨询中创造性无望的经典四问问小G：你曾经尝试过哪些方法、效果怎么样、有达到预期目标吗，以及产生哪些新的问题。过程中咨询师始终保持尊重、开放与好奇的态度，让小G感觉到温暖、平等和真诚，从而对咨询师建立了初步的信任。\n\n选取对应心理量表测评后，咨询师简要介绍ACT，双方商定尝试使用此方法来帮助小G应对当前的困扰。制定完咨询目标后，咨询师给小G布置了一个任务，记录并在下次咨询中报告这周每晚睡觉的时间，以及睡前主要在做什么，以便下次探讨。\n\n3.2第二次咨询：练习抛锚三步走（ACE）技术，解离负面认知的影响\n小G表示上次回去后记录睡觉时间的念头会时不时地提醒自己注意时间，让自己比以往早睡了不少。咨询师笑着说你的自控力并不差，这个任务帮助你增进了自我觉察，觉察就是改变的开始。\n\n咨询师解释，当我们与身体感觉建立连接时，就能解离头脑与负面想法的融合带来的苦恼，刚才只是正念练习的一种，还有很多种灵活的练习方式可供小G挑选，如正念呼吸、正念行走等方式随时随地与自己的身体感觉建立连接，全然地活在当下，长期练习对于集中和控制自己的注意力都非常有帮助。",
+      "metadata": {
+        "document_title": "1例短视频成瘾大学生的接纳承诺疗法咨询案例报告_叶腾.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ACT创造性无望四问引导",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "激发改变动机",
+        "task_family": "动机激发",
+        "method_family": "接纳承诺疗法",
+        "stage": "初始至中期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "5800d2bf-4af5-5649-9d45-57fedf51cf80",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "咨询目标",
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 5,
+        "heading_path": [
+          "3 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例短视频成瘾大学生的接纳承诺疗法咨询案例报告",
+          "1一般资料",
+          "2 咨询方案",
+          "4 咨询效果",
+          "5反思和启示"
+        ],
+        "subsection_headings": [
+          "3.1第一次咨询：收集资料，建立咨询关系，介绍ACT，确立咨询目标",
+          "3.2第二次咨询：练习抛锚三步走（ACE）技术，解离负面认知的影响",
+          "3.3第三次咨询：引入靶心图工具，澄清价值追求",
+          "3.4第四次咨询：聚焦价值目标，制定有效行动计划",
+          "3.5第五次咨询：进阶认知解离，行动中塑造出新自我",
+          "3.6 第六次咨询：总结巩固和告别"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询师首先阐明咨询设置，重申保密原则。面对小G的迟疑，讲述“双山隐喻”让小G了解到咨询师是她人生之旅的同路人，并非高高在上、严肃刻板的大道理灌输者。"
+      }
+    }
+  ]
+}

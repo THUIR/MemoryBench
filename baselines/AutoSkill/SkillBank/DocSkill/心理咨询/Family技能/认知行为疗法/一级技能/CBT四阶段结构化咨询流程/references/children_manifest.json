@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "bfa90e9b-993d-505a-9923-8017cd8c5dc0",
+  "parent_name": "CBT四阶段结构化咨询流程",
+  "children": [
+    {
+      "skill_id": "c9bf221d-9693-5d1f-a146-31784524e49d",
+      "name": "洗手行为-情绪联结日记作业",
+      "description": "指导来访者每日结构化记录洗手行为（时间、次数）、发生情境、即时情绪及自动思维，用于识别强迫性清洁行为与焦虑情绪之间的条件联结模式，支撑CBT个案概念化与认知重构。",
+      "child_type": "行为监测与认知觉察",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "bfa90e9b-993d-505a-9923-8017cd8c5dc0",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "指导来访者每日结构化记录洗手行为（时间、次数）、发生情境、即时情绪及自动思维，用于识别强迫性清洁行为与焦虑情绪之间的条件联结模式，支撑CBT个案概念化与认知重构。",
+      "selector_terms": [
+        "存在仪式化、重复性洗手行为",
+        "焦虑主诉与洗手行为在时间或情境上高频共现",
+        "来访者表达过‘洗完才安心’‘不洗就难受’等主观体验",
+        "CBT",
+        "行为监测",
+        "自动思维识别",
+        "焦虑评估",
+        "家庭关系敏感",
+        "来访者主动提及洗手频率增加",
+        "会谈中出现‘怕脏’‘怕传染’‘怕失控’等表述",
+        "SCL-90强迫因子分升高",
+        "洗手行为-情绪联结日记作业",
+        "指导来访者每日结构化记录洗手行为（时间、次数）、发生情境、即时情绪及自动思维，用于识别强迫性清洁行为与焦虑情绪之间的条件联结模式，支撑CBT个案概念化与认知重构。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/洗手行为-情绪联结日记作业/SKILL.md"
+    }
+  ]
+}

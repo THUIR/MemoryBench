@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "42080b3a-4bc1-5eb5-b27d-97065bee7d8c",
+  "skill_name": "合理情绪疗法六次结构化咨询框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "28a1b3e0-6413-594e-9b1a-ae53d00f4ba7",
+      "doc_id": "5dba01d5-db64-541c-bafb-236bc24e5536",
+      "document_title": "一例大学生宿舍人际交往问题的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例大学生宿舍人际交往问题的心理咨询案例报告.md",
+      "section": "八、咨询过程",
+      "span": {
+        "start": 2480,
+        "end": 2610
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "咨询原理及方法采用合理情绪疗法(RET)和角色扮演法,明确双方的责权义,咨询实践1次/周,60分/次,共6次,免费。\n\n第一阶段;建立咨询关系,收集资料,进行评估与诊断(第1\\~2次)。\n\n第二阶段;心理帮助(第3\\~5次)。\n\n运用合理情绪疗法进行心理调适。",
+      "metadata": {
+        "document_title": "一例大学生宿舍人际交往问题的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "合理情绪疗法分阶段咨询流程",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "提供可复usable的RET短程咨询阶段划分与次数分配框架",
+        "task_family": "认知行为干预",
+        "method_family": "CBT",
+        "stage": "treatment planning",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "0b501556-0f2b-52dd-847d-a0dcbccb62a0",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "八、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、一般资料",
+          "二、主诉及个人陈述",
+          "三、咨询师观察了解到的情况",
+          "四、求助者背景资料",
+          "五、初步诊断",
+          "六、病因分析"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询原理及方法采用合理情绪疗法(RET)和角色扮演法,明确双方的责权义,咨询实践1次/周,60分/次,共6次,免费。"
+      }
+    }
+  ]
+}

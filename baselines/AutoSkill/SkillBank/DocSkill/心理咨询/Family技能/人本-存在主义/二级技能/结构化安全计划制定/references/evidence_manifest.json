@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "family_name": "人本-存在主义",
+  "skill_id": "6d384791-ac88-50de-9039-cde1442b6276",
+  "skill_name": "结构化安全计划制定",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "ec9e1f1b-e214-5257-98a2-6c29ba32950e",
+      "doc_id": "fa70259e-19e2-5ba7-928d-c54ffa1acd09",
+      "document_title": "1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/het/1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 4016,
+        "end": 4570
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "2021年11月～2022年7月，小Y到医院就诊进行药物治疗，并具有较好的药物依从性后，与小Y一起进行了14次心理咨询，主要针对小Y的自杀危机进行持续的评估与干预,包含危机干预、探索资源2个核心部分。\n\n5.1以危机干预为基础展开心理咨询（第1～4次）\n在首次心理咨询时对小Y进行评估，因为风险较高，在第一次咨询过程中与其制定了“安全计划”，内容包括：$\\textcircled{1}$ 讨论紧急联系人有哪些，写出联系人的联系方式的同时为小Y提供心理援助热线，并对小Y说明“在咨询期间不能做出伤害自己的行为，如有不可控的情况需要联系到咨询师、家人或辅导员”的要求并让其做出承诺； $\\textcircled{2}$ 使用正向提问让小Y回想在自杀意念出现的时候，曾经做过哪些事情让自己心情尽快恢复平静，小Y回复听音乐、吃美食的时候会让自己的心情尽快好起来； $\\textcircled{3}$ 和小Y一起讨论待在哪些场所会较为安全，例如图书馆、低楼层教室等人多的地方。制定这一安全计划的过程其实也是让小Y整理她对自己情绪控制时所得的经验和能做到的事情。\n\n咨询师：小Y，考虑到你目前的情绪状态和自杀风险，我们今天需要制定一个安全计划，以确保你能够得到及时有效的帮助和支持。你觉得怎么样？\n\n小Y：好的，我试试。",
+      "metadata": {
+        "document_title": "1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "结构化安全计划制定",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "safety_micro",
+        "asset_path": "family_root/safety_module/safety_micro",
+        "asset_level": 2,
+        "visible_role": "leaf",
+        "objective": "预防即时自伤/自杀行为，建立危机应对契约",
+        "task_family": "危机干预",
+        "method_family": "人本-存在主义",
+        "stage": "初始评估与稳定化",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "4fac518a-b52a-5f4d-8751-78c52c305149",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "危机干预",
+          "安全计划"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案概况",
+          "2 案例介绍",
+          "3 案例分析",
+          "4咨询方案与咨询目标",
+          "6 咨询效果与反思"
+        ],
+        "subsection_headings": [
+          "5.1以危机干预为基础展开心理咨询（第1～4次）",
+          "5.2积极关注与探索小Y的资源与力量（第5～13次）",
+          "5.3第三阶段：效果巩固，结束咨询（第14次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "2021年11月～2022年7月，小Y到医院就诊进行药物治疗，并具有较好的药物依从性后，与小Y一起进行了14次心理咨询，主要针对小Y的自杀危机进行持续的评估与干预,包含危机干预、探索资源2个核心部分。"
+      }
+    }
+  ]
+}

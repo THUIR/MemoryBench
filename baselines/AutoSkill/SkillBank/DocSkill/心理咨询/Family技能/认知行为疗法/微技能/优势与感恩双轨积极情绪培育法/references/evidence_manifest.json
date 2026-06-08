@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "443ad6b9-fba6-5417-bda8-2d492b854bf3",
+  "skill_name": "优势与感恩双轨积极情绪培育法",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "ddc2c37d-b439-5fb1-9792-8375745da43e",
+      "doc_id": "d9c869a4-449d-56ce-96f2-f10cd8474a7e",
+      "document_title": "1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 7569,
+        "end": 8077
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "来访者：可以吧，我觉得在心理上长大了一些。\n\n# 4.4 第四阶段：巩固效果，预防复发（第11～12次）\n\n由于寒假来临，因此，这两次咨询是在线上进行的。再加上在家中，因此设置了一些适合家庭进行的活动。咨询任务：与来访者A一起回顾咨询过程，总结其取得的进步和收获，引导其思考咨询过程中学到的知识和技能；帮助来访者A思考未来可能导致情绪波动的诱因，并制定相应的应对策略；本阶段的目标：巩固咨询效果，将所学知识和技能应用到生活中，能够识别负面情绪，并能够及时求助或者应对，防止心理问题复发，积极进行自我调适，保持心理健康。积极心理学：通过优势与美德测试，引导其发现自身优势和长处，通过每天记录生活中发生的美好、值得感恩的事情，培养积极情绪。制定体育锻炼计划，建议来访者A每天继续进行一定的体育锻炼，来访者A每天在家跳健美操20min，以达到强身健体、改善情绪状态的功效。最后一次咨询时，通过（SCL-90、SDS、SAS、SBQ-R）心理复测，评估了其心理状态，双方一致认为，心理咨询目标已经基本达成，来访者A情绪较为平和，看待问题的角度更为积极乐观，人际关系有所改善，更能适应校园学习生活。因此，结束本案例的心理咨询。",
+      "metadata": {
+        "document_title": "1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "优势与感恩双轨积极情绪培育法",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "通过具身化、低门槛的日常记录，增强来访者对正向体验的觉察力与归因能力，缓冲负性认知偏差。",
+        "task_family": "积极情绪调节",
+        "method_family": "CBT+积极心理学",
+        "stage": "巩固与预防复发",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "3efbf3ad-51b2-5cef-9d86-0d17e7254ead",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标"
+        ],
+        "paragraph_start": 31,
+        "paragraph_end": 33,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例基于认知行为主义疗法的大学生心理咨询报告",
+          "1一般资料",
+          "2评估",
+          "3 个案概念化",
+          "5 案例评价与反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本案例采用认知与行为主义疗法[，通过帮助来访者进行认知重构、情绪调节、行为激活、应对技能培养和持续监测与调整等途径，以帮助个体缓解心理危机，建立理性的认知模式，学会恰当的情绪表达方式，形成健康的行为习惯，以更好地帮助来访者应对压力，提升信心。本次咨询共持续12次，每周一次，每次50分钟，其中在每次咨询过后，都会和精神科医生进行沟通交流，以便取得更好的治疗效果"
+      }
+    }
+  ]
+}

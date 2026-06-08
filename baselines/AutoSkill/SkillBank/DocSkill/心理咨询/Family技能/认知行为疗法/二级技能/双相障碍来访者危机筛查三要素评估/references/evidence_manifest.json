@@ -1,0 +1,74 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "5883fc95-e391-5178-a4af-5f5de4448036",
+  "skill_name": "双相障碍来访者危机筛查三要素评估",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "1a552602-d086-5235-abe8-51cdc3cfadcb",
+      "doc_id": "016b12a4-540d-53a5-adb6-fc0e8d0183b6",
+      "document_title": "tppc20230510765-773.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20230510765-773.md",
+      "section": "3 个案概念化",
+      "span": {
+        "start": 2399,
+        "end": 2765
+      },
+      "relation_type": "constraint",
+      "confidence": 0.95,
+      "quote": "3.1 确定评估目标\n首先，由于来访曾在医院被诊断为双相情感障碍并伴有精神病性症状的重度抑郁发作，曾因学业压力巨大和失恋产生自伤行为，因此需要对其进行危机评估，了解来访以往自伤自杀经历、目前有无自伤自杀计划以及社会支持。\n\n3.2采用量表和访谈法进行评估\n首次访谈主要评估来访目前的身心状态。来访者焦虑自评量表（SAS）标准得分为35，不存在焦虑症状。社会再适应量表（SRRS）得分为53，重大生活事件会使个体承受巨大的心理压力，进而有产生疾病的风险。抑郁自评量表（SDS）标准得分72分，测试结果显示来访可能存在中度抑郁。\n\n3.3工作诊断\n来访主要问题表现为不自信、自我认同感低、失眠、学业倦怠和恋爱问题等，无重大躯体疾病，虽然有自伤自杀念头，但无自杀行为，思维清晰，正在正常参加比赛，说明其社会功能正常，可进一步进行心理辅导。",
+      "metadata": {
+        "document_title": "tppc20230510765-773.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "双相障碍来访者危机筛查三要素评估",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "safety_micro",
+        "asset_path": "family_root/safety_module/safety_micro",
+        "asset_level": 2,
+        "visible_role": "leaf",
+        "objective": "完成危机风险的结构化初筛",
+        "task_family": "危机评估",
+        "method_family": "结构化访谈",
+        "stage": "初始评估",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "94d5b15e-3d23-511e-95b5-5186b026a9f6",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "3 个案概念化"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "运用认知行为疗法对一名双相情感障碍学生的干预报告",
+          "1 个案信息",
+          "2咨询信息",
+          "4 咨询方案",
+          "5 咨询过程",
+          "6 咨询效果"
+        ],
+        "subsection_headings": [
+          "3.1 确定评估目标",
+          "3.2采用量表和访谈法进行评估",
+          "3.3工作诊断",
+          "3.4个案概念化",
+          "3.4.1　第一方面：横向概念化和纵向概念化分析",
+          "3.4.2　第二方面：识别和挑战自动思维，同时贯穿问题解决的策略",
+          "3.4.3　第三方面：针对中间信念和核心信念进行工作，激发改变",
+          "3.4.4第四方面：巩固咨询效果，准备结束，预防复发"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "首先，由于来访曾在医院被诊断为双相情感障碍并伴有精神病性症状的重度抑郁发作，曾因学业压力巨大和失恋产生自伤行为，因此需要对其进行危机评估，了解来访以往自伤自杀经历、目前有无自伤自杀计划以及社会支持。"
+      }
+    }
+  ]
+}

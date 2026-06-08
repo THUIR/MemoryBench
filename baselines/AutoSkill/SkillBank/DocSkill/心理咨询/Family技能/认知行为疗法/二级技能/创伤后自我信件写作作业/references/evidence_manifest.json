@@ -1,0 +1,133 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "4772e778-e44c-5499-b3f7-047cc32690d1",
+  "skill_name": "创伤后自我信件写作作业",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "ac9c3358-b3bc-5b35-9c42-d548ac21fafc",
+      "doc_id": "387ad393-30da-5b90-8419-3730d0a70747",
+      "document_title": "1例基于短程整合取向的低自尊高职大学生心理咨询案例报告_李春萍.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例基于短程整合取向的低自尊高职大学生心理咨询案例报告_李春萍.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 6667,
+        "end": 7579
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "咨询师：似乎只能眼睁睁地看着13岁无助的自己，苦苦挣扎却无法摆脱，还有一种深深的无力感和对自己的失望。所以，你虽然现在长大了，内心那个受伤的无助的小孩却会一直在那，每当现实里有类似被羞辱、不被认可的情形出现时，他就会出现，让你再次体验创伤带来的痛苦。我这样说你可以理解吗？你的另一部分，内在的那个小孩他一直留在创伤内，影响着现在的你。\n\n咨询师尝试采用空椅技术与内在创伤的小孩进行沟通安抚。小Y有触动，但表示自己还没有足够的信心保护内心的小孩。咨询师肯定小Y的表现和敢于表达真实想法，鼓励小Y的每一个进步并引导其发现自己的力量和资源。\n\n布置作业：完成一封给初中高中自己的信。去看到那时无助的自己，并给予他力量。同时，通过与女友尝试目光交流沟通积累与他人沟通的经验。\n\n4.3第三次咨询：进行作业反馈和沙盘游戏探索，综合评估较好，肯定变化和成长，鼓励制定目标进一步提升交往的能力，扩展自己的学习优势，结束咨询\n这次小Y提前到达咨询室，精神面貌有很大改善，主动与咨询师打招呼，可以与咨询师进行目光交流了！小Y反馈，自己有认真完成上周布置的写给初中自己的一封信，和女朋友练习目光沟通效果良好，本周状态有很大改善，不再刻意随时低头遮住自己的脸，和室友的关系也有改善。小Y表示，在给初中高中无助的自己写信时，仿佛真的看到了那时的自己，自己有些想逃避，但还是鼓起勇气尝试和他对话，按照咨询师教给的方法，安慰他、鼓励他，并告诉他不是他的错，自己现在已经有力量去支持他、保护他，陪他一起成长，没有人可以再欺辱他了。\n\n咨询师对小Y的努力和变化表示赞赏，并进一步强化了小T表现出来的勇气和力量。为了进一步探索和了解小Y当下的内心状态，建议小Y进行沙盘游戏自由创作。小Y对沙盘很感兴趣并认真投入作品。完成后，将作品取名为“理想中的生活”。咨询师全程认真陪伴、观察小Y的创作过程，结合小Y对作品的解读和沙盘理论分析可以看出，小Y仍然存在一定防御心态，安全感仍须进一步发展和补足，但画面整体较为和谐，并呈现出沟通、连接、爱、支持、希望等积极因素，并有能量流动。小Y表示很喜欢这幅作品，也有能量接纳曾经受伤的自己，并对未来自我成长表示出较强的信心。",
+      "metadata": {
+        "document_title": "1例基于短程整合取向的低自尊高职大学生心理咨询案例报告_李春萍.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "创伤后自我信件写作作业",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "通过书写实现创伤记忆的情绪外化与叙事重构",
+        "task_family": "创伤叙事",
+        "method_family": "后现代主义",
+        "stage": "中程巩固",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "24efd0f9-df0b-5315-8957-7e3c590b6afc",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 22,
+        "paragraph_end": 26,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 个案信息",
+          "2 个案概念化",
+          "3 咨询方案",
+          "5 咨询效果",
+          "6 案例讨论"
+        ],
+        "subsection_headings": [
+          "4.1第一次咨询：建立关系、收集基本信息、探索来访人际回避形成的原因和让小Y极度自卑的不合理信念",
+          "4.2第二次咨询：进行作业反馈，断续自我探索，觉察情绪失控“按钮”",
+          "4.3第三次咨询：进行作业反馈和沙盘游戏探索，综合评估较好，肯定变化和成长，鼓励制定目标进一步提升交往的能力，扩展自己的学习优势，结束咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询师对小Y愿意到来咨询中心表示感谢和肯定，以真诚的态度关心小Y，表达愿意陪小Y一同应对困难。咨询师的共情接纳让小Y减少了防御，主动回顾了过往的经历，但在描述创伤经历时表现出理智化和部分情感隔离。咨询师全程关注和共情，小Y逐渐放松防御，与咨询师一起探讨了这些创伤经历对小Y可能带来的影响，围绕小Y经历创伤后极度自卑的自我评价，咨询师共情反馈“这不是你的错，你真"
+      }
+    },
+    {
+      "support_id": "ca81cdce-1e7f-5bad-b916-16265c5fa4e3",
+      "doc_id": "8fc337f9-3440-5dc3-900d-80c90d3eaacb",
+      "document_title": "1例大学生抑郁心理咨询案例_于颀.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例大学生抑郁心理咨询案例_于颀.md",
+      "section": "4干预过程与方法",
+      "span": {
+        "start": 4659,
+        "end": 5505
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "小张：嗯嗯，明白了。\n\n4.3第三阶段（转变对自己的看法）\n任务：本阶段旨在引导来访者改变自己的认知。\n\n目标：协助来访者转变对自己的认识，意识到自己的成长，自己已经是一位成年人，已经变强了，不再是一个孱弱的小女孩，帮助来访者内心的成长。\n\n应对方法：运用来访者中心疗法，通过澄清和解释，协助来访者从当下“一个成年人”的角度回看童年记忆，看到自己的成长，安抚来访者内心那个没有安全感的“小孩”，转变对童年不愉快记忆的理解，如果再次面对同样的情景时，完全可以自己保护自己，不会再次受到相同的伤害。\n\n家庭作业：继续运用冥想放松训练，改善自己的情绪。走出校园，去看人们是怎么生活的，路边的风景。想清楚自己想做什么，明确做好的标准是什么。\n\n第三阶段咨询对话片段摘要如下。\n\n咨询师：上次提到了你觉得自己跟别人的关系很远。感觉别人都以你为敌、孤立你，那你记忆中是有过类似的情景吗？",
+      "metadata": {
+        "document_title": "1例大学生抑郁心理咨询案例_于颀.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "童年记忆重构引导",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "重构童年记忆的认知意义，增强成人自我效能感",
+        "task_family": "认知重构",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "中期干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "54e972c7-b99d-576c-80d7-385a730f1fed",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 35,
+        "paragraph_end": 42,
+        "heading_path": [
+          "4干预过程与方法"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案信息",
+          "2 评估和个案概念化",
+          "3 咨询方案",
+          "5 咨询效果评估",
+          "6评价及反思"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段（建立咨询关系）",
+          "4.2第二阶段（认识不合理信念、树立新信念）",
+          "4.3第三阶段（转变对自己的看法）",
+          "4.4第四阶段（转变对家庭关系的看法）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "采用来访者中心疗法、积极关注、倾听、共情、情绪ABC等方法，咨询过程主要包括5个阶段，具体如下。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "634e8f44-5e7c-555a-8a25-f5907c51cd03",
+  "parent_name": "核心信念松动与替代性自我观建构（青少年CBT中期）",
+  "children": [
+    {
+      "skill_id": "cc7e9976-0366-5926-a28c-d26915f3db86",
+      "name": "CBT焦虑-羞愧情绪链识别微干预",
+      "description": "在第3–4次CBT咨询中，基于个案具体生理/行为线索（如手心出汗、回避检查），引导其即时识别羞愧、内疚、自责等特定情绪，并锚定其背后的自动化思维与中间信念，构建‘情境→情绪→思维→信念’的可命名、可复述的觉察链条。",
+      "child_type": "CBT情绪识别",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "634e8f44-5e7c-555a-8a25-f5907c51cd03",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在第3–4次CBT咨询中，基于个案具体生理/行为线索（如手心出汗、回避检查），引导其即时识别羞愧、内疚、自责等特定情绪，并锚定其背后的自动化思维与中间信念，构建‘情境→情绪→思维→信念’的可命名、可复述的觉察链条。",
+      "selector_terms": [
+        "个案报告躯体化焦虑症状",
+        "出现回避行为且伴随自我批评语言",
+        "已建立基本信任，能耐受轻度情绪唤起",
+        "CBT",
+        "情绪链",
+        "自动化思维",
+        "中间信念",
+        "羞愧识别",
+        "微干预",
+        "手心出汗",
+        "回避检查赛艇等具体行为",
+        "使用‘我太差劲’‘我不配’等泛化自我贬低表述",
+        "情绪描述模糊（如‘难受’‘不舒服’）但语境指向社会评价担忧",
+        "CBT焦虑-羞愧情绪链识别微干预",
+        "在第3–4次CBT咨询中，基于个案具体生理/行为线索（如手心出汗、回避检查），引导其即时识别羞愧、内疚、自责等特定情绪，并锚定其背后的自动化思维与中间信念，构建‘情境→情绪→思维→信念’的可命名、可复述的觉察链条。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/CBT焦虑-羞愧情绪链识别微干预/SKILL.md"
+    }
+  ]
+}

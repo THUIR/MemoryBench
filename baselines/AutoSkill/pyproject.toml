@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autoskill"
+version = "0.1.0"
+description = "AutoSkill SDK: extract, maintain, and retrieve reusable skills from conversations or behavior logs."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "AutoSkill" }]
+keywords = ["llm", "agent", "skills", "rag"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.scripts]
+autoskill = "autoskill.cli:main"
+autoskill4doc = "AutoSkill4Doc.extract:main"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["autoskill*", "AutoSkill4Doc*"]
+
+[tool.setuptools.package-data]
+autoskill = ["py.typed"]
+AutoSkill4Doc = ["skill_taxonomies/*.yaml"]

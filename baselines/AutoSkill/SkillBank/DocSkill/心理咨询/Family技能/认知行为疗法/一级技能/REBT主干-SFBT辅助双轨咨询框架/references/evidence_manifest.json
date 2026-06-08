@@ -1,0 +1,65 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "c1e13189-32cd-532b-9df9-c65ef3b4c342",
+  "skill_name": "REBT主干-SFBT辅助双轨咨询框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "9c3ec17b-f057-539c-a9b0-c0eca98ff666",
+      "doc_id": "0308119e-643a-57fb-9b5d-21b855a782fa",
+      "document_title": "一例女大学生失恋心理的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例女大学生失恋心理的心理咨询案例报告.md",
+      "section": "六、共同商定咨询方案",
+      "span": {
+        "start": 1802,
+        "end": 1975
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "# 1．选定咨询方法\n\n本咨询以埃利斯的合理情绪疗法疗法为主,焦点解决短期治疗为辅。求助者的心理问题外在表现为因失恋造成情绪困扰,内在却是由于恋爱和失恋的不合理认知造成的。求助者正处于青年期初期、智力和文化水平较高,比较适于采用合理情绪疗法。同时借鉴焦点解决短期治疗的赞美技术,帮助求助者树立自信,完善人格,实现自我成长。\n\n# 2.安排咨询时间",
+      "metadata": {
+        "document_title": "一例女大学生失恋心理的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "合理情绪疗法为主、焦点解决为辅的双轨咨询框架",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "整合两种循证方法形成结构化干预主干",
+        "task_family": "认知重构与资源激活",
+        "method_family": "CBT",
+        "stage": "treatment_planning",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "41ea5f9e-aaa3-5ce9-8c5e-d27283b67ad6",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "六、共同商定咨询方案"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、求助者基本资料",
+          "二、主诉和个人陈述",
+          "三、观察和查阅心理档案",
+          "四、评估与诊断",
+          "五、与求助者共同商定咨询目标",
+          "七、咨询过程"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 1．选定咨询方法"
+      }
+    }
+  ]
+}

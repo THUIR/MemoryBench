@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "a74cfb24-0176-5340-9c10-9dfa5a87867f",
+  "skill_name": "空椅子技术双焦点情绪-关系重构",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "3968aa9a-44a5-5199-9a27-c578db73104b",
+      "doc_id": "3683d18f-fdf7-5626-a586-1253ab0b681f",
+      "document_title": "1例离异家庭学生的心理辅导案例_任媚.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例离异家庭学生的心理辅导案例_任媚.md",
+      "section": "4心理咨询方案",
+      "span": {
+        "start": 3312,
+        "end": 3612
+      },
+      "relation_type": "support",
+      "confidence": 0.9,
+      "quote": "认知行为疗法：求助学生认为父亲和母亲的婚姻是因为自己的原因才破裂的，自己的存在是不受欢迎的，不值得被他人喜欢。所以，利用认知疗法帮助来访者找出认知偏差，建立合理的认知。\n\n空椅子技术：来访者与父母，特别是与母亲在沟通上一直处于无效的状态，没有找到有效的沟通方式，她的内心真实想法没有得到传递，一直纠结于母亲为何会这样对自己。运用空椅子技术一方面发泄自己的情绪，另一方面让来访者换个角度看待和母亲的关系。\n\n焦点解决短期治疗：来访者的心理能量一直被压制，认为自己解决不了任何问题，从而导致了抑郁的情绪体验。寻找来访者身上的闪光点，鼓励来访者用过往成功的经验尝试去解决现在遇到的问题，激发压抑的心理能量。",
+      "metadata": {
+        "document_title": "1例离异家庭学生的心理辅导案例_任媚.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "空椅子技术双焦点情绪-关系重构",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "通过具身化角色转换实现情绪释放与关系视角拓展",
+        "task_family": "关系重构",
+        "method_family": "人本-存在主义",
+        "stage": "中期干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "e009edd9-fbf2-50e2-a9aa-7a49cd2a0aec",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 4,
+        "paragraph_end": 6,
+        "heading_path": [
+          "4心理咨询方案"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例离异家庭学生的心理辅导案例",
+          "1个案信息",
+          "2 来访者心理评估",
+          "3原因分析",
+          "5 辅导阶段及实施过程",
+          "6 辅导效果"
+        ],
+        "subsection_headings": [
+          "4.1咨询目标",
+          "4.2 咨询方法",
+          "4.3咨询设置"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "根据以上评估和分析，心理咨询师与来访者讨论后共同确立此咨询方案。"
+      }
+    }
+  ]
+}

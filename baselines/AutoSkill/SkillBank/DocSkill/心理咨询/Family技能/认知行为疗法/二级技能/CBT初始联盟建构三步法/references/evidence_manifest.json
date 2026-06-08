@@ -1,0 +1,74 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "b3804d88-6858-51c2-a10b-93970236ecc5",
+  "skill_name": "CBT初始联盟建构三步法",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "000e988a-b237-58a9-b0c2-3bcdad92e37b",
+      "doc_id": "ccd9a004-1d95-5a88-bcf3-412977a8bd9f",
+      "document_title": "tppc20250704198-210.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20250704198-210.md",
+      "section": "3 咨询过程",
+      "span": {
+        "start": 7804,
+        "end": 8724
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "3.1　第1-3次咨询\n初始阶段，咨询的核心目标包括：建立良好的咨询联盟，收集个案信息，初步形成个案假设，并与来访者共同制定咨询目标。认知行为治疗的基本原则之一是“需要一个良好的咨询联盟”，因此前三次面谈的关键任务在于为后续的干预建立稳定的合作基础与信任感，使W能够在安全的氛围中逐渐开放自己，愿意面对自身问题。\n\n具体干预过程：（1）在初始访谈中，咨询师对W的主观困扰给予理解与接纳，帮助其认识到焦虑在一定程度上属于常见心理反应，减轻其对自身问题的羞耻感，增强对干预过程的信心。（2)收集W的资料,了解他的既往症状史和家庭史。同时，运用“骨折打石膏”的隐喻比喻CBT的干预过程，向W介绍认知行为治疗的基本原理和对心理疾病的良好效果，增强来访者对咨询的信心。（3）在建立初步理解的基础上，咨询师与W共同明确具体、可操作的短期与长期咨询目标，为后续干预的开展奠定方向和评估依据。\n\n3.2　第4-8次咨询\n咨询师围绕社交焦虑障碍的认知行为模型展开评估和咨询，形成横向案例解析。与W探讨他的社交焦虑是如何形成和发展而来的,让W直视自己的困惑,强化解决问题的信心。随后引入自动思维的概念，通过填写表2中的前三列内容，以加深其对情境、思维和情绪之间关系的理解，帮助W准确区分自己的消极情绪、相关情境和自动化思维，不断梳理自己的自动化思维，为后续的认知重建阶段奠定基础。\n\n在此基础上，咨询师通过苏格拉底式提问与箭头向下技术，协助W识别在典型社交情境中激活的负性自动思维（如“他们都在看我，我很傻，我做什么都不对”），并引导其分析相关认知偏差（如贴标签、灾难化、读心术、算命式推理等）。通过完善表2的内容，W逐步意识到其对社交情境的过度担忧主要源于歪曲的自动思维和自我社交形象的负性预测，并在咨询师的引导下尝试建立替代性认知反应。与此同时，咨询师引导W分析其安全行为和自我关注策略的短期与长期效应，使其认识到这些策略虽可带来即时缓解，但却在维持和加重焦虑中发挥重要作用（详见表1）。这一过程为后续的认知重建和暴露训练奠定了基础。\n\n表2W的思维改变记录表  \nTable 2W's thinking for a change record sheet",
+      "metadata": {
+        "document_title": "tppc20250704198-210.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT初始联盟建构三步法",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立安全信任的治疗关系并锚定干预方向",
+        "task_family": "consultation_initiation",
+        "method_family": "CBT",
+        "stage": "initial",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "4fe58d8e-28f2-5c9a-ab33-ea63ea51b9fb",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标",
+          "苏格拉底"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 4,
+        "heading_path": [
+          "3 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "社交焦虑障碍的认知行为治疗案例",
+          "1 个案情况",
+          "2干预方案",
+          "表1行为功能分析表",
+          "表4社交焦虑等级情境表",
+          "4 咨询效果评估"
+        ],
+        "subsection_headings": [
+          "3.1　第1-3次咨询",
+          "3.2　第4-8次咨询",
+          "3.3　第9-10次咨询",
+          "3.4　第11-12次咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "初始阶段，咨询的核心目标包括：建立良好的咨询联盟，收集个案信息，初步形成个案假设，并与来访者共同制定咨询目标。认知行为治疗的基本原则之一是“需要一个良好的咨询联盟”，因此前三次面谈的关键任务在于为后续的干预建立稳定的合作基础与信任感，使W能够在安全的氛围中逐渐开放自己，愿意面对自身问题。"
+      }
+    }
+  ]
+}

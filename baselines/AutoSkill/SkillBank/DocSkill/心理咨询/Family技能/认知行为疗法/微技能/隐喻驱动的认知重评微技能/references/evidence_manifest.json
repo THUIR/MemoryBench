@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "40af0078-9839-514a-bfd1-ae8ad2e8d9a0",
+  "skill_name": "隐喻驱动的认知重评微技能",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "86b9866d-74dc-54ce-aae7-95f9f30788d3",
+      "doc_id": "6bd11079-beb4-53ab-bd31-1b76fbdcd268",
+      "document_title": "1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+      "section": "8 咨询过程",
+      "span": {
+        "start": 5313,
+        "end": 5515
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "来访者：是这样啊！\n\n# 3.3第三阶段：心理帮助阶段二（第5～7次）\n\n主要任务：帮助修正或摒弃信念；帮助来访者建立理性信念；减轻或消除心理困扰。下面是主要咨询片段。\n\n咨询师：你在很烦的状况下，能给你的学习生活和社交带来积极的改变吗？同学都对你更友善？前途一片光明?\n\n来访者：听起来只会更糟糕。\n\n咨询师：如果你把这些看成是这个阶段的一种磨练，把自己想成一把宝剑？会不会好一点？\n\n来访者：好像是。",
+      "metadata": {
+        "document_title": "1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "认知重评引导话术",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促进认知重评",
+        "task_family": "认知重构",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "心理帮助阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "73e84f3b-b39d-575b-b88b-241d35354b92",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 15,
+        "paragraph_end": 21,
+        "heading_path": [
+          "8 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 主诉与个人陈述",
+          "3 观察和他人反映",
+          "4 咨询前心理测验结果",
+          "5评估",
+          "6 制定咨询目标"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询分4个阶段，共8次，每周1次， $0 . 5 \\ : \\mathrm { h } \\iota$ 次。"
+      }
+    }
+  ]
+}

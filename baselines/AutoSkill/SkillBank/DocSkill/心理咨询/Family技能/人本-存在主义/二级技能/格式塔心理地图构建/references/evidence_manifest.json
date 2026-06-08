@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "family_name": "人本-存在主义",
+  "skill_id": "9499689b-20ea-5a46-9659-d7f464f18f58",
+  "skill_name": "格式塔心理地图构建",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "acdd84d9-aafa-5dc8-98d1-236414a8f96a",
+      "doc_id": "26d26ae9-4898-516a-93ed-a91de4ffa964",
+      "document_title": "格式塔疗法改善大学生亲密关系问题1例_吴玉芝.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/het/格式塔疗法改善大学生亲密关系问题1例_吴玉芝.md",
+      "section": "4咨询过程",
+      "span": {
+        "start": 4046,
+        "end": 4449
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "效果：来访者觉察到自己对爸爸有许多的不满，同时体验到了对奶奶的深厚情感。对来访者来说爷爷奶奶相比现在的爸爸妈妈更像她的爸爸妈妈,实际上就是爸爸妈妈。来访者一直认为自己没有体验过和和父母的联结,现在看来这种联结她在爷爷奶奶那里是体验过的。\n\n4.2第二阶段：系统与个人（第3\\~4次咨询）\n理论：个体从来不是孤立存在的,每个人的成长和发展都离不开系统。受系统理论的影响，格式塔心理咨询关注来访者的成长轨迹和成长系统[5]。此外格式塔心理咨询在理解个体及其环境的关系时引入了场理论的概念，认为个体的行为既受物理场的影响也受心理场的影响。格式塔心理咨询师需要帮助来访者将碎片化的场整合起来,找到其中相互连接的线索。\n\n方法：从当下发生的事情开始，由近及远,按照时间、地点、人物、事件、态度和感受这六要素跟随来访者一起完成心理地图,通过地图呈现的线索,找到来访者的核心未完成事件和内心深处需要被满足的需求,见图1。",
+      "metadata": {
+        "document_title": "格式塔疗法改善大学生亲密关系问题1例_吴玉芝.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "格式塔心理地图构建",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "识别核心未完成事件与未被满足的心理需求",
+        "task_family": "case_formulation",
+        "method_family": "人本-存在主义",
+        "stage": "中期评估",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "f882b9a9-1774-5f64-9bc6-04f455c6b425",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 10,
+        "paragraph_end": 12,
+        "heading_path": [
+          "4咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1案例描述",
+          "2个案概念化及评估",
+          "3咨询目标与方案",
+          "5咨询效果评估",
+          "6讨论"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：觉察与感知（第1\\~2次咨询）",
+          "4.2第二阶段：系统与个人（第3\\~4次咨询）",
+          "4.3第三阶段：接触与阻断（第5\\~6次咨询）",
+          "4.4第四阶段：赋能与行动（第7\\~8次咨询）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本案例共咨询8次,持续1个月，每周2次。因是学校心理咨询,不收费。具体过程如下。"
+      }
+    }
+  ]
+}

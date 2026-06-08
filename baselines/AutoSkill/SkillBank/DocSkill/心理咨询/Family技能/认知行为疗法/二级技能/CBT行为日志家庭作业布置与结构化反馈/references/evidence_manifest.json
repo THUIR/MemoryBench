@@ -1,0 +1,133 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "18de49ed-0e03-5e47-8c34-e03dcb0479b6",
+  "skill_name": "CBT行为日志家庭作业布置与结构化反馈",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "b4b38884-92d8-5931-820f-f6e47d6cc23c",
+      "doc_id": "b51dd2b8-4e44-5fa3-803d-96845a3e810b",
+      "document_title": "tppc20240609540-546.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20240609540-546.md",
+      "section": "4 辅导过程与实施",
+      "span": {
+        "start": 4872,
+        "end": 5258
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "在这次的咨询谈话中，李某发挥了自身的潜能，对自己的认知行为过程进行了反省。在具体情境中，他发现自己的认知行为过于自我论断，与其他人有所差异，容易让其他人受到不合理的对待，故而初步产生了改变认知行为的动机。\n\n4.4　第四阶段：行为训练与家庭作业的结合\n咨询师布置了家庭作业，要求李某记录学校里每天“令我生气的事”“我当时在想”“我当时做了什么”“我做了哪些努力”“我对自己做法的评价”的情况，并在一周后进行反馈。\n\n在第一次反馈中，他表示五天中有三天未出现让自己生气的事。其中一次生气的情况是因为有同学讲话惹自己不开心，他采取的行动是骂回去，但是未动手。第二次生气是因为其他人踩了自己的鞋子，李某大声喊了：“你干嘛踩我鞋！”初步有了控制情绪的意识，并会询问对方原因。在这次反馈过程中，李某说自己最近没什么生气的事，而且当讲述生气事件经过的时候，李某比较平静，并未再次愤怒。",
+      "metadata": {
+        "document_title": "tppc20240609540-546.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "行为日志家庭作业布置与反馈",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "促进来访者对触发事件—自动思维—行为反应链条的觉察与初步重构",
+        "task_family": "认知行为干预",
+        "method_family": "CBT",
+        "stage": "行为训练与巩固",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "ba076a09-41bb-56a6-bff6-71c564cbb391",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 52,
+        "paragraph_end": 54,
+        "heading_path": [
+          "4 辅导过程与实施"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 引言",
+          "2个案基本信息",
+          "3 问题成因分析",
+          "5 反思后记"
+        ],
+        "subsection_headings": [
+          "4.1　第一阶段：房树人绘画",
+          "4.2　第二阶段：角色扮演",
+          "4.3　第三阶段：认知调整与家庭作业",
+          "4.4　第四阶段：行为训练与家庭作业的结合"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本阶段通过房树人绘画将主体感受客体化，将李某的内心世界投射到绘画中，以便更加深入地了解李某的认知模式及其背后的内心冲突。"
+      }
+    },
+    {
+      "support_id": "346ec472-5ebd-55ae-b117-1a95c8c8efa9",
+      "doc_id": "9afa7364-74a1-56a9-9320-b3611e750e74",
+      "document_title": "基于简短认知行为疗法的心理咨询案例_周颖.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于简短认知行为疗法的心理咨询案例_周颖.md",
+      "section": "# 4咨询阶段与实施过程",
+      "span": {
+        "start": 3081,
+        "end": 4087
+      },
+      "relation_type": "support",
+      "confidence": 0.93,
+      "quote": "4.1.2过程：填写患者健康问卷（patienthealthquestionnaire-9，PHQ-9）和广泛性焦虑量表（generalizedanxiety disorder-7，GAD-7）。咨询师将测验结果反馈给来访者，并做出初步工作评估。咨询师介绍简短认知行为疗法的内容、原理、流程以及将对该心理问题产生的影响，来访者决定使用简短认知行为疗法开展工作。\n\n# 4.2第二阶段：正式咨询阶段（第2～6次）\n4.2.1依恋风格分析：成人依恋风格是在英国精神分析师约翰·鲍尔比依恋理论的基础上提出，将成人在焦虑和回避维度上表现的程度划分为安全型、焦虑型和回避型依恋[4]。\n\n4.2.2修正中间信念（条件假设、规则）：帮助来访者解释和识别负性自动化思维，挑战来访者的负性自动化思维，用合理的想法替代非理性认知。通过与“一定是我不够有魅力，他才会离开我”“只有他才可以帮助我逃离现在的生活”“只有跟他在一起，我才有机会变得优秀”“每一段感情都应该和平结束”等一系列错误认知的对抗，引导其发现自身不良的归因方式，纠正“我不值得被爱”“我是无能的”等不合理的核心信念，从而建立合理的信念。对话过程如下。\n\n来访者：如果他勇敢一点，那我们的故事就能够继续。\n\n咨询师：你对这个信念的相信程度是多少？用0～100分连续谱来表示，0分表示一点也不相信，100分表示非常确信。（连续谱技术）\n\n来访者：70分。",
+      "metadata": {
+        "document_title": "基于简短认知行为疗法的心理咨询案例_周颖.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "PHQ-9/GAD-7联合评估与反馈",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "完成首次咨询中的结构化心理评估与知情同意式方案共建",
+        "task_family": "initial assessment",
+        "method_family": "CBT",
+        "stage": "assessment",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "3e32fb70-a07f-5ee9-b7ca-75f5fcea3f60",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 1,
+        "paragraph_end": 7,
+        "heading_path": [
+          "# 4咨询阶段与实施过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "基于简短认知行为疗法的心理咨询案例",
+          "# 1一般资料",
+          "# 2来访者评估",
+          "# 3 咨询目标与咨询方案",
+          "# 5 咨询效果的评估",
+          "# 6 案例评价与反思"
+        ],
+        "subsection_headings": [
+          "# 4.1第一阶段：咨访关系建立和问题评估阶段（第1次咨询）",
+          "# 4.2第二阶段：正式咨询阶段（第2～6次）",
+          "# 4.3第三阶段：巩固咨询效果和结束咨询（第7次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "4.1.1任务：与来访者建立相互信任的咨访关系。收集来访者主诉问题的资料，参考问卷结果初步评估来访者的心理问题，并确定咨询目标和方法。"
+      }
+    }
+  ]
+}

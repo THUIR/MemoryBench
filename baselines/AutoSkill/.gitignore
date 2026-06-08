@@ -1,0 +1,34 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.venv/
+.autoskill/
+.DS_Store
+Skills/Users/
+Skills/vectors/
+# Runtime BM25 index artifacts (legacy + current roots)
+Skills/index/skills-bm25.*
+Skills/index/skill_usage_stats.json
+SkillBank/index/skills-bm25.*
+SkillBank/index/skill_usage_stats.json
+SkillBank/Users/
+SkillBank/vectors/
+SkillBank/AutoSkill4Doc/
+# SkillBank/DocSkill/
+SkillBank/DocSkill/.runtime/
+SkillBank/DocSkill/index/
+SkillBank/DocSkill/vectors/
+SkillBank/DocSkill/Users/
+SkillBank/ConvSkill/chat_message_openai_GLM4.7/
+examples/eval_reports/
+data/
+Psy_markdown/
+AGENTS.md
+SkillBank/DocSkill copy
+SkillBank/DocSkill copy1
+fresh_run_001_u1-5_session_chat_json

@@ -1,0 +1,124 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "family_name": "人本-存在主义",
+  "skill_id": "3211cc2d-7e15-5f0d-b6fa-b10432df335e",
+  "skill_name": "存在主义苏格拉底式提问",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "e679b075-89ee-5ae8-9efe-82f3b689647a",
+      "doc_id": "c21daaa1-aef1-5d61-baeb-4b78bd6fbe34",
+      "document_title": "存在主义心理治疗在1例部队士兵抑郁障碍中的应用_段人豪.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/het/存在主义心理治疗在1例部队士兵抑郁障碍中的应用_段人豪.md",
+      "section": "3 存在主义心理疗法的干预策略",
+      "span": {
+        "start": 4106,
+        "end": 4449
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "此外，小A经常说连队生活“毫无自由”。治疗师问他“什么是自由？”小A回答说：“能随心所欲做自己想做的事。”治疗师问道：“什么人能随心所欲呢？似乎只有小孩子吧！”小A点了点头，沉默不语；治疗师问道：“在这个世界上，你能不能找到一个绝对自由的人呢？”小A想了想说：“不能。可能只有相对自由。”治疗师赶紧说：“我认为，你现在的思考就比刚刚理性了一些，我们继续探讨.”\n\n心理治疗师在对小A进行谈话治疗的过程中，采取了大量苏格拉底式提问法，让他从认知根源上不再对军人身份以及连队生活产生过度排斥，并勉励他学会经营自己的生活。两年服役除了能够让他获取保研资格外，还可以锻造他军人的血性意志，成为一个对国家、对社会做出更大贡献的人，这便是当下生活的崭新意义。\n\n# 3.3投入生活实践，领悟新的经验",
+      "metadata": {
+        "document_title": "存在主义心理治疗在1例部队士兵抑郁障碍中的应用_段人豪.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "存在主义苏格拉底式提问",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促发存在觉察与概念解构",
+        "task_family": "存在探索",
+        "method_family": "人本-存在主义",
+        "stage": "认知澄清",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "e1b7316f-313b-5abe-9409-848e72e4bf78",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "苏格拉底"
+        ],
+        "paragraph_start": 13,
+        "paragraph_end": 15,
+        "heading_path": [
+          "3 存在主义心理疗法的干预策略"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 案例背景",
+          "2 案例分析",
+          "4 治疗效果评估",
+          "5 案例启示"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "存在主义心理疗法源自存在主义哲学，是一种动力取向的心理治疗手段。治疗师和来访者通过对存在、选择和责任等主题的分析与探索，找到来访者自身的价值感和意义感，从而实现心理治疗的目标[5]。"
+      }
+    },
+    {
+      "support_id": "8eb56575-68b2-5bec-92f9-8c2cec5e118f",
+      "doc_id": "c21daaa1-aef1-5d61-baeb-4b78bd6fbe34",
+      "document_title": "存在主义心理治疗在1例部队士兵抑郁障碍中的应用_段人豪.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/het/存在主义心理治疗在1例部队士兵抑郁障碍中的应用_段人豪.md",
+      "section": "3 存在主义心理疗法的干预策略",
+      "span": {
+        "start": 4100,
+        "end": 4555
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "此外，小A经常说连队生活“毫无自由”。治疗师问他“什么是自由？”小A回答说：“能随心所欲做自己想做的事。”治疗师问道：“什么人能随心所欲呢？似乎只有小孩子吧！”小A点了点头，沉默不语；治疗师问道：“在这个世界上，你能不能找到一个绝对自由的人呢？”小A想了想说：“不能。可能只有相对自由。”治疗师赶紧说：“我认为，你现在的思考就比刚刚理性了一些，我们继续探讨.”\n\n心理治疗师在对小A进行谈话治疗的过程中，采取了大量苏格拉底式提问法，让他从认知根源上不再对军人身份以及连队生活产生过度排斥，并勉励他学会经营自己的生活。两年服役除了能够让他获取保研资格外，还可以锻造他军人的血性意志，成为一个对国家、对社会做出更大贡献的人，这便是当下生活的崭新意义。\n\n3.3投入生活实践，领悟新的经验\n根据心理动力学观点，抑郁症患者的攻击性几乎完全指向自身，治疗师引导其向外界合理表达攻击性显得非常关键[10]。存在主义精神分析学积极倡导个体从事对外活动，尤其对于抑郁症患者而言，参与世俗活动有助于将所谓的攻击性能量向外界释放。",
+      "metadata": {
+        "document_title": "存在主义心理治疗在1例部队士兵抑郁障碍中的应用_段人豪.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "存在主义苏格拉底式提问",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促发存在觉察与认知重构",
+        "task_family": "存在探索",
+        "method_family": "人本-存在主义",
+        "stage": "认知澄清",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "fc650f65-d5ac-5c7c-859b-4967c078df33",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "苏格拉底"
+        ],
+        "paragraph_start": 11,
+        "paragraph_end": 13,
+        "heading_path": [
+          "3 存在主义心理疗法的干预策略"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 案例背景",
+          "2 案例分析",
+          "4 治疗效果评估",
+          "5 案例启示"
+        ],
+        "subsection_headings": [
+          "3.1 立足“存在孤独”，消解“人际孤独\"",
+          "3.2打破思维定式，重建生活意义",
+          "3.3投入生活实践，领悟新的经验"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "存在主义心理疗法源自存在主义哲学，是一种动力取向的心理治疗手段。治疗师和来访者通过对存在、选择和责任等主题的分析与探索，找到来访者自身的价值感和意义感，从而实现心理治疗的目标[5]。"
+      }
+    }
+  ]
+}

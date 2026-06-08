@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "7455b5ae-1edb-571f-9546-f476e226d651",
+  "skill_name": "考试意义认知重建",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "19856916-dff0-55a1-8966-7197d6b90fb2",
+      "doc_id": "8287fa0e-4574-5649-812a-0b637faa2f23",
+      "document_title": "大学生考试焦虑案例分析与对策探讨.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/大学生考试焦虑案例分析与对策探讨.md",
+      "section": "2大学生考试焦虑的对策探讨",
+      "span": {
+        "start": 4128,
+        "end": 4640
+      },
+      "relation_type": "support",
+      "confidence": 0.93,
+      "quote": "2.1.2调整对自己的期望水平\n产生考试焦虑的学生往往对自己的期望水平过高，接受不了自己的失败，而实际能力有限，理想自我和现实自我出现了冲突。考试来临，当感觉自己考不到自己理想的成绩时，就会产生焦虑。这些学生应调整对自己的期望水平，允许自己失败，也允许自己有一个循序渐进的过程达到理想的成绩。\n\n2.1.3对考试的性质和意义进行认知重建\n学生应正确认识考试的性质和意义，大学考试的目的在于检查学生的学习成效，有助于学生对自己阶段性的学习情况进行了解，从而进行积极的调整与完善。由于考试本身的局限性，考试成败本身并不能完全检验人的能力，也无关个人的智力水平，更与将来所能取得的成就之间没有决定性的关系。因而，即便失败，也不应灰心丧气，更无需自我否定，而要从失败中发现问题，吸取教训，从而达到自我完善的目的。\n\n2.1.4充分备考，增强自信\n克服考试焦虑，最直接有效的办法，就是扎实地学习，充分地准备。准备包括三个方面，一是知识方面的准备，二是应试技能方面的准备，三是心态上的准备。只有在平时踏实学习，考前对所考学科进行全面系统复习，掌握好科学有效的应试技能，同时树立积极自信的态度，消除不必要的顾虑和困扰，做到有备，才能无患。",
+      "metadata": {
+        "document_title": "大学生考试焦虑案例分析与对策探讨.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "考试意义认知重建",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "重构考试意义归因",
+        "task_family": "考试焦虑干预",
+        "method_family": "CBT",
+        "stage": "认知重构",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "98e83972-e0a1-5e4a-ab4f-631ff1186169",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 3,
+        "paragraph_end": 5,
+        "heading_path": [
+          "2大学生考试焦虑的对策探讨"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1案例分析"
+        ],
+        "subsection_headings": [
+          "2.1.1积极自我暗示，提高自我效能感",
+          "2.1.2调整对自己的期望水平",
+          "2.1.3对考试的性质和意义进行认知重建",
+          "2.1.4充分备考，增强自信",
+          "2.2家庭的正确养育",
+          "2.3学校的正面引导和积极关注"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "就考试焦虑的产生原因而言，既有个体自身的主观原因，包括：个性气质特点、消极的应对方式、较低的自我效能感、对考试的不正确的认知评价、考试的知识储备不充分、应试技能的缺乏及失败的考试经历等；也有来自家庭、学校、社会的外在压力的影响。"
+      }
+    }
+  ]
+}

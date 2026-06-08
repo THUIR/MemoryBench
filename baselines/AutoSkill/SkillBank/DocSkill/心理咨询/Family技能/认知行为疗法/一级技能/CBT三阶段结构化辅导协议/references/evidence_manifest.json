@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "e1ac546a-35ac-5a81-a7ad-0dca9a0a27b7",
+  "skill_name": "CBT三阶段结构化辅导协议",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "e0b95b49-856f-5bb6-ad6e-7134981957e9",
+      "doc_id": "5a8f72a1-5933-55fa-9f76-dd977e119c20",
+      "document_title": "tppc20190107318-328.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20190107318-328.md",
+      "section": "4 过程",
+      "span": {
+        "start": 3999,
+        "end": 4157
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "每周安排1次个体心理辅导，每次45分钟；分为3个阶段，共计15次辅导。\n\n4.1第一阶段：情绪宣泄（第1\\~4次咨询）\n本阶段主要目标是建立良好的咨访关系，让张晓感受到心理老师对他的理解与接纳，在安全、真诚的氛围中，通过沙盘帮助他觉察和宣泄内心的愤怒和不安，理解自己的负面情绪对人际交往的不良影响。\n\n辅导过程摘录-",
+      "metadata": {
+        "document_title": "tppc20190107318-328.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT三阶段结构化辅导协议",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "提供跨阶段、可复用的CBT中程干预节奏与阶段划分",
+        "task_family": "structured_intervention",
+        "method_family": "CBT",
+        "stage": "treatment_planning",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "30f3a516-9dff-5373-b54c-1dda7b630454",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "4 过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 背景",
+          "2评估与分析",
+          "3 目标与计划",
+          "5 总结与反思"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：情绪宣泄（第1\\~4次咨询）",
+          "4.2　第二阶段：认知转变（第 $5 \\sim 1 0$ 次)",
+          "4.3　第三阶段：行为转变（第11 $\\sim$ 15 次咨询）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "每周安排1次个体心理辅导，每次45分钟；分为3个阶段，共计15次辅导。"
+      }
+    }
+  ]
+}

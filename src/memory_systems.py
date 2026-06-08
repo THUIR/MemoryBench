@@ -33,6 +33,12 @@ class MemorySystemSpec:
     # — typically because the baseline is too slow for that combination.
     skip_combinations: List[Tuple[str, str]] = field(default_factory=list)
 
+    # AutoSkill is currently wired as an off-policy baseline only. To enable it
+    # for on-policy experiments, set this to True and make the on-policy runner
+    # call AutoSkill ingestion after each feedback turn instead of only after a
+    # completed training dialog.
+    supports_on_policy: bool = True
+
     def dialog_key(self, prefix: str = "dialog_") -> str:
         return prefix + (self.dialog_stem or self.name)
 
@@ -59,6 +65,11 @@ def all_names() -> List[str]:
 def names_with_memory() -> List[str]:
     """All registered methods except the no-memory baseline."""
     return [n for n in _REGISTRY if n != "wo_memory"]
+
+
+def on_policy_names_with_memory() -> List[str]:
+    """Memory baselines that should participate in on-policy experiments."""
+    return [n for n in names_with_memory() if _REGISTRY[n].supports_on_policy]
 
 
 def is_registered(name: str) -> bool:
@@ -134,4 +145,13 @@ register(MemorySystemSpec(
     config_class="src.solver.memoryos.MemoryOSAgentConfig",
     config_file="configs/memory_systems/memoryos.json",
     paper_name="MemoryOS",
+))
+
+register(MemorySystemSpec(
+    name="autoskill",
+    solver_class="src.solver.autoskill.AutoSkillSolver",
+    config_class="src.solver.autoskill.AutoSkillAgentConfig",
+    config_file="configs/memory_systems/autoskill.json",
+    paper_name="AutoSkill",
+    supports_on_policy=False,
 ))

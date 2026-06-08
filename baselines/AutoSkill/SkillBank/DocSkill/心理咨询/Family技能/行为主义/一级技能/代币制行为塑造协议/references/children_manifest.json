@@ -1,0 +1,38 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "行为主义",
+  "profile_id": "psychology::行为主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "518e8bfb-9659-5ccd-ba66-b2491aa552d9",
+  "parent_name": "代币制行为塑造协议",
+  "children": [
+    {
+      "skill_id": "d3bcd9bc-9a60-5693-b595-ca804c43504a",
+      "name": "青春期行为锚定强化方案",
+      "description": "在巩固阶段，将行为矫正与青春期发展任务（学业投入、同伴互动、价值观建构）相整合，通过结构化探讨与活动建议，增强行为改变的现实意义与可持续性。",
+      "child_type": "developmental_integration",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "518e8bfb-9659-5ccd-ba66-b2491aa552d9",
+      "level_label": "二级技能",
+      "taxonomy_class": "行为主义",
+      "applicable_when": "在巩固阶段，将行为矫正与青春期发展任务（学业投入、同伴互动、价值观建构）相整合，通过结构化探讨与活动建议，增强行为改变的现实意义与可持续性。",
+      "selector_terms": [
+        "来访者处于青春期",
+        "行为问题与空洞生活状态相关",
+        "已完成初步行为矫正",
+        "青春期",
+        "行为巩固",
+        "发展性整合",
+        "价值观建构",
+        "同伴互动",
+        "学业动机",
+        "青春期行为锚定强化方案"
+      ],
+      "relative_path": "心理咨询/Family技能/行为主义/二级技能/青春期行为锚定强化方案/SKILL.md"
+    }
+  ]
+}

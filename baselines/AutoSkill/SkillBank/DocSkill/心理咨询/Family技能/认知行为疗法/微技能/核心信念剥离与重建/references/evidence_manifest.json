@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "bbe9769f-4fb8-559b-8b45-da8efb2e09e2",
+  "skill_name": "核心信念剥离与重建",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "14d4aedd-ddb4-5208-ab31-ea8f6862bed8",
+      "doc_id": "c588679e-3502-57a3-8b29-ee3acb3267c4",
+      "document_title": "认知疗法视角下的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/认知疗法视角下的心理咨询案例报告.md",
+      "section": "4咨询过程",
+      "span": {
+        "start": 3938,
+        "end": 4607
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "(4)第四次，2014年5月7日\n方法与目的：区分并纠正来访者的核心信念，通过认知重建，继续提高来访者的自信心，在巩固和深化认知重建的结果后，结束咨询.\n\n咨询过程：来访者回顾了自己的成长过程，并着重提到小时候跟爷爷长大、父母离异都是因为她认为自己“一点都不值得被爱”.这个核心信念一直伴随来访者，因而她认为不论在任何情况下都一定要保护好自己.咨询师陪伴来访者重新回顾了幼时的经历，通过运用\"馅饼\"技术，着重分析父母把她留在爷爷身边和父母离异的原因，将来访者个人原因所占比重进行剥离，有效减少来访者的内疚和自责，从而重建了来访者童年的早期记忆.最后，咨询师和来访者还练习了怎样用委婉、温和的语气，而不用强势的口吻来表达不同的意见.\n\n自助计划：当来访者觉察到自动思维、中间信念和核心信念出现时，可以通过之前咨询过程中所运用的咨询技术，对引起负性情绪的负性想法进行纠正，改善负性情绪.此外，还建议她借鉴学习一些交际礼仪来改变自己和别人交往的方式.\n\n4.4干预结果\n(1)来访者自我评估：咨询结束后一个月，小王再次找到咨询师，反映“她们是故意针对我的”这个自动思维和\"我不可爱\"这个核心信念转变很多，开始认同自己，接纳自己，也比较自信了.同时她也通过学习人际交往方面的书籍，慢慢去练习交往际巧，试着站在对方的角度来处理问题，和室友的关系大大缓和，也认为自己完全没有必要退学.\n\n(2)咨询师评估：咨询师明显感觉到来访者的情绪比较稳定，心情比较愉快，自信心增强.在和小王对话过程中，发现她思路比以前更清晰，表达也更流畅，负性情绪得到显著改善.",
+      "metadata": {
+        "document_title": "认知疗法视角下的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "核心信念剥离与重建",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "修正核心信念中的过度自我归因",
+        "task_family": "认知重建",
+        "method_family": "CBT",
+        "stage": "late intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "bb0a8789-b45c-56cc-aca5-0c08e2a91b3f",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 14,
+        "paragraph_end": 18,
+        "heading_path": [
+          "4咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "认知疗法视角下的心理咨询案例报告",
+          "1个案基本情况",
+          "2个案分析",
+          "3咨询计划",
+          "5对个案的总结与思考"
+        ],
+        "subsection_headings": [
+          "4.1咨询关系",
+          "4.2具体的干预措施",
+          "4.3具体咨询过程",
+          "(4)第四次，2014年5月7日",
+          "4.4干预结果"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "较好.在咨询过程中，小王对咨询师比较信任，自我暴露比较多，也比较配合."
+      }
+    }
+  ]
+}

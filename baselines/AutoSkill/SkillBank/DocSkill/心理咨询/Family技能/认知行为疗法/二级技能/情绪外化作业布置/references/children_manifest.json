@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "495cead7-af7f-5ccc-8463-7c51aebcb6be",
+  "parent_name": "情绪外化作业布置",
+  "children": [
+    {
+      "skill_id": "92cf75eb-bd90-5d96-8dd7-da6cdebecb54",
+      "name": "认知解离引导对话",
+      "description": "在来访者被他人言语激怒或过度在意评价时，通过结构化提问引导其将语言/文字内容与其引申意义分离，从而与自动想法保持心理距离，增强认知灵活性。",
+      "child_type": "ACT干预",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "495cead7-af7f-5ccc-8463-7c51aebcb6be",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在来访者被他人言语激怒或过度在意评价时，通过结构化提问引导其将语言/文字内容与其引申意义分离，从而与自动想法保持心理距离，增强认知灵活性。",
+      "selector_terms": [
+        "来访者报告被他人话语激怒",
+        "来访者表现出对评价过度敏感",
+        "来访者将他人表述直接等同于自我价值判断",
+        "ACT",
+        "认知解离",
+        "语言去融合",
+        "想法观察",
+        "距离化表达",
+        "语速加快、音调升高、身体前倾或紧绷",
+        "使用绝对化用词如‘总是’‘根本’‘就是针对我’",
+        "快速将他人陈述转译为自我贬损结论（如‘他说我懒’→‘我果然没用’）",
+        "认知解离引导对话",
+        "在来访者被他人言语激怒或过度在意评价时，通过结构化提问引导其将语言/文字内容与其引申意义分离，从而与自动想法保持心理距离，增强认知灵活性。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/认知解离引导对话/SKILL.md"
+    },
+    {
+      "skill_id": "c97e6cc8-a2ea-5003-a78b-d83bc7a4689a",
+      "name": "认知解离引导话术",
+      "description": "引导来访者将想法与自我身份分离，通过元认知观察（如'我在想我很生气'）打破认知融合，适用于ACT中解离练习环节。",
+      "child_type": "认知解离",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "495cead7-af7f-5ccc-8463-7c51aebcb6be",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "引导来访者将想法与自我身份分离，通过元认知观察（如'我在想我很生气'）打破认知融合，适用于ACT中解离练习环节。",
+      "selector_terms": [
+        "来访者陷入自动化负性思维",
+        "出现'我就是失败的'等融合性自我陈述",
+        "需要建立观察性自我",
+        "ACT",
+        "认知解离",
+        "元认知",
+        "观察性自我",
+        "语言重构",
+        "来访者使用‘我是……’句式表达情绪或状态",
+        "语调僵硬、语速加快、身体紧绷伴随自我定义性陈述",
+        "对情绪体验缺乏观察性语言（如无‘我注意到’‘我感到’等前导词）",
+        "认知解离引导话术",
+        "引导来访者将想法与自我身份分离，通过元认知观察（如'我在想我很生气'）打破认知融合，适用于ACT中解离练习环节。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/认知解离引导话术/SKILL.md"
+    }
+  ]
+}

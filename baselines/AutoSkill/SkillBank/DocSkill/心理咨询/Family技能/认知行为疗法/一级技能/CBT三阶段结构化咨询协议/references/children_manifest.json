@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "d2b456e0-122b-5a7b-8169-a2a5387f57df",
+  "parent_name": "CBT三阶段结构化咨询协议",
+  "children": [
+    {
+      "skill_id": "66d4123f-ad70-5d96-a18d-31b5cdbdf027",
+      "name": "CBT初始会谈：个案概念化与治疗联盟建立",
+      "description": "在前1–2次CBT会谈中，系统完成发展性与系统性信息采集，通过心境检查与行为功能分析形成可操作的个案概念化，并与患者及家属共同澄清结构化设置、开展心理教育、共建SMART目标清单，从而确立稳固的治疗联盟。",
+      "child_type": "initial_assessment",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "d2b456e0-122b-5a7b-8169-a2a5387f57df",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在前1–2次CBT会谈中，系统完成发展性与系统性信息采集，通过心境检查与行为功能分析形成可操作的个案概念化，并与患者及家属共同澄清结构化设置、开展心理教育、共建SMART目标清单，从而确立稳固的治疗联盟。",
+      "selector_terms": [
+        "首次或前两次CBT会谈",
+        "需同步评估患者与家庭系统",
+        "存在住院/结构化治疗设置需提前澄清",
+        "CBT",
+        "初始评估",
+        "个案概念化",
+        "治疗联盟",
+        "家庭参与",
+        "目标设定",
+        "患者能基本配合访谈并表达主诉",
+        "家庭成员可参与会谈",
+        "无急性安全风险需优先干预",
+        "CBT初始会谈：个案概念化与治疗联盟建立",
+        "在前1–2次CBT会谈中，系统完成发展性与系统性信息采集，通过心境检查与行为功能分析形成可操作的个案概念化，并与患者及家属共同澄清结构化设置、开展心理教育、共建SMART目标清单，从而确立稳固的治疗联盟。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/CBT初始会谈：个案概念化与治疗联盟建立/SKILL.md"
+    },
+    {
+      "skill_id": "89230ac8-b262-584c-b458-700189e2c832",
+      "name": "CBT初始关系建立与评估双轨流程",
+      "description": "在第1–2次咨询中同步开展咨询关系建立（倾听、共情、无条件积极关注）与结构化诊断评估（开放性提问收集资料、鉴别诊断、衔接医生诊断），为后续CBT干预锚定方向。",
+      "child_type": "CBT初始阶段",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "d2b456e0-122b-5a7b-8169-a2a5387f57df",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在第1–2次咨询中同步开展咨询关系建立（倾听、共情、无条件积极关注）与结构化诊断评估（开放性提问收集资料、鉴别诊断、衔接医生诊断），为后续CBT干预锚定方向。",
+      "selector_terms": [
+        "首次或前两次咨询",
+        "个案处于倾诉意愿强但方向模糊状态",
+        "已有医生医学诊断需整合进咨询计划",
+        "CBT",
+        "初始评估",
+        "治疗联盟",
+        "诊断整合",
+        "结构化访谈",
+        "个案主动详述困扰但缺乏归因框架",
+        "言语中浮现重复性情绪反应（如羞愧、自责）或身体化表现（如手心出汗）",
+        "提及既往医疗就诊或诊断结论",
+        "CBT初始关系建立与评估双轨流程",
+        "在第1–2次咨询中同步开展咨询关系建立（倾听、共情、无条件积极关注）与结构化诊断评估（开放性提问收集资料、鉴别诊断、衔接医生诊断），为后续CBT干预锚定方向。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/CBT初始关系建立与评估双轨流程/SKILL.md"
+    }
+  ]
+}

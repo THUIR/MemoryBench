@@ -1,0 +1,138 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "6a348edd-afc3-5fba-81e5-cd97cdb8bb24",
+  "skill_name": "CBT家庭作业布置",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "1f46dffd-550d-5a9a-bfc8-93bf59807339",
+      "doc_id": "2ff1b9c0-4c0f-50f0-8f52-832c04bac087",
+      "document_title": "00206135895.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/00206135895.md",
+      "section": "6.咨询过程：咨询过程分为三个阶段",
+      "span": {
+        "start": 6218,
+        "end": 6402
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "求：(沉默)可能不会吧！或许是我想多了\n\n(3）布置家庭作业  \n$\\textcircled{1}$ 还有哪些不合理的信念，进行自己与自己辩论；$\\textcircled{2}$ 放松训练\n\n(4）结束与巩固阶段\n第八次咨询\n\n(a)复习咨询过程中建立起来的合理信念，同时注意调整关注点\n\n(b)肯定其进步，指出努力的方向;\n\n(c）反馈家庭作业;\n\n(d)结束咨询。",
+      "metadata": {
+        "document_title": "00206135895.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT家庭作业布置",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "布置结构化家庭作业以延伸咨询效果",
+        "task_family": "CBT作业管理",
+        "method_family": "CBT",
+        "stage": "咨询阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "a2d905b4-890e-53a6-8434-d0448d8ee859",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 37,
+        "paragraph_end": 43,
+        "heading_path": [
+          "6.咨询过程：咨询过程分为三个阶段"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1.一般资料",
+          "2．主诉和个人陈述",
+          "3.评估与诊断",
+          "4.咨询目标",
+          "5.咨询方案",
+          "7.咨询效果评估"
+        ],
+        "subsection_headings": [
+          "（一）诊断阶段",
+          "(二）咨询阶段",
+          "(4）结束与巩固阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一次咨询，建立良好的咨询关系，通过摄入性会谈、观察了解、心理测验等收集求助者相关信息，明确求助者的问题、产生问题的原因、问题的严重程度，最终做出明确的心理诊断。"
+      }
+    },
+    {
+      "support_id": "3a990da4-0359-5b9a-9266-94112275e9a6",
+      "doc_id": "6b7daa86-6690-5de5-b52e-33812c52dbd3",
+      "document_title": "1例大学毕业生就业困难心理咨询案例_马翔.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/1例大学毕业生就业困难心理咨询案例_马翔.md",
+      "section": "4干预过程与方法",
+      "span": {
+        "start": 2465,
+        "end": 3027
+      },
+      "relation_type": "support",
+      "confidence": 0.88,
+      "quote": "乙：如果各方面都追求一步到位，找到完美的工作，可能会给你带来比较大的压力。\n\nX：是啊，现在没有达到我想要的职业目标，这令我感到很担心。\n\n乙：如果我是刚毕业的同学，我可能也会想要各方面都一步到位，省时省力，但是实际上，事物发展的前途是光明的，道路是曲折的，找到自己心仪工作是个长期的过程。只有不断提高自己的能力，才有可能实现自己最终的求职目标。\n\nX：所以我该怎么办呢？\n\n乙：对于现在的你来说，如果能先找到一个岗位，在这个岗位好好锻炼，积累经验，提高本领，未来就有可能有机会去更好的平台。\n\nX：看来我太心急了。\n\n4.3第三阶段（与不合理信念辩论）\n任务：本阶段旨在帮助来访者认识到自己的不合理信念，并且尝试转变自己的不合理信念。\n\n目标：帮助来访者认识到自己求职中存在很多不合理信念，并逐步转变这些不合理信念。\n\n应对方法：苏格拉底式提问、与不合理信念辩论技术。\n\n家庭作业：检查自己存在的不合理信念，尝试转换为合理的信念。\n\n第三阶段咨询对话片段摘要如下。\n\n乙：你在找工作中，有一些不合理信念，不合理信念是个体意识到或没有意识到的不切实际的想法。是没有逻辑的、站不住脚的信念。通常具有绝对化、过分概括化、极端化等特点。不合理信念可能会阻碍我们实现找到理想工作的目标。\n\nX：老师，那请您说，我有哪些不合理信念呢？",
+      "metadata": {
+        "document_title": "1例大学毕业生就业困难心理咨询案例_马翔.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "求职信念合理化转换作业指导",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "促成信念合理化迁移",
+        "task_family": "认知行为作业",
+        "method_family": "CBT",
+        "stage": "homework_assignment",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "c49e8b49-ef5b-56b1-a581-66a6f68c71c7",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "苏格拉底",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 18,
+        "paragraph_end": 30,
+        "heading_path": [
+          "4干预过程与方法"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 个案信息",
+          "2 个案概念化",
+          "3 咨询方案",
+          "5 咨询效果评估",
+          "6 评价及反思"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段（建立咨询关系）",
+          "4.2第二阶段（转变自身求职观念）",
+          "4.3第三阶段（与不合理信念辩论）",
+          "4.4第四阶段（重拾自我求职信心）",
+          "4.5第五阶段（重新制定求职策略）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "采用合理情绪疗法和催眠疗法对来访者进行咨询。具体技术包含苏格拉底提问、放松训练、催眠练习、家庭作业等。咨询过程主要包括5个阶段，具体如下。"
+      }
+    }
+  ]
+}

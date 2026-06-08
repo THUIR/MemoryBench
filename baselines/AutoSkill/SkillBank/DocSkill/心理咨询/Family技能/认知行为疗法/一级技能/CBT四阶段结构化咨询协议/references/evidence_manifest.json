@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "241060c5-7a91-5c44-8e01-a095b20ed435",
+  "skill_name": "CBT四阶段结构化咨询协议",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "e8cb62dc-8bef-503f-8105-8de5694ca3e9",
+      "doc_id": "cccdbfea-302c-5dd7-aeb9-2d46d1ec6ada",
+      "document_title": "一例大学新生适应不良的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例大学新生适应不良的心理咨询案例报告.md",
+      "section": "3咨询方案与知情同意",
+      "span": {
+        "start": 6304,
+        "end": 6878
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "在咨询之前，依据心理咨询的相关规定，向来访者介绍了双方的责权利，求助者愿意接受，并商定每周咨询一次，每次咨询一小时。因为学校把对学生的心理咨询作为老师的日常工作任务，所以学生不需支付费用。\n\n3.4咨询过程：\n咨询过程分四个阶段：\n\n第一阶段：心理诊断阶段（第一次咨询)。建立咨询关系，收集资料，进行心理诊断，确定咨询目标。简单向求助者介绍ABC理论的基本原理，使求助者能够接受这种理论及其对自己问题的解释。\n\n第二阶段：领悟阶段(第二次咨询)。帮助求助者达到三种领悟： $\\textcircled{1}$ 使她认识到是信念引起了情绪及行为后果，而不是诱发事件本身； $\\textcircled{2}$ 因此她对自己的情绪及行为反应负有责任； $\\textcircled{3}$ 只有改变了不合理信念，才能减轻或消除她目前存在的各种症状。\n\n第三阶段：修通阶段(第三、四次咨询)。运用与不合理信念辩论、合理情绪想象、家庭作业等方法与技术，使求助者修正或放弃原有的非理性观念，并代之以合理的信念，从而使症状得以减轻或消除。\n\n第四阶段：再教育阶段(第五次咨询)。巩固前几个阶段治疗所取得的效果，帮助求助者进一步摆脱原有的不合理信念及思维方式，使新观念得以强化，从而使求助者在咨询结束之后仍能用学到的东西应对生活中遇到的问题，以便能更好的适应现实生活。",
+      "metadata": {
+        "document_title": "一例大学新生适应不良的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT四阶段结构化咨询协议",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "提供可复用的阶段性CBT治疗框架",
+        "task_family": "treatment_delivery",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "multi-session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "451d8279-36b6-5db7-916b-e92abc4cae87",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 7,
+        "paragraph_end": 12,
+        "heading_path": [
+          "3咨询方案与知情同意"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1资料整理",
+          "2评估与诊断",
+          "4咨询效果评价",
+          "5总结"
+        ],
+        "subsection_headings": [
+          "3.4咨询过程："
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "3.1咨询目标"
+      }
+    }
+  ]
+}

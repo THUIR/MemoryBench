@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "51929f77-36e5-573e-8704-475a9899aee3",
+  "parent_name": "考试焦虑CBT结束与巩固阶段结构化流程",
+  "children": [
+    {
+      "skill_id": "40b23884-4434-5236-a4e3-663987035076",
+      "name": "考试情境理性态度应用作业",
+      "description": "布置结构化课后作业，要求来访者在真实复习与模拟考试中，有意识以理性态度替代焦虑相关自动思维，并记录情绪、行为变化，作为下一次会谈的认知重建反馈依据。",
+      "child_type": "行为激活与泛化",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "51929f77-36e5-573e-8704-475a9899aee3",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "布置结构化课后作业，要求来访者在真实复习与模拟考试中，有意识以理性态度替代焦虑相关自动思维，并记录情绪、行为变化，作为下一次会谈的认知重建反馈依据。",
+      "selector_terms": [
+        "来访者已掌握ABC模型基本结构",
+        "已识别出1–2个核心不合理信念（如‘片面追求名次’）",
+        "当前处于考试复习期或临近重要考试",
+        "CBT",
+        "考试焦虑",
+        "认知作业",
+        "泛化训练",
+        "结构化记录",
+        "来访者能口头复述替代信念",
+        "对作业形式表现出基本理解与意愿",
+        "无急性危机或严重解离表现",
+        "考试情境理性态度应用作业",
+        "布置结构化课后作业，要求来访者在真实复习与模拟考试中，有意识以理性态度替代焦虑相关自动思维，并记录情绪、行为变化，作为下一次会谈的认知重建反馈依据。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/考试情境理性态度应用作业/SKILL.md"
+    }
+  ]
+}

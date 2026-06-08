@@ -1,0 +1,75 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "99c11520-21b8-5d7c-b441-690ac9ca4bca",
+  "skill_name": "CBT终期会谈结构化框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "8f0a1f55-52d9-5caa-935a-42db84bbc7c9",
+      "doc_id": "588958ef-26a9-5c37-8a3d-cc264775e889",
+      "document_title": "1例大学生人际交往中内心冲突咨询案例报告_张玉.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例大学生人际交往中内心冲突咨询案例报告_张玉.md",
+      "section": "8 咨询过程",
+      "span": {
+        "start": 7576,
+        "end": 7849
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "来访者：好。\n\n布置家庭作业：让来访者继续练习RSA。\n\n8.4第四阶段（第10次咨询）\n8.4.1任务：结束咨询，处理分离，鼓励来访者将合理的认知方式及分析方法应用到实际生活中。\n\n8.4.2 方法：会谈法。\n\n8.4.3过程：引导来访者探讨其新建立的合理的认知方式，对其的进步给予了肯定和强化；与来访者一起回顾整个咨询过程，评估咨询的疗效。鼓励来访者用新的思维投入生活，把新建立的合理认知方式应用到以后的工作和生活中；再次遭遇困难情境时，能运用在本次咨询中学习的方法进行自我调节，降低日后由同类原因引发心理问题的可能性，减少自我困扰的倾向性。",
+      "metadata": {
+        "document_title": "1例大学生人际交往中内心冲突咨询案例报告_张玉.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT咨询结束阶段结构化会谈",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "巩固认知重构成果并促进现实迁移",
+        "task_family": "CBT结束阶段干预",
+        "method_family": "CBT",
+        "stage": "结束与迁移",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "0837718b-e6a7-5fd0-a0c7-986ab8f96de5",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "阶段",
+          "会谈"
+        ],
+        "paragraph_start": 63,
+        "paragraph_end": 67,
+        "heading_path": [
+          "8 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 个人成长史",
+          "3 主诉与个人陈述",
+          "4观察和收集的资料",
+          "5 评估与诊断",
+          "6 原因分析"
+        ],
+        "subsection_headings": [
+          "8.1第一阶段：第1～3次咨询",
+          "8.2第二阶段：第4～7次咨询",
+          "8.3第三阶段：第8～9次咨询",
+          "8.4第四阶段（第10次咨询）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询阶段的划分[3]： $\\textcircled{1}$ 建立咨访关系与心理诊断阶段；$\\textcircled{2}$ 领悟、修通、再教育阶段； $\\textcircled{3}$ 巩固、评估、结束阶段。说明：咨询过程的每一阶段均在上级心理咨询师的指导下进行。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "family_name": "人本-存在主义",
+  "skill_id": "a2e4c38f-8509-56f7-8340-1cd3301b8d75",
+  "skill_name": "资源取向优势发现引导会谈",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "ca78cef5-754a-59be-91d5-24d745fff044",
+      "doc_id": "fa70259e-19e2-5ba7-928d-c54ffa1acd09",
+      "document_title": "1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/het/1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+      "section": "4咨询方案与咨询目标",
+      "span": {
+        "start": 3722,
+        "end": 4010
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "4.1 咨询计划\n咨询分为三个阶段。初始阶段：以危机干预为核心，全面评估小Y情况，制定安全计划，给予支持和理解。第二阶段：积极关注小Y资源与力量，运用人本主义技术从资源取向视角，引导其宣泄情绪，发现优势资源，增强自我效能感。第三阶段：巩固效果，回顾咨询过程，鼓励小Y继续利用资源和策略，确保效果持久性，助其实现成长发展。\n\n4.2咨询目标\n咨询旨在解除小Y的自杀风险，帮助其有效管理抑郁情绪，获得社会支持提升社会功能，促进自我认知转变，增强自尊自信，挖掘优势资源，建立应对策略，改善人际关系，获得社会支持，实现危机后心理成长，提升心理健康水平和生活质量，为其未来发展奠定基础。",
+      "metadata": {
+        "document_title": "1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "资源取向优势发现引导会谈",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "完成一次以资源激活为目标的完整会谈单元",
+        "task_family": "资源激活",
+        "method_family": "人本-存在主义",
+        "stage": "middle",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "ea42759b-8a82-544f-8e78-a8108dea9b23",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "安全计划",
+          "危机干预",
+          "咨询目标"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 1,
+        "heading_path": [
+          "4咨询方案与咨询目标"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案概况",
+          "2 案例介绍",
+          "3 案例分析",
+          "5 咨询过程",
+          "6 咨询效果与反思"
+        ],
+        "subsection_headings": [
+          "4.1 咨询计划",
+          "4.2咨询目标"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询分为三个阶段。初始阶段：以危机干预为核心，全面评估小Y情况，制定安全计划，给予支持和理解。第二阶段：积极关注小Y资源与力量，运用人本主义技术从资源取向视角，引导其宣泄情绪，发现优势资源，增强自我效能感。第三阶段：巩固效果，回顾咨询过程，鼓励小Y继续利用资源和策略，确保效果持久性，助其实现成长发展。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "66a1fe97-bc26-5f96-9245-daf41c096793",
+  "skill_name": "焦点解决短期疗法：幸福清单家庭作业布置",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "867ac7cd-94e3-54dc-8d76-fd046cf1b0fd",
+      "doc_id": "19a5e2b1-76d6-5bf7-8601-f8b257a643ca",
+      "document_title": "焦点解决短期疗法在高校心理咨询案例中的应用——以商洛学院为例_常燕.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/焦点解决短期疗法在高校心理咨询案例中的应用——以商洛学院为例_常燕.md",
+      "section": "焦点解决短期疗法在高校心理咨询案例中的应用——以商洛学院为例",
+      "span": {
+        "start": 5002,
+        "end": 5489
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "T：咨询马上就要结束了，你还有其它想聊的吗？C：老师，我感觉不用啦，我也不能总是关注生活中这些琐事，否则，我哪有时间做自己的事呢（微笑）。\n\nT：最后，有一份家庭作业需要你配合完成一每晚睡前完成属于自己的幸福清单。具体内容如下：第一，今日的小确幸。回想一下今天，有没有哪件事让你感受到了幸福？详细描述事情的经过、涉及到的相关人物，还有当时你内心的情绪状态比如是满心欢喜、温暖感动等等。第二，自我成长对比。每天自省，如果发现自己在某个方面有了进步，分析下原因，写清楚是自己付出了努力、改变了心态，还是其他什么原因。第三，明日快乐计划。也就是说，如果希望明天快乐，提前规划下怎样才能达成目标，把这些也写在清单。一周后，我们再见，记得把作业带上！\n\nC：好！\n\n六、咨询追踪：结束阶段\n一周后对来访者进行了回访发现其心境平稳，躯体反应和心理反应均消失，达到了预期效果。\n\n（一）事件处理结果\n咨询过后，个案打破了自身局限的认知模式，学会了多方视角看待问题，不再陷入负性思维的陷阱，也不再聚焦负性事件解读。此外，个案也被积极赋能，善于觉察自身优势，乐于发现他人优点，和舍友和睦相处。",
+      "metadata": {
+        "document_title": "焦点解决短期疗法在高校心理咨询案例中的应用——以商洛学院为例_常燕.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "焦点解决短期疗法的幸福清单家庭作业",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "巩固咨询效果，维持积极认知模式与行为惯性",
+        "task_family": "焦点解决短期疗法",
+        "method_family": "后现代主义",
+        "stage": "结束与巩固阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "ae620ad3-6ce1-5a30-98cc-17e834dc4775",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "清单",
+          "阶段"
+        ],
+        "paragraph_start": 27,
+        "paragraph_end": 31,
+        "heading_path": [
+          "焦点解决短期疗法在高校心理咨询案例中的应用——以商洛学院为例"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "（一）个案初始印象",
+          "（二）个案基本情况",
+          "（三）个人陈述和咨询目标",
+          "（一）评估目标",
+          "（二）评估方法",
+          "（三）原因分析",
+          "（一）理论依据",
+          "（二）咨询目标",
+          "（三）咨询方法",
+          "（一）初次咨询：搭建信任桥梁，着手问题评估",
+          "（二）咨询中期：心理支持阶段",
+          "五、咨询后期：巩固阶段",
+          "六、咨询追踪：结束阶段",
+          "（一）事件处理结果",
+          "（二）个案自评",
+          "（一）评价",
+          "（二）反思"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "常燕1"
+      }
+    }
+  ]
+}

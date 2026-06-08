@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "774a8e5b-f80f-55cc-a6a7-465d41fe278e",
+  "skill_name": "CBT核心信念识别与协同重构",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "2b447f9b-263f-5fce-a301-768a84e060cf",
+      "doc_id": "85e16e58-09fd-5e9e-9b1b-23fe9003cd82",
+      "document_title": "tppc2022040285-91.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc2022040285-91.md",
+      "section": "3 咨询过程",
+      "span": {
+        "start": 4692,
+        "end": 5116
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "咨询师：看来你真是个善良的女孩。不过呢，如果你觉得那个女生对你的伤害太大，不能够马上就全部原谅她，也没有关系，不必勉强自己。就让这个事件暂时存在你心里，让我们用成长慢慢去消化它。\n\n此次咨询，咨询师使用认知行为疗法里面的认知概念化技术，帮助求助找到她的不合理核心信念，比如“我是一个一无是处的人”“没有一个人喜欢我”，分析它们的不合理处，并帮助她找到合理的、符合客观现实的核心信念，比如“是人都有缺点，我也有缺点，但我也有很多优点”“有很多人喜欢我”等等，以合理的信念取代不合理信念。咨询结束时布置家庭作业，今天咨询中找到的合理信念每天都用五分钟温习一遍。最后请求助者完成焦虑量表和抑郁量表。\n\n（2）社会支持资源整合方面。与求助者嫂子沟通，肯定她在求助者心理状态恢复期间发挥的重要作用，希望在她力所能及的时候继续陪伴求助者。与求助者的舅舅电话沟通，反馈求助者最近心理成长进步处，并大致向他说明此次治疗过程，希望舅舅继续通过微信或者电话支持求助者。",
+      "metadata": {
+        "document_title": "tppc2022040285-91.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT认知概念化与核心信念重构",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "识别并修正不合理核心信念",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "初期干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "f6faa1b6-83a3-54ed-b68d-f6fa009b3ac9",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 25,
+        "paragraph_end": 27,
+        "heading_path": [
+          "3 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 个案概况",
+          "2分析与评估",
+          "4 辅导效果和反馈",
+          "5 反思与总结"
+        ],
+        "subsection_headings": [
+          "3.1　第一次咨询",
+          "3.2　第二次咨询",
+          "3.3　第三次咨询",
+          "3.4　第四次咨询",
+          "3.5一个月后的回访"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "（1）求助者一开始并不太信任心理咨询师。心理咨询师热情的跟求助者打完招呼，简单介绍完自己后，期待求助者简单介绍自己或者说说自己希望得到哪些方面的帮助。但是求助者避免与咨询师目光接触，也不愿开口讲话。沉默了几分钟后，咨询师使用共情技术消除了阻抗。对话如下："
+      }
+    }
+  ]
+}

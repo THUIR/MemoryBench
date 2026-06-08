@@ -1,0 +1,76 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "8a295e61-3127-56da-9fa7-18fbb9db9159",
+  "skill_name": "REBT非理性信念逻辑辩论",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "d69ca82b-1b42-51b1-aa83-236ed6307d20",
+      "doc_id": "e1c84d14-d8ff-5f9b-a54c-80b876e35e5e",
+      "document_title": "应用理情行为疗法干预青少年人际冲突的个案报告_李莎.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/应用理情行为疗法干预青少年人际冲突的个案报告_李莎.md",
+      "section": "# 5干预进程",
+      "span": {
+        "start": 4687,
+        "end": 5269
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "当来访者在人际交往中被人拒绝时，会出现明显的抑郁情绪。引导来访者识别情绪背后的非理性信念：“我没能让大家都喜欢我，我是个毫无用处的路人甲”。咨询师引导来访者展开与非理性信念的辩论：不管是多么完美的人，都不可能让所有人都喜欢TA，所以有人不喜欢自己是很正常，这不应该影响我的价值。我的身上有缺点也有优点，如果我只盯着自己的缺点不放，就容易忽视优点，否定自我。之后，帮助来访者建立理性信念：我没办法做到让所有人都喜欢我，就算有人讨厌我、拒绝我，也不代表我是一个毫无用处的路人甲，我有我自己的价值。\n\n5.4.2 布置家庭作业：教会来访者使用REBT自助表格（表1），分层级处理非理性信念。\n\n5.4.3实施自我管理行为计划：咨询师与来访者共同制定自我管理行为计划表格（表2），咨询师监督来访者自我管理行为计划表格的使用情况。来访者顺利完成为期一个月的自我管理计划，在4月15日～5月15日期间，根据来访者反馈，没有与同学发生人际冲突。\n\n# 5.5评估/结束阶段\n反馈上次咨询作业，并评价作业完成情况；评估目标收获，对整个咨询结果进行总结性评价；处理关系结束的问题；为学习的迁移和自我依赖做准备：与来访者讨论，在离开咨询后一段时间里如何自我依赖，并运用REBT处理新的非理性信念。必要时为自己制定下一个自我管理计划；结束咨询。\n\n表1王丽（化名）REBT自助表使用记录",
+      "metadata": {
+        "document_title": "应用理情行为疗法干预青少年人际冲突的个案报告_李莎.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "REBT非理性信念辩论引导",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "修正非理性信念",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "问题-个案探索阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "9df50920-74d1-56ae-b5d0-c2ca7fb70fad",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "表格",
+          "阶段"
+        ],
+        "paragraph_start": 8,
+        "paragraph_end": 12,
+        "heading_path": [
+          "# 5干预进程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1个案情况",
+          "# 2 问题评估",
+          "# 3 咨询目标",
+          "# 4咨询方法与咨询计划",
+          "# 6.1来访者反馈",
+          "# 6.2 咨询师评估"
+        ],
+        "subsection_headings": [
+          "# 5.1进入与定向阶段",
+          "# 5.2问题-个案探索阶段",
+          "# 5.3目标与方案探讨阶段",
+          "# 5.4行动/转变阶段",
+          "# 5.5评估/结束阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "该阶段主要工作包括：建立咨询关系，收集相关资料,初步界定问题，明确咨询需要，初步了解当事人的个人、环境资源。通常由首次（或头一两次）完成。"
+      }
+    }
+  ]
+}

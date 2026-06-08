@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "27379556-f2dc-5317-8d2d-4d0fcdceec25",
+  "parent_name": "CBT自动思维识别与反应训练",
+  "children": [
+    {
+      "skill_id": "8e80beba-7900-514c-a531-32e57088fe1b",
+      "name": "CBT思维-情绪关系 psychoeducation",
+      "description": "向来访者简明解释认知行为疗法中事件、思维与情绪三者之间的因果关系，帮助其建立初步的元认知觉察框架。用于咨询初期建立治疗联盟和心理教育基础。",
+      "child_type": "psychoeducation",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "27379556-f2dc-5317-8d2d-4d0fcdceec25",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "向来访者简明解释认知行为疗法中事件、思维与情绪三者之间的因果关系，帮助其建立初步的元认知觉察框架。用于咨询初期建立治疗联盟和心理教育基础。",
+      "selector_terms": [
+        "来访者首次接触CBT",
+        "来访者混淆情绪与事件因果",
+        "需建立基本认知模型",
+        "CBT",
+        "psychoeducation",
+        "initial_session",
+        "ABC_model",
+        "metacognition",
+        "来访者说‘这件事让我很生气’而未提及想法",
+        "来访者将情绪归因为外部事件本身",
+        "来访者尚未使用过思维记录表",
+        "CBT思维-情绪关系 psychoeducation",
+        "向来访者简明解释认知行为疗法中事件、思维与情绪三者之间的因果关系，帮助其建立初步的元认知觉察框架。用于咨询初期建立治疗联盟和心理教育基础。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/CBT思维-情绪关系 psychoeducation/SKILL.md"
+    },
+    {
+      "skill_id": "e84d48f9-4339-5cd4-a34b-8876dc45a2fd",
+      "name": "负性自动化思维连续谱挑战",
+      "description": "使用0–100分连续谱技术评估并松动来访者对负性自动化思维的主观确信度，通过证据探询与归因命名启动认知重评，适用于CBT第二阶段核心认知重构环节。",
+      "child_type": "cognitive restructuring",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "27379556-f2dc-5317-8d2d-4d0fcdceec25",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "使用0–100分连续谱技术评估并松动来访者对负性自动化思维的主观确信度，通过证据探询与归因命名启动认知重评，适用于CBT第二阶段核心认知重构环节。",
+      "selector_terms": [
+        "来访者表达条件化/绝对化陈述（如'只有…才…''一定是…''每…都…'）",
+        "该思维与当前情绪痛苦或行为回避存在可观察关联",
+        "来访者能清晰复述该想法且未否认其存在",
+        "CBT",
+        "认知重构",
+        "连续谱技术",
+        "自动化思维",
+        "负性思维",
+        "言语中出现'一定''必须''永远''完全''毫无价值'等绝对化用词",
+        "伴随明显情绪唤起（如语速加快、音调升高、身体前倾）",
+        "在描述事件时忽略情境变量，聚焦自我贬低归因",
+        "负性自动化思维连续谱挑战",
+        "使用0–100分连续谱技术评估并松动来访者对负性自动化思维的主观确信度，通过证据探询与归因命名启动认知重评，适用于CBT第二阶段核心认知重构环节。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/负性自动化思维连续谱挑战/SKILL.md"
+    }
+  ]
+}

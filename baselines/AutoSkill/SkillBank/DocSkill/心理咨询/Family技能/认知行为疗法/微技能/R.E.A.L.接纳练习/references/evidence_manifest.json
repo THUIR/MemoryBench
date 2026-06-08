@@ -1,0 +1,74 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "69846674-8f58-55c5-b88b-af26e5d44106",
+  "skill_name": "R.E.A.L.接纳练习",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "441b3745-eee9-54e8-a671-33238deede79",
+      "doc_id": "79107a61-4dd5-5e0e-9da0-bce8142d18a6",
+      "document_title": "1例正念认知疗法应用于社交焦虑障碍的案例报告_魏倩倩.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例正念认知疗法应用于社交焦虑障碍的案例报告_魏倩倩.md",
+      "section": "3 治疗过程",
+      "span": {
+        "start": 11617,
+        "end": 12252
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "当七次动作（装载和卸载）都完成后，平躺下来，闭上眼睛安静 $5 \\mathrm { { m i n } }$ ，用心去聆听你的身体、感受以及任何稍纵即逝的想法。\n\n3.5 第13\\~15次\n治疗关键： $\\textcircled{1}$ 帮助来访者理解接纳是改变的核心，接纳意味着有意识地放弃习惯性的回避行为，乐意去体验他们唤起的情绪和认知，而不带任何判断、解释、估计和元评估，进行R.E.A.L.接纳练习。 $\\textcircled{2}$ 通过正念式暴露学习，来访者有意地使用现实检验、当下的感受、信任和安全来进人和保持与“焦虑”刺激或情境的联系，在生活中根据痛苦情况清单逐级暴露。 $\\textcircled{3}$ 通过自我慈悲练习，帮助来访者去尊重、注意和阻止他们体验到的苦难。\n\n3.6 第16\\~17次\n治疗关键： $\\textcircled{1}$ 来访者对治疗结束感到担忧，并呈现新的问题行为，如长时间刷手机，对该行为进行功能分析，帮助其理解问题行为的功能及短期后果、长期后果，寻找替代性行为。来访者反馈：能看到自己的担忧及焦虑，并有分析和解决问题的方法及能力； $\\textcircled{2}$ 与来访者讨论既往困难及应对方式，以及讨论目前生活及工作的人际变化，帮助来访者觉察和总结自身变化，治疗师加强认可其变化及积极应对方式，增强来访者信心。来访者反馈：发现自己目前遇到人际的冲突不再选择回避，也不再只是责备自己，能觉察到自我视角及认知的变化。",
+      "metadata": {
+        "document_title": "1例正念认知疗法应用于社交焦虑障碍的案例报告_魏倩倩.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "R.E.A.L.接纳练习",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "培养非评判性接纳能力",
+        "task_family": "正念训练",
+        "method_family": "CBT",
+        "stage": "中期干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "ec7e5f74-f742-52a7-ab92-98a610d26f41",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "清单",
+          "现实检验"
+        ],
+        "paragraph_start": 41,
+        "paragraph_end": 43,
+        "heading_path": [
+          "3 治疗过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案情况",
+          "2 个案概念化",
+          "4结果",
+          "5讨论"
+        ],
+        "subsection_headings": [
+          "3.1 第1\\~3次",
+          "3.2 第4\\~6次",
+          "3.3 第7\\~11次",
+          "3.4 第12次",
+          "3.5 第13\\~15次",
+          "3.6 第16\\~17次",
+          "3.7 第18\\~19次"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本案例在精神专科医院心理中心进行心理治疗，治疗设置为：1次/周， $5 0 \\mathrm { { m i n } } /$ 次，共进行19次治疗。"
+      }
+    }
+  ]
+}

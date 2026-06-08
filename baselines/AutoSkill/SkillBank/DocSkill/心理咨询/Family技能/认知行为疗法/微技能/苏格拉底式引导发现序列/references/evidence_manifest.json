@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "8e7f5b3e-3544-545e-81eb-d947e0b55812",
+  "skill_name": "苏格拉底式引导发现序列",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "ae3810a9-a9d5-58d1-b85a-458fe4814406",
+      "doc_id": "d7e3bc89-bda7-5cc2-9cfa-42983ff1c3b6",
+      "document_title": "基于认知行为疗法的1例微笑抑郁症心理咨询案例报告_曹欣欣.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法的1例微笑抑郁症心理咨询案例报告_曹欣欣.md",
+      "section": "3 咨询目标与咨询方案",
+      "span": {
+        "start": 2361,
+        "end": 2980
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "3.2.1认知行为疗法：20世纪50年代，贝克针对抑郁症提出一种以调整认知模式为基础的短期认知行为疗法，用以解决当前的问题并矫正功能不良的想法和行为[]。它是以行为学习理论、认知理论和信息加工理论为一体的心理治疗方法，治疗是基于概念化，或者说是建立在对每个患者特殊的信念和行为模式的理解之上的，治疗师通过矫正患者的想法和信念系统，引起其认知改变从而带来情绪和行为上持久的改变[]。\n\n3.2.2 角色扮演技术：角色扮演法是让来访者通过角色扮演的过程，体验不同角色的感受，提高对不良认知和行为的识别能力，通过角色扮演，使主角将现实自我和所扮演的角色分离，形成角色距离，这可以使当事人以一个新的视角，从旁观者的角度重新审视和理解自己的心理困惑和冲突，改变以前自己对事态的看法和观念，重新体验生活的价值和意义。\n\n3.2.3苏格拉底式提问技术：在认知行为治疗过程中使用的苏格拉底提问的形式被称为引导发现。在这种方法中，它的目的是通过一系列问题使患者注意到他能注意到但不知道的知识。苏格拉底式提问或引导式发现包括几个步骤：通过倾听当事人并进行反思来发现问题，通过考察和评估来发现备选方案，利用新发现的信息重新识别，质疑旧的扭曲信念并得出结论并加以应用[10]。\n\n![](images/5d765dd4d0e755ee764829d0c30e56ae3d89c922d962fb4121bd66f5c5de4282.jpg)  \n图1认知概念化图",
+      "metadata": {
+        "document_title": "基于认知行为疗法的1例微笑抑郁症心理咨询案例报告_曹欣欣.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "苏格拉底式引导发现序列",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "激发来访者内源性认知修正能力",
+        "task_family": "guided_discovery",
+        "method_family": "CBT",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "49732e15-30e6-53ac-b6b7-84d209e18c74",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "苏格拉底"
+        ],
+        "paragraph_start": 5,
+        "paragraph_end": 8,
+        "heading_path": [
+          "3 咨询目标与咨询方案"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "基于认知行为疗法的1例微笑抑郁症心理咨询案例报告",
+          "1一般资料",
+          "2评估",
+          "4 咨询过程",
+          "5 效果评估",
+          "6 反思和启示"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "与来访者签署了知情同意书与保密协议，商定心理咨询一周一次，一次 $5 0 ~ \\mathrm { m i n }$ ，咨询结束时间视来访者情况而定。共进行8次心理咨询。"
+      }
+    }
+  ]
+}

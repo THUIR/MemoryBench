@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "7b793b24-2774-528a-b07e-3076f8eb29de",
+  "skill_name": "心理动力学四阶段咨询框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "b26ec4ea-3f34-5318-90ca-a12e89156809",
+      "doc_id": "c9b685b1-c209-5c9a-838d-f123625fe012",
+      "document_title": "1例心理动力学取向的大学生心理咨询案例报告_陆瑾.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/1例心理动力学取向的大学生心理咨询案例报告_陆瑾.md",
+      "section": "3 咨询方案",
+      "span": {
+        "start": 3445,
+        "end": 4087
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "3.2咨询信息\n在初次咨询中，咨询师和来访者确定了每周1次的咨询设置。本个案自2023年2月第一次咨询伊始，至2023年10月（暑期暂停）结束，一共进行了28次，每次咨询时长50～$6 0 \\mathrm { { m i n } }$ 。咨询对学生免费。\n\n3.3咨询思路\n心理动力学强调早年童年经历对人格塑造的重要性，通过探索来访者当前的应对（防御）方式来追溯痛苦的根源，主张无意识的心理活动可以影响有意识的思想、情感和行为。心理动力学取向的心理咨询过程，并不直接解决来访者的现实问题，而是强调让来访者的无意识意识化、支持来访者薄弱的自我功能以及在这个过程中帮助其发展新的思维和情感模式。在心理动力学咨询的第一个阶段，咨询师对来访者进行评估及个案概念化，并对咨访关系的匹配性做初步的考量；在第二个阶段，咨询师需要运用基础的倾听和咨询技术，和来访者建立关系同盟，为后续咨询的深入奠定关系基础，并让来访者的情绪在这个阶段得到初步的宣泄；在关系建立的前提下，咨询师需要在第三个阶段，让来访者意识到其当下某些重复的思维、情感或行为模式，是受其童年经验的影响而形成的，并通过向来访者分享咨询师“自我”的调节、合理化、哀悼等功能，引导来访者用更适应的方式去应对当前遇到的困境；在最后一个阶段，咨询师帮助来访者一起，将新的思维及情感的应对模式进行内化，并对未来可能遇到的问题进行提前演练，增强其离开咨询后的自主应对能力。\n\n在充分沟通的前提下，来访者小云同意咨询师在心理动力学框架下对其展开咨询。",
+      "metadata": {
+        "document_title": "1例心理动力学取向的大学生心理咨询案例报告_陆瑾.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "心理动力学四阶段咨询框架",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "提供跨阶段、可复用的心理动力学治疗结构",
+        "task_family": "treatment_planning",
+        "method_family": "psychodynamic",
+        "stage": "multi_session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "a6350ebd-1f7d-5d5f-82bc-4fdbf0a3c8e3",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 1,
+        "paragraph_end": 3,
+        "heading_path": [
+          "3 咨询方案"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 个案信息",
+          "2 个案概念化",
+          "4 咨询过程",
+          "5 咨询效果",
+          "6 案例思考"
+        ],
+        "subsection_headings": [
+          "3.1咨询目标",
+          "3.2咨询信息",
+          "3.3咨询思路"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "通过咨询商讨，来访者表示，希望从当下“只要遇到既定性的目标或考核，就会无由来的焦虑（焦虑值$9 \\mathrm { \\sim } 1 0$ ）”，调整到“适当的焦虑值（5左右）”。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "0039dc12-73c0-557f-9eba-9b30164e0877",
+  "skill_name": "ABC模型引导式信念识别",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "90b7fa84-e35b-59c1-8e0b-6a3104614a31",
+      "doc_id": "94ea221b-9234-503b-a5b4-c0e043213305",
+      "document_title": "一例宿舍人际交往障碍的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例宿舍人际交往障碍的心理咨询案例报告.md",
+      "section": "6咨询过程",
+      "span": {
+        "start": 2693,
+        "end": 3147
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "6.2第二次咨询\n(1)任务：介绍合理情绪疗法，协助求助者领悟到自己人际交往的问题是由所持的不合理观念造成的。\n\n(2)过程：先让求助者谈谈家庭作业的情况。求助者表示每天都能坚持做放松训练，做后觉得紧张、焦虑情绪有所减轻，睡眠质量也得到改善。用解释技术帮助求助者理解不良情绪产生的原因和临床表现，使求助者认识到不良情绪是由于受非理性理念的指导而形成了心理冲突。\n\n(3)布置作业：让求助者回忆负性生活事件影响下自己的情绪体验。分别找出诱发事件A和不适的具体结果C，然后再找出两者之间的不合理信念B，并分析自己为什么会有这样的观点。另外，每天继续做放松训练。\n\n6.3第三次咨询\n(1)任务：帮助求助者深入理解不合理信念B和不适当的行为方式C之间的关系，分析求助者在事件和行为反应之间的信念，让求助者逐渐领悟到不合理信念与这种信念引导下的不适当的行为方式之间的荒谬性和极端性，帮助求助者建立改变不合理信念的决心。\n\n(2)过程：(咨询会谈摘要)。\n\n咨询师：感觉你今天的状态比上次好 多了，这周的睡眠情况如何？",
+      "metadata": {
+        "document_title": "一例宿舍人际交往障碍的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ABC模型引导式信念识别",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "识别并命名不合理信念B",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "认知评估",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "e4f82079-5724-51e1-afaf-f12e7b536af8",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "会谈"
+        ],
+        "paragraph_start": 4,
+        "paragraph_end": 9,
+        "heading_path": [
+          "6咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 主诉与个人陈述",
+          "3观察与收集到的资料",
+          "4评估与诊断",
+          "5咨询原理",
+          "7咨询效果评估"
+        ],
+        "subsection_headings": [
+          "6.1第一次咨询",
+          "6.2第二次咨询",
+          "6.3第三次咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "(1)任务：了解基本情况，建立良好的咨询关系，确立主要的问题。"
+      }
+    },
+    {
+      "support_id": "d609e9b6-05ae-5155-a493-156e9c0b4e2f",
+      "doc_id": "2b41d4cc-6c10-5f8d-aec2-935459a45fcf",
+      "document_title": "一例强迫与焦虑心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例强迫与焦虑心理咨询案例报告.md",
+      "section": "六、咨询过程",
+      "span": {
+        "start": 4767,
+        "end": 5733
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "16岁是自我同一性形成的关键时期，也是价值观、人生观形成的重要时期，但是由于这个年龄段的不成熟性，导致来访学生的想法过于片面。\n\n认知行为疗法之父埃利斯认为，让人们产生困扰的不是事件本身，而是人们对这些事情的想法。认知行为疗法是一种短期治疗的方式，它更多关注“现在”而非过去。经过第一阶段建立良好关系后，针对来访学生的焦虑紧张情绪，辅导老师通过认知行为疗法同来访学生进行新的探讨。辅导老师首先向来访学生介绍情绪ABC基本理论，使来访学生明白自己情绪困扰的根本原因在于想法和信念的不合理，并说明其不合理信念与紧张、焦虑情绪之间的关系。其次，帮助来访学生找出不合理信念并进行质辩。对来访学生的“夏天是不幸运的”“别人根本看不起自己”“自己的身体很不好所以导致学习不好”等信念进行澄清与质辩，指出这些想法具有灾难化、极端化、绝对化等特点，辅导老师同来访学生一起对这些不合理的信念进行辩论，帮助来访学生认清其信念的不合理性，并放弃这些不合理的信念。并帮助来访学生建立新的合理观念，用合理观念代替不合理的思维方式，避免来访学生陷入负面情绪的恶性循环。\n\n最后，建立新的合理观念后，给来访学生指派认知家庭作业，在生活中遇到引起焦虑、紧张情绪的事件后，列出事件，找出不合理信念，质疑辩驳，产生新的合理想法，如用“可能”代替“必须”，用“最好”代替“应该”，用“偶尔”代替“绝对”。通过新的信念和自我暗示，来访学生会用不同的方式去思考和行动，这也会带给来访学生不同的感受和动力。\n\n第三阶段：运用“暴露一反应预防”，改善来访学生的强迫想法和行为。\n\n来访学生的“希望自己的物品完美无缺，有点小破损都觉得很遗憾”“自己写字，如果没有封□，就会觉得很难受，必须把口封上”“走在路上，如果不小心把左脚的鞋子弄响，那就一定要把右脚的鞋子故意弄响，才会觉得平衡”等，都属于强迫想法和强迫行为，或多或少地影响了他的正常生活，这也是来访学生主诉的问题。针对来访学生这一状况，在认知行为改变的基础上，辅导老师采用“暴露一反应预防”来改善来访学生的强迫状态。“暴露一反应预防”是让来访学生想象能够引起强迫行为的情景或让其真的暴露于引起强迫行为的情景，此时将引起来访学生强烈的情绪反应（焦虑、紧张不安、愤怒等），来访学生为了抵制这些情绪，会采用强迫行为来缓解紧张情绪。",
+      "metadata": {
+        "document_title": "一例强迫与焦虑心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT情绪ABC理论 psychoeducation",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "psychoeducation_and_belief_awareness",
+        "task_family": "cognitive_restructuring",
+        "method_family": "CBT",
+        "stage": "early_intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "84313670-c486-5bbb-b6bf-e014852c8ce1",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 5,
+        "paragraph_end": 9,
+        "heading_path": [
+          "六、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、案例概况",
+          "二、主述和个人陈述",
+          "三、心理评估",
+          "四、心理测量结果",
+          "五、咨询目标确定",
+          "六、咨询效果评估"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一阶段：建立有效的咨询关系，以来访学生为中心，倾听、共情为主，积极关注。"
+      }
+    }
+  ]
+}

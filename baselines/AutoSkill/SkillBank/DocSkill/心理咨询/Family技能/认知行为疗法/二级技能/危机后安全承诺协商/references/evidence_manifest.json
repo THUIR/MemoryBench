@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "86634660-3649-5692-b329-768e47f7cf74",
+  "skill_name": "危机后安全承诺协商",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "aaf18606-7a96-53d1-9a26-8742df66539d",
+      "doc_id": "43ec9e89-2138-5cc6-a62d-a8dea252f1a1",
+      "document_title": "tppc20200204155-164.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20200204155-164.md",
+      "section": "4 过程",
+      "span": {
+        "start": 6195,
+        "end": 6555
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "（5）如果想法是事实呢？ $\\textcircled{1}$ 对你意味着什么？（想找到中间信念或者核心信念） $\\textcircled{2}$ 如何应对即成事实？（情境模拟训练问题解决能力） $\\textcircled{3}$ 心理教育：接纳他人的不一样（每个人都有自己的认知特点，思维方式和应对策略）；全面的、发展的看待自己、他人和环境；我的想法、做法是否有利于问题的解决。\n\n（6）作业：巩固练习五栏表，可以不用固定的表格；行为应对（问题解决）训练。\n\n在商讨下次会谈议题时，来访者H主动提出结束咨询，表示此次危机已经过去，自己也学会了一些情绪调节的方法，想靠自己去应对今后的困难。经协商，同意暂时结束咨询，来访者也承诺如遇到困惑会第一时间求助咨询师，不再采取自伤、自残、自杀等极端方式解决问题，并坚持按医嘱服药。",
+      "metadata": {
+        "document_title": "tppc20200204155-164.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "危机后安全承诺协商",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "safety_micro",
+        "asset_path": "family_root/safety_module/safety_micro",
+        "asset_level": 2,
+        "visible_role": "leaf",
+        "objective": "降低危机复发风险，建立可核查的安全行为契约",
+        "task_family": "危机后稳定化",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "结束与巩固",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "93822d4d-d3f3-527c-80b2-7246ada400bc",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "表格",
+          "会谈"
+        ],
+        "paragraph_start": 23,
+        "paragraph_end": 25,
+        "heading_path": [
+          "4 过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一例自杀危机个案的认知行为干预报告",
+          "1 背景",
+          "2评估与分析",
+          "3 目标与计划",
+          "5 总结与反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一次：理解、共情、正常化自杀行为，稳定其情绪；利用情感内疚技术降低其自杀动机。［4]"
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "8386d092-ca35-51c7-b55e-c26990892a51",
+  "skill_name": "危机风险综合评估与多系统干预启动",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "8191e2bf-40c7-5329-83ad-a69e56a3170c",
+      "doc_id": "ca466cbe-8214-5302-ac81-37adfe071658",
+      "document_title": "1例基于认知行为疗法的大学生案例报告_何兰兰.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例基于认知行为疗法的大学生案例报告_何兰兰.md",
+      "section": "3个案咨询过程",
+      "span": {
+        "start": 2857,
+        "end": 3274
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "本案例共进行了9次咨询，每次咨询时长为 $5 0 \\mathrm { { m i n } }$ 。\n\n3.1第一阶段（第1～2次）：建立关系，了解情况，评估风险\n咨询师通过倾听、共情和积极关注等咨询技术与来访者快速建立起良好的信任关系，并进一步了解了来访者的个人史、成长史、家庭情况和创伤经历等基础信息。除此之外，咨询师还了解到小A过往有过自杀想法和自杀经历，虽目前自述无自杀想法且有非常强烈的改变意愿，但经综合评估后，学校启动了心理危机干预程序。另外，结合小A的家庭情况，学校心理中心与资助中心以此为契机建立了专项心理帮扶基金“暖心助学金”，并联系合作医院开设绿色通道，免去她的挂号及后续治疗费用，以此减轻其经济负担，支持她继续治疗，完成学业。\n\nA：我很难受，没有人能够理解我，当时的我好几次都拿起了刀，我尝试着划过自己的手腕，但是我害怕，我妈妈只有我一个人了，我死了，她怎么办，但是我真的觉得只有我死了，才能解决问题，我好纠结！",
+      "metadata": {
+        "document_title": "1例基于认知行为疗法的大学生案例报告_何兰兰.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "危机风险综合评估与多系统干预启动",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "safety_micro",
+        "asset_path": "family_root/safety_module/safety_micro",
+        "asset_level": 2,
+        "visible_role": "leaf",
+        "objective": "识别并响应自杀风险，防止危机恶化，建立跨部门支持网络",
+        "task_family": "危机干预",
+        "method_family": "CBT",
+        "stage": "初始评估",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "d0c6597c-e976-5496-8652-6832744a1cbf",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "危机干预"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "3个案咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 个案信息",
+          "2 个案概念化",
+          "4讨论",
+          "6 咨询反思"
+        ],
+        "subsection_headings": [
+          "3.1第一阶段（第1～2次）：建立关系，了解情况，评估风险",
+          "3.2 第二阶段（第3～4次）：回溯过去，修复创伤",
+          "3.3第三阶段（第5～6次）：学习CBT原理，识别自动思维",
+          "3.4第四阶段（第7～8次）：建立心理支持系统，改变负性信念",
+          "3.5第五阶段（第9次）：自我悦纳，重塑自信",
+          "3.6 咨询效果"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本案例共进行了9次咨询，每次咨询时长为 $5 0 \\mathrm { { m i n } }$ 。"
+      }
+    }
+  ]
+}

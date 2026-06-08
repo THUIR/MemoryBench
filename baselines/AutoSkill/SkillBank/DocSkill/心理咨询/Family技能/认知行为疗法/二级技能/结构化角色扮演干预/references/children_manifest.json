@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "02c2ce5c-1bf1-5bd0-84e8-c9efd87bbf2f",
+  "parent_name": "结构化角色扮演干预",
+  "children": [
+    {
+      "skill_id": "d2a6680e-6720-523f-a9a0-f9cd7631b894",
+      "name": "角色扮演式冲突情境再现",
+      "description": "在人际关系冲突事件中，通过咨询师与来访者分别扮演对立角色，引导来访者观察自身情绪反应并描述自动思维。适用于CBT框架下对人际敏感问题的具身化探索。",
+      "child_type": "认知行为干预",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "02c2ce5c-1bf1-5bd0-84e8-c9efd87bbf2f",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在人际关系冲突事件中，通过咨询师与来访者分别扮演对立角色，引导来访者观察自身情绪反应并描述自动思维。适用于CBT框架下对人际敏感问题的具身化探索。",
+      "selector_terms": [
+        "来访者报告人际冲突后出现强烈情绪反应",
+        "存在'他人故意针对我'类归因偏差",
+        "需具象化呈现非适应性思维过程",
+        "CBT",
+        "角色扮演",
+        "自动思维",
+        "人际敏感",
+        "具身化干预",
+        "来访者能回忆起具体冲突细节",
+        "情绪唤起中仍保有现实检验能力",
+        "愿意尝试体验性练习",
+        "角色扮演式冲突情境再现",
+        "在人际关系冲突事件中，通过咨询师与来访者分别扮演对立角色，引导来访者观察自身情绪反应并描述自动思维。适用于CBT框架下对人际敏感问题的具身化探索。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/角色扮演式冲突情境再现/SKILL.md"
+    }
+  ]
+}

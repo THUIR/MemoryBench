@@ -1,0 +1,78 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "b8fde5ff-6e96-5276-b800-e39387949870",
+  "skill_name": "行为放松训练引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "31350de3-c0e2-5572-ac6a-1949af5aa4bc",
+      "doc_id": "e0d3cec6-4f7d-5669-afdb-815bd310bb72",
+      "document_title": "一则考试焦虑症的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一则考试焦虑症的心理咨询案例报告.md",
+      "section": "1.一般资料",
+      "span": {
+        "start": 2739,
+        "end": 3118
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "(2）行为放松训练：指导小慧练习放松训练，让小慧靠在沙发上，全身各部位处于舒适状态，双臂自然下垂或搁置在沙发扶手上。让小慧想象自己处于令人轻松的情境中，例如,漫步在一片美丽的田野上，使其达到一种安静平和的状态。然后，咨询师用轻柔、愉快的声调引导求助者依次练习放松手臂、头部、躯干、下肢的顺序，重点强调肌肉放松。训练一次，10-15分钟。无论何时，当出现紧张状态时，都去放松，通过肌肉的行为放松从而达到心理放松。前几次咨询都会教小慧放松，并让\n\n布置家庭作业：\n\n目的： $\\textcircled{1}$ 积极认知，增强自信心。 $\\textcircled{2}$ 建立焦虑事件等级\n\n（1）回忆自己考试考好的情况有多少次，写在纸上。\n\n(2）回去后按照咨询师所教方法每天进行放松练习。\n\n第3次咨询：\n\n方法：会谈、行为放松训练。\n\n过程：建构焦虑等级",
+      "metadata": {
+        "document_title": "一则考试焦虑症的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "行为放松训练引导",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "降低自主神经唤醒水平，建立身心放松反应",
+        "task_family": "焦虑管理",
+        "method_family": "Behaviorism（行为主义）",
+        "stage": "干预执行",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "fe2a9fb5-4697-5be0-b634-e6c520625313",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "第3次咨询",
+          "会谈"
+        ],
+        "paragraph_start": 53,
+        "paragraph_end": 60,
+        "heading_path": [
+          "1.一般资料"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "4.咨询总结"
+        ],
+        "subsection_headings": [
+          "1.2个人成长史",
+          "1.3 主诉与个人陈述",
+          "1.4 观察和他人反映",
+          "1.5诊断",
+          "1.5.4 鉴别诊断",
+          "1.5.5原因分析",
+          "2.1 咨询目标的确立",
+          "2.2 理论原理和方法",
+          "2.3评估",
+          "3.2咨询阶段",
+          "3.3巩固与结束阶段",
+          "3.4 咨询效果评估"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "1.1一般情况"
+      }
+    }
+  ]
+}

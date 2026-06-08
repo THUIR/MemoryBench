@@ -1,0 +1,40 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "心理动力学",
+  "profile_id": "psychology::心理动力学",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "6a157a5d-e2bc-56ad-97e1-47ea641e498e",
+  "parent_name": "动力学咨询结束阶段结构化整合",
+  "children": [
+    {
+      "skill_id": "6d969585-1f17-547a-b1ff-7ecec0f4c316",
+      "name": "退行-成长波动正常化反馈",
+      "description": "当来访者报告症状反复（如再度需陪睡、情绪回落）时，将其解释为发展性过程中的自然波折，而非治疗失败或退步，并强化其已获得的成长证据。",
+      "child_type": "therapeutic_alliance",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "6a157a5d-e2bc-56ad-97e1-47ea641e498e",
+      "level_label": "微技能",
+      "taxonomy_class": "心理动力学",
+      "applicable_when": "当来访者报告症状反复（如再度需陪睡、情绪回落）时，将其解释为发展性过程中的自然波折，而非治疗失败或退步，并强化其已获得的成长证据。",
+      "selector_terms": [
+        "来访者用‘我又退步了’自我批判",
+        "症状反复伴随自责或绝望感",
+        "此前已有明确进步指标（如独睡、情绪稳定）",
+        "normalization",
+        "relapse_response",
+        "self-compassion",
+        "evidence-based_reassurance",
+        "语言中出现‘又’‘再’‘退步’‘失败’等时间回溯+负向评价复合表述",
+        "语调低沉、语速放缓、身体姿态收缩",
+        "主动提及过往进步后突然转折（如‘但这次……’）",
+        "退行-成长波动正常化反馈",
+        "当来访者报告症状反复（如再度需陪睡、情绪回落）时，将其解释为发展性过程中的自然波折，而非治疗失败或退步，并强化其已获得的成长证据。"
+      ],
+      "relative_path": "心理咨询/Family技能/心理动力学/微技能/退行-成长波动正常化反馈/SKILL.md"
+    }
+  ]
+}

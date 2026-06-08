@@ -1,0 +1,63 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "611c72f6-2e06-5a28-8736-a34661e8519a",
+  "skill_name": "Prolonged Exposure Protocol",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "bf87722e-36b0-5e51-b482-bb895ff22575",
+      "doc_id": "c6b0f4c1-4294-5d95-a2bd-54180ffbfbb7",
+      "document_title": "Terry,a42-year-oldEarthquake.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/Terry,a42-year-oldEarthquake.md",
+      "section": "# Terry, a 42-year-old Earthquake Survivor",
+      "span": {
+        "start": 43,
+        "end": 569
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "Through the use of repeated imaginal exposures, Terry slowly began to feel more conformable with discussing the trauma and telling people about his experience.\n\nThe first case example about Terry documents the treatment of PTSD using Prolonged Exposure. The second is an example of in-session imaginal exposure with a different client. Prolonged Exposure is strongly recommended by the APA Clinical Practice Guideline for the Treatment of PTSD.\n\n![](images/cf965b422a62c4d7730f0f8e6d6b82013f42ed22d73ac5c212cb86bb9bb0978c.jpg)",
+      "metadata": {
+        "document_title": "Terry,a42-year-oldEarthquake.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "Prolonged Exposure Protocol",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "Reduce PTSD symptoms through habituation and emotional processing of trauma memories",
+        "task_family": "trauma_recovery",
+        "method_family": "Behaviorism",
+        "stage": "treatment",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "02e24b0c-b08d-5e14-ad2a-9f5fd6d9442a",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "session"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "# Terry, a 42-year-old Earthquake Survivor"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# Excerpt From an In-Session Imaginal Exposure",
+          "# Treating PTSD with cognitive-behavioral therapies: Interventions that work"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "Through the use of repeated imaginal exposures, Terry slowly began to feel more conformable with discussing the trauma and telling people about his experience."
+      }
+    }
+  ]
+}

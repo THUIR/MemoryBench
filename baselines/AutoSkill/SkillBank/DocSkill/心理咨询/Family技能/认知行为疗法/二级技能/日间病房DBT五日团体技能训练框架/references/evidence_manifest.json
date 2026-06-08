@@ -1,0 +1,124 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "98d7834c-71e7-52b2-af17-f749c4b37819",
+  "skill_name": "日间病房DBT五日团体技能训练框架",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "2051ce2e-6762-5df5-b1c8-b552e25d7e03",
+      "doc_id": "ddde217f-9a31-587c-8c54-20a0150e6477",
+      "document_title": "1例青少年抑郁症在日间病房模式下辩证行为治疗的个案报告_贾惠羽.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例青少年抑郁症在日间病房模式下辩证行为治疗的个案报告_贾惠羽.md",
+      "section": "4治疗目标及过程",
+      "span": {
+        "start": 4395,
+        "end": 5128
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "小Y：我可以试试。\n\n4.2.2在日间病房进行的团体技能训练阶段：此阶段的治疗以团体形式进行，旨在教授来访者一系列技能，并通过这些技能的使用来降低问题行为和减轻创伤性情绪的影响。依据DBT的官方训练手册[16]，该阶段为期5天，每天包含4个教学时段和一次作业练习，每个教学时段持续 $5 0 ~ \\mathrm { m i n }$ 。每天的治疗安排都涵盖了正念训练、技能学习和作业练习。具体的日程安排详见表1。\n\n表1日间病房内容安排\n\n<table><tr><td>时间</td><td>周一</td><td>周二</td><td>周三</td><td>周四</td><td>周五</td></tr><tr><td rowspan=\"2\">上午</td><td>建立关系</td><td>正念技能</td><td>人际效能</td><td>痛苦耐受</td><td>情绪调节</td></tr><tr><td>介绍DBT</td><td>行为链分析</td><td></td><td>情绪调节</td><td></td></tr><tr><td rowspan=\"4\">下午</td><td>手工活动</td><td>作业练习</td><td>作业练习</td><td>作业练习</td><td>回顾练习</td></tr><tr><td>正念技能</td><td>价值观澄清</td><td>痛苦耐受</td><td>情绪调节</td><td>问题解决</td></tr><tr><td>精神科药物咨询</td><td>人际效能</td><td></td><td></td><td>结束关系</td></tr></table>\n\n注：DBT为辩证行为疗法。",
+      "metadata": {
+        "document_title": "1例青少年抑郁症在日间病房模式下辩证行为治疗的个案报告_贾惠羽.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "日间病房DBT团体技能训练五日框架",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "结构化交付DBT核心技能模块并确保每日技能整合与练习",
+        "task_family": "structured_group_intervention",
+        "method_family": "CBT",
+        "stage": "skill_acquisition",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "0baf41ac-cd7b-5035-85ac-13e229afb477",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "作业"
+        ],
+        "paragraph_start": 14,
+        "paragraph_end": 18,
+        "heading_path": [
+          "4治疗目标及过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案情况",
+          "2 问题评估",
+          "3 个案概念化",
+          "5 治疗效果评估"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 4.1治疗目标"
+      }
+    },
+    {
+      "support_id": "2a3b527a-c389-5909-93da-58121dd62fae",
+      "doc_id": "50dd0eed-ca18-5368-a1a8-373e2fd49b67",
+      "document_title": "1例青少年抑郁症辩证行为治疗的个案报告_杨天宇.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例青少年抑郁症辩证行为治疗的个案报告_杨天宇.md",
+      "section": "4治疗目标及过程",
+      "span": {
+        "start": 2367,
+        "end": 2679
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "第二次治疗：分为以下三个部分。 $\\textcircled{1}$ 介绍DBT。②问题行为界定。根据DBT问题行为优先原则，与来访者讨论后将问题行为界定为自伤行为。 $\\textcircled{3}$ 行为链分析。对问题行为进行分析。④制定日记卡。\n\n在行为链分析的基础上，治疗师运用认可技术，以辩证的视角对来访者自伤行为进行解读，表示自伤是面对问题时所采用的策略，并强调“使用技能并不会像自伤一样让你快速地离开痛苦，但技能的副作用很小。”以增强来访进入团体技能训练的动机。临近治疗结束时，与来访者一起制定日记卡并交给来访者。部分对话如下。\n\n治疗师：刚才我们一同完成了行为链分析，对自伤这个行为进行分析之后，你的感觉如何？",
+      "metadata": {
+        "document_title": "1例青少年抑郁症辩证行为治疗的个案报告_杨天宇.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "DBT第二次治疗结构化流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "完成DBT早期阶段的结构化干预，建立技能学习动机并启动行为监控",
+        "task_family": "DBT个体治疗",
+        "method_family": "CBT",
+        "stage": "early",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "07de2c96-91ae-5800-8a1d-1529bc2ff248",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 4,
+        "paragraph_end": 6,
+        "heading_path": [
+          "4治疗目标及过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例青少年抑郁症辩证行为治疗的个案报告",
+          "1个案情况",
+          "2 问题评估",
+          "3 个案概念化",
+          "5 治疗效果评估",
+          "6讨论"
+        ],
+        "subsection_headings": [
+          "4.1治疗目标",
+          "4.2治疗过程"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "遵循辩证行为疗法对来访者进行心理治疗。辩证行为疗法相信来访者受情绪控制困难之苦。尽管这些困难并非由来访者自己造成，但需要来访者自己解决。基于以上假设，并结合来访者实际，治疗目标如下：短期目标： $\\textcircled{1}$ 减少自伤行为； $\\textcircled{2}$ 增强治疗动机； $\\textcircled{3}$ 获得相应技能以应对问题；"
+      }
+    }
+  ]
+}

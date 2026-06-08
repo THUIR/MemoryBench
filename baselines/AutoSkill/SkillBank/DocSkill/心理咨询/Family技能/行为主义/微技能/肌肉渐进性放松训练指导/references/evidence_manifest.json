@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "f3596f22-a100-555e-9aad-9e4bacbdc24c",
+  "skill_name": "肌肉渐进性放松训练指导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "bf6bbfb3-776c-53f9-b5d0-bffacb3f0468",
+      "doc_id": "4ca8a9b9-6df4-5941-86ff-eafb30b3c495",
+      "document_title": "考试焦虑心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/考试焦虑心理咨询案例报告.md",
+      "section": "7咨询过程",
+      "span": {
+        "start": 2325,
+        "end": 2721
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "3）行为放松训练，帮助刘某认识到行为放松训练对焦虑是有益的。在咨询师的指导下练习肌肉渐进性放松训练，如：坐在椅子上，闭上眼睛，轻轻的扭转颈部，做几个扩胸，配合着深呼吸，或押懒腰等由上至下的顺序，先紧张，后放松的方法，体会全身放松的状态。无论何时，当出现紧张状态时，都去想放松，通过肌肉的行为放松从而达到心理放松。\n\n布置作业：继续每天大声朗读5遍自己的优点；大声朗读积极的思维语言；每天早晚做两次放松训练，每次10分钟，也可以根据情绪状态随时做。并记录变化与感受。\n\n7.3第3次2006/12/9\n方法与目的：采用谈话法、系统脱敏法和积极自我暗示等方法巩固认知重建结果；建立焦虑事件等级，并开始实施系统脱敏。咨询进程如下：\n\n1)反馈家庭作业：大声朗读优点及积极（下转226页)\n\n生共同负责，从学习情况、课堂常规、仪容仪表、环境卫生等方面进行监督和检查，并及时与班主任联系，反馈班级情况。",
+      "metadata": {
+        "document_title": "考试焦虑心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "肌肉渐进性放松训练指导",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "通过可操作的躯体动作序列实现即时生理放松，为后续认知干预奠基",
+        "task_family": "焦虑管理",
+        "method_family": "行为主义",
+        "stage": "早期干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "18e6a15d-2196-591a-985a-072b50388579",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "家庭作业"
+        ],
+        "paragraph_start": 5,
+        "paragraph_end": 9,
+        "heading_path": [
+          "7咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "考试焦虑心理咨询案例报告",
+          "1一般资料",
+          "2个人陈述",
+          "3观察得到的初步印象",
+          "4心理测验量表结果",
+          "5评估与诊断"
+        ],
+        "subsection_headings": [
+          "7.1 第1次2006/11/26",
+          "7.2 第2次2006/12/2",
+          "7.3第3次2006/12/9"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "方法与目的：采用摄入性谈话和心理测验，了解基本情况；建立良好的咨询关系；确定主要问题；进行咨询分析。咨询进程是：填写咨询登记表，询问基本情况；介绍咨询中的有关事项与规则；EPQ测验和SAS测定，询问生活事件，尤其是重大事件；确定咨询目标；做出初步问题分析，让刘某理解“为什么会这样”。"
+      }
+    }
+  ]
+}

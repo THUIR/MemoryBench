@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "404c4d84-9962-539a-85ea-41f430eda2d3",
+  "skill_name": "RET咨询阶段性目标校准协议",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "eb658b65-b610-527f-8c0d-1109963c0b7b",
+      "doc_id": "da90b9c3-c0a4-51b1-9fbc-a33d9d0fd749",
+      "document_title": "考研焦虑的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/考研焦虑的心理咨询案例报告.md",
+      "section": "八、咨询过程",
+      "span": {
+        "start": 2577,
+        "end": 4510
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "(一)第一次咨询。\n目的：了解基本情况，建立良好咨询关系;进行初步评估诊断，确定主要问题，协商确定咨询目标;引导求助者思考自己的不合理信念。\n\n方法：会谈、心理测验、合理情绪疗法。\n\n过程：填写咨询登记表,询问基本情况,介绍心理咨询中的相关注意事项;做SAS、SDS自评量表，将测验结果反馈给求助者；了解求助者咨询的原因，以及想要达到的咨询目的；发现问题,作出评估和诊断,并与求助者一同制定咨询目标；向求助者介绍合理情绪疗法,引导求助者思考自己的问题;将良好咨询关系的建立贯穿在整个咨询过程中。\n\n(二)第二次咨询。\n目的：加深咨询关系；挖掘求助者的不合理信念；引导求助者认识到自己的问题所在。\n\n方法：会谈、合理情绪疗法。\n\n过程：通过会谈加强咨询关系；引导求助者分析自己的问题，以及发现其糟糕至极的不合理信念;使求助者领悟到自己的焦虑源于“爸爸感冒是因为我，爸爸感冒了就会死去\"这些不合理信念。\n\n(三)第三次咨询。\n目的：以合理信念代替原有非理性观念；纠正杞人忧天式思维,客观地看待爸爸生病这件事;缓解因错误归因所带来的焦虑情绪。\n\n方法：合理情绪疗法的与不合理信念辩论技术。\n\n# 参考文献：\n\n使其客观看待父亲生病与考研之间的关系，调整好自己的情绪。具体采用与不合理信念辩论的技术，引导求助者以合理信念代替不合理信念。\n\n作业：完成合理自我分析报告。\n\n(四)第四次咨询。\n\n目的：巩固咨询效果;学会自我调节情绪。\n\n方法：会谈、放松训练。\n\n过程：反馈作业完成顺利，继续执行;指导求助者以放松训练缓解焦虑情绪;布置练习放松作业。\n\n# (五)第五次咨询。\n\n目的：巩固咨询效果;结束咨询。\n\n方法：会谈、心理测验。\n\n过程：回顾咨询过程，使求助者清晰自己问题的前因后果，认识到自己在咨询过程中发生的变化;再次施测问卷，发现SAS标准分39，SDS标准分35，并与咨询前对比；总结咨询成果，肯定求助者取得的进步;告知求助者若生活中再出现不合理信念时，可尝试用合理情绪疗法来调节自己的心态和情绪。",
+      "metadata": {
+        "document_title": "考研焦虑的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "RET咨询阶段性目标校准协议",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "维持RET短程治疗的目标导向性与协作性",
+        "task_family": "咨询过程管理",
+        "method_family": "CBT",
+        "stage": "session_opening",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "7607a90b-43e3-5f28-bccb-df825f0fd8d3",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "咨询目标",
+          "会谈",
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 20,
+        "heading_path": [
+          "八、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、一般情况",
+          "二、主诉和个人陈述",
+          "三、观察和他人反映",
+          "四、评估与诊断",
+          "五、病因分析",
+          "六、咨询目标"
+        ],
+        "subsection_headings": [
+          "(一)第一次咨询。",
+          "(二)第二次咨询。",
+          "(三)第三次咨询。"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "目的：了解基本情况，建立良好咨询关系;进行初步评估诊断，确定主要问题，协商确定咨询目标;引导求助者思考自己的不合理信念。"
+      }
+    }
+  ]
+}

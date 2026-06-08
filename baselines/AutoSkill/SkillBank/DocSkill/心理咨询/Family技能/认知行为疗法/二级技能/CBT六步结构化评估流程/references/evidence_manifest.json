@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "c010772d-1dc5-5cc4-8673-6fb9d6ed5804",
+  "skill_name": "CBT六步结构化评估流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "3a08ac0a-93a2-54f2-ba23-2c6ebf4c1cf8",
+      "doc_id": "2a3d0974-290d-5a19-a2da-0fd1ea1818ab",
+      "document_title": "tppc20210311805-813.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20210311805-813.md",
+      "section": "2评估与分析",
+      "span": {
+        "start": 1286,
+        "end": 1895
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "在整个咨询的过程中，咨询师利用多种方法从各方面获得信息，对来访者的不同时期的认知、情绪、行为等心理现象进行了全面、系统和深入的了解。\n\n咨询者问题和咨询效果的评估。评估分为六个部分。（1）获得来访者当前问题及相关问题的信息。（2）鉴别与问题相关联的控制及影响因素。（3）确定来访者对咨询结果所持的目标或期望。（4）采取咨询前的基线数据，用于比较咨询过程中进一步获得的各种数据，以便评估和评价来访者的进展及治疗效果。这种评估将帮助咨询师确定治疗计划和干预策略是继续进行，还是需要调整。（5）咨询师通过与来访者分享对问题的看法指导和激励来访者，以提高他们对咨询的接纳程度；并通过来访者的反应性促进其行为的改变。（6）运用从来访者那里获得的信息，制定有效的治疗方案和干预措施。\n\n自杀风险和伤害他人风险评估。心理评估中最紧急的部分是评估自杀风险与安全性。对来访者伤害自己的自杀行为和伤害他人的危险性进行深入了解和评估。\n\n评估方法和工具。评估采用的方法有会谈法、调查法、量表法和观察法。量表法评估的工具有：抑郁自评量表（SDS）和焦虑自评量表（SAS）。\n\n结果及解释：重度抑郁症并有严重的自杀风险。SAS焦虑自评量表得分为60，中度焦虑。SDS抑郁自评量表，来访者抑郁指数为0.65，结果表明来访者的为中至重度抑郁。某市精神卫生中心确诊为重度抑郁，遵医嘱服药中。有频繁的自杀想法，有一定的自杀风险。\n\n# 2.2个案概念化",
+      "metadata": {
+        "document_title": "tppc20210311805-813.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT六步结构化评估流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "结构化获取CBT个案概念化所需核心信息",
+        "task_family": "评估与概念化",
+        "method_family": "CBT",
+        "stage": "初始评估",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "f6db6e44-033b-56b8-a873-9dc0cea2c758",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "风险评估",
+          "会谈"
+        ],
+        "paragraph_start": 1,
+        "paragraph_end": 6,
+        "heading_path": [
+          "2评估与分析"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一例抑郁症危机干预及认知行为治疗案例",
+          "背景",
+          "3 咨询/治疗方案",
+          "4 咨询/治疗过程",
+          "表1来访者三栏表记录单",
+          "表2来访者的“思维记录”"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 2.1　评估"
+      }
+    }
+  ]
+}

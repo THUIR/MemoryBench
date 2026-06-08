@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "8adfa801-d647-578b-8d1d-4fd7b0861767",
+  "skill_name": "系统脱敏与放松训练联合干预",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "0938cf3a-e961-5444-9829-33c5fc9ce69e",
+      "doc_id": "3dbe9c29-1ea1-587c-a5f9-5161e92cadec",
+      "document_title": "一例大学生恋爱焦虑情绪的心理咨询案例报告_费菲.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例大学生恋爱焦虑情绪的心理咨询案例报告_费菲.md",
+      "section": "7咨询过程",
+      "span": {
+        "start": 4895,
+        "end": 5191
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "2017年5月27日进行第四次咨询，主要目的在于检查求助者填写的RET自助表，了解求助者当前情况缓解求助者紧张情绪，采取系统脱敏疗法与放松疗法相结合的方法咨询与训练,具体过程是在倾听求助者错误认知与不良习惯的同时与其一起分析,最大限度地提高求助者对事件正确认知信念的认识与了解。\n\n采用系统脱敏疗法、放松疗法结合帮助求助者进行焦虑-放松训练，具体过程如下：按求助者面对表白失败女生时的紧张程度构建焦虑事件等级表(如表1所示）;实施针对性训练，使求助者体验到愉悦、放松的感觉依据等级表营造愉悦、宽松的环境进行焦虑放松训练。在此基础上布置相应的家庭作业，即强化正确认知思维与焦虑放松训练。\n\n表1",
+      "metadata": {
+        "document_title": "一例大学生恋爱焦虑情绪的心理咨询案例报告_费菲.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "系统脱敏与放松训练联合干预",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "降低特定人际情境下的生理与主观焦虑水平",
+        "task_family": "焦虑管理",
+        "method_family": "Behaviorism",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "37bedc30-ff1d-5d6a-a789-1da5a63cd1e9",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 4,
+        "paragraph_end": 6,
+        "heading_path": [
+          "7咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2主诉和个人陈述",
+          "3咨询师观察",
+          "4评估与诊断",
+          "5咨询目标明确",
+          "6咨询方案建立"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "2017年5月6日进行第一次咨询，主要目的在于掌握求助者现实状况,与其保持平等、友好的交流,促进信任关系的建立,在此基础上进行心理测验,确定求助者存在的主要问题。采取的方法主要以会谈法为主，咨询过程一般为：倾听求助者现实状况，并加以记录;浩知求助者咨询注意事项与具体规则；营造良好的交流环境，多渠道引导求助者倾诉自己的问题，尤其是与表白失败相关的负性情绪和相关"
+      }
+    }
+  ]
+}

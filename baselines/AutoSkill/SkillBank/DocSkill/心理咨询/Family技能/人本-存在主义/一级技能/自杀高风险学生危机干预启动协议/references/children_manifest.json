@@ -1,0 +1,111 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "人本-存在主义",
+  "profile_id": "psychology::人本_存在主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "6aaacd70-dc4f-599e-b55a-784c9415a73c",
+  "parent_name": "自杀高风险学生危机干预启动协议",
+  "children": [
+    {
+      "skill_id": "ee29e9cb-6e34-5af6-9ed0-946d9879d205",
+      "name": "危机初期安全计划制定规程",
+      "description": "在首次或早期咨询中快速启动的安全评估与协同安全计划制定流程，含风险确认、支持系统盘点、应对策略协商与紧急联络机制建立。",
+      "child_type": "危机管理",
+      "asset_node_id": "safety_micro",
+      "asset_path": "family_root/safety_module/safety_micro",
+      "asset_level": 2,
+      "parent_skill_id": "6aaacd70-dc4f-599e-b55a-784c9415a73c",
+      "level_label": "二级技能",
+      "taxonomy_class": "人本-存在主义",
+      "applicable_when": "在首次或早期咨询中快速启动的安全评估与协同安全计划制定流程，含风险确认、支持系统盘点、应对策略协商与紧急联络机制建立。",
+      "selector_terms": [
+        "识别出明确自杀意念或计划",
+        "来访者情绪极度低落但尚能合作对话",
+        "无即时行动但风险等级中高",
+        "安全计划",
+        "自杀风险",
+        "资源取向",
+        "人本技术",
+        "危机初期",
+        "危机初期安全计划制定规程"
+      ],
+      "relative_path": "心理咨询/Family技能/人本-存在主义/二级技能/危机初期安全计划制定规程/SKILL.md"
+    },
+    {
+      "skill_id": "baa5ad80-3c47-5ced-b72c-2e46547085c8",
+      "name": "多系统危机协同响应规则",
+      "description": "当自杀风险持续存在且具计划性、社会支持薄弱时，咨询师在严格尊重来访者自主权前提下，启动学院、家长及信任家属三方协同支持机制，明确分工、分级授权、非病理化沟通，全程以保护尊严为底线。",
+      "child_type": "危机管理",
+      "asset_node_id": "safety_micro",
+      "asset_path": "family_root/safety_module/safety_micro",
+      "asset_level": 2,
+      "parent_skill_id": "6aaacd70-dc4f-599e-b55a-784c9415a73c",
+      "level_label": "二级技能",
+      "taxonomy_class": "人本-存在主义",
+      "applicable_when": "当自杀风险持续存在且具计划性、社会支持薄弱时，咨询师在严格尊重来访者自主权前提下，启动学院、家长及信任家属三方协同支持机制，明确分工、分级授权、非病理化沟通，全程以保护尊严为底线。",
+      "selector_terms": [
+        "自杀意念持续存在且有计划性",
+        "来访者社会支持薄弱或家庭功能受损",
+        "需外部力量参与日常监护",
+        "危机协同",
+        "保密突破",
+        "家校医联动",
+        "尊严保护",
+        "多系统危机协同响应规则"
+      ],
+      "relative_path": "心理咨询/Family技能/人本-存在主义/二级技能/多系统危机协同响应规则/SKILL.md"
+    },
+    {
+      "skill_id": "6d384791-ac88-50de-9039-cde1442b6276",
+      "name": "结构化安全计划制定",
+      "description": "在首次咨询中，针对高自杀风险来访者，系统性地共同制定包含紧急联系人、情绪调节策略和安全场所三要素的安全计划，并获得其口头承诺。",
+      "child_type": "危机干预",
+      "asset_node_id": "safety_micro",
+      "asset_path": "family_root/safety_module/safety_micro",
+      "asset_level": 2,
+      "parent_skill_id": "6aaacd70-dc4f-599e-b55a-784c9415a73c",
+      "level_label": "二级技能",
+      "taxonomy_class": "人本-存在主义",
+      "applicable_when": "在首次咨询中，针对高自杀风险来访者，系统性地共同制定包含紧急联系人、情绪调节策略和安全场所三要素的安全计划，并获得其口头承诺。",
+      "selector_terms": [
+        "首次咨询且评估为高自杀风险",
+        "来访者有明确自杀意念但尚无即刻行动",
+        "药物治疗已启动且依从性良好",
+        "自杀风险",
+        "安全计划",
+        "初次咨询",
+        "资源取向",
+        "人本-存在主义",
+        "结构化安全计划制定"
+      ],
+      "relative_path": "心理咨询/Family技能/人本-存在主义/二级技能/结构化安全计划制定/SKILL.md"
+    },
+    {
+      "skill_id": "238664ac-3436-586a-ac5d-2dc705a8ca20",
+      "name": "自杀危机知情同意与保密例外通报流程",
+      "description": "在确认来访者存在明确自杀风险后，依据专业伦理与法律要求，向来访者清晰解释保密例外的必要性、通报范围与协作目标，获取其知情同意，并在知情前提下向学院等指定责任方进行结构化危机通报。",
+      "child_type": "危机干预",
+      "asset_node_id": "safety_micro",
+      "asset_path": "family_root/safety_module/safety_micro",
+      "asset_level": 2,
+      "parent_skill_id": "6aaacd70-dc4f-599e-b55a-784c9415a73c",
+      "level_label": "二级技能",
+      "taxonomy_class": "人本-存在主义",
+      "applicable_when": "在确认来访者存在明确自杀风险后，依据专业伦理与法律要求，向来访者清晰解释保密例外的必要性、通报范围与协作目标，获取其知情同意，并在知情前提下向学院等指定责任方进行结构化危机通报。",
+      "selector_terms": [
+        "来访者表达明确自杀意念或计划",
+        "来访者存在高自杀风险临床判断",
+        "需启动多系统协作（如学院、家长）",
+        "保密例外",
+        "自杀风险",
+        "知情同意",
+        "学院协同",
+        "危机通报",
+        "自杀危机知情同意与保密例外通报流程"
+      ],
+      "relative_path": "心理咨询/Family技能/人本-存在主义/二级技能/自杀危机知情同意与保密例外通报流程/SKILL.md"
+    }
+  ]
+}

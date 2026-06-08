@@ -1,0 +1,143 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "1a132829-0cbd-5c81-afc3-e460f1bca5a9",
+  "skill_name": "CBT家庭作业结构化布置",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "5e0d9bbd-8c3c-5d8a-8cd9-1d8eb7d0492a",
+      "doc_id": "588958ef-26a9-5c37-8a3d-cc264775e889",
+      "document_title": "1例大学生人际交往中内心冲突咨询案例报告_张玉.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例大学生人际交往中内心冲突咨询案例报告_张玉.md",
+      "section": "8 咨询过程",
+      "span": {
+        "start": 4338,
+        "end": 5077
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "咨询师：很好，你现在似乎已经开始能找到你为什么总是容易纠结、矛盾的原因了。\n\n布置家庭作业：在实际生活当你再次出现心里感到很矛盾、纠结的时候，你可以尝试自己分析一下这里面是否也存在着这样的一些冲突，并把它记录下来，下次咨询的时候可以带来讨论。\n\n8.2第二阶段：第4～7次咨询\n8.2.1任务：咨询师向来访者介绍不合理认知的特征和情绪ABC理论，帮助来访者认识内心冲突背后的认知偏差，以及认知偏差对自己情绪和行为的影响进行讨论。一起探讨来访者更深层次的不合理信念，使其明确对自己情绪和行为上的反应负有责任，用辩论的方法引导来访者对自己的不合理信念产生怀疑和动摇。\n\n8.2.2 方法：具体化技术、澄清技术、阐释技术。\n\n8.2.3过程：咨询师首先查看来访者上次家庭作业的完成情况，结合在作业中记录的具体事件，与来访者一起分析造成来访者困扰的不合理信念，通过与不合理信念的辩论，让其对旧的错误观念产生怀疑和动摇；与来访者共同讨论，逐步建立可以接受的合理观念；运用合理情绪想象技术，想象重新进入之前遭遇的困扰情境中，用新的合理观念重新看待和分析当前情境，然后停止想象，描述和记录自己新的情绪体验，并对这种情绪和观念的积极转变及时给予强化。\n\n咨询片段（第4次咨询）。\n\n咨询师：我们现在先来看看在你在家庭作业中提到的思政课作业这件事怎么样？\n\n来访者：好。\n\n咨询师：你可以再说得具体一点吗?\n\n来访者：就是最近我们在准备思政课的小组作业，小组成员会出现一些拖延、没有提前计划等行为让自己难以接受，但是自己并没有将这种感受表达出来，觉得告知对方，对方也不会改，根本没用，还可能导致与对方关系破裂，还不如不说。但是不说就会让自己觉得很难受。\n\n咨询师：还记得我们之前提到的冲突类型吗？",
+      "metadata": {
+        "document_title": "1例大学生人际交往中内心冲突咨询案例报告_张玉.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT家庭作业结构化布置",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "延伸咨询效果至日常，生成可分析的认知行为数据",
+        "task_family": "咨询延续管理",
+        "method_family": "CBT",
+        "stage": "咨询收尾",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "0296a759-8875-5365-896d-b11d3026df0c",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 14,
+        "paragraph_end": 24,
+        "heading_path": [
+          "8 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 个人成长史",
+          "3 主诉与个人陈述",
+          "4观察和收集的资料",
+          "5 评估与诊断",
+          "6 原因分析"
+        ],
+        "subsection_headings": [
+          "8.1第一阶段：第1～3次咨询",
+          "8.2第二阶段：第4～7次咨询",
+          "8.3第三阶段：第8～9次咨询",
+          "8.4第四阶段（第10次咨询）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询阶段的划分[3]： $\\textcircled{1}$ 建立咨访关系与心理诊断阶段；$\\textcircled{2}$ 领悟、修通、再教育阶段； $\\textcircled{3}$ 巩固、评估、结束阶段。说明：咨询过程的每一阶段均在上级心理咨询师的指导下进行。"
+      }
+    },
+    {
+      "support_id": "dedd2ec5-d149-57a5-be7f-49ffcf02b5f4",
+      "doc_id": "e1056d31-5cd1-5ec8-8f19-6e8fecaf4247",
+      "document_title": "tppc20210310713-721.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20210310713-721.md",
+      "section": "3 辅导过程",
+      "span": {
+        "start": 5947,
+        "end": 6512
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "己现实生活中的感受。\n\n3.2.3家庭作业\n规定每月手机上网套餐30M流量用完后，绝不再另外充值；减少独自待在宿舍的时间，和同学一起到图书馆或教室自习；继续坚持看小说不超过晚上2点钟；写日记时重点记录自己每天最高兴的事情和最不高兴的事情，并记下对事件的感想；坚持记录克制住不阅读网络小说的次数和原因，注意变化情况。\n\n3.3心理帮助阶段（第5-6次面询）\n这一阶段主要与来访者探讨如何调整情绪，并帮助来访者从自己的应对方式与行为中发现自己的认知偏差。\n\n3.3.1积极情绪调整\n请来访者观看有关《积极情绪》的教学视频，并讨论积极心理学家Sonja Lyubomirsk 的研究。通过观看教学视频，来访者发觉自己是在以不断阅读小说这种静默的思考方式来试图给自己减压，但这种做法其实非常不利于情绪的宣泄。来访者意识到这种应对方式并不是很好的情绪调节方式，情绪宣泄可以采用更积极更有效的方式。同时也表示明白“写日记时要重点记录自己每天最高兴的事情和最不高兴的事情，并记下对事件的感想”这项家庭作业的意义何在。\n\n3.3.2想象训练与认知分析\n咨询师对来访者进行行为想象训练，让来访者假想面对负性事件的场景做出反应，例如被男朋友抛弃、或是被父母指责、学习考试成绩不够理想、找工作过程中碰到挫折与失败等各种情况，并借以演练其合理的应对方式。",
+      "metadata": {
+        "document_title": "tppc20210310713-721.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT家庭作业结构化布置",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "巩固认知行为干预效果，提升来访者对自动思维与行为模式的觉察与调控能力",
+        "task_family": "CBT作业实施",
+        "method_family": "CBT",
+        "stage": "辅导中期至巩固期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "efc24fa2-d23c-56f4-896f-918d9dd5725f",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 16,
+        "paragraph_end": 20,
+        "heading_path": [
+          "3 辅导过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1引言",
+          "2对象与方法",
+          "4 结果",
+          "5 讨论"
+        ],
+        "subsection_headings": [
+          "3.1.1成瘾过程自述",
+          "3.1.2成瘾原因认知分析",
+          "3.1.3家庭作业",
+          "3.2.1恋爱经历与辅导",
+          "3.2.2恋爱观点认知分析",
+          "3.2.3家庭作业",
+          "3.3心理帮助阶段（第5-6次面询）",
+          "3.3.1积极情绪调整",
+          "3.3.2想象训练与认知分析",
+          "3.3.3家庭作业",
+          "3.4认知巩固与咨询结束阶段（第7-8次面询）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "当考上了研究生，男友却远在异地而且总是敷衍搪塞，常说要来看望却没有来，这令自己非常伤心。感觉自己是独自一人在校园里生活，很压抑。在放弃还是坚持这份感情中两难，又矛盾又伤心，只要一想到这件事就觉得无比痛苦。后来发现在阅读网络小说时看到患难中的情侣最后能在一起的情节才能使自己得到一种安慰和精神上的缓解，这种种感受使自己再次沉迷于小说。"
+      }
+    }
+  ]
+}

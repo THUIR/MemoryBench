@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "1d7aaaa4-1459-5be8-b829-c7ae66b31f35",
+  "parent_name": "正念式暴露学习",
+  "children": [
+    {
+      "skill_id": "88ce8f6a-9b73-5c58-8fa5-2ff720805809",
+      "name": "图书馆情境渐进式暴露与认知解耦",
+      "description": "在来访者焦虑触发的情境（图书馆学习）中，通过引导性想象重建场景，同步嵌入去威胁化语言（如'想上厕所也随时可以去'），解耦'上厕所'与'失控/羞耻'的自动联结。适用于躯体焦虑主导、情境特异性明显的强迫性回避行为。",
+      "child_type": "行为矫正",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "1d7aaaa4-1459-5be8-b829-c7ae66b31f35",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在来访者焦虑触发的情境（图书馆学习）中，通过引导性想象重建场景，同步嵌入去威胁化语言（如'想上厕所也随时可以去'），解耦'上厕所'与'失控/羞耻'的自动联结。适用于躯体焦虑主导、情境特异性明显的强迫性回避行为。",
+      "selector_terms": [
+        "来访者报告特定场所（如图书馆）出现反复生理冲动与紧张循环",
+        "焦虑表现为躯体化主导且情境特异",
+        "存在'越压抑越强烈'的反向控制现象",
+        "暴露",
+        "认知解耦",
+        "情境重建",
+        "去威胁化",
+        "生理正常化",
+        "眉头紧张、呼吸变浅、坐姿僵硬",
+        "口头否认但身体回避（如频繁调整坐姿、摸裤子）",
+        "自评焦虑分≥7（0–10分）",
+        "图书馆情境渐进式暴露与认知解耦",
+        "在来访者焦虑触发的情境（图书馆学习）中，通过引导性想象重建场景，同步嵌入去威胁化语言（如'想上厕所也随时可以去'），解耦'上厕所'与'失控/羞耻'的自动联结。适用于躯体焦虑主导、情境特异性明显的强迫性回避行为。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/图书馆情境渐进式暴露与认知解耦/SKILL.md"
+    }
+  ]
+}

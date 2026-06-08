@@ -1,0 +1,40 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "1cf988d3-6912-5783-81c3-f77aa74fa1bc",
+  "parent_name": "CBT核心信念探索与能力再评估工作流程",
+  "children": [
+    {
+      "skill_id": "c3380f8d-53b5-5aaf-8c5a-48b13b96dc45",
+      "name": "正性人际体验锚定技术",
+      "description": "借由来访者亲历的真实正性人际事件（如同学送医），引导其识别、命名并具身化其中的互助细节，以多模态感官信息（视觉/听觉/触觉/内感受）强化‘人际关系可信赖’的新经验，对抗负性核心信念。",
+      "child_type": "cognitive_restructuring",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "1cf988d3-6912-5783-81c3-f77aa74fa1bc",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "借由来访者亲历的真实正性人际事件（如同学送医），引导其识别、命名并具身化其中的互助细节，以多模态感官信息（视觉/听觉/触觉/内感受）强化‘人际关系可信赖’的新经验，对抗负性核心信念。",
+      "selector_terms": [
+        "来访者存在‘人际即危险’的绝对化信念",
+        "生活中刚发生可观察的正性互动事件",
+        "来访者能描述事件细节而非仅评价",
+        "CBT",
+        "人际信念矫正",
+        "感官锚定",
+        "正性体验提取",
+        "来访者提及他人帮助但迅速转向怀疑动机",
+        "叙述中出现‘其实他们也不容易’等自我消解式弱化",
+        "面部或语调在描述某细节时出现0.5秒以上微停顿或嘴角上扬",
+        "正性人际体验锚定技术",
+        "借由来访者亲历的真实正性人际事件（如同学送医），引导其识别、命名并具身化其中的互助细节，以多模态感官信息（视觉/听觉/触觉/内感受）强化‘人际关系可信赖’的新经验，对抗负性核心信念。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/正性人际体验锚定技术/SKILL.md"
+    }
+  ]
+}

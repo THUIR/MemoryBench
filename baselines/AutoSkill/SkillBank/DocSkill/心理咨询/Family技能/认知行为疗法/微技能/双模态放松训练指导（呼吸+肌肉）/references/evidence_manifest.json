@@ -1,0 +1,79 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "6b3bdb8f-93da-5000-a98a-141f2cc199f9",
+  "skill_name": "双模态放松训练指导（呼吸+肌肉）",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "18f6404d-f308-55f2-b9f2-9f30117bc78e",
+      "doc_id": "65a4f948-7dfa-5195-a044-6a09ee08c055",
+      "document_title": "一例专科生考试焦虑的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例专科生考试焦虑的心理咨询案例报告.md",
+      "section": "一例专科生考试焦虑的心理咨询案例报告",
+      "span": {
+        "start": 4246,
+        "end": 4620
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "目的：巩固咨询效果，增强自信心，结束咨询。\n\n过程：改变来访者的错误认知，学习成绩只是衡量学生的一个标准；改变来访者对自己的过高期望，建立合适的期望目标;对来访者进行合理情绪想象，体验积极的情绪体验；指导来访者进行放松训练，学会进行肌肉和情绪的放松，通过学习和掌握呼吸调节、放松全身肌肉消除杂念；指导来访者进行积极的自我暗示，增强自信，克服焦虑情绪;布置咨询作业，让来访者完成RET自助表，与不合理信念进行辩论，并用有效的理性信念来代替非理性信念;布置来访者在生活中经常对自己进行积极暗示，并在每天睡前进行放松训练，改善睡眠状况。\n\n(三)结束与巩固阶段(第6次和第7次)\n目的：巩固咨询关系，学会合理认知，改善情绪状态，形成正确的认知。\n\n4.为了弥补实验室开放后实验室教师不足的情况，聘请一些博士、硕士研究生参加实验室实验教学辅导和实验室管理。",
+      "metadata": {
+        "document_title": "一例专科生考试焦虑的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "双模态放松训练指导（呼吸+肌肉）",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "降低自主神经兴奋水平，增强对身心紧张状态的即时调控能力",
+        "task_family": "生理焦虑调节",
+        "method_family": "CBT",
+        "stage": "心理帮助阶段或结束巩固阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "22393be3-5df5-520d-8e29-94cf187cd686",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 34,
+        "paragraph_end": 37,
+        "heading_path": [
+          "一例专科生考试焦虑的心理咨询案例报告"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "（一)人口学资料",
+          "(二)个人成长史",
+          "（三)精神状态",
+          "（四)身体状态",
+          "(五)社会功能",
+          "(六)心理测验结果",
+          "二、主诉和个人陈述",
+          "(一)咨询师观察的结果",
+          "(二)来访者辅导员反映情况",
+          "四、评估与诊断",
+          "(一)对来访者心理状态的评估",
+          "(二)对来访者的诊断依据",
+          "(三)对来访者上述问题的原因分析",
+          "(一)诊断评估与咨询关系建立阶段(第1次和第2次)",
+          "（二)心理帮助阶段(第3次到第5次）",
+          "(三)结束与巩固阶段(第6次和第7次)",
+          "六、咨询效果评估"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "→刘燕"
+      }
+    }
+  ]
+}

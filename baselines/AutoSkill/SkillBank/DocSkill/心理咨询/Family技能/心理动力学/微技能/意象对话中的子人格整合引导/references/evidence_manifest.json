@@ -1,0 +1,65 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "b0441737-8d5a-553f-b50a-b963b15ee4ab",
+  "skill_name": "意象对话中的子人格整合引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "17feb61e-171b-5f14-8284-1683457da860",
+      "doc_id": "524b3b1f-bc89-559c-b84c-38bf56e122e9",
+      "document_title": "被抛弃的女孩——意象对话疗法案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/被抛弃的女孩——意象对话疗法案例报告.md",
+      "section": "被抛弃的女孩",
+      "span": {
+        "start": 3743,
+        "end": 4088
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "小欣沉默了很久。“老师，我在讨厌我自己，我不是在讨厌别人。我在努力的让自己高尚起来，我讨厌内心里面的那个虚伪的自己。其实，我也会跟别人交往，只不过我不想虚伪，所以我把那个虚伪的自己给埋藏了起来。”\n\n咨询师纠正了小欣的非理性信念，“虚伪”有时候仅仅是说话的技术而已。然后让小欣跟那个被自己埋藏起来的“小欣”对话。那个“小欣”对她说“你放我出来吧，我可以帮助你的，我不是一个坏人呀，咱们是一体的啊。\"\n\n咨询师让两个“小欣”畅谈了很久，最后两个“小欣”互相拥抱，欢迎了对方的回归，基本完成了两个“小欣”的整合。咨询师告诉小欣，在小欣的心中有很多个不同的“小欣”，有公主“小欣”、有女强人“小欣”、有爱哭“小欣”、有爱笑“小欣”等等，但每一个“小欣”都是自己真实的一部分，个体应该好好整合她们。",
+      "metadata": {
+        "document_title": "被抛弃的女孩——意象对话疗法案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "意象对话中的子人格整合引导",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促进内在子人格的觉察、对话与整合",
+        "task_family": "意象对话",
+        "method_family": "心理动力学",
+        "stage": "修通",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "6c6b9df0-57ee-5be7-bdca-259e11acc894",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 33,
+        "paragraph_end": 35,
+        "heading_path": [
+          "被抛弃的女孩"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "一、理论简介",
+          "二、个案分析",
+          "（一）第一次咨询",
+          "（二）第二次咨询",
+          "（三）第三次咨询",
+          "二、小结"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "-意象对话疗法案例报告"
+      }
+    }
+  ]
+}

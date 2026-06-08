@@ -1,0 +1,62 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "行为主义",
+  "profile_id": "psychology::行为主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "7110c66d-9ed3-5528-886b-eb6b1e1c5853",
+  "parent_name": "六次结构化行为-认知整合咨询协议",
+  "children": [
+    {
+      "skill_id": "8cc51575-33a5-547e-abf0-5886c3a6c615",
+      "name": "系统脱敏法分阶暴露流程",
+      "description": "在社交恐怖症咨询中后期，依据来访者主观焦虑等级（SUDS）协同构建恐惧刺激梯度，配合音乐放松技术进行渐进式暴露，同步引导躯体觉察、情绪宣泄与认知锚定，以消退条件性恐惧反应。",
+      "child_type": "暴露干预",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "7110c66d-9ed3-5528-886b-eb6b1e1c5853",
+      "level_label": "二级技能",
+      "taxonomy_class": "行为主义",
+      "applicable_when": "在社交恐怖症咨询中后期，依据来访者主观焦虑等级（SUDS）协同构建恐惧刺激梯度，配合音乐放松技术进行渐进式暴露，同步引导躯体觉察、情绪宣泄与认知锚定，以消退条件性恐惧反应。",
+      "selector_terms": [
+        "来访者已完成基础情绪稳定化",
+        "存在明确可分级的社交恐惧刺激源",
+        "无急性自伤/伤害他人风险",
+        "系统脱敏",
+        "分阶暴露",
+        "行为主义",
+        "社交恐怖症",
+        "恐惧刺激等级",
+        "系统脱敏法分阶暴露流程"
+      ],
+      "relative_path": "心理咨询/Family技能/行为主义/二级技能/系统脱敏法分阶暴露流程/SKILL.md"
+    },
+    {
+      "skill_id": "44a21673-1535-5888-97be-aaf7b7be5ce5",
+      "name": "诊断阶段首次会谈结构化执行",
+      "description": "在首次心理咨询中，按固定序列完成关系建立、知情同意、结构化评估、负性事件回顾、性格成因协同分析、问题聚焦、SMART目标协商及标准化心理测验施测（SCL-90/EPQ/SAS），确保50分钟内完成全部核心任务。",
+      "child_type": "initial_assessment",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "7110c66d-9ed3-5528-886b-eb6b1e1c5853",
+      "level_label": "二级技能",
+      "taxonomy_class": "行为主义",
+      "applicable_when": "在首次心理咨询中，按固定序列完成关系建立、知情同意、结构化评估、负性事件回顾、性格成因协同分析、问题聚焦、SMART目标协商及标准化心理测验施测（SCL-90/EPQ/SAS），确保50分钟内完成全部核心任务。",
+      "selector_terms": [
+        "首次咨询",
+        "来访者为轻中度社交焦虑求助者",
+        "具备基本表达与合作能力",
+        "initial_assessment",
+        "behaviorism",
+        "cbt",
+        "first_session",
+        "structured_interview",
+        "诊断阶段首次会谈结构化执行"
+      ],
+      "relative_path": "心理咨询/Family技能/行为主义/二级技能/诊断阶段首次会谈结构化执行/SKILL.md"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "10aa4a91-bae5-5b36-bc00-17aac45c366d",
+  "skill_name": "Persons个案概念化四步模型",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "7d4d4b40-c62b-5697-bb1e-4b9f92b17958",
+      "doc_id": "f6963e31-9c64-5550-aeca-e0412d286aaa",
+      "document_title": "tppc2019010287-99.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc2019010287-99.md",
+      "section": "2评估与分析",
+      "span": {
+        "start": 4053,
+        "end": 4949
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "认知行为治疗（Cognitive-Behavioral Therapy，CBT)是将行为疗法和认知疗法相结合的心理治疗方法，主要针对焦虑症、抑郁、社交焦虑症等心理疾病以及其他不合理认知导致的心理问题［5」，是社交焦虑症理想的治疗方法。研究表明，CBT在所有心理治疗方法中是有效性证据最充足的心理治疗方法。对于中国患者同样具有良好疗效［6」。贝克认为适应不良的行为与情绪，都源于适应不良的认知［7」。CBT包含了认知和行为治疗的心理治疗方法，通过改变个人不合理的认知模式来减少失调的行为［8]。CBT经过半个世纪的发展，已经成为十分有影响力的治疗流派，也是唯一的可以提供坚实证据支持的治疗方法［9］。\n\n在认知行为治疗领域，Persons（2008）提出个案概念化模型：（1）建立一个问题清单，包括主要的症状与问题；（2)确认产生这些障碍或问题的机制；（3）确认在当前激活了问题的诱发因素；（4）考察当前问题在来访者早期经历中的起源。\n\n2.2.1 问题清单\n# 表1问题清单表\n\n<table><tr><td>类型</td><td>问题清单</td></tr><tr><td>1.社交焦虑</td><td></td></tr><tr><td>2.社交回避</td><td></td></tr><tr><td>3.家庭冲突</td><td></td></tr></table>\n\n2.2.2 确认产生障碍或问题的机制\n社交焦虑的出现，是Q经由一系列的自动思维和对自动思维的不恰当评价，使其越发坚信自己不能跟别人交谈。无论在什么情景下，她认为只要一跟别人交谈，最后都会不欢而散。自己是容易被误会的，他人总是用他们的方式给自己贴标签，自己却无力改变（自动化思维）。首先，由于高二“自己情绪激动，失去自己唯一的最好的朋友W”的扳机事件，Q觉得都是自己的错，自己不说话，就不会不欢而散，感觉自己连最好的朋友都失去了，很难过（情绪反应），感觉自己做人挺失败的（自动思维）,不值得拥有别人的关心（功能性失调信念），之后就开始回避跟别人交谈（行为反应），通过回避来缓解自己会因情绪失控而跟别人不欢而散的焦虑。",
+      "metadata": {
+        "document_title": "tppc2019010287-99.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "Persons个案概念化四步模型",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "生成可操作的个案概念化图式",
+        "task_family": "case_formulation",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "评估与分析",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "6e9dad9d-6fbe-57bb-a44a-f5b543c8a7a7",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "清单"
+        ],
+        "paragraph_start": 5,
+        "paragraph_end": 9,
+        "heading_path": [
+          "2评估与分析"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1背景",
+          "3 目标与计划",
+          "4过程",
+          "5 讨论与总结"
+        ],
+        "subsection_headings": [
+          "2.1 评估",
+          "2.2分析",
+          "2.2.1 问题清单",
+          "2.2.2 确认产生障碍或问题的机制",
+          "2.2.3确认在当前激活了问题的诱发及加重因素",
+          "2.2.4 考察当前问题在来访者早期经历中的起源"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "通过一般性评估（从知、情、意、行及社会功能受损程度评估），来访者自知力完整，无幻觉、妄想等精神症状，理解力和逻辑思维能力较好，能主动参与思考和交流。无自杀自残风险。社会功能基本完整，能基本完成学业要求，但社交能力差，有明显的社交回避，不能建立稳固的友谊，与同学只能维持一般交往。"
+      }
+    }
+  ]
+}

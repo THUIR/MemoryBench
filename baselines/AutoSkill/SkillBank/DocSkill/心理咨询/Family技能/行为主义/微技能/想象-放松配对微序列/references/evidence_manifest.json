@@ -1,0 +1,65 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "8b76fcac-6b26-5563-80f1-756fb02b863e",
+  "skill_name": "想象-放松配对微序列",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "aea2bddc-26ad-54a0-8e8b-7d032bf8a421",
+      "doc_id": "bec94664-c6bd-5f56-9868-dd6fe78a88f8",
+      "document_title": "甜甜的社交恐怖症——心理咨询案例.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/甜甜的社交恐怖症——心理咨询案例.md",
+      "section": "甜甜的社交恐怖症——心理咨询案例",
+      "span": {
+        "start": 1961,
+        "end": 2691
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "在甜甜对自己人际恐怖症状成因有了理性的认识之后,焦虑心情有所缓解。\n\n第三阶段:运用系统脱敏疗法进行放松训练。\n\n由于个体在人际交往有心理恐惧感的同时还伴有强烈的焦虑、紧张和抑郁情绪,且和心理恐怖感产生交互作用,进一步加深患者的痛苦,所以在鼓励其带着症状自然生活的同时,辅以交互抑制松驰训练和躯体放松技术,利用这种方法诱导求治者缓慢地暴露出导致神经症焦虑的情境,并通过心理的放松状态来对抗这种焦虑情绪,。当在社交场合恐怖感觉出现时,意志上不是人为地与之它进行对抗,而是保持情绪自然,以一种新的刺激替代当前的思维活动。让甜甜在一个假想的空间里,不断地模拟发生社交恐惧症的场景,不断练习重复发生症状的情节,我不断地鼓励甜甜面对这种场面,让甜甜从假想中适应这种产生焦虑紧张的环境。当出现恐怖感觉时,进行简单易行的自我放松训练。即让她在一套我的一些语言指令暗示下和轻松音乐伴随下,全身肌肉依次放松。\n每天做二至三次想象——放松训练。即在想象中将最想见又最怕见的人(如某位男生),想回避又回避不了的人(如任课老师)突然呈现在自己面前,体察自己的情绪反应和心理反应,然后放松,使情绪和肌体产生由紧张到松驰的反应,最后产生意向上的适应并扩展到现实行为中。\n经过几次放松训练法,情景想象的治疗,甜甜已经降低了在人际接触过程的敏感心理和焦虑症状,可以实现正常的社交活动,具备了相应的自信和平静。\n\n经验感想：\n此案例已征得来访者同意并授权公开。\n甜甜自述对人际交往不再感觉焦虑,与男生的交往已能保持轻松自信的态度,不再消极回避。\n心理咨询人员观察到甜甜在咨询的后期收尾阶段,表情放松,见面、交谈、离开的几个过程中表现出正常的人际交往态度,态度平静、积极,情绪良好。",
+      "metadata": {
+        "document_title": "甜甜的社交恐怖症——心理咨询案例.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "想象-放松配对微序列",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "建立想象性恐惧刺激与生理放松反应的新的条件联结",
+        "task_family": "反应抑制",
+        "method_family": "Behaviorism",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "3c8c6a7c-7668-5712-b6d8-9368fcd51141",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 11,
+        "paragraph_end": 14,
+        "heading_path": [
+          "甜甜的社交恐怖症——心理咨询案例"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "案例简述：",
+          "咨询经过：",
+          "使其领悟到:",
+          "经验感想："
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "此案例已征得来访者同意并授权公开。来访者情况:甜甜,女,20岁,大学2年级学生。既往健康状况与咨询史:该来访者既往身体健康,没有得过大病,也无明显躯体疾病,未进行过心理咨询。她认为自已是个怪人,有个害羞的怪毛病。上大学2年,从不多与人讲话,与人讲话时不敢直视,眼睛躲闪,像做了亏心事。一说话脸就发烧,低头盯住脚尖。心怦怦跳,肌肉起鸡皮疙瘩,好像全身都在发抖。她"
+      }
+    }
+  ]
+}
