@@ -1,6 +1,6 @@
 import os
 import sys
-from typing import Dict, List, Literal, Optional, Union
+from typing import Any, Dict, List, Literal, Optional, Union
 
 from pydantic import BaseModel, Field
 
@@ -19,6 +19,8 @@ if AUTOSKILL_ROOT not in sys.path:
     sys.path.insert(0, AUTOSKILL_ROOT)
 
 from autoskill import AutoSkill, AutoSkillConfig  # noqa: E402
+from autoskill.render import _render_one  # noqa: E402
+from autoskill.utils.units import text_units  # noqa: E402
 
 
 class AutoSkillAgentConfig(BaseModel):
@@ -142,6 +144,18 @@ def _normalize_messages(messages: List[Dict[str, str]]) -> List[Dict[str, str]]:
     return out
 
 
+def _json_safe(value):
+    if isinstance(value, dict):
+        return {str(k): _json_safe(v) for k, v in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [_json_safe(v) for v in value]
+    if hasattr(value, "value"):
+        return value.value
+    if isinstance(value, (str, int, float, bool)) or value is None:
+        return value
+    return str(value)
+
+
 class AutoSkillAgent(BaseAgent):
     def __init__(self, config: AutoSkillAgentConfig = AutoSkillAgentConfig()):
         self.config = config
@@ -178,6 +192,142 @@ class AutoSkillAgent(BaseAgent):
             bm25_weight=float(config.bm25_weight),
         )
         self.sdk = AutoSkill(autoskill_config)
+
+    def _skill_artifact_path(self, skill) -> str:
+        store = getattr(self.sdk, "store", None)
+        records = getattr(store, "_records", {}) or {}
+        rec = records.get(str(getattr(skill, "id", "") or ""))
+        dir_path = getattr(rec, "dir_path", "") if rec is not None else ""
+        if dir_path:
+            path = os.path.join(dir_path, "SKILL.md")
+            if os.path.exists(path):
+                return path
+        return ""
+
+    def _skill_to_record(
+        self,
+        skill,
+        *,
+        score: Optional[float] = None,
+        rank: Optional[int] = None,
+        include_skill_md: bool = False,
+        retrieved_text: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        artifact_path = self._skill_artifact_path(skill)
+        skill_md = ""
+        if include_skill_md:
+            skill_md = (getattr(skill, "files", {}) or {}).get("SKILL.md", "")
+            if not skill_md and artifact_path and os.path.exists(artifact_path):
+                with open(artifact_path, "r", encoding="utf-8") as fin:
+                    skill_md = fin.read()
+
+        record = {
+            "memory_type": "autoskill_skill",
+            "id": str(getattr(skill, "id", "") or ""),
+            "user_id": str(getattr(skill, "user_id", "") or ""),
+            "name": str(getattr(skill, "name", "") or ""),
+            "description": str(getattr(skill, "description", "") or ""),
+            "version": str(getattr(skill, "version", "") or ""),
+            "status": _json_safe(getattr(skill, "status", "")),
+            "tags": list(getattr(skill, "tags", []) or []),
+            "triggers": list(getattr(skill, "triggers", []) or []),
+            "created_at": getattr(skill, "created_at", None),
+            "updated_at": getattr(skill, "updated_at", None),
+            "artifact_path": artifact_path,
+        }
+        if score is not None:
+            record["score"] = float(score)
+        if rank is not None:
+            record["rank"] = int(rank)
+        if retrieved_text is not None:
+            record["retrieved_text"] = str(retrieved_text)
+        if include_skill_md:
+            record.update({
+                "instructions": str(getattr(skill, "instructions", "") or ""),
+                "source": _json_safe(getattr(skill, "source", None)),
+                "metadata": _json_safe(getattr(skill, "metadata", {}) or {}),
+                "skill_md": skill_md,
+                "retrieved_text": str(retrieved_text or _render_one(skill, index=1, max_chars=None)),
+            })
+        return record
+
+    def export_memory_records(self) -> List[Dict[str, Any]]:
+        skills = self.sdk.store.list(user_id=self.config.user_id)
+        skills = sorted(
+            skills,
+            key=lambda skill: (
+                str(getattr(skill, "name", "") or ""),
+                str(getattr(skill, "id", "") or ""),
+            ),
+        )
+        return [self._skill_to_record(skill, include_skill_md=True) for skill in skills]
+
+    def format_memory_records_text(self, records: List[Dict[str, Any]]) -> str:
+        lines = [
+            "# AutoSkill Memory Records",
+            "",
+            f"SkillBank: {self.skillbank_dir}",
+            f"User: {self.config.user_id}",
+            f"Total skills: {len(records)}",
+            "",
+        ]
+        for idx, record in enumerate(records, start=1):
+            title = record.get("name") or record.get("id") or f"skill_{idx}"
+            lines.extend([
+                f"## Skill {idx}: {title}",
+                "",
+                f"- id: {record.get('id', '')}",
+                f"- version: {record.get('version', '')}",
+                f"- artifact_path: {record.get('artifact_path', '')}",
+                f"- description: {record.get('description', '')}",
+                f"- tags: {', '.join(record.get('tags') or [])}",
+                f"- triggers: {', '.join(record.get('triggers') or [])}",
+                "",
+                "### Retrieved Text",
+                "",
+                record.get("retrieved_text") or "",
+                "",
+                "### SKILL.md",
+                "",
+                record.get("skill_md") or record.get("instructions") or "",
+                "",
+            ])
+        return "\n".join(lines).rstrip() + "\n"
+
+    def _render_context_and_trace(self, question: str, hits) -> tuple[str, List[Dict[str, Any]]]:
+        header = (
+            "## AutoSkill Skills\n"
+            "Instructions: Choose the most relevant skill and follow its prompt; ignore if none applies."
+        )
+        if question:
+            header += f"\nQuery: {question}"
+
+        parts = [header]
+        trace = []
+        used = text_units(header)
+        max_chars = int(self.config.max_context_chars)
+
+        for rank, hit in enumerate(hits, start=1):
+            remaining = max_chars - used
+            if remaining <= 0:
+                break
+            block = _render_one(hit.skill, index=rank, max_chars=remaining)
+            if not block.strip():
+                continue
+            block_units = text_units(block)
+            if used + block_units > max_chars:
+                continue
+            parts.append(block)
+            used += block_units
+            trace.append(self._skill_to_record(
+                hit.skill,
+                score=float(getattr(hit, "score", 0.0) or 0.0),
+                rank=rank,
+                include_skill_md=False,
+                retrieved_text=block.strip(),
+            ))
+
+        return "\n\n".join(parts).strip() + "\n", trace
 
     def add_conversation_to_memory(
         self,
@@ -226,13 +376,10 @@ class AutoSkillAgent(BaseAgent):
         hits = self.retrieve_memory(question, k=retrieve_k)
         context = ""
         if hits:
-            context = self.sdk.render_context(
-                question,
-                user_id=self.config.user_id,
-                limit=int(retrieve_k or self.config.retrieve_k),
-                scope=self.config.skill_scope,
-                filters={"ids": [h.skill.id for h in hits]},
-            )
+            context, trace = self._render_context_and_trace(question, hits)
+            self.set_last_memory_trace(trace)
+        else:
+            self.set_last_memory_trace([])
 
         if lang == "en":
             user_prompt = f"""AutoSkill context:
