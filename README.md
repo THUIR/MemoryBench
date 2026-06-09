@@ -11,8 +11,8 @@
   <a href="https://huggingface.co/datasets/THUIR/MemoryBench-Full">
     <img alt="HF Dataset Full" src="https://img.shields.io/badge/🤗%20Dataset-Full-orange">
   </a>
-  <a href="https://github.com/QingyaoAi/MemoryBench/stargazers">
-    <img alt="Stars" src="https://img.shields.io/github/stars/QingyaoAi/MemoryBench?style=social">
+  <a href="https://arxiv.org/abs/2510.17281">
+    <img alt="arXiv" src="https://img.shields.io/badge/arXiv-2510.17281-b31b1b">
   </a>
   <a href="#license">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-blue">
@@ -37,7 +37,7 @@
 
 ## 📢 News
 
-- **2026-05-26** — Accepted to **ICML 2026** as a **Spotlight paper**.
+- **2026-05-26** — 🌟 Accepted to **ICML 2026** as a **Spotlight paper**.
 - **2026-04-15** — Streamlit frontend released. Configure and run experiments without touching any YAML. See [frontend/README.md](frontend/README.md).
 - **2025-12-08** — Extended version released: [`THUIR/MemoryBench-Full`](https://huggingface.co/datasets/THUIR/MemoryBench-Full).
 - **2025-12-05** — User-feedback simulator upgraded to `Mistral-Small-3.2-24B-Instruct-2506`.
