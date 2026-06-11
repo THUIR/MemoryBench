@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "7139ea91-ce8c-5526-be65-f24ba1a8263a",
+  "skill_name": "行为实验家庭作业布置与回顾",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "b1281dea-33c5-5e7a-b96a-f28ba3bf773b",
+      "doc_id": "d7e3bc89-bda7-5cc2-9cfa-42983ff1c3b6",
+      "document_title": "基于认知行为疗法的1例微笑抑郁症心理咨询案例报告_曹欣欣.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法的1例微笑抑郁症心理咨询案例报告_曹欣欣.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 3725,
+        "end": 4224
+      },
+      "relation_type": "support",
+      "confidence": 0.93,
+      "quote": "小A：是我的思维引起了我的情绪。\n\n咨询师：是的，这就是我们学习的认知行为疗法的原理，是我们的思维引起了我们的情绪变化，现在你已经可以区分事件、思维与情绪的关系了，接下来我们就需要及时关注自己的思维，我希望你在接下来的一周里，当你注意到自己的心境发生变化或者变糟时，在思维记录表中记录下自己的想法可以吗？\n\n小A：好的，我试试。\n\n# 4.3 认知重评，挑战自动思维（第4、5、6次咨询）\n\n在接下来的咨询中，主要目标是让小A了解自己的认知歪曲，了解自动化思维背后的中间信念和核心信念，并尝试用合理的解释替代原有的认知歪曲。咨询师通过苏格拉底式提问帮助小A以更现实更适应的方式理解自己的消极思维，教会他以更直接的方式加工积极信息，并给他布置了行为实验家庭作业，让其寻找证据，评估新信念的正确性。\n\n在回顾家庭作业时，咨询师发现小A在作业中记录了这样一个情境：周六他要出门取快递时，室友让其帮忙带饭，他想到快递站距离餐厅很远心情有点烦躁，但他害怕室友对他失望，就答应了。回来后，室友向他表示感谢，他微笑着说没事儿，但他心里并不高兴。\n\n咨询师：你觉得不帮室友带饭他就会对你失望是吗？为什么会这样想呢？",
+      "metadata": {
+        "document_title": "基于认知行为疗法的1例微笑抑郁症心理咨询案例报告_曹欣欣.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "行为实验家庭作业布置与回顾",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "通过行为验证更新信念",
+        "task_family": "behavioral_experiment",
+        "method_family": "CBT",
+        "stage": "middle",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "631d735a-001f-5663-8fd8-74eda7dec56f",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "思维记录",
+          "家庭作业",
+          "作业",
+          "苏格拉底"
+        ],
+        "paragraph_start": 12,
+        "paragraph_end": 18,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "基于认知行为疗法的1例微笑抑郁症心理咨询案例报告",
+          "1一般资料",
+          "2评估",
+          "3 咨询目标与咨询方案",
+          "5 效果评估",
+          "6 反思和启示"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 4.1初步评估，建立咨访关系，设立咨询目标（第1次咨询）"
+      }
+    }
+  ]
+}

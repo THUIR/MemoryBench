@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "066744e0-73bd-52c2-b54d-4cf2b5ed1b24",
+  "parent_name": "CBT认知行为干预阶段工作框架",
+  "children": [
+    {
+      "skill_id": "ff9f48bb-179b-593f-9ca0-0bf0d56aa729",
+      "name": "三栏表引导与认知挑战实验",
+      "description": "指导来访者使用三栏表（情境-自动思维-情绪）识别可证伪的负性自动思维，并协同设计低风险、可观察、即时完成的行为实验，检验其真实性，促进认知弹性与证据导向的思维习惯。",
+      "child_type": "认知重构",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "066744e0-73bd-52c2-b54d-4cf2b5ed1b24",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "指导来访者使用三栏表（情境-自动思维-情绪）识别可证伪的负性自动思维，并协同设计低风险、可观察、即时完成的行为实验，检验其真实性，促进认知弹性与证据导向的思维习惯。",
+      "selector_terms": [
+        "来访者报告反复出现特定负性情绪（如被排斥感）",
+        "能初步命名情绪但难以追溯触发想法",
+        "愿意尝试小范围现实检验（如主动询问室友）",
+        "CBT",
+        "认知重构",
+        "自动思维",
+        "行为实验",
+        "三栏表",
+        "来访者用笼统标签描述情绪（如‘我完了’‘没人理我’）",
+        "情绪反应强度明显超过情境客观线索",
+        "表达对某类人际互动存在稳定负面预测",
+        "三栏表引导与认知挑战实验",
+        "指导来访者使用三栏表（情境-自动思维-情绪）识别可证伪的负性自动思维，并协同设计低风险、可观察、即时完成的行为实验，检验其真实性，促进认知弹性与证据导向的思维习惯。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/三栏表引导与认知挑战实验/SKILL.md"
+    }
+  ]
+}

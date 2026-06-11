@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "心理动力学",
+  "profile_id": "psychology::心理动力学",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "cbeaf06a-a324-5786-bdc5-2d8e5786e54e",
+  "parent_name": "自由联想-阻抗-阐释三联干预",
+  "children": [
+    {
+      "skill_id": "031bc4c1-753c-58bc-9f4c-bd3d26511c22",
+      "name": "家庭协同情绪回溯作业",
+      "description": "布置来访者与至少一位可沟通的父母共同回忆童年事件，聚焦可感知的情绪体验与互动痕迹，不追求事实共识，而服务于潜意识动机探索与负性记忆的情绪重构。",
+      "child_type": "家庭作业设计",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "cbeaf06a-a324-5786-bdc5-2d8e5786e54e",
+      "level_label": "微技能",
+      "taxonomy_class": "心理动力学",
+      "applicable_when": "布置来访者与至少一位可沟通的父母共同回忆童年事件，聚焦可感知的情绪体验与互动痕迹，不追求事实共识，而服务于潜意识动机探索与负性记忆的情绪重构。",
+      "selector_terms": [
+        "前期咨询已浮现童年事件线索",
+        "来访者与至少一位父母保持可沟通关系",
+        "家庭系统未呈现严重冲突或虐待史",
+        "心理动力学",
+        "家庭作业",
+        "情绪回溯",
+        "潜意识动机",
+        "童年记忆",
+        "来访者在自由联想中反复出现特定家庭场景但回避情绪描述",
+        "移情中呈现矛盾依恋模式（如理想化与贬低交替）",
+        "防御机制以情感隔离或理智化为主",
+        "家庭协同情绪回溯作业",
+        "布置来访者与至少一位可沟通的父母共同回忆童年事件，聚焦可感知的情绪体验与互动痕迹，不追求事实共识，而服务于潜意识动机探索与负性记忆的情绪重构。"
+      ],
+      "relative_path": "心理咨询/Family技能/心理动力学/微技能/家庭协同情绪回溯作业/SKILL.md"
+    },
+    {
+      "skill_id": "dcbf732c-6edf-5b69-a21c-48a108ffc401",
+      "name": "移情识别与再投射阐释",
+      "description": "在心理动力学框架下，针对来访者在亲密关系中呈现的过度依赖、患得患失等表现，识别其为对早年依恋对象（如父母）的移情，并通过结构化再投射阐释，帮助来访者理解当前情感强度源于将未满足的童年需求错误投射至现任伴侣。",
+      "child_type": "transference_work",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "cbeaf06a-a324-5786-bdc5-2d8e5786e54e",
+      "level_label": "微技能",
+      "taxonomy_class": "心理动力学",
+      "applicable_when": "在心理动力学框架下，针对来访者在亲密关系中呈现的过度依赖、患得患失等表现，识别其为对早年依恋对象（如父母）的移情，并通过结构化再投射阐释，帮助来访者理解当前情感强度源于将未满足的童年需求错误投射至现任伴侣。",
+      "selector_terms": [
+        "来访者在亲密关系中呈现显著焦虑或控制行为",
+        "会谈中自然浮现与父母相似的情感模式描述",
+        "已观察到移情线索（如称咨询师‘像妈妈一样温柔但不可靠’）",
+        "移情",
+        "再投射",
+        "依恋",
+        "童年需求",
+        "心理动力学",
+        "言语中出现代际重复性比喻（如‘他就像我爸一样永远不表态’）",
+        "情绪强度明显超出当下事件刺激水平",
+        "对同一关系对象反复使用童年重要他人称谓（如‘他根本就是另一个我妈’）",
+        "移情识别与再投射阐释",
+        "在心理动力学框架下，针对来访者在亲密关系中呈现的过度依赖、患得患失等表现，识别其为对早年依恋对象（如父母）的移情，并通过结构化再投射阐释，帮助来访者理解当前情感强度源于将未满足的童年需求错误投射至现任伴侣。"
+      ],
+      "relative_path": "心理咨询/Family技能/心理动力学/微技能/移情识别与再投射阐释/SKILL.md"
+    }
+  ]
+}

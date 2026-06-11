@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "64b4c09b-d2f6-5615-9254-10804ab84ab1",
+  "skill_name": "CBT苏格拉底提问_不合理信念强度评估",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "b0333b44-7bd4-5d8c-84f1-b175d1723ec7",
+      "doc_id": "fa697555-8adf-52eb-ab22-90c49334eaca",
+      "document_title": "基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 2318,
+        "end": 3144
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "4.1第一阶段：咨询关系建立与问题评估阶段（第1～2次）\n本阶段以建立良好的咨询关系为目标，以共情、接纳、积极关注等咨询态度营造安全的咨询氛围，缓解L的焦虑情绪。对L的困扰进行了了解，确定目前的主要困扰是：失眠、焦虑影响到学习、工作和生活，感到痛苦，渴望改善。收集相应资料，探寻自身改变的意愿，形成初步评估。初步评估：焦虑情绪。\n\n4.2第二阶段：正式咨询阶段（第3～8次）\n（1）采用“空椅子技术”中的“倾诉宣泄式”，让L宣泄压抑的情绪。这种技术是把一张空椅子放在来访者的面前，空椅子所代表的人曾经伤害、误解或者责怪过来访者，来访者由于各方面的原因，又不能直接将负面情绪发泄出来，郁结于心的情感，此时可以通过对空椅子的倾诉，甚至指责来宣泄情绪，从而使来访者获得内心的平衡。L7岁的时候曾经因为一首诗歌背得不熟而被母亲打了一个巴掌，鼻子都流血了，这件事对L造成了心灵的创伤[8]。L将空椅子想象成母亲，跟母亲有了一次彻底的沟通。L责怪母亲不应该为一件小事而把她打得那么狠，那时的她还是个小孩，她已经很努力地去背诵了，只是在母亲面前背诵的时候感到很紧张，所以背得不流利。母亲打她让她感到很委屈也很无力。她还抱怨母亲不应该从小到大事事都否定她，用固有的想法对她做的事作评价，不喜欢母亲的口吻和态度。母亲给她不亲近的感觉，所以不喜欢与母亲交流。宣泄过后L感觉心里舒服了很多。通过宣泄，L舒缓了焦虑和压抑情绪。\n\n（2）采用“合理情绪疗法”结合Beck的苏格拉底提问技术，探寻应激事件带来的焦虑背后的不合理认知，并建立合理的认知。L：男朋友“劈腿”这件事给我带来很大打击，我感觉所有人都知道了，只有我自己蒙在鼓里[9。他竟然一边找了另外的女朋友一边还继续若无其事地跟我交往，虽然他这样的行为是超级人品败坏的，但另一方面也说明我很失败，我不够好。\n\nZ（咨询师）：你刚才说“男朋友‘劈腿'，意味着我不够好，我很失败。”你对这个信念的相信度是多少，用百分比来表示？",
+      "metadata": {
+        "document_title": "基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT苏格拉底提问_不合理信念强度评估",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "量化不合理信念的主观确信度",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "正式咨询阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "830ef8ec-f7c0-5434-8967-625b631f5a9a",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "苏格拉底"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 基本信息",
+          "2 个案概念化",
+          "3 咨询方案",
+          "5 咨询效果",
+          "6 案例评价与反思"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：咨询关系建立与问题评估阶段（第1～2次）",
+          "4.2第二阶段：正式咨询阶段（第3～8次）",
+          "4.3第三阶段：巩固阶段（第9次）",
+          "4.4第四阶段：结束阶段（第10次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本阶段以建立良好的咨询关系为目标，以共情、接纳、积极关注等咨询态度营造安全的咨询氛围，缓解L的焦虑情绪。对L的困扰进行了了解，确定目前的主要困扰是：失眠、焦虑影响到学习、工作和生活，感到痛苦，渴望改善。收集相应资料，探寻自身改变的意愿，形成初步评估。初步评估：焦虑情绪。"
+      }
+    }
+  ]
+}

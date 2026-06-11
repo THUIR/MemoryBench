@@ -1,0 +1,64 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "c00b325f-63b0-562f-ae6b-f36e643426e5",
+  "skill_name": "校园心理危机三级响应启动协议",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "59e99750-a32a-5bbc-91fa-344fd4c0adba",
+      "doc_id": "658018b9-cb33-5fca-b1b6-3685cf5088a4",
+      "document_title": "心灵急救：校园心理危机的即时响应与长效关怀——1例危机干预案例_郑珊.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/心灵急救：校园心理危机的即时响应与长效关怀——1例危机干预案例_郑珊.md",
+      "section": "2 案例处置过程",
+      "span": {
+        "start": 1745,
+        "end": 2462
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "# 2.1及时响应，全面汇报启动预案\n\n心理危机的发生可能在极短时间内危及学生的生命，因此，心理危机干预的时机非常重要[2]。面对突发的校园心理危机事件，学校需迅速启动应急预案，展现出应急管理体系的高效与专业性，以有效控制事态发展，守护学生身心安全与健康。\n\n本案例中，辅导员接到关于小X心理危机的紧急通知后，立即驱车赶往派出所，并第一时间将了解到的详细情况上报学院分管领导，包括小X的基本信息、事件发生经过、初步判断的心理状态等，以便争取学院的支持并制定合理的应急预案。学院接到辅导员的紧急汇报后，立即启动心理危机干预应急预案，预案实施包括组建危机干预小组、调配专业心理咨询师、准备必要的心理干预工具等环节。首先，学院迅速组建了一支由多方人员组成的危机干预小组，其中学院分管领导担任组长，负责整体协调与决策；两名来自校内心理健康教育中心的心理咨询师，确保心理危机干预的专业性和科学性，心理咨询师建议对小X先进行为期一个月的心理咨询，每周安排两次咨询，每次时长在一小时左右，以确保足够的干预和支持，后期再根据实际情况调整；两名辅导员作为直接联系人，负责信息的收集与传递以及与学生及其家属的直接沟通，确保信息的准确传达与情感的及时抚慰；小组还邀请两名学生代表，分别来自小X宿舍和班委，他们更加了解小X的日常情况，能够提供额外的支持与陪伴。在准备心理干预工具方面，学院联合心理健康教育中心准备了心理评估量表、心理危机干预指南等实用工具，以便在危机干预过程中能够迅速而准确地评估小X的心理状态，同时，学院还时刻做好转介准备与后续跟踪服务。这一系列的准备工作，为后续的危机干预工作提供了有力的支持和保障。\n\n# 2.2情感安抚，根源探寻稳心绪",
+      "metadata": {
+        "document_title": "心灵急救：校园心理危机的即时响应与长效关怀——1例危机干预案例_郑珊.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "校园心理危机三级响应启动协议",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "确保心理危机事件在黄金响应窗口内启动专业干预",
+        "task_family": "危机管理",
+        "method_family": "组织响应",
+        "stage": "危机初期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "eb55d1dc-ca6b-5b15-8a82-800d29091236",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "危机干预"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "2 案例处置过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1案例概述与背景分析",
+          "3干预效果反馈",
+          "4 案例启示"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 2.1及时响应，全面汇报启动预案"
+      }
+    }
+  ]
+}

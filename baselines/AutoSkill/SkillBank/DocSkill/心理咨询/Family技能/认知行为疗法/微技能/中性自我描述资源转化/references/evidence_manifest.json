@@ -1,0 +1,66 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "5b6409bb-6bcd-5f0b-9b3b-e1810f67bc76",
+  "skill_name": "中性自我描述资源转化",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "53a4115c-c099-5c79-bf57-323bb133e4db",
+      "doc_id": "852b9d82-5eee-5df1-b9c0-81946b6c8c0e",
+      "document_title": "一例学习焦虑的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例学习焦虑的心理咨询案例报告.md",
+      "section": "一例学习焦虑的心理咨询案例报告",
+      "span": {
+        "start": 2706,
+        "end": 3179
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "运用自信心训练让来访者学会合理评价自己，针对李某对自己的学习能力不够肯定进行自信训练，让来访者站立，挺胸、昂首、收腹，做深呼吸，直到感到了自己的能力和决心，然后对镜中的自己大声说“我可以\"；来访者的20自我评价中，7条是缺点的、3条是优点的，10条是中性的。肯定其优点，协助分析怎样把中间的转化为优点，尽量避免缺点给自己带来的负面影响；进行模拟行为训练：让李某在有声音干扰和人员走动的环境下完成两篇英语阅读。行为训练后来访者感到很高兴，从来没想到同学竟然会对自己有如此高的评价，对自己的不合理信念有了更深刻的认识。\n\n布置作业：尝试在教学楼走廊看书。\n\n（六）第六次：2008年1月4日\n\n运用自信训练、巩固行为训练效果，针对李某提出的一些交往中的困惑进行探讨，鼓励来访者客观看待问题，多发挥自己的长处，逐渐提升自己的自信。积极鼓励李某在行为训练中表现出的进步。并总结以前咨询中她获得的进步，让她有信心去面对未来。来访者反馈咨询作业：完成较好，感觉自己能够较好的集中注意力。进行考前保健，结束咨询。\n\n四、咨询效果评价\n# （一）来访者的主观感受",
+      "metadata": {
+        "document_title": "一例学习焦虑的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "中性自我描述转化分析",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "打破非黑即白的自我评价模式，培育认知弹性",
+        "task_family": "认知重构",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "认知重构阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "d9a433f4-b6c2-5c92-a0c0-6c4953af1d93",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 31,
+        "paragraph_end": 35,
+        "heading_path": [
+          "一例学习焦虑的心理咨询案例报告"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "一、一般临床资料",
+          "二、评估与诊断",
+          "三、咨询过程",
+          "四、咨询效果评价",
+          "五、总结"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "尚瑞莉"
+      }
+    }
+  ]
+}

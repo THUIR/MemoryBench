@@ -1,0 +1,78 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "d961872e-0aae-508f-ad7b-e5086f71a84a",
+  "skill_name": "问题外化与家谱图联合引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "13ea5305-8541-55d9-a8d6-a51323c87b14",
+      "doc_id": "0746897c-9a83-5e5d-b202-0329f83ef3ea",
+      "document_title": "1例家庭矛盾大学生整合式心理咨询案例报告_孙路遥.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例家庭矛盾大学生整合式心理咨询案例报告_孙路遥.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 5466,
+        "end": 5851
+      },
+      "relation_type": "support",
+      "confidence": 0.93,
+      "quote": "5.1第1次咨询：建立关系，收集信息，问题评估，建立设置主要技术：摄入性会谈、渐进性放松训练。\n\n咨询过程：X描述了自己目前最主要的困扰，家庭问题的混乱让自己在最近一周脑海中始终围绕在这些问题之中，影响了睡眠和当下的学习生活。咨询师了解来访者基本的家庭情况，并对来访者进行了初步评估。采用渐进性放松训练帮助来访者放松情绪状态，稳定状态。梳理来访者的问题,整合问题并列出问题清单，建立咨询目标。\n\n家庭作业：每天 $3 \\mathrm { { m i n } }$ 渐进性放松训练。\n\n5.2第2次咨询：建立家庭问题的系统观，增进自我认知，建立边界\n主要技术：问题外化技术，家谱图。\n\n咨询过程：引导来访者将人与问题分开，修正自己与家庭问题的关系以及家庭问题对生活的影响，建立个人与家庭的基本界限，引导自我觉察和认知。引导来访者绘制家谱图（见图1），建立家庭问题的系统观。",
+      "metadata": {
+        "document_title": "1例家庭矛盾大学生整合式心理咨询案例报告_孙路遥.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "问题外化与家谱图联合引导",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "重构问题归属、提升元认知距离、可视化家庭结构与互动模式",
+        "task_family": "认知重构与系统理解",
+        "method_family": "Postmodernist",
+        "stage": "第二次咨询",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "948bb9a0-9b0d-5fbd-b5a0-3fe4b53539bd",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "第1次咨询",
+          "会谈",
+          "咨询目标",
+          "清单",
+          "家庭作业",
+          "作业",
+          "第2次咨询"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 4,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案信息",
+          "2 个案评估",
+          "3基于4P模型的个案概念化",
+          "4 咨询方案",
+          "6 咨询效果",
+          "7讨论"
+        ],
+        "subsection_headings": [
+          "5.2第2次咨询：建立家庭问题的系统观，增进自我认知，建立边界",
+          "5.3第3次咨询：感受母亲人生经历，促进与母亲和解",
+          "5.4第4次咨询：感受姐姐的成长经历，促进和解",
+          "5.5第5次咨询：巩固咨询收获，整合自我认知，促进与家庭和解。"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "5.1第1次咨询：建立关系，收集信息，问题评估，建立设置主要技术：摄入性会谈、渐进性放松训练。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "c6e7a5d3-00d9-5bde-9b6f-bf11e10a971e",
+  "skill_name": "肌肉渐进性放松训练指导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "eb551846-becb-5a7e-9b48-8996aebd27ff",
+      "doc_id": "ccb32af1-7b79-5433-a0c4-1ca66269d3ff",
+      "document_title": "一例高中生考试焦虑心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例高中生考试焦虑心理咨询案例报告.md",
+      "section": "四、咨询过程",
+      "span": {
+        "start": 2971,
+        "end": 3226
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": ".(3）行为放松训练，帮助张某认识到行为放松训练不论是对广泛性焦虑或是急性焦虑发作均是有益的。6在咨询师的指导下练习肌肉渐进性放松训练，如:坐在椅子上,按手臂、头部、躯于、腿部的顺序，先紧张,后放松的方法,通过了解紧张与放松的不同,最终体会全身放松的状态。无论何时，当出现紧张状态时，都去想放松，通过肌肉的行为放松从而达到心理放松。\n\n布置作业：继续每天大声朗读5遍自己的优点；大声朗读积极的思维语言；每天早晚做两次放松训练,每次20分钟(可平躺在床上做),并记录变化与感受。\n\n3、第3次,2006/11/2",
+      "metadata": {
+        "document_title": "一例高中生考试焦虑心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "肌肉渐进性放松训练指导",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "建立躯体放松条件反射",
+        "task_family": "焦虑管理",
+        "method_family": "行为主义",
+        "stage": "干预执行",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "771509b1-900f-5dcf-85d2-4281ea0b53ce",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 9,
+        "paragraph_end": 11,
+        "heading_path": [
+          "四、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、个案基本资料",
+          "二、心理诊断",
+          "三、咨询目标",
+          "五、咨询效果评估"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "1、第1次,2006/10/19"
+      }
+    }
+  ]
+}

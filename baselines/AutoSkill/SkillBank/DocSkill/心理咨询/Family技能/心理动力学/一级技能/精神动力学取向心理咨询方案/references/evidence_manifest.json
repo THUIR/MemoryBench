@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "9409ae0f-8243-58ef-9744-c2f9a69bb780",
+  "skill_name": "精神动力学取向心理咨询方案",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "9db1e83b-50e0-5e02-8fe2-ba4d62c441ae",
+      "doc_id": "149fa5f4-293a-5be4-baba-a18c004fd959",
+      "document_title": "一例精神分析方法治疗社交焦虑障碍的咨询案例_段好宁.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/一例精神分析方法治疗社交焦虑障碍的咨询案例_段好宁.md",
+      "section": "一例精神分析方法治疗社交焦虑障碍的咨询案例",
+      "span": {
+        "start": 1317,
+        "end": 1620
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "# 七、心理评估\n来访者主观痛苦明显，1-2分;症状持续不超过一年,2分；社会功能损伤严重2-3分；心理冲突常型、泛化。神经症的诊断可以成立。\n\n# 八、咨询目标与咨询方案\n根据咨询师对来访者的评估和建议，来访者到医院心理门诊就医并服用相应药物，同时进行心理咨询，后经来访者与医生协商确认，咨询后期停止服用药物(此过程咨询师未直接参与)。\n\n咨询目标：缓解来访者在人际交往中的焦虑感，主观焦虑感降低一半。\n\n咨询方案：精神动力学取向的心理咨询。通过动力学的倾听，观察咨询过过程中的移情反应和阻抗，对来访者内在的情绪感受不断进行呈现，同时对来访者内心的冲突进行不断的解释，使来访者获得对自身问题的修通和领悟。",
+      "metadata": {
+        "document_title": "一例精神分析方法治疗社交焦虑障碍的咨询案例_段好宁.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "精神动力学取向心理咨询方案",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "建立可复用的精神动力学干预框架",
+        "task_family": "心理治疗",
+        "method_family": "Psychodynamic（心理动力学）",
+        "stage": "全程干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "be75e4e0-cac5-5193-92c4-050202e9e9cd",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "咨询目标"
+        ],
+        "paragraph_start": 15,
+        "paragraph_end": 18,
+        "heading_path": [
+          "一例精神分析方法治疗社交焦虑障碍的咨询案例"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "# 一、来访者基本资料",
+          "# 来访者主诉：",
+          "个人陈述：",
+          "# 三、既往史",
+          "# 四、个人成长史",
+          "# 五、咨询师和他人观察",
+          "# 六、病因分析",
+          "# 七、心理评估",
+          "# 八、咨询目标与咨询方案",
+          "# 九、咨询的过程",
+          "# 十、咨询效果评价",
+          "# 四、加强培养，形成梯队"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "段好宁"
+      }
+    }
+  ]
+}

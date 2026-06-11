@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "c22cc6ca-8ea3-5675-b0a2-187e0b1c91af",
+  "parent_name": "CBT五阶段结构化咨询流程",
+  "children": [
+    {
+      "skill_id": "021bfd35-02d8-5147-859e-9700982fa929",
+      "name": "家庭作业反馈-强化循环会话",
+      "description": "在咨询巩固与结束阶段，系统反馈并深化结构化家庭作业完成效果，将作业反思转化为自我觉察、优势识别与行为改变的内在动力。适用于来访者已完成至少一次 structure认知作业、出现初步可观察的行为/情绪改善迹象时。",
+      "child_type": "homework_integration",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "c22cc6ca-8ea3-5675-b0a2-187e0b1c91af",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在咨询巩固与结束阶段，系统反馈并深化结构化家庭作业完成效果，将作业反思转化为自我觉察、优势识别与行为改变的内在动力。适用于来访者已完成至少一次 structure认知作业、出现初步可观察的行为/情绪改善迹象时。",
+      "selector_terms": [
+        "来访者完成至少一项结构化家庭作业",
+        "需强化新习得技术的生活应用",
+        "出现作业执行偏差但有改进意愿",
+        "CBT",
+        "家庭作业",
+        "巩固阶段",
+        "结案准备",
+        "自我效能",
+        "抑郁情绪缓解",
+        "睡眠状况好转",
+        "生活节奏规律化",
+        "开始兼职或参与日常活动",
+        "能简述作业内容及自身反应",
+        "家庭作业反馈-强化循环会话",
+        "在咨询巩固与结束阶段，系统反馈并深化结构化家庭作业完成效果，将作业反思转化为自我觉察、优势识别与行为改变的内在动力。适用于来访者已完成至少一次 structure认知作业、出现初步可观察的行为/情绪改善迹象时。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/家庭作业反馈-强化循环会话/SKILL.md"
+    },
+    {
+      "skill_id": "899daa83-4674-5742-87c3-6be8b13e182c",
+      "name": "结构化问题解决五步法",
+      "description": "应用标准化五步流程（定义问题→生成方案→评估选项→选择执行→复盘效果）处理具体现实困扰，提升来访者自主应对效能。",
+      "child_type": "问题解决",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "c22cc6ca-8ea3-5675-b0a2-187e0b1c91af",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "应用标准化五步流程（定义问题→生成方案→评估选项→选择执行→复盘效果）处理具体现实困扰，提升来访者自主应对效能。",
+      "selector_terms": [
+        "来访者提出具体可操作问题（如选课冲突、宿舍沟通）",
+        "问题未被强烈情绪淹没，能暂停反应参与理性分析",
+        "来访者愿意尝试分步操作",
+        "CBT",
+        "问题解决",
+        "结构化",
+        "行为激活",
+        "中后期干预",
+        "来访者使用‘怎么办’句式提问而非‘我好难受’类情绪表达",
+        "能简述事件背景与自身角色，无明显思维反刍或灾难化",
+        "主动提及‘想试试看’或‘需要点方法’",
+        "结构化问题解决五步法",
+        "应用标准化五步流程（定义问题→生成方案→评估选项→选择执行→复盘效果）处理具体现实困扰，提升来访者自主应对效能。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/结构化问题解决五步法/SKILL.md"
+    }
+  ]
+}

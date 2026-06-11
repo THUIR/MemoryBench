@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "87aed475-a1a3-59ca-ab57-29886013457f",
+  "skill_name": "REBT结构化家庭作业布置（治疗初期）",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "1003388d-c8de-51bf-9cad-878b44812857",
+      "doc_id": "c5ab6dce-adb5-57ae-ac6a-268ea0e251d2",
+      "document_title": "合理情绪疗法在抑郁症咨询中的应用——1例大学生抑郁症的个案咨询报告_罗荣宁.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/合理情绪疗法在抑郁症咨询中的应用——1例大学生抑郁症的个案咨询报告_罗荣宁.md",
+      "section": "5 具体治疗过程",
+      "span": {
+        "start": 5187,
+        "end": 5891
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "答：“是的，你说的是对的。”\n\n此外还需要布置一份按时反馈的家庭作业： $\\textcircled{1}$ 每周写1篇与自己不合理信念辩论的小文章（500字以上）； $\\textcircled{2}$ 每周与朋友或同学表达内心想法2次以上，并做记录； $\\textcircled{3}$ 每周做自己感兴趣的爱好或运动2～3次； $\\textcircled{4}$ 用一些助睡技巧，如睡前1h不能做强度大的脑力活动或体力劳动，睡前听轻音乐、泡脚或者放空自己等，记录好实践及效果。\n\n# 5.3第三阶段（第7～8次咨询）\n\n巩固与评估阶段：此阶段帮助咨询对象探寻是否还遗漏有不合理信念，并与之辩论，使其建立自动辨别不合理信念的习惯，逐渐建立起新的认知和合理信念体系。",
+      "metadata": {
+        "document_title": "合理情绪疗法在抑郁症咨询中的应用——1例大学生抑郁症的个案咨询报告_罗荣宁.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "REBT家庭作业布置",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "巩固认知重构与行为激活",
+        "task_family": "认知行为干预",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "治疗初期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "82272f05-0c7e-57b4-b7de-d042e0ef0ce1",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 19,
+        "paragraph_end": 23,
+        "heading_path": [
+          "5 具体治疗过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案资料",
+          "2 理论依据及应用",
+          "3 治疗的前期准备：主要问题评估",
+          "4建立目标",
+          "6 分析与总结"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 5.1第一阶段（第1～2次咨询）"
+      }
+    }
+  ]
+}

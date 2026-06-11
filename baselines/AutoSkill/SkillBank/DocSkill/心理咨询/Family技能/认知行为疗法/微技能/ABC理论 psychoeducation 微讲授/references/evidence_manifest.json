@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "a0443ebb-3eb8-5bee-a2e5-538a974c383d",
+  "skill_name": "ABC理论 psychoeducation 微讲授",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "95a98925-1a58-564c-ac2a-d3743f8372b4",
+      "doc_id": "f3bbbafd-3ab8-550a-af19-056a655ae29e",
+      "document_title": "大学生考前焦虑的心理咨询案例分析_黎晓琪.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/大学生考前焦虑的心理咨询案例分析_黎晓琪.md",
+      "section": "大学生考前焦虑的心理咨询案例分析",
+      "span": {
+        "start": 1189,
+        "end": 2271
+      },
+      "relation_type": "support",
+      "confidence": 0.9,
+      "quote": "（3）缺少有效解决问题的行为模式。\n\n三、协商制订咨询目标\n经与陈某协商，初步制订咨询目标如下：\n\n（一）短期目标：让求助者认识到在认知上的错误观念，并建立合理的认知；缓解焦虑情绪问题，改善睡眠，使求助者积极准备期末考试。\n\n（二）长期目标：帮助求助者做好自身的心理健康发展，学会自我心理调整，构建合理的认知模式，逐步完善人格。\n\n四、心理咨询的主要方法与适用原理\n（一）咨询方法：合理情绪 ABC疗法、求助者中心疗法。\n\n（二）适用原理：该疗法的核心理论为ABC理论。该理论认为，情绪的行为反应是由诱发性事件直接引起的。A指的是诱发性事件，是导致情绪及行为反应的间接原因，B是人们持有的对事件的认知态度，才会直接产生情绪及行为反应C。人们的情绪及行为反应与人们对事物的认知观念有关，理性的认知会产生适当的情绪和行为；而不合理的认知观念会导致过度的情绪和行为。当人们坚持某些不理性的认知，就会经常持续性产生不良的情绪，最终就会形成情绪障碍。该理论强调情绪及行为反应都是由个体的认知观念引起的，而非事件。个体可以通过改变不理性的思维和不合理认知观念，改善情绪和行为。\n\n五、心理咨询过程\n# （一）咨询阶段\n\n1.建立咨询关系阶段：建立咨询关系，收集\n\n求助者的个人资料，明确其主要心理问题，向求助者介绍咨询方法，制订咨询方案；\n\n2．心理帮扶阶段：帮助求助者分析和解决问题，改变其不合理的信念，建立合理的认知模式；\n\n3.巩固阶段：求助者在咨询中领悟到的客观现实的态度、科学合理的思维方式，并应用到生活中。\n\n# （二）具体的咨询过程\n\n第一阶段：建立咨询关系阶段，共 $1$ 次。\n\n1.第 $1$ 次咨询（1）咨询任务\n\n①了解求助者基本情况;②初步建立良好的咨询关系；③帮助求助者正确了解心理咨询;④与求助者一起确定主要问题，探寻其改变的意愿；$\\textcircled{5}$ 向求助者介绍咨询方法，协商咨询目标，制订咨询方案。\n\n（2）咨询方法：尊重、共情、积极关注、开放式询问、倾听、具体化、情感反应和内容反应、心理测验。\n\n# （3）咨询过程\n\n①通过询问求助者的基本情况，填写信息表;介绍心理咨询的相关常识和规则;\n\n$\\textcircled{2}$ 鼓励、引导其倾诉，通过以宣泄为主，以认知性引导为辅，收集咨询的资料，探讨主要问题和求助者的改变意愿;\n\n③做心理测验 SAS，将测验的结果反馈给求助者，并做出初步问题分析，一起协商制订咨询方案、咨询目标。\n\n# （4）咨询会谈摘要\n\n咨询师：（示意她坐下并微笑着问）你好，有什么我可以帮助你吗？",
+      "metadata": {
+        "document_title": "大学生考前焦虑的心理咨询案例分析_黎晓琪.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ABC理论 psychoeducation 微讲授",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "完成一次精准、非术语化、具象化的ABC原理初次传递",
+        "task_family": "psychoeducation",
+        "method_family": "CBT",
+        "stage": "first_session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "8d85ce9a-d625-5bbd-b60d-67f7a0544b5d",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "咨询目标",
+          "阶段",
+          "会谈"
+        ],
+        "paragraph_start": 24,
+        "paragraph_end": 45,
+        "heading_path": [
+          "大学生考前焦虑的心理咨询案例分析"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "结束语"
+        ],
+        "subsection_headings": [
+          "一、一般资料",
+          "二、评估与诊断",
+          "三、协商制订咨询目标",
+          "四、心理咨询的主要方法与适用原理",
+          "五、心理咨询过程",
+          "六、效果评估"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "黎晓琪 黄彩微 于佩鑫（广州工商学院 广东广州 510000)"
+      }
+    }
+  ]
+}

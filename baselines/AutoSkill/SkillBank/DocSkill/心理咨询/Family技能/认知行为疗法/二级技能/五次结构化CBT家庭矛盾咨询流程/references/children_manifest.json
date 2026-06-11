@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "2351c2e4-443d-551c-810a-99eeabe0a096",
+  "parent_name": "五次结构化CBT家庭矛盾咨询流程",
+  "children": [
+    {
+      "skill_id": "9cb7e042-0a2d-52cc-a91b-87840f71718c",
+      "name": "S-O-R模型驱动的当下问题聚焦",
+      "description": "在首次咨询中，运用刺激-有机体-反应模型快速识别并结构化当前最紧迫的生活问题（如情绪低落、失眠），明确可操作的问题清单与初始目标。",
+      "child_type": "问题评估与目标设定",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "2351c2e4-443d-551c-810a-99eeabe0a096",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在首次咨询中，运用刺激-有机体-反应模型快速识别并结构化当前最紧迫的生活问题（如情绪低落、失眠），明确可操作的问题清单与初始目标。",
+      "selector_terms": [
+        "来访者主诉多维困扰但难以排序",
+        "需在首次会谈中建立具体、可测量的切入点",
+        "存在明显情绪与生理症状（如睡眠障碍）",
+        "CBT",
+        "S-O-R",
+        "首次咨询",
+        "问题清单",
+        "目标设定",
+        "来访者使用模糊概括性语言（如‘我总是很累’‘家里一团糟’）",
+        "情绪或躯体症状已影响学习/社交/作息等基础功能",
+        "来访者表达改变意愿但缺乏行动方向",
+        "S-O-R模型驱动的当下问题聚焦",
+        "在首次咨询中，运用刺激-有机体-反应模型快速识别并结构化当前最紧迫的生活问题（如情绪低落、失眠），明确可操作的问题清单与初始目标。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/S-O-R模型驱动的当下问题聚焦/SKILL.md"
+    }
+  ]
+}

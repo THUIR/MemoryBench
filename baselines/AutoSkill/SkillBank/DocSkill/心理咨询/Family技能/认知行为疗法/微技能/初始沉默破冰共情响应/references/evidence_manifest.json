@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "0ad617c7-fd7a-5893-9806-5e3c4ebf62ba",
+  "skill_name": "初始沉默破冰共情响应",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "fc11999f-8a8e-581d-ac60-d73d49582743",
+      "doc_id": "85e16e58-09fd-5e9e-9b1b-23fe9003cd82",
+      "document_title": "tppc2022040285-91.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc2022040285-91.md",
+      "section": "3 咨询过程",
+      "span": {
+        "start": 1362,
+        "end": 1924
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "3.1　第一次咨询\n（1）求助者一开始并不太信任心理咨询师。心理咨询师热情的跟求助者打完招呼，简单介绍完自己后，期待求助者简单介绍自己或者说说自己希望得到哪些方面的帮助。但是求助者避免与咨询师目光接触，也不愿开口讲话。沉默了几分钟后，咨询师使用共情技术消除了阻抗。对话如下：\n\n咨询师：虽然你什么也不愿意说，但是我知道，你现在心里一定很难过。\n\n求助者：沉默（似乎眼里闪过一丝犹豫）。\n\n咨询师：如果你觉得很难过，很想哭，那你可以哭一会，我会在这里陪着你。\n\n求助者：（求助者委屈的泪水瞬间奔涌而下，咨询师将座位靠近求助者，轻轻抚摸求助者肩膀，并为求助者递上纸巾。几分钟后求助者渐渐平复自己的情绪，接下来边抽泣边诉说）已经有一个多月了吧，我不愿意去学校，害怕去学校，就算去了学校，我也不愿意跟同学多说话，我经常上完一整天的课，不跟同学说一句话。我觉得同学都不喜欢我，老师也不怎么喜欢我。回家后我也不开心。我家里只有妈妈和嫂子在，妈妈要照顾怀孕了的嫂子,她经常忙自己的事情没空陪我聊天。有时候就算我说了学校的事情，她也不会帮我，她只会怪我。晚上我不想写作业，觉得写不下去，有时候我玩会手机再睡觉。我晚上躺在床上很久才能睡着，夜里有时候醒好几次，有时做噩梦。\n\n咨询师：一个多月前，发生了什么事情，才导致你出现这些不适应的症状。",
+      "metadata": {
+        "document_title": "tppc2022040285-91.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "初始沉默破冰共情响应",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "建立初步治疗联盟，降低来访者情绪防御",
+        "task_family": "关系建立",
+        "method_family": "人本-存在主义",
+        "stage": "初始访谈",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "a0864a1e-750b-57b1-bf03-d549eac87bba",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 5,
+        "heading_path": [
+          "3 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 个案概况",
+          "2分析与评估",
+          "4 辅导效果和反馈",
+          "5 反思与总结"
+        ],
+        "subsection_headings": [
+          "3.1　第一次咨询",
+          "3.2　第二次咨询",
+          "3.3　第三次咨询",
+          "3.4　第四次咨询",
+          "3.5一个月后的回访"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "（1）求助者一开始并不太信任心理咨询师。心理咨询师热情的跟求助者打完招呼，简单介绍完自己后，期待求助者简单介绍自己或者说说自己希望得到哪些方面的帮助。但是求助者避免与咨询师目光接触，也不愿开口讲话。沉默了几分钟后，咨询师使用共情技术消除了阻抗。对话如下："
+      }
+    }
+  ]
+}

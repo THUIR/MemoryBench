@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "6d199a26-577a-5f14-978d-0f96e5a36e38",
+  "skill_name": "ABC Theory Psychoeducation Scaffold",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "32b711e7-245c-5fd8-a403-726e01fb8bad",
+      "doc_id": "07ac650a-d98b-5553-bf30-8ec09e76e471",
+      "document_title": "一例学生厌学的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例学生厌学的心理咨询案例报告.md",
+      "section": "# 8咨询方案的制定",
+      "span": {
+        "start": 2189,
+        "end": 3377
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "（1）方法与原理：合理情绪疗法。合理情绪疗法旨在通过纯理性分析和逻辑思辨的途径，改变求助者的非理性观念，以帮助他解决情绪和行为上的问题。该理论认为，使人们难过和痛苦的，不是事件本身，而是对事件的不正确解释和评价。基本理论主要是abc 理论，在abc 理论模式中，a是指诱发性事件；b是指个体在遇到诱发事件之后相应而生的信念，即他对这一事件的看法、解释和评价；c是指特定情景下，个体的情绪反应及行为结果。诱发性事件a只是引起情绪及行为反应的间接原因，而人们对诱发性事件所持的信念、看法、理解b才是引起人的情绪及行为反应的更直接的原因。\n\n在本案中，父母的责骂是诱发事件a，厌学导致学习成绩下降是个体的情绪反应及行为结果c，对父母的责骂表示自己的不满、烦躁、委屈是学生廖某对这一事件的看法、解释和评价b。\n\n（2）双方的权利和义务。咨询过程中，求助者的责任、权利和义务。\n\n责任：\n\n$\\textcircled{1}$ 提供与心理问题有关的真实材料；  \n$\\textcircled{2}$ 积极主动地一起探索解决问题的方法；  \n$\\textcircled{3}$ 完成双方商定的作业。\n\n权利：\n\n$\\textcircled{1}$ 求助者可以根据个人意愿选择咨询师；$\\textcircled{2}$ 对咨询进程不满意可要求更换咨询师；$\\textcircled{3}$ 对咨询方案、咨询收费、咨询时间的知情权、协商权和选择权。\n\n义务：\n\n$\\textcircled{1}$ 遵守咨询机构的有关规定；\n\n$\\textcircled{2}$ 遵守和执行商定好的咨询方案、咨询收费、求助者应尊重咨询师，按照预约时间不失约、不迟到，如有特殊情况提前通知咨询师。\n\n咨询过程中，咨询师的责任、权利和义务。\n\n责任：\n\n# 万方数据\n\n$\\textcircled{1}$ 遵守职业道德，遵守国家有关的法律法规；\n\n$\\textcircled{2}$ 帮助求助者解决心理问题;\n\n$\\textcircled{3}$ 严格遵守保密原则，并说明保密例外。\n\n权利：\n\n$\\textcircled{1}$ 有权了解与求助者心理问题有关的个人资料；  \n$\\textcircled{2}$ 有权选择合适的求助者；  \n$\\textcircled{3}$ 本着负责的态度，有权提出转介或中止咨询。\n\n义务：\n\n$\\textcircled{1}$ 介绍自己的受训背景，出示执业资格等相关证件；\n\n$\\textcircled{2}$ 遵守咨询机构的相关规定；\n\n$\\textcircled{3}$ 遵守和执行商定好的咨询方案各方面的内容；\n\n$\\textcircled{3}$ 尊重求助者，遵守预约时间，特殊情况提前告知求助者\n\n（3）咨询次数、时间。咨询次数与时间：共六次。每周1次，每次1小时。",
+      "metadata": {
+        "document_title": "一例学生厌学的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ABC理论 psychoeducation scaffold",
+        "asset_type": "knowledge_reference",
+        "granularity": "session",
+        "asset_node_id": "",
+        "asset_path": "",
+        "asset_level": 0,
+        "visible_role": "",
+        "objective": "teach client the core logic of cognitive mediation",
+        "task_family": "psychoeducation",
+        "method_family": "CBT",
+        "stage": "early engagement",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "4c629541-7ada-5dcf-8dfe-8b8f1b95a96c",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 23,
+        "heading_path": [
+          "# 8咨询方案的制定"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1一般资料",
+          "# 2主诉和个人陈述",
+          "# 3咨询师观察和他人反映",
+          "# 万方数据",
+          "# 4心理测验情况",
+          "# 5诊断与鉴别诊断"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "（1）方法与原理：合理情绪疗法。合理情绪疗法旨在通过纯理性分析和逻辑思辨的途径，改变求助者的非理性观念，以帮助他解决情绪和行为上的问题。该理论认为，使人们难过和痛苦的，不是事件本身，而是对事件的不正确解释和评价。基本理论主要是abc 理论，在abc 理论模式中，a是指诱发性事件；b是指个体在遇到诱发事件之后相应而生的信念，即他对这一事件的看法、解释和评价；c"
+      }
+    }
+  ]
+}

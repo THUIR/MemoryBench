@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "2498d065-bece-5cd0-a622-b803b6fcd8f1",
+  "skill_name": "CBT自动思维反驳话术模板",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "d9649334-bb3a-53b0-93aa-b14c42172618",
+      "doc_id": "362c54a0-ef7a-54f0-a0ce-bd58d42524c1",
+      "document_title": "1例基于认知行为疗法的高职学生咨询报告_谭志远.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例基于认知行为疗法的高职学生咨询报告_谭志远.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 6584,
+        "end": 7218
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "当我想到“我不行”时：  \n1.这只是我的想法，不是事实。我之前也有成功的时候。  \n2.我不需要在每件事上都表现出色，每个人都有自己的优点和不足。  \n3.我可以从小事做起，逐步提升自己的能力。  \n4.我可以向他人学习，他们的成功并不意味着我的失败。  \n5.我要给自己一些时间和空间，不要对自己太苛刻。\n\n5.3第三个阶段：巩固阶段（第9次）\n在这一阶段，咨询师帮助A学习从各种现实情景中看待和分析问题，通过学习CBT的基本知识，学会寻找思维中的自动思维，重建思维意识，将咨询过程所学会的技术应用于现实生活，从而在生活中一直保持这种思维模式。咨询师强化与巩固了A的合理个人认知。A表示，他认识到自己不是过去想象的那种“我不行”，而是在很多方面都有优点。同时，自己只是一个普通人，不是在某个方面同别人进行比较不如对方就是自己不行。有的时候，人和人处在不同的阶段，看着好像相同实际上有很大的差别。\n\n5.4第四个阶段：结束阶段（第10次）\n在咨询的收尾阶段，咨询师引领A复盘其个人成长的历程，梳理出那些对其发展和转变起到积极作用的咨询方法，并对A所展现出的积极回应及取得的进步给予了高度的认可。咨询师与A重温已学的心理调适技巧，确保A能够精准且熟练地运用这些技能，进而使A能够独立承担起自我心理辅导的角色，这不仅有助于预防未来可能出现的问题，还能有效应对潜在的复发情况。此外，咨询师强调，A通过自我练习、自我觉察以及对自身信念的审视与验证，是巩固咨询成效的关键环节。",
+      "metadata": {
+        "document_title": "1例基于认知行为疗法的高职学生咨询报告_谭志远.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT自动思维反驳话术模板",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "削弱负性自动思维的主观真实性，建立替代性理性回应",
+        "task_family": "cognitive_restructuring",
+        "method_family": "CBT",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "b8d6dde4-f7a7-5a48-83ed-9f2d7407af1e",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 75,
+        "paragraph_end": 77,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案基本情况",
+          "2 咨询目标",
+          "3 理论依据",
+          "4 个案概念化情况",
+          "6 咨询效果",
+          "7反思与启示"
+        ],
+        "subsection_headings": [
+          "5.1第一个阶段：咨询关系确立和问题评估阶段（第1～2次）",
+          "5.2第二个阶段：咨询阶段（第3～8次）",
+          "5.3第三个阶段：巩固阶段（第9次）",
+          "5.4第四个阶段：结束阶段（第10次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本个案咨询次数共计10次，每周1次，每次50分钟，咨询地点在学校心理咨询室。具体咨询过程分为3个阶段，具体如下。"
+      }
+    }
+  ]
+}

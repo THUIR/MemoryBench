@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "54b98da2-9b33-537b-8a93-d0fe788da653",
+  "skill_name": "HAMD分层判读协议",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "4ce92407-5311-5074-ad0f-ce8cc72a07f4",
+      "doc_id": "06789c43-653d-5191-b508-34677284feb5",
+      "document_title": "1例初中生抑郁症心理咨询案例_武香芝.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例初中生抑郁症心理咨询案例_武香芝.md",
+      "section": "2 个案概念化（含评估与工作诊断）",
+      "span": {
+        "start": 1348,
+        "end": 2122
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "2.1心理测验结果\n根据明尼苏达多项人格测验（Minnesota multiphasic per-sonalityinventory，MMPI）计算机解释诊断专家系统，心理检查总体印象： $\\textcircled{1}$ 目前未见明显思维障碍。思维条理性、逻辑性和现实性基本正常，能够客观地认识自己与他人及外界的关系。 $\\textcircled{2}$ 严重抑郁，心情压抑，悲观绝望，丧失信心，兴趣减退，疲乏不适，饮食睡眠差。注意力和记忆力下降，工作学习和社交能力降低。 $\\textcircled{3}$ 有自杀意念或企图。 $\\textcircled{4}$ 未见明显焦虑。\n\n根据汉密尔顿抑郁量表（Hamilton depression scale,HAMD）[]，是用于评定神经症以及其他障碍的焦虑症状的严重程度。临床的版本主要是分14项的版本，只有躯体焦虑和精神焦虑2个因素。在临床上，总分<7分：正常；总分在7～17分：可能有抑郁症；总分在18～24分：肯定有抑郁症；该求助者总分>24分：严重抑郁症。\n\n根据汉密尔顿焦虑量表（Hamilton anxiety scale,HAMA），是精神科临床中常用的量表之一，包括14个项目，得分≥29分判定为严重焦虑；≥21分判定为明显焦虑；≥14分判定为肯定有焦虑；≥7分判定为可能有焦虑；该求助者评分<7分被判定为没有焦虑。\n\n2.2评估与诊断\n求助者意识清楚，定向力完整，接触尚可，对问话切题回答，未引出感知觉异常，无幻觉妄想内容，自知力完整，可以排除精神分裂症。\n\n根据HAMA测试报告，求助者没有焦虑状态，因此可以排除焦虑症。\n\n求助者情绪低落、哭泣、对学习无动力，连续2周睡眠质量下降，注意力不集中，快感缺失，甚至有过自杀行为。根据HAMD测试，总分45分，求助者为重度抑郁症。",
+      "metadata": {
+        "document_title": "1例初中生抑郁症心理咨询案例_武香芝.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "HAMD分层判读协议",
+        "asset_type": "knowledge_reference",
+        "granularity": "session",
+        "asset_node_id": "",
+        "asset_path": "",
+        "asset_level": 0,
+        "visible_role": "",
+        "objective": "标准化抑郁严重度分级",
+        "task_family": "心理评估",
+        "method_family": "量表判读",
+        "stage": "初始评估",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "cd67445f-dc95-5cfc-8c56-fb03e8c8cbd8",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 5,
+        "heading_path": [
+          "2 个案概念化（含评估与工作诊断）"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例初中生抑郁症心理咨询案例",
+          "1个人信息",
+          "3 咨询方案",
+          "4 咨询过程",
+          "5 咨询效果",
+          "6 案例评价及反思"
+        ],
+        "subsection_headings": [
+          "2.1心理测验结果",
+          "2.2评估与诊断"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "根据明尼苏达多项人格测验（Minnesota multiphasic per-sonalityinventory，MMPI）计算机解释诊断专家系统，心理检查总体印象： $\\textcircled{1}$ 目前未见明显思维障碍。思维条理性、逻辑性和现实性基本正常，能够客观地认识自己与他人及外界的关系。 $\\textcircled{2}$ 严重抑郁，心情压抑，悲"
+      }
+    }
+  ]
+}

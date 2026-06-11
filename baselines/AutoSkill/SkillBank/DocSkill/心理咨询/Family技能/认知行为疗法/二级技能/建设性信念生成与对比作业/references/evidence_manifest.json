@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "d2e50e8d-f439-522c-bc98-754df04c926b",
+  "skill_name": "建设性信念生成与对比作业",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "00d0bd2b-2c9b-5699-9cde-883733273b47",
+      "doc_id": "6bd11079-beb4-53ab-bd31-1b76fbdcd268",
+      "document_title": "1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+      "section": "8 咨询过程",
+      "span": {
+        "start": 5598,
+        "end": 6057
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "来访者：真的是。谢谢，我知道我的问题出在哪了。\n\n与来访者讨论后获得了这些建设性的信念： $\\textcircled{1}$ 我一直很优秀，但不意味着每次都必须考第一； $\\textcircled{2}$ 前三是我对自己的要求，考不到前三并不意味着很失败； $\\textcircled{3}$ 我表现不尽如人意，但不至于糟糕至极，老师课上不关注我也许有其他原因，不是代表不喜欢我； $\\textcircled{4}$ 我的学习状态有待调整，但不是很糟糕； $\\textcircled{5}$ 我只是之前遇到了小挫折，只要我尽力了，老师不会失望的。布置咨询作业：让来访者列出不合理信念和建设性信念列表对比。\n\n# 8.4第四阶段：巩固和结束阶段（第8次）\n\n主要目标：巩固咨询效果；结束咨询。\n\n主要方法：合理情绪疗法。\n\n主要过程：反馈咨询作业。来访者经过认真思考后，不再苛求自己，紧张焦虑的情绪也得到缓解，不再觉得失落，能正确看待测验的失利；指导来访者深刻领会“人不是被事情本身所困扰，而是被其对事情的看法所困扰”。",
+      "metadata": {
+        "document_title": "1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "建设性信念生成与对比作业",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "促进认知重构与信念内化",
+        "task_family": "认知重构",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "咨询中后期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "bddfef52-a159-5125-b2b0-bde40f2f1eff",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 25,
+        "paragraph_end": 30,
+        "heading_path": [
+          "8 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 主诉与个人陈述",
+          "3 观察和他人反映",
+          "4 咨询前心理测验结果",
+          "5评估",
+          "6 制定咨询目标"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询分4个阶段，共8次，每周1次， $0 . 5 \\ : \\mathrm { h } \\iota$ 次。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "86ebc642-b3e1-5f59-9bb8-84401b6daa41",
+  "skill_name": "系统脱敏法实施流程",
+  "support_count": 3,
+  "supports": [
+    {
+      "support_id": "31324dfc-a859-5d15-83a4-f0589aeeba65",
+      "doc_id": "ccb32af1-7b79-5433-a0c4-1ca66269d3ff",
+      "document_title": "一例高中生考试焦虑心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例高中生考试焦虑心理咨询案例报告.md",
+      "section": "四、咨询过程",
+      "span": {
+        "start": 3730,
+        "end": 3995
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "100 考试后，与别人交谈，发现自己某些答案与别人不一样。\n\n(3)系统脱敏：系统脱敏法可用于治疗求助者对特定事件、人、事物或泛化对象的恐惧和焦虑,基本方法是让求助者用放松对抗焦虑。[71具体过程是通过想象唤起焦虑状态,评估焦虑水平,然后运用放松技术进人放松状态，再次评估焦虑水平，直至焦虑水平达到最低值为止，(听到每一种情境后都保持放\n\n松),每次可进行(通过)1一4个等级，视情况而定。\n\n：布置作业：继续大声朗诵优点并积极体会;继续每天两次放松训练,每次做1-4想象等级，保持并做放松训练。\n\n4、第4次,2006/11/9",
+      "metadata": {
+        "document_title": "一例高中生考试焦虑心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "系统脱敏法实施流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "降低对考试相关刺激的条件性焦虑反应",
+        "task_family": "anxiety_reduction",
+        "method_family": "Behaviorism（行为主义）",
+        "stage": "exposure_and_retraining",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "366b0c03-dbc6-591b-9195-e80f4a88e786",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 25,
+        "paragraph_end": 29,
+        "heading_path": [
+          "四、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、个案基本资料",
+          "二、心理诊断",
+          "三、咨询目标",
+          "五、咨询效果评估"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "1、第1次,2006/10/19"
+      }
+    },
+    {
+      "support_id": "86592fc2-a666-5d41-8f82-a0a2d28af8b4",
+      "doc_id": "8287fa0e-4574-5649-812a-0b637faa2f23",
+      "document_title": "大学生考试焦虑案例分析与对策探讨.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/大学生考试焦虑案例分析与对策探讨.md",
+      "section": "1案例分析",
+      "span": {
+        "start": 2157,
+        "end": 2505
+      },
+      "relation_type": "support",
+      "confidence": 0.9,
+      "quote": "(5)家庭因素：从小未与父母长期生活在一起，造成了与父母分离的恐惧感，为了得到父母更多的关注与疼爱,在父母面前想尽量表现好一点。加上父母家教甚严,对其要求很高，期望值也高，这些都让她对学习形成了较重的心理负担。一旦考试未达到期望的成绩，就会自责。\n\n1.3.1咨询方案与方法\n整个咨询过程分为三个阶段：1、诊断阶段：建立咨询关系，收集有关背景资料，明确来访者主要问题,对来访者的心理问题进行初步的诊断。2、咨询阶段：与其家庭成员一起帮助来访者分析和解决主要问题，改变其不适的认知、情绪和行为，掌握有用的应试技巧，帮助消除考试焦虑。3、巩固与结束阶段：巩固咨询成果，使求助者把学到的知识和技能运用于今后的生活中，结束咨询关系。\n\n咨询方法：运用系统脱敏法、合理情绪疗法、肌肉放松训练、自信心训练等。",
+      "metadata": {
+        "document_title": "大学生考试焦虑案例分析与对策探讨.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "系统脱敏法实施流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "在单次或连续咨询中完成一级焦虑等级的脱敏操作",
+        "task_family": "考试焦虑干预",
+        "method_family": "行为主义",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "1d2ef82d-0355-5329-9e7c-c99dab38acb9",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 10,
+        "paragraph_end": 12,
+        "heading_path": [
+          "1案例分析"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "2大学生考试焦虑的对策探讨"
+        ],
+        "subsection_headings": [
+          "1.1.1一般资料",
+          "1.1.2成长经历",
+          "1.2.1心理测验结果：",
+          "1.2.2评估与诊断",
+          "1.2.3导致考试焦虑的原因分析",
+          "1.3.1咨询方案与方法",
+          "1.3.2.1第一阶段：诊断与咨询关系建立(第1、2次咨询）",
+          "1.3.2.2 第二阶段：实施心理帮助(第3、4、5、6次咨询）",
+          "1.3.2.3第三阶段：巩固与结束(第7次咨询）",
+          "1.4咨询效果评估"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "陈某，女,20岁，专科三年级学生。父亲在国企工作，母亲是中学教师，家中独女。自幼父母家教甚严，自尊心较强，自我要求颇高，有良好的学习习惯，记忆力较好，性格较为内向。"
+      }
+    },
+    {
+      "support_id": "26620aad-6b3a-5837-a0eb-ebdaef1e6af9",
+      "doc_id": "4ca8a9b9-6df4-5941-86ff-eafb30b3c495",
+      "document_title": "考试焦虑心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/考试焦虑心理咨询案例报告.md",
+      "section": "4结语",
+      "span": {
+        "start": 3979,
+        "end": 4261
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "90考试后，与别人交谈，发现自己某些答案与别人不－样。\n\n3）系统脱敏：系统脱敏法可用于治疗求助者对特定事件、人、事物或泛化对象的恐惧和焦虑，基本方法是让求助者用放松对抗焦虑。[1]具体过程是通过想象唤起焦虑状态，评估焦虑水平，然后运用放松技术进入放松状态，再次评估焦虑水平，直至焦虑水平达到最低值为止，每次可进行1-4个等级，视情况而定。\n\n布置作业：继续大声朗诵优点并积极体会；继续每天两次放松训练，每次做1-4 想象等级，保持并做放松训练。\n\n7.4 第4次 2006/12/16\n方法与目的：巩固咨询效果；继续消除考试焦虑；谈话法、系统脱敏。咨询进程如下：",
+      "metadata": {
+        "document_title": "考试焦虑心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "系统脱敏法实施流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "降低对考试相关刺激的条件性焦虑反应",
+        "task_family": "焦虑干预",
+        "method_family": "行为主义",
+        "stage": "暴露与消退",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "f65305b6-fd12-53ff-bbeb-37be555b3c10",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 16,
+        "paragraph_end": 19,
+        "heading_path": [
+          "4结语"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "考试焦虑心理咨询案例报告",
+          "1一般资料",
+          "2个人陈述",
+          "3观察得到的初步印象",
+          "4心理测验量表结果",
+          "5评估与诊断"
+        ],
+        "subsection_headings": [
+          "7.4 第4次 2006/12/16",
+          "7.5第5次 2007/1/6"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "学生主体意识的提高，自主管理、自我教育制度的完善，使班级的管理工作不再是班主任一个人的事了，而成了班级中每一个成员的责任，教育也不再是外在的、强加于学生的了，而成为一个自我教育的自觉过程。使班级管理走上良性循环的轨道，班主任的工作负担得以减轻，工作效率得到很大的提高。"
+      }
+    }
+  ]
+}

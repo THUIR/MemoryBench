@@ -1,0 +1,143 @@
+{
+  "taxonomy_id": "chemistry",
+  "domain_type": "chemistry",
+  "display_name": "Chemistry",
+  "default_base_type": "session_skill",
+  "family_axis": "实验路线",
+  "default_family_name": "通用化学流程",
+  "domain_root": {
+    "id": "chemistry",
+    "name": "化学",
+    "name_zh": "化学",
+    "name_en": "Chemistry"
+  },
+  "visible_levels": {
+    "root_label": "总技能",
+    "family_bucket_label": "Family技能",
+    "level_labels": {
+      "1": "一级技能",
+      "2": "二级技能",
+      "3": "微技能"
+    }
+  },
+  "family_candidates": [
+    {
+      "id": "organic_synthesis",
+      "name": "有机合成",
+      "aliases": ["有机合成", "organic synthesis"],
+      "keywords": ["合成", "偶联", "收率", "纯化", "反应路线"]
+    },
+    {
+      "id": "analytical_chemistry",
+      "name": "分析化学",
+      "aliases": ["分析化学", "analytical chemistry"],
+      "keywords": ["分析", "色谱", "光谱", "滴定", "检测"]
+    }
+  ],
+  "asset_types": [
+    {
+      "base_type": "macro_protocol",
+      "label": "experiment_protocol",
+      "description": "A multi-stage experimental or preparation protocol.",
+      "aliases": ["experiment_protocol", "synthesis_protocol", "macro_protocol"]
+    },
+    {
+      "base_type": "session_skill",
+      "label": "experiment_workflow",
+      "description": "One reusable experiment or analysis workflow.",
+      "aliases": ["experiment_workflow", "analysis_workflow", "workflow_skill", "session_skill"]
+    },
+    {
+      "base_type": "micro_skill",
+      "label": "lab_micro_step",
+      "description": "One tightly scoped lab operation or micro-step.",
+      "aliases": ["lab_micro_step", "micro_step", "micro_skill"]
+    },
+    {
+      "base_type": "safety_rule",
+      "label": "reagent_safety_rule",
+      "description": "Safety and handling rules for reagents, equipment, or waste.",
+      "aliases": ["reagent_safety_rule", "lab_safety_rule", "safety_rule"]
+    },
+    {
+      "base_type": "knowledge_reference",
+      "label": "chem_reference",
+      "description": "Reference-style chemistry knowledge such as interpretation notes, lookup rules, or background concepts.",
+      "aliases": ["chem_reference", "knowledge_reference", "reference", "concept_reference"]
+    }
+  ],
+  "asset_tree": [
+    {
+      "id": "family_root",
+      "label_zh": "总技能",
+      "label_en": "Family Root",
+      "base_type": "macro_protocol",
+      "level": 0,
+      "parent": null,
+      "visible_role": "root",
+      "allowed_children": ["experiment_protocol", "reagent_safety_module"],
+      "extractable": false,
+      "synthesized": true
+    },
+    {
+      "id": "experiment_protocol",
+      "label_zh": "一级技能",
+      "label_en": "First-Level Skill",
+      "base_type": "macro_protocol",
+      "level": 1,
+      "parent": "family_root",
+      "visible_role": "parent",
+      "allowed_children": ["experiment_workflow"],
+      "default_for_base_type": true,
+      "aliases": ["experiment_protocol", "一级技能", "protocol_framework"]
+    },
+    {
+      "id": "experiment_workflow",
+      "label_zh": "二级技能",
+      "label_en": "Second-Level Skill",
+      "base_type": "session_skill",
+      "level": 2,
+      "parent": "experiment_protocol",
+      "visible_role": "parent",
+      "allowed_children": ["lab_micro_step"],
+      "default_for_base_type": true,
+      "aliases": ["experiment_workflow", "analysis_workflow", "二级技能"]
+    },
+    {
+      "id": "lab_micro_step",
+      "label_zh": "微技能",
+      "label_en": "Micro Skill",
+      "base_type": "micro_skill",
+      "level": 3,
+      "parent": "experiment_workflow",
+      "visible_role": "leaf",
+      "allowed_children": [],
+      "default_for_base_type": true,
+      "aliases": ["lab_micro_step", "micro_step", "微技能"]
+    },
+    {
+      "id": "reagent_safety_module",
+      "label_zh": "一级技能",
+      "label_en": "Safety Module",
+      "base_type": "safety_rule",
+      "level": 1,
+      "parent": "family_root",
+      "visible_role": "parent",
+      "allowed_children": ["reagent_safety_rule_node"],
+      "default_for_base_type": false,
+      "aliases": ["reagent_safety_module", "lab_safety_module", "风险模块"]
+    },
+    {
+      "id": "reagent_safety_rule_node",
+      "label_zh": "二级技能",
+      "label_en": "Safety Rule",
+      "base_type": "safety_rule",
+      "level": 2,
+      "parent": "reagent_safety_module",
+      "visible_role": "leaf",
+      "allowed_children": [],
+      "default_for_base_type": true,
+      "aliases": ["reagent_safety_rule_node", "reagent_safety_rule", "lab_safety_rule", "安全规则"]
+    }
+  ]
+}

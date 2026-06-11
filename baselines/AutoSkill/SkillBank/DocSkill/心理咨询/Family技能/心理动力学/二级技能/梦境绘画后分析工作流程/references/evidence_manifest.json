@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "bd368cd5-0584-55d0-b330-ed2fcd0ab874",
+  "skill_name": "梦境绘画后分析工作流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "208e3557-1fbc-54a9-8144-8c01202d8cd1",
+      "doc_id": "1c84f35d-c586-53f9-8cd1-e179acf3ca5e",
+      "document_title": "基于绘制梦境疗法的1例癌症患者心理咨询案例_姚晶宏.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/基于绘制梦境疗法的1例癌症患者心理咨询案例_姚晶宏.md",
+      "section": "# 2 咨询方案",
+      "span": {
+        "start": 886,
+        "end": 1363
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "# 2.1咨询形式\n引导来访者在心理咨询基础上，将被释过的梦进行绘制。咨询频率为每周1次，每次60min。具体工作形式为每周1次深度分析访谈，此过程以语言为主。结束工作后的1周内对分析过梦境的情绪感受、能记住的重点镜头或整个梦境等方面进行绘制。\n\n# 2.2咨询方法\n深度访谈阶段主要运用语言表达，分析内容以来访者带来的梦境分析为主，结合来访者现实生活及生活经历中的事件。非语言的表达为绘制梦境，内容主要是分析过的梦境内容和梦境中来访者自身感受强烈的部分。完成的绘画图形再次带到语言分析工作中，将图形表达的无意识材料进一步意识化。绘画工作部分主要由来访者自己在家完成。操作指导是选择安静尽量不被打扰的时段和环境来完成绘画，每次绘画时不提前构图，以梦境分析中未能表达清晰描述的感受、很有情绪感受的梦境内容为主，将前述内容和感觉用颜色（选材不限，可以铅笔、彩铅、水彩、蜡笔、丙烯等，纸张大小不限）、笔触、图形呈现在面前的画纸上，在绘制的过程中，体会笔触感受与内在想表达的感觉是否一致或者吻合。时间以每一次流淌的感觉结束为限，不强迫固定时间固定频率绘画[4]。",
+      "metadata": {
+        "document_title": "基于绘制梦境疗法的1例癌症患者心理咨询案例_姚晶宏.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "梦境绘制后分析工作流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "将非语言梦境表征转化为可言说的意识内容",
+        "task_family": "梦工作",
+        "method_family": "心理动力学",
+        "stage": "修通阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "47abe44f-dc85-52b0-8fb7-1f247500eb05",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 1,
+        "heading_path": [
+          "# 2 咨询方案"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1 个案信息",
+          "# 3 咨询过程",
+          "# 4 咨询效果",
+          "# 5 案例评价与反思"
+        ],
+        "subsection_headings": [
+          "# 2.1咨询形式",
+          "# 2.2咨询方法"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "引导来访者在心理咨询基础上，将被释过的梦进行绘制。咨询频率为每周1次，每次60min。具体工作形式为每周1次深度分析访谈，此过程以语言为主。结束工作后的1周内对分析过梦境的情绪感受、能记住的重点镜头或整个梦境等方面进行绘制。"
+      }
+    }
+  ]
+}

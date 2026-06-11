@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "1c1ef82e-0a48-5816-b9a6-cf14c3adf628",
+  "skill_name": "空椅子技术：他人对话式操作流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "9c678b3b-5069-5602-9da3-fa3bdc06781d",
+      "doc_id": "94fc6dec-dbf5-5b07-9a1c-8487360c9f65",
+      "document_title": "tppc20240607373-378.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20240607373-378.md",
+      "section": "5 咨询方案的制订",
+      "span": {
+        "start": 4021,
+        "end": 4748
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "它包括三种操作方式：第一，倾述宣泄式。这种形式一般只需要一张椅子，将这张椅子放在来访者的面前，假定某人坐在这张椅子上。来访者把自己想要对他说却没来得及说的话表达出来，从而使内心趋于平和。第二，自我对话式。即自我存在冲突的两个部分展开对话，假如来访者内心有很大的冲突，又不知道如何解决时，可放置两张空椅子在来访者面前。来访者坐在其中一张椅子上时，扮演自己的某一部分；坐在另外一张椅子上时，则扮演自己的另一部分。依次进行对话，从而达到内心的整合。第三，他人对话式。此方式用于自己与他人之间的对话。操作时可放两张椅子在来访者面前，当来访者坐到一张椅子上时，扮演自己；坐在另一张椅子上时，则扮演他人。\n\n在本案例中，通过空椅子技术——他人对话式，让来访者体会到换位思考的重要性和必要性。来访者和好友小刘闹矛盾，虽然小刘身为班委没有以身作则，但她们之间的矛盾源于小阳拒绝帮助小刘的方式太过于直接，没有考虑对方的感受。每个人都比较悦纳赞美之声，当遭遇到拒绝时都会产生反感和不愉快的体验。因此，通过空椅子技术来指导来访者分析和体察对方的心理和情感，使其意识到委婉拒绝他人的艺术。另外，通过空椅子技术，还能启发来访者思考自己落选的原因，例如，为什么平时在班务工作上不能被同学们所理解，以及在和舍友小王矛盾激化的情况下，自己是否存在言语过激伤害到对方的情况。通过这种方式，逐渐让来访者体会到站在对方的角度上思考之后再来说话和做事的重要性，有利于创造和谐的人际关系。同时，通过空椅子技术，来访者能更深刻地理解父亲的操劳和疲倦，体谅父亲作为家中顶梁柱所承受的压力和焦虑。鼓励来访者和小王、小刘以及父亲进行真诚的沟通，多次尝试缓和矛盾，以此来改善人际关系冲突，进而改善睡眠质量。",
+      "metadata": {
+        "document_title": "tppc20240607373-378.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "空椅子技术：他人对话式操作流程",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "提升来访者对他人心理状态的觉察与共情能力，促发委婉沟通行为改变",
+        "task_family": "人际认知重构",
+        "method_family": "人本-存在主义",
+        "stage": "干预实施",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "77ed5c05-9d5d-5227-804b-2d3d8889b1bd",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 9,
+        "paragraph_end": 10,
+        "heading_path": [
+          "5 咨询方案的制订"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一例针对人际关系困扰的大学生心理咨询干预报告",
+          "1 案例背景",
+          "2 心理评估与诊断过程",
+          "3 原因分析",
+          "4 咨询目标的确定",
+          "6 咨询小结"
+        ],
+        "subsection_headings": [
+          "5.1　放松训练",
+          "5.2　理性情绪疗法[2]",
+          "5.3　空椅子技术[3]"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "在接待来访者过程中，咨询师使用共情、无条件积极关注、耐心倾听、情感反应和内容反应后，了解了小阳的基本情况，确定为一般心理问题。接下来与小阳协商一致，采用以下方法进行心理治疗。"
+      }
+    }
+  ]
+}

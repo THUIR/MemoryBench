@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "15202874-7234-5a20-b86b-cd461d565bab",
+  "skill_name": "初访 intake 会谈协议流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "cad14098-59a7-5cdf-af35-5e09185d1a9f",
+      "doc_id": "44fa1209-5fce-5cd5-8f7a-0907b747aa37",
+      "document_title": "公费师范生入学适应障碍辅导一例.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/公费师范生入学适应障碍辅导一例.md",
+      "section": "公费师范生入学适应障碍辅导一例",
+      "span": {
+        "start": 2634,
+        "end": 3011
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "(2)目的：建立良好的咨询关系、收集基本资料、选择适合的测量进行评估和诊断并签订协议。\n\n(3)方法：摄入性会谈,心理测试。\n\n(4)过程： $\\textcircled{1}$ 填写咨询记录表，询问基本情况，介绍咨询中的有关事项与规则; $\\textcircled{2}$ 倾听黄某诉说,鼓励其宣泄不良情绪，调整心态,获取黄某的信任和理解； $\\textcircled{3}$ 通过摄入性谈话收集临床资料，探寻黄某的心理矛盾及改变意愿； $\\textcircled{4}$ 指导黄某独立完成相关心理测验：SCL—90、SDS、SAS,分析资料及测量结果,做出评估与初步诊断。 $\\textcircled{5}$ 介绍心理咨询中双方的权责义和心理咨询的性质和限制，说明心理咨询过程中的保密原则以及咨询过程中的有关事项、规则及收费情况,并与黄某签订咨询协议。",
+      "metadata": {
+        "document_title": "公费师范生入学适应障碍辅导一例.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "初访 intake 会谈协议流程",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立信任关系、完成初步评估、确立咨询框架",
+        "task_family": "initial_assessment",
+        "method_family": "intake_interview",
+        "stage": "initial_session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "7d04d4a9-a0a6-5c49-bacf-47afa63e5f6c",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈"
+        ],
+        "paragraph_start": 34,
+        "paragraph_end": 36,
+        "heading_path": [
+          "公费师范生入学适应障碍辅导一例"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 乡村振兴战略背景下乡村环境改造的现状与发展趋势"
+        ],
+        "subsection_headings": [
+          "# 1一般资料",
+          "# 2主诉和个人陈述",
+          "# 3咨询师观察和同学反映",
+          "# 4心理测验结果",
+          "# 5评估与诊断[1]",
+          "# 6咨询目标的确定",
+          "# 7咨询方案的制定",
+          "# 8咨询过程"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "邓伟乔庆伟"
+      }
+    }
+  ]
+}

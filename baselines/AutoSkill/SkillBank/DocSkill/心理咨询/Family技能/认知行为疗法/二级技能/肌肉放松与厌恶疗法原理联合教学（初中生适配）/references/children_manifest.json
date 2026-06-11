@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "59778ea2-10f5-5eb9-b107-9b9fc5f93742",
+  "parent_name": "肌肉放松与厌恶疗法原理联合教学（初中生适配）",
+  "children": [
+    {
+      "skill_id": "ed6f6aeb-f755-52ee-86b7-b0c1ac0503ca",
+      "name": "橡皮圈注意力锚定干预",
+      "description": "一种基于操作性条件反射的简短行为自我调节技术，来访者在觉察到注意力漂移时，通过腕部橡皮圈轻弹产生可控微痛刺激，作为中性信号标记分心起点并触发‘暂停→觉察→再聚焦’的自动化反应链。",
+      "child_type": "attention_regulation",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "59778ea2-10f5-5eb9-b107-9b9fc5f93742",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "一种基于操作性条件反射的简短行为自我调节技术，来访者在觉察到注意力漂移时，通过腕部橡皮圈轻弹产生可控微痛刺激，作为中性信号标记分心起点并触发‘暂停→觉察→再聚焦’的自动化反应链。",
+      "selector_terms": [
+        "来访者自述或观察确认存在高频课堂注意力分散（如≥3次/课）",
+        "来访者具备基本元认知能力（能识别‘刚才走神了’）",
+        "来访者对自我调节有合作意愿且无躯体/情绪禁忌",
+        "行为干预",
+        "注意力调节",
+        "自我管理",
+        "厌恶疗法",
+        "CBT辅助技术",
+        "口头报告‘上课老想别的事’",
+        "作业完成率下降伴分心描述",
+        "咨询中出现明显注意力游移（如频繁看窗外、停顿超8秒）",
+        "橡皮圈注意力锚定干预",
+        "一种基于操作性条件反射的简短行为自我调节技术，来访者在觉察到注意力漂移时，通过腕部橡皮圈轻弹产生可控微痛刺激，作为中性信号标记分心起点并触发‘暂停→觉察→再聚焦’的自动化反应链。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/橡皮圈注意力锚定干预/SKILL.md"
+    }
+  ]
+}

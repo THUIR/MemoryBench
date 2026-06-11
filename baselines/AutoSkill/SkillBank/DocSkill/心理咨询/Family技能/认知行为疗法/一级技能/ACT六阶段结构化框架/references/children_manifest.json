@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "fac223de-06f6-5edc-a28e-8e3075af01f6",
+  "parent_name": "ACT六阶段结构化框架",
+  "children": [
+    {
+      "skill_id": "d0145de0-5ad1-5da9-9faf-c999f51b8c35",
+      "name": "ACT第四阶段：确立接纳的主体性与意愿性",
+      "description": "在ACT治疗框架中，于第四阶段起始会谈中向来访者清晰传达‘接纳’的核心定义——即一种主动、灵活、非评判的意愿性选择，而非被动忍受、认命或问题解决策略；锚定其作为经验性回避的替代路径，并确保来访者能用自己的语言复述出‘允许体验如其所是地存在’这一本质。",
+      "child_type": "治疗框架沟通",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "fac223de-06f6-5edc-a28e-8e3075af01f6",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在ACT治疗框架中，于第四阶段起始会谈中向来访者清晰传达‘接纳’的核心定义——即一种主动、灵活、非评判的意愿性选择，而非被动忍受、认命或问题解决策略；锚定其作为经验性回避的替代路径，并确保来访者能用自己的语言复述出‘允许体验如其所是地存在’这一本质。",
+      "selector_terms": [
+        "进入ACT接纳模块起始会谈",
+        "来访者反复表达'想消除痛苦'",
+        "需矫正'接纳=认命'误解",
+        "ACT",
+        "接纳",
+        "认知解离",
+        "经验性回避",
+        "阶段目标",
+        "来访者使用'我必须摆脱这个感觉'等绝对化表述",
+        "来访者将情绪评价为'不该有'或'错误的'",
+        "咨询中出现对'接纳'一词的困惑或抵触",
+        "ACT第四阶段：确立接纳的主体性与意愿性",
+        "在ACT治疗框架中，于第四阶段起始会谈中向来访者清晰传达‘接纳’的核心定义——即一种主动、灵活、非评判的意愿性选择，而非被动忍受、认命或问题解决策略；锚定其作为经验性回避的替代路径，并确保来访者能用自己的语言复述出‘允许体验如其所是地存在’这一本质。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/ACT第四阶段：确立接纳的主体性与意愿性/SKILL.md"
+    },
+    {
+      "skill_id": "495cead7-af7f-5ccc-8463-7c51aebcb6be",
+      "name": "情绪外化作业布置",
+      "description": "指导来访者将情绪具象化为可观察的客体（如形状、颜色、大小），以增强心理距离、削弱认知融合、降低经验性回避，是接纳与承诺疗法（ACT）中促进接纳意愿的关键家庭作业。",
+      "child_type": "情绪调节",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "fac223de-06f6-5edc-a28e-8e3075af01f6",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "指导来访者将情绪具象化为可观察的客体（如形状、颜色、大小），以增强心理距离、削弱认知融合、降低经验性回避，是接纳与承诺疗法（ACT）中促进接纳意愿的关键家庭作业。",
+      "selector_terms": [
+        "来访者对情绪体验高度回避",
+        "需强化解离后的接纳意愿",
+        "家庭作业依从性良好",
+        "ACT",
+        "情绪外化",
+        "认知解离",
+        "家庭作业",
+        "具象化",
+        "来访者频繁使用‘我就是…’句式（如‘我就是个失败者’）",
+        "情绪描述抽象且自我卷入（如‘我整个人都垮了’）",
+        "在解离练习后仍难以松动对情绪内容的评判",
+        "情绪外化作业布置",
+        "指导来访者将情绪具象化为可观察的客体（如形状、颜色、大小），以增强心理距离、削弱认知融合、降低经验性回避，是接纳与承诺疗法（ACT）中促进接纳意愿的关键家庭作业。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/情绪外化作业布置/SKILL.md"
+    }
+  ]
+}

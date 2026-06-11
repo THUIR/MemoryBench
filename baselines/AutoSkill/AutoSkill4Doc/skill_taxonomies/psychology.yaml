@@ -1,0 +1,182 @@
+{
+  "taxonomy_id": "psychology",
+  "domain_type": "psychology",
+  "display_name": "Psychology",
+  "default_base_type": "session_skill",
+  "family_axis": "疗法",
+  "default_family_name": "通用心理咨询",
+  "domain_root": {
+    "id": "psychology",
+    "name": "心理咨询",
+    "name_zh": "心理咨询",
+    "name_en": "Psychology Counseling"
+  },
+  "visible_levels": {
+    "root_label": "总技能",
+    "family_bucket_label": "Family技能",
+    "level_labels": {
+      "1": "一级技能",
+      "2": "二级技能",
+      "3": "微技能"
+    }
+  },
+  "family_candidates": [
+    {
+      "id": "psychodynamic",
+      "name": "Psychodynamic（心理动力学）",
+      "visible_name": "心理动力学",
+      "aliases": ["Psychodynamic", "心理动力学", "psychodynamic", "psychodynamic therapy"],
+      "keywords": ["动力学", "移情", "防御机制", "潜意识"]
+    },
+    {
+      "id": "behaviorism",
+      "name": "Behaviorism（行为主义）",
+      "visible_name": "行为主义",
+      "aliases": ["Behaviorism", "行为主义", "behaviorism", "behavior therapy", "行为治疗"],
+      "keywords": ["行为矫正", "强化", "条件反射", "暴露"]
+    },
+    {
+      "id": "cbt",
+      "name": "CBT（认知行为疗法）",
+      "visible_name": "认知行为疗法",
+      "aliases": ["CBT", "认知行为疗法", "cognitive behavioral therapy"],
+      "keywords": ["自动思维", "认知重评", "ABC", "行为实验", "作业"]
+    },
+    {
+      "id": "humanistic_existentialist",
+      "name": "Humanistic Existentialist（人本-存在主义）",
+      "visible_name": "人本-存在主义",
+      "aliases": [
+        "Humanistic Existentialist",
+        "人本-存在主义",
+        "humanistic existentialist",
+        "humanistic therapy",
+        "existential therapy",
+        "人本主义",
+        "存在主义"
+      ],
+      "keywords": ["共情", "无条件积极关注", "存在", "意义", "自我实现"]
+    },
+    {
+      "id": "postmodernist",
+      "name": "Postmodernist（后现代主义）",
+      "visible_name": "后现代主义",
+      "aliases": [
+        "Postmodernist",
+        "后现代主义",
+        "postmodernist",
+        "solution-focused",
+        "narrative therapy",
+        "叙事疗法",
+        "焦点解决"
+      ],
+      "keywords": ["例外", "资源取向", "叙事", "解构", "焦点解决"]
+    }
+  ],
+  "asset_types": [
+    {
+      "base_type": "macro_protocol",
+      "label": "treatment_framework",
+      "description": "A broader treatment framework or reusable macro-level counseling protocol.",
+      "aliases": ["treatment_framework", "macro_protocol", "framework", "treatment_system"]
+    },
+    {
+      "base_type": "session_skill",
+      "label": "session_intervention",
+      "description": "One counseling session-phase workflow or intervention scaffold.",
+      "aliases": ["session_intervention", "session_skill", "session", "case_intervention"]
+    },
+    {
+      "base_type": "micro_skill",
+      "label": "micro_intervention",
+      "description": "One therapist move or small counseling micro-sequence.",
+      "aliases": ["micro_intervention", "micro_skill", "reflection_move", "reframe_move"]
+    },
+    {
+      "base_type": "safety_rule",
+      "label": "risk_rule",
+      "description": "Risk screening, escalation, crisis stabilization, referral, or safety planning rule.",
+      "aliases": ["risk_rule", "safety_rule", "crisis_rule", "referral_rule"]
+    },
+    {
+      "base_type": "knowledge_reference",
+      "label": "case_reference",
+      "description": "Reference-style conceptual knowledge, case formulation notes, or psychoeducation content.",
+      "aliases": ["case_reference", "knowledge_reference", "psychoeducation_reference", "reference"]
+    }
+  ],
+  "asset_tree": [
+    {
+      "id": "family_root",
+      "label_zh": "总技能",
+      "label_en": "Family Root",
+      "base_type": "macro_protocol",
+      "level": 0,
+      "parent": null,
+      "visible_role": "root",
+      "allowed_children": ["treatment_framework", "safety_module"],
+      "extractable": false,
+      "synthesized": true
+    },
+    {
+      "id": "treatment_framework",
+      "label_zh": "一级技能",
+      "label_en": "First-Level Skill",
+      "base_type": "macro_protocol",
+      "level": 1,
+      "parent": "family_root",
+      "visible_role": "parent",
+      "allowed_children": ["session_framework"],
+      "default_for_base_type": true,
+      "aliases": ["framework", "treatment_framework", "一级技能", "macro_framework", "treatment_system"]
+    },
+    {
+      "id": "session_framework",
+      "label_zh": "二级技能",
+      "label_en": "Second-Level Skill",
+      "base_type": "session_skill",
+      "level": 2,
+      "parent": "treatment_framework",
+      "visible_role": "parent",
+      "allowed_children": ["micro_intervention"],
+      "default_for_base_type": true,
+      "aliases": ["session_framework", "二级技能", "session_intervention"]
+    },
+    {
+      "id": "micro_intervention",
+      "label_zh": "微技能",
+      "label_en": "Micro Skill",
+      "base_type": "micro_skill",
+      "level": 3,
+      "parent": "session_framework",
+      "visible_role": "leaf",
+      "allowed_children": [],
+      "default_for_base_type": true,
+      "aliases": ["micro_intervention", "微技能"]
+    },
+    {
+      "id": "safety_module",
+      "label_zh": "一级技能",
+      "label_en": "Safety Module",
+      "base_type": "safety_rule",
+      "level": 1,
+      "parent": "family_root",
+      "visible_role": "parent",
+      "allowed_children": ["safety_micro"],
+      "default_for_base_type": false,
+      "aliases": ["safety_module", "risk_module", "风险模块", "safety_parent"]
+    },
+    {
+      "id": "safety_micro",
+      "label_zh": "二级技能",
+      "label_en": "Safety Micro Skill",
+      "base_type": "safety_rule",
+      "level": 2,
+      "parent": "safety_module",
+      "visible_role": "leaf",
+      "allowed_children": [],
+      "default_for_base_type": true,
+      "aliases": ["safety_micro", "risk_rule", "safety_rule", "危机规则"]
+    }
+  ]
+}

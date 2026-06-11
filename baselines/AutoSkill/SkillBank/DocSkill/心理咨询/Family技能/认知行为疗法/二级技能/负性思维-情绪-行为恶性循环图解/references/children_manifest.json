@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "0e3ee1f1-64eb-5003-b3ae-891a0c38d7bb",
+  "parent_name": "负性思维-情绪-行为恶性循环图解",
+  "children": [
+    {
+      "skill_id": "2498d065-bece-5cd0-a622-b803b6fcd8f1",
+      "name": "CBT自动思维反驳话术模板",
+      "description": "提供一组结构化、可复用的自我反驳语句，用于挑战‘我不行’类核心负性自动思维，适用于咨询中引导来访者进行认知重构练习。",
+      "child_type": "cognitive_restructuring",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "0e3ee1f1-64eb-5003-b3ae-891a0c38d7bb",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "提供一组结构化、可复用的自我反驳语句，用于挑战‘我不行’类核心负性自动思维，适用于咨询中引导来访者进行认知重构练习。",
+      "selector_terms": [
+        "来访者报告'我不行'类绝对化自我评价",
+        "已识别出具体自动思维内容",
+        "来访者具备基本抽象思维能力",
+        "CBT",
+        "认知重构",
+        "自动思维",
+        "反驳话术",
+        "自我对话",
+        "口语化使用‘我就是不行’‘我永远做不好’等全称判断",
+        "伴随自我贬低语气或身体退缩姿态",
+        "在成功经验前仍坚持负面自我归因",
+        "CBT自动思维反驳话术模板",
+        "提供一组结构化、可复用的自我反驳语句，用于挑战‘我不行’类核心负性自动思维，适用于咨询中引导来访者进行认知重构练习。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/CBT自动思维反驳话术模板/SKILL.md"
+    },
+    {
+      "skill_id": "a3f7ff35-0f7a-5a93-9720-182d869d0a1b",
+      "name": "合理情绪想象技术实施",
+      "description": "指导来访者在安全状态下想象重历困扰情境，同步植入新合理观念，并即时记录情绪变化，强化认知-情绪联结的积极转化。",
+      "child_type": "认知行为巩固",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "0e3ee1f1-64eb-5003-b3ae-891a0c38d7bb",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "指导来访者在安全状态下想象重历困扰情境，同步植入新合理观念，并即时记录情绪变化，强化认知-情绪联结的积极转化。",
+      "selector_terms": [
+        "来访者已完成不合理信念辩论并初步接受替代性合理观念",
+        "当前会谈中情绪稳定、具象化能力良好",
+        "家庭作业显示能识别自动思维与情绪关联",
+        "CBT",
+        "情绪ABC",
+        "认知重构",
+        "意象技术",
+        "家庭作业衔接",
+        "来访者能复述新合理观念",
+        "能配合意象引导（如‘我能想象那个场景’）",
+        "自评情绪强度在3–6/10区间",
+        "合理情绪想象技术实施",
+        "指导来访者在安全状态下想象重历困扰情境，同步植入新合理观念，并即时记录情绪变化，强化认知-情绪联结的积极转化。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/合理情绪想象技术实施/SKILL.md"
+    }
+  ]
+}

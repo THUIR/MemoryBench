@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "ddbca0d6-a311-5a6c-8282-650da85b8c4a",
+  "parent_name": "ACT初次咨询结构化开场",
+  "children": [
+    {
+      "skill_id": "ea3b28b7-03d7-5436-847c-8c0680c3982b",
+      "name": "ACT创造性无望四问引导",
+      "description": "依序提出四个结构化问题（尝试过哪些方法？效果如何？是否达目标？引发哪些新问题？），引导来访者觉察旧有应对模式的无效性与功能代价，激发改变动机，为接纳与价值行动铺路。适用于来访者仍深陷‘控制-回避’循环且未意识到改变必要性时。",
+      "child_type": "动机激发",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "ddbca0d6-a311-5a6c-8282-650da85b8c4a",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "依序提出四个结构化问题（尝试过哪些方法？效果如何？是否达目标？引发哪些新问题？），引导来访者觉察旧有应对模式的无效性与功能代价，激发改变动机，为接纳与价值行动铺路。适用于来访者仍深陷‘控制-回避’循环且未意识到改变必要性时。",
+      "selector_terms": [
+        "来访者将问题归因为意志力不足",
+        "反复使用相同无效策略",
+        "尚未体验到当前应对方式的代价",
+        "ACT",
+        "创造性无望",
+        "动机访谈",
+        "解离准备",
+        "结构化提问",
+        "用‘我就是管不住自己’等自我指责语言描述问题",
+        "列举多种相似行为策略（如‘我试过删APP、换手机、求室友监督’）",
+        "未提及策略带来的次生困扰（如失眠加重、关系疏离、学业滑坡）",
+        "ACT创造性无望四问引导",
+        "依序提出四个结构化问题（尝试过哪些方法？效果如何？是否达目标？引发哪些新问题？），引导来访者觉察旧有应对模式的无效性与功能代价，激发改变动机，为接纳与价值行动铺路。适用于来访者仍深陷‘控制-回避’循环且未意识到改变必要性时。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/ACT创造性无望四问引导/SKILL.md"
+    },
+    {
+      "skill_id": "31a08e72-d858-544b-8789-b542e782a58c",
+      "name": "双山隐喻关系建立技术",
+      "description": "用‘双山隐喻’向来访者传递咨询师是人生同行者而非权威指导者的立场，降低防御，促进平等感与心理安全。适用于来访者呈现疏离、自我贬低或对咨询角色误解时。",
+      "child_type": "关系建立",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "ddbca0d6-a311-5a6c-8282-650da85b8c4a",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "用‘双山隐喻’向来访者传递咨询师是人生同行者而非权威指导者的立场，降低防御，促进平等感与心理安全。适用于来访者呈现疏离、自我贬低或对咨询角色误解时。",
+      "selector_terms": [
+        "来访者首次会谈中出现明显迟疑、回避眼神、身体后倾或言语自我贬低",
+        "ACT",
+        "关系建立",
+        "隐喻技术",
+        "初始阶段",
+        "心理安全",
+        "言语中透露‘咨询师会批评我’或‘我不配被帮助’等信念",
+        "使用‘应该’‘必须’‘永远不行’等绝对化语言描述自身",
+        "回避谈论感受，仅陈述事实性信息",
+        "双山隐喻关系建立技术",
+        "用‘双山隐喻’向来访者传递咨询师是人生同行者而非权威指导者的立场，降低防御，促进平等感与心理安全。适用于来访者呈现疏离、自我贬低或对咨询角色误解时。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/双山隐喻关系建立技术/SKILL.md"
+    }
+  ]
+}

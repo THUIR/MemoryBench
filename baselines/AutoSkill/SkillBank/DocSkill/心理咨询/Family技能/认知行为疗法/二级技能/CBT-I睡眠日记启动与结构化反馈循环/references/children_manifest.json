@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "278cd7a9-ed6b-5edf-b28f-de6a76cca141",
+  "parent_name": "CBT-I睡眠日记启动与结构化反馈循环",
+  "children": [
+    {
+      "skill_id": "6c5cf39d-af3f-5f4f-b2fb-32d22ac41dfa",
+      "name": "睡眠高期待调整与理性认知重建技术",
+      "description": "针对睡眠困扰中的非理性期待（如‘必须立刻入睡’‘不能早醒’），结合心理教育、正念与放松技术，帮助来访者建立符合生理规律的睡眠认知与行为预期。",
+      "child_type": "行为激活与认知调整",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "278cd7a9-ed6b-5edf-b28f-de6a76cca141",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "针对睡眠困扰中的非理性期待（如‘必须立刻入睡’‘不能早醒’），结合心理教育、正念与放松技术，帮助来访者建立符合生理规律的睡眠认知与行为预期。",
+      "selector_terms": [
+        "来访者报告睡眠困扰伴明显完美主义期待",
+        "存在‘只有睡好才能学习’等条件化信念",
+        "CBT",
+        "睡眠干预",
+        "中间信念",
+        "正念",
+        "放松训练",
+        "心理教育",
+        "来访者描述睡眠时有强烈自我监控（如频繁看表、反复评估是否‘已睡着’）",
+        "提及‘睡不好=失败’‘早醒=失控’等绝对化语言",
+        "对睡眠环境或时间安排表现出过度控制倾向",
+        "睡眠高期待调整与理性认知重建技术",
+        "针对睡眠困扰中的非理性期待（如‘必须立刻入睡’‘不能早醒’），结合心理教育、正念与放松技术，帮助来访者建立符合生理规律的睡眠认知与行为预期。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/睡眠高期待调整与理性认知重建技术/SKILL.md"
+    }
+  ]
+}

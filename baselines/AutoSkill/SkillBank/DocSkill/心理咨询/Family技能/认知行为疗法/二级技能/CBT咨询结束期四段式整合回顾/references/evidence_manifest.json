@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "2f5ca41e-f55a-5a4a-8dc7-a10b999b10ae",
+  "skill_name": "CBT咨询结束期四段式整合回顾",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "e3d3fa69-8e7a-5870-b840-8cd36a402db0",
+      "doc_id": "20004f49-02ee-50b1-b840-185dd705ed13",
+      "document_title": "一例专业调剂引发适应不良的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例专业调剂引发适应不良的心理咨询案例报告.md",
+      "section": "七、咨询过程",
+      "span": {
+        "start": 2185,
+        "end": 2511
+      },
+      "relation_type": "support",
+      "confidence": 0.93,
+      "quote": "第四次：分析合理自我分析报告，引导来访者进一步纠正错误认知,使其客观、理性地看待自己的现状,改变因专业调剂而带来的压抑、不适应等负面情绪,增强其大学学习和生活的信心。\n\n布置作业：进行霍兰德职业测评,绘制职业生涯彩虹图。\n\n第五次：通过分析职业测评结果,引导来访者进行自我探索,同时，通过介绍历届南丁格尔获奖者事迹等典型案例,引导来访者对护理行业和未来发展进行重新定位,树立新的学习和人生目标。\n\n布置作业：练习放松训练。\n\n(三)结束与巩固阶段\n此阶段为咨询的第六次，来访者精神状态比较放松,通过回顾整个咨询过程,使其了解情绪问题的产生根源及目前为止自身的变化,使其有清晰、正确的认知，同时，督促来访者将学到的东西应用到未来的学习和生活中,结束咨询。",
+      "metadata": {
+        "document_title": "一例专业调剂引发适应不良的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "咨询结束期整合性回顾技术",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "巩固改变并促进泛化",
+        "task_family": "咨询结束管理",
+        "method_family": "CBT",
+        "stage": "结束与巩固阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "df925528-a31b-5776-9cd8-32a021fc375c",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 4,
+        "paragraph_end": 8,
+        "heading_path": [
+          "七、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、一般资料",
+          "二、主诉和个人陈述",
+          "三、咨询师观察和他人反映的情况",
+          "四、评估与诊断",
+          "五、咨询目标的制定",
+          "六、咨询方案的制定"
+        ],
+        "subsection_headings": [
+          "（一)诊断阶段",
+          "(二)咨询阶段",
+          "(三)结束与巩固阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "师生间建立良好的咨询关系,收集相关信息，进行心理诊断,确立咨询目标,制定实施方案。通过前两次的咨询基本完成本阶段的任务。"
+      }
+    }
+  ]
+}

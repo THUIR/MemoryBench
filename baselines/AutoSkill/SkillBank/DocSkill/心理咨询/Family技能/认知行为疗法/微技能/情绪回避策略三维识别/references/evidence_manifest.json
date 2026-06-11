@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "bdabcb3b-d009-5505-bbd3-05228fad5d8f",
+  "skill_name": "情绪回避策略三维识别",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "d27fc0b2-75e8-5f20-b964-12ce99f12977",
+      "doc_id": "ccd9a004-1d95-5a88-bcf3-412977a8bd9f",
+      "document_title": "tppc20250704198-210.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20250704198-210.md",
+      "section": "3 咨询过程",
+      "span": {
+        "start": 9687,
+        "end": 10448
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "![](images/719b2b7c3f126a8cd8c4d0e9fd9170b7cc9f381889a9e455bb0d765178bd1a19.jpg)  \n图3信念程度标尺  \nFigure 3Belief level scale\n\n3.4　第11-12次咨询\n在认知重建阶段后，W自述情绪状况明显改善，睡眠也恢复正常，其对人际关系的态度变得更加客观，且具备了一定的情绪调节能力。然而，当尝试回归校园环境时，仍出现显著的生理性焦虑反应，如心跳加快、脸红、手心出汗等，这提示着W对社交情境的生理反应仍具有较高敏感性。基于上述表现，咨询师引导W识别其在焦虑情境中常见的情绪回避策略，帮助其理解这些策略虽可在短期内缓解不适，但长此以往反而会固化焦虑模式。为此，W在咨询师的协助下填写了“情绪回避策略清单”（详见表3），系统梳理其在社交情境中的行为、认知及安全信号型回避模式。同时，为后续暴露训练做准备，W进一步完成了“社交焦虑等级情境表”（详见表4），对其焦虑情境进行主观排序，作为逐级暴露任务设计的依据。最终，咨询师与W共同制定了暴露训练计划，旨在有序递进地帮助W面对其焦虑情境，降低回避行为，逐步适应真实社交环境中的生理反应与情绪波动。\n\n表3情绪回避策略清单  \nTable 3Checklist of emotional avoidance strategies\n\n<table><tr><td>细微的行为回避</td><td>认知回避</td><td>安全信号</td></tr><tr><td>来回走动</td><td>里演练</td><td>在与陌生人说话之前不停地小步 心里默默地把想要说的话不停地在心 穿衣尽量选择没有亮点、宽松朴素的衣物， 降低被关注的可能</td></tr></table>",
+      "metadata": {
+        "document_title": "tppc20250704198-210.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "情绪回避策略三维识别",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "提升来访者对维持性回避机制的元认知觉察",
+        "task_family": "avoidance_mapping",
+        "method_family": "CBT",
+        "stage": "cognitive_restructuring",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "5352ff32-18bd-56c5-bb14-d0774ea59fb2",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "清单"
+        ],
+        "paragraph_start": 9,
+        "paragraph_end": 12,
+        "heading_path": [
+          "3 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "社交焦虑障碍的认知行为治疗案例",
+          "1 个案情况",
+          "2干预方案",
+          "表1行为功能分析表",
+          "表4社交焦虑等级情境表",
+          "4 咨询效果评估"
+        ],
+        "subsection_headings": [
+          "3.1　第1-3次咨询",
+          "3.2　第4-8次咨询",
+          "3.3　第9-10次咨询",
+          "3.4　第11-12次咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "初始阶段，咨询的核心目标包括：建立良好的咨询联盟，收集个案信息，初步形成个案假设，并与来访者共同制定咨询目标。认知行为治疗的基本原则之一是“需要一个良好的咨询联盟”，因此前三次面谈的关键任务在于为后续的干预建立稳定的合作基础与信任感，使W能够在安全的氛围中逐渐开放自己，愿意面对自身问题。"
+      }
+    }
+  ]
+}

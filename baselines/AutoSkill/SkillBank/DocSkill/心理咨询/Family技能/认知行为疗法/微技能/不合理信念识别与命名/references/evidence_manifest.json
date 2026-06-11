@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "36f904e1-3f83-5822-90e4-722b7fbb50c0",
+  "skill_name": "不合理信念识别与命名",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "bfceefb1-482d-5d27-8914-2a381d6aa4f3",
+      "doc_id": "0f50c561-4681-512f-98d3-f530b000f23f",
+      "document_title": "基于合理情绪疗法的1例大学生情感问题咨询案例_王文龙.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于合理情绪疗法的1例大学生情感问题咨询案例_王文龙.md",
+      "section": "7咨询阶段与实施过程",
+      "span": {
+        "start": 3149,
+        "end": 3586
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "在本次咨询中，咨询师发现小宇有如下的不合理信念：我不够优秀，所以没有女生会喜欢我；我现在的生活需要一个女朋友，否则就感觉生活没有意思；我现在的心情很乱，感觉自己没有能力面对学习或工作；错过这个女孩，或许我一辈子再也遇见不到让我心动的女孩。\n\n咨询师与小宇对不合理信念进行讨论和反思，让小宇领悟到，自己现在就读于一所不错的学校，成绩也很好，所以相比很多人自己还是比较优秀的。另外，虽然小宇认为自己急需找个女朋友，但也承认不是没有女朋友生活就没有其他乐趣了，自己也有诸多的爱好，比如踢球和旅行。小宇还认识到，现在学习效率的下降不是自己没有能力学好，只是因为现阶段的心情不好所影响，如果心情好了，学习效率自然就会提高。\n\n布置作业：要求小宇每日记录想到对方的次数和时间长度；让小宇每天找出一条自己的优点，并对其进行详细描述；继续思考上述的不合理信念。\n\n# 7.3深入咨询阶段（第3～5次咨询）\n\n目的：帮助小宇修正或放弃原有不合理信念；帮助小宇建立合理信念，减轻或消除情绪困扰。",
+      "metadata": {
+        "document_title": "基于合理情绪疗法的1例大学生情感问题咨询案例_王文龙.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "不合理信念识别与命名",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "识别并命名不合理信念",
+        "task_family": "认知评估",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "问题评估",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "57329c0b-182f-5046-bed8-30919fd52f0d",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "作业"
+        ],
+        "paragraph_start": 7,
+        "paragraph_end": 11,
+        "heading_path": [
+          "7咨询阶段与实施过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 主诉和个人陈述",
+          "3 外部信息",
+          "4心理问题评估",
+          "5 咨询目标",
+          "6 咨询方案"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 7.1问题评估阶段（第1次咨询）"
+      }
+    }
+  ]
+}

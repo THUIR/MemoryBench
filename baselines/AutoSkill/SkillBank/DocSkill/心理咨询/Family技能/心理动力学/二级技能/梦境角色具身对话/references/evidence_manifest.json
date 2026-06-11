@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "4d79dfe7-531c-533a-ab43-79f529023f5f",
+  "skill_name": "梦境角色具身对话",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "5888845b-6d28-5729-be70-eb264aa33b9e",
+      "doc_id": "d7d235f4-1e46-54ee-841d-71eb10144e5c",
+      "document_title": "pc202406122288-2292.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/pc202406122288-2292.md",
+      "section": "2梦的对话",
+      "span": {
+        "start": 4135,
+        "end": 4650
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "2.2案例示意\n有一个来访者的梦境是：笼里有三只猴子，一大二小，虽然它们显得极为吵闹，但他们却很吸引我，大小猴子后来彼此打架，最后竟跑出笼子爬到我身上，我把它们推开，它们在我周围继续争吵，简直令我无法忍受：我转身想去告诉妈妈，我需要帮助，因我已无法再控制这些猴子，它们简直快要令我发疯。我感觉非常悲伤、疲倦和泄气、我离开笼子，同时也想我的确爱这些猴子，但我必须放弃它们：我告诉自己也像别人一样，在平常喜爱宠物、而当情况变化时就想弃它们而去，我极力地想寻找解决的办法以保留这些猴子，不使这些可怕的结果发生。我决定把猴子继续关在笼子里，我想这也许是保住它们的方法。\n\n咨询师接着要求当事人“变成”她梦里的每个部分。即要“变成”笼子、“变成”猴子，并且跟每只猴子说话，再“变成”它们的妈妈等。此项技术最具效力的地方就在于当来访者叙述它的梦境时，就好像这梦正在进行一样。她迅速地察觉到她梦里所表现的挣扎正代表着她和丈夫及两个小孩间的斗争。从对话中，来访者也发现她既喜欢又怨恨她的家庭。她知道若让家人体察到她的感受，就必须与他们一起去改善长久以来紧张的生活步调。实际上，这些并不需要靠咨询师的解释来帮助她去了解梦境里所有显示的讯息。 [4]",
+      "metadata": {
+        "document_title": "pc202406122288-2292.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "梦中角色扮演对话",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "促进人格整合与情感觉察",
+        "task_family": "释梦干预",
+        "method_family": "心理动力学",
+        "stage": "中期探索",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "d426edde-679f-5cf7-bfad-dc5e22471e90",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 2,
+        "paragraph_end": 3,
+        "heading_path": [
+          "2梦的对话"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "释梦技术在心理咨询中的应用",
+          "1自由联想技术",
+          "3 “回到梦境本身”",
+          "4 伦诺克斯释梦三步法",
+          "5讨论"
+        ],
+        "subsection_headings": [
+          "2.1操作方法",
+          "2.2案例示意"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "格式塔咨询师皮尔斯（Friedrich Salomon Perls,1893－1970）认为，梦是通往整合的捷径，而非潜意识。他把梦境的每一部分都是自我的投射，即梦里的每个人、物都代表梦者的某个人格侧面，来访者不需要去对梦境作探索，而是要把梦当作一个剧本，然后让来访者扮演梦中出现的每一个形象进行对话，以此使来访者有机会觉察到自己内心的情感世界[4] 。"
+      }
+    }
+  ]
+}

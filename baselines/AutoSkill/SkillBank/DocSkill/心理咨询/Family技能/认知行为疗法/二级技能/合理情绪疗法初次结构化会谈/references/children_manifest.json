@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "4c58a81e-f6aa-52f3-945c-46a8c4722eeb",
+  "parent_name": "合理情绪疗法初次结构化会谈",
+  "children": [
+    {
+      "skill_id": "d159c18a-87e5-50ed-b624-6402b31a0744",
+      "name": "RET不合理信念识别与归因澄清",
+      "description": "在第二次咨询中通过引导式提问与归因分析，帮助求助者识别‘糟糕至极’类非理性信念，并将其与具体情绪反应（如焦虑）建立因果联结。",
+      "child_type": "cognitive_identification",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "4c58a81e-f6aa-52f3-945c-46a8c4722eeb",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在第二次咨询中通过引导式提问与归因分析，帮助求助者识别‘糟糕至极’类非理性信念，并将其与具体情绪反应（如焦虑）建立因果联结。",
+      "selector_terms": [
+        "求助者已建立基本信任",
+        "存在明显灾难化归因（如将父亲感冒等同于死亡）",
+        "焦虑情绪有清晰外部诱因线索",
+        "RET",
+        "合理情绪疗法",
+        "归因澄清",
+        "灾难化思维",
+        "信念-情绪联结",
+        "求助者主动提及身体症状（如心悸、失眠）并关联特定生活事件",
+        "语言中出现绝对化、以偏概全、糟糕至极表述（如‘肯定’‘必然’‘完了’‘永远’）",
+        "情绪反应强度显著超过事件客观风险",
+        "RET不合理信念识别与归因澄清",
+        "在第二次咨询中通过引导式提问与归因分析，帮助求助者识别‘糟糕至极’类非理性信念，并将其与具体情绪反应（如焦虑）建立因果联结。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/RET不合理信念识别与归因澄清/SKILL.md"
+    }
+  ]
+}

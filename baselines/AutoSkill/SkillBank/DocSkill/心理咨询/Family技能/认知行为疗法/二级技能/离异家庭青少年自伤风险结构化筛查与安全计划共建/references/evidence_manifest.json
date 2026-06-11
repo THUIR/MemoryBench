@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "c349494d-f8ee-5b2d-9c86-e75d80f7952b",
+  "skill_name": "离异家庭青少年自伤风险结构化筛查与安全计划共建",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "9b78dd2e-337c-5a68-9f30-0b246c69bff7",
+      "doc_id": "3683d18f-fdf7-5626-a586-1253ab0b681f",
+      "document_title": "1例离异家庭学生的心理辅导案例_任媚.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例离异家庭学生的心理辅导案例_任媚.md",
+      "section": "4心理咨询方案",
+      "span": {
+        "start": 2869,
+        "end": 3310
+      },
+      "relation_type": "constraint",
+      "confidence": 0.95,
+      "quote": "根据以上评估和分析，心理咨询师与来访者讨论后共同确立此咨询方案。\n\n4.1咨询目标\n近期目标： $\\textcircled{1}$ 通过及时的心理疏导和干预，规避来访者进行自我伤害的风险。 $\\textcircled{2}$ 采用倾诉，放松训练等方式帮助来访者进行情绪管理，掌握情绪调节方法，缓解来访者消极情绪。 $\\textcircled{3}$ 运用情绪ABC理论，让来访者认识到认知偏差，形成正确的认知方式，正确认识自己和积极悦纳自己。 $\\textcircled{4}$ 利用焦点解决短期疗法帮助来访者确立问题解决的信心，找到解决问题困扰的方法，缓和与母亲的关系。\n\n长期目标：调节来访学生的消极情绪，恢复正常的生活和学习状态，不断完善来访学生的个性品质，逐渐提升来访者的心理健康水平，促进其身心发展。\n\n4.2 咨询方法\n情绪宣泄法：来访学生情绪不稳定，与母亲长期关系不和，内心痛苦、孤单，因此，在咨询过程中使用情绪宣泄法。让来访者释放内心的压抑与不满，缓解抑郁痛苦情绪。",
+      "metadata": {
+        "document_title": "1例离异家庭学生的心理辅导案例_任媚.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "离异家庭学生危机风险规避协议",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "safety_micro",
+        "asset_path": "family_root/safety_module/safety_micro",
+        "asset_level": 2,
+        "visible_role": "leaf",
+        "objective": "预防自伤行为发生",
+        "task_family": "危机干预",
+        "method_family": "CBT",
+        "stage": "初始评估与目标设定",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "f2874c6a-ffce-58d5-b4d1-9cdb16cbf8bd",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "咨询目标"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "4心理咨询方案"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例离异家庭学生的心理辅导案例",
+          "1个案信息",
+          "2 来访者心理评估",
+          "3原因分析",
+          "5 辅导阶段及实施过程",
+          "6 辅导效果"
+        ],
+        "subsection_headings": [
+          "4.1咨询目标",
+          "4.2 咨询方法",
+          "4.3咨询设置"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "根据以上评估和分析，心理咨询师与来访者讨论后共同确立此咨询方案。"
+      }
+    }
+  ]
+}

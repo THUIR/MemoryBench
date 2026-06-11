@@ -1,0 +1,66 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "e7a9bf60-b439-5a0d-9ac6-4f8545e421cb",
+  "skill_name": "例外叙事编入",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "adfa073e-d78f-5653-8847-315632109278",
+      "doc_id": "74f3458d-fa16-50b7-8594-636272118ae2",
+      "document_title": "一例内观疗法结合叙事疗法提升双相情感障碍患者幸福感的个案报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/一例内观疗法结合叙事疗法提升双相情感障碍患者幸福感的个案报告.md",
+      "section": "3治疗原理",
+      "span": {
+        "start": 5819,
+        "end": 6027
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "# (3）建立新的故事\n\n治疗师引导患者把“例外\"编入期望故事。治疗师:“那你出院后有什么打算吗？”患者：“我出院后一定要好好吃药，不能再停药了，还要多迁就一下老公，他对我真的很好，对女儿应该也要宽容一点。以后不能太任性了，要好好的生活。”患者希望她能和“小红\"和平相处，并且能够借助“小红”的正能量继续生活，丰富人生。此阶段，患者积极主动配合治疗，会谈时表情专注、思维连贯、回答切题。\n\n# 3.2.4叙事治疗终止",
+      "metadata": {
+        "document_title": "一例内观疗法结合叙事疗法提升双相情感障碍患者幸福感的个案报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "例外叙事编入",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "将例外经验转化为可持续的自我叙事",
+        "task_family": "叙事重构",
+        "method_family": "后现代主义",
+        "stage": "故事重写",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "27aa737b-9eec-588a-95aa-1fc1db263e48",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "会谈"
+        ],
+        "paragraph_start": 21,
+        "paragraph_end": 23,
+        "heading_path": [
+          "3治疗原理"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1前言",
+          "2案例呈现",
+          "4治疗结果",
+          "5讨论"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 3.1方案制定"
+      }
+    }
+  ]
+}

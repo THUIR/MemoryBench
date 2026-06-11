@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "7f3c2ac7-0e26-51fc-b757-a8a4c7bcd0b0",
+  "skill_name": "未言说情绪的信件书写作业",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "fe0cec45-e707-5298-8d4e-eb0529b44966",
+      "doc_id": "53f17732-3712-5dde-9f7e-4253327ba9af",
+      "document_title": "基于整合型疗法的1例心理咨询案例报告_安琪.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于整合型疗法的1例心理咨询案例报告_安琪.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 6159,
+        "end": 6482
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "来访者：（又尝试了 $1 \\mathrm { m i n }$ ）我说不出来，老师，我真的 说不出来…\n\n咨询师：好的，说不出来没关系的，你能尽力做到现在已经很好了，我们慢慢来。那这次回去之后，我给你留一个咨询作业，你找到一个合适的时间，你感觉到安全的地点，像今天这样回忆当时发生的事情，尽可能地找到当时的情绪和感觉，并用写信的形式把没有对他们说出的话给写下来，在写的过程中如果你感觉到很难受千万不要勉强自己，写不完也没关系，也可以用我们上次练习的放松方法缓解。写完后你可以选择下次来的时候带给我，我们一起处理掉，也可以不给我自己处理，我不是想要通过这个了解当时发生了什么事情，只是希望你能完成这样一个过程，可以吗?\n\n来访者：好的，我回去试试。",
+      "metadata": {
+        "document_title": "基于整合型疗法的1例心理咨询案例报告_安琪.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "未言说情绪的信件书写作业",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促进情绪外化与安全表达",
+        "task_family": "情绪处理",
+        "method_family": "CBT",
+        "stage": "帮助和改变阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "2ba66cd9-c7a1-5093-9de2-4f2d386def0f",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 33,
+        "paragraph_end": 35,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "基于整合型疗法的1例心理咨询案例报告",
+          "1一般资料",
+          "2 主诉与个人陈述",
+          "3 评估与诊断",
+          "5 咨询师对案例的理解和分析"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：初始准备阶段",
+          "4.2第二阶段：帮助和改变阶段",
+          "4.3第三阶段：结束阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "主要工作是向来访者说明咨询设置（双方商定每周一下午在学校心理健康教育中心进行一次咨询，如有特殊情况无法进行，需提前24h向对方说明，每次咨询不超过50 min，在校大学生不收取费用）；详细介绍咨询基本原则，重点强调保密原则与保密例外原则；签署知情同意书；收集一般情况和背景信息；对来访者的问题进行初步评估与分析[3]；通过倾听、共情与来访者建立良好的咨访关系；"
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "人本-存在主义",
+  "profile_id": "psychology::人本_存在主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "87f6043f-d848-5fb0-9ebd-7d6b0a2d55c3",
+  "parent_name": "格式塔空椅子双焦点对话",
+  "children": [
+    {
+      "skill_id": "76d8c13e-cc73-570c-a4e8-190f4936bcf8",
+      "name": "格式塔空椅子双焦点对话",
+      "description": "在来访者存在未完成事件与自我分裂时，分步引导其与重要他人（如逝者）及过去自我进行空椅子对话，以修复体验循环、重建内在资源感。",
+      "child_type": "格式塔治疗",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "87f6043f-d848-5fb0-9ebd-7d6b0a2d55c3",
+      "level_label": "微技能",
+      "taxonomy_class": "人本-存在主义",
+      "applicable_when": "在来访者存在未完成事件与自我分裂时，分步引导其与重要他人（如逝者）及过去自我进行空椅子对话，以修复体验循环、重建内在资源感。",
+      "selector_terms": [
+        "来访者表达愧疚/自责并关联逝者嘱托",
+        "出现'我做不到'等无力化语言",
+        "能识别出关键成长节点（如15岁分离事件）",
+        "格式塔治疗",
+        "空椅子技术",
+        "未完成事件",
+        "自我整合",
+        "人本-存在主义",
+        "格式塔空椅子双焦点对话"
+      ],
+      "relative_path": "心理咨询/Family技能/人本-存在主义/微技能/格式塔空椅子双焦点对话/SKILL.md"
+    }
+  ]
+}

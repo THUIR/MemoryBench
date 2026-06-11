@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "bf2a8ab9-a138-5d8b-ab6d-822878ae5246",
+  "parent_name": "苏格拉底式灾难化认知解构三步法",
+  "children": [
+    {
+      "skill_id": "72d74d4a-4aec-55f6-ae02-d81faf0135ca",
+      "name": "苏格拉底式提问处理自动化思维",
+      "description": "在CBT干预中，针对来访者在具体情境下产生的绝对化、灾难化等自动化思维，通过结构化提问链引导其检验证据、识别认知扭曲（如以偏概全、读心术、灾难化预测），并协作生成更平衡、基于现实的替代性思维。",
+      "child_type": "cognitive_restructuring",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "bf2a8ab9-a138-5d8b-ab6d-822878ae5246",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在CBT干预中，针对来访者在具体情境下产生的绝对化、灾难化等自动化思维，通过结构化提问链引导其检验证据、识别认知扭曲（如以偏概全、读心术、灾难化预测），并协作生成更平衡、基于现实的替代性思维。",
+      "selector_terms": [
+        "来访者表达‘我肯定失败了’‘所有人都在嘲笑我’等绝对化/灾难化陈述",
+        "存在可锚定的具体事件（如奖学金落选）、即时情绪（沮丧）与行为反应（回避集体活动）",
+        "来访者能清晰描述情境细节，且语言连贯、逻辑基本完整",
+        "CBT",
+        "自动化思维",
+        "苏格拉底式提问",
+        "认知重构",
+        "认知扭曲",
+        "言语中出现‘永远’‘彻底’‘必须’‘应该’等绝对化用词",
+        "情绪反应强度显著高于事件客观严重性",
+        "行为回避与特定思维内容直接关联（如因‘被刺激’而回避奖学金话题）",
+        "苏格拉底式提问处理自动化思维",
+        "在CBT干预中，针对来访者在具体情境下产生的绝对化、灾难化等自动化思维，通过结构化提问链引导其检验证据、识别认知扭曲（如以偏概全、读心术、灾难化预测），并协作生成更平衡、基于现实的替代性思维。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/苏格拉底式提问处理自动化思维/SKILL.md"
+    }
+  ]
+}

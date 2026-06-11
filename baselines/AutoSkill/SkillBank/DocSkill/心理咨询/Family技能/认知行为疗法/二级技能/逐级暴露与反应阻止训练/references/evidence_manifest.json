@@ -1,0 +1,130 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "396dd4b0-c6b2-5009-aa4c-fdf00165197c",
+  "skill_name": "逐级暴露与反应阻止训练",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "654d6919-7ee4-5700-b348-af625099f4e4",
+      "doc_id": "45bbd2fd-a74a-5ef6-bfe8-7eb587aca876",
+      "document_title": "tppc20250708508-517.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20250708508-517.md",
+      "section": "3 咨询过程",
+      "span": {
+        "start": 8183,
+        "end": 9033
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "<table><tr><td>发生事件</td><td></td><td>自动思维对思维-100信</td><td>支持的证据</td><td>反对的证据</td><td></td><td>之后的做法和感受</td></tr><tr><td>别人碰了 我的手机</td><td></td><td>95</td><td>有 没有进行真正干 净的清洁，也没 有消毒</td><td>1每，都很多人 （3）细菌在门上面并不能 存活很长时间</td><td>80</td><td>是在外，当 酒精消毒湿巾擦了 手机和手</td></tr></table>\n\n经过多次逐级暴露训练，小C对“接触‘脏的东西’”的适应度显著提升，每次暴露训练后，清洁冲动也都有不同程度下降。同时，小C逐渐形成了一些新的、更加理性的信念，如“如果总不接触脏东西，自己的免疫力也会下降”“自己好像从大二开始一直处于过度担忧的状态，可能也不需要那么担心”等。小C反馈，强迫症状对生活的困扰已经明显减少，不那么“麻烦”，在她看来，自己最希望达成的咨询目标已经基本实现。\n\n3.4结束阶段及效果评估（第17次）\n本阶段中，咨询师与小C共同回顾整个咨询过程，评估小C各方面的改善情况，复习她此前学过的“应对强迫症状的经验和方法”，并在此基础上对未来生活进行展望。\n\n小C提到，本周自主尝试了一次“接触‘脏东西’后完全不清洁”——这既是一次更高强度的暴露与行为阻止训练，也是又一次新的现实检验。本次她成功坚持未进行清洁，且依然是没有发生任何担忧的负面结果，这让她对“面对之前觉得‘脏’的东西”更有信心。\n\n数据显示，小C的耶鲁—布朗强迫量表（Y-BOCS）总分从24分降至18分；同时，咨询师邀请小C进行了主观评估，结果如下：1.对“世界是不安全的”这一核心信念的相信程度从50分降至30分；2.认为强迫症状对日常生活的干扰程度整体下降 $30 \\%$ ；3.面对“脏东西”时的焦虑、不适感整体下降 $40 \\%$ ；4.清洁冲动也有整体减轻。",
+      "metadata": {
+        "document_title": "tppc20250708508-517.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "逐级暴露与反应阻止训练",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "降低对特定刺激的焦虑反应强度，削弱强迫行为与焦虑缓解之间的条件联结",
+        "task_family": "强迫症行为干预",
+        "method_family": "CBT",
+        "stage": "exposure_and_response_prevention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "6d2775e0-8159-582e-8d50-6fcb853f64e7",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "咨询目标",
+          "阶段",
+          "现实检验"
+        ],
+        "paragraph_start": 24,
+        "paragraph_end": 28,
+        "heading_path": [
+          "3 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 研究背景",
+          "2个案情况",
+          "4 总结与讨论"
+        ],
+        "subsection_headings": [
+          "3.1 信息收集阶段（第1-4次）",
+          "3.2不合理信念的发现与干预阶段（第5-8次）",
+          "3.3　暴露与反应阻止技术阶段（第9-16次）",
+          "3.4结束阶段及效果评估（第17次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "在这个阶段中，咨询的主要目的是了解小C的个人信息，同时建立良好的咨访关系，促进咨询的顺利推进。"
+      }
+    },
+    {
+      "support_id": "15d405b9-9c89-53bb-85f0-a853dc4c752c",
+      "doc_id": "2b41d4cc-6c10-5f8d-aec2-935459a45fcf",
+      "document_title": "一例强迫与焦虑心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例强迫与焦虑心理咨询案例报告.md",
+      "section": "六、咨询过程",
+      "span": {
+        "start": 4767,
+        "end": 5733
+      },
+      "relation_type": "support",
+      "confidence": 0.93,
+      "quote": "16岁是自我同一性形成的关键时期，也是价值观、人生观形成的重要时期，但是由于这个年龄段的不成熟性，导致来访学生的想法过于片面。\n\n认知行为疗法之父埃利斯认为，让人们产生困扰的不是事件本身，而是人们对这些事情的想法。认知行为疗法是一种短期治疗的方式，它更多关注“现在”而非过去。经过第一阶段建立良好关系后，针对来访学生的焦虑紧张情绪，辅导老师通过认知行为疗法同来访学生进行新的探讨。辅导老师首先向来访学生介绍情绪ABC基本理论，使来访学生明白自己情绪困扰的根本原因在于想法和信念的不合理，并说明其不合理信念与紧张、焦虑情绪之间的关系。其次，帮助来访学生找出不合理信念并进行质辩。对来访学生的“夏天是不幸运的”“别人根本看不起自己”“自己的身体很不好所以导致学习不好”等信念进行澄清与质辩，指出这些想法具有灾难化、极端化、绝对化等特点，辅导老师同来访学生一起对这些不合理的信念进行辩论，帮助来访学生认清其信念的不合理性，并放弃这些不合理的信念。并帮助来访学生建立新的合理观念，用合理观念代替不合理的思维方式，避免来访学生陷入负面情绪的恶性循环。\n\n最后，建立新的合理观念后，给来访学生指派认知家庭作业，在生活中遇到引起焦虑、紧张情绪的事件后，列出事件，找出不合理信念，质疑辩驳，产生新的合理想法，如用“可能”代替“必须”，用“最好”代替“应该”，用“偶尔”代替“绝对”。通过新的信念和自我暗示，来访学生会用不同的方式去思考和行动，这也会带给来访学生不同的感受和动力。\n\n第三阶段：运用“暴露一反应预防”，改善来访学生的强迫想法和行为。\n\n来访学生的“希望自己的物品完美无缺，有点小破损都觉得很遗憾”“自己写字，如果没有封□，就会觉得很难受，必须把口封上”“走在路上，如果不小心把左脚的鞋子弄响，那就一定要把右脚的鞋子故意弄响，才会觉得平衡”等，都属于强迫想法和强迫行为，或多或少地影响了他的正常生活，这也是来访学生主诉的问题。针对来访学生这一状况，在认知行为改变的基础上，辅导老师采用“暴露一反应预防”来改善来访学生的强迫状态。“暴露一反应预防”是让来访学生想象能够引起强迫行为的情景或让其真的暴露于引起强迫行为的情景，此时将引起来访学生强烈的情绪反应（焦虑、紧张不安、愤怒等），来访学生为了抵制这些情绪，会采用强迫行为来缓解紧张情绪。",
+      "metadata": {
+        "document_title": "一例强迫与焦虑心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ERP for mild-moderate OCD symptoms",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "exposure_and_response_prevention",
+        "task_family": "behavioral_intervention",
+        "method_family": "CBT",
+        "stage": "later_intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "84313670-c486-5bbb-b6bf-e014852c8ce1",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 5,
+        "paragraph_end": 9,
+        "heading_path": [
+          "六、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、案例概况",
+          "二、主述和个人陈述",
+          "三、心理评估",
+          "四、心理测量结果",
+          "五、咨询目标确定",
+          "六、咨询效果评估"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一阶段：建立有效的咨询关系，以来访学生为中心，倾听、共情为主，积极关注。"
+      }
+    }
+  ]
+}

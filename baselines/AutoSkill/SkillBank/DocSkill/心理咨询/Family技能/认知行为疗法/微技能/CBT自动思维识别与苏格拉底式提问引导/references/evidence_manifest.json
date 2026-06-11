@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "4ffc8b36-91a8-565d-a0d3-73c065bba4b1",
+  "skill_name": "CBT自动思维识别与苏格拉底式提问引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "f68dcd55-03b6-5623-88e1-2825beecafd5",
+      "doc_id": "fa697555-8adf-52eb-ab22-90c49334eaca",
+      "document_title": "基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 5634,
+        "end": 6568
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "![](images/e797df0546c7b9e8606550e4c0213a923d49b3e125a1822241ab030957452ee2.jpg)\n\n（6）家庭作业，通过：布置家庭作业；提高L成功完成家庭作业的可能性；把问题概念化；回顾完成家庭作业，来提升咨询效果，提高L认知和行为改变的可能性，增强其自我效能感。以下列举几项家庭作业。\n\n$\\textcircled{1}$ 利用家庭作业促使L不断做自我觉察，当L注意到自己情感、行为或生理上的功能不能改变时，识别自动思维；然后通过苏格拉底式提问、行为实验或者阅读有关认知的治疗记录来评估自己的认知，并做出反应。L通过这样的方式觉察到了自己的很多负性的自动思维，并矫正了不合理的认知，发展新的信念。在特定情境中识别自动思维和反应，内容如下。\n\n情境：晚上做完事躺到床上时感到很想哭\n\n←自动思维：我压力好大，我不能确定能把颁奖典礼搞得  \n完美无瑕←情感：沮丧←生理反应：身体沉重感←自动思维：如果我不能把颁奖典礼搞得完美无瑕怎么  \n办？老师怎么看我？同学怎么看我？←\n\n情感：焦虑\n\n←\n\n生理反应：心脏快速跳动、失眠“苏格拉底”式自我提问，内容如下。\n\n问题1：我刚才在想什么？（我可能不能把颁奖典礼搞得完美无瑕，那样的话我很失败）",
+      "metadata": {
+        "document_title": "基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT自动思维识别与苏格拉底式提问引导",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "识别并初步评估自动思维",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "正式咨询阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "248b4752-28f3-5130-82a2-bb2cd2ccfd45",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "苏格拉底"
+        ],
+        "paragraph_start": 42,
+        "paragraph_end": 51,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 基本信息",
+          "2 个案概念化",
+          "3 咨询方案",
+          "5 咨询效果",
+          "6 案例评价与反思"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：咨询关系建立与问题评估阶段（第1～2次）",
+          "4.2第二阶段：正式咨询阶段（第3～8次）",
+          "4.3第三阶段：巩固阶段（第9次）",
+          "4.4第四阶段：结束阶段（第10次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本阶段以建立良好的咨询关系为目标，以共情、接纳、积极关注等咨询态度营造安全的咨询氛围，缓解L的焦虑情绪。对L的困扰进行了了解，确定目前的主要困扰是：失眠、焦虑影响到学习、工作和生活，感到痛苦，渴望改善。收集相应资料，探寻自身改变的意愿，形成初步评估。初步评估：焦虑情绪。"
+      }
+    }
+  ]
+}

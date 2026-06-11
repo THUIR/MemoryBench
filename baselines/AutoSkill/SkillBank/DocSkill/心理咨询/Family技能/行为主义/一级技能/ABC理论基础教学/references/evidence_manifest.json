@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "ed83dd96-57f3-547c-97a7-4c54fbc538ff",
+  "skill_name": "ABC理论基础教学",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "fdf41e68-b524-58fa-bbee-90d5ac02b1e8",
+      "doc_id": "6c0482c4-d98b-5179-86d2-44bfa09e19e4",
+      "document_title": "1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+      "section": "7咨询原理",
+      "span": {
+        "start": 3289,
+        "end": 3695
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "7.1合理情绪疗法\n合理情绪疗法[2-4是Ellis于20世纪50年代首创的一种心理治疗理论和方法。依据原理：情绪来源于人的思想和观念，人能通过控制想法来调整情绪。核心理论简称ABC理论，A代表事件本身，B代表不合理看法，C代表事件发生后人的情绪变化和行为后果。\n\nEllis合理情绪疗法的核心要点就是，触发事件本身不能引起人们的感受或行为，人们对触发事件的信念是他们情绪和行为反应的直接驱动。治疗的中心任务是对非理性信念、理性情感意象技术和认知任务的讨论。运用理性思维来纠正求助者的感性观念，从而映射到情绪和行为方式。\n\n7.2 放松训练\n放松训练[5-是指身体和精神由紧张状态朝向松弛状态的过程。放松主要是消除肌肉的紧张。有规律地进行训练通过主动地把控自身的生理心理活动，降低觉醒水准，提升机体机能障碍的心理治疗训练，消除因紧张、焦虑引起的精神压力，恢复人的身心。另外，放松训练对情绪调节也能起到一定的效果。",
+      "metadata": {
+        "document_title": "1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "合理情绪疗法ABC理论教学",
+        "asset_type": "knowledge_reference",
+        "granularity": "session",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "psychoeducation on cognitive mediation",
+        "task_family": "cognitive_restructuring",
+        "method_family": "CBT",
+        "stage": "psychoeducation",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "380b7b0a-4067-577f-9a35-d86a56c6f4ae",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "7咨询原理"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 主诉与个人陈述",
+          "3 观察和他人反映",
+          "4 咨询前心理测验结果",
+          "5评估",
+          "6 制定咨询目标"
+        ],
+        "subsection_headings": [
+          "7.1合理情绪疗法",
+          "7.2 放松训练",
+          "7.3体感音波疗法辅助放松"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "合理情绪疗法[2-4是Ellis于20世纪50年代首创的一种心理治疗理论和方法。依据原理：情绪来源于人的思想和观念，人能通过控制想法来调整情绪。核心理论简称ABC理论，A代表事件本身，B代表不合理看法，C代表事件发生后人的情绪变化和行为后果。"
+      }
+    }
+  ]
+}

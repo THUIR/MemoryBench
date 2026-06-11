@@ -1,0 +1,66 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "a616ae25-0f05-5dcd-93a2-134132eca507",
+  "skill_name": "渐进式角色扮演暴露",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "2f9fea16-6069-5714-b078-310ec5ebdcad",
+      "doc_id": "74f68922-9412-5f81-9f95-d21a388908d7",
+      "document_title": "基于认知行为疗法：一例大一学生抑郁情绪咨询案例_魏一凡.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法：一例大一学生抑郁情绪咨询案例_魏一凡.md",
+      "section": "表2强迫思维记录表",
+      "span": {
+        "start": 4516,
+        "end": 4942
+      },
+      "relation_type": "support",
+      "confidence": 0.9,
+      "quote": "1．指导来访者每周来咨询前一天晚上准备一个3分钟的小演讲，中文和英文双式，自备主题，脱稿演讲。来访者自述很喜欢英语，在说英语的时候不会有那么强烈的焦虑感，因此练习英语演讲是一个很好的培养自我效能感的方式。咨询师旨在通过培养成功的语言经验，激发其第二语言的成长，由第二语言推动第二人格、主要人格的完善。来访者在英文演讲训练中表现良好，恢复了一定的自信，情绪得到一定改善。\n\n2.角色扮演：模拟点餐经历、取快递经历，引导来访者表达“自我”的需求。咨询师通过在咨询室较为安全的场景下模拟冲突、紧张的经历，紧张等级从少到多依次递增，直到达到咨询的最终目标，进而在真实场景下，克服心理和行为障碍。但在实际过程中，咨询室很难完全还原再现真实的生活场景，来访者的代入感较低，对于行为障碍的改善效果较差。\n\n3.咨询师的示范效应：咨询师陪同来访者前往食堂，由咨询师在点菜窗口扮演口吃患者的角色，示范给站在一旁的来访者看。如果在打菜时真的出现了口吃，到底会不会被人嘲笑。",
+      "metadata": {
+        "document_title": "基于认知行为疗法：一例大一学生抑郁情绪咨询案例_魏一凡.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "渐进式角色扮演暴露",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "降低情境性焦虑并改善行为表达",
+        "task_family": "暴露训练",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "行为矫正与技能演练",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "eb1185d5-cf19-5294-87eb-95b3a3405be2",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 5,
+        "paragraph_end": 7,
+        "heading_path": [
+          "表2强迫思维记录表"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 基于认知行为疗法：一例大一学生抑郁情绪咨询案例",
+          "表1本案例的认知概念化"
+        ],
+        "subsection_headings": [
+          "第三阶段（第 $5 \\sim 8$ 次）：矫正错误信念，改善行为障碍",
+          "第四阶段(第 $9 \\sim 1 0$ 次巩固效果,预防教育",
+          "# (五)结果",
+          "# 五、总结和反思"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "<table><tr><td></td><td>诱发事件平时作业，食堂点餐，拿快递，日常交往等焦虑事件</td></tr><tr><td rowspan=\"3\"></td><td>我一定要把每件事都做好，如果我做不到，我就是没有能力的、差劲的</td></tr><tr><td>不良信念我是丑陋的，不完美的，我还是不要跟他们搭话了</td></tr><tr><"
+      }
+    }
+  ]
+}

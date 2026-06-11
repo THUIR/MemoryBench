@@ -1,0 +1,195 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "fca0f10c-9f7d-5e59-b13d-61b434106005",
+  "skill_name": "肌肉渐进性放松训练教学与家庭作业布置",
+  "support_count": 3,
+  "supports": [
+    {
+      "support_id": "8968e0b9-db5a-5b53-9a1a-c92f15003d2e",
+      "doc_id": "2ff1b9c0-4c0f-50f0-8f52-832c04bac087",
+      "document_title": "00206135895.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/00206135895.md",
+      "section": "6.咨询过程：咨询过程分为三个阶段",
+      "span": {
+        "start": 5710,
+        "end": 5905
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "第三到四次咨询\n\n教会求助者在指导下练习肌肉渐进性放松训练，直到能用肌肉放松训练拮抗焦虑情绪，并布置家庭作业让求助者每天坚持练习一到两次，在第四次训练结束后，求助者能做到在日常生活中应用。\n\n第五次咨询\n\n根据之前建立的焦虑等级以及习得的放松技术实施系统脱敏。\n\n第六到七次咨询\n\n应用行为认知疗法与不合理信念辩论技术，对求助者的不合理认知观念进行调整。\n\n(1）分享求助者的合理认知信念;",
+      "metadata": {
+        "document_title": "00206135895.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "肌肉渐进性放松训练教学与家庭作业布置",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立可自主调用的生理焦虑拮抗能力",
+        "task_family": "焦虑管理",
+        "method_family": "行为主义",
+        "stage": "咨询阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "be62d25d-fb52-5ac8-96db-daaafa5ab4be",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 13,
+        "paragraph_end": 19,
+        "heading_path": [
+          "6.咨询过程：咨询过程分为三个阶段"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1.一般资料",
+          "2．主诉和个人陈述",
+          "3.评估与诊断",
+          "4.咨询目标",
+          "5.咨询方案",
+          "7.咨询效果评估"
+        ],
+        "subsection_headings": [
+          "（一）诊断阶段",
+          "(二）咨询阶段",
+          "(4）结束与巩固阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一次咨询，建立良好的咨询关系，通过摄入性会谈、观察了解、心理测验等收集求助者相关信息，明确求助者的问题、产生问题的原因、问题的严重程度，最终做出明确的心理诊断。"
+      }
+    },
+    {
+      "support_id": "e45b0c82-e737-53b5-b444-c5a5622cac7c",
+      "doc_id": "6c0482c4-d98b-5179-86d2-44bfa09e19e4",
+      "document_title": "1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+      "section": "7咨询原理",
+      "span": {
+        "start": 3289,
+        "end": 3695
+      },
+      "relation_type": "support",
+      "confidence": 0.9,
+      "quote": "7.1合理情绪疗法\n合理情绪疗法[2-4是Ellis于20世纪50年代首创的一种心理治疗理论和方法。依据原理：情绪来源于人的思想和观念，人能通过控制想法来调整情绪。核心理论简称ABC理论，A代表事件本身，B代表不合理看法，C代表事件发生后人的情绪变化和行为后果。\n\nEllis合理情绪疗法的核心要点就是，触发事件本身不能引起人们的感受或行为，人们对触发事件的信念是他们情绪和行为反应的直接驱动。治疗的中心任务是对非理性信念、理性情感意象技术和认知任务的讨论。运用理性思维来纠正求助者的感性观念，从而映射到情绪和行为方式。\n\n7.2 放松训练\n放松训练[5-是指身体和精神由紧张状态朝向松弛状态的过程。放松主要是消除肌肉的紧张。有规律地进行训练通过主动地把控自身的生理心理活动，降低觉醒水准，提升机体机能障碍的心理治疗训练，消除因紧张、焦虑引起的精神压力，恢复人的身心。另外，放松训练对情绪调节也能起到一定的效果。",
+      "metadata": {
+        "document_title": "1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "结构化放松训练引导",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "physiological arousal reduction",
+        "task_family": "anxiety_management",
+        "method_family": "Behaviorism",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "380b7b0a-4067-577f-9a35-d86a56c6f4ae",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "7咨询原理"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 主诉与个人陈述",
+          "3 观察和他人反映",
+          "4 咨询前心理测验结果",
+          "5评估",
+          "6 制定咨询目标"
+        ],
+        "subsection_headings": [
+          "7.1合理情绪疗法",
+          "7.2 放松训练",
+          "7.3体感音波疗法辅助放松"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "合理情绪疗法[2-4是Ellis于20世纪50年代首创的一种心理治疗理论和方法。依据原理：情绪来源于人的思想和观念，人能通过控制想法来调整情绪。核心理论简称ABC理论，A代表事件本身，B代表不合理看法，C代表事件发生后人的情绪变化和行为后果。"
+      }
+    },
+    {
+      "support_id": "c9e8128d-37b2-5893-8a5b-aca5a59041eb",
+      "doc_id": "6c636ce4-e0bc-59b4-b9bc-7af3d8e2e2a9",
+      "document_title": "一例舞蹈系大学生舞台焦虑的心理咨询案例.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例舞蹈系大学生舞台焦虑的心理咨询案例.md",
+      "section": "6.咨询过程：咨询过程分为三个阶段",
+      "span": {
+        "start": 5710,
+        "end": 5905
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "第三到四次咨询\n\n教会求助者在指导下练习肌肉渐进性放松训练，直到能用肌肉放松训练拮抗焦虑情绪，并布置家庭作业让求助者每天坚持练习一到两次，在第四次训练结束后，求助者能做到在日常生活中应用。\n\n第五次咨询\n\n根据之前建立的焦虑等级以及习得的放松技术实施系统脱敏。\n\n第六到七次咨询\n\n应用行为认知疗法与不合理信念辩论技术，对求助者的不合理认知观念进行调整。\n\n(1）分享求助者的合理认知信念;",
+      "metadata": {
+        "document_title": "一例舞蹈系大学生舞台焦虑的心理咨询案例.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "肌肉渐进性放松训练教学与家庭作业布置",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立生理层面的焦虑拮抗能力",
+        "task_family": "焦虑管理",
+        "method_family": "行为主义",
+        "stage": "咨询中期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "da447da0-7dbb-5c6f-9ae4-b88a9df7d623",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 13,
+        "paragraph_end": 19,
+        "heading_path": [
+          "6.咨询过程：咨询过程分为三个阶段"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1.一般资料",
+          "2．主诉和个人陈述",
+          "3.评估与诊断",
+          "4.咨询目标",
+          "5.咨询方案",
+          "7.咨询效果评估"
+        ],
+        "subsection_headings": [
+          "（一）诊断阶段",
+          "(二）咨询阶段",
+          "(2）与不合理信念辩论，咨询师采用直接提问的方式：",
+          "(3）布置家庭作业",
+          "(4）结束与巩固阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一次咨询，建立良好的咨询关系，通过摄入性会谈、观察了解、心理测验等收集求助者相关信息，明确求助者的问题、产生问题的原因、问题的严重程度，最终做出明确的心理诊断。"
+      }
+    }
+  ]
+}

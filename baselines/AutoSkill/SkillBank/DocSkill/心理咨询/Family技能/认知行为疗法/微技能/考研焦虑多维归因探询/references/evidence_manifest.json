@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "40f1fe08-fdd5-545e-999f-ede8e6aeb613",
+  "skill_name": "考研焦虑多维归因探询",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "0498503f-1b92-5f95-a5c1-c93e693ef5f8",
+      "doc_id": "66c4b401-25d1-5060-8fc6-028a4d62d1f5",
+      "document_title": "1例考研焦虑的心理咨询案例报告_张欣.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例考研焦虑的心理咨询案例报告_张欣.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 5396,
+        "end": 5713
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "来访者：“话虽这么说，但是我辛苦这么久，从大三开始就准备了，每天7点按时起床，晚上12点才睡觉。而且自己专业方面真的学习得非常扎实，英语方面虽然有一些薄弱，但是我相信自己只要努力坚持，就一定没有问题。所以我一定能考上X院校的。\"\n\n咨询师：“嗯嗯，你非常努力，也很认真的备考，可是考研成绩只跟自己的努力程度有关系吗？会不会有其他的影响因素呢？”（提问技术：帮助来访者意识到影响考研的因素有哪些。）\n\n来访者：“除了努力，还跟我目前的状态有很大关系，之前我自己状态一直很好，学习效率也很高，但是现在坐到书桌前，就开始紧张，想要去尿尿，根本没办法静心学习。这样下去，我都担心考研的时候，自己也是总想去厕所，那肯定无法考试了，更别说考好了。",
+      "metadata": {
+        "document_title": "1例考研焦虑的心理咨询案例报告_张欣.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "考研焦虑影响因素探询",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促进来访者对焦虑多维成因的觉察",
+        "task_family": "认知评估",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "问题评估",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "8abd9088-066b-56b3-a964-6b28d553a734",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 25,
+        "paragraph_end": 27,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案信息",
+          "2 来访者心理问题评估",
+          "3 评估与诊断",
+          "4心理咨询方案",
+          "6 咨询效果",
+          "7 咨询反思"
+        ],
+        "subsection_headings": [
+          "5.1第一阶段：建立关系和问题评估（第1次）",
+          "5.2第二阶段：心理帮助阶段（第2～5次）",
+          "5.3第三阶段：结束与巩固阶段（第6～7次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "主要目标：建立良好的咨询关系。了解来访者基本信息，收集相关材料，明确咨询问题，进行初步的心理评估，协商制定可行的咨询方案，掌握放松技巧。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "ec208f7c-9838-5ae7-b905-b4cc882118c6",
+  "skill_name": "弹簧隐喻情绪接纳教学",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "2e8158d5-ef23-52a7-8cd0-6c269d08f7eb",
+      "doc_id": "66c4b401-25d1-5060-8fc6-028a4d62d1f5",
+      "document_title": "1例考研焦虑的心理咨询案例报告_张欣.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例考研焦虑的心理咨询案例报告_张欣.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 5947,
+        "end": 6531
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "来访者：“我父母觉得我是听话懂事的孩子，老师们觉得我是刻苦努力的学生，朋友眼里我是活泼、讲义气的。不过，之前有很多朋友一起玩，现在因为考研，我都不敢去玩了，甚至不去逛街、不追剧了。\n\n咨询师：“那你自己怎么评价自己呢？”（自我审查技术：鼓励并引导来访者对自我的看法。）\n\n来访者：“我之前是一个爱玩、活泼的人，跟朋友们去K歌曲、跳舞、玩游戏，但是我从来不在网吧过夜的。现在的我，觉得是一个有目标，有方向的人，焦虑又觉得每天很充实。”\n\n咨询师：“嗯嗯，能够听得出来，为了考研成功，你舍弃了很多，压抑了很多。其实有时候我们每个人像一根弹簧一样，如果我们内心有焦虑、紧张、痛苦等不良情绪，我们普通人的做法是，赶紧把这种不好的情绪给抛掉，想让自己永远保持快乐，我们想要抛开消极情绪，我们就会压抑自己，让自己不去想，这个时候消极情绪就像被压紧的弹簧一样，它的弹力反而会更大，也就是说，我们越是躲避消极情绪，我们会越感受到看痛苦和难受，相反，当我们坦然面对挫折和消极情绪时，就像弹簧处于自然的状态，没有对抗力存在，也许这种状态下我们会更加舒适。”（运用建议技术和演示技术，帮助来访者明白自己对考研必须成功的错误认知导致如今现状。）\n\n来访者：“是这样的，我在图书馆做题的时候，我越是想让自己平静，不要想上厕所的事情，我越是想要上厕所。然后就反反复复地紧张、焦虑，导致现在这样。”",
+      "metadata": {
+        "document_title": "1例考研焦虑的心理咨询案例报告_张欣.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "弹簧隐喻情绪接纳教学",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "修正‘必须消除焦虑’的错误信念，建立情绪自然流动的合理预期",
+        "task_family": "认知教育",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "心理教育",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "fdac38d9-c180-5fd8-bf38-562bcc0f70ad",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 29,
+        "paragraph_end": 33,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案信息",
+          "2 来访者心理问题评估",
+          "3 评估与诊断",
+          "4心理咨询方案",
+          "6 咨询效果",
+          "7 咨询反思"
+        ],
+        "subsection_headings": [
+          "5.1第一阶段：建立关系和问题评估（第1次）",
+          "5.2第二阶段：心理帮助阶段（第2～5次）",
+          "5.3第三阶段：结束与巩固阶段（第6～7次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "主要目标：建立良好的咨询关系。了解来访者基本信息，收集相关材料，明确咨询问题，进行初步的心理评估，协商制定可行的咨询方案，掌握放松技巧。"
+      }
+    }
+  ]
+}

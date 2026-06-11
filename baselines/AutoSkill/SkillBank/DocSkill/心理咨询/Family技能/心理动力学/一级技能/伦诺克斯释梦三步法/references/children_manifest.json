@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "心理动力学",
+  "profile_id": "psychology::心理动力学",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "472d2f8d-f52f-5d9c-bdfa-8541b42ce2d8",
+  "parent_name": "伦诺克斯释梦三步法",
+  "children": [
+    {
+      "skill_id": "4d79dfe7-531c-533a-ab43-79f529023f5f",
+      "name": "梦境角色具身对话",
+      "description": "引导来访者依次以第一人称、现在时态‘变成’梦境中每个可识别元素（人物、物体、场景），并促使其与其他梦境元素展开即时关系性对话，以激活情感觉察与人格整合。适用于释梦中期探索阶段，来访者能清晰叙述梦境且情绪耐受度适中时。",
+      "child_type": "释梦干预",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "472d2f8d-f52f-5d9c-bdfa-8541b42ce2d8",
+      "level_label": "二级技能",
+      "taxonomy_class": "心理动力学",
+      "applicable_when": "引导来访者依次以第一人称、现在时态‘变成’梦境中每个可识别元素（人物、物体、场景），并促使其与其他梦境元素展开即时关系性对话，以激活情感觉察与人格整合。适用于释梦中期探索阶段，来访者能清晰叙述梦境且情绪耐受度适中时。",
+      "selector_terms": [
+        "来访者完整叙述了具象化梦境",
+        "梦境含多个可识别角色或象征物",
+        "咨询师判断其当前情绪耐受力足够",
+        "格式塔",
+        "释梦",
+        "角色代入",
+        "当下体验",
+        "自我觉察",
+        "来访者叙述梦境时带有生动细节和情绪张力",
+        "能区分梦境中不同元素的形态/行为",
+        "未表现出回避、僵直或言语空洞",
+        "梦境角色具身对话",
+        "引导来访者依次以第一人称、现在时态‘变成’梦境中每个可识别元素（人物、物体、场景），并促使其与其他梦境元素展开即时关系性对话，以激活情感觉察与人格整合。适用于释梦中期探索阶段，来访者能清晰叙述梦境且情绪耐受度适中时。"
+      ],
+      "relative_path": "心理咨询/Family技能/心理动力学/二级技能/梦境角色具身对话/SKILL.md"
+    }
+  ]
+}

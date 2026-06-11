@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "心理动力学",
+  "profile_id": "psychology::心理动力学",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "10bb4d20-c3e3-55b7-ade4-28a775280c26",
+  "parent_name": "PVRE三阶段自助暴露训练",
+  "children": [
+    {
+      "skill_id": "1fb8a89e-c47f-586a-a107-7706ccf47b3b",
+      "name": "正向反馈强化练习",
+      "description": "在虚拟现实（VR）环境中，引导社交焦虑者反复暴露于象征性支持人物（如母亲原型）的鼓励式目光与肯定反馈，以重建与安全依恋相关的神经体验回路，激活并强化对温和注视与积极评价的生理-情绪接纳反应。",
+      "child_type": "exposure",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "10bb4d20-c3e3-55b7-ade4-28a775280c26",
+      "level_label": "二级技能",
+      "taxonomy_class": "心理动力学",
+      "applicable_when": "在虚拟现实（VR）环境中，引导社交焦虑者反复暴露于象征性支持人物（如母亲原型）的鼓励式目光与肯定反馈，以重建与安全依恋相关的神经体验回路，激活并强化对温和注视与积极评价的生理-情绪接纳反应。",
+      "selector_terms": [
+        "识别出因早年情感忽视导致的积极反馈接收障碍",
+        "VR中对鼓励目光出现僵直、回避或怀疑反应",
+        "负向反馈适应练习已基本耐受",
+        "VR干预",
+        "精神分析",
+        "依恋修复",
+        "正向暴露",
+        "原型工作",
+        "来访者在VR中能维持3秒以上目光接触但伴随浅呼吸或轻微颤抖",
+        "报告‘对方好像真的在看我’而非‘在演戏’",
+        "首次出现自发嘴角上扬或轻声回应",
+        "正向反馈强化练习",
+        "在虚拟现实（VR）环境中，引导社交焦虑者反复暴露于象征性支持人物（如母亲原型）的鼓励式目光与肯定反馈，以重建与安全依恋相关的神经体验回路，激活并强化对温和注视与积极评价的生理-情绪接纳反应。"
+      ],
+      "relative_path": "心理咨询/Family技能/心理动力学/二级技能/正向反馈强化练习/SKILL.md"
+    },
+    {
+      "skill_id": "d30c9672-0328-52f5-ae80-d1c73c582823",
+      "name": "负向反馈适应练习",
+      "description": "引导社交焦虑者在虚拟现实（VR）中反复暴露于象征性权威人物（如母亲原型）的挑剔目光与负向评价，以修通早期关系中内化的羞耻感与批判性自我结构，降低对批判性注视的生理唤醒与回避冲动。",
+      "child_type": "exposure",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "10bb4d20-c3e3-55b7-ade4-28a775280c26",
+      "level_label": "二级技能",
+      "taxonomy_class": "心理动力学",
+      "applicable_when": "引导社交焦虑者在虚拟现实（VR）中反复暴露于象征性权威人物（如母亲原型）的挑剔目光与负向评价，以修通早期关系中内化的羞耻感与批判性自我结构，降低对批判性注视的生理唤醒与回避冲动。",
+      "selector_terms": [
+        "识别出母亲原型相关的羞耻感与完美主义防御",
+        "VR中出现明显心率升高或回避动作",
+        "治疗联盟稳定且能耐受适度情绪唤起",
+        "VR干预",
+        "精神分析",
+        "社交焦虑",
+        "负向暴露",
+        "母亲原型",
+        "羞耻修通",
+        "来访者报告‘被妈妈盯着挑错’的熟悉感",
+        "在真实社交中因害怕评判而提前退出对话",
+        "自我描述中高频出现‘必须做到完美’‘不能出错’等绝对化表述",
+        "负向反馈适应练习",
+        "引导社交焦虑者在虚拟现实（VR）中反复暴露于象征性权威人物（如母亲原型）的挑剔目光与负向评价，以修通早期关系中内化的羞耻感与批判性自我结构，降低对批判性注视的生理唤醒与回避冲动。"
+      ],
+      "relative_path": "心理咨询/Family技能/心理动力学/二级技能/负向反馈适应练习/SKILL.md"
+    }
+  ]
+}

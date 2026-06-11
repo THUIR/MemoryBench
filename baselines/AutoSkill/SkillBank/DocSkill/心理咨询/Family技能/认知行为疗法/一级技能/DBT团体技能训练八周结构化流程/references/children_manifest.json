@@ -1,0 +1,42 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "5d3672c5-29a1-5235-91cc-87330dc9ec36",
+  "parent_name": "DBT团体技能训练八周结构化流程",
+  "children": [
+    {
+      "skill_id": "98d7834c-71e7-52b2-af17-f749c4b37819",
+      "name": "日间病房DBT五日团体技能训练框架",
+      "description": "在辩证行为疗法（DBT）早期阶段，结构化执行包含DBT心理教育、问题行为界定（依DBT优先级）、行为链分析、辩证认可介入及日记卡协同制定的五环节session，旨在建立技能学习动机并启动行为自我监控。",
+      "child_type": "structured_group_intervention",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "5d3672c5-29a1-5235-91cc-87330dc9ec36",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在辩证行为疗法（DBT）早期阶段，结构化执行包含DBT心理教育、问题行为界定（依DBT优先级）、行为链分析、辩证认可介入及日记卡协同制定的五环节session，旨在建立技能学习动机并启动行为自我监控。",
+      "selector_terms": [
+        "来访者已建立基本治疗联盟且无急性自伤/自杀危机",
+        "需在有限时间内密集强化DBT技能使用",
+        "具备日间病房集体干预条件",
+        "DBT",
+        "青少年抑郁",
+        "自伤干预",
+        "行为链分析",
+        "辩证认可",
+        "日记卡",
+        "来访者能描述自伤发生前后情境",
+        "来访者对‘为什么自伤’表现出探索意愿",
+        "来访者未回避行为讨论且语言中出现动机矛盾（如‘我知道不好，但当时停不下’）",
+        "日间病房DBT五日团体技能训练框架",
+        "在辩证行为疗法（DBT）早期阶段，结构化执行包含DBT心理教育、问题行为界定（依DBT优先级）、行为链分析、辩证认可介入及日记卡协同制定的五环节session，旨在建立技能学习动机并启动行为自我监控。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/日间病房DBT五日团体技能训练框架/SKILL.md"
+    }
+  ]
+}

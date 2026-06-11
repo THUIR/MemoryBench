@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "2bc0d54c-39e6-5d16-9ac0-be05802c48a1",
+  "skill_name": "首访危机筛查标准化流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "920c2455-7181-54ac-8a75-dc289f97f0e2",
+      "doc_id": "89fd2bd4-a165-5eaa-bf2f-659d91ac2bfa",
+      "document_title": "tppc20240609502-508.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20240609502-508.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 2362,
+        "end": 2619
+      },
+      "relation_type": "support",
+      "confidence": 0.99,
+      "quote": "# 5.1收集信息，建立咨访关系（第1次）\n\n# 5.1.1 采用摄入性会谈收集个案信息\n\n给予来访者无条件的积极关注、共情其情绪体验，以建立良好的咨访关系。\n\n# 5.1.2询问来访者咨询原因\n\n了解来访者是否有初始的问题提出，通过来访者的回答评估其改变的动机水平。向来访者介绍咨询设置，包括时长、保密协议等。\n\n# 5.1.3询问来访者的咨询预期\n\n描述认知行为疗法（CBT），获得来访者反馈并就咨询过程达成一致，包括与来访者共同确定咨询目标及咨询频率（每周1次）。\n\n# 5.1.4　根据个案特点进行危机评估",
+      "metadata": {
+        "document_title": "tppc20240609502-508.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "首访危机筛查标准化流程",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "safety_micro",
+        "asset_path": "family_root/safety_module/safety_micro",
+        "asset_level": 2,
+        "visible_role": "leaf",
+        "objective": "识别并响应急性风险信号",
+        "task_family": "risk_screening",
+        "method_family": "cbt",
+        "stage": "session_1_end",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "9bc0fd4b-f3e0-596a-9be5-71d0ccd3e3b7",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈",
+          "咨询目标"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 7,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "采用认知行为疗法干预急性应激反应的个案报告",
+          "1 来访者基本情况",
+          "2 心理问题分析与评估",
+          "3 咨询目标",
+          "4 咨询理论与方法",
+          "6 咨询效果"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 5.1收集信息，建立咨访关系（第1次）"
+      }
+    }
+  ]
+}

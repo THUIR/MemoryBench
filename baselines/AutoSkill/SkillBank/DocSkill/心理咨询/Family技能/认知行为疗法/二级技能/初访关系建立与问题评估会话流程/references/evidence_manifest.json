@@ -1,0 +1,130 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "4f3df00d-680c-5586-ab82-2f89a4934e97",
+  "skill_name": "初访关系建立与问题评估会话流程",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "ab7d45fd-a499-5dc0-bed2-19186c815a53",
+      "doc_id": "66c4b401-25d1-5060-8fc6-028a4d62d1f5",
+      "document_title": "1例考研焦虑的心理咨询案例报告_张欣.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例考研焦虑的心理咨询案例报告_张欣.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 3152,
+        "end": 3568
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "5.1第一阶段：建立关系和问题评估（第1次）\n主要目标：建立良好的咨询关系。了解来访者基本信息，收集相关材料，明确咨询问题，进行初步的心理评估，协商制定可行的咨询方案，掌握放松技巧。\n\n方法：摄入性会谈、心理测量工具、放松训练。\n\n主要过程：来访者填写来访者信息登记表，阅读咨询协议；咨询师介绍咨询设置，包括咨询保密协议和保密例外原则、时间设置原则，明确双方的责任、权利与义务；并告知来访者我们咨询后期可能用于个案督导或学术研究，但会匿名个人信息，来访者知情并同意。心理测验，通过SCL-90量表了解小王目前可能的情绪和行为问题，解释测验结果；通过摄入性会谈收集小王的信息，运用热情、尊重、真诚技术，建立良好咨询关系，明确来访者的困惑评估来访者的状态；介绍贝克和雷米的认知疗法基本原理，与求助者达成一致意见，使用认知疗法，解决问题；结合当前情况，介绍腹式呼吸法和渐进式肌肉放松训练，促进小王调节紧张情绪。\n\n腹式呼吸法（节选部分）。",
+      "metadata": {
+        "document_title": "1例考研焦虑的心理咨询案例报告_张欣.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "初访关系建立与问题评估会话流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立咨询联盟并明确问题焦点",
+        "task_family": "initial_assessment",
+        "method_family": "CBT",
+        "stage": "first_session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "7261073e-ba0a-522c-bd99-c59a1ed4bc04",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "会谈"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案信息",
+          "2 来访者心理问题评估",
+          "3 评估与诊断",
+          "4心理咨询方案",
+          "6 咨询效果",
+          "7 咨询反思"
+        ],
+        "subsection_headings": [
+          "5.1第一阶段：建立关系和问题评估（第1次）",
+          "5.2第二阶段：心理帮助阶段（第2～5次）",
+          "5.3第三阶段：结束与巩固阶段（第6～7次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "主要目标：建立良好的咨询关系。了解来访者基本信息，收集相关材料，明确咨询问题，进行初步的心理评估，协商制定可行的咨询方案，掌握放松技巧。"
+      }
+    },
+    {
+      "support_id": "50f7cfea-3c30-523d-8f69-47983d698c84",
+      "doc_id": "89fd2bd4-a165-5eaa-bf2f-659d91ac2bfa",
+      "document_title": "tppc20240609502-508.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20240609502-508.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 2362,
+        "end": 2619
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "# 5.1收集信息，建立咨访关系（第1次）\n\n# 5.1.1 采用摄入性会谈收集个案信息\n\n给予来访者无条件的积极关注、共情其情绪体验，以建立良好的咨访关系。\n\n# 5.1.2询问来访者咨询原因\n\n了解来访者是否有初始的问题提出，通过来访者的回答评估其改变的动机水平。向来访者介绍咨询设置，包括时长、保密协议等。\n\n# 5.1.3询问来访者的咨询预期\n\n描述认知行为疗法（CBT），获得来访者反馈并就咨询过程达成一致，包括与来访者共同确定咨询目标及咨询频率（每周1次）。\n\n# 5.1.4　根据个案特点进行危机评估",
+      "metadata": {
+        "document_title": "tppc20240609502-508.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "摄入性会谈建立咨访关系",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立治疗联盟与信息基线",
+        "task_family": "initial_engagement",
+        "method_family": "humanistic_existentialist",
+        "stage": "session_1",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "9bc0fd4b-f3e0-596a-9be5-71d0ccd3e3b7",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈",
+          "咨询目标"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 7,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "采用认知行为疗法干预急性应激反应的个案报告",
+          "1 来访者基本情况",
+          "2 心理问题分析与评估",
+          "3 咨询目标",
+          "4 咨询理论与方法",
+          "6 咨询效果"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 5.1收集信息，建立咨访关系（第1次）"
+      }
+    }
+  ]
+}

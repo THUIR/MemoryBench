@@ -306,7 +306,7 @@ if __name__ == "__main__":
         type=str,
         required=True,
         help="The memory system to use",
-        choices=memory_systems.names_with_memory(),
+        choices=memory_systems.on_policy_names_with_memory(),
     )
     parser.add_argument(
         "--memory_system_config",

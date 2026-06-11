@@ -1,0 +1,42 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "心理动力学",
+  "profile_id": "psychology::心理动力学",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "5959738f-d0b5-5e54-837c-28e02d521bae",
+  "parent_name": "动力学短程治疗开放式结束协议",
+  "children": [
+    {
+      "skill_id": "19fade85-9c2e-5e6c-a182-786b47968614",
+      "name": "动力学短程治疗初始面质技术",
+      "description": "在首次治疗中，针对来访者叙述中出现的严重内在矛盾（如将幼年性游戏误构为性侵害），主动实施基于观察的、非归因性的面质，以揭示潜意识非理性信念，快速建立治疗联盟、激发领悟动机，并锚定核心冲突假设。",
+      "child_type": "心理动力学短程治疗",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "5959738f-d0b5-5e54-837c-28e02d521bae",
+      "level_label": "微技能",
+      "taxonomy_class": "心理动力学",
+      "applicable_when": "在首次治疗中，针对来访者叙述中出现的严重内在矛盾（如将幼年性游戏误构为性侵害），主动实施基于观察的、非归因性的面质，以揭示潜意识非理性信念，快速建立治疗联盟、激发领悟动机，并锚定核心冲突假设。",
+      "selector_terms": [
+        "来访者叙述中出现严重内在矛盾（如事实-情感脱节、归因-行为断裂）",
+        "治疗框架明确为短程动力学取向",
+        "需在1–2次内建立初步治疗联盟并激活改变动机",
+        "面质",
+        "初始访谈",
+        "短程治疗",
+        "动力学",
+        "治疗联盟",
+        "潜意识信念",
+        "来访者主动提及创伤相关事件但描述模糊且情绪隔离",
+        "言语内容与非言语线索（如微笑讲述痛苦事件）明显不协调",
+        "反复使用绝对化语言（‘我就是被毁了’）却缺乏具体支持细节",
+        "动力学短程治疗初始面质技术",
+        "在首次治疗中，针对来访者叙述中出现的严重内在矛盾（如将幼年性游戏误构为性侵害），主动实施基于观察的、非归因性的面质，以揭示潜意识非理性信念，快速建立治疗联盟、激发领悟动机，并锚定核心冲突假设。"
+      ],
+      "relative_path": "心理咨询/Family技能/心理动力学/微技能/动力学短程治疗初始面质技术/SKILL.md"
+    }
+  ]
+}

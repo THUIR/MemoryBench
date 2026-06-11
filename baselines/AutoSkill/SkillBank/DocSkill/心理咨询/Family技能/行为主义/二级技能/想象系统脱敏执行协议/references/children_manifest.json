@@ -1,0 +1,37 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "行为主义",
+  "profile_id": "psychology::行为主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "78c85939-9a30-500c-b94d-30cf8ddcac0b",
+  "parent_name": "想象系统脱敏执行协议",
+  "children": [
+    {
+      "skill_id": "641e398c-3f33-5a57-bb20-47934ee26fb4",
+      "name": "EMDR靶点恐惧程度动态评估协议",
+      "description": "在眼动脱敏（EMDR）正式干预阶段，每次眼动操作后强制暂停，引导来访者对同一具体恐惧意象进行主观痛苦程度（SUDS）0–10分重评；仅当单次降幅≥2分或连续两次评分≤3分且意象清晰度/情绪强度同步下降时，方可进入下一靶点或结束该循环；否则重复本轮眼动+评估。",
+      "child_type": "暴露干预",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "78c85939-9a30-500c-b94d-30cf8ddcac0b",
+      "level_label": "微技能",
+      "taxonomy_class": "行为主义",
+      "applicable_when": "在眼动脱敏（EMDR）正式干预阶段，每次眼动操作后强制暂停，引导来访者对同一具体恐惧意象进行主观痛苦程度（SUDS）0–10分重评；仅当单次降幅≥2分或连续两次评分≤3分且意象清晰度/情绪强度同步下降时，方可进入下一靶点或结束该循环；否则重复本轮眼动+评估。",
+      "selector_terms": [
+        "启动EMDR正式处理阶段",
+        "来访者已建立具体恐惧意象（如‘同学责怪’场景）",
+        "来访者能稳定使用0–10 SUDS量表自评",
+        "EMDR",
+        "SUDS",
+        "动态评估",
+        "靶点处理",
+        "行为主义",
+        "EMDR靶点恐惧程度动态评估协议"
+      ],
+      "relative_path": "心理咨询/Family技能/行为主义/微技能/EMDR靶点恐惧程度动态评估协议/SKILL.md"
+    }
+  ]
+}

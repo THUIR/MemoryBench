@@ -1,0 +1,66 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "family_name": "人本-存在主义",
+  "skill_id": "238664ac-3436-586a-ac5d-2dc705a8ca20",
+  "skill_name": "自杀危机知情同意与保密例外通报流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "d6ddc704-d88b-57ba-853e-03f82a186eef",
+      "doc_id": "fa70259e-19e2-5ba7-928d-c54ffa1acd09",
+      "document_title": "1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/het/1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+      "section": "1个案概况",
+      "span": {
+        "start": 1102,
+        "end": 1482
+      },
+      "relation_type": "constraint",
+      "confidence": 0.95,
+      "quote": "小Y为新生测评回访时发现的自杀危机学生，在回访时对咨询协议进行讲解特别是保密突破情况做了详细解释，所以在评估小Y有自杀风险时，根据保密例外和对来访者进行知情同意后向学院反馈了小Y的危机情况。后在学院辅导员陪护的情况下联系家长到校并说服家长带学生到医院检查诊断，诊断结果为重度抑郁，需服用药物进行药物治疗，并且医嘱明确注明家属要预防患者自杀，本案例报告聚焦于小Y的自杀危机干预与资源探索过程。虽然小Y存在自杀风险，但其有主动寻求帮助、持续咨询、运动、关注自己的状况、按时服药复诊等保护性行为，并在咨询中总结自己最重要的三个特质是倔强、勇敢和坚韧，身上有一股不服输的劲儿，并不是一个甘愿放弃自己的孩子。这让咨询师反思面对这样的危机个案除了要关注评估与干预，也要在咨询中积极关注和探寻小Y自身的资源与力量，让其看到自己的力量。本案例报告公开发表已获得来访者知情同意。",
+      "metadata": {
+        "document_title": "1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "自杀危机知情同意与保密例外通报流程",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "safety_micro",
+        "asset_path": "family_root/safety_module/safety_micro",
+        "asset_level": 2,
+        "visible_role": "leaf",
+        "objective": "确保危机通报合法合规、尊重自主权并降低自杀风险",
+        "task_family": "危机干预",
+        "method_family": "人本-存在主义",
+        "stage": "危机评估后",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "2275258c-b22b-5178-9e9c-5b7161b90fd7",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "危机干预"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 0,
+        "heading_path": [
+          "1个案概况"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "2 案例介绍",
+          "3 案例分析",
+          "4咨询方案与咨询目标",
+          "5 咨询过程",
+          "6 咨询效果与反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "小Y为新生测评回访时发现的自杀危机学生，在回访时对咨询协议进行讲解特别是保密突破情况做了详细解释，所以在评估小Y有自杀风险时，根据保密例外和对来访者进行知情同意后向学院反馈了小Y的危机情况。后在学院辅导员陪护的情况下联系家长到校并说服家长带学生到医院检查诊断，诊断结果为重度抑郁，需服用药物进行药物治疗，并且医嘱明确注明家属要预防患者自杀，本案例报告聚焦于小Y"
+      }
+    }
+  ]
+}

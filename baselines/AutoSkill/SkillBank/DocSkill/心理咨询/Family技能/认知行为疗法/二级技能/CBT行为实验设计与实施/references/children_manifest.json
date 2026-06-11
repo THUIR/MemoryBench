@@ -1,0 +1,42 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "71f25abb-ddb3-5802-b11d-edb6ec5a866c",
+  "parent_name": "CBT行为实验设计与实施",
+  "children": [
+    {
+      "skill_id": "c3c57fde-659d-5c36-a2fe-4bdee635ba9f",
+      "name": "CBT非理性信念识别与验证作业布置",
+      "description": "针对人际敏感类自动思维，引导来访者识别投射性认知偏差，布置行为实验性质的家庭作业以检验其真实性。",
+      "child_type": "cognitive_restructuring",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "71f25abb-ddb3-5802-b11d-edb6ec5a866c",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "针对人际敏感类自动思维，引导来访者识别投射性认知偏差，布置行为实验性质的家庭作业以检验其真实性。",
+      "selector_terms": [
+        "来访者呈现典型投射性思维（如'别人肯定不喜欢我'）",
+        "已有基本咨询关系且情绪稳定",
+        "能配合记录日常互动细节",
+        "CBT",
+        "投射",
+        "行为实验",
+        "自动思维",
+        "结构化记录",
+        "人际敏感",
+        "使用绝对化表述（'肯定''一定''永远'）",
+        "将他人意图归因为负面且无直接证据",
+        "回避社交但归因为他人排斥而非自身意愿",
+        "CBT非理性信念识别与验证作业布置",
+        "针对人际敏感类自动思维，引导来访者识别投射性认知偏差，布置行为实验性质的家庭作业以检验其真实性。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/CBT非理性信念识别与验证作业布置/SKILL.md"
+    }
+  ]
+}

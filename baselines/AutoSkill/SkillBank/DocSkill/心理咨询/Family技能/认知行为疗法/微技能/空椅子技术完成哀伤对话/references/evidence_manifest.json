@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "c0fbb1f7-587d-57b8-96ae-dc90abcff34f",
+  "skill_name": "空椅子技术完成哀伤对话",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "bc1bfc3f-c031-57c4-8781-a43613860984",
+      "doc_id": "2dabba43-805f-5c52-9794-2aebbd77361c",
+      "document_title": "tppc20200211774-783.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20200211774-783.md",
+      "section": "3 目标与计划",
+      "span": {
+        "start": 5104,
+        "end": 5667
+      },
+      "relation_type": "case_variant",
+      "confidence": 0.96,
+      "quote": "![](images/18d619ee90e7382be08cc1775874d499070bf6306edfa7dd4ae0198b96f3a3b1.jpg)  \n图1整合模式图  \nFigure 1 The integration model\n\n3.2.1 近期目标\n帮助个案觉察焦虑、恐惧、害怕、羞愧、内疚、自责情绪，探索情绪背后的自动化思维、中间信念和核心信念；在咨询中帮助其识别自动化思维、中间信念，以便在日常生活中能够及时觉察并运用成功经历来反驳自动化思维、中间信念，使核心信念产生松动，降低焦虑、恐惧、害怕的水平，减轻羞愧、内疚、自责程度。\n\n3.2.2长期目标\n调整个案与父母的关系，重塑个案的自我价值，促使个案成长为为自己负责任的独立个体。\n\n3.3　咨询方法\n运用认知行为疗法中的箭头向下技术，与个案一起探索他表现出的各种情绪，并对情绪进行探索，发现羞愧、内疚、自责情绪等背后的中间信念（我应该让母亲过得快乐，我有责任让母亲过得快乐幸福）与核心信念（我没有能力）。\n\n运用家谱图帮助个案探索个案与父亲、母亲之间的关系，探索并确定对个案最合适的关系。\n\n运用家庭雕塑的方法，再现个案与父母的关系，帮助个案利用身体体会儿童和成人的不同感受，鼓励其适当进行调整。\n\n采用空椅子技术让个案与父亲对话，完成哀伤过程。",
+      "metadata": {
+        "document_title": "tppc20200211774-783.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "空椅子技术完成哀伤对话",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促进哀伤整合与关系心理重构",
+        "task_family": "哀伤处理",
+        "method_family": "gestalt_therapy",
+        "stage": "resolution",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 4,
+        "window_id": "0e5b6c69-f2ca-51d9-869b-ac5a6d8a44d9",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 5,
+        "paragraph_end": 11,
+        "heading_path": [
+          "3 目标与计划"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 背景",
+          "2评估与分析",
+          "4 咨询过程",
+          "5 案例评价及反思",
+          "基金项目"
+        ],
+        "subsection_headings": [
+          "3.1.1认知行为疗法",
+          "3.1.2　萨提亚家庭治疗模式",
+          "3.1.3认知行为疗法与萨提亚家庭治疗模式的结合",
+          "3.2.1 近期目标",
+          "3.2.2长期目标",
+          "3.3　咨询方法"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "认知行为疗法「1］以认知模式为理论基础。该理论假设，人的情感、行为及生理反应被他们对事件的知觉所影响。情景本身并不能决定人们的感受，感受更取决于人们如何解释这一情景。Beck（1987）认为，从童年期，人们对自我、他人及世界观已经形成了一定的看法。他们最核心的信念，非常根深蒂固，影响深远，有时他们也不能很清晰的表达出来，这些就是核心信念（如我不可爱、我无能、"
+      }
+    }
+  ]
+}

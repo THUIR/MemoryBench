@@ -1,0 +1,81 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "ed6f6aeb-f755-52ee-86b7-b0c1ac0503ca",
+  "skill_name": "橡皮圈注意力锚定干预",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "c1513ec3-7574-59b4-aad4-38e61882bf43",
+      "doc_id": "e0a0891c-4175-57b3-9083-4c33fdccc2a3",
+      "document_title": "一份初中女生的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一份初中女生的心理咨询案例报告.md",
+      "section": "一份初中女生的心理咨询案例报告",
+      "span": {
+        "start": 3607,
+        "end": 3981
+      },
+      "relation_type": "support",
+      "confidence": 0.9,
+      "quote": "让求助者靠着沙发，全身放松,想象自己处于令人轻松的情境中。如想象静坐在宁静的湖边或仰卧在一望无际的海滩上，然后咨询师用轻柔缓慢的声音引导求助者依次放松前臂、头面部、颈、肩、胸、腹及下肢，重点强调头面部的放松。每次20一30分钟。此外,针对求助者上课注意力分散的状况,教授求助者厌恶疗法的基本原理，在腕部戴上橡皮圈，用弹打造成的疼痛来对抗注意力的分散，作为辅助治疗手段。\n\n# 3.家庭作业\n\n让求助者在家中练习肌肉放松，每天练1—2次，每次30分钟左右。随着熟练程度的增加，增加练习次数，缩短每次的放松时间，最后达到能在需要时随时放松自己的效果。另外，建议求助者课余时间多与同学交往，融人到同龄人群体中，寻求归属感。\n\n(四)第4次咨询\n# 1.目标\n\n继续巩固求助者学到的理性信念和行为模式，检查求助者肌肉放松训练的记录，评定咨询效果，结束咨询。",
+      "metadata": {
+        "document_title": "一份初中女生的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "橡皮圈厌恶干预",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "减少学业场景中的离题行为，通过操作性条件反射建立‘注意漂移→觉察→再聚焦’的自动化反应链",
+        "task_family": "attention_regulation",
+        "method_family": "behaviorism",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "7f48f85e-d7e2-57ac-b663-3e225a43fd8c",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 51,
+        "paragraph_end": 55,
+        "heading_path": [
+          "一份初中女生的心理咨询案例报告"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "一、一般资料",
+          "(一)父亲代诉",
+          "(二)个人自诉",
+          "三、咨询师观察了解到的情况",
+          "（一）评估",
+          "（二）诊断",
+          "（三）原因分析",
+          "（一)具体目标",
+          "(二)远期目标",
+          "(一)咨询阶段",
+          "(二)咨询方法",
+          "(一)第1次咨询",
+          "(二)第2次咨询",
+          "(三)第3次咨询",
+          "(四)第4次咨询",
+          "(一)求助者的自我评估",
+          "（三）心理测验结果",
+          "(四)咨询师的评估",
+          "九总结"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "陈阿芹"
+      }
+    }
+  ]
+}

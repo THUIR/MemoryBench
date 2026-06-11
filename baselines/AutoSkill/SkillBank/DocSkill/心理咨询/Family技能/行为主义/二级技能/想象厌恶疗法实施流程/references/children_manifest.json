@@ -1,0 +1,37 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "行为主义",
+  "profile_id": "psychology::行为主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "ea4aa011-9195-5f5d-afdb-727a384fb94e",
+  "parent_name": "想象厌恶疗法实施流程",
+  "children": [
+    {
+      "skill_id": "a962a19c-9d0c-54e1-98c6-6911219e6b04",
+      "name": "橡皮筋替代阻断法",
+      "description": "当特定强迫性幻想（如注视脚踝）初现时，来访者以佩戴于手腕的橡皮筋快速弹击皮肤，产生可控、短暂、无害的物理刺激，用以即时中断自动化思维链，并启动替代性注意转向，从而削弱幻想-焦虑联结。适用于症状已部分缓解、需从 therapist-guided exposure 过渡至自主行为管理的维持阶段。",
+      "child_type": "behavior_correction",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "ea4aa011-9195-5f5d-afdb-727a384fb94e",
+      "level_label": "微技能",
+      "taxonomy_class": "行为主义",
+      "applicable_when": "当特定强迫性幻想（如注视脚踝）初现时，来访者以佩戴于手腕的橡皮筋快速弹击皮肤，产生可控、短暂、无害的物理刺激，用以即时中断自动化思维链，并启动替代性注意转向，从而削弱幻想-焦虑联结。适用于症状已部分缓解、需从 therapist-guided exposure 过渡至自主行为管理的维持阶段。",
+      "selector_terms": [
+        "来访者报告特定强迫性幻想出现频率下降但仍有间断发作",
+        "前期羞愧联想等高唤醒干预已完成且未引发回避或情绪崩溃",
+        "来访者能准确识别自身幻想初发的躯体/认知线索",
+        "行为阻断",
+        "自我管理",
+        "替代反应",
+        "青春期干预",
+        "低强度干预",
+        "橡皮筋替代阻断法"
+      ],
+      "relative_path": "心理咨询/Family技能/行为主义/微技能/橡皮筋替代阻断法/SKILL.md"
+    }
+  ]
+}

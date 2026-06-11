@@ -1,0 +1,143 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "19a11435-6e53-5e0c-aa2f-de24dec76c7f",
+  "skill_name": "渐进式肌肉放松引导",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "4eda27dd-f554-5afb-bd37-f4b9b37d6cb0",
+      "doc_id": "e0a0891c-4175-57b3-9083-4c33fdccc2a3",
+      "document_title": "一份初中女生的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一份初中女生的心理咨询案例报告.md",
+      "section": "一份初中女生的心理咨询案例报告",
+      "span": {
+        "start": 3607,
+        "end": 3981
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "让求助者靠着沙发，全身放松,想象自己处于令人轻松的情境中。如想象静坐在宁静的湖边或仰卧在一望无际的海滩上，然后咨询师用轻柔缓慢的声音引导求助者依次放松前臂、头面部、颈、肩、胸、腹及下肢，重点强调头面部的放松。每次20一30分钟。此外,针对求助者上课注意力分散的状况,教授求助者厌恶疗法的基本原理，在腕部戴上橡皮圈，用弹打造成的疼痛来对抗注意力的分散，作为辅助治疗手段。\n\n# 3.家庭作业\n\n让求助者在家中练习肌肉放松，每天练1—2次，每次30分钟左右。随着熟练程度的增加，增加练习次数，缩短每次的放松时间，最后达到能在需要时随时放松自己的效果。另外，建议求助者课余时间多与同学交往，融人到同龄人群体中，寻求归属感。\n\n(四)第4次咨询\n# 1.目标\n\n继续巩固求助者学到的理性信念和行为模式，检查求助者肌肉放松训练的记录，评定咨询效果，结束咨询。",
+      "metadata": {
+        "document_title": "一份初中女生的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "渐进式肌肉放松引导",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "induce physiological relaxation and interrupt anxiety-related arousal",
+        "task_family": "relaxation_training",
+        "method_family": "behaviorism",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "7f48f85e-d7e2-57ac-b663-3e225a43fd8c",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 51,
+        "paragraph_end": 55,
+        "heading_path": [
+          "一份初中女生的心理咨询案例报告"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "一、一般资料",
+          "(一)父亲代诉",
+          "(二)个人自诉",
+          "三、咨询师观察了解到的情况",
+          "（一）评估",
+          "（二）诊断",
+          "（三）原因分析",
+          "（一)具体目标",
+          "(二)远期目标",
+          "(一)咨询阶段",
+          "(二)咨询方法",
+          "(一)第1次咨询",
+          "(二)第2次咨询",
+          "(三)第3次咨询",
+          "(四)第4次咨询",
+          "(一)求助者的自我评估",
+          "（三）心理测验结果",
+          "(四)咨询师的评估",
+          "九总结"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "陈阿芹"
+      }
+    },
+    {
+      "support_id": "b2ffd485-b190-53d3-9338-0c3740d884f7",
+      "doc_id": "9d013127-44b4-5ef2-be91-d4a8cbfcc3a0",
+      "document_title": "考试焦虑心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/考试焦虑心理咨询案例报告.md",
+      "section": "# 7咨询过程",
+      "span": {
+        "start": 2327,
+        "end": 2725
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "3）行为放松训练，帮助刘某认识到行为放松训练对焦虑是有益的。在咨询师的指导下练习肌肉渐进性放松训练，如：坐在椅子上，闭上眼睛，轻轻的扭转颈部，做几个扩胸，配合着深呼吸，或押懒腰等由上至下的顺序，先紧张，后放松的方法，体会全身放松的状态。无论何时，当出现紧张状态时，都去想放松，通过肌肉的行为放松从而达到心理放松。\n\n布置作业：继续每天大声朗读5遍自己的优点；大声朗读积极的思维语言；每天早晚做两次放松训练，每次10分钟，也可以根据情绪状态随时做。并记录变化与感受。\n\n# 7.3第3次2006/12/9\n方法与目的：采用谈话法、系统脱敏法和积极自我暗示等方法巩固认知重建结果；建立焦虑事件等级，并开始实施系统脱敏。咨询进程如下：\n\n1)反馈家庭作业：大声朗读优点及积极（下转226页)\n\n生共同负责，从学习情况、课堂常规、仪容仪表、环境卫生等方面进行监督和检查，并及时与班主任联系，反馈班级情况。",
+      "metadata": {
+        "document_title": "考试焦虑心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "肌肉渐进性放松训练指导",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "降低躯体紧张水平，增强对焦虑生理反应的觉察与调节能力",
+        "task_family": "焦虑管理",
+        "method_family": "行为主义",
+        "stage": "干预执行",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "f1f91c73-15ac-569a-bc91-cea2758c3f9f",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "家庭作业"
+        ],
+        "paragraph_start": 5,
+        "paragraph_end": 9,
+        "heading_path": [
+          "# 7咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1一般资料",
+          "# 2个人陈述",
+          "# 3观察得到的初步印象",
+          "# 4心理测验量表结果",
+          "# 5评估与诊断",
+          "# 6咨询目标"
+        ],
+        "subsection_headings": [
+          "7.1 第1次2006/11/26",
+          "# 7.2 第2次2006/12/2",
+          "# 7.3第3次2006/12/9"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "方法与目的：采用摄入性谈话和心理测验，了解基本情况；建立良好的咨询关系；确定主要问题；进行咨询分析。咨询进程是：填写咨询登记表，询问基本情况；介绍咨询中的有关事项与规则；EPQ测验和SAS测定，询问生活事件，尤其是重大事件；确定咨询目标；做出初步问题分析，让刘某理解“为什么会这样”。"
+      }
+    }
+  ]
+}

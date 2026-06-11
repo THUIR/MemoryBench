@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "cd09d7be-43f9-5a98-9f43-b5b5efb9ccea",
+  "skill_name": "焦点解决式学习进程可视化",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "337219b9-e7e3-5812-88cd-3711cd10f2a3",
+      "doc_id": "4ba4d7cb-cbbf-529a-a6d9-96b4e74864c5",
+      "document_title": "1例焦点解决短期疗法在考前焦虑问题中的应用_兰栋栋.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/1例焦点解决短期疗法在考前焦虑问题中的应用_兰栋栋.md",
+      "section": "# 6 咨询过程",
+      "span": {
+        "start": 3346,
+        "end": 3683
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "来访者（羞愧地笑）：我不太清楚，有时候是2个小时，有时候是4个小时，有时候连着3天都没有碰到书。在家复习对意志力的要求太高了，我的抑郁又时好时坏。\n\n咨询师：我提议我们把每天学习内容记录下来，包括你的实际学习时长、有效学习时长、看了哪几本书、掌握了哪几个知识点。这样做一方面可以让我们对自己的学习进程有一个清晰的认知，另一方面，对你来说也是个督促。比如说数学这门，虽然看起来有那么厚一擇书要考，但高考的核心考点也就300个左右，你要面对的不是高考这头无形的、无法打败的怪兽，而是300个实实在在的知识点。这件事情愿意尝试吗？（具体化技术）\n\n来访者：可以。\n\n咨询师：那么我们下次见面的时候，就从你做了什么开始谈吧。（布置家庭作业）\n\n来访者（点头）：好的，我会尽量完成它。",
+      "metadata": {
+        "document_title": "1例焦点解决短期疗法在考前焦虑问题中的应用_兰栋栋.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "焦点解决式学习进程可视化",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "将模糊焦虑转化为具体、可观测、可干预的学习行为指标",
+        "task_family": "行为监测与反馈",
+        "method_family": "后现代主义",
+        "stage": "咨询中期-家庭作业布置",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "e256f38b-94b3-5cbe-b475-ce9741fb2f25",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 6,
+        "paragraph_end": 10,
+        "heading_path": [
+          "# 6 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例焦点解决短期疗法在考前焦虑问题中的应用",
+          "# 1一般资料",
+          "# 2 主诉和个人陈述",
+          "# 3评估",
+          "# 4 咨询目标的制定",
+          "# 5制定咨询方案"
+        ],
+        "subsection_headings": [
+          "# 6.1第一次咨询：开场",
+          "# 6.2第二次咨询：心理咨询阶段",
+          "6.3第三次咨询：心理咨询阶段",
+          "6.4第四次咨询：结束与巩固阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "（1）目的：确立咨询关系；全面了解来访者的基本情况收集具体资料；明确咨访双方在咨询过程中的角色，共同确定咨询目标。（2）方法：开场技术。（3）咨询过程如下： $\\textcircled{1}$ 填写咨询登记表，签订知情同意书，陈述保密协议，明确咨访双方在咨询中的责任、权利和义务； $\\textcircled{2}$ 进行自我介绍并对焦点解决短期疗法进行介绍，"
+      }
+    }
+  ]
+}

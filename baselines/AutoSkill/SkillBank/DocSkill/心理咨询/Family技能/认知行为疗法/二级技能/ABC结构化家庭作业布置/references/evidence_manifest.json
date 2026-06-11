@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "e8943104-64f1-5086-a052-5c57f56eb8ed",
+  "skill_name": "ABC结构化家庭作业布置",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "eaa87cd5-2213-5b5a-88b6-7da31d5c5999",
+      "doc_id": "2b45d285-6007-5130-a957-95a319d75726",
+      "document_title": "基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+      "section": "# 6 咨询过程",
+      "span": {
+        "start": 3778,
+        "end": 4429
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "求助者：嗯，我明白了（略有所思）。\n\n6.2.4评估：在此次咨询中，咨询师针对求助者长期存在的，且对其影响深远的童年经历，通过开放式询问让求助者回忆往事，并一步一步引导求助者，再通过一个故事将话题引向合理情绪疗法的ABC理论，并就此分析了求助者的不合理信念（B）。然后，运用解释影响性技术进一步解释，让求助者认识自己的情绪是不合理信念造成。经过这次咨询，求助者对父母的怨恨得到了缓解，也促进了求助者思考自身存在的认知误区，且对ABC理论有了一定的认识。\n\n6.2.5家庭作业： $\\textcircled{1}$ 让求助者回忆自己与同学相处的情境，分别写出诱发事件A，不适的情绪结果C和与两者相关的不合理信念B，进行理解和分析。②加强和家人的沟通联系。\n\n# 6.3第三次咨询\n\n6.3.1任务：确定引发求助者心理问题的关键就在于她存在绝对化和以偏概全的不合理信念，进一步纠正其不合理的认识。共同探讨求助者自卑心理的表现及形成原因，消除求助者自卑情绪，增强自信心。\n\n6.3.2 方法：合理情绪疗法等。\n\n6.3.3过程：咨询师通过检查家庭作业，进一步解说和证明ABC理论，让求助者明白自身存在绝对化和以偏概全的不合理信念。使求助者在更深的层次上领悟到她的情绪问题正是由她现在所持有的不合理信念造成的，因此她应该对自己的问题负责。共同探讨求助者自卑心理的表现及形成原因，正确认知自己的个性特点及其存在的问题，通过启发引导，与其不合理信念进行辩论，消除求助者自卑情绪，增强自信心。\n\n以下是咨询谈话摘录。",
+      "metadata": {
+        "document_title": "基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ABC结构化家庭作业布置",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "巩固ABC模型应用与日常信念觉察",
+        "task_family": "homework_assignment",
+        "method_family": "CBT",
+        "stage": "between_session_practice",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "83b434b0-d9c6-591e-bf42-d11c8680927f",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 13,
+        "paragraph_end": 20,
+        "heading_path": [
+          "# 6 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1 基本情况",
+          "# 2 主诉和个人陈述",
+          "# 3 评估与诊断",
+          "# 4 咨询目标的制定",
+          "# 5咨询方法与原理",
+          "# 7咨询效果评估"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询过程大致分3阶段进行，第一阶段建立咨询关系（第1次咨询），完成心理测验，做出诊断和评估，商定咨询目标。第二阶段为心理咨询阶段（第2～5次咨询）， $\\textcircled{1}$ 帮助求助者深入剖析自身问题，发现自身存在的不合理认知并进行有效调整，逐渐正确认识自我，从而提高其自信心；$\\textcircled{2}$ 共同探讨人际吸引的影响因素以及人际"
+      }
+    }
+  ]
+}

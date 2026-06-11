@@ -1,0 +1,65 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "d7e0fc32-4daf-5a73-9e3c-f709cd835011",
+  "skill_name": "羞愧疗法操作指引",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "b88c0c95-c8fa-50c5-b220-f63472bcea9b",
+      "doc_id": "9773165d-b0c3-5770-a940-4baa21d8314f",
+      "document_title": "行为疗法治疗严重心理问题个案一例.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/行为疗法治疗严重心理问题个案一例.md",
+      "section": "5咨询方案的制定",
+      "span": {
+        "start": 1857,
+        "end": 2161
+      },
+      "relation_type": "support",
+      "confidence": 0.88,
+      "quote": "来访者的理解能力较强，所以在解决来访者目前迫切想要解决的焦虑问题上,运用认知疗法，让来访者对性方面的问题有正确的认识。而引发来访者焦虑的问题本质是不良的性唤醒行为与自己的认知发生了冲突，所以在解决来访者问题的时候,不仅要采用认知疗法，还要用行为疗法让来访者从根本上解决自己的矛盾。\n\n5.1想象厌恶疗法：厌恶疗法的原理是经典条件反射。是通过附加某种刺激方法,使来访者在进行不良行为时，同时产生令人厌恶的心理或生理反应，以达到行为矫正的目的。\n\n5.2羞愧疗法：羞愧疗法是运用中医心理疗法纠正或治疗一些不良行为。其原理是有意识地加以诱发，以利用羞愧之情绪使机体产生强有力的保护行为，从而改善机体功能状态和行为。",
+      "metadata": {
+        "document_title": "行为疗法治疗严重心理问题个案一例.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "羞愧疗法操作指引",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "利用可控羞愧情绪触发自主调节反应",
+        "task_family": "emotion_regulation",
+        "method_family": "behaviorism",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "50e15437-fdfb-59ca-858a-0b5996a99e64",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "5咨询方案的制定"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "行为疗法治疗严重心理问题个案一例.md",
+          "1一般资料",
+          "2主诉与个人陈述",
+          "3观察和他人反映",
+          "4评估与诊断依据",
+          "6咨询过程"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "来访者的理解能力较强，所以在解决来访者目前迫切想要解决的焦虑问题上,运用认知疗法，让来访者对性方面的问题有正确的认识。而引发来访者焦虑的问题本质是不良的性唤醒行为与自己的认知发生了冲突，所以在解决来访者问题的时候,不仅要采用认知疗法，还要用行为疗法让来访者从根本上解决自己的矛盾。"
+      }
+    }
+  ]
+}

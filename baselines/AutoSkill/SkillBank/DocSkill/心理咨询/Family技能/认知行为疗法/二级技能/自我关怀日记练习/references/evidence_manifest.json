@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "6e4983a8-8f73-5622-b068-683a1c33169f",
+  "skill_name": "自我关怀日记练习",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "1486acd6-54c4-5d57-a118-bf6b68964ebf",
+      "doc_id": "3216343f-d556-5621-83fe-14dac02b5d68",
+      "document_title": "自我关怀练习实践在认知行为疗法中的应用_姜雯宁.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/自我关怀练习实践在认知行为疗法中的应用_姜雯宁.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 5891,
+        "end": 6650
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "为更好地让学生有组织记录和回应自己的想法，咨询师和学生商量用上思考记录本，记录自己的思维，学会用替代性的话语回应自己，减轻消极情绪，增加行动力。\n\n4.4第四阶段：自我关怀日记练习（第7次）\n咨询师询问了小Y过去一周思考记录本的书写情况，学生说情绪不好的时候会记录下来，但是有些时候并不知道要怎么回应自己。本次咨询采用自我关怀写作干预练习对小Y进行认知训练，减轻自动化思维的消极影响，改变消极认知。首先，我向小Y解释了善待自我、共通人性、静观当下的要义，并一起学习了自我关怀的话语，启发学生把自己当作最好的朋友：这个朋友了解你的不足和缺点，但是愿意接纳你；这个朋友知道你遇到了困难、情绪不佳，想要给予你关心，给你鼓励和希望。其次，我和学生商量用思考记录本记录自己的思维，把本周的情绪性事件用善待自我、共通人性及静观当下进行改写和加工，用替代性的话语回应自己，减轻消极情绪，增加行动力。\n\n最后，咨询师和学生约定好，每周至少2篇自我关怀认知的练习日记。",
+      "metadata": {
+        "document_title": "自我关怀练习实践在认知行为疗法中的应用_姜雯宁.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "自我关怀日记练习",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "通过结构化写作干预实现认知重构与情绪调节",
+        "task_family": "认知行为干预",
+        "method_family": "CBT",
+        "stage": "认知重构阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "879826fd-c6f3-5c65-a4b5-726f84c0bef1",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 35,
+        "paragraph_end": 38,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "自我关怀练习实践在认知行为疗法中的应用",
+          "1个案分析背景",
+          "2 个案概念化",
+          "3 咨询目标",
+          "5反思总结"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：开展心理危机评估，初步建立辅导关系，确立辅导目标（第1次）",
+          "4.2第二阶段：正念冥想训练（第2～3次）",
+          "4.3 第三阶段：认知和行为的分析（第4～6次）",
+          "4.4第四阶段：自我关怀日记练习（第7次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "此阶段重点是引导小Y信任辅导老师，打开心扉，说出自己情况。主要采用无条件积极关注、共情、情感回应技术。此外，为打消学生的疑惑，咨询教师介绍了心理危机干预的基本设置、保密原则与保密例外，解答了她的顾虑，并与其共同商定了当前辅导目标，让小Y感觉到安全。随着辅导的进行，学生在心理咨询室的共情和澄清下，渐渐放下防备，打开了心扉认清并说清自己的痛苦原因，并愿意寻求心理"
+      }
+    }
+  ]
+}

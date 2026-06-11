@@ -1,0 +1,137 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "b0bca241-5f1d-5ebf-8554-be2c54a32d74",
+  "skill_name": "咨询结束巩固会谈框架",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "b06e9e0c-d10b-5672-b598-715f489c5e3d",
+      "doc_id": "3dd6adef-dc47-56b2-b1b4-4bc3724e9efd",
+      "document_title": "1例用叙事疗法缓解失恋痛苦的案例报告_白利宁.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例用叙事疗法缓解失恋痛苦的案例报告_白利宁.md",
+      "section": "# 5 咨询过程",
+      "span": {
+        "start": 6031,
+        "end": 6561
+      },
+      "relation_type": "support",
+      "confidence": 0.91,
+      "quote": "咨询过程： $\\textcircled{1}$ 使用叙事疗法帮助来访者外化与前男友关系的问题。 $\\textcircled{2}$ 帮助来访者寻找生命故事中的例外，改写来访者的生命故事，咨询师与来访者共同探索故事的更多可能性情节，不断地丰满及建构新故事或替代性故事，并鼓励来访者发掘自身潜能优势。\n\n5.5第五阶段：咨询与巩固阶段\n咨询目标：强化咨询效果，巩固来访者获得的改变与成果，并将咨询成效进一步内化；咨询即将结束，让来访者与过去负性生活事件做一个告别仪式，顺利结束咨询关系；向来访者表达，后期遇到让其痛苦的事情自己无法解开，随时可以寻找老师帮助。\n\n咨询过程： $\\textcircled{1}$ 作业反馈：讨论失恋的意义；咨询师与求助者一起分享她与父母沟通以及与舍友交往的体验，并适时给予鼓励强化。 $\\textcircled{2}$ 与求助者一起回顾整个咨询过程，让求助者复述咨询要点，以加深理解和印象，进一步摆脱不合理信念，用理性的观念和思维方式认识问题，加强对自己的积极认知，强化咨询效果。 $\\textcircled{3}$ 咨询师总结求助者的成长，对求助者的表现给予充分肯定。 $\\textcircled{4}$ 与求助者商定结束心理咨询。",
+      "metadata": {
+        "document_title": "1例用叙事疗法缓解失恋痛苦的案例报告_白利宁.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "咨询结束巩固会谈框架",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "效果巩固与关系结束",
+        "task_family": "咨询结束",
+        "method_family": "人本-存在主义",
+        "stage": "结束阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "57ea98ba-cf69-57a4-ab87-1e46a2d00269",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标",
+          "作业"
+        ],
+        "paragraph_start": 27,
+        "paragraph_end": 29,
+        "heading_path": [
+          "# 5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1例用叙事疗法缓解失恋痛苦的案例报告",
+          "# 1 个案简介",
+          "# 2 咨询信息",
+          "# 3 咨询师评估",
+          "# 4 咨询方案",
+          "6 咨询效果评估"
+        ],
+        "subsection_headings": [
+          "# 5.1第一阶段：心理评估阶段",
+          "# 5.2第二阶段：叙事介入",
+          "# 5.3第三阶段：理性情绪疗法干预失恋",
+          "# 5.4第四阶段：寻找例外故事",
+          "5.5第五阶段：咨询与巩固阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本次咨询大致分五个阶段：心理评估阶段（第一次、第二次）、叙事介入（第三次、第四次）、理性情绪疗法干预失恋（第五次、第六次）、寻找例外故事（第七次、第八次）、发展替代性故事及见证（第九次、第十次）。"
+      }
+    },
+    {
+      "support_id": "778ca479-218d-52e9-8ae8-663e4548b677",
+      "doc_id": "3683d18f-fdf7-5626-a586-1253ab0b681f",
+      "document_title": "1例离异家庭学生的心理辅导案例_任媚.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例离异家庭学生的心理辅导案例_任媚.md",
+      "section": "5 辅导阶段及实施过程",
+      "span": {
+        "start": 5763,
+        "end": 6309
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "合理情绪疗法指出，个体不合理的情绪与行为反应并不单纯由事件本身引起，而是由具有绝对化、过分概括和糟糕至极等特征的不正确认知而导致的[5]。因此，我们可以通过调整和改变我们对事物的认知和看法，改善和管理我们的情绪及行为[。在咨询过程中发现晓玥有“自己不会被别人喜欢，都是自己的错，不值得被爱”等消极看法，首先采用该理论帮助晓玥意识到自己存在着绝对全面否定自己的不正确认知，并用客观事实引导她看到自己身上的优势。其次，通过合理情绪自助量表引导晓玥与自己这些不恰当的认知信念进行辩驳，消除自我认知偏差和自我否定的心理，形成合理的自我认识，调节负面的情绪，巩固咨询效果。\n\n5.3第三阶段 (第6次咨询)\n咨询目标：巩固前期咨询效果，结束所有咨询。\n\n方法与技术原理：鼓励、内容反应、情感反应等参与性技术与内容表达、情感表达等影响性技术。\n\n第6次咨询首先询问晓玥近期的感受与遇到的事情，她表示最近自己有主动想和母亲沟通的想法，并且想到母亲也不会像以前那样崩溃。然后咨询师引导晓玥让她思考自己与母亲关系的变化及在这个关系变化的过程中自己的成长与收获。最后咨询师总结来访者的变化与成长，并鼓励她继续保持积极的态度去面对未来所遇到的问题。咨询师在与来访学生进行总结和反馈后，结束所有咨询并为学生送上祝福。",
+      "metadata": {
+        "document_title": "1例离异家庭学生的心理辅导案例_任媚.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "第三阶段关系成长反思引导",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "巩固改变、促进结束",
+        "task_family": "咨询结束处理",
+        "method_family": "CBT",
+        "stage": "结束阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "6980ac39-6d95-5990-b1ce-e14594f919f4",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标"
+        ],
+        "paragraph_start": 11,
+        "paragraph_end": 14,
+        "heading_path": [
+          "5 辅导阶段及实施过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例离异家庭学生的心理辅导案例",
+          "1个案信息",
+          "2 来访者心理评估",
+          "3原因分析",
+          "4心理咨询方案",
+          "6 辅导效果"
+        ],
+        "subsection_headings": [
+          "5.1第一阶段 (第1～2次咨询)",
+          "5.2第二阶段（第 $3 { \\sim } 5$ 次咨询)",
+          "5.3第三阶段 (第6次咨询)"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询目标：建立咨询关系，收集来访学生基本信息，初步评估问题类型及严重程度，确定问题产生原因并制定咨询方案。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "fb46a27e-4c01-5655-8b4f-a73d6634220c",
+  "skill_name": "合理情绪疗法三阶段操作框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "fa6a7add-1ea7-58d1-b876-cab928f64a18",
+      "doc_id": "fe4e7aa2-17de-533c-8305-e5663e5b2437",
+      "document_title": "合理情绪疗法与音乐疗法在1例抑郁症大学生心理咨询中的应用_倪亚红.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/合理情绪疗法与音乐疗法在1例抑郁症大学生心理咨询中的应用_倪亚红.md",
+      "section": "3心理咨询部分过程",
+      "span": {
+        "start": 2831,
+        "end": 3337
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "3.1合理情绪疗法的应用\n合理情绪疗法的主要操作过程主要有三个阶段：一是心理诊断阶段，要明确求助者的ABC分别是什么。二是领悟阶段，要让求助者领悟合理情绪疗法的原理，明白引起她的抑郁、焦虑情绪的不是诱发事件本身，而是她对事件的认知、信念引起的。三是修通阶段，运用“产婆术式”的辩论技术，使求助者修正或改变原来的不合理认知和信念，代之以合理的认知和信念，并达到使求助者抑郁、焦虑情绪得以缓解或消除[3]。\n\n小兰进入大学之后学习成绩一直不好，已成为一名名副其实的学困生。原本她也试图去改变这种困境，当有不懂的学习问题，会鼓起勇气问身边成绩优秀的学生。可是经过对方的讲解，她依然理解不了，那名“学优生”有些不耐烦。在这之后，小兰的状况更加糟糕。咨询师运用埃利斯的合理情绪疗法进行分析：诱发事件A就是那位辅导小兰的“学优生”曾对她说，“你怎么学不会呀？你是怎么考进来的呀？”。这时小兰感觉无地自容，进而认为“别人都看不起我”“得不到周围所有人的肯定，我的生活一点意义都没有”，这些不合理认知是B，是小兰面对诱发事件A时主观上的不合理认知。正是因为B不合理认知进而导致求助者产生了诸多负面的情绪反应，即C抑郁和焦虑情绪。",
+      "metadata": {
+        "document_title": "合理情绪疗法与音乐疗法在1例抑郁症大学生心理咨询中的应用_倪亚红.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "合理情绪疗法三阶段操作框架",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "系统性修正非适应性认知信念",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "treatment",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "4230269c-458e-5cff-971e-c5f76038edca",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 1,
+        "heading_path": [
+          "3心理咨询部分过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 案例简介",
+          "2 案例分析",
+          "4 效果评估"
+        ],
+        "subsection_headings": [
+          "3.1合理情绪疗法的应用",
+          "3.2音乐疗法的应用",
+          "3.3其他干预方法"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "合理情绪疗法的主要操作过程主要有三个阶段：一是心理诊断阶段，要明确求助者的ABC分别是什么。二是领悟阶段，要让求助者领悟合理情绪疗法的原理，明白引起她的抑郁、焦虑情绪的不是诱发事件本身，而是她对事件的认知、信念引起的。三是修通阶段，运用“产婆术式”的辩论技术，使求助者修正或改变原来的不合理认知和信念，代之以合理的认知和信念，并达到使求助者抑郁、焦虑情绪得以缓"
+      }
+    }
+  ]
+}

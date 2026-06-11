@@ -1,0 +1,40 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "心理动力学",
+  "profile_id": "psychology::心理动力学",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "fad7e114-c8d0-5ce7-a0dd-94aeca0994b5",
+  "parent_name": "双轴协同干预：支持与揭露在中段咨询中的整合运用",
+  "children": [
+    {
+      "skill_id": "a3fc93b0-2df0-5c7b-b76a-c8c38e9d8bb0",
+      "name": "关键时间线索探询法",
+      "description": "结构化询问症状起始、恶化、变化三节点（‘什么时候开始？什么时候加重？现在怎样？’），定位发展性冲突焦点，为心理动力学概念化提供时间坐标锚点。",
+      "child_type": "心理动力学评估",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "fad7e114-c8d0-5ce7-a0dd-94aeca0994b5",
+      "level_label": "微技能",
+      "taxonomy_class": "心理动力学",
+      "applicable_when": "结构化询问症状起始、恶化、变化三节点（‘什么时候开始？什么时候加重？现在怎样？’），定位发展性冲突焦点，为心理动力学概念化提供时间坐标锚点。",
+      "selector_terms": [
+        "来访者主诉涉及长期情绪困扰",
+        "童年经历与当前症状存在表观关联",
+        "需区分发育性 vs 创伤性起源",
+        "时间线索",
+        "发展性评估",
+        "动力学概念化",
+        "结构化探询",
+        "来访者使用模糊时间词（如‘从小’‘一直’‘以前’）但缺乏具体节点",
+        "访谈中多次提及‘不知道怎么说’‘不确定’等认知模糊表达",
+        "情绪反应与当前事件强度不匹配，提示历史模式激活",
+        "关键时间线索探询法",
+        "结构化询问症状起始、恶化、变化三节点（‘什么时候开始？什么时候加重？现在怎样？’），定位发展性冲突焦点，为心理动力学概念化提供时间坐标锚点。"
+      ],
+      "relative_path": "心理咨询/Family技能/心理动力学/微技能/关键时间线索探询法/SKILL.md"
+    }
+  ]
+}

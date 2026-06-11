@@ -1,0 +1,89 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+<<<<<<<< HEAD:SkillBank/DocSkill/心理咨询/Family技能/认知行为疗法/二级技能/初次咨询关系建立与知情同意流程/references/evidence_manifest.json
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "ab2ef538-beee-5193-ba7b-51e7fc67428a",
+========
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "family_name": "人本-存在主义",
+  "skill_id": "79dd1dc8-5dc3-5635-97d4-5e882d37807a",
+>>>>>>>> df073c1eb (updata new DocSkill):SkillBank/DocSkill/心理咨询/Family技能/人本-存在主义/二级技能/初次咨询关系建立与知情同意流程/references/evidence_manifest.json
+  "skill_name": "初次咨询关系建立与知情同意流程",
+  "support_count": 1,
+  "supports": [
+    {
+<<<<<<<< HEAD:SkillBank/DocSkill/心理咨询/Family技能/认知行为疗法/二级技能/初次咨询关系建立与知情同意流程/references/evidence_manifest.json
+      "support_id": "7d26180f-235f-5a57-ae69-545c94df53e3",
+      "doc_id": "bc488648-10a8-5f96-937a-c3abee43822c",
+========
+      "support_id": "fd8520d3-4caa-53c7-9385-1941809947b6",
+      "doc_id": "602787ae-3498-55c4-be72-cfc4554c40c2",
+>>>>>>>> df073c1eb (updata new DocSkill):SkillBank/DocSkill/心理咨询/Family技能/人本-存在主义/二级技能/初次咨询关系建立与知情同意流程/references/evidence_manifest.json
+      "document_title": "1例焦虑情绪表现的个案心理辅导_覃丽燕.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例焦虑情绪表现的个案心理辅导_覃丽燕.md",
+      "section": "4咨询过程和效果",
+      "span": {
+        "start": 2000,
+        "end": 2647
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "4.1第一次咨询\n咨询目的：与来访者建立信任、安全和尊重的关系，了解来访者的基本背景信息，当前困扰的具体问题，商定咨询目标和计划，说明保密原则和保密例外。\n\n使用技术：摄入性会谈、参与技术、心理测验。\n\n工作内容：通过尊重、倾听、热情、共情、积极关注与来访者建立良好的信任；经来访者同意施行SCL-90、SDS、SAS量表测试；通过摄入性谈话了解来访者基本信息；通过开放式询问，了解到来访者困扰的问题焦虑、易怒、控制不住自己的情绪。\n\n4.2第二次咨询\n使用技术：“空椅子”技术。\n\n工作内容：让来访者直面受伤的内心，找到问题的根源，以此来觉知自己不合理的信念。咨询师拿了两张椅子，一张贴着来访者的名字，一张贴着“前女友”名字，告知来访者，如果坐在哪张椅子上就扮演谁的角色，说对方可能说的话和语气。通过与对方进行对话，让来访者设身处地站在对方的角度理解、宽容对方，同时让来访者认识到不应该以自己的想法来定义对方，反思自己，并开始进行自我探索，咨询片段如下。\n\n来访者没有思考就坐在了自己名字的椅子上，说：“我为你做了多少你不知道吗？为你送早餐、陪你上下学、给你买礼物，对你那么好，你怎么就不知道领情，还一而再再而三地用不理我来威胁我。”说完焦躁的情绪又表现出来。\n\n咨询师一边缓解来访者的情绪，一边鼓励他坐到“前女友”的位置上去。\n\n来：“老师，我感觉我没办法扮演她。”\n\n咨：“没关系，你就想一想，现在你们是在冲突最激烈的那个阶段，你认为她想要表达什么？”\n\n思考很久后，来访者还是坐了上去。",
+      "metadata": {
+        "document_title": "1例焦虑情绪表现的个案心理辅导_覃丽燕.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "初次咨询关系建立与知情同意流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立治疗联盟并完成初始评估与知情同意",
+        "task_family": "initial_session",
+        "method_family": "CBT",
+        "stage": "engagement_and_assessment",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+<<<<<<<< HEAD:SkillBank/DocSkill/心理咨询/Family技能/认知行为疗法/二级技能/初次咨询关系建立与知情同意流程/references/evidence_manifest.json
+        "window_id": "5645a86a-b3e8-5940-8776-716d2c3f9247",
+========
+        "window_id": "dca49baf-cd35-5314-a58a-044b3fe19bcb",
+>>>>>>>> df073c1eb (updata new DocSkill):SkillBank/DocSkill/心理咨询/Family技能/人本-存在主义/二级技能/初次咨询关系建立与知情同意流程/references/evidence_manifest.json
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "咨询目标",
+          "会谈",
+          "阶段"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 9,
+        "heading_path": [
+          "4咨询过程和效果"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例焦虑情绪表现的个案心理辅导",
+          "1个案信息",
+          "2 评估和个案概念化",
+          "3制定咨询方案",
+          "5 案例总结及启发"
+        ],
+        "subsection_headings": [
+          "4.1第一次咨询",
+          "4.2第二次咨询",
+          "4.3第三次咨询",
+          "4.4第四次咨询",
+          "4.5咨询效果"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询目的：与来访者建立信任、安全和尊重的关系，了解来访者的基本背景信息，当前困扰的具体问题，商定咨询目标和计划，说明保密原则和保密例外。"
+      }
+    }
+  ]
+}

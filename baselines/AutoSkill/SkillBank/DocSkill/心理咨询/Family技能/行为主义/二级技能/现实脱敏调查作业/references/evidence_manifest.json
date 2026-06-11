@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "3a8501e8-e0b2-51c8-a9e4-d98c2e49edb2",
+  "skill_name": "现实脱敏调查作业",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "21aa586b-783d-5009-8480-6e27c94bc014",
+      "doc_id": "4faf84c3-3079-5cda-aaaa-900570506df5",
+      "document_title": "一例大学生社交恐惧症心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例大学生社交恐惧症心理咨询案例报告.md",
+      "section": "# 5咨询过程",
+      "span": {
+        "start": 5650,
+        "end": 6086
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "(2)制定下一步的咨询计划：通过注意观察别人和写观察日记，来访者发现别人各做各的事，各忙各的，并不特别关注自己，也不在意自己的行为，这些观察结果使她增强了信心，再加上改变了过去一些不正确的观念，坚持了想象放松训练及脱敏训练，已经可以站在马路上面对陌生同性抬起头来，时间逐渐延长。对于行为上的进步，咨询师给予了肯定和鼓励，并对心理障碍产生的原因及负性事件做了具体的讨论，提高其挫折承受力，树立正确的挫折观。\n\n第三阶段·结束巩固阶段(第5、6次）\n(1)主要是检查计划执行情况和进行反馈调节。回去后做一下调查，问问周围人对自己的真实感觉，了解一下她们对自己在与人交往中的反应，如脸红、手心冒汗、目光恍惚等不自然的表情状态是否确实存在。目的是通过客观的调查结果来矫正自己的错误判断。进行现实脱敏治疗。\n\n(2)来访者与咨询师共同回顾总结，巩固咨询效果，顺利地结束咨询。应该提示：对她的人格已经进行了比较深入的心理分析，只要不妨碍自身的健康发展和社会的要求，就不必刻意改变自己。",
+      "metadata": {
+        "document_title": "一例大学生社交恐惧症心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "现实脱敏调查作业",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "矫正社交恐惧中的错误自我知觉",
+        "task_family": "behavioral_exposure",
+        "method_family": "behaviorism",
+        "stage": "consolidation",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "e408d38a-7e04-5e0a-bee3-a4be131fc9e0",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 12,
+        "paragraph_end": 14,
+        "heading_path": [
+          "# 5咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1案例介绍",
+          "# 2个人陈述",
+          "# 3评估与诊断",
+          "# 4咨询目标的制定",
+          "# 6咨询效果评估"
+        ],
+        "subsection_headings": [
+          "第一阶段：诊断阶段",
+          "第二阶段：咨询阶段（2-4次咨询）",
+          "第三阶段·结束巩固阶段(第5、6次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "根据来访者的情况，与来访者协商并同意为其安排6次咨询，每次50分钟，采用了认知疗法，使求助者对这一心理障碍产生的原因有所领悟和认识，然后采用系统脱敏法，逐步减轻求助者与人接触的紧张情绪，对其进行相应的治疗。"
+      }
+    }
+  ]
+}

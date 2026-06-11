@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "860c5ace-2246-576d-8384-2b76e18cdbee",
+  "skill_name": "结构化布置感恩日记家庭作业",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "75ec63a1-9f0b-5667-b22c-7efe3a7b0325",
+      "doc_id": "1a1d9969-d98b-5759-a16e-ca9d80a26670",
+      "document_title": "1例睡眠障碍的大学生心理咨询个案报告_卢春莉.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例睡眠障碍的大学生心理咨询个案报告_卢春莉.md",
+      "section": "6 咨询过程",
+      "span": {
+        "start": 6706,
+        "end": 7108
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "第4次咨询与来访者共同探讨了人际关系的策略问题，理解并学习运用合理情绪疗法中的“黄金规则”。“黄金规则”是由合理情绪疗法的创始人美国著名心理学家阿尔伯特·艾利斯提出的[5]，具体是指在人际关系中“像你希望别人如何对待你那样去对待别人”，换言之就是你希望别人怎么对待你，你就怎么对待别人，放弃“我对别人好，别人就必须对我好”的“反黄金规则”的错误观念。良好人际关系的基础是彼此的尊重和支持。每个人都渴望良好的人际关系，每个人都希望自己在群体中是受欢迎的，招人喜欢的，要相信自己只要真正懂得了尊重每个人，学会设身处地地为他人着想，人际关系不会太差的。\n\n第4次咨询布置了“感恩作业”，每天记录一件感恩的事情。\n\n6.5第5次咨询\n情绪改善了，睡眠便会随之改善。人是有节律动物，睡眠节律很重要。结合森田疗法治疗睡眠障碍，咨询师建议来访者睡不着就不睡，一切顺其自然[。不强迫自己。没有过强的睡眠动机，反而睡着了。",
+      "metadata": {
+        "document_title": "1例睡眠障碍的大学生心理咨询个案报告_卢春莉.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "感恩日记作业布置",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "增强积极情绪与自我价值感",
+        "task_family": "行为激活",
+        "method_family": "CBT",
+        "stage": "homework_assignment",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "3c4d72f2-84ab-53de-9157-858f213234a4",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 21,
+        "paragraph_end": 23,
+        "heading_path": [
+          "6 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 主诉",
+          "3 症状评估",
+          "4原因分析",
+          "5 咨询方案",
+          "7 咨询效果"
+        ],
+        "subsection_headings": [
+          "6.1第1次咨询",
+          "6.2第2次咨询",
+          "6.3第3次咨询",
+          "6.4第4次咨询",
+          "6.5第5次咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询安排：每周1次， $5 0 ~ \\mathrm { { m i n } / }$ 次，5次为1个阶段。本校学生不收咨询费。来访者对论文发表知情同意。并随着咨询过程的推进，助眠的药慢慢减少，没有再去精神科复诊。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "dd6ac27d-9b04-5491-8bc1-3dff9fdeefd7",
+  "parent_name": "情绪管理表归因探询",
+  "children": [
+    {
+      "skill_id": "14138601-5da2-52b4-a154-e4e346f94160",
+      "name": "时间线技术引导依恋叙事重构",
+      "description": "在CBT框架下，使用白板时间线梳理来访者成长关键事件，标注照料者（如母亲）的具体行为细节，结构化引导其区分‘能力受限行为’（如因客观压力导致的疏忽）与‘情感忽视行为’（如长期主动回避情感回应），以修正过度泛化的负性依恋归因。",
+      "child_type": "认知重构",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "dd6ac27d-9b04-5491-8bc1-3dff9fdeefd7",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在CBT框架下，使用白板时间线梳理来访者成长关键事件，标注照料者（如母亲）的具体行为细节，结构化引导其区分‘能力受限行为’（如因客观压力导致的疏忽）与‘情感忽视行为’（如长期主动回避情感回应），以修正过度泛化的负性依恋归因。",
+      "selector_terms": [
+        "来访者存在对主要照料者的全盘否定归因",
+        "有清晰可追溯的成长关键事件",
+        "已建立基本咨询关系",
+        "CBT",
+        "依恋",
+        "认知重构",
+        "时间线",
+        "归因训练",
+        "来访者频繁使用‘她从来不管我’‘她根本不在乎’等全称判断",
+        "提及多个照料者相关事件但归因高度一致",
+        "对母亲行为解释缺乏情境考量",
+        "时间线技术引导依恋叙事重构",
+        "在CBT框架下，使用白板时间线梳理来访者成长关键事件，标注照料者（如母亲）的具体行为细节，结构化引导其区分‘能力受限行为’（如因客观压力导致的疏忽）与‘情感忽视行为’（如长期主动回避情感回应），以修正过度泛化的负性依恋归因。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/时间线技术引导依恋叙事重构/SKILL.md"
+    }
+  ]
+}

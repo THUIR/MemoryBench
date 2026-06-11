@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "family_name": "人本-存在主义",
+  "skill_id": "c7c07c2f-240a-5b3a-85d1-78fdd90bf17d",
+  "skill_name": "资源确认性澄清",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "ef18728e-a5da-503e-b785-4e2bf09176e5",
+      "doc_id": "fa70259e-19e2-5ba7-928d-c54ffa1acd09",
+      "document_title": "1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/het/1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 5082,
+        "end": 5791
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "小Y：我觉得图书馆和低楼层的教室比较安全，因为那里人多，我不会感到那么孤单。\n\n咨询师：看来你之前已经做了一些尝试并且有一定的效果。是的，这些低楼层的地方让你的生命安全更有保障而且能给你带来安全感。以上就是我们制定的安全计划，包括紧急联系人、心理援助热线、应对情绪的方法以及安全场所。我会把这份计划复印给你，你也可以把它放在容易拿到的地方或拍照在手机上，并把紧急联系人的联系方式存在手机上，以便在需要时能够迅速找到并使用。\n\n利用确认和澄清的技术，让小Y厘清思路，并想到自己并不是真的想用自杀这样的方式来解决问题，而是没有找到更好的方法去处理当下的问题，所以想用自杀的方式去解脱。其实自己可以通过讨论找到其他的替代方式。通过分享“蝴蝶破茧”的故事引导小Y从另一个视角看待自己曾经历的痛苦，且在咨询过程中让小Y感受自己的感受，尝试去理解自己并与情绪和解；让小Y能看到自己更内在而积极的部分；感受到支持、理解、认可。首次咨询后在小Y知情同意的情况下突破保密原则，告知学院小Y的情况并建议及时到医院诊断。后来小Y主动联系学校心理咨询中心反馈诊断结果并咨询至学期末。\n\n5.2积极关注与探索小Y的资源与力量（第5～13次）\n良好的社会支持、自尊、维持健康、积极的人际关系和父母之间的联系与理解，对来访者心理健康状况起着保护性作用。社会支持包含被支持的程度、能否感受到支持感，以及能否得到支持，再者是指能否得到父母、兄弟姐妹、学校工作人员、朋友的支持，坦诚交流、共处时间、接纳。支持的程度指的是来自父母、兄弟姐妹、学校工作人员、朋友、同学的关心/帮助的程度；支持感则为感觉融入同龄群体而不是孤独、家庭关系密切、他人的关怀[7]。",
+      "metadata": {
+        "document_title": "1例资源取向的大一新生心理危机干预个案报告_刘人瑞.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "资源确认性澄清",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "Shift client’s self-attribution from pathological intent to understandable distress response, enabling agency and alternatives.",
+        "task_family": "meaning_reconstruction",
+        "method_family": "humanistic_existentialist",
+        "stage": "early_engagement",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "4cf69b5d-9f35-576d-ae32-5186a660bc4b",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "安全计划"
+        ],
+        "paragraph_start": 11,
+        "paragraph_end": 14,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案概况",
+          "2 案例介绍",
+          "3 案例分析",
+          "4咨询方案与咨询目标",
+          "6 咨询效果与反思"
+        ],
+        "subsection_headings": [
+          "5.1以危机干预为基础展开心理咨询（第1～4次）",
+          "5.2积极关注与探索小Y的资源与力量（第5～13次）",
+          "5.3第三阶段：效果巩固，结束咨询（第14次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "2021年11月～2022年7月，小Y到医院就诊进行药物治疗，并具有较好的药物依从性后，与小Y一起进行了14次心理咨询，主要针对小Y的自杀危机进行持续的评估与干预,包含危机干预、探索资源2个核心部分。"
+      }
+    }
+  ]
+}

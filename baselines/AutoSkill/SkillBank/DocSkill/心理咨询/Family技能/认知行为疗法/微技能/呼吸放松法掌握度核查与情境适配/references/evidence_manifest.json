@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "e5861d3c-1fc0-58a0-b84c-d63484c220d8",
+  "skill_name": "呼吸放松法掌握度核查与情境适配",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "5f8d634f-cde0-5b17-91f4-4749dd366a04",
+      "doc_id": "bd56dc19-254e-5b4c-b886-b2508055cdbb",
+      "document_title": "合理情绪疗法对大学生焦虑情绪调节的应用研究——以一例大学生学业焦虑问题心理咨询案例报告为例_王然.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/合理情绪疗法对大学生焦虑情绪调节的应用研究——以一例大学生学业焦虑问题心理咨询案例报告为例_王然.md",
+      "section": "合理情绪疗法对大学生焦虑情绪调节的应用研究",
+      "span": {
+        "start": 4730,
+        "end": 5020
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "除了指出这些信念和思维方式的不合理之处，咨询师为来访者提供具体的建议，将出现的不合理信念记录下来，从相反的角度去思考，比如“除了我想到的坏情况，有没有好的特例？”，同时，询问身边的老师和同学，让他们帮助来访者发现自身优势，列举自己的优点，增强自信心。针对焦虑问题，平时可练习“呼吸放松法”，帮助平复情绪，鼓励从小事逐渐改变。\n\n# （三）修通阶段（第4-6次咨询）\n\n巩固前几次咨询效果，与来访者探讨其存在的错误认知，了解老师同学对来访者的评价，帮助来访者发现被忽略的自身优点；了解来访者呼吸放松疗法掌握情况。来访者发现，当自己出现焦虑、心慌时，呼吸疗法能缓解不良情绪，平复心情。",
+      "metadata": {
+        "document_title": "合理情绪疗法对大学生焦虑情绪调节的应用研究——以一例大学生学业焦虑问题心理咨询案例报告为例_王然.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "呼吸放松法掌握度核查与情境适配",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "确认身心调节技能的内化与情境泛化能力",
+        "task_family": "生理调节训练",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "修通阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "8747245c-f47d-501f-bf0b-2b94e0684360",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 60,
+        "paragraph_end": 62,
+        "heading_path": [
+          "合理情绪疗法对大学生焦虑情绪调节的应用研究"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "一、个案信息",
+          "二、个案概念化",
+          "三、咨询方案",
+          "四、咨询过程",
+          "五、咨询效果评估",
+          "六、案例评价与反思"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# -以一例大学生学业焦虑问题心理咨询案例报告为例"
+      }
+    }
+  ]
+}

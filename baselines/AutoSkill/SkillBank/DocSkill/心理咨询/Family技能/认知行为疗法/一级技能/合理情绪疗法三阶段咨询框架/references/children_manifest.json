@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "d312ecc9-7932-566a-ab4e-5600cb01dbc8",
+  "parent_name": "合理情绪疗法三阶段咨询框架",
+  "children": [
+    {
+      "skill_id": "2f589f6b-1b24-56b0-8f79-06813df3e709",
+      "name": "CBT导向的焦虑状态初步评估协议",
+      "description": "在首次1–2次咨询中，整合共情、积极关注与结构化问题澄清，快速聚焦就业压力、失眠、忧虑等核心症状群，形成‘焦虑状态’工作诊断，为后续CBT干预提供靶点依据。",
+      "child_type": "assessment_and_formulation",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "d312ecc9-7932-566a-ab4e-5600cb01dbc8",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在首次1–2次咨询中，整合共情、积极关注与结构化问题澄清，快速聚焦就业压力、失眠、忧虑等核心症状群，形成‘焦虑状态’工作诊断，为后续CBT干预提供靶点依据。",
+      "selector_terms": [
+        "来访者主诉为压力相关情绪与躯体症状（如失眠、紧张）",
+        "处于毕业/求职等发展性应激期",
+        "需在2次内完成问题界定与方案启动",
+        "CBT",
+        "初始评估",
+        "焦虑状态",
+        "靶点共构",
+        "发展性应激",
+        "主诉含‘压力大’‘睡不好’‘总担心’‘静不下心’等表述",
+        "提及明确发展性事件（如毕业、求职、升学）作为背景",
+        "情绪痛苦明显但无现实危险行为或解离迹象",
+        "CBT导向的焦虑状态初步评估协议",
+        "在首次1–2次咨询中，整合共情、积极关注与结构化问题澄清，快速聚焦就业压力、失眠、忧虑等核心症状群，形成‘焦虑状态’工作诊断，为后续CBT干预提供靶点依据。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/CBT导向的焦虑状态初步评估协议/SKILL.md"
+    },
+    {
+      "skill_id": "c66b4b67-1219-51d8-84ef-09e39af149e2",
+      "name": "就业焦虑ABC认知澄清会谈",
+      "description": "在单次50分钟咨询中，聚焦就业主题，使用ABC理论识别诱发事件（A）、非理性信念（B）与焦虑反应（C），通过苏格拉底式提问引导当事人觉察、命名并初步挑战B，完成对就业相关非理性认知的结构化澄清。",
+      "child_type": "cognitive_restructuring",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "d312ecc9-7932-566a-ab4e-5600cb01dbc8",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在单次50分钟咨询中，聚焦就业主题，使用ABC理论识别诱发事件（A）、非理性信念（B）与焦虑反应（C），通过苏格拉底式提问引导当事人觉察、命名并初步挑战B，完成对就业相关非理性认知的结构化澄清。",
+      "selector_terms": [
+        "当事人已建立基本咨访关系",
+        "SAS/SDS显示中度以上焦虑",
+        "主诉明确指向就业决策、求职结果或职业身份预期",
+        "CBT",
+        "合理情绪疗法",
+        "就业焦虑",
+        "认知重构",
+        "ABC模型",
+        "当事人使用绝对化用语（‘必须’‘永远’‘全然’）描述就业结果",
+        "情绪反应强度显著超过情境客观难度",
+        "出现行为回避（如拒改简历、拒面试）且归因为‘没用’‘白费劲’",
+        "就业焦虑ABC认知澄清会谈",
+        "在单次50分钟咨询中，聚焦就业主题，使用ABC理论识别诱发事件（A）、非理性信念（B）与焦虑反应（C），通过苏格拉底式提问引导当事人觉察、命名并初步挑战B，完成对就业相关非理性认知的结构化澄清。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/就业焦虑ABC认知澄清会谈/SKILL.md"
+    }
+  ]
+}

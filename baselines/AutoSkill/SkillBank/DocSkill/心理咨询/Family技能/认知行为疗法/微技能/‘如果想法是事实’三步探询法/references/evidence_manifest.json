@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "ca140585-feb8-5497-b3b0-1ee3974a6a14",
+  "skill_name": "‘如果想法是事实’三步探询法",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "8b6c7cb1-62e9-5c4e-89f8-8de6a270d175",
+      "doc_id": "43ec9e89-2138-5cc6-a62d-a8dea252f1a1",
+      "document_title": "tppc20200204155-164.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20200204155-164.md",
+      "section": "4 过程",
+      "span": {
+        "start": 5989,
+        "end": 6384
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "（3）回顾以往的重点内容：“我们对事情的想法，引起我们的情绪；想法不一定是事实。”；自动思维的识别和调整：找证据、找例外、极端预测、双重标准。\n\n（4）检查作业：来访者很认真的完成了作业，记录了4次，能很好地理解五栏表的运用。但存在一定的畏难情绪，觉得按固定格式填写表格很机械，不太适应。咨询师通过举例进一步学习五栏表的使用，并进行心理教育，情绪和行为的改善需要持之以恒，需要每天做出一点点改变，直至自动化。\n\n（5）如果想法是事实呢？ $\\textcircled{1}$ 对你意味着什么？（想找到中间信念或者核心信念） $\\textcircled{2}$ 如何应对即成事实？（情境模拟训练问题解决能力） $\\textcircled{3}$ 心理教育：接纳他人的不一样（每个人都有自己的认知特点，思维方式和应对策略）；全面的、发展的看待自己、他人和环境；我的想法、做法是否有利于问题的解决。",
+      "metadata": {
+        "document_title": "tppc20200204155-164.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "‘如果想法是事实’三步探询法",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "阻断绝对化思维固化，转向功能性和适应性认知重构",
+        "task_family": "cognitive restructuring",
+        "method_family": "CBT",
+        "stage": "cognitive challenge",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "0640e32e-b62a-59ac-b9ba-18827c21e21e",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "表格"
+        ],
+        "paragraph_start": 21,
+        "paragraph_end": 23,
+        "heading_path": [
+          "4 过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一例自杀危机个案的认知行为干预报告",
+          "1 背景",
+          "2评估与分析",
+          "3 目标与计划",
+          "5 总结与反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一次：理解、共情、正常化自杀行为，稳定其情绪；利用情感内疚技术降低其自杀动机。［4]"
+      }
+    }
+  ]
+}

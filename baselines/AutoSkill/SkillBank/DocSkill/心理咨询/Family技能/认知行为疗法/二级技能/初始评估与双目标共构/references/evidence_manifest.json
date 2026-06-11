@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "8e2deafb-a3a8-5b07-884c-a8af98e6c5a4",
+  "skill_name": "初始评估与双目标共构",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "ce8bae98-221d-55a7-8c02-894f3c5b0e4a",
+      "doc_id": "67d485e5-54ae-5527-a29f-45251f50415f",
+      "document_title": "综合心理干预对大学生情绪调节的应用——以1名抑郁大学生心理咨询为例_潘修娴.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/综合心理干预对大学生情绪调节的应用——以1名抑郁大学生心理咨询为例_潘修娴.md",
+      "section": "5咨询过程",
+      "span": {
+        "start": 1739,
+        "end": 2628
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "5.1第一阶段：信息搜集与心理评估阶段（第1次咨询）\n\n以尊重与倾听（澄清、释义、情感反映、总结反馈）、影响技术（提问、解释、自我暴露）建立良好的咨询关系、收集求助者的症状、形成原因分析，完成心理测验,确立咨询目标和方案。告知来访者，许多同学在碰到人际关系的冲突时,都会有类似的糟糕体验。短期目标：宣泄内心累积的负面情绪，正确认识人际关系冲突,合理看待人际交往,减少焦虑和抑郁,主动进行身心调适。长期目标：辩证地看待父母与他人的评价，形成积极的思维模式，能够积极地应对挫折与冲突,进一步完善人格。同时转介专业精神卫生机构,建议采用药物治疗 $^ +$ 心理咨询的方式，一开始来访者有顾忌,表示会考虑。\n\n5.2第2阶段：心理辅导（第2\\~5次咨询）\n第2次咨询：以倾听、共情、积极关注的态度协助来访者进一步开放自己,给予心理支持,视情况进行转介。来访者感觉到现实很残酷,最亲近的父母讲着最伤人的话,觉得没有什么东西是可以长久地陪伴自己。生活中明明自己受了伤，还要有负疚感。父母总觉得是因为生养孩子,才要经历生活的各种艰辛。自己一直小心翼翼地生活,受伤了就让自己躲得远远的。感觉很辛苦很累，却从来都得不到尊重，自己应该很快可以没有痛苦地离开了。咨询师进行情感回应和自杀排查后，来访者表明生命的事并不是凡人可以决定的，抵抗的代价就是带着痛苦离开,自己不想最后离开的时候还那么痛苦。咨询师看到了来访者的辛酸不易，肯定她的善良（担心影响伤害别人、承担着负疚）和努力的态度（尽力地在学业上体现自己的价值),同时增进来访者改变的动机,如“人是社会的动物，人只有在社会中才能独立的动物”。解释为什么来访者在远离人群后，还是会感到深刻的不安和难受。排查来访者是否有自杀念头，表示说有念头，但不会这么做。意识到来访者不仅需要处理人际关系，情绪问题可能加重了关系不良,情绪问题是需要被优先处理的,且需要转介专业机构评估。\n\n经专业机构评估，来访者被诊断为焦虑抑郁状态,期间偶尔在QQ进行心理支持,给予精神心理方面的常识说明,消除其“药物有没有不良反应”“是否要终生服药”的顾忌,给予信心和心理支持。",
+      "metadata": {
+        "document_title": "综合心理干预对大学生情绪调节的应用——以1名抑郁大学生心理咨询为例_潘修娴.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "第一阶段：信息搜集与心理评估",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立关系、评估现状、设定目标、启动转介",
+        "task_family": "initial_assessment",
+        "method_family": "CBT",
+        "stage": "initial",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "37664e9a-cf40-5cf7-b0a7-ccc5f3e31f25",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "第1次咨询",
+          "咨询目标",
+          "第2次咨询"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "5咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1来访者主诉",
+          "2症状评估",
+          "3原因分析",
+          "4咨询方案",
+          "6辅导效果"
+        ],
+        "subsection_headings": [
+          "5.2第2阶段：心理辅导（第2\\~5次咨询）",
+          "5.3结束咨询（第6次咨询）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "5.1第一阶段：信息搜集与心理评估阶段（第1次咨询）"
+      }
+    }
+  ]
+}

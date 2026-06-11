@@ -1,0 +1,36 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "行为主义",
+  "profile_id": "psychology::行为主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "4d5fba56-eb6d-5fb9-a6b2-c4a3c566e2b6",
+  "parent_name": "四阶段结构化行为干预协议",
+  "children": [
+    {
+      "skill_id": "6e06f4cc-fa6a-56b5-896e-f1938b2705c5",
+      "name": "正向行为即时标记反馈",
+      "description": "在自然情境（如课堂、小组互动）中，由咨询师或教师对儿童出现的微小积极行为（如主动推课本、安静倾听）进行即时、具体、公开的言语标记与肯定，不附加要求或说教。",
+      "child_type": "behavioral_reinforcement",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "4d5fba56-eb6d-5fb9-a6b2-c4a3c566e2b6",
+      "level_label": "微技能",
+      "taxonomy_class": "行为主义",
+      "applicable_when": "在自然情境（如课堂、小组互动）中，由咨询师或教师对儿童出现的微小积极行为（如主动推课本、安静倾听）进行即时、具体、公开的言语标记与肯定，不附加要求或说教。",
+      "selector_terms": [
+        "儿童长期被负面关注，缺乏成功体验",
+        "观察到偶发但真实的适应性行为",
+        "行为主义",
+        "正向强化",
+        "即时反馈",
+        "儿童咨询",
+        "微技能",
+        "正向行为即时标记反馈"
+      ],
+      "relative_path": "心理咨询/Family技能/行为主义/微技能/正向行为即时标记反馈/SKILL.md"
+    }
+  ]
+}

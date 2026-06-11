@@ -1,0 +1,66 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "10be1533-62b1-5a62-b5ea-cebb471ee55e",
+  "skill_name": "原型错愕转化微干预",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "2c7fe48e-8d7c-53cd-bcc9-66be827c7d88",
+      "doc_id": "ea17487c-e9a4-5c41-b34a-73258a84ef9a",
+      "document_title": "基于精神分析的虚拟现实暴露疗法以社交焦虑的自助干预为例.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/基于精神分析的虚拟现实暴露疗法以社交焦虑的自助干预为例.md",
+      "section": "2基于精神分析的虚拟现实暴露疗法",
+      "span": {
+        "start": 5672,
+        "end": 6296
+      },
+      "relation_type": "support",
+      "confidence": 0.96,
+      "quote": "第二步，反复练习脱敏。针对核心恐惧的场景，来访者进行反复暴露练习，练习过程包括负向反馈适应练习和正向反馈强化练习。负向反馈适应练习是指社交焦虑者需要反复练习适应虚拟场景中重要他人目光的审视与挑剔（如面对中年女性虚拟形象反复练习接受对方挑剔风格的面试，以克服对母亲原型的恐惧）；正向反馈强化练习是指社交焦虑者需要多次暴露在虚拟人物鼓励、注视、积极反馈的目光中，建立新的体验（如面对中年女性虚拟形象，接受对方鼓励式、肯定式的面试反馈和目光接触）。\n\n第三步，创造新体验。一些社交焦虑者在面对他人审视的目光可能会引发强烈的焦虑和恐惧。在进一步的干预设计中，PVRE 还安排了一些引发有趣、错愕、开心体验的虚拟场景，如在负向反馈适应练习中以权威形象出现的中年男性形象（父亲原型）在进一步练习中出现了头戴兔子帽的搞笑形象，社交焦虑者需要面对带着兔子帽的中年男性完成面试，通过反复练习，引发他们在原先恐惧的情绪体验中增加有趣、惊奇的成分，从而创造新体验。\n\n总之，PVRE针对社交焦虑者恐惧的核心提供不同的虚拟人物（常见如父亲原型、母亲原型、重要他人原型），通过让社交焦虑者（1）反复练习面对虚拟人物审视挑剔的目光进行负向反馈适应；（2）反复暴露于虚拟人物温和鼓励的目光进行正向反馈强化；（3）尝试以新奇有趣的互动体验取代恐惧焦虑的体验来克服他们在不同社交情景下的回避行为。此外，社交焦虑者还需要在以上虚拟社交情景下练习社交行为，最终在真实世界里尝试有效社交。",
+      "metadata": {
+        "document_title": "基于精神分析的虚拟现实暴露疗法以社交焦虑的自助干预为例.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "原型错愕转化微干预",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "打断自动化恐惧反应链，触发前额叶参与的情绪调节切换",
+        "task_family": "affect_regulation",
+        "method_family": "Psychodynamic（心理动力学）",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 4,
+        "window_id": "dc991530-c48c-5af0-ad51-967fdfa9c117",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 8,
+        "paragraph_end": 10,
+        "heading_path": [
+          "2基于精神分析的虚拟现实暴露疗法"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 社交焦虑的临床干预难点",
+          "3 个案应用与临床反思",
+          "4 个案反思与讨论"
+        ],
+        "subsection_headings": [
+          "2.1　针对社交焦虑者进行虚拟现实辅助干预的发展和局限",
+          "2.2　社交焦虑的精神动力学分析",
+          "2.3　基于精神分析的虚拟现实暴露疗法"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "虚拟现实（VirtualReality，VR）技术随着计算机软硬件以及网络技术的飞速发展，在最近的二十年里已经在不同的领域里得到了成功的应用。对有心理疾病或障碍的人群来说，他们不愿意去面对现实的体验，VR技术则能为心理医生和患者搭建桥梁，使心理咨询或治疗的开展成为可能。该技术除了早期应用于焦虑障碍的治疗，目前还被广泛应用于创伤后应激障碍、强迫症、躯体形式障碍"
+      }
+    }
+  ]
+}

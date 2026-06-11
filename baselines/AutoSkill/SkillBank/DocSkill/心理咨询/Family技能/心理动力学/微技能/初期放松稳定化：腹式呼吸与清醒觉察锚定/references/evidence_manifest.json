@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "68b758e0-7a9a-51cf-9ba9-83b4878259fd",
+  "skill_name": "初期放松稳定化：腹式呼吸与清醒觉察锚定",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "8c313a79-22a1-5593-8ab1-902bb07535fa",
+      "doc_id": "115d1e82-c1d8-50cc-9554-0fb8b7bb867f",
+      "document_title": "基于精神动力学疗法的大学生心理危机干预案例_陈亚莉.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/基于精神动力学疗法的大学生心理危机干预案例_陈亚莉.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 3686,
+        "end": 4592
+      },
+      "relation_type": "support",
+      "confidence": 0.88,
+      "quote": "本次个案中，主要目标是通过支持和揭露技术帮助来访者看到并释放内心深处的悲伤、恐惧等情绪，缓和原生家庭冲突，学会感受和利用现有积极资源让自己重新成长、重拾希望，以更好的状态适应当前恋爱、学习和生活。咨询主要分为3个阶段，包括关系建立、心理帮助、巩固与结束，共计8次咨询，每周1次，每次 $5 0 ~ \\mathrm { { m i n } }$ ，各阶段具体咨询任务和咨询目标如下。\n\n第一阶段：评估与咨询关系建立阶段（第 $1 \\sim 2$ 次）。$\\textcircled{1}$ 本阶段任务：咨询师希望能通过初步与来访者的沟通、提问和倾听等具体的咨询方式，建立更加信任的沟通关系，期望通过沟通能够全面了解A的基本情况，确定A目前所遇到的关键问题。 $\\textcircled{2}$ 本阶段的目标：与来访者建立良好的咨询关系，形成初步评估。 $\\textcircled{3}$ 本阶段原则：建立互相尊重的咨询交流关系。 $\\textcircled{4}$ 咨询方法：采用放松技术，减少焦虑改善睡眠。\n\n第二阶段：心理帮助阶段（第3～6次）。 $\\textcircled{1}$ 本阶段任务：通过鼓励、命名、对质、澄清、解释、强化和支持，探索来访者隐藏在内心深处的恐惧情绪，让来访者有勇气正视自身成长经历。 $\\textcircled{2}$ 本阶段的目标：第一，和来访者一同体验压抑在潜意识的痛苦情绪；第二，通过整合现有资源帮助来访者，提升来访者个体成长和心理发展。 $\\textcircled{3}$ 本阶段使用方法：共情式倾听，自由联想和阻抗，支持性和揭露性干预技术。\n\n第三阶段：巩固与结束阶段（第7～8次）。 $\\textcircled{1}$ 本阶段任务：达成治疗目标，通过实际生活问题，检验来访者心理成长状况， $\\textcircled{2}$ 本阶段的目标：帮助来访者重返现实生活，解决现实生活中实际问题，巩固咨询效果，让来访者更好地改善自我认知和自尊管理能力，改善对压力和人际关系的适应。$\\textcircled{3}$ 咨询方法：支持性干预技术对来访者进行安抚关怀、验证，并提供希望。",
+      "metadata": {
+        "document_title": "基于精神动力学疗法的大学生心理危机干预案例_陈亚莉.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "放松技术缓解焦虑睡眠障碍",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "快速缓解急性焦虑与睡眠紊乱，增强咨询联盟稳定性",
+        "task_family": "症状缓解",
+        "method_family": "心理动力学",
+        "stage": "initial",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "66762205-23c0-59ef-a868-266961556e74",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案信息",
+          "2 个案心理评估",
+          "3 个案概念化",
+          "5 干预经验分享",
+          "6 案例评价与反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本次个案中，主要目标是通过支持和揭露技术帮助来访者看到并释放内心深处的悲伤、恐惧等情绪，缓和原生家庭冲突，学会感受和利用现有积极资源让自己重新成长、重拾希望，以更好的状态适应当前恋爱、学习和生活。咨询主要分为3个阶段，包括关系建立、心理帮助、巩固与结束，共计8次咨询，每周1次，每次 $5 0 ~ \\mathrm { { m i n } }$ ，各阶段具体咨询"
+      }
+    }
+  ]
+}

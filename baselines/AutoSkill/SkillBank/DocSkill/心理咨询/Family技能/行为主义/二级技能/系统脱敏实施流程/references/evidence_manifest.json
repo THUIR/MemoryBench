@@ -1,0 +1,74 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "b66d069d-71d2-563a-8462-d631782e4099",
+  "skill_name": "系统脱敏实施流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "887d0d86-a5de-5536-968b-ef5b32173f30",
+      "doc_id": "6c636ce4-e0bc-59b4-b9bc-7af3d8e2e2a9",
+      "document_title": "一例舞蹈系大学生舞台焦虑的心理咨询案例.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例舞蹈系大学生舞台焦虑的心理咨询案例.md",
+      "section": "6.咨询过程：咨询过程分为三个阶段",
+      "span": {
+        "start": 5710,
+        "end": 5905
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "第三到四次咨询\n\n教会求助者在指导下练习肌肉渐进性放松训练，直到能用肌肉放松训练拮抗焦虑情绪，并布置家庭作业让求助者每天坚持练习一到两次，在第四次训练结束后，求助者能做到在日常生活中应用。\n\n第五次咨询\n\n根据之前建立的焦虑等级以及习得的放松技术实施系统脱敏。\n\n第六到七次咨询\n\n应用行为认知疗法与不合理信念辩论技术，对求助者的不合理认知观念进行调整。\n\n(1）分享求助者的合理认知信念;",
+      "metadata": {
+        "document_title": "一例舞蹈系大学生舞台焦虑的心理咨询案例.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "系统脱敏实施流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "消退条件性焦虑反应",
+        "task_family": "焦虑管理",
+        "method_family": "行为主义",
+        "stage": "咨询中期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "da447da0-7dbb-5c6f-9ae4-b88a9df7d623",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 13,
+        "paragraph_end": 19,
+        "heading_path": [
+          "6.咨询过程：咨询过程分为三个阶段"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1.一般资料",
+          "2．主诉和个人陈述",
+          "3.评估与诊断",
+          "4.咨询目标",
+          "5.咨询方案",
+          "7.咨询效果评估"
+        ],
+        "subsection_headings": [
+          "（一）诊断阶段",
+          "(二）咨询阶段",
+          "(2）与不合理信念辩论，咨询师采用直接提问的方式：",
+          "(3）布置家庭作业",
+          "(4）结束与巩固阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一次咨询，建立良好的咨询关系，通过摄入性会谈、观察了解、心理测验等收集求助者相关信息，明确求助者的问题、产生问题的原因、问题的严重程度，最终做出明确的心理诊断。"
+      }
+    }
+  ]
+}

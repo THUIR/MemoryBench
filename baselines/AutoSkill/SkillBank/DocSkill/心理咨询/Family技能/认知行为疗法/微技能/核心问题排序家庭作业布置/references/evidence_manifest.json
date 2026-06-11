@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "8cd59bee-9be5-5856-a3cb-da3dafa291d7",
+  "skill_name": "核心问题排序家庭作业布置",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "87273f6e-12d6-56cb-bacd-aab6b512fd8b",
+      "doc_id": "1d358eea-b0fa-507f-9746-94761d74478e",
+      "document_title": "大学新生适应不良的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/大学新生适应不良的心理咨询案例报告.md",
+      "section": "6咨询过程",
+      "span": {
+        "start": 1736,
+        "end": 1970
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "6.1第一次咨询\n(1)任务和过程：以热情的态度接待求助者，灵活运用开放式询问、倾听、具体化、情感反应和内容反应等方法，让求助者尽情倾诉，全面收集求助者的资料，通过心理测试了解求助者的心理健康状况。(2)布置作业：让求助者回去思考目前困扰自己的核心问题，并把核心问题按照严重程度排序记录下来。通过这种练习，了解自己的情绪状态。\n\n6.2第二次咨询\n(1)任务：明确求助者的心理问题和原因。通过介绍ABC理论，启发求助者领悟到我们认知中的不合理信念与情绪困扰之间的关系。",
+      "metadata": {
+        "document_title": "大学新生适应不良的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "核心问题排序作业布置",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "增强情绪觉察与问题层级意识",
+        "task_family": "家庭作业设计",
+        "method_family": "CBT",
+        "stage": "初始阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "d268449f-2260-55f2-ac86-75f4f4a7d186",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 1,
+        "heading_path": [
+          "6咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2主诉和个人陈述",
+          "3观察和他人反映",
+          "4评估与诊断",
+          "5咨询原理",
+          "8总结和体会"
+        ],
+        "subsection_headings": [
+          "6.1第一次咨询",
+          "6.2第二次咨询",
+          "6.3第三次咨询",
+          "6.4第四次咨询",
+          "6.5第五次咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "(1)任务和过程：以热情的态度接待求助者，灵活运用开放式询问、倾听、具体化、情感反应和内容反应等方法，让求助者尽情倾诉，全面收集求助者的资料，通过心理测试了解求助者的心理健康状况。(2)布置作业：让求助者回去思考目前困扰自己的核心问题，并把核心问题按照严重程度排序记录下来。通过这种练习，了解自己的情绪状态。"
+      }
+    }
+  ]
+}

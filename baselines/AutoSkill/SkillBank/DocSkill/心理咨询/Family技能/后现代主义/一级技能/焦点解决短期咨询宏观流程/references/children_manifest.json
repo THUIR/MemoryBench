@@ -1,0 +1,89 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "后现代主义",
+  "profile_id": "psychology::后现代主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "50d5a7d5-bfae-5cb3-a113-0a86dead035d",
+  "parent_name": "焦点解决短期咨询宏观流程",
+  "children": [
+    {
+      "skill_id": "53ffdf4f-98b9-530f-8be2-bd58c46a8213",
+      "name": "SFBT咨询阶段：资源激活与小步目标共构",
+      "description": "在焦点解决短期疗法第二至三次咨询中，以行为基线为锚点，结构化运用赞美技术、例外事件探索与小步目标设定，引导来访者识别可控资源、增强希望感、建立可测量的渐进路径。",
+      "child_type": "焦点解决短期疗法",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "50d5a7d5-bfae-5cb3-a113-0a86dead035d",
+      "level_label": "二级技能",
+      "taxonomy_class": "后现代主义",
+      "applicable_when": "在焦点解决短期疗法第二至三次咨询中，以行为基线为锚点，结构化运用赞美技术、例外事件探索与小步目标设定，引导来访者识别可控资源、增强希望感、建立可测量的渐进路径。",
+      "selector_terms": [
+        "来访者已建立基本咨访关系",
+        "焦虑问题聚焦于学业表现且存在可观察行为基线",
+        "来访者有记录学习行为等现实资源",
+        "SFBT",
+        "焦点解决",
+        "后现代主义",
+        "资源取向",
+        "例外事件",
+        "小步目标",
+        "SFBT咨询阶段：资源激活与小步目标共构"
+      ],
+      "relative_path": "心理咨询/Family技能/后现代主义/二级技能/SFBT咨询阶段：资源激活与小步目标共构/SKILL.md"
+    },
+    {
+      "skill_id": "9be2ea96-aa7c-5c54-a7c0-fb1f073dee3a",
+      "name": "SFBT结束与巩固阶段：资源取向型关系收尾",
+      "description": "在焦点解决短期疗法（SFBT）咨询末期，以资源取向、未来导向和合作性语言，系统回顾来访者自主行动与微小例外，强化其自我效能感与处境耐受性，并自然、平稳地结束咨询关系。",
+      "child_type": "咨询结束阶段管理",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "50d5a7d5-bfae-5cb3-a113-0a86dead035d",
+      "level_label": "二级技能",
+      "taxonomy_class": "后现代主义",
+      "applicable_when": "在焦点解决短期疗法（SFBT）咨询末期，以资源取向、未来导向和合作性语言，系统回顾来访者自主行动与微小例外，强化其自我效能感与处境耐受性，并自然、平稳地结束咨询关系。",
+      "selector_terms": [
+        "来访者已完成核心咨询目标",
+        "当前焦虑水平显著下降且学习行为趋于规律",
+        "来访者主动表达对咨询过程的反思或评价需求",
+        "焦点解决",
+        "SFBT",
+        "结束阶段",
+        "耐受性提升",
+        "资源取向",
+        "SFBT结束与巩固阶段：资源取向型关系收尾"
+      ],
+      "relative_path": "心理咨询/Family技能/后现代主义/二级技能/SFBT结束与巩固阶段：资源取向型关系收尾/SKILL.md"
+    },
+    {
+      "skill_id": "66a1fe97-bc26-5f96-9245-daf41c096793",
+      "name": "焦点解决短期疗法：幸福清单家庭作业布置",
+      "description": "在咨询结束与巩固阶段，结构化布置三模块手写家庭作业（小确幸记录、自我成长归因、明日快乐计划），以强化来访者资源取向、正向建构能力与行为惯性，支持疗效维持。",
+      "child_type": "焦点解决短期疗法",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "50d5a7d5-bfae-5cb3-a113-0a86dead035d",
+      "level_label": "二级技能",
+      "taxonomy_class": "后现代主义",
+      "applicable_when": "在咨询结束与巩固阶段，结构化布置三模块手写家庭作业（小确幸记录、自我成长归因、明日快乐计划），以强化来访者资源取向、正向建构能力与行为惯性，支持疗效维持。",
+      "selector_terms": [
+        "来访者表达对咨询进展满意",
+        "情绪与躯体症状已显著缓解",
+        "咨询目标基本达成",
+        "焦点解决",
+        "幸福清单",
+        "家庭作业",
+        "资源取向",
+        "正向建构",
+        "结束阶段",
+        "焦点解决短期疗法：幸福清单家庭作业布置"
+      ],
+      "relative_path": "心理咨询/Family技能/后现代主义/二级技能/焦点解决短期疗法：幸福清单家庭作业布置/SKILL.md"
+    }
+  ]
+}

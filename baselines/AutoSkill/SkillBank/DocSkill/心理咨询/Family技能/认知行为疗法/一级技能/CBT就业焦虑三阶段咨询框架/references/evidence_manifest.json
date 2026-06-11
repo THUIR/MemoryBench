@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "dcc66efb-cc9d-5549-ac38-59afb714dd82",
+  "skill_name": "CBT就业焦虑三阶段咨询框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "3eaa1bec-100f-5a17-b9db-06b864293152",
+      "doc_id": "84ae0479-f318-5cb5-bb80-99c0dac2e6d3",
+      "document_title": "一例就业焦虑学生心理咨询案例报告_郭子叶.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例就业焦虑学生心理咨询案例报告_郭子叶.md",
+      "section": "一例就业焦虑学生心理咨询案例报告",
+      "span": {
+        "start": 2992,
+        "end": 3433
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "$\\textcircled{3}$ 总结本次咨询，并请来访者进行反馈;\n\n$\\textcircled{4}$ 布置咨询作业：把真实的就业情况告知父母，看是否能取得父母的理解；主动与老师和身边已经找到工作的同学沟通，争取从他们身上学到一些找工作的技巧；根据重新确立的就业目标，准备好相应就业材料，包括个人简历准备，实习所学内容整理，面试准备等。\n\n3.第三阶段：第三次咨询（二周后，50分钟）\n\n目标：巩固合理认知行为方式；巩固来访者新的自我概念，指出继续努力的方向；结束咨询。\n\n方法：会谈\n\n过程：\n\n$\\textcircled{1}$ 反馈咨询作业是否取得父母的理解和支持，是否向别人学习经验、是否重新确立就业目标。$\\textcircled{2}$ 巩固积极地自我概念，使其增强自信，并对未来充满希望。$\\textcircled{3}$ 再次做心理测试，焦虑自评量表（SAS）以及抑郁自评量表（SDS）测验，对比咨询前后变化。\n\n$\\textcircled{4}$ 结束咨询。",
+      "metadata": {
+        "document_title": "一例就业焦虑学生心理咨询案例报告_郭子叶.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT就业焦虑三阶段咨询框架",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "提供可复用的跨会话CBT治疗骨架，支持目标聚焦、作业驱动与量化评估",
+        "task_family": "就业焦虑干预",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "multi-session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "9cfa54ea-1b45-5763-8ca3-481f781fe640",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "阶段",
+          "会谈"
+        ],
+        "paragraph_start": 36,
+        "paragraph_end": 43,
+        "heading_path": [
+          "一例就业焦虑学生心理咨询案例报告"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "一、基本信息",
+          "4.心理评估及诊断",
+          "二、简要分析",
+          "4.干预计划",
+          "三、过程记录",
+          "4.咨询效果与反馈",
+          "四、个案评价"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "上海健康医学院 郭子叶 王枫"
+      }
+    }
+  ]
+}

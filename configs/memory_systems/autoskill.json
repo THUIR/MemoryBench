@@ -1,0 +1,33 @@
+{
+    "llm_provider": "vllm",
+    "llm_config": {
+        "model": "Qwen/Qwen3-8B",
+        "vllm_base_url": "http://localhost:12345/v1",
+        "temperature": 0.1,
+        "max_tokens": 2048
+    },
+    "autoskill_llm_config": {
+        "provider": "generic",
+        "model": "Qwen/Qwen3-8B",
+        "base_url": "http://localhost:12345/v1",
+        "api_key": "",
+        "timeout_s": 180,
+        "max_tokens": 30000
+    },
+    "autoskill_embeddings_config": {
+        "provider": "generic",
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "base_url": "http://localhost:12377/v1",
+        "api_key": "",
+        "timeout_s": 180,
+        "max_text_chars": 10000,
+        "max_batch_size": 1
+    },
+    "retrieve_k": 5,
+    "skill_scope": "user",
+    "min_score": 0.0,
+    "max_context_chars": 6000,
+    "maintenance_strategy": "llm",
+    "dedupe_similarity_threshold": 0.4,
+    "bm25_weight": 0.1
+}

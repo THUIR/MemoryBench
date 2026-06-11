@@ -1,0 +1,63 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "3530958f-5eda-57a5-9de8-b2de0ae2a465",
+  "skill_name": "挫败故事闪光点三问",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "8d24e5fd-48b8-5a67-9082-a84a950ad529",
+      "doc_id": "749d8e8c-90b6-53e2-86e3-8f74bcea9902",
+      "document_title": "看不到自己优势的欣欣.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/看不到自己优势的欣欣.md",
+      "section": "# 2.外化焦虑，探索资源",
+      "span": {
+        "start": 864,
+        "end": 1705
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "第3～5次辅导，我将辅导目标设为缓解欣欣的焦虑情绪，重构\"父母的期望\"的意义，探索她身上隐藏的资源。\n\n第3次辅导，欣欣认识到焦虑情绪影响其考试状态，导致记忆力下降。我运用叙事治疗中的\"外化\"方法，让她将焦虑和自己的身体分离,并把焦虑具象化。她把焦虑\"外化\"为一个杂乱无序的毛线团- -自己的生活和学习乱七八糟。我邀请欣欣向毛线团诉说自己的痛苦和不容易，同时询问她毛线团听到后的感受。最终，欣欣感受到了毛线团\"希望她可以进步”的心意。\n\n第4次辅导，我和欣欣再次讨论了家庭关系，发现父母的期望是她的最大压力源。我先从欣欣的成长经历入手,定格父母和她相处的美好瞬间，增进他们的关系。接下来，我帮助欣欣看到父母行为背后的心意，重新建立爱的联结,帮助她找到力量和希望。如\"父母的这些话包含的祝福是什么？\"\"父母最欣赏你的地方是什么？\"“如果你的父母知道他们心爱的女儿为实现自己的目标一直在努力，他们会说些什么来支持你？\"通过父母的视角，欣欣重新看到自己的价值,赋予“父母的期望\"新的意义，把压力变为前行的动力。\n\n第5次辅导，我陪着欣欣回忆初中时的学业挫败故事，找到闪光点，强化积极的自我认同,如\"你是如何做到一边带着焦虑，一边准备考试的?\"“为了考出好成绩，你付出了哪些努力?”“你身上的哪些品质和力量帮助你面对学业困难?\"通过对话，欣欣看到自己一直在积极面对，发现自己拥有不少正向资源,如坚持每天早起复习功课,考试前进行积极的心理暗示等。我充分肯定欣欣的能力和付出，鼓励她带着这\n\n些力量积极面对生活。\n\n3.强化优势,明晰方向\n\n第6次辅导，我和欣欣再次梳理和强化了她的优势，为高考明晰了方向。我让欣欣和未来的自己对话,帮助她建立多元化视角，整合现在和未来的经验和智慧。如\"10年后的你正在做什么?\"“你现在这么努力会为未来的自己带来什么？”“未来的你看到现在的你积极面对生活，她会从你身上学习到什么？\"在这个过程中，欣欣再次感受到现在的付出对未来的积极意义，更加坚定了自己的目标。",
+      "metadata": {
+        "document_title": "看不到自己优势的欣欣.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "挫败故事闪光点三问",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "从问题叙事中锚定行动性资源",
+        "task_family": "资源发掘",
+        "method_family": "后现代主义",
+        "stage": "优势确认",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "d843cf23-df50-5966-be85-64b30c55a672",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 6,
+        "heading_path": [
+          "# 2.外化焦虑，探索资源"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 一、总是焦虑的欣欣",
+          "# 二、焦虑产生的原因",
+          "# 三、辅导过程",
+          "# 四、辅导反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第3～5次辅导，我将辅导目标设为缓解欣欣的焦虑情绪，重构\"父母的期望\"的意义，探索她身上隐藏的资源。"
+      }
+    }
+  ]
+}

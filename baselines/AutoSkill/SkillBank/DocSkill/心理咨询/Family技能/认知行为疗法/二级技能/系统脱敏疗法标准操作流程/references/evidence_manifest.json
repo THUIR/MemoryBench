@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "ef9d8240-d76c-5c7f-a0c2-2b67cab7049e",
+  "skill_name": "系统脱敏疗法标准操作流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "fb255243-33e4-57df-beb0-7e1ed945b851",
+      "doc_id": "12a57f3c-2201-5adb-b4d5-b61a28fcd855",
+      "document_title": "一例青少年适应性障碍咨询的案例报告_滕汉平.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例青少年适应性障碍咨询的案例报告_滕汉平.md",
+      "section": "七、咨询目标及原理、方法",
+      "span": {
+        "start": 2320,
+        "end": 2820
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "(一)咨询目标\n具体目标与近期目标：获得信任，建立良好的咨访关系；帮助她在日常生活中适当运用放松技术或积极自我对话，找到出现问题的主客观原因，改变不合理的认知方式，帮助其建立正常的人际交往，以正确的心态面对家长及目前的学习生活。\n\n最终目标和长期目标：帮助宋某改变不合理的认知行为模式，建立新的，理性的认知和行为模式；正确评价自己取得的成绩及不足，与父母及他人建立良好的沟通方式。\n\n(二)咨询原理和方法\n通过第一次摄入性会谈和心理测试的结果分析，就抑郁心境、易激惹、烦恼及自伤行为的形成原因和宋某达成共识，采用合理系统脱敏疗法和认知行为疗法作为咨询的主要方法。\n\n1.系统脱敏疗法。系统脱敏疗法的基本原理是：首先训练来访者使其能基本掌握放松技巧。之后对引发来访者特定焦虑的刺激因素进行归纳整理，建构焦虑等级表。准备就绪之后就可以开始脱敏训练。按照设计的焦虑等级表逐级脱敏。起初，让来访者想象最低等级的刺激事件或情境，待来访者平静后重复上述过程。每次放松后咨询师都要询问来访者有多少焦虑分数。如果分数超过25分，就需要继续放松。反复次数不限，直到来访者如此想象不再感到紧张焦虑时为止，此时算一级脱敏。",
+      "metadata": {
+        "document_title": "一例青少年适应性障碍咨询的案例报告_滕汉平.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "系统脱敏疗法标准操作流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "实施结构化脱敏干预",
+        "task_family": "焦虑管理",
+        "method_family": "行为主义",
+        "stage": "干预实施",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "85eeddaa-18bf-5336-90ba-340bd5036af1",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "咨询目标",
+          "会谈"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "七、咨询目标及原理、方法"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一例青少年适应性障碍咨询的案例报告_滕汉平.md",
+          "一、求助者的一般资料",
+          "二、求助者要求咨询的问题",
+          "三、咨询师对问题过程的叙述",
+          "四、求助者的背景资料",
+          "五、咨询问题归类及诊断"
+        ],
+        "subsection_headings": [
+          "(一)咨询目标",
+          "(二)咨询原理和方法"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "具体目标与近期目标：获得信任，建立良好的咨访关系；帮助她在日常生活中适当运用放松技术或积极自我对话，找到出现问题的主客观原因，改变不合理的认知方式，帮助其建立正常的人际交往，以正确的心态面对家长及目前的学习生活。"
+      }
+    }
+  ]
+}

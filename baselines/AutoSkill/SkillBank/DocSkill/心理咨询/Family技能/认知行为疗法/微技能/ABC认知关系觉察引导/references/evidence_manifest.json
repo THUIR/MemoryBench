@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "ed26dc99-e255-5647-8f40-eb707f43e76e",
+  "skill_name": "ABC认知关系觉察引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "52539cf1-be07-55bd-978c-63c5ffc12bca",
+      "doc_id": "f3bbbafd-3ab8-550a-af19-056a655ae29e",
+      "document_title": "大学生考前焦虑的心理咨询案例分析_黎晓琪.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/大学生考前焦虑的心理咨询案例分析_黎晓琪.md",
+      "section": "大学生考前焦虑的心理咨询案例分析",
+      "span": {
+        "start": 4408,
+        "end": 4535
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "求助者：感觉好像是这样的。考试失败，让我有一种无法在这方面证明我是优秀的遗憾。\n\n咨询师：对的，你的作业上写到A是临近考试，害怕考试失败，B是自己不优秀，现在可以领悟你的问题与不合理信念的关系了吗？\n\n求助者：嗯，就算我考试失败了，也不能证明我不优秀啊。",
+      "metadata": {
+        "document_title": "大学生考前焦虑的心理咨询案例分析_黎晓琪.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ABC认知关系觉察引导",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促进认知领悟",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "认知评估与觉察",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "4b98c6e1-2ebc-554a-8d01-606f8c624173",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 94,
+        "paragraph_end": 96,
+        "heading_path": [
+          "大学生考前焦虑的心理咨询案例分析"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "结束语"
+        ],
+        "subsection_headings": [
+          "一、一般资料",
+          "二、评估与诊断",
+          "三、协商制订咨询目标",
+          "四、心理咨询的主要方法与适用原理",
+          "五、心理咨询过程",
+          "六、效果评估"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "黎晓琪 黄彩微 于佩鑫（广州工商学院 广东广州 510000)"
+      }
+    }
+  ]
+}

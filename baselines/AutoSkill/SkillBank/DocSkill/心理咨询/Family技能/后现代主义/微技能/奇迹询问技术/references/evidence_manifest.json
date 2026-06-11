@@ -1,0 +1,131 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "a350a442-9178-574d-ae19-872ad50ecaf8",
+  "skill_name": "奇迹询问技术",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "3626b519-09f3-511b-bfce-156b0576cd04",
+      "doc_id": "c62b83c5-6827-5de2-ada4-3e4e7eb753b2",
+      "document_title": "应用焦点解决短期心理咨询技术缓解大学生抑郁情绪的个案探究_钱宇航.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/应用焦点解决短期心理咨询技术缓解大学生抑郁情绪的个案探究_钱宇航.md",
+      "section": "4咨询过程",
+      "span": {
+        "start": 3185,
+        "end": 3874
+      },
+      "relation_type": "support",
+      "confidence": 0.99,
+      "quote": "第一阶段:搜集资料,建立咨访关系，探讨其对咨询的态度、心理测评、确定咨询目标(第1～2次咨询)。\n\n初次咨询要做的是收集资料，评估来访者的心理问题，初步对目标进行聚焦。在明确来访者的问题属于学业压力引发的抑郁情绪的一般心理问题后，正式与来访者建立咨访关系，探讨咨询目标。\n\n在判断来访者抑郁情绪程度时，主要运用了刻度化询问技术，以量化方式使其定义自身问题的严重程度,为后续的技术使用创造条件。由于来访者难以确定自己的咨询目标,因此使用了奇迹询问技术,向来访者传递“未来是可以创造和协商的”这一信息，将咨询会谈的重点放在“问题已经解决的未来”上，以帮助来访者对自己的状态进行客观的描述，澄清咨询目标。\n\n节选与来访者进行目标设定过程的一段对话：\n\n咨询师:你最近考试比较多，因此比较忙碌,感觉压力有点大，这是正常的,很多同学面对这种情况都会有和你相似的感受(正常化技术）。你说自己最近心情不太好,如果用 $1 \\sim 1 0$ 来表示你此刻的心情,1表示心情很差，10表示心情很好，那么你现在的心情是几分？\n\n来访者：3分吧。\n\n咨询师：你希望通过咨询将分数提高到几分呢？\n\n来访者:7\\~8分吧,至少7分。\n\n咨询师：那么为了使代表心情的分数由3分提高到7分,你希望通过咨询实现什么样的改变呢(预设性询问技术)？\n\n来访者：就是心情好起来吧。\n\n咨询师：心情好起来有哪些具体的表现呢（询问细节)？\n\n来访者：我也不知道。\n\n咨询师：那我们换个问法,如果在你面前有一个充满魔力的水晶球,透过它你可以看到你的美好未来,你猜你可能会看到什么(奇迹询问技术)？\n\n来访者：那我得想想。",
+      "metadata": {
+        "document_title": "应用焦点解决短期心理咨询技术缓解大学生抑郁情绪的个案探究_钱宇航.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "奇迹询问技术",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "激发来访者对理想状态的具象化想象，生成正向、细节化、可行动的目标线索",
+        "task_family": "目标激发",
+        "method_family": "后现代主义",
+        "stage": "初始评估",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "39e22cf7-78df-52f3-9f7a-dab5b74f2389",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标",
+          "会谈"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 13,
+        "heading_path": [
+          "4咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1基本信息",
+          "2个案评估",
+          "3咨询方案",
+          "5咨询效果",
+          "6案例评价及反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一阶段:搜集资料,建立咨访关系，探讨其对咨询的态度、心理测评、确定咨询目标(第1～2次咨询)。"
+      }
+    },
+    {
+      "support_id": "9d508e87-987d-538d-a6c7-9377be9f904a",
+      "doc_id": "4ba4d7cb-cbbf-529a-a6d9-96b4e74864c5",
+      "document_title": "1例焦点解决短期疗法在考前焦虑问题中的应用_兰栋栋.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/1例焦点解决短期疗法在考前焦虑问题中的应用_兰栋栋.md",
+      "section": "# 6 咨询过程",
+      "span": {
+        "start": 6354,
+        "end": 6712
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "来访者：我报了补习班，可以在网络上听课，也可以问辅导老师，如果实在不会的话，就跳到下一个知识点吧，因为我的时间是很宝贵的。\n\n6.4第四次咨询：结束与巩固阶段\n（1）目的：增加来访者对当前处境的耐受性。（2）方法：一般咨询技术；“奇迹询问”技术。（3）咨询过程如下： $\\textcircled{1}$ 了解到来访者本周的学习状态。发现来访者能够按部就班地进行学习，每天记录的学习时长也有所增加；②使用“问题尺”技术，询问来访者当前的焦虑程度； $\\textcircled{3}$ 回顾和总结整个咨询过程，检视咨访关系，咨询师对来访者的改变给予了积极的肯定； $\\textcircled{4}$ 结束会谈。具体对话过程如下（节选）。\n\n来访者：在我们的咨询过程中我有很多次行动力不足的时候，我想知道你是怎么评价我的。",
+      "metadata": {
+        "document_title": "1例焦点解决短期疗法在考前焦虑问题中的应用_兰栋栋.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "奇迹询问技术",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "解构问题中心思维、激活希望感、提取隐性资源与例外行为",
+        "task_family": "目标具象化与资源激活",
+        "method_family": "后现代主义",
+        "stage": "目标探索与资源激活",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "03488c0d-61d2-5152-a5e3-d28ba6eb6439",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "会谈"
+        ],
+        "paragraph_start": 53,
+        "paragraph_end": 55,
+        "heading_path": [
+          "# 6 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例焦点解决短期疗法在考前焦虑问题中的应用",
+          "# 1一般资料",
+          "# 2 主诉和个人陈述",
+          "# 3评估",
+          "# 4 咨询目标的制定",
+          "# 5制定咨询方案"
+        ],
+        "subsection_headings": [
+          "# 6.1第一次咨询：开场",
+          "# 6.2第二次咨询：心理咨询阶段",
+          "6.3第三次咨询：心理咨询阶段",
+          "6.4第四次咨询：结束与巩固阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "（1）目的：确立咨询关系；全面了解来访者的基本情况收集具体资料；明确咨访双方在咨询过程中的角色，共同确定咨询目标。（2）方法：开场技术。（3）咨询过程如下： $\\textcircled{1}$ 填写咨询登记表，签订知情同意书，陈述保密协议，明确咨访双方在咨询中的责任、权利和义务； $\\textcircled{2}$ 进行自我介绍并对焦点解决短期疗法进行介绍，"
+      }
+    }
+  ]
+}

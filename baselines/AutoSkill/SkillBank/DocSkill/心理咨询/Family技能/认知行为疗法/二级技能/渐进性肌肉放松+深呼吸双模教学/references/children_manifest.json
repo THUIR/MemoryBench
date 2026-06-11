@@ -1,0 +1,38 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "64b664fb-002c-580b-a0f5-81ef0d9e7433",
+  "parent_name": "渐进性肌肉放松+深呼吸双模教学",
+  "children": [
+    {
+      "skill_id": "59788860-f4b2-5f8e-9251-48906b946fee",
+      "name": "渐进式肌肉放松引导",
+      "description": "引导来访者按头→颈→臂→肩→背→胸→腹→臀→大腿→小腿→脚趾固定顺序，逐部位体验‘收紧5秒→释放→专注感受15秒’的紧张-放松对比，同步呼吸提示与感官锚定，达成全身性自主神经唤醒下降。适用于焦虑相关躯体高唤醒状态。",
+      "child_type": "生理调节",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "64b664fb-002c-580b-a0f5-81ef0d9e7433",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "引导来访者按头→颈→臂→肩→背→胸→腹→臀→大腿→小腿→脚趾固定顺序，逐部位体验‘收紧5秒→释放→专注感受15秒’的紧张-放松对比，同步呼吸提示与感官锚定，达成全身性自主神经唤醒下降。适用于焦虑相关躯体高唤醒状态。",
+      "selector_terms": [
+        "来访者报告心悸、手抖、呼吸急促等躯体焦虑症状",
+        "咨询中观察到肌肉紧绷、坐姿僵硬等生理表现",
+        "焦虑调节",
+        "躯体化干预",
+        "渐进式放松",
+        "CBT辅助技术",
+        "自主神经唤醒升高（如皮肤潮红、手心出汗、语速加快）",
+        "主观报告‘身体发紧’‘像被捆住’‘胸口压着石头’",
+        "渐进式肌肉放松引导",
+        "引导来访者按头→颈→臂→肩→背→胸→腹→臀→大腿→小腿→脚趾固定顺序，逐部位体验‘收紧5秒→释放→专注感受15秒’的紧张-放松对比，同步呼吸提示与感官锚定，达成全身性自主神经唤醒下降。适用于焦虑相关躯体高唤醒状态。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/渐进式肌肉放松引导/SKILL.md"
+    }
+  ]
+}

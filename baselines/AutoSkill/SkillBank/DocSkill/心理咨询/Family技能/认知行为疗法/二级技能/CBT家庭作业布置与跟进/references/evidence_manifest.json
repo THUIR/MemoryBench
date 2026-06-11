@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "350e5052-6f2c-5010-b672-569d09d253ab",
+  "skill_name": "CBT家庭作业布置与跟进",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "868b1f30-157d-59df-86e7-d03c372ea862",
+      "doc_id": "fa697555-8adf-52eb-ab22-90c49334eaca",
+      "document_title": "基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 7112,
+        "end": 7603
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "问题13：如果我现在再次处于相同或者类似的情境，我会有同样的困扰吗？（不会）\n\n$\\textcircled{2}$ 要求L回去后每日练习放松技术，每次20～30 min,直至在实际生活中能运用自如。\n\n$\\textcircled{3}$ 利用家庭作业促使其做一些行为的改变（比如，在工作严重超负荷的问题上，L请系部辅导老师与学生会负责老师以及艺术团负责老师一起谈论遇到的困难，适当减轻了工作量，协调好工作、学习、生活的平衡）。\n\n4.3第三阶段：巩固阶段（第9次）\n强化巩固合理的认知：我在很多方面是好的，但我也只是个普通人，我不可能在每件事情上都做得非常好，也不能将所有的时间和精力都用在学习和工作上，我不可能成为一个完美无瑕的人，相比费尽心力去追求成就和虚荣，拥有一个平衡的生活对我来说感觉会更好。\n\n4.4第四阶段：结束阶段（第10次）\n引导L回顾自身发展变化，总结促使其发展变化行之有效的咨询方法，并对于L的努力给予肯定。与其共同复习，确认已经熟练掌握，帮助其成为自己的咨询师，能够预防和应对日后复发。同时将自我放松训练、识别检验自动思维和信念，作为巩固咨询效果的长期作业。",
+      "metadata": {
+        "document_title": "基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT家庭作业布置与跟进",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "巩固咨询效果，促进技能迁移至日常生活",
+        "task_family": "CBT咨询执行",
+        "method_family": "CBT",
+        "stage": "正式咨询阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "4340a7e9-91a4-5655-9099-bd858a60e5e3",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 63,
+        "paragraph_end": 67,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 基本信息",
+          "2 个案概念化",
+          "3 咨询方案",
+          "5 咨询效果",
+          "6 案例评价与反思"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：咨询关系建立与问题评估阶段（第1～2次）",
+          "4.2第二阶段：正式咨询阶段（第3～8次）",
+          "4.3第三阶段：巩固阶段（第9次）",
+          "4.4第四阶段：结束阶段（第10次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本阶段以建立良好的咨询关系为目标，以共情、接纳、积极关注等咨询态度营造安全的咨询氛围，缓解L的焦虑情绪。对L的困扰进行了了解，确定目前的主要困扰是：失眠、焦虑影响到学习、工作和生活，感到痛苦，渴望改善。收集相应资料，探寻自身改变的意愿，形成初步评估。初步评估：焦虑情绪。"
+      }
+    }
+  ]
+}

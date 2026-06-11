@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "9cd5bdb1-e808-5505-b05c-ffdf67d53d4b",
+  "skill_name": "行为激活活动选择引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "e9a8bc4d-3913-5fee-874e-1fd6d7af8db1",
+      "doc_id": "422d9386-7e1d-5e01-af4a-ad32c336279d",
+      "document_title": "行为激活干预抑郁症状的实践研究——以1位认知症家庭照顾者为例_黄佩君.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/行为激活干预抑郁症状的实践研究——以1位认知症家庭照顾者为例_黄佩君.md",
+      "section": "# 3个案历程",
+      "span": {
+        "start": 8065,
+        "end": 8797
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "易某：“比如说，我出去买东西，他就把门反锁了，我回来了，有钥匙都进不来。我的邻居都很好，帮我隔着窗户叫他，搞了一个多小时。结果他把门开了，因为他要睡觉，他就反锁门，把人急得哭不得、笑不得。”\n\n首先，要求家庭照顾者学会追踪自己的感觉。接着，引导家庭照顾者把重心放在自己身上，暂时减少对认知症老人及其照顾过程的过度思考。该主题内容下，社会工作者尽量不要和家庭照顾者讨论患者病情及其出现的问题行为，而是讨论他们自己最近的心情和从事的活动，鼓励家庭照顾者选择让自己愉快的活动，具体指简单易行的活动，比如与朋友聊天、睡午觉等，只要能够让自己保持愉快的心情即可，不一定要做具有挑战性的事情，而是在原本生活的基础上，增强某些简单活动能够带来的愉悦感。正强化的行为可以减少家庭照顾者抑郁症状的发生[23-24]。最后，引导家庭照顾者安排与亲人一同开展的活动。活动安排的过程便是抑制抑郁症状进展的过程，抑郁症状的个体容易出现正向反馈活动丧失的情况[25]，本次干预协助家庭照顾者回顾照顾过程的愉快事件便是一种正向反馈的活动，能够达到提升愉悦感的目的。\n\n3.4.3活动修改：“链锁”解开问题行为的困扰。介绍“触发事件一反应一应对”链锁，协助家庭照顾者回顾与认知症老人的互动过程，反思自己在面对问题行为时的应对方式，以及寻求一种合适的沟通模式。鼓励家庭照顾者讲述认知症老人的问题行为，正面讨论自己在照顾过程所采取的应对方式。引导家庭照顾者认识到回避事实存在的问题并不能让问题得到解决，因为认知症老人的神经精神症状（比如抑郁、冷漠和焦虑）与照顾者本身的抑郁症状具有相关性[26]，而长期稳定的压力应对方式又会使得照顾者的抑郁症状得到掩盖，不过这只是回避带来痛苦减轻的短暂效果[27]。",
+      "metadata": {
+        "document_title": "行为激活干预抑郁症状的实践研究——以1位认知症家庭照顾者为例_黄佩君.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "行为激活活动选择引导",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "提升照顾者正向情绪反馈频率，阻断抑郁症状进展",
+        "task_family": "抑郁症状干预",
+        "method_family": "CBT",
+        "stage": "情绪调节",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "01990674-ea75-5403-a668-21bcf464ab6a",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 18,
+        "paragraph_end": 20,
+        "heading_path": [
+          "# 3个案历程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1 问题的提出",
+          "# 2 文献回顾",
+          "# 4 总结与评估",
+          "# 5反思与建议",
+          "# 6结论"
+        ],
+        "subsection_headings": [
+          "# 3.1案主个人情况",
+          "# 3.2需求评估",
+          "# 3.3干预目标",
+          "# 3.4干预策略"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "案主易某，女性，85岁，居住于武汉市某城市社区，她的老伴为认知症老人。她的老伴经历过多次手术，目前能够半自理，行动不方便。根据易某的描述，老伴经常性言语模糊，记忆力较差，对于家人说过的事情转眼间就忘记了，经常回忆以前的事情，有重复性行为等症状。由于老伴常常出现上述奇怪的行为，易某逐渐减少外出和接受上门访客，因为不愿意与他人多次重复描述老伴的情况，认为互相安慰"
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "7e5a1390-69b3-5a87-9c8c-ec8e4858d450",
+  "skill_name": "四步法心理危机干预框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "18d6501b-89a0-5e69-a30a-2e25ce838319",
+      "doc_id": "428447bb-8f39-5491-a604-d258c3a2248d",
+      "document_title": "“四步法”帮助1例重度抑郁学生走出心理危机_邹婷.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/“四步法”帮助1例重度抑郁学生走出心理危机_邹婷.md",
+      "section": "3干预与实施过程",
+      "span": {
+        "start": 1778,
+        "end": 2409
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "心理危机干预的底线是守护生命，学校要在确保学生生命安全的基础上确定干预方案并实施到位。本案小徐被诊断为重度抑郁，就医服药中，有自杀意念和想法，抗拒父母，不愿回家休养治疗。该生当前的状态存在较大的安全风险，也给学校安全管理带来较大挑战。但该生暂无自杀行为，自知力完好，有主动求医求助的意愿，且不排斥辅导员老师跟进与交流。根据自杀行为整合动机意志模型来看，自杀行为的发生包括3个阶段，即前动机阶段、动机阶段与意志阶段]。其中，动机阶段是导致自杀意念产生阶段，有必要在这一阶段前采取有效干预措施以防治其向意志阶段进一步发展，避免进行自杀行为尝试。结合心理危机干预的八大基本原则（包括心理发展、生命第一、预防为主、主动干预、时间限定、及时沟通、果断处置、保密等）和高校心理危机干预的主要目标（运用有效的心理学方法和措施，使处在心理危机状态下的学生摆脱心理危机状态，恢复能量，重新达到心理平衡，获得新的应对危机的技能并步人正常生活7）。经过综合研判，我们采用“知-联-跟-构”的“四步法”工作方案对其实施干预。\n\n3.1知：即知晓，全方位了解掌握个案相关信息，做到心中有数，落实有方\n3.1.1指导朋辈有效交流，获取真实可靠的信息：在确保小徐不知情的情况下，辅导员老师引导本案第一知情人小梁同学从情绪状态、表达方式、危机行为、人际关系、日常表现、问题诱发因素、认知情况等方面与小徐进行微信互动，从第三方的视角第一时间了解小徐当时当地的整体表现，初步稳住小徐，确保人身安全。",
+      "metadata": {
+        "document_title": "“四步法”帮助1例重度抑郁学生走出心理危机_邹婷.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "四步法心理危机干预框架",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "实施系统性心理危机干预",
+        "task_family": "心理危机干预",
+        "method_family": "认知行为疗法",
+        "stage": "跨阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "3b2400c3-11df-5289-adfb-1addae9ebf76",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "危机干预"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 1,
+        "heading_path": [
+          "3干预与实施过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 案例背景",
+          "2 案例分析",
+          "4干预效果",
+          "5反思"
+        ],
+        "subsection_headings": [
+          "3.1知：即知晓，全方位了解掌握个案相关信息，做到心中有数，落实有方",
+          "3.2联：即联动，有效展开多方联动，确保信息通透，落实安全责任",
+          "3.3跟：即跟进，结合学生情况变化，适时调整工作内容和方式方法",
+          "3.4构：即重构，帮助学生进行认知重建，开展未来生活指导"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "心理危机干预的底线是守护生命，学校要在确保学生生命安全的基础上确定干预方案并实施到位。本案小徐被诊断为重度抑郁，就医服药中，有自杀意念和想法，抗拒父母，不愿回家休养治疗。该生当前的状态存在较大的安全风险，也给学校安全管理带来较大挑战。但该生暂无自杀行为，自知力完好，有主动求医求助的意愿，且不排斥辅导员老师跟进与交流。根据自杀行为整合动机意志模型来看，自杀行为"
+      }
+    }
+  ]
+}

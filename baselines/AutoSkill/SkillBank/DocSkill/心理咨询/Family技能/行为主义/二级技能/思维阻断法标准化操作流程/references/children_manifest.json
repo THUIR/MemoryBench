@@ -1,0 +1,37 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "行为主义",
+  "profile_id": "psychology::行为主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "a4a29d58-dc04-5e47-b88e-d9b6fc7ec74f",
+  "parent_name": "思维阻断法标准化操作流程",
+  "children": [
+    {
+      "skill_id": "54485bcc-5291-5fbb-8a86-72476e414a8e",
+      "name": "思维阻断法干预流程",
+      "description": "指导来访者在强迫念头初现瞬间，通过指令性发声（‘停！’）、同步躯体动作（拍手/握拳）及转向预设中性意象（如蓝天、白纸）三步序列，主动中断自动化思维链，打破强迫循环。",
+      "child_type": "行为干预",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "a4a29d58-dc04-5e47-b88e-d9b6fc7ec74f",
+      "level_label": "微技能",
+      "taxonomy_class": "行为主义",
+      "applicable_when": "指导来访者在强迫念头初现瞬间，通过指令性发声（‘停！’）、同步躯体动作（拍手/握拳）及转向预设中性意象（如蓝天、白纸）三步序列，主动中断自动化思维链，打破强迫循环。",
+      "selector_terms": [
+        "强迫念头频次减少但仍具情境性触发",
+        "来访者能识别念头出现的初始信号",
+        "当前无急性解离或现实感丧失",
+        "强迫症",
+        "思维阻断",
+        "行为阻断",
+        "动作锚点",
+        "中性意象",
+        "思维阻断法干预流程"
+      ],
+      "relative_path": "心理咨询/Family技能/行为主义/微技能/思维阻断法干预流程/SKILL.md"
+    }
+  ]
+}

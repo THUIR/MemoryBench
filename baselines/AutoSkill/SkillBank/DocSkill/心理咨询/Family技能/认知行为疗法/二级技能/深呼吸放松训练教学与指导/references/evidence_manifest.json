@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "7b4f1a8e-9eb1-5359-baa7-78f4685fb1bd",
+  "skill_name": "深呼吸放松训练教学与指导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "dcced889-a772-55db-b5b8-bef25afd0460",
+      "doc_id": "94ea221b-9234-503b-a5b4-c0e043213305",
+      "document_title": "一例宿舍人际交往障碍的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例宿舍人际交往障碍的心理咨询案例报告.md",
+      "section": "6咨询过程",
+      "span": {
+        "start": 2341,
+        "end": 2748
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "(2)过程：用开放性问题收集求助者的资料；介绍咨询的有关事项和规定，通过倾听、无条件地积极关注，让求助者尽情倾诉，与其建立良好的咨询关系，指导求助者进行放松训练，使其紧张情绪得到缓解。\n\n向求助者传授深呼吸放松训练的技术。步骤：以舒适的姿势靠在沙发或躺椅上。首先闭上眼睛，尽量使身体放松。吸气时要深深地吸，把肺部尽量扩张；呼气时慢慢地呼，让呼气时间拖得稍长一点，一直到把肺部的残留气体差不多呼尽为止，尽量用鼻子呼吸。吸气的同时使全身的肌肉处在收缩状态，在呼气的同时将刚刚紧绷的肌肉放松，有意识的感受从紧张到放松这-过程的舒服与畅快。这样重复做五六个回合(一个回合大概需15秒左右)。\n\n(3)布置作业：每天练习1次放松训练，每次20分钟(可平躺在床上做)，认真体会训练前后的情绪变化，将体会记录下来。\n\n6.2第二次咨询\n(1)任务：介绍合理情绪疗法，协助求助者领悟到自己人际交往的问题是由所持的不合理观念造成的。",
+      "metadata": {
+        "document_title": "一例宿舍人际交往障碍的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "深呼吸放松训练教学与指导",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "教授可操作的生理调节技术并建立家庭练习契约",
+        "task_family": "情绪调节训练",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "初始阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "9d769618-3910-54f6-ae4e-021e3a4ebffa",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 1,
+        "paragraph_end": 4,
+        "heading_path": [
+          "6咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 主诉与个人陈述",
+          "3观察与收集到的资料",
+          "4评估与诊断",
+          "5咨询原理",
+          "7咨询效果评估"
+        ],
+        "subsection_headings": [
+          "6.1第一次咨询",
+          "6.2第二次咨询",
+          "6.3第三次咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "(1)任务：了解基本情况，建立良好的咨询关系，确立主要的问题。"
+      }
+    }
+  ]
+}

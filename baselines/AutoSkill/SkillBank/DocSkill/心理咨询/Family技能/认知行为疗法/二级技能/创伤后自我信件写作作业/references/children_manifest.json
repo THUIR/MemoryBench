@@ -1,0 +1,40 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "4772e778-e44c-5499-b3f7-047cc32690d1",
+  "parent_name": "创伤后自我信件写作作业",
+  "children": [
+    {
+      "skill_id": "5314b5cc-4a3f-539e-8673-5499f8b3988c",
+      "name": "空椅技术处理未哀悼关系创伤",
+      "description": "一种人本-存在主义取向的会话级微干预技能，用于帮助来访者对已成过去的、无现实安全风险的关系创伤（如亲密伴侣施害）完成情绪宣泄、不可逆性确认与象征性告别，从而促进哀伤浮现与创伤整合。",
+      "child_type": "trauma_processing",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "4772e778-e44c-5499-b3f7-047cc32690d1",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "一种人本-存在主义取向的会话级微干预技能，用于帮助来访者对已成过去的、无现实安全风险的关系创伤（如亲密伴侣施害）完成情绪宣泄、不可逆性确认与象征性告别，从而促进哀伤浮现与创伤整合。",
+      "selector_terms": [
+        "来访者对特定关系对象存在长期压抑的愤怒与无力感",
+        "创伤事件已成过去且无现实安全风险",
+        "空椅技术",
+        "哀悼",
+        "关系创伤",
+        "愤怒宣泄",
+        "象征性告别",
+        "反复回避提及某人但伴随躯体紧张或情绪闪回",
+        "谈及该关系时出现明显愤怒-羞愧交替或情感冻结",
+        "能命名伤害但无法体验哀伤，愤怒持续不消解",
+        "空椅技术处理未哀悼关系创伤",
+        "一种人本-存在主义取向的会话级微干预技能，用于帮助来访者对已成过去的、无现实安全风险的关系创伤（如亲密伴侣施害）完成情绪宣泄、不可逆性确认与象征性告别，从而促进哀伤浮现与创伤整合。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/空椅技术处理未哀悼关系创伤/SKILL.md"
+    }
+  ]
+}

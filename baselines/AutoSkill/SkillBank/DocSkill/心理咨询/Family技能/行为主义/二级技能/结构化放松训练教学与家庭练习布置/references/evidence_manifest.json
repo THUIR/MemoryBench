@@ -1,0 +1,197 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "336fcd4a-d7fc-5415-8a4a-e6817c4dcd24",
+  "skill_name": "结构化放松训练教学与家庭练习布置",
+  "support_count": 3,
+  "supports": [
+    {
+      "support_id": "ef1c34c9-05d2-595f-ac4e-0c921234fc29",
+      "doc_id": "6c0482c4-d98b-5179-86d2-44bfa09e19e4",
+      "document_title": "1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+      "section": "8 咨询过程",
+      "span": {
+        "start": 4711,
+        "end": 5083
+      },
+      "relation_type": "support",
+      "confidence": 0.9,
+      "quote": "主要方法：放松训练；合理情绪疗法。\n\n主要流程：分析来访者的经历，了解其感受，探究来访者的性格特征；教授来访者放松技巧和练习，以缓解他们对学习的紧张和焦虑；简要介绍ABC模型；安排家庭作业，加强来访者对ABC关系的梳理，要求来访者尽量按照ABC形式表达自己的所有问题；来访者的精神反应还是比较强烈的，不知道该怎么办。心理咨询师传达理解和接受，让来访者进一步详细讨论自己在得知挫折后内心的想法和痛苦，深挖其不合理的信念；通过谈话、启发和引导，最终帮助来访者寻求与此问题相关的令人沮丧和痛苦的非理性信念。\n\n咨询任务：要求来访者仔细思考上述非理性信念通过关注自己的非理性信念并理解自己的问题与非理性信念之间的关系而转移的事件、之前列出的信念，心理咨询师与来访者来回论辩，指导来访者分清不合理信念以及如何用合理信念替代不合理信念。下面是主要咨询片段。",
+      "metadata": {
+        "document_title": "1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "结构化放松训练教学与家庭练习布置",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "提升来访者对生理唤醒的觉察与调控能力，降低学习情境下的焦虑水平",
+        "task_family": "生理调节",
+        "method_family": "Behaviorism",
+        "stage": "心理帮助阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "8384455f-e28d-5304-9a96-13490a5412c1",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 5,
+        "paragraph_end": 7,
+        "heading_path": [
+          "8 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 主诉与个人陈述",
+          "3 观察和他人反映",
+          "4 咨询前心理测验结果",
+          "5评估",
+          "6 制定咨询目标"
+        ],
+        "subsection_headings": [
+          "8.1第一阶段：评估诊断、建立咨询关系（第1～2次）",
+          "8.2第二阶段：心理帮助阶段一（第3～4次）",
+          "3.3第三阶段：心理帮助阶段二（第5～7次）",
+          "8.4第四阶段：巩固和结束阶段（第8次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询分4个阶段，共8次，每周1次， $0 . 5 \\ : \\mathrm { h } \\iota$ 次。"
+      }
+    },
+    {
+      "support_id": "02468486-e13e-58a0-8ad2-4ae56ad24776",
+      "doc_id": "5ef7f933-89c3-50fe-8866-394f14ab8823",
+      "document_title": "1例考研焦虑的心理咨询案例报告_张欣.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/1例考研焦虑的心理咨询案例报告_张欣.md",
+      "section": "4心理咨询方案",
+      "span": {
+        "start": 2733,
+        "end": 3105
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "4.3咨询方法\n4.3.1放松训练：因考研在即，小王又急需要缓解自己的焦虑，所以考虑采用呼吸放松法和渐进式肌肉放松训练，能够快速帮助小王平定内心、减轻焦虑、改善睡眠。\n\n4.3.2认知疗法：小王认为自己放弃了保研资格，并且相信自己已经认真学习这么久了，一定可以考上X院校的研究生，不然自己人生就完了。通过提问和自我审查，帮助小王明确自己目前的焦虑主要是自己过分看重考研结果。通过检验错误理念，帮助小王认识到，其实考研也是一场考试，考试结果不仅取决于个人因素（努力程度、心态、身体状况等），还取决于客观因素（考纲、考试难易程度、录取比例等），如果自己真考不上X院校，自己的人生并不会像想象中的糟糕。最后通过语义分析技术和行为矫正技术，纠正小王过分看重考研结果，理性平和面对学习，最终以新的视角看待考研结果和学习，从而达到心理健康、人格完善的状态。",
+      "metadata": {
+        "document_title": "1例考研焦虑的心理咨询案例报告_张欣.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "呼吸放松与渐进式肌肉放松训练组合",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "降低自主神经兴奋性，改善即时焦虑与睡眠质量",
+        "task_family": "焦虑管理",
+        "method_family": "行为主义",
+        "stage": "症状缓解",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "a1d89a51-9c5f-54f2-bdf2-2b8fb28e64e6",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 5,
+        "paragraph_end": 6,
+        "heading_path": [
+          "4心理咨询方案"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案信息",
+          "2 来访者心理问题评估",
+          "3 评估与诊断",
+          "5 咨询过程",
+          "6 咨询效果",
+          "7 咨询反思"
+        ],
+        "subsection_headings": [
+          "4.1咨询目标",
+          "4.2咨询原理",
+          "4.3咨询方法"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "结合以上评估和诊断，以及来访者当前的状态，咨询师与来访者共同确定咨询方案：自10月25日起，每周一次疗程，一次 $5 0 \\mathrm { { m i n } }$ ，一共7次结案，期间小王依旧接受医院开的泌尿系统的药物治疗，学校心理咨询免费对学生开放。"
+      }
+    },
+    {
+      "support_id": "4fadcbf3-ae2e-560c-a3bc-7e638fadd25b",
+      "doc_id": "6c636ce4-e0bc-59b4-b9bc-7af3d8e2e2a9",
+      "document_title": "一例舞蹈系大学生舞台焦虑的心理咨询案例.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例舞蹈系大学生舞台焦虑的心理咨询案例.md",
+      "section": "6.咨询过程：咨询过程分为三个阶段",
+      "span": {
+        "start": 6217,
+        "end": 6399
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "求：(沉默)可能不会吧！或许是我想多了\n\n(3）布置家庭作业\n$\\textcircled{1}$ 还有哪些不合理的信念，进行自己与自己辩论；$\\textcircled{2}$ 放松训练\n\n(4）结束与巩固阶段\n第八次咨询\n\n(a)复习咨询过程中建立起来的合理信念，同时注意调整关注点\n\n(b)肯定其进步，指出努力的方向;\n\n(c）反馈家庭作业;\n\n(d)结束咨询。",
+      "metadata": {
+        "document_title": "一例舞蹈系大学生舞台焦虑的心理咨询案例.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT家庭作业布置",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "巩固认知重构与行为调节效果",
+        "task_family": "CBT咨询流程",
+        "method_family": "CBT",
+        "stage": "咨询阶段-作业布置",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "82af1228-c981-5296-9205-3ef4a06a0119",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 36,
+        "paragraph_end": 42,
+        "heading_path": [
+          "6.咨询过程：咨询过程分为三个阶段"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1.一般资料",
+          "2．主诉和个人陈述",
+          "3.评估与诊断",
+          "4.咨询目标",
+          "5.咨询方案",
+          "7.咨询效果评估"
+        ],
+        "subsection_headings": [
+          "（一）诊断阶段",
+          "(二）咨询阶段",
+          "(2）与不合理信念辩论，咨询师采用直接提问的方式：",
+          "(3）布置家庭作业",
+          "(4）结束与巩固阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一次咨询，建立良好的咨询关系，通过摄入性会谈、观察了解、心理测验等收集求助者相关信息，明确求助者的问题、产生问题的原因、问题的严重程度，最终做出明确的心理诊断。"
+      }
+    }
+  ]
+}
