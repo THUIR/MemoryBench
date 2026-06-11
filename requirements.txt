@@ -31,6 +31,9 @@ nltk
 # mem0
 # mem0ai
 
+# Graphiti (embedded Kuzu graph DB, no server needed)
+graphiti-core[kuzu]>=0.29.2
+
 # BM25
 whoosh
 

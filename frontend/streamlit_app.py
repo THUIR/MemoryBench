@@ -40,7 +40,7 @@ ON_POLICY_MEMORYS = memory_systems.names_with_memory()
 _BASELINES_NO_ANTHROPIC = {"mem0", "a_mem", "memoryos"}
 
 # Baselines that consume an embedder (text-embedding model).
-_BASELINES_NEED_EMBEDDER = {"embedder_message", "embedder_dialog", "mem0"}
+_BASELINES_NEED_EMBEDDER = {"embedder_message", "embedder_dialog", "mem0", "graphiti"}
 
 _PROVIDER_DEFAULT_URL = {
     "vllm": "http://localhost:12366/v1",

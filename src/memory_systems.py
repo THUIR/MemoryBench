@@ -129,6 +129,19 @@ register(MemorySystemSpec(
 ))
 
 register(MemorySystemSpec(
+    name="graphiti",
+    solver_class="src.solver.graphiti.GraphitiSolver",
+    config_class="src.solver.graphiti.GraphitiAgentConfig",
+    config_file="configs/memory_systems/graphiti.json",
+    # No pre-generated dialog_graphiti field exists in the HF datasets; reuse
+    # mem0's dialogs (the closest extraction-based memory system).
+    dialog_stem="mem0",
+    paper_name="Graphiti",
+    # Graph ingestion is LLM-heavy; skip the largest combinations like mem0.
+    skip_combinations=[("domain", "Open-Domain"), ("task", "Long-Short")],
+))
+
+register(MemorySystemSpec(
     name="memoryos",
     solver_class="src.solver.memoryos.MemoryOSSolver",
     config_class="src.solver.memoryos.MemoryOSAgentConfig",

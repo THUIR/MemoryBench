@@ -12,6 +12,7 @@ from src.solver.embedder import EmbedderAgentConfig
 from src.solver.embedder_dialog import EmbedderDialogAgentConfig
 from src.solver.a_mem import AMemAgentConfig
 from src.solver.mem0 import Mem0AgentConfig
+from src.solver.graphiti import GraphitiAgentConfig
 from src.solver.memoryos import MemoryOSAgentConfig
 # from src.solver.raptor import RAPTORAgentConfig
 

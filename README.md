@@ -183,8 +183,9 @@ All baselines are registered in [`src/memory_systems.py`](src/memory_systems.py)
 | A-Mem      | `a_mem`             | Note-based associative     | [`a_mem.json`](configs/memory_systems/a_mem.json)    |
 | Mem0       | `mem0`              | Fact-extraction memory     | [`mem0.json`](configs/memory_systems/mem0.json)      |
 | MemoryOS   | `memoryos`          | Hierarchical OS-style      | [`memoryos.json`](configs/memory_systems/memoryos.json) |
+| Graphiti   | `graphiti`          | Temporal knowledge graph   | [`graphiti.json`](configs/memory_systems/graphiti.json) |
 
-Upstream sources for `a_mem`, `mem0`, and `memoryos` are vendored under [`baselines/`](baselines/).
+Upstream sources for `a_mem`, `mem0`, and `memoryos` are vendored under [`baselines/`](baselines/). `graphiti` installs from PyPI (`pip install "graphiti-core[kuzu]"`) and stores its graph in an embedded Kuzu database under the memory cache directory — no graph-database server required.
 
 ---
 
