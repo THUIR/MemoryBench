@@ -97,13 +97,7 @@ pip install -e baselines/mem0          # editable install required by Mem0
 python -c "import nltk; [nltk.download(p) for p in ('punkt','wordnet','stopwords')]"
 ```
 
-### Smoke test (no API keys, no downloads)
-
-```bash
-python smoke_test.py
-```
-
-### Hello World
+### Quick Start
 
 ```python
 from memorybench import load_memory_bench, evaluate, summary_results
@@ -125,15 +119,6 @@ python -m src.off-policy \
     --memory_system bm25_message \
     --dataset_type domain \
     --set_name Open-Domain
-```
-
-### Develop offline against the TinyDataset
-
-```bash
-# The TinyDataset ships 3 train + 2 test rows per dataset; no HF download needed.
-export MEMORY_BENCH_PATH=$(pwd)/../TinyDataset
-python -m src.off-policy --memory_system bm25_message --dataset_type single --set_name Locomo-0
-python -m unittest tests.test_refactor -v
 ```
 
 ---
