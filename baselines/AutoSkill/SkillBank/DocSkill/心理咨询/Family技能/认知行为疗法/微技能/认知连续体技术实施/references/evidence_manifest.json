@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "4ff3789d-752e-58da-bf76-dffa1118242c",
+  "skill_name": "认知连续体技术实施",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "176391fe-41e3-59ad-b8ee-bf92f83c597f",
+      "doc_id": "869839ed-6afa-546f-ae8e-af7f3270fc10",
+      "document_title": "tppc20210305351-359.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20210305351-359.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 3788,
+        "end": 4093
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "咨询师针对小A面临的三类问题开展工作。对小A来说前两类问题的影响是最大的，因此咨询师决定优先并同时处理它们，即第一类问题给小A带来羞耻感和第二类问题给小A带来的对现实的担忧。\n\n第一类问题主要表现有小A不能接受自己对前夫的仇恨和愤怒的情绪，并不能接受自己有报复的想法，厌恶自己是一个心胸狭窄装满仇恨的人，有羞耻和自责感，对此咨询师采用“认知连续体”技术处理小A的“两极化思维” ［1］。具体过程如下：\n\n咨询师在纸上画了一条带有刻度的线，最右端的90-100代表“心胸最狭窄的人”，最左端的0-10代表\"心胸宽广的人”。先请小A画出自己的状况在线条上的位置,小A第一次把自己标在80分的位置（见图2）[1] 。",
+      "metadata": {
+        "document_title": "tppc20210305351-359.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "认知连续体技术实施",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "修正两极化思维",
+        "task_family": "认知重构",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "认知干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "6ecd9a7e-0112-5153-80dc-a2e71df50f24",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 10,
+        "paragraph_end": 12,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一例离异后抑郁女性的认知行为治疗案例报告",
+          "1 背景",
+          "2评估与分析",
+          "3 目标与计划",
+          "表1小A的信念工作表",
+          "5 讨论与总结"
+        ],
+        "subsection_headings": [
+          "4.1第1阶段(第1～ 3次)",
+          "4.2第2阶段(第4～6次)",
+          "4.3第3阶段（第7～11次）",
+          "4.4第4阶段（第12～15次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "心理咨询频率为每周1次，每次60分钟，共进行了15次面对面会谈。"
+      }
+    }
+  ]
+}

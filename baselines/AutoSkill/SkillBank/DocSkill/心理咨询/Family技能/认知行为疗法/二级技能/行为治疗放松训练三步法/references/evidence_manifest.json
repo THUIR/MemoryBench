@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "8fb78097-a70d-59bd-b54c-6744065819b1",
+  "skill_name": "行为治疗放松训练三步法",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "e4689af0-93c0-58c7-a2ee-4a5c786fd04e",
+      "doc_id": "94fc6dec-dbf5-5b07-9a1c-8487360c9f65",
+      "document_title": "tppc20240607373-378.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20240607373-378.md",
+      "section": "5 咨询方案的制订",
+      "span": {
+        "start": 2783,
+        "end": 3112
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "在接待来访者过程中，咨询师使用共情、无条件积极关注、耐心倾听、情感反应和内容反应后，了解了小阳的基本情况，确定为一般心理问题。接下来与小阳协商一致，采用以下方法进行心理治疗。\n\n5.1　放松训练\n放松训练是行为治疗中使用最广的技术之一。行为治疗最大的特点是将咨询的着眼点放在可观察的外在行为改变上。行为治疗不关心所谓“潜意识”或“内在精神的症结”，也不管行为发生的动态和因果关系，而是把着眼点放在可观察的非适应性行为上。操作步骤：首先，咨询师介绍原理；其次，咨询师进行示范、指导并强化求助者的练习；最后，布置家庭作业，建议求助者每日练习1-2次。\n\n针对小阳哭泣不止及激动的情绪，允许她情绪宣泄，适当流泪哭泣，然后采用想象放松法，指导她跟随着咨询师一起放松。",
+      "metadata": {
+        "document_title": "tppc20240607373-378.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "行为治疗放松训练三步法",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "降低急性情绪唤起水平，建立可重复的自我调节行为",
+        "task_family": "情绪调节",
+        "method_family": "Behaviorism（行为主义）",
+        "stage": "情绪稳定化",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "06959b30-e91d-543e-8a07-8dad2cda56d0",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "5 咨询方案的制订"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一例针对人际关系困扰的大学生心理咨询干预报告",
+          "1 案例背景",
+          "2 心理评估与诊断过程",
+          "3 原因分析",
+          "4 咨询目标的确定",
+          "6 咨询小结"
+        ],
+        "subsection_headings": [
+          "5.1　放松训练",
+          "5.2　理性情绪疗法[2]",
+          "5.3　空椅子技术[3]"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "在接待来访者过程中，咨询师使用共情、无条件积极关注、耐心倾听、情感反应和内容反应后，了解了小阳的基本情况，确定为一般心理问题。接下来与小阳协商一致，采用以下方法进行心理治疗。"
+      }
+    }
+  ]
+}

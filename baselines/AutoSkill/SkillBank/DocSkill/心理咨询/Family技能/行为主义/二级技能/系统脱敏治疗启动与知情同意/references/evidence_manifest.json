@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "65bdd644-af41-5763-af66-a37499d84372",
+  "skill_name": "系统脱敏治疗启动与知情同意",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "7c1b5c1b-dde4-5fac-999c-ed32993b6609",
+      "doc_id": "4faf84c3-3079-5cda-aaaa-900570506df5",
+      "document_title": "一例大学生社交恐惧症心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例大学生社交恐惧症心理咨询案例报告.md",
+      "section": "# 5咨询过程",
+      "span": {
+        "start": 4957,
+        "end": 5349
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "# 万方数据\n\n询师请来访者在咨询室练习一次放松训练并观察和确认来访者的放松训练情况。咨询师：“鉴于你的问题的性质和对放松技术的掌握，我们决定使用系统脱敏技术为你治疗。咨询师向来访者详细解释系统脱敏技术及其原理。\"李某：“我明白了。我同意采用系统脱敏治疗方法。\"于是，帮助来访者建立自己的焦虑(恐怖)等级表。\n\n<table><tr><td>0</td><td>独自在一个房间里</td></tr><tr><td>1</td><td>想到自己要见的人</td></tr><tr><td>2</td><td>见到比较陌生的女性</td></tr><tr><td>3</td><td>见到比较陌生的男性</td></tr><tr><td>4</td><td>见到熟悉的同学及教师</td></tr><tr><td>5</td><td>见到有好感的男同学</td></tr></table>",
+      "metadata": {
+        "document_title": "一例大学生社交恐惧症心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "系统脱敏治疗启动与知情同意",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立治疗共识并启动结构化暴露干预",
+        "task_family": "焦虑障碍行为干预",
+        "method_family": "Behaviorism（行为主义）",
+        "stage": "咨询阶段起始",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "c8b603cf-7e8a-515c-ae06-0fdb9716f3fc",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 6,
+        "paragraph_end": 8,
+        "heading_path": [
+          "# 5咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1案例介绍",
+          "# 2个人陈述",
+          "# 3评估与诊断",
+          "# 4咨询目标的制定",
+          "# 6咨询效果评估"
+        ],
+        "subsection_headings": [
+          "第一阶段：诊断阶段",
+          "第二阶段：咨询阶段（2-4次咨询）",
+          "第三阶段·结束巩固阶段(第5、6次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "根据来访者的情况，与来访者协商并同意为其安排6次咨询，每次50分钟，采用了认知疗法，使求助者对这一心理障碍产生的原因有所领悟和认识，然后采用系统脱敏法，逐步减轻求助者与人接触的紧张情绪，对其进行相应的治疗。"
+      }
+    }
+  ]
+}

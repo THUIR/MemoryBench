@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "bcb73fe8-f418-5def-b779-0e0b97bbf5d2",
+  "skill_name": "正念引导下的首次会谈结构",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "259052ab-89cb-58fd-a0b5-8462f3aa50e6",
+      "doc_id": "74f68922-9412-5f81-9f95-d21a388908d7",
+      "document_title": "基于认知行为疗法：一例大一学生抑郁情绪咨询案例_魏一凡.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法：一例大一学生抑郁情绪咨询案例_魏一凡.md",
+      "section": "表1本案例的认知概念化",
+      "span": {
+        "start": 2183,
+        "end": 3195
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "<table><tr><td>核心信念</td><td>情境</td><td>自动思维</td><td>情绪</td><td>行为</td></tr><tr><td rowspan=\"4\">我没有能力； 人一定会嘲 笑我</td><td>印作业</td><td>的任务，我真差劲</td><td></td><td>在打印店发呆</td></tr><tr><td></td><td>他们不会喜欢我，还 都不喜欢和我交流</td><td></td><td>装作</td></tr><tr><td></td><td>我说不出牛肉面这 闭嘴好了 是</td><td></td><td>说话开需要</td></tr></table>\n\n因求助者是大学生，处于辩证逻辑思维的成熟与完善阶段，有较强的理解和接受能力，经与其商定，采用认知行为疗法，帮助求助者调整原有的认知，调节自身的情绪状态。咨询一共分为三个阶段进行，1.咨询初期：建立关系，使用正念技术放松情绪，确定核心问题并商定咨询目标，传授抑郁症的相关知识，引导其认识到自身的不合理信念;2.咨询中期：使用认知行为治疗，修复错误认知观念，改善行为障碍，正常开展人际关系，恢复社会功能;3.咨询后期：引导其将咨询中学到的观点运用到生活，并对预防复发做心理教育。\n\n第一阶段(第1次)建立关系,缓解情绪,收集信息，个案概念化，设置咨询目标和治疗方案\n来访者第1次咨询时非常拘谨，语速较慢，说话很少，低着头不敢进行眼神接触。咨询师用接纳态度表示理解和尊重。在真诚、温暖的环境中，来访者能够安全表达内心的痛苦和诉求，渐渐放开了自我。咨询师在了解基本信息后，使用正念冥想放松训练引导来访者进入平静放松的状态，帮助其在认知行为治疗的框架下理解自己的认知和行为模式，确定核心的治疗问题和咨询目标。\n\n第二阶段（第 $2 \\sim 4$ 次）：正念认知治疗，识别评估和矫正错误的信念\n第 $2 \\sim 4$ 次的咨询过程中，咨询师使用正念技术和认知治疗技术引导来访者对不合理信念进行识别和评估，并使用强迫思维记录表指导其对不合理信念进行纠正。\n\n1.发现错误认知。“我一定要把每件事都做好，如果我做不到，我就是没有能力的、差劲的”“我是丑陋的，不完美的，我还是不要跟他们搭话了”“我有口吃,我没救了,我还是闭嘴好了”。\n\n2.纠正不良信念。当出现错误的强迫思维的时候，使用强迫思维记录表，见表2。",
+      "metadata": {
+        "document_title": "基于认知行为疗法：一例大一学生抑郁情绪咨询案例_魏一凡.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "正念引导下的首次会谈结构",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "在单次会谈内完成关系建立、情绪调节、信息收集与初步概念化",
+        "task_family": "initial_session",
+        "method_family": "CBT+mindfulness",
+        "stage": "first_session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "71e77049-e1af-5c8c-a807-401990c1cc14",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "阶段",
+          "咨询目标",
+          "第1次咨询",
+          "思维记录"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 5,
+        "heading_path": [
+          "表1本案例的认知概念化"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 基于认知行为疗法：一例大一学生抑郁情绪咨询案例",
+          "表2强迫思维记录表"
+        ],
+        "subsection_headings": [
+          "第一阶段(第1次)建立关系,缓解情绪,收集信息，个案概念化，设置咨询目标和治疗方案",
+          "第二阶段（第 $2 \\sim 4$ 次）：正念认知治疗，识别评估和矫正错误的信念"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "<table><tr><td>核心信念</td><td>情境</td><td>自动思维</td><td>情绪</td><td>行为</td></tr><tr><td rowspan=\"4\">我没有能力； 人一定会嘲 笑我</td><td>印作业</td><td>的任务，我真差劲</td><td></td><td>在打印店发呆</td></tr><tr><td"
+      }
+    }
+  ]
+}

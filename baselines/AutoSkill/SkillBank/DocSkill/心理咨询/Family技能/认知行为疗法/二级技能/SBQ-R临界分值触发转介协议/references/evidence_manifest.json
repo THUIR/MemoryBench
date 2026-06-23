@@ -1,0 +1,66 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "7498f994-cab0-520e-a9c2-dc6d929da876",
+  "skill_name": "SBQ-R临界分值触发转介协议",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "b1f2ac67-6514-54c0-a6e8-e78ff634b419",
+      "doc_id": "d9c869a4-449d-56ce-96f2-f10cd8474a7e",
+      "document_title": "1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+      "section": "2评估",
+      "span": {
+        "start": 1412,
+        "end": 1821
+      },
+      "relation_type": "constraint",
+      "confidence": 0.95,
+      "quote": "# 2.1量表评估\n\n根据来访者的状况，在对其本人说明评估原因后，对其进行了相关的心理测试。90项症状清单（symptomchecklist90，SCL-90）[1总分287分，其中抑郁项得分3.6，焦虑得分3.2，人际敏感得分3.5。抑郁自评量表（self-ratingdepressionscale，SDS）[2得分为55分，焦虑自评量表（self-ratinganxiety scale，SAS）[2得分为62分，自杀行为问卷一修订版（suicide behavior questionnaire-revised，SBQ-R）[3]得分为8分（该量表临界分值为7分，但分数≥7时，表示存在自杀风险）。根据心理测试的结果，在征得来访者本人同意后，联系了其辅导员和母亲，建议父母将其带到精神类医院做进一步的诊断。经精神科医生评估其为轻度抑郁和中度焦虑，开具一定的药物，并建议配合定期的心理咨询。\n\n# 2.2综合评估",
+      "metadata": {
+        "document_title": "1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "SBQ-R临界分值触发转介协议",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "safety_micro",
+        "asset_path": "family_root/safety_module/safety_micro",
+        "asset_level": 2,
+        "visible_role": "leaf",
+        "objective": "危机识别与转介",
+        "task_family": "风险评估与管理",
+        "method_family": "标准化量表筛查",
+        "stage": "初始评估",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "f143387a-55e9-58b5-b3cd-54cd4575bd2e",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "清单"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "2评估"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例基于认知行为主义疗法的大学生心理咨询报告",
+          "1一般资料",
+          "3 个案概念化",
+          "4 咨询过程",
+          "5 案例评价与反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 2.1量表评估"
+      }
+    }
+  ]
+}

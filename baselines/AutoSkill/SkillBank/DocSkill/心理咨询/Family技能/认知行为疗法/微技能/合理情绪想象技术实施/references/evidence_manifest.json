@@ -1,0 +1,74 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "a3f7ff35-0f7a-5a93-9720-182d869d0a1b",
+  "skill_name": "合理情绪想象技术实施",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "0343817b-8aa1-5125-b88c-2358db886839",
+      "doc_id": "588958ef-26a9-5c37-8a3d-cc264775e889",
+      "document_title": "1例大学生人际交往中内心冲突咨询案例报告_张玉.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例大学生人际交往中内心冲突咨询案例报告_张玉.md",
+      "section": "8 咨询过程",
+      "span": {
+        "start": 4338,
+        "end": 5077
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "咨询师：很好，你现在似乎已经开始能找到你为什么总是容易纠结、矛盾的原因了。\n\n布置家庭作业：在实际生活当你再次出现心里感到很矛盾、纠结的时候，你可以尝试自己分析一下这里面是否也存在着这样的一些冲突，并把它记录下来，下次咨询的时候可以带来讨论。\n\n8.2第二阶段：第4～7次咨询\n8.2.1任务：咨询师向来访者介绍不合理认知的特征和情绪ABC理论，帮助来访者认识内心冲突背后的认知偏差，以及认知偏差对自己情绪和行为的影响进行讨论。一起探讨来访者更深层次的不合理信念，使其明确对自己情绪和行为上的反应负有责任，用辩论的方法引导来访者对自己的不合理信念产生怀疑和动摇。\n\n8.2.2 方法：具体化技术、澄清技术、阐释技术。\n\n8.2.3过程：咨询师首先查看来访者上次家庭作业的完成情况，结合在作业中记录的具体事件，与来访者一起分析造成来访者困扰的不合理信念，通过与不合理信念的辩论，让其对旧的错误观念产生怀疑和动摇；与来访者共同讨论，逐步建立可以接受的合理观念；运用合理情绪想象技术，想象重新进入之前遭遇的困扰情境中，用新的合理观念重新看待和分析当前情境，然后停止想象，描述和记录自己新的情绪体验，并对这种情绪和观念的积极转变及时给予强化。\n\n咨询片段（第4次咨询）。\n\n咨询师：我们现在先来看看在你在家庭作业中提到的思政课作业这件事怎么样？\n\n来访者：好。\n\n咨询师：你可以再说得具体一点吗?\n\n来访者：就是最近我们在准备思政课的小组作业，小组成员会出现一些拖延、没有提前计划等行为让自己难以接受，但是自己并没有将这种感受表达出来，觉得告知对方，对方也不会改，根本没用，还可能导致与对方关系破裂，还不如不说。但是不说就会让自己觉得很难受。\n\n咨询师：还记得我们之前提到的冲突类型吗？",
+      "metadata": {
+        "document_title": "1例大学生人际交往中内心冲突咨询案例报告_张玉.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "合理情绪想象技术实施",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "巩固新合理观念的情绪体验联结",
+        "task_family": "认知行为巩固",
+        "method_family": "CBT",
+        "stage": "修通再教育",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "0296a759-8875-5365-896d-b11d3026df0c",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 14,
+        "paragraph_end": 24,
+        "heading_path": [
+          "8 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 个人成长史",
+          "3 主诉与个人陈述",
+          "4观察和收集的资料",
+          "5 评估与诊断",
+          "6 原因分析"
+        ],
+        "subsection_headings": [
+          "8.1第一阶段：第1～3次咨询",
+          "8.2第二阶段：第4～7次咨询",
+          "8.3第三阶段：第8～9次咨询",
+          "8.4第四阶段（第10次咨询）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询阶段的划分[3]： $\\textcircled{1}$ 建立咨访关系与心理诊断阶段；$\\textcircled{2}$ 领悟、修通、再教育阶段； $\\textcircled{3}$ 巩固、评估、结束阶段。说明：咨询过程的每一阶段均在上级心理咨询师的指导下进行。"
+      }
+    }
+  ]
+}

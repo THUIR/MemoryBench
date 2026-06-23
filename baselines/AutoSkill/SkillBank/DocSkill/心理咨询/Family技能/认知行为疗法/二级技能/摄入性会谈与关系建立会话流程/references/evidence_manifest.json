@@ -1,0 +1,133 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "6046edbd-1bb5-5e94-8f1a-d052fd18c4cf",
+  "skill_name": "摄入性会谈与关系建立会话流程",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "97a08e3a-7080-50ad-9ad1-7700ba435429",
+      "doc_id": "2b45d285-6007-5130-a957-95a319d75726",
+      "document_title": "基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+      "section": "# 6 咨询过程",
+      "span": {
+        "start": 2807,
+        "end": 3231
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "# 6.1第一次咨询\n\n6.1.1任务：了解基本情况，与求助者建立良好的咨询关系，鼓励求助者释放情绪、缓解压力。收集临床资料，通过与求助者交谈，诊断主要问题，确定咨询目标。\n\n6.1.2方法：心理测验、摄入性会谈、倾听技术和参与技术。\n\n6.1.3过程：填写求助者登记表，询问基本情况。通过平等、真诚、尊重的交流与丁某建立良好的咨询关系，让丁某放松下来。接着安排求助者进行SAS、SDS测验。再通过摄入性会谈搜集求助者大量的临床资料，进一步了解求助者的背景情况，以寻找形成目前人格特质的客观原因，并对求助者进行评估和诊断。根据以上收集的资料，在经过反复探讨后，明确求助者最想解决的问题，并与求助者协商制定咨询目标和方案。\n\n6.1.4评估：倾听技术以及共情反应让来访者尽情倾诉，缓解了求助者的焦虑和抑郁情绪，同时收集来访者的信息资料，为下一步咨询的开展打下了基础。\n\n6.1.5家庭作业：建议求助者按要求写1份自我成长分析。\n\n# 6.2第二次咨询",
+      "metadata": {
+        "document_title": "基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "摄入性会谈与关系建立会话流程",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立治疗联盟、完成初步评估、锚定核心问题",
+        "task_family": "initial_assessment",
+        "method_family": "CBT",
+        "stage": "engagement_and_assessment",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "7fca5f38-4457-5849-9c21-aa8888d434b8",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "咨询目标",
+          "会谈",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 1,
+        "paragraph_end": 7,
+        "heading_path": [
+          "# 6 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1 基本情况",
+          "# 2 主诉和个人陈述",
+          "# 3 评估与诊断",
+          "# 4 咨询目标的制定",
+          "# 5咨询方法与原理",
+          "# 7咨询效果评估"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询过程大致分3阶段进行，第一阶段建立咨询关系（第1次咨询），完成心理测验，做出诊断和评估，商定咨询目标。第二阶段为心理咨询阶段（第2～5次咨询）， $\\textcircled{1}$ 帮助求助者深入剖析自身问题，发现自身存在的不合理认知并进行有效调整，逐渐正确认识自我，从而提高其自信心；$\\textcircled{2}$ 共同探讨人际吸引的影响因素以及人际"
+      }
+    },
+    {
+      "support_id": "9a2214bc-aca0-58f8-b68f-cc4bf5290adb",
+      "doc_id": "d048cd38-9862-5ec3-aa9d-242b934bf5c8",
+      "document_title": "基于认知行为疗法的1例抑郁情绪学生咨询案例报告_甘瑜.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法的1例抑郁情绪学生咨询案例报告_甘瑜.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 1933,
+        "end": 2568
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "4.1第一阶段：第1～2次咨询\n主要目标：建立关系、收集信息，初步评估和设定基本目标。与小A建立相互信任的咨访关系；收集小A主诉问题的资料，参考问卷结果初步评估小A心理问题；介绍认知行为疗法的内容、原理、流程等，双方确定使用认知行为疗法开展工作；一起讨论制定了基本的咨询目标；同时针对目前情况，在咨询结束前布置家庭作业，来访者观察并记录自己在生活中具体情境、情绪、生理反应，以及相对应的想法。\n\n4.2第二阶段：第3～6次咨询\n主要目标：识别自动思维与情绪、生理反应与行为的关系，结合心理教育，提高来访者对负面情绪的接纳能力，提振来访者改变信心。\n\n主要做法： $\\textcircled{1}$ 通过利用三栏表等认知行为治疗中相关技术，引导小A在具体情境中挖掘相应的自动思维，区分情绪和自动思维，确认相应的情绪和行为反应，学会评价自动思维和应对自动思维，学会多角度分析和看待问题，重新建立积极认知。 $\\textcircled{2}$ 结合心理教育，为小A讲解了情绪的作用和价值，采用正念技术引导其接纳自己的情绪，重塑想法、情绪、体验与自我的关系。 $\\textcircled{3}$ 采用放松等技术，改善睡眠。咨询中与小A一起共同体验放松技术，让其在失眠时尝试放松，结合决策、提问技术，减少睡前不良思维和对失眠带来影响的焦虑，进而改善睡眠。咨询片段如下。\n\n事件：上周和大二学长开展拍摄任务，想法是觉得自己没用，有没有自己都一样，很多余。情绪：低落，行为：不再参与。",
+      "metadata": {
+        "document_title": "基于认知行为疗法的1例抑郁情绪学生咨询案例报告_甘瑜.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT初始阶段关系建立与目标设定",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立治疗联盟、完成初步评估、确立CBT工作框架",
+        "task_family": "consultation_initiation",
+        "method_family": "CBT",
+        "stage": "initial_phase",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "7e8755c7-71a1-5cd2-a16c-ab456eb52d53",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 基本信息",
+          "2 咨询目标",
+          "3 理论依据与咨询方案",
+          "5 咨询效果",
+          "6 咨询反思"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：第1～2次咨询",
+          "4.2第二阶段：第3～6次咨询",
+          "4.3第三阶段：第7～8次咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "主要目标：建立关系、收集信息，初步评估和设定基本目标。与小A建立相互信任的咨访关系；收集小A主诉问题的资料，参考问卷结果初步评估小A心理问题；介绍认知行为疗法的内容、原理、流程等，双方确定使用认知行为疗法开展工作；一起讨论制定了基本的咨询目标；同时针对目前情况，在咨询结束前布置家庭作业，来访者观察并记录自己在生活中具体情境、情绪、生理反应，以及相对应的想法。"
+      }
+    }
+  ]
+}

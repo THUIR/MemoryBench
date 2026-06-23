@@ -1,0 +1,63 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "d8893277-083b-5616-aebe-42568b2f1903",
+  "skill_name": "非暴力沟通四要素角色扮演训练",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "4b42c754-c952-5a56-b73f-df0e60c1b5cf",
+      "doc_id": "38c3223b-860e-55e9-9788-76f452a6ffdc",
+      "document_title": "一例场所恐怖症的心理咨询案例报告_董芳.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例场所恐怖症的心理咨询案例报告_董芳.md",
+      "section": "3咨询过程",
+      "span": {
+        "start": 4701,
+        "end": 5125
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "过度概括的错误认知修正后，来访者认识到自己不是什么也不会做，只是自己觉得什么都不会，所以就不做了。来访者表示，今后将会从做一点家务及参与孩子的教育开始做起。\n\n3.6 角色扮演法 使用此方法，让来访者掌握非暴力沟通[6]技术，学会用正向沟通表达自己的感受和需求，代替批评、指责的方式，极大改善了来访者的交流障碍。过度概括的认知错误修正后，结合非暴力沟通技术，有效提高了来访者的人际沟通能力及沟通的主动性。之后，她把以前大学宿舍里拉黑的室友都拉了回来，还组建了初中同学三人群，平时没事就互相沟通，交流感受，让情绪得到充分的宣泄。渐渐的，来访者也能与丈夫顺畅沟通交流了，亲子关系也和谐了。这些极大增强了来访者的被接纳感，感觉自己是被喜欢的且有力量的。\n\n与来访者探讨其“胡思乱想”的特点及与单调生活方式的关系。来访者表示，自己其实很喜欢旅游、交流、逛街的，是恐惧阻断了这一切。咨询师鼓励其可以继续做这些事，满足精神需求，减少对自身不恰当想法的过度关注。",
+      "metadata": {
+        "document_title": "一例场所恐怖症的心理咨询案例报告_董芳.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "非暴力沟通技术角色扮演训练",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "提升正向沟通能力与主动性",
+        "task_family": "沟通技能训练",
+        "method_family": "CBT",
+        "stage": "干预中段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "d4f5da1d-e90b-5169-9a37-460ceea8ccb5",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 4,
+        "paragraph_end": 6,
+        "heading_path": [
+          "3咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 咨询对象",
+          "2咨询思路",
+          "4 咨询效果评估",
+          "5总结"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "3.1量表测试（1）采用症状自评量表（SymptomChecklist90，SCL-90）评估来访者的心理状态。躯体化1.9分；强迫3.0分；人际关系敏感2.5分；抑郁1.8分；焦虑3.0分，敌对2.6分；恐怖3.6分；偏执1.9分；精神病性2.8分；其他2.4分。以上各因子分除躯体化、抑郁及偏执外均高于常模。（2）采用焦虑自评量表（Self-ratingA"
+      }
+    }
+  ]
+}

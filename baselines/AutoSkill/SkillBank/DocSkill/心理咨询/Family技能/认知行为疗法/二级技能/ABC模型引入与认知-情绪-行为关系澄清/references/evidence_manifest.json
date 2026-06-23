@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "5e3ff053-c9b8-5f71-815c-90d8ac887467",
+  "skill_name": "ABC模型引入与认知-情绪-行为关系澄清",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "cb73b56a-4a2f-5f2b-a124-e741ee94ac4c",
+      "doc_id": "2b45d285-6007-5130-a957-95a319d75726",
+      "document_title": "基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+      "section": "# 6 咨询过程",
+      "span": {
+        "start": 3221,
+        "end": 3526
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "# 6.2第二次咨询\n\n6.2.1任务：进一步促进心理咨询关系，为接下来的咨询打下基础。通过会谈，帮助求助者梳理问题，透过现象理清问题的思路；在深入的咨询分析中，发现其存在不合理信念；为此，向求助者介绍合理情绪疗法的基本理论和模型（ABC模型）。\n\n6.2.2 方法：合理情绪疗法、解释影响性技术。\n\n6.2.3过程：咨询师检查家庭作业，并向求助者介绍情绪ABC理论，帮助来访者认识到认知、情绪和行为三者的关系；通过引导，帮助求助者明白自身存在的不合理信念，进行有效辨析，帮助求助者形成对当前问题的理性认知，建立积极、合理的情绪反应，同时求助者通过多次练习体会，直到能自然运用这种方法。\n\n以下是咨询谈话摘录。",
+      "metadata": {
+        "document_title": "基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ABC模型引入与认知-情绪-行为关系澄清",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立理性认知框架并启动信念辨析",
+        "task_family": "认知重构",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "咨询中期启动",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "2d8eb3f6-8ec9-5654-b4c0-062c96ffd1c5",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 7,
+        "paragraph_end": 11,
+        "heading_path": [
+          "# 6 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1 基本情况",
+          "# 2 主诉和个人陈述",
+          "# 3 评估与诊断",
+          "# 4 咨询目标的制定",
+          "# 5咨询方法与原理",
+          "# 7咨询效果评估"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询过程大致分3阶段进行，第一阶段建立咨询关系（第1次咨询），完成心理测验，做出诊断和评估，商定咨询目标。第二阶段为心理咨询阶段（第2～5次咨询）， $\\textcircled{1}$ 帮助求助者深入剖析自身问题，发现自身存在的不合理认知并进行有效调整，逐渐正确认识自我，从而提高其自信心；$\\textcircled{2}$ 共同探讨人际吸引的影响因素以及人际"
+      }
+    }
+  ]
+}

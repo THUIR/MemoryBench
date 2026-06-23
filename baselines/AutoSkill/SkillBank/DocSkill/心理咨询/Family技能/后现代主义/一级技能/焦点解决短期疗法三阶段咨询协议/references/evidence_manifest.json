@@ -1,0 +1,77 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "78326b55-c691-5d45-8ed9-75c0987d80ec",
+  "skill_name": "焦点解决短期疗法三阶段咨询协议",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "b56790eb-cc25-5bad-99b8-4e6a07309e04",
+      "doc_id": "684ae3f4-91e5-5441-a34d-06c52d9a8c14",
+      "document_title": "焦点解决短期疗法对暴食问题的个案咨询报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/焦点解决短期疗法对暴食问题的个案咨询报告.md",
+      "section": "3.心理咨询基本过程",
+      "span": {
+        "start": 4678,
+        "end": 5356
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "焦点解决短期心理咨询过程设置：初次会谈建立良好的咨询关系 $\\twoheadrightarrow$ 诊断评估 $\\twoheadrightarrow$ 介绍咨询方法 $\\twoheadrightarrow$ 协商咨询目标 $\\twoheadrightarrow$ 聚焦目标行为 $\\twoheadrightarrow$ 正向建构 $\\twoheadrightarrow$ 寻找例外和发展假设性之解决方法 $\\twoheadrightarrow$ 休息阶段(让当事人反思，咨询师利用这段时间进行整理，以获得下一段时间对当事人进行鼓励的资源) $\\twoheadrightarrow$ 鼓励来访者 $\\twoheadrightarrow$ 安排家庭作业(王静，2007)。SFBT咨询过程高效、简洁，目标指向明确，整个过程持续一个月，第一次和第二次之间相隔一周，第二次和第三次之间相隔两周，每次咨询时长1小时。咨询费用按照咨询机构收费标准收取。\n\n3.1.第一次咨询：收集资料，聚焦问题\n心理咨询的首次会谈多使用倾听、共情技术，对来访者无条件积极关注，营造包容、接纳、抱持的咨询氛围，使其体验到安全和信任，建立起良好的咨询关系。采用摄入性访谈收集来访者的基本资料，了解其情绪状态、精神状况、身体状况和人际交往状况，对来访者的焦虑、抑郁情绪实施测量评估并带领来访者做放松训练，缓解紧张的精神状态。在明确来访者咨询目的的情况下与其协商咨询目标，聚焦目标行为，第一次咨询结束时，布置家庭作业，促进来访者持续领悟和改变。\n\n3.1.1.问题评估\n初步评估：严重心理问题",
+      "metadata": {
+        "document_title": "焦点解决短期疗法对暴食问题的个案咨询报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "焦点解决短期疗法标准咨询流程",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "提供可复用的SFBT跨会话阶段框架",
+        "task_family": "short_term_counseling",
+        "method_family": "postmodernist",
+        "stage": "multi_session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "e20c0793-0054-53ae-bc6e-47e8d4f6d604",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "会谈",
+          "咨询目标",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "3.心理咨询基本过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1.前言",
+          "2.案例呈现",
+          "4.讨论及效果评估"
+        ],
+        "subsection_headings": [
+          "3.1.第一次咨询：收集资料，聚焦问题",
+          "3.1.1.问题评估",
+          "3.1.2.确定咨询目标",
+          "3.1.3.讨论",
+          "3.2.第二次咨询：正向架构，焦点解决",
+          "3.2.1.焦点解决短期疗法问句使用",
+          "3.2.2.讨论",
+          "3.3.第三次咨询：反馈结果、巩固咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "焦点解决短期心理咨询过程设置：初次会谈建立良好的咨询关系 $\\twoheadrightarrow$ 诊断评估 $\\twoheadrightarrow$ 介绍咨询方法 $\\twoheadrightarrow$ 协商咨询目标 $\\twoheadrightarrow$ 聚焦目标行为 $\\twoheadrightarrow$ 正向建构 $\\twoheadrighta"
+      }
+    }
+  ]
+}

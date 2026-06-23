@@ -1,0 +1,63 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "6a4b496c-2160-52b2-a476-a5b985338d3a",
+  "skill_name": "Imaginal Exposure Safety Anchoring Protocol",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "95dfe34d-fac5-521e-a93a-25ed71ea68ad",
+      "doc_id": "c6b0f4c1-4294-5d95-a2bd-54180ffbfbb7",
+      "document_title": "Terry,a42-year-oldEarthquake.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/Terry,a42-year-oldEarthquake.md",
+      "section": "# Excerpt From an In-Session Imaginal Exposure",
+      "span": {
+        "start": 4168,
+        "end": 12793
+      },
+      "relation_type": "support",
+      "confidence": 0.99,
+      "quote": "The following case example is an excerpt from an imaginal exposure with a client who was in a motor vehicle accident with his wife and young child, in which his child was killed.\n\nAlthough only part of the exposure is provided,when conducting imaginal exposures in sesson,the exposure should be conducted until the end of the memory and repeated for at least 45 to 6O minutes.The example below was the first imaginal exposure conducted with this client. With the first exposure it is common for a client's SUDS rating to be elevated throughout the entire memory.With repetition during the session,as wellas across several sessions,the memory willelicit lower distress ratings and it willtake a shorter duration to have the distress rating reduce across the exposure.\n\nClient: Yes.\n\nTherapist: What is your SUDS just before we start?\n\nClient: 80.\n\nTherapist: Okay. Take yourself back to the day of the accident. What happened just before?\n\nItry to let them passby moving a bit into the oncoming trafic lane.Their high beams are hiting my mirror and making it hard for me to see.\n\nTherapist: What's your SUDS rating?\n\nClient: 100.They are finall passing me on my right side.My wife is screaming at me to move over.Ihear a loud horn. My car is stillpartlyin the oncoming trafic lane... (The client pauses for a number of seconds.)\n\nTherapist: You're doing great. Keep going.\n\nTherapist: Remember, it's just a memory. You are safe here in the ofice; keep going.\n\nClient: The truck hits us on the back left side door,the seat where my son was siting.(The client is sweating and becoming tearful.)\n\nTherapist:I know this is hard,but stay with the memory. (The therapist notes this section of the memory as a potential hot spot. The client pauses for a few more seconds and then continues.)\n\nTherapist: You're doing great; what happened next?\n\nTherapist: What's your SUDS rating?\n\nClient: 70.\n\nTherapist:I know how hard that was for you. You did a great job,and lappreciate you sharing that memory with me.I know at times it feels tough, but it will get easier each time.\n\nClient: I didn't think I was going to be able to continue.\n\nClient: I feel okay. A little anxious still.\n\nTherapist: Do you think you could try that again?\n\nClient: I think so.\n\nTherapist: Okay, when you are ready, l want you to start again.",
+      "metadata": {
+        "document_title": "Terry,a42-year-oldEarthquake.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "Imaginal Exposure Safety Anchoring Protocol",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "safety_micro",
+        "asset_path": "family_root/safety_module/safety_micro",
+        "asset_level": 2,
+        "visible_role": "leaf",
+        "objective": "Prevent acute dissociation or panic during imaginal exposure by reinforcing reality testing and environmental safety at critical arousal thresholds.",
+        "task_family": "crisis_prevention",
+        "method_family": "Behaviorism（行为主义）",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "6f49a21e-e61d-5d63-9b5b-6372a46b1b30",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "session"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 28,
+        "heading_path": [
+          "# Excerpt From an In-Session Imaginal Exposure"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# Terry, a 42-year-old Earthquake Survivor",
+          "# Treating PTSD with cognitive-behavioral therapies: Interventions that work"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "The following case example is an excerpt from an imaginal exposure with a client who was in a motor vehicle accident with his wife and young child, in which his child was killed."
+      }
+    }
+  ]
+}

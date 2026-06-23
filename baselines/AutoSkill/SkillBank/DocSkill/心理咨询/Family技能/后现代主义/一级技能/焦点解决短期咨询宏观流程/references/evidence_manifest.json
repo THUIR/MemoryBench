@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "50d5a7d5-bfae-5cb3-a113-0a86dead035d",
+  "skill_name": "焦点解决短期咨询宏观流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "2eb09461-976b-5d6c-a4fe-ef09fd77019e",
+      "doc_id": "ca4373e0-67ab-56ab-9d0e-fd64cde8c93a",
+      "document_title": "焦点解决短期心理咨询及个案报告_娄骥.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/焦点解决短期心理咨询及个案报告_娄骥.md",
+      "section": "焦点解决短期心理咨询及个案报告_娄骥.md",
+      "span": {
+        "start": 0,
+        "end": 246
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "![](images/ed5bbad31c0eb151d7680bab82eb7487f13329f368bf232fb1f660698873e41c.jpg)\n\n下几个步骤：前期工作，收集基本资料，介绍咨询方法，建构解决方案，暂停反思，正向反馈，布置家庭作业。建构解决方案的过程是整个咨询的重点所在，需要运用设定目标会谈、进行刻度评价、找寻例外会谈、发展未来想象等咨询技术帮助来访者找到克服问题的资源，走出困扰。焦点解决短期咨询一般用 $3 \\sim 6$ 次咨询即可解决一般性的心理问题。",
+      "metadata": {
+        "document_title": "焦点解决短期心理咨询及个案报告_娄骥.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "焦点解决短期咨询宏观流程",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "提供可复用的、阶段清晰的短期咨询主干流程",
+        "task_family": "短期咨询",
+        "method_family": "后现代主义",
+        "stage": "跨阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "24b1290b-2ba9-5f9a-9d4a-3aa836097bac",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 1,
+        "heading_path": [
+          "焦点解决短期心理咨询及个案报告_娄骥.md"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "焦点解决短期心理咨询及个案报告",
+          "一、焦点解决短期咨询的理论概述",
+          "二、焦点解决短期咨询的具体过程与技术",
+          "# 三、案例示例",
+          "# 4.开展心理健康教育专题讲座， 进行心理咨询",
+          "# 四、总结"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "",
+        "section_summary": "![](images/ed5bbad31c0eb151d7680bab82eb7487f13329f368bf232fb1f660698873e41c.jpg)"
+      }
+    }
+  ]
+}

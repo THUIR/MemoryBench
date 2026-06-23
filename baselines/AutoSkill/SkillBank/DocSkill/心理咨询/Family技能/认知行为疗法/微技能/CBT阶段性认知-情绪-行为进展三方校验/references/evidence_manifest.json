@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "5551690a-8db4-5af6-afc9-007dc6dbec7f",
+  "skill_name": "CBT阶段性认知-情绪-行为进展三方校验",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "3f9eba4a-ee04-5304-b45e-fb485d88130b",
+      "doc_id": "e08b772e-8bcd-5837-a07b-e0147cd78183",
+      "document_title": "一例高职生情感挫折的咨询案例报告_胡文.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例高职生情感挫折的咨询案例报告_胡文.md",
+      "section": "八、咨询过程",
+      "span": {
+        "start": 3147,
+        "end": 3738
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "第三次咨询2018年10月10日目的：使来访者开始转变、改善，感悟到心理不适主要是由认知偏差引起的，需要调整认知来获得治疗心理问题的方法，从而对如何治疗有一个清醒的认识。\n\n咨询方法会谈、合理情绪疗法、布置家庭作业。\n\n具体过程运用具体化的技巧，让他叙述一些场景。这次咨询我和来访者共同分析其不合理信念，使其认识到失恋和家人对其态度是造成情绪困扰的关键所在，产生改变不合理认知的动力。学会主动关心家人及时进行沟通，表达自己的真实想法，积极地和舍友改善关系。布置的家庭作业要认真对待，这也是咨询的重要内容，只有认真检阅自己，对自己的信念进行思考，个人就会进步越快。我还告诉他,进行咨询不是把负面情绪都消除掉，而是要让你懂得感受与事件是同时存在的，把过度反应尽量消除掉。\n\n# 3.巩固提高与结束阶段 (第4次咨询)\n\n第四次咨询2018年10月24日目的反馈咨询作业,巩固前面咨询的效果,结束咨询。\n\n方法认知行为疗法\n\n具体过程经过前面几次的咨询，来访者的抑郁情绪得到了缓解，睡眠状况好转，生活节奏逐渐规律了，开始兼职使自己的生活充实起来。此次咨询主要是肯定来访者为改变所做的努力以及近期的改观,我指出他身上的一些优点，这些他自己都没有意识到，这样可以帮助他建立自信心，心理防御机制也变得积极起来。鉴于来访者的问题经咨询后已基本解决，咨询目标已经达到，经商议本次咨询后结束咨询关系。",
+      "metadata": {
+        "document_title": "一例高职生情感挫折的咨询案例报告_胡文.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT阶段性认知-情绪-行为进展三方校验",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "执行标准化结案效度核查",
+        "task_family": "咨询结案评估",
+        "method_family": "CBT",
+        "stage": "咨询结束",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "607717ee-403a-5df5-8ffe-9bbc0346adda",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈",
+          "家庭作业",
+          "作业",
+          "阶段",
+          "咨询目标"
+        ],
+        "paragraph_start": 13,
+        "paragraph_end": 19,
+        "heading_path": [
+          "八、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、一般资料",
+          "二、主诉和个人陈述",
+          "三、个人成长史",
+          "四、观察和收集到的其他材料",
+          "五、评估与诊断",
+          "六、病因分析"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# $\\left( \\ - \\right)$ 咨询过程阶段划分"
+      }
+    }
+  ]
+}

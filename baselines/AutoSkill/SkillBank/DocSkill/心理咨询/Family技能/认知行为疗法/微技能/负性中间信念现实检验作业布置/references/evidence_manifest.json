@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "a4a450ff-110e-5ca7-a432-3db95d8845ba",
+  "skill_name": "负性中间信念现实检验作业布置",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "2f17139e-6c3a-57c1-a37c-e5b65fa710cd",
+      "doc_id": "c588679e-3502-57a3-8b29-ee3acb3267c4",
+      "document_title": "认知疗法视角下的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/认知疗法视角下的心理咨询案例报告.md",
+      "section": "4咨询过程",
+      "span": {
+        "start": 3594,
+        "end": 3936
+      },
+      "relation_type": "support",
+      "confidence": 0.93,
+      "quote": "方法与目的：通过上次咨询时布置的自助计划，帮助来访者学会建立正性自动思维，增强来访者的主动性;区分来访者的中间信念，并对负性中间信念进行纠正.\n\n咨询进程：本次咨询刚一开始，来访者就开心的反映上次自助计划的完成情况，自信心也更强了；然后咨询师帮助来访者区分出负性中间信念“如果我和其他人发生冲突，我一定会受到伤害”，采用\"成本效益分析\"技术对负性中间信念进行纠正.随后咨询师使用\"空椅子\"技术，在与室友之间对话的角色转换过程中，来访者可以分别为自己和室友发声辩论，从而理解了室友的想法和行为，真正做到了有同理心.\n\n自助计划：由于来访者在本次咨询中表达了对此次冲突引发后果的担忧，咨询师便鼓励来访者和室友、班主任进行沟通，通过室友和班主任的反映进一步引发来访者对其负性中间信念的思考.",
+      "metadata": {
+        "document_title": "认知疗法视角下的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "基于负性信念触发的沟通验证作业布置",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "通过现实检验强化认知重构效果",
+        "task_family": "行为实验",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "认知-行为联结",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "27043e8e-756c-5ca1-8092-832788303901",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 11,
+        "paragraph_end": 13,
+        "heading_path": [
+          "4咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "认知疗法视角下的心理咨询案例报告",
+          "1个案基本情况",
+          "2个案分析",
+          "3咨询计划",
+          "5对个案的总结与思考"
+        ],
+        "subsection_headings": [
+          "4.1咨询关系",
+          "4.2具体的干预措施",
+          "4.3具体咨询过程",
+          "(4)第四次，2014年5月7日",
+          "4.4干预结果"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "较好.在咨询过程中，小王对咨询师比较信任，自我暴露比较多，也比较配合."
+      }
+    }
+  ]
+}

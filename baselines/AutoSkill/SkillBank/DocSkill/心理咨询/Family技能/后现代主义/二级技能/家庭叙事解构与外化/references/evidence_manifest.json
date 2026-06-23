@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "e588fede-0313-53ee-8f67-51cff81e60e6",
+  "skill_name": "家庭叙事解构与外化",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "33a85aef-5f82-5cf7-bc38-f87d648e4ba8",
+      "doc_id": "cc83dd5e-0b23-5f73-b94a-fec51028ee1c",
+      "document_title": "tppc20250704211-217.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/tppc20250704211-217.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 5375,
+        "end": 6104
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "（3）家庭层面：咨询师帮助可可将对家庭的罪恶感和无力感与她本人分离。哥哥的生存叙事强调实用主义（赚钱、社会压力），并将可可的追求（读书、自主选择）定义为不切实际，还通过情绪惩罚（责怪、愤怒）来强化这一叙事。父母的牺牲叙事则是通过自我压抑（忍耐、不花钱）传递“家庭责任高于个人需求”的价值观，使可可因无法回报而产生内疚。咨询师挖掘可可未被注意的抵抗和自主性时刻，挑战主导叙事：“有没有一次，你坚持自己的选择（如不考驾照），但后来发现这个决定其实对你有利？”“你说自己没有力量，但读书本身需要坚持，这种坚持是否说明你有一种不同于哥哥认定的力量？”\n\n4.3　第三阶段：重构自我认同与探索新的故事（第13-16次）\n可可之前的自我认同呈现出一种矛盾的状态：她既感受到家人的爱，又因这种爱的矛盾表达方式而陷入内疚一愤怒的循环，导致她的自我认同被家庭叙事强烈塑造，同时又试图挣脱。在这个阶段，可可逐渐发展出更整合的自我认同，从“罪恶的、无力的”转变为“在家庭压力下还在努力的人”，从“无法改变家人”转变为“我正在学习如何更好地照顾自己，我正在照顾自己的感受”。她意识到，自己可以同时爱家人，又不接受他们的某些行为；自己的愤怒不是坏的，它提醒着哪些关系需要调整；不必完全满足家人的期待，自己依然值得被爱。\n\n在重建“有力量的自我”叙事方面，可可发现，她并非完全无力，而是已经在某些时刻坚持了自己的需求（如主动和妈妈沟通，能够更好地识别和表达自己的需求）。咨询师引导可可思考：“当你主动和妈妈沟通时，那一刻的你是什么样的？那个你和无力的你有什么不同？”“如果有力量的可可会继续做一件事，那会是什么？”可可认为那会是考研——自己决定之后努力考研，虽然很困难，但还是想去尝试。",
+      "metadata": {
+        "document_title": "tppc20250704211-217.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "家庭叙事解构与外化",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "解构家庭主导叙事，外化问题归属",
+        "task_family": "叙事治疗",
+        "method_family": "后现代主义",
+        "stage": "中期干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "78bbb430-f083-5518-a726-1f7ef7ede70a",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 7,
+        "paragraph_end": 9,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1引言",
+          "2个案基本情况",
+          "3 个案概念化",
+          "5 咨询师总结"
+        ],
+        "subsection_headings": [
+          "4.1　第一阶段：初步评估与建立咨访关系，澄清问题与渴望（第1-6次）",
+          "4.2　第二阶段：问题外化与寻找例外故事（第7-12次）",
+          "4.3　第三阶段：重构自我认同与探索新的故事（第13-16次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "在第一阶段，咨询师着重收集资料，与可可建立咨访关系。通过陪伴、共情与积极倾听的方式，营造了一个安全、私密的咨询环境。可可详细回顾了自己的家庭背景和成长经历，提到了对自己影响很大的两段经历：一是哥哥的不认同和否定。哥哥总是要求可可按照他的想法做事，比如考驾照、节省开支、人党等。如果可可没做到，哥哥就会责怪她甚至发怒，认为可可不知道赚钱的辛苦和社会的压力。二是父"
+      }
+    }
+  ]
+}

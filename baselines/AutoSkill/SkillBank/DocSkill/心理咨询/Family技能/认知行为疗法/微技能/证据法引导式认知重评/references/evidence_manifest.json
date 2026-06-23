@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "f250fcdd-7e35-50f0-b4c5-a59d5fb69f5b",
+  "skill_name": "证据法引导式认知重评",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "2a652501-c4ec-5f52-a03e-05c552ffe30b",
+      "doc_id": "b7e1781b-c35a-5045-8731-9fa503a74e60",
+      "document_title": "tppc20240604147-151.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20240604147-151.md",
+      "section": "2分析评估与辅导干预",
+      "span": {
+        "start": 1664,
+        "end": 2675
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "2.3个案概念化\n在前期评估的基础上，挑选出最具有代表性的线索进行具体分析，重点在于理解回避行为在短期内可以缓解焦虑，但这种负强化会维持焦虑进一步发展。小蕾主要表现出三类典型的焦虑信念：第一类是对未来的“灾难化”解释，如小蕾认为“我考不好就完了”“如果我成绩不好，就没人会喜欢我”；第二类是“低估自我”，小蕾认为“我没法保持之前的好成绩”“我注意力不集中，我学不进去，我没法参加考试”；第三类“无法忍受身体不适”，如小蕾认为“我喘不上气，感觉快要室息了”“我肚子太疼了，我没法参加考试”。\n\n2.4干预策略\n心理教育：首先，让小蕾认识到焦虑情绪、生理反应与灾难化认知和回避行为之间的关系，明确回避行为在短期内具体降低焦虑的效益，但是长期来看却是在维持焦虑，使自己陷入焦虑的恶性循环。通过行为功能分析表帮助小蕾看到焦虑的诱发线索和他自己的应对策略，了解应对策略的短期有效和长期维持焦虑的作用。其次，针对情绪敏感性，教会小蕾接纳和放松技术，再布置家庭作业让小蕾进行持续练习，降低其生理唤醒水平和总体焦虑水平。认知技术：聚焦于小蕾在某情境下的“解释”进行认知重评。例如，在某次结课考前的模拟考试这个情境中出现的灾难化解释“我这次要是考不好就完了”，通过证据法引导小蕾认识到考得不理想（没有达到自己预期的目标成绩）的可能性没有想的那么大，就算这次考试不理想，结果也没有自己想象的那么严重。行为技术：使用现实暴露技术让小蕾在现实的备考情境中，“习惯化”备考情景和气短、手心出汗、恶心等躯体感觉。",
+      "metadata": {
+        "document_title": "tppc20240604147-151.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "证据法引导式认知重评",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "在单次会谈中完成一个微循环的认知重构",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "干预执行",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "81a6aa15-bed1-5b7b-bf41-f5c850d1a7cc",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 2,
+        "paragraph_end": 4,
+        "heading_path": [
+          "2分析评估与辅导干预"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一例考试焦虑的咨询报告",
+          "1 案例基本情况",
+          "3 效果与反思"
+        ],
+        "subsection_headings": [
+          "2.1 基础情绪评估",
+          "2.2　焦虑症状评估",
+          "2.3个案概念化",
+          "2.4干预策略"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "首次访谈中，小蕾焦虑自评量表的原始分为45，标准分为56常模为（ $2 9 . 7 8 \\pm 1 0 . 0 7$ ）。抑郁自评量表的原始分为44，标准分为55（常模为 $3 3 . 4 5 \\pm 8 . 5 5$ ）。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "8e2deafb-a3a8-5b07-884c-a8af98e6c5a4",
+  "parent_name": "初始评估与双目标共构",
+  "children": [
+    {
+      "skill_id": "854d17b9-d0bd-54f7-afd6-4ce202939ca8",
+      "name": "存在性自杀意念结构化排查与动机锚定干预",
+      "description": "当来访者呈现存在性抽离、生命无意义感或隐含结束意愿时，采用三步法（结构化筛查→情感确认→价值锚定）同步完成安全风险识别与内在改变动机激活。",
+      "child_type": "crisis_response",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "8e2deafb-a3a8-5b07-884c-a8af98e6c5a4",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "当来访者呈现存在性抽离、生命无意义感或隐含结束意愿时，采用三步法（结构化筛查→情感确认→价值锚定）同步完成安全风险识别与内在改变动机激活。",
+      "selector_terms": [
+        "来访者说出类似'很快可以没有痛苦地离开了'",
+        "表达对存在价值的彻底否定",
+        "出现负疚感与自我归因过强",
+        "自杀评估",
+        "动机增强",
+        "存在性痛苦",
+        "CBT微干预",
+        "危机响应",
+        "语言中出现存在性抽离（如'不属于这里''本不该存在'）",
+        "将痛苦归因为自身存在本身（如'我活着就是错的'）",
+        "用平静语调描述解脱感",
+        "存在性自杀意念结构化排查与动机锚定干预",
+        "当来访者呈现存在性抽离、生命无意义感或隐含结束意愿时，采用三步法（结构化筛查→情感确认→价值锚定）同步完成安全风险识别与内在改变动机激活。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/存在性自杀意念结构化排查与动机锚定干预/SKILL.md"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "d0145de0-5ad1-5da9-9faf-c999f51b8c35",
+  "parent_name": "ACT第四阶段：确立接纳的主体性与意愿性",
+  "children": [
+    {
+      "skill_id": "cad98e52-b337-548e-8322-c9cf07cf7379",
+      "name": "ACT接纳练习引导",
+      "description": "引导来访者以非评判态度觉察当下身心体验，通过具身化比喻（如‘伸出手感受阳光’）建立与内在感受的接触关系，为后续认知解离和价值行动奠基。",
+      "child_type": "心理干预",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "d0145de0-5ad1-5da9-9faf-c999f51b8c35",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "引导来访者以非评判态度觉察当下身心体验，通过具身化比喻（如‘伸出手感受阳光’）建立与内在感受的接触关系，为后续认知解离和价值行动奠基。",
+      "selector_terms": [
+        "来访者陷入情绪回避或自我批评",
+        "需启动ACT核心过程中的接纳环节",
+        "ACT",
+        "接纳",
+        "正念",
+        "具身化",
+        "非评判",
+        "微技能",
+        "言语中出现‘我应该/不该…’‘我受不了这个感觉’‘我不想面对…’等控制性或回避性表达",
+        "行为上表现为退缩、转移话题、频繁使用电子设备宣泄情绪",
+        "ACT接纳练习引导",
+        "引导来访者以非评判态度觉察当下身心体验，通过具身化比喻（如‘伸出手感受阳光’）建立与内在感受的接触关系，为后续认知解离和价值行动奠基。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/ACT接纳练习引导/SKILL.md"
+    }
+  ]
+}

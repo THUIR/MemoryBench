@@ -1,0 +1,65 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "342e4636-905b-5955-a834-9edd58f0c7d1",
+  "skill_name": "RET框架下嵌入式放松训练",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "ffa55ccf-30cd-5d29-8172-e3e4310b2f1f",
+      "doc_id": "cccdbfea-302c-5dd7-aeb9-2d46d1ec6ada",
+      "document_title": "一例大学新生适应不良的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例大学新生适应不良的心理咨询案例报告.md",
+      "section": "3咨询方案与知情同意",
+      "span": {
+        "start": 5867,
+        "end": 6302
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "针对求助者的问题，与求助者协商制定了双方认可的咨询方案，确定采用合理情绪疗法治疗，以促进求助者摆脱不合理的观念，建立合理的认知模式，建立有效的应对方式。合理情绪疗法的基本理论为ABC 理论，根据这一理论，情绪不是由某一诱发事件本身引起的，而是由经历了这一事件的个体对这一事件的解释和评价所引起的，通过与求助者交谈，找出其情绪困扰和行为不适的具体表现(C)，以及与这些反应相对应的诱发事件（A)，并对两者之间的不合理信念（B）进行分析，使求助者领悟到自己的不合理信念，进而修正或放弃原有不合理信念，并代之以合理信念，从而使症状得以减轻或消除。\n\n本案中，求助者的情绪困扰主要是由其不合理的认知引起的，如：求助者认为我必须每次成绩都要好，他们一定要对我好等。改变这些不合理信念将有助于求助者症状的减轻或消除。合理情绪疗法中也常采用一些行为技术，帮助求助者改善应对方式，本案中也将采用放松训练帮助其缓解焦虑，提高其人际交往能力，促使其建立良好的人际交往模式。\n\n3.3知情同意",
+      "metadata": {
+        "document_title": "一例大学新生适应不良的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "放松训练嵌入式焦虑缓解干预",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "在单次会谈中完成一次可复现的放松技术教学与现场体验，建立生理-认知联结意识",
+        "task_family": "anxiety_management",
+        "method_family": "CBT",
+        "stage": "intervention_delivery",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "1ca4f052-a6eb-5640-aeaa-c2f28c8b6ceb",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 4,
+        "paragraph_end": 6,
+        "heading_path": [
+          "3咨询方案与知情同意"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1资料整理",
+          "2评估与诊断",
+          "4咨询效果评价",
+          "5总结"
+        ],
+        "subsection_headings": [
+          "3.4咨询过程："
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "3.1咨询目标"
+      }
+    }
+  ]
+}

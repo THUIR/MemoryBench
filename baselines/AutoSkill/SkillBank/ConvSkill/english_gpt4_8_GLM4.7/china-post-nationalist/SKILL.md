@@ -1,0 +1,59 @@
+---
+id: "969a6a3e-7174-45c2-8be3-623d2511b1c6"
+name: "china / post / nationalist"
+description: "General SOP for common requests related to china, post, nationalist."
+version: "0.1.15"
+tags:
+  - "china"
+  - "post"
+  - "nationalist"
+  - "vietnam"
+  - "chinese"
+  - "ccp"
+  - "as"
+  - "han"
+  - "japanese"
+  - "imperial"
+  - "empire"
+  - "restored"
+  - "government"
+triggers:
+  - "Use when the user asks for a process or checklist."
+  - "Use when you want to reuse a previously mentioned method/SOP."
+examples:
+  - input: "Break this into best-practice, executable steps."
+---
+
+# china / post / nationalist
+
+General SOP for common requests related to china, post, nationalist.
+
+## Prompt
+
+Follow this SOP (replace specifics with placeholders like <PROJECT>/<ENV>/<VERSION>):
+1) Offline OpenAI-format conversation source.
+2) Title: 965f24acae3806f0480f91e9b3f1e563.json#conv_1
+3) Use the user questions below as the PRIMARY extraction evidence.
+4) Use the full conversation below as SECONDARY context reference.
+5) In the full conversation section, assistant/model replies are reference-only and not skill evidence.
+6) Primary User Questions (main evidence):
+7) Write an realistic, plausible alternate history scenario set on the world of the alternate history scenario with no references to the real world, OTL, or even to the fact that this is an alternate history scenario after all in the form of a lengthy, descrptive, exposition-filled real documentary history book chapter set in the world of the alternate history scenario, in which during the Sino-Japanese War of 1924-1947 between the Japanese Imperial House of Great Yamato/Minamoto dynasty-ruled Japanese Empire ruling over Sahlakin and the Kurils, the Korean peninsula, Taiwan and the Pengu Islands, Palau, the Carolinas and the Marinas from the Japanese Home Islands, its [the Japanese Empire’s] WW2-era protectorate of the Beiyang Government-ruled first Republic of China first as the Provisional Government of the Republic of China [the Beiyang Government-ruled Republic of China during the Second Sino-Japanese War] from 1937, the Reformed Government of the Republic of China [the Beiyang Government-ruled Republic of China during the Second Sino-Japanese War] and then finally as the Reorganized Government of the Republic of China from 1940-1945, its [Imperial Japan’s] pre-WW2 and [Japan’s] WW2-era imperial era protectorates of the Qing Imperial family, the Manchu House of Aisin-Gioro-ruled Empire of Manchukuo in Manchuria and the Genghis Khan-descended Imperial House of Borjigin-ruled Mongolian Autonomous Federation in Inner Mongolia’s Chahar and Suiyan regions, Japan’s allies of the Chinese nationalist warlord psuedo-nation of the Guangxi Clique occupying both Guangxi and Guangdong, Yunnan and Shanxi against the Han nationalist, Han supremacist Leninist Stalinist Kuomingtang-ruled Nationalist China/Second Republic of China which [Nationalist China] ruled over Southern China from 1922-1928 when it [Nationalist China] with the help of the Hui Muslim warlord family of the Mas-ruled part of Central China known as Xibei San Ma and the USSR, [Nationalist China] conquered the Chinese bandit faction/military junta that occupied both Manchuria and the Beiyang Government-ruled Republic of China during the modern warlord period of modern Chinese history, the Fengtian Clique, then [the Fengtian Clique] ruled [the Fengtian Clique] by the infamous Han Chinese bandit leader and warlord nicknamed “the young Marshal” Chang Hsueh-liang aka Zhang Xueliang and [Nationalist China] subsequently absorbed the Fengtian Clique, the Beiyang Government and Manchuria into itself [Nationalist China] in 1928 in an event known as the “Northern Expedition”, Xibei San Ma, the Soviet Union, the USA and the Cantonese nationalist and imperialist faction controlling Nationalist China from behind the scene with Stalin’s man in Asia and brutal tyrant, warlord and communist dictator Chiang Kai Shek, Nationalist China’s Generalismo [Kai-Shek] as it’s [the Cantonese nationalist and imperialist clique’s] public frontman [Kai-Shek], after the conquest of the northern section of China proper by the Japanese Empire’s ground combat force the Imperial Japanese Army, in which the Shōwa Restoration of February 26, 1936 in the Japanese Empire, [the Shōwa Restoration] also known as the February 26 incident, [the Shōwa Restoration] being [the Shōwa Restoration] organized [the Shōwa Restoration] by a group of young Imperial Japanese Army (IJA) officers belonging to the ultranationalist secret society with the goal of reorganizing the state along totalitarian militarist lines and state socialism, the Cherry Blossom Society [the Shōwa Restoration being carried out] with the goal of purging the government and military leadership of their [the young officers' carrying out the Shōwa Restoration's] factional rivals and ideological opponents, [the Shōwa Restoration being |the Shōwa Restoration| carried out |the Shōwa Restoration|] with the goal of restoring power to the then newly enthroned Japanese Emperor Shōwa [personal name Hirohito] and simultaneously abolishing the liberal Taishō democracy, with the Taishō democracy within the Japanese Empire being [the Taishō democracy] replaced [the Taishō democracy] a small group of qualified people backing up a strong Emperor, [the Shōwa Restoration in the Japanese Empire] succeeds [the Shōwa Restoration in the Japanese Empire] due to NKVD agent Richard Sorge being [Sorge] by the IJA’s military police with civilian secret police, espionage, and counter-intelligence roles within the Greater Japanese Empire with duties of maintaining military discipline, enforcing conscription laws, protecting vital military zones, and investigating crimes among soldiers while also issuing travel permits, recruited labor, arrested resistance, requisitioned food and supplies, spread propaganda, and suppressed anti-Japanese sentiment in areas occupied by the IJA during wartime, the Kempeitai and the Japanese policing organization, established within the Japanese Home Ministry for the purpose of carrying out high policing, domestic criminal investigations, and control of political groups and ideologies deemed to threaten the public order of the Japanese Empire with functions of criminal investigation and counter-espionage, the Tokkō and [Sorge] quickly neutralized, with the spy ring he [Sorge] had built in Japan being [Sorge’s spy ring] mopped up without the Soviets being anywiser and the Japanese domestic and foreign intelligence organizations being reorganized in order to prevent further breaches of security, [the mopping up of the Soviet spy ring in the Japanese Empire] preventing them [the Tokkō and the Kempeitai] from noticing domestic threats.
+8) Although the Shōwa Restoration succeeds [the Shōwa Restoration] in [the Shōwa Restoration] returning power to the then newly enthroned Emperor Shōwa and simultaneously abolishing the liberal Taishō democracy while also reducing the power of the corporate multinationals within Japan known as the zaibatsu, a series of concessions with anti-imperial feudalists within Japan who wish to see the return of the shogunate, as well as far-right Buddhist supremacists within Japan, see the heads of the Tokugawa clan restored to their pre-Meiji positions as Shoguns of Japan, with a modified version of the feudal system that had persisted within the hereditary military dictatorship of the shoguns being implemented within Japanese society.
+9) Chiang is [Chiang] killed by accident during the Xi’an Incident of 12 to 26 December 1936 when a covert ops team from the Chinese nationalist, Han supremacist, Han nationalist Chinese Communist Party is [the black ops team] sent [the black ops team] to [the black ops team] bag him [Kai-Shek] and [the black ops team] put him [Kai-Shek] under house arrest until he [Kai-Shek] and Nationalist China fight Japan, [the attempted kidnapping of Chiang] on orders of the CCP’s British masters, which [Chiang’s death during the failed kidnapping] leads to the CCP being [the CCP] wiped out by Nationalist China’s combined armed forces, the National Revolutionary Army, with the help of the Soviet combined armed forces, the Workers’ and Peasants’ Red Army and the Soviet combined border security, secret police agency and federal law enforcement agency, the NKVD in a series of brutal and cold military operations with Xueliang being [Xueliang] among the dead, with the CCP's rival for power and control over China while also fighting the KMT and Nationalist China at the same time, the millenianist Chinese folk religious sect focused on militant self-defense and tax resistance along with romanticised monarchism, wishing to restore the pre Qing Han Chinese Imperial House of Zhu-ruled Great Ming State/Great Ming Empire/"Ming dynasty" as the government of China, the Yellow Sand Society, [the Yellow Sand Society] absorbing most of its [the CCP's] members into itself [the Yellow Sand Society] with the CCP's armed wing, the Chinese Red Army, becoming [the Chinese Red Army] the Yellow Sand Society's armed wing [the Chinese Red Army] after the CCP's demise. What remains of the CCP's political and economic core is [the CCP's political and economic core] reabsorbed [the CCP's political and economic core] into its [the CCP's] parent political organization, the Han nationalist, Han supremacist, Han fascist conservative political organization adhering to Dr Sun Yat Sen's three principles of the people, nationalism, democracy, and the livelihood of the people (or welfarism) [the Chinese political organization the CCP broke away from], the Young China Party [YCP], which [the YCP] was [the YCP] named [the YCP] after the now- infamous Young Turks in the now long dissolved Turkish Imperial House of Osman-ruled Ottoman Empire, [the YCP] having been based in the Beiyang Clique-occupied Manchuria under the rule of Xueliang. Since the CCP and the Yellow Sand Society share the same goal [restoring Ming after the defeat of the Nationalists and/or the Beiyang Government along with Japan] the Yellow Sand Society begins to infiltrate the YCP through the CCP members.
+10) The brutal elimination of the CCP and the Chinese Red Army by Nationalist China's combined armed forces, the National Revolutionary Army with the help of the NKVD and Soviet Workers' Red Army is exposed to the world by journalists and reporters who sneak the footage outcausing support for the Nationalists to drop among the American public when Soviet aid to the Chinese Nationalist government is discovered and exposed.  Kai-Shek's second in command, the Cantonese Guangxi-based and [Guangxi-born] warlord Li Zongren, [Zongren] succeeds him [Kai-Shek] as Nationalist China's Generalissimo and [Nationalist China's] de-facto head of state, [Zongren] managing to hold the peace within the territory of Nationalist China while [Zongren] also pleasing the Soviets, but the Yellow Sand Society has [the Yellow Sand Society] changed its [the Yellow Sand Society's] infiltration, secret propaganda propagation and  [the Yellow Sand Society's] means of gathering support techniques, [the Yellow Sand Society] being [the Yellow Sand Society] helped by the absorption of the CCP and the Chinese Red Army into itself [the Yellow Sand Society] and its  [the Yellow Sand Society's] subsequent infiltration of the Young China Party, giving it [the Yellow Sand Society] an edge over the KMT-ruled Nationalist China and the Soviets
+
+For each step, include: action, checks, and failure rollback/fallback plan.
+Output format: for each step number, provide status/result and what to do next.
+
+## Triggers
+
+- Use when the user asks for a process or checklist.
+- Use when you want to reuse a previously mentioned method/SOP.
+
+## Examples
+
+### Example 1
+
+Input:
+
+  Break this into best-practice, executable steps.

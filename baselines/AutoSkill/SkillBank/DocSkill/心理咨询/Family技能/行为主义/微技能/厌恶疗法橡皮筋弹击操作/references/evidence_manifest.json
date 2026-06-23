@@ -1,0 +1,61 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "c5980fb4-06da-5dc6-af6e-05de25fa848b",
+  "skill_name": "厌恶疗法橡皮筋弹击操作",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "386c93db-43a1-595a-9c20-d353f0496aa3",
+      "doc_id": "7d868210-e7ff-50ee-bba4-0870f939ee6f",
+      "document_title": "挥之不去的可怕念头——大学生心理危机干预个案研究_秦晓丽.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/挥之不去的可怕念头——大学生心理危机干预个案研究_秦晓丽.md",
+      "section": "# 挥之不去的可怕念头",
+      "span": {
+        "start": 1847,
+        "end": 2431
+      },
+      "relation_type": "case_variant",
+      "confidence": 0.95,
+      "quote": "第二次咨询：一周后再次来咨询，咨询师此次通过倾听、真诚、共情、积极关注进一步与来访者建立良好的咨询关系，并了解来访者童年经历。\n\n采用认识领悟疗法。首先,向来访者讲述心理、生理的一般知识，心理疾病的内外部病因和一般规律，鼓励她完全可以通过心理治疗摆脱痛苦，树立治愈的初步信心。然后重点阐述她所患疾病的本质、特点和战胜它的方法，告诉她“你所患的这种强迫症，是由幼时的心灵创伤造成的，既然你已经认识到了那种忌恨与怨愤是不对的，就要从根本上消除这些念头”，也就是说\"这种念头不是我的,我也不会害怕它”。再三向她阐述以达到积极自我暗示的目的。让求助者学习肌肉松弛法，以改善睡眠布置了一份家庭作业，要她根据咨询师的观点，结合自身情况，写出自己的感受和认识。\n\n第三次咨询：从求助者交来的家庭作业来看，她对自己的情况有所了解，不再担心自己是精神病了，但可怕的念头仍无法去除，时不时会跳出来，焦虑状态仍存在。训练她掌握身心放松技术和深呼吸方法来缓解紧张感，同时采用厌恶疗法，即在求助者前臂缚上一圈粗橡皮筋，紧松适宜，要求她每当出现可怕念头时便拉开橡皮筋，拉到一定长度后松手，以此弹击，直到念头消失为止。\n\n第四次咨询求助者说虽然可怕念头仍出现，但次数明显减少了，只是在生气或与妹妹发生矛盾时冒出来，有时用厌恶疗法也很难消除。咨询师开始对她实施行为治疗，即采用思维阻断法来抑制强迫症。",
+      "metadata": {
+        "document_title": "挥之不去的可怕念头——大学生心理危机干预个案研究_秦晓丽.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "厌恶疗法橡皮筋弹击操作",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "抑制强迫性念头的自动浮现",
+        "task_family": "行为矫正",
+        "method_family": "Behaviorism（行为主义）",
+        "stage": "干预执行",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "60dd76d3-f42b-5797-b07c-9ca0abf996b8",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 22,
+        "paragraph_end": 25,
+        "heading_path": [
+          "# 挥之不去的可怕念头"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "大学生心理危机干预个案研究"
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "96badfeb-c296-5adc-965c-31aba562204a",
+  "skill_name": "DBT生物社会理论心理教育",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "2ee3f6b8-1713-5456-987f-ffd93fd5e97b",
+      "doc_id": "e1bbea09-b376-5abe-a73d-38ea4c840380",
+      "document_title": "基于DBT疗法的一例心理咨询案例报告_黄洁.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于DBT疗法的一例心理咨询案例报告_黄洁.md",
+      "section": "# 四、咨询过程",
+      "span": {
+        "start": 2872,
+        "end": 3223
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "# 1.咨询过程呈现:\n\n第一阶段(第1-4次,彼此连接,建立关系,处理信息层面问题和危机阶段)使用“了了分明，活在当下作业单”,来访者谈到5分钟正念完成可以将注意集中在当下，在理心过程中，一次次让自己又回到咨询室，大脑不乱跑了。\n\n因此,咨询师与来访者可以更敞开、安全的在一起同盟性的工作,根据关系建立的较为顺利与来访者在场的效果，使用了“解决任何问题的选项讲义、技巧训练假设讲义、生物社会理论讲义”,来访者表示这些讲义虽然有说教多，但能听进去，对自己虽有挑战但没有觉得很烦，听不进去。也是通过这次讲义帮助她理解了作为已渐长大的成人还有更多的方式可以去解决问题以及调整了一些自己的信念。并且这次的咨询让她站在在生物社会理论的基础上了解为什么控制情绪和行动这么难,感觉更能接纳自己和理解与环境的关系了。",
+      "metadata": {
+        "document_title": "基于DBT疗法的一例心理咨询案例报告_黄洁.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "DBT生物社会理论 psychoeducation 模块",
+        "asset_type": "knowledge_reference",
+        "granularity": "session",
+        "asset_node_id": "",
+        "asset_path": "",
+        "asset_level": 0,
+        "visible_role": "",
+        "objective": "提供解释性框架以支持认知重构与自我接纳",
+        "task_family": "心理教育",
+        "method_family": "DBT",
+        "stage": "初始至中期过渡",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "b0fe80aa-e128-5698-8964-20ec2e8aa551",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "# 四、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 一、背景",
+          "# 二、评估与分析",
+          "# 三、目标与计划",
+          "# 2.咨询效果",
+          "# 五、反思与总结"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 1.咨询过程呈现:"
+      }
+    }
+  ]
+}

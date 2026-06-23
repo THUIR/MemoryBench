@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "2caa5c54-7249-58c6-bc11-a8f342103059",
+  "parent_name": "合理想象技术引导流程",
+  "children": [
+    {
+      "skill_id": "ec208f7c-9838-5ae7-b905-b4cc882118c6",
+      "name": "弹簧隐喻情绪接纳教学",
+      "description": "使用弹簧具象化隐喻向来访者解释压抑消极情绪会增强其反弹强度的生理心理机制，修正‘必须消除焦虑’的错误信念，建立情绪自然流动的合理预期，为后续认知重构与接纳训练铺垫。",
+      "child_type": "认知教育",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "2caa5c54-7249-58c6-bc11-a8f342103059",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "使用弹簧具象化隐喻向来访者解释压抑消极情绪会增强其反弹强度的生理心理机制，修正‘必须消除焦虑’的错误信念，建立情绪自然流动的合理预期，为后续认知重构与接纳训练铺垫。",
+      "selector_terms": [
+        "来访者出现反向控制现象（如越想克制越强化）",
+        "存在对焦虑本身的次级焦虑",
+        "需降低对情绪体验的病耻感",
+        "CBT",
+        "情绪接纳",
+        "心理教育",
+        "隐喻教学",
+        "认知重构准备",
+        "来访者使用‘必须停止焦虑’‘我不能有这种感觉’等绝对化语言",
+        "报告躯体化反应与注意聚焦正相关（如越关注心跳越心慌）",
+        "表达对自身情绪反应的羞耻或自我批判",
+        "弹簧隐喻情绪接纳教学",
+        "使用弹簧具象化隐喻向来访者解释压抑消极情绪会增强其反弹强度的生理心理机制，修正‘必须消除焦虑’的错误信念，建立情绪自然流动的合理预期，为后续认知重构与接纳训练铺垫。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/弹簧隐喻情绪接纳教学/SKILL.md"
+    }
+  ]
+}

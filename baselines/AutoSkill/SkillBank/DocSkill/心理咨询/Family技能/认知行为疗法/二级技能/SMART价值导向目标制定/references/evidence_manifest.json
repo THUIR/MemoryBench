@@ -1,0 +1,133 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "d647323b-dc89-5d4e-a806-b5432b27c1d3",
+  "skill_name": "SMART价值导向目标制定",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "6712bdcd-6eda-5174-8e1a-d604d462b117",
+      "doc_id": "5bdbd9da-da36-54d1-801b-be0851a2e859",
+      "document_title": "1例短视频成瘾大学生的接纳承诺疗法咨询案例报告_叶腾.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例短视频成瘾大学生的接纳承诺疗法咨询案例报告_叶腾.md",
+      "section": "3 咨询过程",
+      "span": {
+        "start": 4050,
+        "end": 4862
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "![](images/51bff010a05e9c5f514fa196066750d011405b54b2b8e5e77c733faecbf6604c.jpg)  \n图1靶心图工具\n\n3.4第四次咨询：聚焦价值目标，制定有效行动计划\n咨询师首先让小G根据上次靶心图的内容，回顾本周做了哪些靠近靶心和远离靶心的行为。重申实现咨询目标的方法就是让小G靠近靶心的趋向行为增多，远离靶心的避开行为减少。根据小G挑选的当下最想达成的学业价值目标，基于SMART原则，制定本周的目标行动计划。其中S（specific） $=$ 具体的，M（motivatedbyvalues） $=$ 由价值驱动的，A（adaptive） $=$ 合适的，R（realistic） $=$ 可实现性，T（time-framed） $=$ 有时间限制的。以下是部分咨询片段。\n\n咨询师：你刚刚提到有几门课程的作业一直拖着，所以在这靶心图中的四个价值区域里，你当前最想实现的是学业价值对吗？\n\n小G：是的，我想尽快完成作业，也期望期末能取得一个好成绩，这是我非常在意的。\n\n咨询师：非常好，那我们就围绕学业价值这个目标，基于SMART原则来制定本周的目标行动计划。首先，目标需要是具体的（specific），你能描述一下要完成学业任务的具体内容和要求吗？\n\n小G详细描述两门作业的内容和要求。\n\n咨询师：嗯，这个任务目标挺清晰具体的。那完成目标需要设定一个时间限制（time-framed），你计划什么时间完成呢？\n\n小G：（思考片刻后）下周二都完成，因为都是下周三交。其中近代史纲要的作业相对简单，我打算这周五就写完。\n\n咨询师：很棒。你确信下周二一定能完成吗？我们需要评估目标难度是否合适（adaptive）和可实现（realistic），如果有困难的话可以适当做些调整。\n\n小G：应该可以，我会尽全力去完成，如果没有思路的话，我会问问舍友是怎么做的。",
+      "metadata": {
+        "document_title": "1例短视频成瘾大学生的接纳承诺疗法咨询案例报告_叶腾.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "SMART价值导向目标制定",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "将价值转化为可操作、可评估的趋近行为",
+        "task_family": "接纳承诺疗法",
+        "method_family": "ACT",
+        "stage": "承诺行动",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "73fe554a-09d8-5850-8241-a6641c61a97f",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "咨询目标",
+          "作业"
+        ],
+        "paragraph_start": 8,
+        "paragraph_end": 17,
+        "heading_path": [
+          "3 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例短视频成瘾大学生的接纳承诺疗法咨询案例报告",
+          "1一般资料",
+          "2 咨询方案",
+          "4 咨询效果",
+          "5反思和启示"
+        ],
+        "subsection_headings": [
+          "3.1第一次咨询：收集资料，建立咨询关系，介绍ACT，确立咨询目标",
+          "3.2第二次咨询：练习抛锚三步走（ACE）技术，解离负面认知的影响",
+          "3.3第三次咨询：引入靶心图工具，澄清价值追求",
+          "3.4第四次咨询：聚焦价值目标，制定有效行动计划",
+          "3.5第五次咨询：进阶认知解离，行动中塑造出新自我",
+          "3.6 第六次咨询：总结巩固和告别"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询师首先阐明咨询设置，重申保密原则。面对小G的迟疑，讲述“双山隐喻”让小G了解到咨询师是她人生之旅的同路人，并非高高在上、严肃刻板的大道理灌输者。"
+      }
+    },
+    {
+      "support_id": "919e6615-8324-502c-8b9c-e728823fdcac",
+      "doc_id": "20004f49-02ee-50b1-b840-185dd705ed13",
+      "document_title": "一例专业调剂引发适应不良的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例专业调剂引发适应不良的心理咨询案例报告.md",
+      "section": "六、咨询方案的制定",
+      "span": {
+        "start": 1857,
+        "end": 1995
+      },
+      "relation_type": "support",
+      "confidence": 0.9,
+      "quote": "(三)咨询步骤\n1.引导求助者进行自我探索与分析,正确认识大学的学习生活特点、护理专业与临床医学专业的区别和联系,帮助其改变不合理的信念和思维方式。\n\n2.与来访者共同分析目前所学护理学专业的特点及自身的学习优势,引导其明确学习目标,端正学习态度,科学合理地做好职业生涯规划。",
+      "metadata": {
+        "document_title": "一例专业调剂引发适应不良的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "护理专业优势-目标联结工作",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立专业认同与目标导向联结",
+        "task_family": "生涯建构",
+        "method_family": "CBT",
+        "stage": "行为激活",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "24caf62b-7e4b-578a-83cb-e213f6d9955e",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 2,
+        "paragraph_end": 3,
+        "heading_path": [
+          "六、咨询方案的制定"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、一般资料",
+          "二、主诉和个人陈述",
+          "三、咨询师观察和他人反映的情况",
+          "四、评估与诊断",
+          "五、咨询目标的制定",
+          "七、咨询过程"
+        ],
+        "subsection_headings": [
+          "(一)主要方法与原理：合理情绪疗法",
+          "(二)咨询时间",
+          "(三)咨询步骤"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本案例求助者的主要问题是专业思想不稳定和大学生活适应不良造成的情绪和行为异常。合理情绪疗法的原理是通过引导求助者以合理信念代替不合理信念，从而最大限度地减少不合理思维方式给情绪带来的负面影响。"
+      }
+    }
+  ]
+}

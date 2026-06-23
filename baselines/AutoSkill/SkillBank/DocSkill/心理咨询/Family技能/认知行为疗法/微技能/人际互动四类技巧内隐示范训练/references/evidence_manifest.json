@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "4a142f57-ce63-5098-9a57-15ab2c0f1a6a",
+  "skill_name": "人际互动四类技巧内隐示范训练",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "ade5cf09-2ff2-50a6-9414-c89d2b52d0fb",
+      "doc_id": "2b45d285-6007-5130-a957-95a319d75726",
+      "document_title": "基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+      "section": "# 6 咨询过程",
+      "span": {
+        "start": 5085,
+        "end": 5549
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "6.3.4评估：通过与不合理信念的辩驳，促使求助者正确认识自己，同时通过鼓励增加了她的自信心。\n\n6.3.5家庭作业： $\\textcircled{1}$ 让求助者多寻找到自己的优点，建立自信； $\\textcircled{2}$ 主动与周围人的交流沟通； $\\textcircled{3}$ 多参加有意义的活动，逐步扩大自己的社交活动范围。\n\n# 6.4第四次咨询\n\n6.4.1任务：巩固ABC模型，与求助者共同分析自己在人际互动方面的优势与不足，指导求助者学习人际吸引及人际互动的技巧。\n\n6.4.2 方法：会谈法、内隐示范。\n\n6.4.3过程：与求助者共同分析其自身存在的优势，指导她如何有效利用自身的优势，科学合理地安排自己的人际互动、学习生活。同时引导求助者对影响自己人际关系的自身不足加以改进，使自己不断完善[。引导求助者分析现实生活中的案例，从中发现影响人际吸引的因素。通过想象，再现情境，指导求助者学习一些常用的人际互动技巧，包括如何与人切入话题、如何增进亲密感、如何拒绝别人的不合理要求、如何应对别人的批评等。",
+      "metadata": {
+        "document_title": "基于合理情绪疗法的1例大学生人际交往问题心理咨询案例_金丹.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "人际互动技巧内隐示范训练",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "习得并内化具体人际互动行为策略",
+        "task_family": "行为技能训练",
+        "method_family": "CBT",
+        "stage": "咨询中期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "39bdb29a-deb2-5a22-b58c-84686eb386fe",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "会谈"
+        ],
+        "paragraph_start": 43,
+        "paragraph_end": 48,
+        "heading_path": [
+          "# 6 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1 基本情况",
+          "# 2 主诉和个人陈述",
+          "# 3 评估与诊断",
+          "# 4 咨询目标的制定",
+          "# 5咨询方法与原理",
+          "# 7咨询效果评估"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询过程大致分3阶段进行，第一阶段建立咨询关系（第1次咨询），完成心理测验，做出诊断和评估，商定咨询目标。第二阶段为心理咨询阶段（第2～5次咨询）， $\\textcircled{1}$ 帮助求助者深入剖析自身问题，发现自身存在的不合理认知并进行有效调整，逐渐正确认识自我，从而提高其自信心；$\\textcircled{2}$ 共同探讨人际吸引的影响因素以及人际"
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "心理动力学",
+  "profile_id": "psychology::心理动力学",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "f54a2da5-0b4d-5e2b-bd70-401a42d55094",
+  "parent_name": "心理动力学三阶段危机干预框架",
+  "children": [
+    {
+      "skill_id": "027b191c-5c8c-51ae-a707-3556ae7c7c86",
+      "name": "精神动力学取向的大学生心理危机结构化评估",
+      "description": "在初始评估阶段，面向大学生来访者，基于精神动力学框架执行标准化、分模块的心理危机分级判断，整合量表数据、六维度动力学访谈与危机三要素核查，输出含临床排除依据的严重度分级结论。",
+      "child_type": "心理评估",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "f54a2da5-0b4d-5e2b-bd70-401a42d55094",
+      "level_label": "二级技能",
+      "taxonomy_class": "心理动力学",
+      "applicable_when": "在初始评估阶段，面向大学生来访者，基于精神动力学框架执行标准化、分模块的心理危机分级判断，整合量表数据、六维度动力学访谈与危机三要素核查，输出含临床排除依据的严重度分级结论。",
+      "selector_terms": [
+        "来访者为大学生",
+        "存在情绪低落或自杀意念主诉",
+        "需在动力学框架下启动干预前基线判定",
+        "心理动力学",
+        "大学生",
+        "危机评估",
+        "结构化评估",
+        "抑郁筛查",
+        "自杀意念",
+        "主诉情绪迟钝、无价值感、死亡相关想法持续超1年",
+        "有既往抑郁发作诊断史",
+        "当前人际/家庭关系显著受损但现实检验完好",
+        "精神动力学取向的大学生心理危机结构化评估",
+        "在初始评估阶段，面向大学生来访者，基于精神动力学框架执行标准化、分模块的心理危机分级判断，整合量表数据、六维度动力学访谈与危机三要素核查，输出含临床排除依据的严重度分级结论。"
+      ],
+      "relative_path": "心理咨询/Family技能/心理动力学/二级技能/精神动力学取向的大学生心理危机结构化评估/SKILL.md"
+    }
+  ]
+}

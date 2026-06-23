@@ -1,0 +1,37 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "后现代主义",
+  "profile_id": "psychology::后现代主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "78326b55-c691-5d45-8ed9-75c0987d80ec",
+  "parent_name": "焦点解决短期疗法三阶段咨询协议",
+  "children": [
+    {
+      "skill_id": "0d8391bf-aee3-540b-8f47-8d9a45ece599",
+      "name": "SFBT首次咨询结构化开场",
+      "description": "一个五步结构化流程，用于焦点解决短期疗法（SFBT）取向的首次咨询开场，旨在快速建立合作性咨访关系、澄清角色共识、识别既有资源并共同锚定具体、可观察的正向目标。",
+      "child_type": "initial_session",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "78326b55-c691-5d45-8ed9-75c0987d80ec",
+      "level_label": "二级技能",
+      "taxonomy_class": "后现代主义",
+      "applicable_when": "一个五步结构化流程，用于焦点解决短期疗法（SFBT）取向的首次咨询开场，旨在快速建立合作性咨访关系、澄清角色共识、识别既有资源并共同锚定具体、可观察的正向目标。",
+      "selector_terms": [
+        "首次咨询开始时",
+        "来访者主诉为考前焦虑等轻中度适应性问题",
+        "需快速建立资源取向的合作框架",
+        "SFBT",
+        "首次咨询",
+        "资源取向",
+        "目标设定",
+        "合作联盟",
+        "SFBT首次咨询结构化开场"
+      ],
+      "relative_path": "心理咨询/Family技能/后现代主义/二级技能/SFBT首次咨询结构化开场/SKILL.md"
+    }
+  ]
+}

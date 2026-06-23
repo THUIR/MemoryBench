@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "5f217a36-f8e6-54aa-8046-7f0c5b16b27a",
+  "skill_name": "问题外化对话启动微技能",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "6fa5d479-2aa8-5779-a806-23cf7c84c8c3",
+      "doc_id": "465bde46-0d00-5a0d-9f88-bf36f270fc24",
+      "document_title": "tppc20230509756-763.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/tppc20230509756-763.md",
+      "section": "6 咨询过程",
+      "span": {
+        "start": 4440,
+        "end": 5728
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "6.1　第一阶段\n目标：诊断评估与咨询关系建立、主线故事建立，澄清问题、澄清渴望（前3次）。\n\n方法： $\\textcircled{1}$ 通过呼吸放松和冥想正念，帮助A缓解应激反应； $\\textcircled{2}$ 通过陪伴、倾听、共情，建立良好信任的咨访关系； $\\textcircled{3}$ 让主线故事尽情流淌，看见A成长中的不易； $\\textcircled{4}$ 把问题客体化，将问题和自我认同分开，解除消极的自我认同,降低挫败感。主要解决焦虑的感觉是怎么找上自己的？经历了哪些困难、挣扎、努力？焦虑的影响？一起探讨焦虑怎样让A对自己产生了消极的自我认同。外化对话为下一阶段的改写对话奠定基础； $\\textcircled{5}$ 评估状态，确立咨询目标和方案。通过让A描述焦虑的说话方式，描述焦虑建立优势地位的策略，描述焦虑控制A情绪和行为的策略，根据这些描述确定咨询计划。\n\n6.2　第二阶段\n目标：解构聆听与问话，分析问题、找出根源、解决问题（第4—8次）。\n\n6.3　第三阶段\n目标：串联被丰富的故事,建立新的故事,形成新的价值,强壮自我认同,巩固与结束（第9—11次）。\n\n方法： $\\textcircled{1}$ 重塑成员的对话，让来访者感恩母亲的付出，尝试与父亲和解，理解父亲的无奈与不容易，愿意以更积极的态度来与父亲情感链接； $\\textcircled{2}$ 采用时空见证的对话来强壮来访者的自我认同，找到自己的资源、力量和优势，接纳自己的价值，认识到自己是有能力、有价值的； $\\textcircled{3}$ 尝试发泄情绪和写情绪日记自我疗愈的方法，与咨询师一起探讨人际交往技巧、时间管理策略，对现有学习生活进行具体的规划等，采取行动减少焦虑的影响，追寻生命中真正重要的事物。",
+      "metadata": {
+        "document_title": "tppc20230509756-763.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "问题外化对话启动微技能",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "完成一次有效的问题外化启动，实现问题与身份的初步分离",
+        "task_family": "外化对话",
+        "method_family": "后现代主义",
+        "stage": "initial_session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "137952f2-66fc-50d2-9d67-a1b6b3c236de",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 5,
+        "heading_path": [
+          "6 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一例叙事疗法对学业焦虑的干预报告",
+          "1 背景",
+          "2个案概念化",
+          "3 咨询方案",
+          "4 咨询目标",
+          "5 咨询方法"
+        ],
+        "subsection_headings": [
+          "6.1　第一阶段",
+          "6.2　第二阶段",
+          "6.3　第三阶段",
+          "6.4第四阶段（第12次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "目标：诊断评估与咨询关系建立、主线故事建立，澄清问题、澄清渴望（前3次）。"
+      }
+    }
+  ]
+}

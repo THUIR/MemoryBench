@@ -1,0 +1,42 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "4313362c-7f3f-5008-8062-805c553dc725",
+  "parent_name": "创伤叙事与合理情绪疗法整合框架",
+  "children": [
+    {
+      "skill_id": "a312f28e-fad7-52bb-9ac9-f7517ca14844",
+      "name": "CBT认知修正引导框架",
+      "description": "一个聚焦于早期教育与意义重构的CBT会话支架，用于帮助来访者理解症状成因、识别自动化思维，并发展替代性叙述，尤其适用于道德颓废、罪恶感与羞耻相关困扰。",
+      "child_type": "cognitive_restructuring",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "4313362c-7f3f-5008-8062-805c553dc725",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "一个聚焦于早期教育与意义重构的CBT会话支架，用于帮助来访者理解症状成因、识别自动化思维，并发展替代性叙述，尤其适用于道德颓废、罪恶感与羞耻相关困扰。",
+      "selector_terms": [
+        "来访者呈现明显demoralization/guilt/shame症状",
+        "对自身反应缺乏解释框架",
+        "具备基本抽象理解能力",
+        "CBT",
+        "早期干预",
+        "羞耻",
+        "罪恶感",
+        "去病理化",
+        "心理教育",
+        "来访者使用自我贬低语言（如'我太差劲''我不配'）",
+        "表达无力感或存在性无价值感",
+        "将问题归因为人格缺陷而非情境压力",
+        "CBT认知修正引导框架",
+        "一个聚焦于早期教育与意义重构的CBT会话支架，用于帮助来访者理解症状成因、识别自动化思维，并发展替代性叙述，尤其适用于道德颓废、罪恶感与羞耻相关困扰。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/CBT认知修正引导框架/SKILL.md"
+    }
+  ]
+}

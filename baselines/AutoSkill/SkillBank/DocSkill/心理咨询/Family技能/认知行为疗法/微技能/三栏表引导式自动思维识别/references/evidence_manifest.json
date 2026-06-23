@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "96f0b2d3-f612-55fb-8abf-bd9d6b5c4846",
+  "skill_name": "三栏表引导式自动思维识别",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "94adda58-eaa3-521f-8188-cef9d2acd9be",
+      "doc_id": "d048cd38-9862-5ec3-aa9d-242b934bf5c8",
+      "document_title": "基于认知行为疗法的1例抑郁情绪学生咨询案例报告_甘瑜.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法的1例抑郁情绪学生咨询案例报告_甘瑜.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 1933,
+        "end": 2568
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "4.1第一阶段：第1～2次咨询\n主要目标：建立关系、收集信息，初步评估和设定基本目标。与小A建立相互信任的咨访关系；收集小A主诉问题的资料，参考问卷结果初步评估小A心理问题；介绍认知行为疗法的内容、原理、流程等，双方确定使用认知行为疗法开展工作；一起讨论制定了基本的咨询目标；同时针对目前情况，在咨询结束前布置家庭作业，来访者观察并记录自己在生活中具体情境、情绪、生理反应，以及相对应的想法。\n\n4.2第二阶段：第3～6次咨询\n主要目标：识别自动思维与情绪、生理反应与行为的关系，结合心理教育，提高来访者对负面情绪的接纳能力，提振来访者改变信心。\n\n主要做法： $\\textcircled{1}$ 通过利用三栏表等认知行为治疗中相关技术，引导小A在具体情境中挖掘相应的自动思维，区分情绪和自动思维，确认相应的情绪和行为反应，学会评价自动思维和应对自动思维，学会多角度分析和看待问题，重新建立积极认知。 $\\textcircled{2}$ 结合心理教育，为小A讲解了情绪的作用和价值，采用正念技术引导其接纳自己的情绪，重塑想法、情绪、体验与自我的关系。 $\\textcircled{3}$ 采用放松等技术，改善睡眠。咨询中与小A一起共同体验放松技术，让其在失眠时尝试放松，结合决策、提问技术，减少睡前不良思维和对失眠带来影响的焦虑，进而改善睡眠。咨询片段如下。\n\n事件：上周和大二学长开展拍摄任务，想法是觉得自己没用，有没有自己都一样，很多余。情绪：低落，行为：不再参与。",
+      "metadata": {
+        "document_title": "基于认知行为疗法的1例抑郁情绪学生咨询案例报告_甘瑜.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "三栏表引导式自动思维识别",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "提升对自动思维的觉察与初步辨析能力",
+        "task_family": "cognitive_restructuring",
+        "method_family": "CBT",
+        "stage": "middle_phase",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "7e8755c7-71a1-5cd2-a16c-ab456eb52d53",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 基本信息",
+          "2 咨询目标",
+          "3 理论依据与咨询方案",
+          "5 咨询效果",
+          "6 咨询反思"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：第1～2次咨询",
+          "4.2第二阶段：第3～6次咨询",
+          "4.3第三阶段：第7～8次咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "主要目标：建立关系、收集信息，初步评估和设定基本目标。与小A建立相互信任的咨访关系；收集小A主诉问题的资料，参考问卷结果初步评估小A心理问题；介绍认知行为疗法的内容、原理、流程等，双方确定使用认知行为疗法开展工作；一起讨论制定了基本的咨询目标；同时针对目前情况，在咨询结束前布置家庭作业，来访者观察并记录自己在生活中具体情境、情绪、生理反应，以及相对应的想法。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "ff9f48bb-179b-593f-9ca0-0bf0d56aa729",
+  "skill_name": "三栏表引导与认知挑战实验",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "9acb986c-387b-5340-a994-b2fde6d9ec40",
+      "doc_id": "d9c869a4-449d-56ce-96f2-f10cd8474a7e",
+      "document_title": "1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 5017,
+        "end": 5806
+      },
+      "relation_type": "support",
+      "confidence": 0.99,
+      "quote": "但是由于来访者目前最想缓解的焦虑情绪，因此尝试了肌肉放松训练，但是放松训练时，她的脑海中会不自觉地思考问题，很难达到放松的效果。因此，又尝试对其进行正念呼吸训练，发现来访者可以将自己的注意力短暂地放在呼吸上，从而暂时地缓解情绪，因此，决定对其在心理疏导的同时，每周对其进行正念训练。并与其协商，共同制定了咨询的计划与方案。\n\n# 4.2第二阶段：心理干预阶段（第3～8次）\n\n本阶段任务：通过访谈以及布置家庭作业的方式，帮助来访者识别自动思维、专注当下、行为激活等。\n\n家庭作业一：每日填写“思维监测三栏表”（如表1）。记录产生不良情绪时的情景，及负面自动思维（填写思维监测三栏表）并通过认知挑战实验，针对负性情绪进行挑战，如“室友不叫我吃饭”，主动询问一个室友“明天咱们一起去买早餐吧？”记录实际结果与预期是否一致。一开始，来访者无法理清自己的情绪，自动思维也很难用一句话概括，但是从第四周开始，渐渐感受到大多数糟糕情绪来自念头而非事实。\n\n家庭作业二：从第三周开始，每天进行三次“5-4-3-2-1”正念感官觉察练习。负性情绪出现时，可以随时进行练习。练习方法：抬头看看身边的5样东西，如床铺、窗户等；摸摸身边的4样东西，如书本、耳朵等；听听身边的3样声音，如头发摩擦、窗外传来的声音等；尝尝随身带的2样食物，如零食、糖果等；闻闻身边的1种味道，如护手霜等。通过练习用感官把自己从情绪中拉回周围现实，避免陷在情绪中。来访者A说，自己尝试做了，对转移情绪很有帮助，但是记录对自己有负担，就只是每天简单记录练习次数。\n\n家庭作业三：行为激活。鉴于来访者A很少主动体育锻炼，因此约定一种容易坚持的运动，每天练习。来访者A采用视频跟练的方式，进行体操十分钟，频率为每天一次，但是实际是大约三天进行一次。但是，通过锻炼，来访者A感觉自己的精神状态比之前有所好转。\n\n表1思维监测三栏表",
+      "metadata": {
+        "document_title": "1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "思维监测三栏表引导与认知挑战实验",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "实现自动思维识别与实证检验",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "认知干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "fde38bed-3fc6-5b2e-8a77-4cb201e702a5",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "家庭作业",
+          "作业",
+          "行为激活"
+        ],
+        "paragraph_start": 5,
+        "paragraph_end": 11,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例基于认知行为主义疗法的大学生心理咨询报告",
+          "1一般资料",
+          "2评估",
+          "3 个案概念化",
+          "5 案例评价与反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本案例采用认知与行为主义疗法[，通过帮助来访者进行认知重构、情绪调节、行为激活、应对技能培养和持续监测与调整等途径，以帮助个体缓解心理危机，建立理性的认知模式，学会恰当的情绪表达方式，形成健康的行为习惯，以更好地帮助来访者应对压力，提升信心。本次咨询共持续12次，每周一次，每次50分钟，其中在每次咨询过后，都会和精神科医生进行沟通交流，以便取得更好的治疗效果"
+      }
+    }
+  ]
+}

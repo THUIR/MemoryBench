@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "f0b63a99-2c8c-5fcc-8123-38867649774a",
+  "skill_name": "最小可行行动锚定",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "804d0915-4efc-5604-b4b0-b0ded25a8e35",
+      "doc_id": "5bdbd9da-da36-54d1-801b-be0851a2e859",
+      "document_title": "1例短视频成瘾大学生的接纳承诺疗法咨询案例报告_叶腾.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例短视频成瘾大学生的接纳承诺疗法咨询案例报告_叶腾.md",
+      "section": "3 咨询过程",
+      "span": {
+        "start": 4824,
+        "end": 5149
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "小G：应该可以，我会尽全力去完成，如果没有思路的话，我会问问舍友是怎么做的。\n\n咨询师：嗯（肯定点头），在完成作业的过程中，你觉得还可能会遇到哪些阻力？以及你打算如何应对这些阻力？\n\n小G：我估计自己可能还是会忍不住想刷抖音。但我已经想好了，我会开启APP的时长限制功能，并且在完成作业之前不会修改这个设置。不管怎样，我都会坚持下去的，因为这是我当前最想做的事情。\n\n咨询师：非常好，小G。我相信你实现完成作业的目标。那在咨询结束前，我还有最后一个问题想问你，在走出咨询室的24h内，你能做出的最小、最容易朝着实现目标方向的行动是什么？\n\n小G：（笑）请老师放心，我回去后就整理好书包，晚上就去图书馆上自习，下周来的时候，一定会给您汇报我的完成情况。",
+      "metadata": {
+        "document_title": "1例短视频成瘾大学生的接纳承诺疗法咨询案例报告_叶腾.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "最小可行行动锚定",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促进行动启动与承诺内化",
+        "task_family": "行为激活",
+        "method_family": "接纳承诺疗法",
+        "stage": "咨询收尾",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "02dbf5a1-43c5-582a-aa35-b3f48bd967c3",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 17,
+        "paragraph_end": 21,
+        "heading_path": [
+          "3 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例短视频成瘾大学生的接纳承诺疗法咨询案例报告",
+          "1一般资料",
+          "2 咨询方案",
+          "4 咨询效果",
+          "5反思和启示"
+        ],
+        "subsection_headings": [
+          "3.1第一次咨询：收集资料，建立咨询关系，介绍ACT，确立咨询目标",
+          "3.2第二次咨询：练习抛锚三步走（ACE）技术，解离负面认知的影响",
+          "3.3第三次咨询：引入靶心图工具，澄清价值追求",
+          "3.4第四次咨询：聚焦价值目标，制定有效行动计划",
+          "3.5第五次咨询：进阶认知解离，行动中塑造出新自我",
+          "3.6 第六次咨询：总结巩固和告别"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询师首先阐明咨询设置，重申保密原则。面对小G的迟疑，讲述“双山隐喻”让小G了解到咨询师是她人生之旅的同路人，并非高高在上、严肃刻板的大道理灌输者。"
+      }
+    }
+  ]
+}

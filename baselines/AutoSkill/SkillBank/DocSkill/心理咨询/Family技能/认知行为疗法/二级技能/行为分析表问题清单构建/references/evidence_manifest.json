@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "1f51989e-2e93-5d0c-a33c-6382bd37e3f3",
+  "skill_name": "行为分析表问题清单构建",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "ffc3b410-2152-5224-a3b4-38aec8f15d86",
+      "doc_id": "89fd2bd4-a165-5eaa-bf2f-659d91ac2bfa",
+      "document_title": "tppc20240609502-508.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20240609502-508.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 2975,
+        "end": 3945
+      },
+      "relation_type": "support",
+      "confidence": 0.93,
+      "quote": "# 5.2.3　利用王建平老师“三栏表”进行认知训练\n\n找出来访者在面对应激源后产生的自动化思维、中间信念、核心信念，形成案例的认知个案概念化。在本案例中第2次咨询只针对自动化思维开展工作，帮助来访者改变认知。\n\n咨询师：有什么具体的打算吗?\n\n来访者：去他单位闹，告诉家里的亲戚们，搞坏他的名声，去把他车胎扎了，泼他一身脏水。\n\n# 5.3　聚焦行为分析，实施行为实验（第4次咨询）\n\n# 5.3.1列出问题清单\n\n通过王建平老师的“行为分析表”列出来访者的问题清单，重点列出来访者在这两个月当中感觉有问题、有困扰且想解决的问题。\n\n# 5.3.2进行问题解决过程分析\n\n根据 CBT先解决现实问题的指导原则，本着紧贴来访者的原则，共情来访者，分析这些问题是什么类型的问题，是现实问题还是心理问题。\n\n在本案例中，来访者母亲、姨妈均因为亲戚关系，在其姨夫做出这样的“脏事情”（姨妈原话）后选择了隐藏，来访者也考虑到妈妈和姨妈，没有告诉父亲。导致整个家庭态度不明了，而侵犯者一个月后在家庭聚会中再次实施言语侵犯，此属于现实问题。\n\n咨询师指导来访者与其家庭成员进行沟通。一是表明态度，来访者受到伤害，很害怕，很愤怒，需要家庭支持。二是指出侵犯者犯错误了，还可能涉嫌违法，他应该受到处罚和道德的遣责，家庭要对他的行为做出批评、遣责，而不是默不做声。三是与姨妈达成相处协议，来访者不会再去她家，让自己处于危险当中。四是与家庭成员共同协商报警问题。\n\n# 5.4回归现实生活，树立成长目标（第5次咨询）\n\n# 5.4.1改善睡眠，减少哭泣行为\n\n教授来访者正念练习技术，使其专注于当下，不做判断，培养积极心态。\n\n# 5.4.2　帮助来访者树立目标，寻找自我价值\n\n来访者已经大三，就业压力逐渐突出，帮助来访者澄清职业发展方向及需要努力的内容，最终确定来访者考研的目标。",
+      "metadata": {
+        "document_title": "tppc20240609502-508.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "行为分析表问题清单构建",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "生成可操作的问题清单",
+        "task_family": "行为评估与问题排序",
+        "method_family": "CBT",
+        "stage": "问题界定与优先级排序",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "86817d93-9b7a-53c7-bfd6-40f56f365c0a",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "第2次咨询",
+          "清单"
+        ],
+        "paragraph_start": 14,
+        "paragraph_end": 30,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "采用认知行为疗法干预急性应激反应的个案报告",
+          "1 来访者基本情况",
+          "2 心理问题分析与评估",
+          "3 咨询目标",
+          "4 咨询理论与方法",
+          "6 咨询效果"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 5.1收集信息，建立咨访关系（第1次）"
+      }
+    }
+  ]
+}

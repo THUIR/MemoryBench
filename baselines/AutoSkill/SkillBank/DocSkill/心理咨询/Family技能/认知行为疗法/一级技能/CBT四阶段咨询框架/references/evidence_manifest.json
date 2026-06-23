@@ -1,0 +1,65 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "ed289001-a9ff-5c28-aa99-6fdac731caf9",
+  "skill_name": "CBT四阶段咨询框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "9803ca5a-1eb8-50e8-8b8a-7d86659e935f",
+      "doc_id": "6dbe6e1e-9532-523b-8bda-53a8805de20c",
+      "document_title": "基于认知行为疗法：1例大学生强迫症咨询案例_詹天麒.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法：1例大学生强迫症咨询案例_詹天麒.md",
+      "section": "4咨询过程以及咨询效果评估",
+      "span": {
+        "start": 3379,
+        "end": 3754
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "# 4.2 咨询思路\n\n依据认知行为疗法，制定四阶段的咨询方案。第一阶段旨在与来访者建立咨访关系，形成个案概念化，制定咨询方案；第二阶段主要运用认知策略改变来访者的自动化思维，明晰核心信念；第三阶段通过行为干预改变来访者的不合理行为，调整来访者的核心信念；第四阶段巩固咨询效果，结束咨询关系。\n\n# 4.3咨询过程\n\n第一阶段：咨询关系建立，共同制定咨询方案（第1～2次咨询）。\n\n由于当前形势复杂多变，又恰逢暑假来临之际，因此在线下进行两次心理咨询后，建立了线上咨询渠道，每周至少网络咨询1次。前2次咨询主要目的是收集W的个人信息，进行初步评估。介绍强迫症和认知行为治疗的相关知识，使来访者了解强迫行为的产生机制，理解这种行为的出现对自己身心造成的影响，为来访者带来改变动机。介绍心理咨询的原则、咨询预期等有关事项，打消其疑虑，建立治疗关系[5]。",
+      "metadata": {
+        "document_title": "基于认知行为疗法：1例大学生强迫症咨询案例_詹天麒.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT四阶段咨询框架",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "提供跨会话、多阶段的CBT治疗路线图",
+        "task_family": "treatment_planning",
+        "method_family": "CBT",
+        "stage": "multi-session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "f5694b6c-667d-546d-8c15-ba968b85efbf",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 2,
+        "paragraph_end": 6,
+        "heading_path": [
+          "4咨询过程以及咨询效果评估"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 个案概念化",
+          "2 症状评估",
+          "3 咨询目标",
+          "5 经验与启示"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 4.1咨询设置"
+      }
+    }
+  ]
+}

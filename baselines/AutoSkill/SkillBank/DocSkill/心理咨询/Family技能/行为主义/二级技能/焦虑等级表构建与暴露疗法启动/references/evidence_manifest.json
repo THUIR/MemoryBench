@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "779328e9-5e57-53f8-8dba-bbde0622ac71",
+  "skill_name": "焦虑等级表构建与暴露疗法启动",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "0b485d00-a1b4-5d1e-a11c-9b1dff03ab16",
+      "doc_id": "842a9b8a-d1b4-5a8c-b9f5-6acfe54b4037",
+      "document_title": "一例就业焦虑问题的心理咨询案例报告_张玺.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例就业焦虑问题的心理咨询案例报告_张玺.md",
+      "section": "六、咨询目标与咨询阶段",
+      "span": {
+        "start": 3193,
+        "end": 3326
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "（1）方法：放松训练、暴露疗法。\n\n（2）任务：对张某的渐进性放松训练的效果进行反馈。向来访者张某介绍暴露疗法以及放松训练,引导其构建焦虑等级表。根据构建的焦虑等级（见表2），进行暴露疗法。布置家庭作业，让来访者在家时，自行练习场景想象与放松训练\n\n表2焦虑等级量表",
+      "metadata": {
+        "document_title": "一例就业焦虑问题的心理咨询案例报告_张玺.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "焦虑等级表构建与暴露疗法启动",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "启动暴露疗法",
+        "task_family": "anxiety_management",
+        "method_family": "behaviorism",
+        "stage": "early_intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "369c1e13-9238-5016-b9b5-d3df1ed6083e",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 37,
+        "paragraph_end": 39,
+        "heading_path": [
+          "六、咨询目标与咨询阶段"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、一般资料",
+          "二、主诉和个人陈述",
+          "三、咨询师的观察",
+          "四、病因分析",
+          "五、评估与诊断",
+          "七、咨询效果的评估"
+        ],
+        "subsection_headings": [
+          "（一）咨询目标",
+          "（二）咨询阶段的划分",
+          "（三）每次咨询的方法、任务"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "近期目标：调整认知、改善情绪，改变不良行为，改善躯体症状，协助求助者解决就业焦虑问题。远期目标：完善人格，提高一般心理健康水平。"
+      }
+    }
+  ]
+}

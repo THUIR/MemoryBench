@@ -1,0 +1,4 @@
+interface:
+  display_name: "Personal Skill Manager"
+  short_description: "Proactively manage personal reusable local skills"
+  default_prompt: "Use $autoskill to proactively review this session in the background, extract only reusable personal, team, or public skill material, offer candidate titles or accept a custom topic when direction is ambiguous, preserve the user's or target skill's language, search similar local and external skills, score candidates by evidence, personal value, and portability, fully draft the proposed skill or diff, then ask for approval before changing skill files."

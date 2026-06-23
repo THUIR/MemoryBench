@@ -1,0 +1,66 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "c97e6cc8-a2ea-5003-a78b-d83bc7a4689a",
+  "skill_name": "认知解离引导话术",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "b1f7d555-482c-544b-9ae8-8c2a87ce3e65",
+      "doc_id": "07a1b2aa-1a0d-597c-ad86-d75c42de880d",
+      "document_title": "接纳与承诺疗法提升大学新生入学适应力1例_王凯.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/接纳与承诺疗法提升大学新生入学适应力1例_王凯.md",
+      "section": "3 干预过程",
+      "span": {
+        "start": 4890,
+        "end": 5494
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "辅导员：没错。真实想法是什么呢？当你想到“我很生气”这件事情的时候，你先要想到自己是大海，自己是天空。所以这时候你会说：我在想“我很生气”，我知道我在想“我很生气”，知道生气的那个人并不生气。“我很生气”，只是我产生的一个想法。但是我现在能观察它，我能观察我自己，知道我产生了这么一个想法而已。这就是解开认知融合的过程。\n\n布置作业：学习经验性回避和认知融合的概念；根据自己的记录来观察自己的情绪，将导致情绪的诱因与情绪本身分开观察，通过外化的方式，给自己的情绪赋予具体的形状、大小、颜色等，从而使它们变成客观的事物。\n\n# 3.4第四阶段（第8～9次）\n\n本阶段的目的是：接纳不完美的当下即引导来访者接纳完整的自己。接纳是相对于经验性回避的另外一种选择，是帮助来访者建立主动开放的、善于包容接纳的、灵活的和不进行任何评判的态度，从而出于主体意愿地去接受当下的任何体验，不论这些体验是快乐的还是痛苦的，都允许它们存在[4。来访者缺乏自信，主要原因是原生家庭给来访者造成的痛苦，来访者对于外界的刺激过于敏感，从而选择逃避，独来独往，缺乏安全感，把自己蜷缩在自己的安全地带。不愿意回想起自己过去的经历。在接触当下和认知解离的练习基础上，进行接纳的练习。无论痛苦还是快乐，既然不能否定过去的经历，要是试着感受它们，从更多元的角度观察、认知这些经历，认知解离之后才能自觉自愿地接受这些体验。\n\n部分咨询对话片段如下。",
+      "metadata": {
+        "document_title": "接纳与承诺疗法提升大学新生入学适应力1例_王凯.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "认知解离引导话术",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "解除想法与自我的过度绑定",
+        "task_family": "认知解离",
+        "method_family": "接纳与承诺疗法",
+        "stage": "干预中段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "a4264f6f-488c-56b2-9ba9-79a80ebd6d00",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 33,
+        "paragraph_end": 37,
+        "heading_path": [
+          "3 干预过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案情况",
+          "2 个案心理评估",
+          "4干预效果评估",
+          "5反思与启发"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本案例咨询时间从2023年3月～2023年7月。根据来访者的时间，每周安排1～2次，共15次，每次60 min。咨询共分为6个阶段，各阶段具体情况如下。"
+      }
+    }
+  ]
+}

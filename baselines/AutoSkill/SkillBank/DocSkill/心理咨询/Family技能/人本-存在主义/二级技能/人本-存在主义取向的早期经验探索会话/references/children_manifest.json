@@ -1,0 +1,37 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "人本-存在主义",
+  "profile_id": "psychology::人本_存在主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "fc25beed-54fa-5822-9fcb-93f42127275b",
+  "parent_name": "人本-存在主义取向的早期经验探索会话",
+  "children": [
+    {
+      "skill_id": "0d8401b2-ad07-556f-ad15-ffba6e5ca493",
+      "name": "此时此地双人觉察反馈技术",
+      "description": "在咨询工作阶段，当关系初步稳定时，邀请来访者表达对咨询师及咨询过程本身的即时身心反应，并由咨询师以第一人称、非解释性方式同步反馈自身真实当下体验，以此增强关系真实性与来访者对‘此时此地’的具身觉察。",
+      "child_type": "关系深化",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "fc25beed-54fa-5822-9fcb-93f42127275b",
+      "level_label": "微技能",
+      "taxonomy_class": "人本-存在主义",
+      "applicable_when": "在咨询工作阶段，当关系初步稳定时，邀请来访者表达对咨询师及咨询过程本身的即时身心反应，并由咨询师以第一人称、非解释性方式同步反馈自身真实当下体验，以此增强关系真实性与来访者对‘此时此地’的具身觉察。",
+      "selector_terms": [
+        "咨访关系已初步稳定",
+        "来访者开始回避或模糊化自身情绪体验",
+        "需打破自动化人际模式并激活现场资源",
+        "完形疗法",
+        "此时此地",
+        "双人系统",
+        "具身觉察",
+        "真实接触",
+        "此时此地双人觉察反馈技术"
+      ],
+      "relative_path": "心理咨询/Family技能/人本-存在主义/微技能/此时此地双人觉察反馈技术/SKILL.md"
+    }
+  ]
+}

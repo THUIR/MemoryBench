@@ -1,0 +1,66 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "c94e000a-a5b9-5254-b524-ef5c4d731885",
+  "skill_name": "CBT核心信念四句锚定小结",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "92700254-66b6-5c93-9db6-2585c357ee73",
+      "doc_id": "43ec9e89-2138-5cc6-a62d-a8dea252f1a1",
+      "document_title": "tppc20200204155-164.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20200204155-164.md",
+      "section": "4 过程",
+      "span": {
+        "start": 5326,
+        "end": 5759
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "（5）识别和调整自动思维。学习了四种方法： $\\textcircled{1}$ 支持你这个想法的证据是什么？ $\\textcircled{2}$ 有没有其他可能的情况？ $\\textcircled{3}$ 如果事情发生，最坏的结果是什么？最好的结果是什么？最可能的情况是什么？ $\\textcircled{4}$ 如果你的好朋友遇到类似的情况，你会如何对他说？\n\n（6）作业：五栏表。现场举例演示五栏表的填写方法，继续一件事总会比 开始一件事容易得多。确保来访者理解每一栏的具体要求并评估其完成作业的 可能性。\n\n（7）咨询小结： $\\textcircled{1}$ 我们对事件的想法引起情绪；想法不一定是事实； $\\textcircled{2}$ 事实不可改变，改变想法才能改善情绪； $\\textcircled{3}$ 识别自动思维：情绪发生改变时，我当时在想什么？生理、行为有些什么不一样？ $\\textcircled{4}$ 调整（动摇）自动思维的四种方法。",
+      "metadata": {
+        "document_title": "tppc20200204155-164.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT核心信念简明小结",
+        "asset_type": "knowledge_reference",
+        "granularity": "session",
+        "asset_node_id": "",
+        "asset_path": "",
+        "asset_level": 0,
+        "visible_role": "",
+        "objective": "提供可复述的认知行为原理锚点",
+        "task_family": "心理教育",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "咨询结束阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "db0d2af0-8346-5f0e-9240-4fc16c66ede4",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 14,
+        "paragraph_end": 16,
+        "heading_path": [
+          "4 过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一例自杀危机个案的认知行为干预报告",
+          "1 背景",
+          "2评估与分析",
+          "3 目标与计划",
+          "5 总结与反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一次：理解、共情、正常化自杀行为，稳定其情绪；利用情感内疚技术降低其自杀动机。［4]"
+      }
+    }
+  ]
+}

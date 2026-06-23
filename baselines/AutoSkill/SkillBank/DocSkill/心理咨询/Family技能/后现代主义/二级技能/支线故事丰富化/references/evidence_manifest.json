@@ -1,0 +1,63 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "461c4ffc-1948-5c5c-b9d2-b00791fd1206",
+  "skill_name": "支线故事丰富化",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "5351930a-f2e2-55dc-8576-239fcf956c8b",
+      "doc_id": "749d8e8c-90b6-53e2-86e3-8f74bcea9902",
+      "document_title": "看不到自己优势的欣欣.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/看不到自己优势的欣欣.md",
+      "section": "# 三、辅导过程",
+      "span": {
+        "start": 565,
+        "end": 733
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "1.积极倾听，丰富支线故事\n\n第1、2次辅导，我以建立良好的咨访关系为辅导目标,帮助欣欣丰富她的支线故事。\n\n第1次辅导，我积极倾听，找到欣欣的焦虑来源。欣欣说家中经济压力较大,父母期望较高,初中时多次考得不好,每次向朋友诉说时，她们都认为她在炫耀。我认真回应她的情绪，肯定她付出的努力。在温暖的陪伴和共情下，我们建立了稳定的咨访关系。",
+      "metadata": {
+        "document_title": "看不到自己优势的欣欣.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "支线故事丰富化",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "拓展替代性叙事",
+        "task_family": "叙事治疗",
+        "method_family": "后现代主义",
+        "stage": "关系建立期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "8191bafe-8c5a-59dd-a80e-4b01e10af4c4",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "# 三、辅导过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 一、总是焦虑的欣欣",
+          "# 二、焦虑产生的原因",
+          "# 2.外化焦虑，探索资源",
+          "# 四、辅导反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "1.积极倾听，丰富支线故事"
+      }
+    }
+  ]
+}

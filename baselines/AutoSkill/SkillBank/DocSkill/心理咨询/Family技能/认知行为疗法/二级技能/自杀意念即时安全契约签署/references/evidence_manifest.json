@@ -1,0 +1,77 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "5728d36a-d527-55e5-a19a-e36600e9125a",
+  "skill_name": "自杀意念即时安全契约签署",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "cfc3732e-776a-5def-90ce-e0d16669731c",
+      "doc_id": "9b914d45-af5c-5bde-a72d-ff0472b0268b",
+      "document_title": "1例基于认知行为疗法的咨询案例报告_曾庆雪.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例基于认知行为疗法的咨询案例报告_曾庆雪.md",
+      "section": "5咨询过程",
+      "span": {
+        "start": 2753,
+        "end": 3572
+      },
+      "relation_type": "constraint",
+      "confidence": 1.0,
+      "quote": "5.1第一阶段（第1次咨询）\n建立关系、收集信息，初步评估和设定基本目标。\n\n本阶段咨询师主要收集了小Q现阶段的困扰和症状反应，同时评估了小Q当前的社会功能损害情况。咨询师了解小Q的过往咨询史、症状史和家庭史，开始建立互相信任的咨访关系。小Q的问题主要体现在三方面：一是面对学习存在情绪痛苦和行为失调；二是父母对自己的无限期望所带来的无能感；三是童年时期粗暴的家庭教养方式对小Q造成的心理创伤。双方根据上述问题分类一起讨论制定了基本的咨询目标。同时针对目前对小Q的情况，布置了家庭作业，每天阅读两次并设置闹钟提醒自己，包括阅读情绪调节的折页；当注意到自己的情绪状态变得低落时，就将闹钟的想法写到纸上，提醒自己，这只是我在思考，而不是真实发生的事实；试着做每日可以完成的计划。\n\n5.2第二阶段（第2～3次咨询）\n采用提问的方式初步评价自动思维。通过在具体情境中挖掘相应的自动思维，确认相应的情绪和行为反应，咨询师针对小Q明显的适应不良认知，初步进行了提问，并指导小Q学习填写思维改变记录表。比如针对小Q对待考试成绩的认知模式，即只要没有达到父母的要求就是自己无能，引起情绪上的抑郁状态，并产生自杀想法。在寻找支持和反对的证据的过程中，小Q发现周围同学对自己的学习成绩评价不像自己评价的那么低，学习好也并不是评价能力的唯一方式，小Q在摄影方面的才能得到了很多人的赏识。针对小Q的自杀意念，咨询师与小Q签订不自杀承诺书，确保小Q在来访期间不发生自杀行为。\n\n小Q无法满足父母的期待，从而非常自责，感到愧疚，其背后的想法是我怎么这么差，没有能力满足父母的要求，他因此而自我贬低；一次竞赛失利、考试分数没达到期望值，认为都是因为自己没能力导致的，没意识到自己已经很努力、目标设定缺乏合理性，并不是因为自己无能。通过对话，咨询师引导小Q发现自我核心信念，以便小Q对自己现状有更清晰的了解。\n\n咨询师：当你觉得考试没有考好的时候，你头脑里在想什么呢？",
+      "metadata": {
+        "document_title": "1例基于认知行为疗法的咨询案例报告_曾庆雪.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "自杀意念即时安全契约签署",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "safety_micro",
+        "asset_path": "family_root/safety_module/safety_micro",
+        "asset_level": 2,
+        "visible_role": "leaf",
+        "objective": "阻断即刻自杀风险，建立最低安全底线，为后续干预提供前提",
+        "task_family": "crisis_intervention",
+        "method_family": "CBT",
+        "stage": "risk_management",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "715674e2-716a-5738-a813-3f4d5567ebbd",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "第1次咨询",
+          "咨询目标",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 4,
+        "heading_path": [
+          "5咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 个案信息",
+          "2 咨询信息",
+          "3 个案概念化",
+          "4 咨询方案",
+          "6 咨询效果",
+          "7案例评价及反思"
+        ],
+        "subsection_headings": [
+          "5.1第一阶段（第1次咨询）",
+          "5.2第二阶段（第2～3次咨询）",
+          "5.3第三阶段（第4次咨询）",
+          "5.4第四阶段（第5次咨询）",
+          "5.5接受督导情况"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "建立关系、收集信息，初步评估和设定基本目标。"
+      }
+    }
+  ]
+}

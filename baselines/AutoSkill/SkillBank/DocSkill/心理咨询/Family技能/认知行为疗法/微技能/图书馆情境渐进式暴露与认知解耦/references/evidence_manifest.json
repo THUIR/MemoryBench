@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "88ce8f6a-9b73-5c58-8fa5-2ff720805809",
+  "skill_name": "图书馆情境渐进式暴露与认知解耦",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "97459466-ea3c-5dac-b6be-25bc0b780d86",
+      "doc_id": "66c4b401-25d1-5060-8fc6-028a4d62d1f5",
+      "document_title": "1例考研焦虑的心理咨询案例报告_张欣.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例考研焦虑的心理咨询案例报告_张欣.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 6459,
+        "end": 7296
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "来访者：“是这样的，我在图书馆做题的时候，我越是想让自己平静，不要想上厕所的事情，我越是想要上厕所。然后就反反复复地紧张、焦虑，导致现在这样。”\n\n咨询师：“嗯嗯，那我们现在一起来想象一下在图书馆的学习状况。你可以轻轻地闭上眼睛，调整你的呼吸，好的，现在想象我们走进图书馆，找到你熟悉的位置，慢慢地坐下，打开今天要学习的内容，我们拿起笔，准备开始学习（看到来访者眉头紧张了一下），我们深深地呼一口气，好，我们告诉自己，如果想要去上厕所，也是没关系的，每个人都需要上厕所，这不用担心和紧张，让自己沉浸于习题中，如果累了，就让自己休息，如果渴了就让自己去喝水，不必担心上厕所，想上厕所也随时可以去的。”（通过想象技术，帮助来访者重回书桌面前，让其尝试调整心态。）\n\n认知过程决定行为的产生，而行为的改变也会引起认知的改变[4]。为更好地帮助来访者通过行为矫正来改变不合理的信念，我与来访者协商制定上厕所的次数和学习计划，并对自己的紧张情绪进行打分，来访者从刚开始不允许自己去想上厕所，到想上就上，再到后期的次数明显减少到半天2次左右，紧张焦虑情绪也由初始的自评9分到现在的3分。",
+      "metadata": {
+        "document_title": "1例考研焦虑的心理咨询案例报告_张欣.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "图书馆情境渐进式暴露与认知解耦",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "解耦生理冲动与灾难化认知",
+        "task_family": "行为矫正",
+        "method_family": "CBT",
+        "stage": "心理帮助阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "88b056b4-8d5f-5784-b7ed-dbe338d0027c",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 33,
+        "paragraph_end": 36,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案信息",
+          "2 来访者心理问题评估",
+          "3 评估与诊断",
+          "4心理咨询方案",
+          "6 咨询效果",
+          "7 咨询反思"
+        ],
+        "subsection_headings": [
+          "5.1第一阶段：建立关系和问题评估（第1次）",
+          "5.2第二阶段：心理帮助阶段（第2～5次）",
+          "5.3第三阶段：结束与巩固阶段（第6～7次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "主要目标：建立良好的咨询关系。了解来访者基本信息，收集相关材料，明确咨询问题，进行初步的心理评估，协商制定可行的咨询方案，掌握放松技巧。"
+      }
+    }
+  ]
+}

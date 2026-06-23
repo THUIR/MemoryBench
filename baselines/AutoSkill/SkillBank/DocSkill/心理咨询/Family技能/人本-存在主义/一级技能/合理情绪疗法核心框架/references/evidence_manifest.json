@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "family_name": "人本-存在主义",
+  "skill_id": "b20937a6-f067-5586-9aaf-9f84f0702265",
+  "skill_name": "合理情绪疗法核心框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "39bfad3e-ae98-5ef7-bfc2-15c52d0016a7",
+      "doc_id": "20da7e44-53d5-5125-8ce0-29795820e0e9",
+      "document_title": "一例人际关系适应不良的心理咨询案例报告_张月.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/het/一例人际关系适应不良的心理咨询案例报告_张月.md",
+      "section": "3）合理情绪疗法",
+      "span": {
+        "start": 4455,
+        "end": 4691
+      },
+      "relation_type": "case_variant",
+      "confidence": 0.95,
+      "quote": "合理情绪疗法认为，人们的情绪障碍是由人们的不合理信念所造成。咨询师帮助求治者以合理的思维方式代替不合理的思维方式，以合理的信念代替不合理的信念，从而最大限度地减少不合理的信念给情绪带来的不良影响，通过以改变认知为主的治疗方式，来帮助求治者减少或消除他们已有的情绪障碍。\n\n求助者的认知中存在自我否定、怀疑自己有病和认为自己童年是糟糕的等不合理的信念，在咨询中就需要帮助来访者用合理的信念代替不合理的，解决其情绪问题。\n\n6.3.咨询的时间\n每周1次，每次50分钟，共8次。",
+      "metadata": {
+        "document_title": "一例人际关系适应不良的心理咨询案例报告_张月.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "合理情绪疗法核心框架",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "改变认知结构以缓解情绪障碍",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "treatment",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "2f03153a-f45b-5cc7-b9b2-472b8e3d9bcd",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "3）合理情绪疗法"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1.一般资料",
+          "2．主诉和个人陈述",
+          "3.观察和他人反映",
+          "4.评估与诊断",
+          "5．病因分析",
+          "6.咨询目标与咨询方案"
+        ],
+        "subsection_headings": [
+          "6.3.咨询的时间"
+        ],
+        "context_snippets": [],
+        "heading_number": "3",
+        "heading_kind": "markdown_decimal",
+        "section_summary": "合理情绪疗法认为，人们的情绪障碍是由人们的不合理信念所造成。咨询师帮助求治者以合理的思维方式代替不合理的思维方式，以合理的信念代替不合理的信念，从而最大限度地减少不合理的信念给情绪带来的不良影响，通过以改变认知为主的治疗方式，来帮助求治者减少或消除他们已有的情绪障碍。"
+      }
+    }
+  ]
+}

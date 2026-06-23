@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "6e1106a2-6c80-5732-abf4-031c347cd6fd",
+  "skill_name": "精神分析式解释澄清工作",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "f890f72a-f473-5cdf-8396-cc9c3ccb74e6",
+      "doc_id": "aa6de3a7-58ee-5746-aa7d-8a0d8398f032",
+      "document_title": "潜意识的学校心理咨询“密码”.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/潜意识的学校心理咨询“密码”.md",
+      "section": "4.咨询师的精神分析疗法技术运用",
+      "span": {
+        "start": 6217,
+        "end": 6823
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "4.2.解释澄清\n在深度洞察环节的基础之上，咨询师已经初步得出患者的病因来源，将沙盘游戏的结果及时分享给父亲，并且进一步从其口中了解小柱与母亲的关系。第二次与父亲的面谈，将小柱症结的根本原因挖掘了出来，小柱的内心错误地将青春期要求独立的正当需求和对母亲的依恋与对父亲的背叛产生联系，认为妈妈离开爸爸是错误的，受社会指责的，所以要独立，要与爸爸相分离的空间也是无法原谅且不可接受的。咨询师将患者头脑中的错误观念发掘出来之后，组织父亲与小柱见面，希望通过还原事件真相的方式，澄清整个事件发生的真实情况与原因。\n\n4.3.倾诉与修正\n咨询师在“工作修正”阶段巧妙运用阅读母亲来信的方式，让患者本人柔和化、循序渐进式地了解事情全貌，并加之父亲本人的陈述，了解到自己的母亲并非所谓的“坏人”，当时的离开实属无奈，选择离开父亲，是为了追求真正属于自己幸福的正当选择，其实这么多年以来，母亲一直对自己满怀着深深的爱与关怀，只是自己并未知晓。最后，伴随着小柱的真情流露，其心结也逐渐被打开，咨询师引导小柱以精神领域内符合社会公序良俗的发泄手段—一写信来倾诉自己内心的想法与情绪，在宣泄的同时，纠正存在于自己潜意识中的错误认知。当然，存在于潜意识领域的错误观念修正并非一时之功，不可急于求成，日后小柱需要在咨询师的引导之下不断强化、重复正确的观念，将原本存在于心中的错误认知逐步地淡化、摒弃，最终彻底克服心魔，恢复健康的生活习惯。",
+      "metadata": {
+        "document_title": "潜意识的学校心理咨询“密码”.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "精神分析式解释澄清工作",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "澄清潜意识层面的错误因果归因",
+        "task_family": "心理动力学干预",
+        "method_family": "Psychodynamic（心理动力学）",
+        "stage": "工作修正前期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "e2bff6ad-5db0-52b2-ba05-8069d0c80239",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 3,
+        "paragraph_end": 4,
+        "heading_path": [
+          "4.咨询师的精神分析疗法技术运用"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1.引言",
+          "2．精神分析疗法的具体流程",
+          "3．面接案例分析",
+          "5.结论"
+        ],
+        "subsection_headings": [
+          "4.1.1.意象对话",
+          "4.1.2.社会关系调查",
+          "4.1.3．沙盘疗法",
+          "4.2.解释澄清",
+          "4.3.倾诉与修正"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "心理咨询前期，咨询师耐心地对患者的心理症结和其病因的所属类型进行洞察。在初步治疗阶段，咨询师的“意象对话”成功帮助患者小柱卸下心防，建立起信任感，让小柱在轻松、自然的状态之下凭借个人的感觉描绘出自己内心所联想的意象。而也正是在这一过程中，咨询师从其口中听到了“密闭房子”“铁窗”“火灾”等具有封闭性、具有压迫感的意象，浮现在脑海中的事物都展现出其内心是存在着激"
+      }
+    }
+  ]
+}

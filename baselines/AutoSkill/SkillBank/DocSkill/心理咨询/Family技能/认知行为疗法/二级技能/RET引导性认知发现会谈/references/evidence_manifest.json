@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "0454f63f-47c6-54dd-80fe-83c7b65b5342",
+  "skill_name": "RET引导性认知发现会谈",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "32d805bf-d467-5bf1-90f1-e8e1b79111d9",
+      "doc_id": "0f50c561-4681-512f-98d3-f530b000f23f",
+      "document_title": "基于合理情绪疗法的1例大学生情感问题咨询案例_王文龙.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于合理情绪疗法的1例大学生情感问题咨询案例_王文龙.md",
+      "section": "7咨询阶段与实施过程",
+      "span": {
+        "start": 2756,
+        "end": 3008
+      },
+      "relation_type": "case_variant",
+      "confidence": 0.93,
+      "quote": "# 7.1问题评估阶段（第1次咨询）\n\n目的：建立咨访关系；了解个案背景和主要咨询的问题；评估问题严重程度；分析问题的原因；制定咨询计划。\n\n过程：介绍心理咨询基本设置；摄入性访谈收集基本信息和主要问题；探寻心理问题的成因；介绍并确定采用合理情绪疗法。\n\n布置咨询作业：每周填写RET自助表，记录一周出现负面情绪时的事件和不合理认知，并尝试寻找可以替代的合理认知。\n\n# 7.2引导和发现阶段（第2次咨询）\n\n目的：巩固咨访关系；找出小宇对自我和恋爱的不合理认知；引导小宇领悟情绪问题与不合理认知的关系。",
+      "metadata": {
+        "document_title": "基于合理情绪疗法的1例大学生情感问题咨询案例_王文龙.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "RET引导性认知发现会谈",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "促成来访者对非理性信念的觉察与领悟",
+        "task_family": "认知行为疗法",
+        "method_family": "合理情绪疗法",
+        "stage": "认知领悟",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "9da64f68-822c-5658-8e83-2c1d67f13a41",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "第1次咨询",
+          "作业",
+          "第2次咨询"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 5,
+        "heading_path": [
+          "7咨询阶段与实施过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 主诉和个人陈述",
+          "3 外部信息",
+          "4心理问题评估",
+          "5 咨询目标",
+          "6 咨询方案"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 7.1问题评估阶段（第1次咨询）"
+      }
+    }
+  ]
+}

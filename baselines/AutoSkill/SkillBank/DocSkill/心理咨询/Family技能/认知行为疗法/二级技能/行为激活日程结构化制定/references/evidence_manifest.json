@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "d8526709-839f-545f-a9ac-cb6a4fbddb61",
+  "skill_name": "行为激活日程结构化制定",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "250d6084-48f0-530a-aa27-c960e17910f8",
+      "doc_id": "c01263e0-a771-5816-95bb-c2894e3495fe",
+      "document_title": "tppc20240609633-640.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20240609633-640.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 4641,
+        "end": 4984
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "咨询关系建立良好，工作同盟稳定。小东每次咨询都准时到达，改变动机很强，他认为心理咨询有帮助，且相信心理咨询师能够与他一起解决生活中的这些问题。\n\n# 4.2干预/流程\n\n（1）训练小东运用标准的认知工具对自动思维作出反应（这样可以使小东认识到自己功能不良、  \n歪曲的逻辑，从而明显减少难过和焦虑症状）。（2）让小东进行行为实验，以此来验证自己的假设。这将减少回避行为，并增加小东面对人员众多、  \n嘈杂场所的自信。（3）通过梳理小东对特定场所担心恐惧的内容、相应的回避行为和安全行为，制定暴露等级和暴  \n露计划，并实施暴露，帮助小东解决不敢去食堂、操场等人员众多、喧闹场所的问题。（4）帮助小东制定运动和日程计划，增加一些行为激活项目以及一些愉快的活动。\n\n（5）直接进行问题解决。",
+      "metadata": {
+        "document_title": "tppc20240609633-640.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "行为激活日程结构化制定",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "生成可执行、平衡的行为激活周计划",
+        "task_family": "行为激活",
+        "method_family": "CBT",
+        "stage": "早期至中期干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 4,
+        "window_id": "035040af-4ff5-5887-8474-a895af2d22da",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "行为激活"
+        ],
+        "paragraph_start": 1,
+        "paragraph_end": 4,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "针对大学新生适应问题的认知行为疗法咨询案例",
+          "1 个案基本情况",
+          "2个案概念化",
+          "3 咨询计划",
+          "5 咨询效果",
+          "6 咨询反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 4.1 咨询关系"
+      }
+    }
+  ]
+}

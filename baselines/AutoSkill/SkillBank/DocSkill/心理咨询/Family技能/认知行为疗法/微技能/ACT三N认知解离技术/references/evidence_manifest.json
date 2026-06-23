@@ -1,0 +1,74 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "3849edc2-39c9-59b3-9b1f-3e0153bf472f",
+  "skill_name": "ACT三N认知解离技术",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "33c3dccd-0528-5d1c-867b-1573da4727e9",
+      "doc_id": "5bdbd9da-da36-54d1-801b-be0851a2e859",
+      "document_title": "1例短视频成瘾大学生的接纳承诺疗法咨询案例报告_叶腾.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例短视频成瘾大学生的接纳承诺疗法咨询案例报告_叶腾.md",
+      "section": "3 咨询过程",
+      "span": {
+        "start": 5151,
+        "end": 6085
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "咨询师：期待你下周的进展。加油！\n\n3.5第五次咨询：进阶认知解离，行动中塑造出新自我\n小G告诉咨询师学习目标中的两门作业都顺利完成了，其中平面设计课程的作业竟然被老师抽中要当堂展示，她上台后非常紧张，说话磕磕绊绊，感到下边的同学都在取笑自己，甚至下课后遇到同学都刻意避开。咨询师微笑着说被选上台说明你的作业得到老师的认可，在全班同学面前展示更是你了不起的突破，你上周的进步很大啊，看来有了目标牵引就是不一样。\n\n关于课后有意地回避同学，咨询师询问小G当时头脑中是怎么想的，是不是又被头脑中别人讨厌自己的想法牵走了。咨询师带着小G学习了ACT咨询的进阶认知解离，即三N解离，分别是注意（notice）——注意你的头脑在对你说什么；命名（name）——给这个想法取个名字，比如丧气广播站又开始播报了；中和（neutralizing）—就是从有效性的角度来看待这个想法，它能带你实现想要的生活吗/帮助你有效地行动吗？如果不能就把它搁置在一旁，坚定地按照靠近自己价值的方向行动。咨询师说就像已经完成的作业一样，行动会带来新的经历，这些经历就能帮助你塑造出新的经验性自我，让你打破那些旧的负面标签对你的束缚。当然不能保证行动的结果一定如自己所愿，哪怕不顺利依旧对自己抱有善意和耐心，像是对待自己最好的朋友一样对待自己（“两个朋友”隐喻）。\n\n结束前咨询师又给小G布置了一个家庭作业，在回去后一周的生活场景中，完成3次进阶认知解离练习并对比前后自己行为的变化。\n\n3.6 第六次咨询：总结巩固和告别\n小G首先给咨询师看了最近一个月的手机使用时长，相比于之前有了大幅下降，尤其是抖音的平均使用时间缩减到了每天1h以内。总结自己这一个多月的变化，小G说自己睡眠质量明显提升，学习方面也取得较多进步，虽然没有变成开朗健谈的人，但心态产生了很大变化，对负面想法的解离，让她在社交中但多了份淡定和从容。在遇到不顺利情境时她总会想起咨询师讲过的“天空和天气隐喻”，在心里提醒自己做那个天空，无论底下天气多么糟糕，什么雷雨、飓风和暴雪都不能撼动天空，天空永远都会留出空间，而且天气迟早都会改变的。她知道自己的生活有很多值得全力以赴的事情，自己可以带着这份不适的觉察朝着自己期望的方向不断前进。",
+      "metadata": {
+        "document_title": "1例短视频成瘾大学生的接纳承诺疗法咨询案例报告_叶腾.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ACT三N认知解离技术",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "削弱负面认知对行为的支配，增强心理灵活性",
+        "task_family": "认知解离",
+        "method_family": "接纳承诺疗法",
+        "stage": "干预执行",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "a2103e10-b310-5205-afcf-99eb110c6fa4",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "家庭作业"
+        ],
+        "paragraph_start": 22,
+        "paragraph_end": 26,
+        "heading_path": [
+          "3 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例短视频成瘾大学生的接纳承诺疗法咨询案例报告",
+          "1一般资料",
+          "2 咨询方案",
+          "4 咨询效果",
+          "5反思和启示"
+        ],
+        "subsection_headings": [
+          "3.1第一次咨询：收集资料，建立咨询关系，介绍ACT，确立咨询目标",
+          "3.2第二次咨询：练习抛锚三步走（ACE）技术，解离负面认知的影响",
+          "3.3第三次咨询：引入靶心图工具，澄清价值追求",
+          "3.4第四次咨询：聚焦价值目标，制定有效行动计划",
+          "3.5第五次咨询：进阶认知解离，行动中塑造出新自我",
+          "3.6 第六次咨询：总结巩固和告别"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询师首先阐明咨询设置，重申保密原则。面对小G的迟疑，讲述“双山隐喻”让小G了解到咨询师是她人生之旅的同路人，并非高高在上、严肃刻板的大道理灌输者。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "addfce87-fe58-596f-bd1e-bdd756c962ac",
+  "skill_name": "抑郁症五维症状筛查清单",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "1c16ed2a-78ac-5157-8787-0f7eeb08ccac",
+      "doc_id": "c5ab6dce-adb5-57ae-ac6a-268ea0e251d2",
+      "document_title": "合理情绪疗法在抑郁症咨询中的应用——1例大学生抑郁症的个案咨询报告_罗荣宁.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/合理情绪疗法在抑郁症咨询中的应用——1例大学生抑郁症的个案咨询报告_罗荣宁.md",
+      "section": "3 治疗的前期准备：主要问题评估",
+      "span": {
+        "start": 3087,
+        "end": 3313
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "$\\textcircled{1}$ 情绪低落显著，兴趣减退； $\\textcircled{2}$ 睡眠障碍程度严重；$\\textcircled{3}$ 行为功能减退：无法集中注意力专心学习，对日常活动兴趣减少，与人交际减少，有时喜欢暴饮暴食，造成胃病；$\\textcircled{4}$ 生理功能受影响：活动无力，偶有胸闷、头晕及心悸等现象，生理周期紊乱； $\\textcircled{5}$ 存在消极想法：有自杀观念，自觉生活没意思，对未来不抱希望。",
+      "metadata": {
+        "document_title": "合理情绪疗法在抑郁症咨询中的应用——1例大学生抑郁症的个案咨询报告_罗荣宁.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "抑郁症五维症状筛查清单",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "safety_micro",
+        "asset_path": "family_root/safety_module/safety_micro",
+        "asset_level": 2,
+        "visible_role": "leaf",
+        "objective": "风险识别与问题分层",
+        "task_family": "风险评估",
+        "method_family": "CBT",
+        "stage": "前期准备",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "e71bb77b-279a-54b4-88b5-ebfbe071ba5f",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 0,
+        "heading_path": [
+          "3 治疗的前期准备：主要问题评估"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案资料",
+          "2 理论依据及应用",
+          "4建立目标",
+          "5 具体治疗过程",
+          "6 分析与总结"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "$\\textcircled{1}$ 情绪低落显著，兴趣减退； $\\textcircled{2}$ 睡眠障碍程度严重；$\\textcircled{3}$ 行为功能减退：无法集中注意力专心学习，对日常活动兴趣减少，与人交际减少，有时喜欢暴饮暴食，造成胃病；$\\textcircled{4}$ 生理功能受影响：活动无力，偶有胸闷、头晕及心悸等现象，生理周期紊乱； $"
+      }
+    }
+  ]
+}

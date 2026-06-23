@@ -1,0 +1,37 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "后现代主义",
+  "profile_id": "psychology::后现代主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "1feba4e8-13a7-542e-8414-c5c2d9810284",
+  "parent_name": "SFBT三步目标设定协议",
+  "children": [
+    {
+      "skill_id": "a5ea59a8-cd92-5e6c-8254-fdf247150d31",
+      "name": "奇迹询问：理想未来具象化",
+      "description": "在咨询初始阶段，通过结构化、感官导向的未来导向提问，引导来访者以第一人称描述问题已解决后的具体生活片段，激活其内在资源感与目标清晰度，服务于治疗联盟建立与动机激发。",
+      "child_type": "目标建构",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "1feba4e8-13a7-542e-8414-c5c2d9810284",
+      "level_label": "微技能",
+      "taxonomy_class": "后现代主义",
+      "applicable_when": "在咨询初始阶段，通过结构化、感官导向的未来导向提问，引导来访者以第一人称描述问题已解决后的具体生活片段，激活其内在资源感与目标清晰度，服务于治疗联盟建立与动机激发。",
+      "selector_terms": [
+        "来访者表达模糊困扰或低动机",
+        "需快速建立合作性治疗关系",
+        "来访者语言中缺乏具体目标描述",
+        "焦点解决",
+        "奇迹询问",
+        "未来导向",
+        "资源取向",
+        "目标具象化",
+        "奇迹询问：理想未来具象化"
+      ],
+      "relative_path": "心理咨询/Family技能/后现代主义/微技能/奇迹询问：理想未来具象化/SKILL.md"
+    }
+  ]
+}

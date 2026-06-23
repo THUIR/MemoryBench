@@ -1,0 +1,66 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "f79d7ddf-1699-50be-a867-ba530fabd68b",
+  "skill_name": "负性自动思维识别与记录",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "2deed50f-942f-5e4e-9cb9-4b0019414d4e",
+      "doc_id": "d9c869a4-449d-56ce-96f2-f10cd8474a7e",
+      "document_title": "1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 5810,
+        "end": 6161
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "<table><tr><td>情境</td><td>自动思维</td><td>情绪反应</td></tr><tr><td>室友中午没叫我吃饭</td><td>她们肯定都讨厌我</td><td>难过7分、焦虑5分</td></tr><tr><td>男朋友说他很累</td><td>他不爱我才会觉得累</td><td>恐慌4分、委屈6分</td></tr><tr><td>今天干什么都是一个人</td><td>活着有什么意思</td><td>难过8分、尴尬2分</td></tr></table>\n\n本阶段的目标：学会识别负性自动思维，能够用更积极、理性的认知替代负面认知，建立更健康的认知模式，学会心理应对技巧，有效化解压力及负面情绪，确保生命安全。\n\n咨询方法：谈话法、正念疗法、渐进式肌肉放松训练等。",
+      "metadata": {
+        "document_title": "1例基于认知行为主义疗法的大学生心理咨询报告_张建.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "负性自动思维识别与记录",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "提升元认知觉察，建立思维-情绪情境锚点",
+        "task_family": "认知评估",
+        "method_family": "CBT",
+        "stage": "初期评估与教育",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "19459080-d981-56e2-9fc4-cc8fc4513533",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 12,
+        "paragraph_end": 14,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例基于认知行为主义疗法的大学生心理咨询报告",
+          "1一般资料",
+          "2评估",
+          "3 个案概念化",
+          "5 案例评价与反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本案例采用认知与行为主义疗法[，通过帮助来访者进行认知重构、情绪调节、行为激活、应对技能培养和持续监测与调整等途径，以帮助个体缓解心理危机，建立理性的认知模式，学会恰当的情绪表达方式，形成健康的行为习惯，以更好地帮助来访者应对压力，提升信心。本次咨询共持续12次，每周一次，每次50分钟，其中在每次咨询过后，都会和精神科医生进行沟通交流，以便取得更好的治疗效果"
+      }
+    }
+  ]
+}

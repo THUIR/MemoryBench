@@ -1,0 +1,75 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "768f747b-51f6-5b4f-98e0-c31a7f18d9fe",
+  "skill_name": "叙事疗法外化问题技术",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "131d54cd-a5f9-5f86-a45f-fb98702aa245",
+      "doc_id": "3dd6adef-dc47-56b2-b1b4-4bc3724e9efd",
+      "document_title": "1例用叙事疗法缓解失恋痛苦的案例报告_白利宁.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例用叙事疗法缓解失恋痛苦的案例报告_白利宁.md",
+      "section": "# 5 咨询过程",
+      "span": {
+        "start": 6031,
+        "end": 6561
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "咨询过程： $\\textcircled{1}$ 使用叙事疗法帮助来访者外化与前男友关系的问题。 $\\textcircled{2}$ 帮助来访者寻找生命故事中的例外，改写来访者的生命故事，咨询师与来访者共同探索故事的更多可能性情节，不断地丰满及建构新故事或替代性故事，并鼓励来访者发掘自身潜能优势。\n\n5.5第五阶段：咨询与巩固阶段\n咨询目标：强化咨询效果，巩固来访者获得的改变与成果，并将咨询成效进一步内化；咨询即将结束，让来访者与过去负性生活事件做一个告别仪式，顺利结束咨询关系；向来访者表达，后期遇到让其痛苦的事情自己无法解开，随时可以寻找老师帮助。\n\n咨询过程： $\\textcircled{1}$ 作业反馈：讨论失恋的意义；咨询师与求助者一起分享她与父母沟通以及与舍友交往的体验，并适时给予鼓励强化。 $\\textcircled{2}$ 与求助者一起回顾整个咨询过程，让求助者复述咨询要点，以加深理解和印象，进一步摆脱不合理信念，用理性的观念和思维方式认识问题，加强对自己的积极认知，强化咨询效果。 $\\textcircled{3}$ 咨询师总结求助者的成长，对求助者的表现给予充分肯定。 $\\textcircled{4}$ 与求助者商定结束心理咨询。",
+      "metadata": {
+        "document_title": "1例用叙事疗法缓解失恋痛苦的案例报告_白利宁.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "叙事疗法外化问题技术",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "外化问题",
+        "task_family": "叙事治疗",
+        "method_family": "后现代主义",
+        "stage": "问题解构",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "57ea98ba-cf69-57a4-ab87-1e46a2d00269",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标",
+          "作业"
+        ],
+        "paragraph_start": 27,
+        "paragraph_end": 29,
+        "heading_path": [
+          "# 5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1例用叙事疗法缓解失恋痛苦的案例报告",
+          "# 1 个案简介",
+          "# 2 咨询信息",
+          "# 3 咨询师评估",
+          "# 4 咨询方案",
+          "6 咨询效果评估"
+        ],
+        "subsection_headings": [
+          "# 5.1第一阶段：心理评估阶段",
+          "# 5.2第二阶段：叙事介入",
+          "# 5.3第三阶段：理性情绪疗法干预失恋",
+          "# 5.4第四阶段：寻找例外故事",
+          "5.5第五阶段：咨询与巩固阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本次咨询大致分五个阶段：心理评估阶段（第一次、第二次）、叙事介入（第三次、第四次）、理性情绪疗法干预失恋（第五次、第六次）、寻找例外故事（第七次、第八次）、发展替代性故事及见证（第九次、第十次）。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "0e67c7a3-4b2e-5779-8649-abf5726d1824",
+  "skill_name": "Beck认知治疗框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "73361f99-bdde-5e60-adff-46298f036d62",
+      "doc_id": "6778fcb9-35c1-5dd4-b57c-4ea8752d809f",
+      "document_title": "1例抑郁症心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例抑郁症心理咨询案例报告.md",
+      "section": "# 7咨询方案的制定",
+      "span": {
+        "start": 2081,
+        "end": 2315
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "7.1主要方法和适用原理\"Beck认知治疗\"是一种以纠正和改变求助者适应不良性认知为重点的心理治疗方法，对轻至中度的抑郁症及非精神病性抑郁症最为有效。\n\n该求助者心理问题的主要原因起源负性生活事件。根据以上的分析，在咨询实践中选择了针对性较强的\"Beck认知治疗\"方法。\n\n考虑求助者抑郁症状较重的情况，进行心理认知疗法。给予适度抗抑郁药物，中医针灸，物理疗法等既可防止病情加重，,也可使求助者情绪稳定而保证咨询效果。在此基础上再进行心理咨询。\n\n7.2双方责任与义务",
+      "metadata": {
+        "document_title": "1例抑郁症心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "Beck认知治疗框架",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "提供跨会话的、目标一致的认知重构治疗路径",
+        "task_family": "抑郁干预",
+        "method_family": "CBT",
+        "stage": "全程框架",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "a1cd4493-bd52-541f-9cdc-8f3e06ec097e",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "# 7咨询方案的制定"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例抑郁症心理咨询案例报告.md",
+          "# 1一般资料",
+          "# 2主诉",
+          "# 3观察和他人反映",
+          "# 4心理测验结果",
+          "# 5评估与诊断"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "7.1主要方法和适用原理\"Beck认知治疗\"是一种以纠正和改变求助者适应不良性认知为重点的心理治疗方法，对轻至中度的抑郁症及非精神病性抑郁症最为有效。"
+      }
+    }
+  ]
+}

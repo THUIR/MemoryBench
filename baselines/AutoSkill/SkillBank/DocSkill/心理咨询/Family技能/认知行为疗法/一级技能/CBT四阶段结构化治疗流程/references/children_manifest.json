@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "da6be838-20a7-5615-aaac-083f1d08f039",
+  "parent_name": "CBT四阶段结构化治疗流程",
+  "children": [
+    {
+      "skill_id": "c8c5061a-db2f-57d1-b769-4e5f3dfcf29b",
+      "name": "DBT团体前访谈结构",
+      "description": "在DBT日间病房治疗启动前，通过50分钟一对一访谈建立治疗联盟、完成个案概念化、介绍DBT框架，并协商进入团体技能训练的承诺。",
+      "child_type": "treatment_initiation",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "da6be838-20a7-5615-aaac-083f1d08f039",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在DBT日间病房治疗启动前，通过50分钟一对一访谈建立治疗联盟、完成个案概念化、介绍DBT框架，并协商进入团体技能训练的承诺。",
+      "selector_terms": [
+        "来访者尚未进入DBT团体训练",
+        "存在自伤行为且动机模糊",
+        "需明确治疗阶段分工与预期",
+        "DBT",
+        "动机增强",
+        "辩证认可",
+        "治疗联盟",
+        "日间病房",
+        "表达情绪痛苦但缺乏替代应对方式",
+        "对团体治疗持观望或怀疑态度",
+        "提及自伤行为时伴随羞耻或无力感",
+        "DBT团体前访谈结构",
+        "在DBT日间病房治疗启动前，通过50分钟一对一访谈建立治疗联盟、完成个案概念化、介绍DBT框架，并协商进入团体技能训练的承诺。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/DBT团体前访谈结构/SKILL.md"
+    }
+  ]
+}

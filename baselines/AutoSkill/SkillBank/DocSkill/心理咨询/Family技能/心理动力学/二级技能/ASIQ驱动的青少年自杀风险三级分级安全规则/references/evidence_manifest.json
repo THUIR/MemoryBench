@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "56732fa2-63c1-58d7-9071-23c552d69407",
+  "skill_name": "ASIQ驱动的青少年自杀风险三级分级安全规则",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "e070c6aa-74b6-5471-ae54-2768eadce24f",
+      "doc_id": "115d1e82-c1d8-50cc-9554-0fb8b7bb867f",
+      "document_title": "基于精神动力学疗法的大学生心理危机干预案例_陈亚莉.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/基于精神动力学疗法的大学生心理危机干预案例_陈亚莉.md",
+      "section": "2 个案心理评估",
+      "span": {
+        "start": 991,
+        "end": 1658
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "评估是依据一定标准或者工具，对来访者某方面的行为、特质是否符合或者达到某个有临床意义的标准做出判断]。咨询中对来访者的心理状态评估如下。\n\n2.1心理测验结果\n向来访者说明评估目的和评估要求后，使用抑郁自评量表和青少年自杀意念量表评估来访者近2周的情绪状态，抑郁自评量表标准分66分，结果显示为中度抑郁。青少年自杀意念量表评估得分为40分，存在自杀观念。\n\n2.2综合评估\n$\\textcircled{1}$ 情绪状态：从高三开始情绪体验迟钝，情绪低落，兴趣下降，没有价值感，近2周变得严重，容易想到死亡。$\\textcircled{2}$ 躯体症状：睡眠多梦，饮食正常。 $\\textcircled{3}$ 认知状况：思维逻辑正常，反应速度较慢，记忆力、注意力减弱，学习存在一定困难。 $\\textcircled{4}$ 社会功能：能够正常上课，参加学校活动；有固定交际圈，但当前人际存在一定问题，家庭关系较差。 $\\textcircled{5}$ 持续时间：情绪低落，无意义感体验超过1年。 $\\textcircled{6}$ 病史：1年前有精神科就诊经历，确诊为抑郁发作。\n\n2.3危机评估\n在访谈中来访者表示近2周有结束生命想法，但是无自杀计划和实际的自杀行为，自救欲望强烈，属于危机个案。\n\n2.4 评估结论\n该学生主客观统一，自知力良好，无幻觉妄想，排除精神病性诊断；社会适应一般，无价值感、情绪淡漠体验时间超过1年，有轻度自杀观念，当前无特定诱发事件，排除一般心理问题。因此，本案例程度介于严重心理问题和轻度神经症之间。",
+      "metadata": {
+        "document_title": "基于精神动力学疗法的大学生心理危机干预案例_陈亚莉.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "青少年自杀意念量表驱动的危机分级规则",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "safety_micro",
+        "asset_path": "family_root/safety_module/safety_micro",
+        "asset_level": 2,
+        "visible_role": "leaf",
+        "objective": "准确识别并分级自杀风险，防止漏判或过度反应",
+        "task_family": "危机筛查",
+        "method_family": "心理动力学",
+        "stage": "初始评估",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "f515a8f1-1d76-5f80-828b-4e091608f57f",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 4,
+        "heading_path": [
+          "2 个案心理评估"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案信息",
+          "3 个案概念化",
+          "4 咨询过程",
+          "5 干预经验分享",
+          "6 案例评价与反思"
+        ],
+        "subsection_headings": [
+          "2.1心理测验结果",
+          "2.2综合评估",
+          "2.3危机评估",
+          "2.4 评估结论"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "评估是依据一定标准或者工具，对来访者某方面的行为、特质是否符合或者达到某个有临床意义的标准做出判断]。咨询中对来访者的心理状态评估如下。"
+      }
+    }
+  ]
+}

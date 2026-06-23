@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "6cc90cd3-a99f-54b2-88b0-644e5fb6af58",
+  "skill_name": "结构化思维情绪改变记录表启动与基础填写指导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "ca6f1778-5ee1-5079-82e9-0b2dfaeca738",
+      "doc_id": "69862c22-9998-5b51-a21d-1ff767acfa5d",
+      "document_title": "认知行为疗法在大学生抑郁咨询中的应用——1例大学生抑郁的个案咨询报告_王婷婷.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/认知行为疗法在大学生抑郁咨询中的应用——1例大学生抑郁的个案咨询报告_王婷婷.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 3256,
+        "end": 3496
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "# 4.2学习识别自动思维\n\n在咨询的1～3次期间，除建立咨访关系外，与来访者讨论认知理论模型，让来访者初步意识到自己的不良情绪来源于自己的一些糟糕的认知，而这部分糟糕的认知又具有一定的共性。在咨询初期让来访者感受自己较明显的情绪。如当同学之间语气不好时，会出现明显的焦虑情绪，引导来访者觉察焦虑情绪的自动思维以及不恰当的行为模式。了解情绪-思维-行为三者之间的关系。向来访者介绍思维情绪改变记录表（见表1），采用作业的形式，让来访者归纳自己的认知规律[]。\n\n# 4.3认知重评",
+      "metadata": {
+        "document_title": "认知行为疗法在大学生抑郁咨询中的应用——1例大学生抑郁的个案咨询报告_王婷婷.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "思维情绪改变记录表作业指导",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "使来访者掌握标准化自我监测工具的启动与基础填写",
+        "task_family": "家庭作业协同",
+        "method_family": "CBT",
+        "stage": "初期评估与心理教育",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "50050133-2afa-52aa-81ca-72de7a3bbceb",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 2,
+        "paragraph_end": 4,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "认知行为疗法在大学生抑郁咨询中的应用 一1例大学生抑郁的个案咨询报告",
+          "1个案资料",
+          "2 个案概念化",
+          "3 咨询目标",
+          "5 咨询效果",
+          "6讨论"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 4.1制定咨询计划"
+      }
+    }
+  ]
+}

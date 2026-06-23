@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "c5039c69-6195-596f-86c1-c762970a7a26",
+  "skill_name": "产婆式辩论法",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "1a3a25fd-1d84-5790-8970-93db22a0dced",
+      "doc_id": "eb5d56cc-9b22-5cf9-8063-6bd54a7fac21",
+      "document_title": "一例就业焦虑问题的心理咨询案例报告_张玺.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例就业焦虑问题的心理咨询案例报告_张玺.md",
+      "section": "六、咨询目标与咨询阶段",
+      "span": {
+        "start": 2671,
+        "end": 2843
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "（1）方法：“产婆式”辩论法\n\n（2）任务：对来访者的家庭作业（合理自我分析报告RSA）进行反馈，继续与之不合理信念辩论，强化新的合理观念；教会来访者渐进性放松训练，以缓解张某的焦虑情绪和睡眠问题。\n\n（3）来访者的合理自我分析报告  \n事件A：领导当着众多同事批评自己；  \n信念B：我事事都想要做到完美，我应该得到所有人的认可；情结C：焦虑",
+      "metadata": {
+        "document_title": "一例就业焦虑问题的心理咨询案例报告_张玺.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "产婆式辩论法",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "识别并修正不合理信念",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "认知干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "b1e8467c-6ec8-5eea-93da-16837ccb571c",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 26,
+        "paragraph_end": 28,
+        "heading_path": [
+          "六、咨询目标与咨询阶段"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、一般资料",
+          "二、主诉和个人陈述",
+          "三、咨询师的观察",
+          "四、病因分析",
+          "五、评估与诊断",
+          "七、咨询效果的评估"
+        ],
+        "subsection_headings": [
+          "（一）咨询目标",
+          "（二）咨询阶段的划分",
+          "（三）每次咨询的方法、任务"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "近期目标：调整认知、改善情绪，改变不良行为，改善躯体症状，协助求助者解决就业焦虑问题。远期目标：完善人格，提高一般心理健康水平。"
+      }
+    }
+  ]
+}

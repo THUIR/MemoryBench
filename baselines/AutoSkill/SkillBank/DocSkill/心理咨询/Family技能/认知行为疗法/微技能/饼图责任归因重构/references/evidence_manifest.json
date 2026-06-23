@@ -1,0 +1,130 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "0fe5fee4-a829-5086-9b77-38f15a008350",
+  "skill_name": "饼图责任归因重构",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "f01e70c9-f833-535e-a9d0-f1fcda9b1783",
+      "doc_id": "d048cd38-9862-5ec3-aa9d-242b934bf5c8",
+      "document_title": "基于认知行为疗法的1例抑郁情绪学生咨询案例报告_甘瑜.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法的1例抑郁情绪学生咨询案例报告_甘瑜.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 3297,
+        "end": 3665
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "小A：想不到了。\n\n咨询师：那我想了解，你以前有不能按时完成作业的经历吗？这件事经常发生吗？\n\n小A：好像没有，我基本都会按时完成。\n\n咨询师：那现在还觉得自已这次会完不成吗？相信程度呢？\n\n咨询过程中与小A利用“饼图”技术对写剧本的时候的不合理信念进行讨论，明确自己所应承担的责任。讨论前小A认为几乎都是自己的责任（ $9 9 \\%$ ），讨论后，小A认为自己要负责的只有 $4 0 \\%$ ，其余分别为演员负责20%，后期负责$2 0 \\%$ ，其他因素负责 $2 0 \\%$ 。\n\n最后的一次咨询中，咨询师请来访者对自己的咨询过程进行总结，包括认知、情绪等各方面的改变或收获。同时，咨询师也对咨询过程做了一次回顾，肯定和鼓励了来访者在咨询过程中的成长和改变，并针对咨询目标给予建议和支持，鼓励来访者在生活中继续培养自己的正向思维。",
+      "metadata": {
+        "document_title": "基于认知行为疗法的1例抑郁情绪学生咨询案例报告_甘瑜.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "饼图责任归因重构",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "修正过度自责的认知偏差",
+        "task_family": "认知重构",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "中期干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "78cfb9bf-0da3-5b0a-a262-c4bec3743ebb",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "咨询目标"
+        ],
+        "paragraph_start": 28,
+        "paragraph_end": 33,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 基本信息",
+          "2 咨询目标",
+          "3 理论依据与咨询方案",
+          "5 咨询效果",
+          "6 咨询反思"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：第1～2次咨询",
+          "4.2第二阶段：第3～6次咨询",
+          "4.3第三阶段：第7～8次咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "主要目标：建立关系、收集信息，初步评估和设定基本目标。与小A建立相互信任的咨访关系；收集小A主诉问题的资料，参考问卷结果初步评估小A心理问题；介绍认知行为疗法的内容、原理、流程等，双方确定使用认知行为疗法开展工作；一起讨论制定了基本的咨询目标；同时针对目前情况，在咨询结束前布置家庭作业，来访者观察并记录自己在生活中具体情境、情绪、生理反应，以及相对应的想法。"
+      }
+    },
+    {
+      "support_id": "c0c16a78-2d9f-5234-ae54-3d722a05fdbb",
+      "doc_id": "fa697555-8adf-52eb-ab22-90c49334eaca",
+      "document_title": "基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 4772,
+        "end": 5714
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "通过对“男友劈腿”这一应激事件的咨询辅导，L意识到自己因为“男友劈腿”这一事件引起的焦虑、自卑、失眠等不良状况并不是这件事情本身所导致的，而是自己对这件事情的不合理认知所导致的。并意识到“男友劈腿”并不能说明自己不好、失败，相反，应该尽快从这件事情带来的负面情绪中走出来，尽快振作起来恢复正常的学习生活状态。\n\n（3）整合利用认知行为疗法的多种技术识别L的中间信念和核心信念，矫正旧的中间信念和核心信念，发展新的核心信念。\n\n（4）采用放松技术，减少焦虑，改善睡眠。让L靠在沙发上，全身各部位处于舒适状态，双臂自然下垂或搁置在座位扶手上。想象自己处在一个令人轻松的情境中，例如坐在湖边或者漫步在一片美丽的田野上，并有规律的深呼吸，达到一种安静平和的状态。咨询师用轻、柔的声调引导L依次练习放松前臂、头面部、颈部、肩、背、胸、腹及下肢，以达到全身肌肉进入松弛状态。经过多次辅导练习和回家练习，L学会了放松技术，并能够在生活中运用，减少了焦虑，改善了睡眠，到第6次咨询时失眠症状已消失。\n\n（5）利用“饼图”技术，使L觉察到自己生活的不平衡，并朝着自己理想的“饼图”发展，实现生活状态的平衡。\n\n![](images/e797df0546c7b9e8606550e4c0213a923d49b3e125a1822241ab030957452ee2.jpg)",
+      "metadata": {
+        "document_title": "基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "饼图生活平衡觉察技术",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "提升生活结构觉察力，激发行为改变动机",
+        "task_family": "life_balance_assessment",
+        "method_family": "CBT",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "6d370834-0ab6-50ac-a796-b5198ba54c7b",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 37,
+        "paragraph_end": 42,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 基本信息",
+          "2 个案概念化",
+          "3 咨询方案",
+          "5 咨询效果",
+          "6 案例评价与反思"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：咨询关系建立与问题评估阶段（第1～2次）",
+          "4.2第二阶段：正式咨询阶段（第3～8次）",
+          "4.3第三阶段：巩固阶段（第9次）",
+          "4.4第四阶段：结束阶段（第10次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本阶段以建立良好的咨询关系为目标，以共情、接纳、积极关注等咨询态度营造安全的咨询氛围，缓解L的焦虑情绪。对L的困扰进行了了解，确定目前的主要困扰是：失眠、焦虑影响到学习、工作和生活，感到痛苦，渴望改善。收集相应资料，探寻自身改变的意愿，形成初步评估。初步评估：焦虑情绪。"
+      }
+    }
+  ]
+}

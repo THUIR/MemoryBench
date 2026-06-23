@@ -1,0 +1,42 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "心理动力学",
+  "profile_id": "psychology::心理动力学",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "027b191c-5c8c-51ae-a707-3556ae7c7c86",
+  "parent_name": "精神动力学取向的大学生心理危机结构化评估",
+  "children": [
+    {
+      "skill_id": "9fda980e-7103-5249-9761-36d63c9c5851",
+      "name": "动力学导向的抑郁病程与功能损害整合评估",
+      "description": "以时间轴+六维功能结构（情绪、躯体、认知、社会、持续时间、病史）系统采集抑郁相关临床信息，支撑心理动力学个案概念化与严重度鉴别。",
+      "child_type": "信息采集",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "027b191c-5c8c-51ae-a707-3556ae7c7c86",
+      "level_label": "微技能",
+      "taxonomy_class": "心理动力学",
+      "applicable_when": "以时间轴+六维功能结构（情绪、躯体、认知、社会、持续时间、病史）系统采集抑郁相关临床信息，支撑心理动力学个案概念化与严重度鉴别。",
+      "selector_terms": [
+        "来访者主诉长期情绪问题",
+        "需区分一般心理问题、严重心理问题与神经症性障碍",
+        "为后续移情/防御机制分析积累基线数据",
+        "心理动力学",
+        "抑郁评估",
+        "个案概念化",
+        "结构化访谈",
+        "时间轴分析",
+        "情绪低落持续超1年",
+        "存在无价值感、兴趣减退、死亡想法等非情境性体验",
+        "社会功能部分保留但关系质量下降",
+        "有精神科就诊史或既往抑郁发作",
+        "动力学导向的抑郁病程与功能损害整合评估",
+        "以时间轴+六维功能结构（情绪、躯体、认知、社会、持续时间、病史）系统采集抑郁相关临床信息，支撑心理动力学个案概念化与严重度鉴别。"
+      ],
+      "relative_path": "心理咨询/Family技能/心理动力学/微技能/动力学导向的抑郁病程与功能损害整合评估/SKILL.md"
+    }
+  ]
+}

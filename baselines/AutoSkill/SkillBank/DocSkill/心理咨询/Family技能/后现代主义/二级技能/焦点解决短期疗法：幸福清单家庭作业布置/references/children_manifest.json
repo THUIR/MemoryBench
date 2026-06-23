@@ -1,0 +1,38 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "后现代主义",
+  "profile_id": "psychology::后现代主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "66a1fe97-bc26-5f96-9245-daf41c096793",
+  "parent_name": "焦点解决短期疗法：幸福清单家庭作业布置",
+  "children": [
+    {
+      "skill_id": "cd09d7be-43f9-5a98-9f43-b5b5efb9ccea",
+      "name": "焦点解决式学习进程可视化",
+      "description": "引导来访者每日记录实际学习时长、有效学习时长、所用教材及掌握知识点，将抽象考试压力具象为可追踪、可拆解的学习行为单元。适用于考前焦虑伴执行功能波动或自我监控弱化的来访者。",
+      "child_type": "行为监测与反馈",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "66a1fe97-bc26-5f96-9245-daf41c096793",
+      "level_label": "微技能",
+      "taxonomy_class": "后现代主义",
+      "applicable_when": "引导来访者每日记录实际学习时长、有效学习时长、所用教材及掌握知识点，将抽象考试压力具象为可追踪、可拆解的学习行为单元。适用于考前焦虑伴执行功能波动或自我监控弱化的来访者。",
+      "selector_terms": [
+        "来访者描述学习不规律、意志力波动",
+        "存在‘面对整本书/整场考试’的无力感表述",
+        "抑郁症状影响自我评估准确性",
+        "焦点解决",
+        "具体化",
+        "资源取向",
+        "家庭作业",
+        "考前焦虑",
+        "学习行为可视化",
+        "焦点解决式学习进程可视化"
+      ],
+      "relative_path": "心理咨询/Family技能/后现代主义/微技能/焦点解决式学习进程可视化/SKILL.md"
+    }
+  ]
+}

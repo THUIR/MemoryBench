@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "1ee50e06-d805-5dc8-8280-b1366ff8a031",
+  "skill_name": "CBT考试焦虑三阶段咨询流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "25622d27-8329-5294-aa41-9707c759ca7e",
+      "doc_id": "1b9eaa9b-ce8b-5ee5-be30-73c21c38111e",
+      "document_title": "医学生考试焦虑心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/医学生考试焦虑心理咨询案例报告.md",
+      "section": "七、咨询过程",
+      "span": {
+        "start": 3631,
+        "end": 4237
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "咨询师帮助该生领悟到，是\"片面追求名次\"的不合理信念引起了焦虑，自己的焦虑是由其自身现实存在的不合理信念所导致的，而非早年生活的影响，自己应该对自己的焦虑问题负责，只有不再片面追求考试成绩和名次，才能减轻或消除目前存在的各种症状。总之,本次咨询使求助者进一步领悟自己的问题与不合理信念的关系，跟不合理信念辩驳并学会了合理评价。\n\n第四次(2012年6月30日）：首先反馈作业，与求助者检查讨论，鼓励其再接再厉。帮助该生学会以合理的思维方式代替不合理思维方式，改变\"片面追求名次\"的不合理信念并使新观念得以强化，达到认知重建，帮助其在咨询结束后仍能用所学知识应对未来遇到的问题，从而更好地适应现实生活。教会该生积极自我暗示，帮助增强自信，提高应付焦虑性情绪反应的能力，进一步改善睡眠。布置作业，要求该生在现实生活中用理性的态度去看待考试，体验情绪与行为变化。本次仍采用会谈和理性情绪疗法，达到了帮助其实现思维方式合理化并运用到应对复习迎考现实等目的，巩固了咨询效果并引导该生进行积极自我暗示。\n\n第五次(2012年7月1日)：本次咨询采用会谈和心理测评，目的是巩固效果并结束咨询。从作业反馈来看，该生用理性态度看待考试和成绩、名次后，自觉情绪与行为发生了明显变化。咨询师对其认知改变给予充分肯定，要求其继续完善个性，学会有效应对。本次进行了SAS和SDS量表测评，并与该生一起评估和总结咨询效果,帮助巩固咨询成果。",
+      "metadata": {
+        "document_title": "医学生考试焦虑心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT考试焦虑三阶段咨询流程",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "提供可复用的跨会话CBT考试焦虑干预主干框架",
+        "task_family": "考试焦虑干预",
+        "method_family": "CBT",
+        "stage": "multi-session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "e666001c-2319-5a1e-bd56-b591631581e8",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈",
+          "作业"
+        ],
+        "paragraph_start": 4,
+        "paragraph_end": 6,
+        "heading_path": [
+          "七、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、一般资料",
+          "二、主诉",
+          "三、咨询师观察和他人反映",
+          "四、评估和诊断",
+          "五、制定咨询目标",
+          "六、制订咨询方案"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "按诊断评估与建立咨询关系、心理帮助、结束与巩固等3个阶段(共5次)进行咨询服务,其具体过程如下所述。"
+      }
+    }
+  ]
+}

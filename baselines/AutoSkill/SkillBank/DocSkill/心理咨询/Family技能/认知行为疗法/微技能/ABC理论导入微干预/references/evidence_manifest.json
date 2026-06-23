@@ -1,0 +1,74 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "148a3e56-eaab-548a-a3e3-db8df622a3e0",
+  "skill_name": "ABC理论导入微干预",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "de8c64ee-8d9a-5c4e-b1e6-0314a2ae6468",
+      "doc_id": "044bcce9-cb40-580c-b5ab-577a406722dd",
+      "document_title": "大学生考试焦虑的心理咨询案例分析_余乐.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/大学生考试焦虑的心理咨询案例分析_余乐.md",
+      "section": "大学生考试焦虑的心理咨询案例分析",
+      "span": {
+        "start": 806,
+        "end": 1193
+      },
+      "relation_type": "support",
+      "confidence": 0.9,
+      "quote": "$\\textcircled{1}$ 填写本次咨询访谈表;\n\n$\\textcircled{2}$ 介绍有关咨询的注意事项、原则及双方权利和义务;$\\textcircled{3}$ 采用摄入性会谈收集临床资料，引导来访者叙述自已的烦恼，鼓励其宣泄不良情绪，与来访者建立良好的咨询关系;\n\n$\\textcircled{4}$ 来访者做症状自评量表SCL-90,SDS,SAS;$\\textcircled{5}$ 与来访者商定咨询目标，同时向来访者解释咨询如何进行;$\\textcircled{6}$ 布置咨后作业：记录自已每天不同时刻的情绪状态，并反思为什么会如此？\n\n（二）心理帮辅阶段\n# 第二次咨询(2018年10月19日)\n\n（1）咨询目的：确立目标，与来访者商量咨询方案；让其领悟合理情绪疗法的ABC 理论；学习放松训练。\n\n(2）咨询方法：合理情绪疗法和肌肉放松训练。",
+      "metadata": {
+        "document_title": "大学生考试焦虑的心理咨询案例分析_余乐.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ABC理论导入微干预",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促成来访者对非理性信念与情绪反应之间逻辑关系的初步领悟",
+        "task_family": "psychoeducation",
+        "method_family": "CBT",
+        "stage": "cognitive_restructuring",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "72fcfae9-2276-5029-a8bb-bc1dd82562e6",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈",
+          "咨询目标",
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 16,
+        "paragraph_end": 21,
+        "heading_path": [
+          "大学生考试焦虑的心理咨询案例分析"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "一、一般资料",
+          "二、评估与诊断",
+          "三、心理咨询过程",
+          "（二）心理帮辅阶段",
+          "(4）布置作业",
+          "（三）巩固与结束阶段",
+          "（一）来访者自我评估",
+          "（二）咨询师的评估",
+          "（三）来访者代课老师和同学的评估",
+          "三、结语"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "余乐1余杰²"
+      }
+    }
+  ]
+}

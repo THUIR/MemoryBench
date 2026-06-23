@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "family_name": "人本-存在主义",
+  "skill_id": "0d8401b2-ad07-556f-ad15-ffba6e5ca493",
+  "skill_name": "此时此地双人觉察反馈技术",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "232cca22-c919-5e06-bfe1-b7ace40fe433",
+      "doc_id": "65a3cc94-d8bd-5e23-8f3e-63347da8aa7b",
+      "document_title": "完形疗法在大学生人际适应问题上的个案研究_张玲玲.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/het/完形疗法在大学生人际适应问题上的个案研究_张玲玲.md",
+      "section": "3咨询过程",
+      "span": {
+        "start": 3191,
+        "end": 3849
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "第一阶段(第一至四次咨询)：建立咨访关系,对来访者进行评估,与来访者共同商定咨询目标及方案。咨询师以倾听、共情、无条件积极关注为主,注重促使来访者觉察并呈现接受咨询时的即时感受，在对其情绪进行评估的基础上了解来访者的成长经历、人际关系、对\"孤独\"的理解等信息,再次进行评估并确立咨询目标及方案。\n\n第二阶段(第五至九次咨询)：发展与巩固咨访关系,在专业对话中提高来访者的自我觉察能力与自我责任,鼓励来访者自我支持和获取社会支持。帮助来访者通过练习觉察自己的内心感受,通过咨询师的反馈共同探讨来访者的现实人际关系及人际交往模式。来访者发现在现实生活中,人际关系的改善起始于自己对别人看法的改变。咨询之前，他在最初决定是否要与一个人交朋友时,用的标准是自己是否看得上对方,通过一段时间的咨询后,他发现有时候确实存在别人的想法和自己不一致的情况,而自己不能改变别人的想法,只能改变自己。于是,他在生活中与其他同学相处时“求同存异”,试着去接纳别人，自己反而觉得轻松了,那些令自己耿耿于怀的别人的毛病,他没法改变,也不是他的问题。来访者与室友的关系有了改善,觉察能力也有了提升，开始意识到自身存在的多个问题间有相通的部分。\n\n咨询师积极关注来访者的成长,向来访者表达了鼓励和支持,分享了自己听到来访者成长时的积极情绪体验,并邀请来访者关注咨询现场的两个人,表达此时此地对咨询师和咨询本身的感受。咨询师也将自己的感受向来访者作了反馈。通过良好咨访关系的建立,来访者开始运用生活中的资源进行自我支持和环境支持。咨询片段示例如下：",
+      "metadata": {
+        "document_title": "完形疗法在大学生人际适应问题上的个案研究_张玲玲.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "此时此地双人觉察反馈技术",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "增强咨访关系的真实性与来访者对‘此时此地’体验的具身觉察",
+        "task_family": "关系深化",
+        "method_family": "人本-存在主义",
+        "stage": "工作阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "58a14273-cb6e-5701-8ac8-004ca60d8c85",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "3咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "0引言",
+          "1个案的一般资料",
+          "2工作诊断与咨询设置",
+          "4咨询效果及表现",
+          "5讨论"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一阶段(第一至四次咨询)：建立咨访关系,对来访者进行评估,与来访者共同商定咨询目标及方案。咨询师以倾听、共情、无条件积极关注为主,注重促使来访者觉察并呈现接受咨询时的即时感受，在对其情绪进行评估的基础上了解来访者的成长经历、人际关系、对\"孤独\"的理解等信息,再次进行评估并确立咨询目标及方案。"
+      }
+    }
+  ]
+}

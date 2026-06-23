@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "8e6c9890-265d-573a-b563-149419a9f223",
+  "skill_name": "CBT三阶段咨询框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "224c4d1d-5928-5bb0-91df-581af430e76a",
+      "doc_id": "66c4b401-25d1-5060-8fc6-028a4d62d1f5",
+      "document_title": "1例考研焦虑的心理咨询案例报告_张欣.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例考研焦虑的心理咨询案例报告_张欣.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 7140,
+        "end": 7559
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "认知过程决定行为的产生，而行为的改变也会引起认知的改变[4]。为更好地帮助来访者通过行为矫正来改变不合理的信念，我与来访者协商制定上厕所的次数和学习计划，并对自己的紧张情绪进行打分，来访者从刚开始不允许自己去想上厕所，到想上就上，再到后期的次数明显减少到半天2次左右，紧张焦虑情绪也由初始的自评9分到现在的3分。\n\n5.3第三阶段：结束与巩固阶段（第6～7次）\n（1）目的：巩固咨询效果，促进来访者顺利应对考研，结束咨询。（2）方法： $\\textcircled{1}$ 运用认知复习技术，巩固新行为新观念； $\\textcircled{2}$ 使用心理测量和自我评价，评估来访者的情绪和行为。（3）过程：检查来访者每天的学习计划和上厕所记录，共同探讨和分析效果，加强积极行为和积极情绪，帮助来访者将学习的情绪调控和认知调整运用于日常生活中。运用SCL-90对来访者进行了重新评估，结果正常。同时来访者自评焦虑等级降为2分。结束咨询关系。",
+      "metadata": {
+        "document_title": "1例考研焦虑的心理咨询案例报告_张欣.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT三阶段咨询框架",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "提供可复用的CBT咨询阶段划分与阶段目标管理模板",
+        "task_family": "consultation_structuring",
+        "method_family": "CBT",
+        "stage": "treatment_planning",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "f70ded67-8acd-501a-8a61-409ab058ce4f",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 36,
+        "paragraph_end": 37,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案信息",
+          "2 来访者心理问题评估",
+          "3 评估与诊断",
+          "4心理咨询方案",
+          "6 咨询效果",
+          "7 咨询反思"
+        ],
+        "subsection_headings": [
+          "5.1第一阶段：建立关系和问题评估（第1次）",
+          "5.2第二阶段：心理帮助阶段（第2～5次）",
+          "5.3第三阶段：结束与巩固阶段（第6～7次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "主要目标：建立良好的咨询关系。了解来访者基本信息，收集相关材料，明确咨询问题，进行初步的心理评估，协商制定可行的咨询方案，掌握放松技巧。"
+      }
+    }
+  ]
+}

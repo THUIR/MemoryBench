@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "e53325ac-2b07-56fd-a2ac-17364bef6d0a",
+  "skill_name": "核心信念动摇干预",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "7898582e-45c6-5d2c-a08c-c0c442535905",
+      "doc_id": "ccd9a004-1d95-5a88-bcf3-412977a8bd9f",
+      "document_title": "tppc20250704198-210.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20250704198-210.md",
+      "section": "3 咨询过程",
+      "span": {
+        "start": 8665,
+        "end": 9807
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "表2W的思维改变记录表  \nTable 2W's thinking for a change record sheet\n\n3.3　第9-10次咨询\n在前几次的咨询过程中，W自述在面对社交场合中的紧张、担忧和焦虑情绪已有明显缓解，能够更加理性地看待和分析问题。随着咨询联盟的进一步巩固，咨询师在本阶段聚焦于帮助W识别和动摇其根深蒂固的中间信念和核心信念，以进一步推进W的认知重建（详见图1、图2）。\n\n该阶段的核心目标是动摇并矫正W根深蒂固的消极自我图式。W逐步觉察到“我没有能力”“别人不会喜欢我”的信念长期主导着其情绪体验与行为反应。咨询师通过信念强度标尺（详见图3）来引导W 对这些信念的相信程度进行评估，并通过反例法、认知再评价等技术，引导其识别这些信念中存在的非理性因素与认知偏差。例如，W将未能考人重点高中视为“能力低下”的体现，进一步推论为“不值得被喜欢”。对此，咨询师则运用类比推理，引导W比较他人在相似处境下的情绪归因差异，帮助其建立对“能力”概念的多维理解，并强化对自我价值的正向认识。此外，咨询师引导W识别自身在不同领域的能力表现，尝试扩大其对“能力”与“被接纳”的理解范围，从而逐步动摇其核心消极信念（“我是无能的”）的认知根基。\n\n该阶段的干预增强了W对其负性认知模式的识别与理解，为后续暴露训练的开展奠定了心理基础。\n\n![](images/719b2b7c3f126a8cd8c4d0e9fd9170b7cc9f381889a9e455bb0d765178bd1a19.jpg)  \n图3信念程度标尺  \nFigure 3Belief level scale",
+      "metadata": {
+        "document_title": "tppc20250704198-210.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "核心信念动摇干预",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "动摇并软化核心信念的认知确定性，为后续行为改变铺路",
+        "task_family": "认知重建",
+        "method_family": "CBT",
+        "stage": "中期-认知深化",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "8560e2c6-132b-50a4-afa8-83945e84a0a6",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 4,
+        "paragraph_end": 9,
+        "heading_path": [
+          "3 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "社交焦虑障碍的认知行为治疗案例",
+          "1 个案情况",
+          "2干预方案",
+          "表1行为功能分析表",
+          "表4社交焦虑等级情境表",
+          "4 咨询效果评估"
+        ],
+        "subsection_headings": [
+          "3.1　第1-3次咨询",
+          "3.2　第4-8次咨询",
+          "3.3　第9-10次咨询",
+          "3.4　第11-12次咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "初始阶段，咨询的核心目标包括：建立良好的咨询联盟，收集个案信息，初步形成个案假设，并与来访者共同制定咨询目标。认知行为治疗的基本原则之一是“需要一个良好的咨询联盟”，因此前三次面谈的关键任务在于为后续的干预建立稳定的合作基础与信任感，使W能够在安全的氛围中逐渐开放自己，愿意面对自身问题。"
+      }
+    }
+  ]
+}

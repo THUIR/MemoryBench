@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "a6988e47-c748-54e1-ae5f-05295bba6ab6",
+  "skill_name": "成瘾行为时间日志启动",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "c23c527c-bfcd-5d8d-8a6a-7747627201af",
+      "doc_id": "4ca13894-8c77-5118-ae6d-5c1f0770cc3c",
+      "document_title": "一例网游成瘾综合症心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例网游成瘾综合症心理咨询案例报告.md",
+      "section": "七、咨询过程",
+      "span": {
+        "start": 1775,
+        "end": 2147
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "# （一）第一阶段：评估与诊断\n\n第1-2次咨询。目标：全面了解来来访者的个人成长史与原生家庭的情况，建立良好的咨询关系。通过轻松地社交会谈了解网游瘾的严重程度，从各方面进行了解网游成瘾的诱发因素，确定问题的主要性质。\n\n方法：认知行为疗法。倾听、提问、共情等参与性技术。\n\n过程：让来访者填写咨询登记表，询问一般情况，向其介绍咨询保密原则、心理咨询的性质、双方的权利与义务等。了解其基本情况，以支持、理解的为主，通过真诚、尊重、共情、积极关注等技术与来访者建立良好的咨询关系，获得来访者的信任。来访者最讨厌别人唠叨、说教，反感别人一见面就说不要玩游戏等，避开其敏感话题，谈他所感兴趣的事情，让氛围稍轻松，让其放松，不要在防备状态。让其列一张表，记录下每天上网的时间，记算一下过去日子里耗费了多少时间在网游上，接着让其谈体会。\n\n咨询谈话摘要：",
+      "metadata": {
+        "document_title": "一例网游成瘾综合症心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "成瘾行为时间日志启动",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "建立行为基线并促发初步觉察",
+        "task_family": "行为评估",
+        "method_family": "CBT",
+        "stage": "评估与诊断",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "a1f5849f-2718-5ded-83c4-fd60f7e81930",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "会谈"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 4,
+        "heading_path": [
+          "七、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、一般资料",
+          "二、主诉和个人陈述",
+          "三、个人成长史",
+          "四、观察和资料收集",
+          "五、评估与诊断",
+          "六、咨询目标与咨询方案"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# （一）第一阶段：评估与诊断"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "23ed57bd-8eac-58e9-889b-19c519aa1374",
+  "parent_name": "社交焦虑暴露等级共建与安全行为识别",
+  "children": [
+    {
+      "skill_id": "bdabcb3b-d009-5505-bbd3-05228fad5d8f",
+      "name": "情绪回避策略三维识别",
+      "description": "协助来访者同步识别其在社交情境中使用的细微行为回避、认知回避及安全信号三类回避模式，并记录于结构化清单。",
+      "child_type": "avoidance_mapping",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "23ed57bd-8eac-58e9-889b-19c519aa1374",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "协助来访者同步识别其在社交情境中使用的细微行为回避、认知回避及安全信号三类回避模式，并记录于结构化清单。",
+      "selector_terms": [
+        "来访者报告‘知道不该躲但控制不住’",
+        "暴露尝试后出现反复退缩",
+        "生理焦虑缓解但回避行为持续存在",
+        "社交焦虑",
+        "回避识别",
+        "元认知",
+        "CBT微技能",
+        "结构化清单",
+        "来访者能描述具体社交情境中的身体反应或行为反应",
+        "已建立基本咨询联盟",
+        "已完成自动思维识别基础训练",
+        "情绪回避策略三维识别",
+        "协助来访者同步识别其在社交情境中使用的细微行为回避、认知回避及安全信号三类回避模式，并记录于结构化清单。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/情绪回避策略三维识别/SKILL.md"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "行为主义",
+  "profile_id": "psychology::行为主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "611c72f6-2e06-5a28-8736-a34661e8519a",
+  "parent_name": "Prolonged Exposure Protocol",
+  "children": [
+    {
+      "skill_id": "123f9a9f-fb4d-50d0-8c16-5d58d2d38a43",
+      "name": "Imaginal Exposure Session Scaffold",
+      "description": "A structured session workflow for delivering imaginal exposure to trauma memories, including memory anchoring, sensory-emotional elaboration, and in-session habituation tracking.",
+      "child_type": "trauma_intervention",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "611c72f6-2e06-5a28-8736-a34661e8519a",
+      "level_label": "二级技能",
+      "taxonomy_class": "行为主义",
+      "applicable_when": "A structured session workflow for delivering imaginal exposure to trauma memories, including memory anchoring, sensory-emotional elaboration, and in-session habituation tracking.",
+      "selector_terms": [
+        "Client has confirmed PTSD diagnosis",
+        "Client is stabilized and consented to exposure",
+        "Trauma memory is accessible and narratable",
+        "Client has confirmed PTSD diagnosis and coherent trauma memory",
+        "Client is emotionally regulated and has consented to exposure",
+        "Session time allows ≥45 minutes for exposure work",
+        "PTSD",
+        "trauma",
+        "exposure",
+        "behaviorism",
+        "homework",
+        "exposure_therapy",
+        "SUDS",
+        "Imaginal Exposure Session Scaffold"
+      ],
+      "relative_path": "心理咨询/Family技能/行为主义/二级技能/Imaginal Exposure Session Scaffold/SKILL.md"
+    }
+  ]
+}

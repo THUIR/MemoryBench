@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "a454f915-68be-5d25-877e-b5ad9d152e2f",
+  "skill_name": "MSSM涂鸦共构干预",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "ea258274-70f7-5c4d-b1b1-94e0bc77ba35",
+      "doc_id": "7e24b4d3-d412-58b1-bcc8-13149feb0519",
+      "document_title": "一例有强烈孤独感的心理咨询案例.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/一例有强烈孤独感的心理咨询案例.md",
+      "section": "4过程",
+      "span": {
+        "start": 5904,
+        "end": 6258
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "咨询关系及处理:前4次咨询中,咨询师主要通过开放式的提问、共情式倾听、反馈性陈述接纳个案的问题和成长经历，并给予积极的反馈，以提供镜像的功能;在梦的工作中，通过无意识的象征表达联系个案现实处境，感受身体、情绪反应,个案从梦里感受自己的力量，对学业、事业和自己未来状态开始有了展望。\n\n4.1.2第二阶段（第 $5 \\sim 8$ 次咨询）\n发现资源，利用资源，学习情绪表达，探索学业目标。\n\n第5次咨询中个案没有记住最近的梦，也不知道想要说一些什么，于是咨询师采用山中康裕的MSSM法共同完成了一幅涂鸦作品（见图1）。个案通过涂鸦与故事讲述，将象征对象化，通过这个过程，引导个案体会情绪的变化，肯定个案条理清晰、有规划能力等潜质。个案开始发现新自我，其内心深处的活力透过涂鸦作品表现在纸上，自我也被激励起来。",
+      "metadata": {
+        "document_title": "一例有强烈孤独感的心理咨询案例.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "MSSM涂鸦共构干预",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促进情绪具身化表达与资源识别",
+        "task_family": "心理动力学资源激活",
+        "method_family": "心理动力学",
+        "stage": "中期探索",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "6a1ef042-8df8-5234-94d0-73564d1cf1a3",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 9,
+        "paragraph_end": 11,
+        "heading_path": [
+          "4过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1背景",
+          "2 评估与分析",
+          "3 目标与计划",
+          "5讨论与总结"
+        ],
+        "subsection_headings": [
+          "4.1咨询过程与咨询关系处理",
+          "4.1.1 第一阶段（第 $1 \\sim 4$ 次咨询）",
+          "4.1.2第二阶段（第 $5 \\sim 8$ 次咨询）",
+          "4.1.3第三阶段（第 $9 \\sim 1 2$ 次咨询）",
+          "4.2 督导情况",
+          "4.3 咨询效果"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询已结案，每周咨询一次，共12次，免费咨询，接受督导4次，未接受"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "6379c857-c46d-53b1-8415-d8cabaa7c20e",
+  "skill_name": "合理情绪疗法（RET）四阶段治疗框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "429e94c9-ee0b-5ac9-ae06-a50ff4f7f2c4",
+      "doc_id": "c5ab6dce-adb5-57ae-ac6a-268ea0e251d2",
+      "document_title": "合理情绪疗法在抑郁症咨询中的应用——1例大学生抑郁症的个案咨询报告_罗荣宁.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/合理情绪疗法在抑郁症咨询中的应用——1例大学生抑郁症的个案咨询报告_罗荣宁.md",
+      "section": "2 理论依据及应用",
+      "span": {
+        "start": 2177,
+        "end": 2722
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "合理情绪疗法（rational emotional therapy，RET），是在20世纪由美国心理学家阿尔伯特·艾利斯提出，其核心内容是“ABC理论”。A指诱发性事件；B指信念，是个人对事件的认知或信念；C指特定情境下人们所产生的情绪或行为后果[8]。艾利斯认为认知和信念是核心，能够正确将合理信念代替不合理信念是关键。信念对情绪和行为具有决定性作用，也是引起情绪和行为后果的直接原因。该理论认为，C结果不是由事件A事件直接引起的，C结果的直接原因应该是B信念，即个人对诱发性事件A的不合理认知和信念[]。见图1。\n\n合理情绪疗法是主要针对不合理信念引起的一系列情绪及行为障碍的一种认知行为疗法[10]。认为要减少或消除个人的不良行为后果，就要对其认知进行干预与矫正[I-I2]，主要过程分为确定问题、心理诊断、领悟与修通、巩固与评价等四个阶段。运用合理情绪疗法的相关技巧对患者不合理信念辩驳，对合理信念进行重塑，帮助其建立新的合理思维及合理信念体系[13]，顺利完成治疗，重新步入正常的生活轨道。\n\n![](images/622f1e76978ac3295ba1e9f3bba40741ec232592810d6f8ad27ac8df157a4ee4.jpg)  \n图1ABC理论模型图",
+      "metadata": {
+        "document_title": "合理情绪疗法在抑郁症咨询中的应用——1例大学生抑郁症的个案咨询报告_罗荣宁.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "合理情绪疗法（RET）四阶段治疗框架",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "系统性矫正不合理信念，重建合理认知体系",
+        "task_family": "认知行为干预",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "跨阶段治疗流程",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "dba40f22-e6b4-550d-949a-6294f384fcd0",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 1,
+        "paragraph_end": 3,
+        "heading_path": [
+          "2 理论依据及应用"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案资料",
+          "3 治疗的前期准备：主要问题评估",
+          "4建立目标",
+          "5 具体治疗过程",
+          "6 分析与总结"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 2.1合理情绪疗法的概念"
+      }
+    }
+  ]
+}

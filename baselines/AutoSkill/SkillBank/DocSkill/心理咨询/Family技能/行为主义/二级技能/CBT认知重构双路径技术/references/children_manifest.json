@@ -1,0 +1,37 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "行为主义",
+  "profile_id": "psychology::行为主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "318e5498-f30f-53d9-8709-57447ad8be0f",
+  "parent_name": "CBT认知重构双路径技术",
+  "children": [
+    {
+      "skill_id": "fd4aaf26-e59f-583a-bf4f-2e82793a11c5",
+      "name": "灾难化思维苏格拉底式三问",
+      "description": "针对来访者表达的典型灾难化陈述（如‘恐惧会得精神病’‘没人管我’‘脆弱很丢脸’），依次使用三个结构化问题——‘证据何在？’‘替代解释？’‘最坏后果真实概率？’——引导其暂停自动化联想，检验思维与现实的匹配度，重建现实检验能力。",
+      "child_type": "认知重构",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "318e5498-f30f-53d9-8709-57447ad8be0f",
+      "level_label": "微技能",
+      "taxonomy_class": "行为主义",
+      "applicable_when": "针对来访者表达的典型灾难化陈述（如‘恐惧会得精神病’‘没人管我’‘脆弱很丢脸’），依次使用三个结构化问题——‘证据何在？’‘替代解释？’‘最坏后果真实概率？’——引导其暂停自动化联想，检验思维与现实的匹配度，重建现实检验能力。",
+      "selector_terms": [
+        "来访者表达绝对化、以偏概全或灾难化语言",
+        "情绪强度中等（SUDS 4–7）、具备反思能力",
+        "需在单次会谈中快速切入核心信念",
+        "CBT",
+        "认知行为疗法",
+        "苏格拉底式提问",
+        "灾难化思维",
+        "认知解构",
+        "灾难化思维苏格拉底式三问"
+      ],
+      "relative_path": "心理咨询/Family技能/行为主义/微技能/灾难化思维苏格拉底式三问/SKILL.md"
+    }
+  ]
+}

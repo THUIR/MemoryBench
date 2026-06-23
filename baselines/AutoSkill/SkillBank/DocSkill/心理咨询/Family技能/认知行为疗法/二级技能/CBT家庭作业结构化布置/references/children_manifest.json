@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "1a132829-0cbd-5c81-afc3-e460f1bca5a9",
+  "parent_name": "CBT家庭作业结构化布置",
+  "children": [
+    {
+      "skill_id": "17735cc0-a7d3-5c98-bbaa-e9afcab0aba8",
+      "name": "CBT核心信念温习微作业布置",
+      "description": "在CBT单次咨询结束阶段，向求助者布置每日5分钟温习本次共同构建的1–3条合理核心信念的家庭作业，以强化神经可塑性、促进信念内化与行为迁移；严格限定形式（默读/朗读/录音复听）、时长（固定5分钟）、频次（每日一次）、起始时间（当日即始），不附加反思或实验任务。",
+      "child_type": "行为巩固",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "1a132829-0cbd-5c81-afc3-e460f1bca5a9",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在CBT单次咨询结束阶段，向求助者布置每日5分钟温习本次共同构建的1–3条合理核心信念的家庭作业，以强化神经可塑性、促进信念内化与行为迁移；严格限定形式（默读/朗读/录音复听）、时长（固定5分钟）、频次（每日一次）、起始时间（当日即始），不附加反思或实验任务。",
+      "selector_terms": [
+        "已完成核心信念重构环节",
+        "求助者对新信念表现出初步接纳或好奇",
+        "咨询进入收尾阶段（最后5–8分钟）",
+        "CBT",
+        "家庭作业",
+        "核心信念",
+        "神经可塑性",
+        "微干预",
+        "求助者点头、语气缓和、主动重复新信念",
+        "能简要解释该信念为何更符合现实",
+        "未出现明显抵触或解离反应",
+        "CBT核心信念温习微作业布置",
+        "在CBT单次咨询结束阶段，向求助者布置每日5分钟温习本次共同构建的1–3条合理核心信念的家庭作业，以强化神经可塑性、促进信念内化与行为迁移；严格限定形式（默读/朗读/录音复听）、时长（固定5分钟）、频次（每日一次）、起始时间（当日即始），不附加反思或实验任务。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/CBT核心信念温习微作业布置/SKILL.md"
+    },
+    {
+      "skill_id": "8cd59bee-9be5-5856-a3cb-da3dafa291d7",
+      "name": "核心问题排序家庭作业布置",
+      "description": "在首次咨询末尾，以结构化、去病理化方式引导来访者识别并按严重程度排序当前3–5个核心困扰问题，辅以简短情绪标注，用于增强情绪觉察与问题层级意识，支持后续评估与干预聚焦。",
+      "child_type": "家庭作业设计",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "1a132829-0cbd-5c81-afc3-e460f1bca5a9",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在首次咨询末尾，以结构化、去病理化方式引导来访者识别并按严重程度排序当前3–5个核心困扰问题，辅以简短情绪标注，用于增强情绪觉察与问题层级意识，支持后续评估与干预聚焦。",
+      "selector_terms": [
+        "首次咨询收尾阶段",
+        "已完成基础关系建立与情绪容纳",
+        "来访者已能清晰表达至少2–3个困扰主题",
+        "CBT",
+        "家庭作业",
+        "问题澄清",
+        "情绪觉察",
+        "初始评估",
+        "来访者具备基本书写与反思能力",
+        "情绪稳定性允许课后思考",
+        "咨询目标包含问题澄清与自我觉察",
+        "核心问题排序家庭作业布置",
+        "在首次咨询末尾，以结构化、去病理化方式引导来访者识别并按严重程度排序当前3–5个核心困扰问题，辅以简短情绪标注，用于增强情绪觉察与问题层级意识，支持后续评估与干预聚焦。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/核心问题排序家庭作业布置/SKILL.md"
+    }
+  ]
+}

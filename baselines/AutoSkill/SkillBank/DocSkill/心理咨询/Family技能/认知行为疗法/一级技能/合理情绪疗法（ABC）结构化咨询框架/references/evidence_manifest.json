@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "66eaf907-7747-5b94-8a3f-f950128f0396",
+  "skill_name": "合理情绪疗法（ABC）结构化咨询框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "08a267cd-5c75-5a55-89bf-24bbcc6447c3",
+      "doc_id": "cccdbfea-302c-5dd7-aeb9-2d46d1ec6ada",
+      "document_title": "一例大学新生适应不良的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例大学新生适应不良的心理咨询案例报告.md",
+      "section": "3咨询方案与知情同意",
+      "span": {
+        "start": 5785,
+        "end": 6137
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "3.1咨询目标\n\n近期目标：调整情绪、适应学校生活；最终目标：促进求助者的心理健康发展并发挥潜能，提高适应新环\n\n境的能力。\n\n3.2所依据的理论和拟采用的技术\n\n针对求助者的问题，与求助者协商制定了双方认可的咨询方案，确定采用合理情绪疗法治疗，以促进求助者摆脱不合理的观念，建立合理的认知模式，建立有效的应对方式。合理情绪疗法的基本理论为ABC 理论，根据这一理论，情绪不是由某一诱发事件本身引起的，而是由经历了这一事件的个体对这一事件的解释和评价所引起的，通过与求助者交谈，找出其情绪困扰和行为不适的具体表现(C)，以及与这些反应相对应的诱发事件（A)，并对两者之间的不合理信念（B）进行分析，使求助者领悟到自己的不合理信念，进而修正或放弃原有不合理信念，并代之以合理信念，从而使症状得以减轻或消除。",
+      "metadata": {
+        "document_title": "一例大学新生适应不良的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "合理情绪疗法（ABC）结构化咨询框架",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "建立可复用的CBT宏观干预路径",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "treatment_planning",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "676181ee-6820-5763-b732-fca6730f3efb",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "咨询目标"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 4,
+        "heading_path": [
+          "3咨询方案与知情同意"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1资料整理",
+          "2评估与诊断",
+          "4咨询效果评价",
+          "5总结"
+        ],
+        "subsection_headings": [
+          "3.4咨询过程："
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "3.1咨询目标"
+      }
+    }
+  ]
+}

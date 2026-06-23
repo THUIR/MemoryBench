@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "4edeece3-8f85-551a-8ddf-5dbba5882900",
+  "skill_name": "绿子式爱情脚本外化解构",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "d543eda3-90f7-5110-af46-7217619b34e1",
+      "doc_id": "3dd6adef-dc47-56b2-b1b4-4bc3724e9efd",
+      "document_title": "1例用叙事疗法缓解失恋痛苦的案例报告_白利宁.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例用叙事疗法缓解失恋痛苦的案例报告_白利宁.md",
+      "section": "# 5 咨询过程",
+      "span": {
+        "start": 5524,
+        "end": 5950
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "B：“嗯，在小说中绿子她描述了她心目中的理想爱情，比如她对渡边说我想吃草莓蛋糕的时候，对方就丢下一切，跑去为我买！回来时喘着气对我说绿子，你看，草莓蛋糕！。然后我会说，哼，我现在不想吃啦！就把蛋糕扔到了窗外。接下来，我希望对方会说知道了！绿子，我再去给你买别的，你喜欢什么呢？巧克力泡芙，还是芝士蛋糕呢？如果对方这样对我，那我就一定死心塌地地爱死他咯！'这个是绿子描述的理想爱情，你认同她的想法吗？”（内容表达、问题外化）\n\nA：“我不太认同绿子的看法。但我自己有时候却会这样，比如，当我熬夜写作业到凌晨2、3点，我会要求男朋友必须在线上陪我。现在我觉得这种要求有些不可理喻。\n\nB：“按照绿子的说法，如果一个男人可以无怨无悔的满足她的所有任性，她就可以死心塌地地去爱这个男人。但男生反而会惧怕绿子，惧怕她草莓蛋糕的爱情梦想。男人和女人对于爱的理解不同，如果因为女人对爱的理解不同，而导致男人痛苦，男人就会想逃离这种痛苦，比如沉默或分手。”（故事解构）",
+      "metadata": {
+        "document_title": "1例用叙事疗法缓解失恋痛苦的案例报告_白利宁.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "叙事解构绿子式爱情理想",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "解构不适应性爱情叙事",
+        "task_family": "叙事疗法",
+        "method_family": "后现代主义",
+        "stage": "叙事介入",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "c5ac9399-636a-581d-b107-9df482dff9e6",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业"
+        ],
+        "paragraph_start": 23,
+        "paragraph_end": 25,
+        "heading_path": [
+          "# 5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1例用叙事疗法缓解失恋痛苦的案例报告",
+          "# 1 个案简介",
+          "# 2 咨询信息",
+          "# 3 咨询师评估",
+          "# 4 咨询方案",
+          "6 咨询效果评估"
+        ],
+        "subsection_headings": [
+          "# 5.1第一阶段：心理评估阶段",
+          "# 5.2第二阶段：叙事介入",
+          "# 5.3第三阶段：理性情绪疗法干预失恋",
+          "# 5.4第四阶段：寻找例外故事",
+          "5.5第五阶段：咨询与巩固阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本次咨询大致分五个阶段：心理评估阶段（第一次、第二次）、叙事介入（第三次、第四次）、理性情绪疗法干预失恋（第五次、第六次）、寻找例外故事（第七次、第八次）、发展替代性故事及见证（第九次、第十次）。"
+      }
+    }
+  ]
+}

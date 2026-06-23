@@ -12,6 +12,7 @@ for the corresponding baselines to load.
 | `A_mem/`          | https://github.com/agiresearch/A-mem                    | Tracked in git |
 | `MemoryOS/`       | https://github.com/BAI-LAB/MemoryOS                     | Tracked in git |
 | `mem0/`           | https://github.com/mem0ai/mem0                          | Tracked in git (editable install — see below) |
+| `AutoSkill/`      | https://github.com/ECNU-ICALK/AutoSkill                 | Tracked in git |
 
 ## Why these are vendored
 

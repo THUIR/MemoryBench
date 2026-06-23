@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "fe2379d7-b3b3-56e2-8d45-2dd9dfd42f3b",
+  "skill_name": "社交焦虑CBT心理教育模块",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "9e8fb3da-b39b-5165-b10d-9d9972119776",
+      "doc_id": "ccd9a004-1d95-5a88-bcf3-412977a8bd9f",
+      "document_title": "tppc20250704198-210.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20250704198-210.md",
+      "section": "表1行为功能分析表",
+      "span": {
+        "start": 6931,
+        "end": 7233
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "在社交结束后，W总是反复审视自己的表现并过度反思（如“我是不是说错话了？”“他是不是在嘲笑我？”），这加深了个体的负面自我印象。\n\n综上所述，W的社交焦虑不是独立的情绪反应，而是由消极自动思维、生理反应、行为回避、事后反刍等因素共同作用的结果。这一模型不仅有助于W理解当前问题的成因，也为后续认知行为治疗提供了明确的干预靶点和理论依据。\n\n2.2　基于社交焦虑概念化的咨询方案\n# （1）心理教育\n\n向来访者介绍社交焦虑的相关知识，分享认知行为治疗的内容，建立咨询目标并增强动机，阐述对来访者的期待等。\n\n（2）注意力训练将注意力集中在与任务相关的事情上，而不是与恐惧相关的事情上，避免过度关注消极信号。",
+      "metadata": {
+        "document_title": "tppc20250704198-210.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "社交焦虑CBT心理教育模块",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立治疗联盟、提升疾病认知、增强治疗动机",
+        "task_family": "CBT心理教育",
+        "method_family": "CBT",
+        "stage": "初始阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "db8b4e12-9f47-5906-9b1a-d5c55d1b7e9e",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "咨询目标"
+        ],
+        "paragraph_start": 18,
+        "paragraph_end": 22,
+        "heading_path": [
+          "表1行为功能分析表"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "社交焦虑障碍的认知行为治疗案例",
+          "1 个案情况",
+          "2干预方案",
+          "3 咨询过程",
+          "表4社交焦虑等级情境表",
+          "4 咨询效果评估"
+        ],
+        "subsection_headings": [
+          "2.1.2　核心信念及认知策略的发展过程",
+          "2.1.3社交焦虑的个案概念化模型",
+          "2.2　基于社交焦虑概念化的咨询方案",
+          "2.3咨询目标"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "Table 1Behavioural functions scale"
+      }
+    }
+  ]
+}

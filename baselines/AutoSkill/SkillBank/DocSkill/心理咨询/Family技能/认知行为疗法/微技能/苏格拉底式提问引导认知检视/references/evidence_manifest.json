@@ -1,0 +1,72 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "4438fdb2-9849-521d-9e2e-99533ad87e11",
+  "skill_name": "苏格拉底式提问引导认知检视",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "72c321cc-112c-56e1-88f8-42d2dda3e449",
+      "doc_id": "9afa7364-74a1-56a9-9320-b3611e750e74",
+      "document_title": "基于简短认知行为疗法的心理咨询案例_周颖.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于简短认知行为疗法的心理咨询案例_周颖.md",
+      "section": "# 4咨询阶段与实施过程",
+      "span": {
+        "start": 4291,
+        "end": 4923
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "来访者：因为如果我长得倾国倾城，那么对方一定会抛弃一切道德标准，然后热情地追我。\n\n咨询师：有哪些证据能证明你的想法？还有没有其他原因？他是怎么跟你说的？（苏格拉底式询问技术）\n\n来访者：我没想到有什么证据来证明。他倒是说过，如果我是单身，那我们就有继续下去的可能。\n\n咨询师：所以真实原因是这个，不是你认为的自己没有足够的魅力。我想正是你对他来说很有魅力，所以才会让他如此纠结和痛苦。现在你觉得你和小史还有继续下去的可能吗？\n\n来访者：不可能了，他选择了一个对双方都好的结尾。如果取消我和男友的婚礼，我和小史恋爱，那么我们两人都会有道德负担，是不可能会幸福的。\n\n# 4.3第三阶段：巩固咨询效果和结束咨询（第7次）\n在巩固认知行为阶段需要帮助来访者巩固之前的合理认知，用理性认知引导自己的行为。针对来访者上周填写的情绪管理表中的内容与其展开探讨。探讨来访者上周情绪低落和消极言行超出既定目标的情况，询问来访者当天发生何事，为何影响了来访者的情绪状态。针对非理性认知，用全面、客观、理性的观念强化巩固合理的认知，如“我在很多方面都做得足够好，我是一个普通人，偶尔也会犯错。”“这段时间发生了很多事，我不可能把每件事都做得非常好。”“不是每段感情都能够和平结束，我接受它的结局。”“我是一个有魅力的人，我值得被爱。”“我有能力让自己变得更优秀，我有能力去解决生活中遇到的难题。”对话过程如下。\n\n来访者：我现在对男友非常歉疚，他非常地爱我，我却给他添了这么多麻烦。",
+      "metadata": {
+        "document_title": "基于简短认知行为疗法的心理咨询案例_周颖.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "苏格拉底式提问引导认知检视",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促发认知弹性与元认知觉察",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "正式咨询阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "a237dfde-64b9-574a-bfe2-5b314e96d8a1",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "苏格拉底",
+          "阶段"
+        ],
+        "paragraph_start": 13,
+        "paragraph_end": 19,
+        "heading_path": [
+          "# 4咨询阶段与实施过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "基于简短认知行为疗法的心理咨询案例",
+          "# 1一般资料",
+          "# 2来访者评估",
+          "# 3 咨询目标与咨询方案",
+          "# 5 咨询效果的评估",
+          "# 6 案例评价与反思"
+        ],
+        "subsection_headings": [
+          "# 4.1第一阶段：咨访关系建立和问题评估阶段（第1次咨询）",
+          "# 4.2第二阶段：正式咨询阶段（第2～6次）",
+          "# 4.3第三阶段：巩固咨询效果和结束咨询（第7次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "4.1.1任务：与来访者建立相互信任的咨访关系。收集来访者主诉问题的资料，参考问卷结果初步评估来访者的心理问题，并确定咨询目标和方法。"
+      }
+    }
+  ]
+}

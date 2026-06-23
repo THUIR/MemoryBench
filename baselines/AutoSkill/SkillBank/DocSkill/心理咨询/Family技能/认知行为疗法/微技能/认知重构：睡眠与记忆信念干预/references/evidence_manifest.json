@@ -1,0 +1,78 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "e6629578-9410-586f-90cc-26506fef058f",
+  "skill_name": "认知重构：睡眠与记忆信念干预",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "80c1e0c0-7197-5912-8a2a-e121e372e0a8",
+      "doc_id": "e507e5e0-272c-5bd3-bf08-7d9f71931070",
+      "document_title": "一位高中男生焦虑情绪的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一位高中男生焦虑情绪的心理咨询案例报告.md",
+      "section": "# 一应高中男生焦虑情绪的心理咨询案例报告",
+      "span": {
+        "start": 4524,
+        "end": 4843
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "$\\textcircled{4}$ 改变C的错误认知，通过记忆力训练软件的体验活动向C介绍记忆的相关理论和原理，帮助C建立自信。人的记忆能力可以通过训练提高，如果不训练，已有的记忆能力也会不同程度地退化。提高睡眠质量，在课后补觉而不是课堂上，在课堂上分担-些简单的记忆任务，及时复习，以防止遗忘。\n\n$\\textcircled{5}$ 布置咨询作业：本周背好一篇语文课文，有意识地提高睡眠质量。\n\n（本阶段咨询关系初步建立；了解了C的基本信息；初步诊断为一般心理问题；明确了本次咨询的主要问题，基本解决了C对睡眠和记忆的错误认知，学业方面的焦虑减轻。）\n\n# ★第二次咨询：\nC：“老师，我背好了《兰亭集序》，发现其实背书也没有那么难。”",
+      "metadata": {
+        "document_title": "一位高中男生焦虑情绪的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "认知重构：睡眠与记忆信念干预",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "修正特定错误认知",
+        "task_family": "认知重构",
+        "method_family": "CBT",
+        "stage": "认知教育与信念检验",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "95de698d-aeee-5648-9b40-137d8527d149",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 46,
+        "paragraph_end": 49,
+        "heading_path": [
+          "# 一应高中男生焦虑情绪的心理咨询案例报告"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "# 1.一般情况",
+          "# 2.问题表现",
+          "# 3.主诉和个人陈诉",
+          "# 4.咨询师观察",
+          "# 二、评估与诊断",
+          "2.对该来访者诊断的依据如下：",
+          "# 三、咨询目标的制定",
+          "# 四、咨询方案的制定",
+          "# 2.咨询原理：",
+          "# 1.咨询关系的建立与评估诊断阶段",
+          "第一次咨询的主要任务：",
+          "# ★第二次咨询：",
+          "第二次咨询的主要任务：",
+          "# 六、咨询效果评估",
+          "# 七、讨论与思考",
+          "# 专家点评"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "C，男，16岁，身高约1.70米，某中学高一年级重点班学生，身材中等，为本班班长。家庭经济条件较富裕，家中有一个弟弟。C无重大躯体疾病历史，家族成员无精神疾病史，父母婚姻状况良好，未接受过心理咨询。"
+      }
+    }
+  ]
+}

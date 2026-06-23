@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "483cd2ac-a04b-5b9e-8197-305291905267",
+  "skill_name": "问题外化中的声音溯源提问",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "f375a864-ac34-5667-9aad-25c21ac086b8",
+      "doc_id": "cc83dd5e-0b23-5f73-b94a-fec51028ee1c",
+      "document_title": "tppc20250704211-217.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/tppc20250704211-217.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 4496,
+        "end": 5373
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "在谈话中，咨询师发现可可的叙述构成了一个“孤立无援”的主导故事。咨询师帮助可可识别那些内化了的信念，例如“我很糟糕”“我很可怜”“我不被重视”等。这种故事导致可可形成了边缘化自我，认为自己在关系中常常处于被忽视的位置。从这些故事里，咨询师看到了可可内心的渴望：她渴望被看见，渴望得到帮助和指导。\n\n4.2　第二阶段：问题外化与寻找例外故事（第7-12次）\n在第7次咨询中，可可因为之前看到了自己的渴望，表达了希望咨询师能给她一些关于考研的实际指导。最终，她坚定地想要考研，虽然知道困难重重，但她还是想尝试。在第二阶段，咨询内容主要包括以下几个方面。\n\n（2）学习层面：可可多次提到自己比较笨，不清楚为什么学习。通过探索价值观的方法，咨询师和可可讨论如果不为成绩，她希望学习可以带来什么。可可表示是对知识的好奇，为了未来可以更好地教导学生。通过改写能力叙事，咨询师引导可可思考：“如果‘笨’是一个住在你脑海里的声音，它是什么时候开始说话的？谁最早对它说过这句话？”可可发现这个声音来源于小学的老师和父母，并不来源于自己。她意识到，自己的学习和考试能力，其实并不是“笨”的人能做到的。",
+      "metadata": {
+        "document_title": "tppc20250704211-217.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "问题外化中的声音溯源提问",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "实现问题外化",
+        "task_family": "叙事治疗",
+        "method_family": "后现代主义",
+        "stage": "问题外化",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "b330674a-f45a-512e-9e47-55a35aac35e4",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 3,
+        "paragraph_end": 6,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1引言",
+          "2个案基本情况",
+          "3 个案概念化",
+          "5 咨询师总结"
+        ],
+        "subsection_headings": [
+          "4.1　第一阶段：初步评估与建立咨访关系，澄清问题与渴望（第1-6次）",
+          "4.2　第二阶段：问题外化与寻找例外故事（第7-12次）",
+          "4.3　第三阶段：重构自我认同与探索新的故事（第13-16次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "在第一阶段，咨询师着重收集资料，与可可建立咨访关系。通过陪伴、共情与积极倾听的方式，营造了一个安全、私密的咨询环境。可可详细回顾了自己的家庭背景和成长经历，提到了对自己影响很大的两段经历：一是哥哥的不认同和否定。哥哥总是要求可可按照他的想法做事，比如考驾照、节省开支、人党等。如果可可没做到，哥哥就会责怪她甚至发怒，认为可可不知道赚钱的辛苦和社会的压力。二是父"
+      }
+    }
+  ]
+}

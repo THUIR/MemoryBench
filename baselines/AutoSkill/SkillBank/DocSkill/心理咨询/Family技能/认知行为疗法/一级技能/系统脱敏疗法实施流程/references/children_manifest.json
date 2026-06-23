@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "5c97f9b5-8653-50e6-811b-2faffea729b4",
+  "parent_name": "系统脱敏疗法实施流程",
+  "children": [
+    {
+      "skill_id": "6f7d1d01-52d3-587c-b413-6dabf071c7c8",
+      "name": "系统脱敏阶梯构建与实施",
+      "description": "依据主观焦虑强度（SUDS 0–100）协同来访者构建6级渐进式情境等级，在稳定放松基线前提下，通过想象暴露与微行为尝试逐级训练耐受，降低条件性焦虑反应。",
+      "child_type": "行为干预",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "5c97f9b5-8653-50e6-811b-2faffea729b4",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "依据主观焦虑强度（SUDS 0–100）协同来访者构建6级渐进式情境等级，在稳定放松基线前提下，通过想象暴露与微行为尝试逐级训练耐受，降低条件性焦虑反应。",
+      "selector_terms": [
+        "存在明确可分级的焦虑触发情境",
+        "来访者已掌握基础放松技术",
+        "无严重回避或惊恐发作史",
+        "系统脱敏",
+        "阶梯暴露",
+        "SUDS",
+        "行为实验",
+        "放松耦合",
+        "来访者能清晰描述焦虑发生的具体场景和身体反应",
+        "报告焦虑呈情境性、条件性，非弥漫性或无诱因",
+        "在放松练习中可达到肌肉松弛、心率平稳状态",
+        "系统脱敏阶梯构建与实施",
+        "依据主观焦虑强度（SUDS 0–100）协同来访者构建6级渐进式情境等级，在稳定放松基线前提下，通过想象暴露与微行为尝试逐级训练耐受，降低条件性焦虑反应。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/系统脱敏阶梯构建与实施/SKILL.md"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "97d593d6-93f7-56bd-92a3-4c404e0b7bd6",
+  "skill_name": "心理动力学移情-反移情识别与标记",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "10470c08-54e3-58c5-9d5d-cc01550ce676",
+      "doc_id": "878d8bc7-649b-5f29-a82c-da750989cbfe",
+      "document_title": "1例运用心理动力学疗法治疗的中职生人际关系案例报告_陈抒墨.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/1例运用心理动力学疗法治疗的中职生人际关系案例报告_陈抒墨.md",
+      "section": "2 咨询过程",
+      "span": {
+        "start": 4378,
+        "end": 5107
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "2.2.5移情和反移情：咨询师对来访者有较多情感反馈，来访者可能把咨询师移情成为被允许的父亲，也有部分是能够有情感回应的母亲；而咨询师对来访者的反移情是面对来访者不正面回应感受时感到愤怒这样的一致性反移情。\n\n2.2.6自杀风险进一步评估：来访者未有自残行为。因和父母不支持自己爱好，与父母发生矛盾后出现自杀行为，但从其行为来评估来访者买头孢并且一颗一颗打开，并未出现冲动而全部吞服，并因内疚而放弃自杀，因此自杀评估风险为中低风险。但需进一步继续监测与评估。\n\n2.3.1外在行为：来访者加入摄影社团，在社团里面来访者表达自己希望能够用无人机为学校拍摄宣传片，并且把拍宣传片内容在头脑里建构出来。这代表了现实中满足不了的东西用幻想去满足，幻想即现实，同时也代表了幻想具有掌控感，能够夯实来访者的自体。",
+      "metadata": {
+        "document_title": "1例运用心理动力学疗法治疗的中职生人际关系案例报告_陈抒墨.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "心理动力学移情-反移情识别与标记",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "识别并命名移情与反移情模式",
+        "task_family": "心理动力学个案概念化",
+        "method_family": "Psychodynamic（心理动力学）",
+        "stage": "中程咨询",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "d2d3a414-d653-55cd-80dd-26a83b32bff7",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 28,
+        "paragraph_end": 31,
+        "heading_path": [
+          "2 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 个案信息",
+          "3 效果评估",
+          "4反思与建议",
+          "5总结"
+        ],
+        "subsection_headings": [
+          "2.1初始访谈：建立关系，了解成长史，进行心理评估（第1\\~4次）",
+          "2.2咨询过程：完成个案概念化，借由个案概念化对咨询目标进行心理咨询（第4～12次）",
+          "2.3结束咨询：外在行为、幻想和梦、攻击性、结束治疗（第13～15次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "2.1.1成长史：来访者足月顺产，母亲奶水足，出生后由母亲抚养。来访者父亲思维刻板，文化程度较低，具有家长式作风，母亲性格内向，不善言辞。父亲于来访者1岁多到外地打工，由母亲和奶奶抚养。读幼儿园时母亲负责，后母亲因忙农活，每天给来访者固定钱，来访者则和同学一起上下学。因乡镇没有小学，来访幼儿园和小学均在同一所学校就读，9岁时候弟弟出生，10岁家里盖房子，同年"
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "49014bf9-6758-5766-b516-5e6e6d742eb5",
+  "skill_name": "系统脱敏阶梯训练",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "79cfc56e-6111-532d-8d59-6468cd203517",
+      "doc_id": "ccb32af1-7b79-5433-a0c4-1ca66269d3ff",
+      "document_title": "一例高中生考试焦虑心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例高中生考试焦虑心理咨询案例报告.md",
+      "section": "四、咨询过程",
+      "span": {
+        "start": 3980,
+        "end": 4258
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "4、第4次,2006/11/9\n\n方法与目的：巩固咨询效果;继续消除考试焦虑;会谈、系统脱敏。咨询进程如下：\n\n(1)反馈家庭作业：按要求完成了1一4级的情境想象,并能保持放松。③\n\n(2)系统脱敏：想象情境，保持放松，经过一段时间，通过5一8级情境想象。通过想象唤起焦虑状态，评估焦虑水平，然后运用放松技术进入放松状态，再次评估焦虑水平，直至焦虑水平达到最低值为止，此次可进行5一8等级的放松训练。\n\n布置作业：继续每天做第5--8焦虑等级的情境想象,保持放松;本周内的课上,如果确有老师告知要考试的消息，要保持放松。\n\n5、第5次,2006/11/16",
+      "metadata": {
+        "document_title": "一例高中生考试焦虑心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "系统脱敏阶梯训练",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "消退条件性焦虑反应",
+        "task_family": "行为矫正",
+        "method_family": "Behaviorism（行为主义）",
+        "stage": "效果巩固",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "56afffa3-e30a-57cc-abe2-ffa649872378",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 29,
+        "paragraph_end": 34,
+        "heading_path": [
+          "四、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、个案基本资料",
+          "二、心理诊断",
+          "三、咨询目标",
+          "五、咨询效果评估"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "1、第1次,2006/10/19"
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "16ee393a-635e-5f7a-a03d-45ba4a8ddbee",
+  "skill_name": "CBT核心信念矫正工作流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "e67a8bca-bf90-5188-b9b3-138e62023bbe",
+      "doc_id": "fa697555-8adf-52eb-ab22-90c49334eaca",
+      "document_title": "基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 4772,
+        "end": 5714
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "通过对“男友劈腿”这一应激事件的咨询辅导，L意识到自己因为“男友劈腿”这一事件引起的焦虑、自卑、失眠等不良状况并不是这件事情本身所导致的，而是自己对这件事情的不合理认知所导致的。并意识到“男友劈腿”并不能说明自己不好、失败，相反，应该尽快从这件事情带来的负面情绪中走出来，尽快振作起来恢复正常的学习生活状态。\n\n（3）整合利用认知行为疗法的多种技术识别L的中间信念和核心信念，矫正旧的中间信念和核心信念，发展新的核心信念。\n\n（4）采用放松技术，减少焦虑，改善睡眠。让L靠在沙发上，全身各部位处于舒适状态，双臂自然下垂或搁置在座位扶手上。想象自己处在一个令人轻松的情境中，例如坐在湖边或者漫步在一片美丽的田野上，并有规律的深呼吸，达到一种安静平和的状态。咨询师用轻、柔的声调引导L依次练习放松前臂、头面部、颈部、肩、背、胸、腹及下肢，以达到全身肌肉进入松弛状态。经过多次辅导练习和回家练习，L学会了放松技术，并能够在生活中运用，减少了焦虑，改善了睡眠，到第6次咨询时失眠症状已消失。\n\n（5）利用“饼图”技术，使L觉察到自己生活的不平衡，并朝着自己理想的“饼图”发展，实现生活状态的平衡。\n\n![](images/e797df0546c7b9e8606550e4c0213a923d49b3e125a1822241ab030957452ee2.jpg)",
+      "metadata": {
+        "document_title": "基于认知行为疗法的一例大学生心理咨询案例_卞庆华.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT核心信念矫正工作流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "系统性更新来访者关于自我、他人、世界的核心信念",
+        "task_family": "cognitive_restructuring",
+        "method_family": "CBT",
+        "stage": "intervention",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "6d370834-0ab6-50ac-a796-b5198ba54c7b",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 37,
+        "paragraph_end": 42,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 基本信息",
+          "2 个案概念化",
+          "3 咨询方案",
+          "5 咨询效果",
+          "6 案例评价与反思"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：咨询关系建立与问题评估阶段（第1～2次）",
+          "4.2第二阶段：正式咨询阶段（第3～8次）",
+          "4.3第三阶段：巩固阶段（第9次）",
+          "4.4第四阶段：结束阶段（第10次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本阶段以建立良好的咨询关系为目标，以共情、接纳、积极关注等咨询态度营造安全的咨询氛围，缓解L的焦虑情绪。对L的困扰进行了了解，确定目前的主要困扰是：失眠、焦虑影响到学习、工作和生活，感到痛苦，渴望改善。收集相应资料，探寻自身改变的意愿，形成初步评估。初步评估：焦虑情绪。"
+      }
+    }
+  ]
+}

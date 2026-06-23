@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "5577d6e5-dfa8-570a-b44b-6ae6e9763bcf",
+  "skill_name": "CBT导向的阶段性咨询方案制定协议",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "41fe82c4-0951-5ec1-a46f-6944a6935726",
+      "doc_id": "7fa38141-3bf1-599c-a5ff-9953d1eaf9b3",
+      "document_title": "一例大学生恋爱焦虑情绪的心理咨询案例报告_费菲.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例大学生恋爱焦虑情绪的心理咨询案例报告_费菲.md",
+      "section": "7咨询过程",
+      "span": {
+        "start": 4118,
+        "end": 4893
+      },
+      "relation_type": "support",
+      "confidence": 0.93,
+      "quote": "2017年5月6日进行第一次咨询，主要目的在于掌握求助者现实状况,与其保持平等、友好的交流,促进信任关系的建立,在此基础上进行心理测验,确定求助者存在的主要问题。采取的方法主要以会谈法为主，咨询过程一般为：倾听求助者现实状况，并加以记录;浩知求助者咨询注意事项与具体规则；营造良好的交流环境，多渠道引导求助者倾诉自己的问题，尤其是与表白失败相关的负性情绪和相关经历;填写《症状自评量表》(SCL-9O)、EPQ人格问卷和焦虑自评量表 (SAS)。将测验结果反馈给求助者，并做出初步问题分析。\n\n2017年5月13日进行第二次咨询，主要目的在于取得求助者的信任,巩固二者之间的咨询关系，帮助求助者制定针对性咨询方案。采取的方法依旧以会谈法为主，咨询过程为：在掌握心理测验结果的基础上结合日常观察制定咨询计划，为咨询设置近期目标和远期目标。针对本案例,咨询师制定了具体的近期目标和远期的最终目标。咨询计划采用合理情绪疗法为主，系统脱敏法、放松疗法、会谈法为辅的咨询方法。\n\n2017年5月20日进行第三次咨询，主要目的在于介绍ABC理论,对求助者错误信念进行分析,在延续会谈法的同时采用合理情绪疗法进行咨询，整个过程如下浩知求助者ABC理论原理,通过RET表格提高求助者对自身思维模式、信念问题及焦虑情绪产生原因的认识与了解帮助求助者明确自身的紧张焦虑并不是由表白失败引起,而是由自己对这件事存在的不合理信念所致。\n\n诱发事件A表白失败错误信念,B普遍性错误信念我文化水平高,成绩优异,任何事都应该成功,具体的不合理信念：(1)我不应该表白失败;(2)我表白失败非常丢脸;(3)我一次表白失败可能导致以后都找不到对象。C情绪与行为表现紧张，不安，睡眠质量较差，食欲减退。在本次咨询结束后应要求求助者结合自身实际情况进行错误认知与不良习惯挖掘，并加以记录。",
+      "metadata": {
+        "document_title": "一例大学生恋爱焦虑情绪的心理咨询案例报告_费菲.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT导向的阶段性咨询方案制定协议",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "达成方法共识并确立分阶段目标体系",
+        "task_family": "treatment_planning",
+        "method_family": "CBT",
+        "stage": "early_session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "bcd93f82-afcb-5181-a948-dd0ad433c019",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈",
+          "表格"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "7咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2主诉和个人陈述",
+          "3咨询师观察",
+          "4评估与诊断",
+          "5咨询目标明确",
+          "6咨询方案建立"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "2017年5月6日进行第一次咨询，主要目的在于掌握求助者现实状况,与其保持平等、友好的交流,促进信任关系的建立,在此基础上进行心理测验,确定求助者存在的主要问题。采取的方法主要以会谈法为主，咨询过程一般为：倾听求助者现实状况，并加以记录;浩知求助者咨询注意事项与具体规则；营造良好的交流环境，多渠道引导求助者倾诉自己的问题，尤其是与表白失败相关的负性情绪和相关"
+      }
+    }
+  ]
+}

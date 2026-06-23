@@ -1,0 +1,32 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "行为主义",
+  "profile_id": "psychology::行为主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "6a348edd-afc3-5fba-81e5-cd97cdb8bb24",
+  "parent_name": "CBT家庭作业布置",
+  "children": [
+    {
+      "skill_id": "6a2ec5dd-5c8c-5561-8ac3-dd58fe7eb9a3",
+      "name": "考试成功经验激活作业",
+      "description": "布置来访者书面记录过往考试成功经历，强化自我效能感；作为行为激活与认知重建的前置家庭作业。",
+      "child_type": "认知准备",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "6a348edd-afc3-5fba-81e5-cd97cdb8bb24",
+      "level_label": "微技能",
+      "taxonomy_class": "行为主义",
+      "applicable_when": "布置来访者书面记录过往考试成功经历，强化自我效能感；作为行为激活与认知重建的前置家庭作业。",
+      "selector_terms": [
+        "来访者存在习得性无助倾向",
+        "当前自我评价显著低于实际表现",
+        "需增强咨询同盟信任度",
+        "考试成功经验激活作业"
+      ],
+      "relative_path": "心理咨询/Family技能/行为主义/微技能/考试成功经验激活作业/SKILL.md"
+    }
+  ]
+}

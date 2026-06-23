@@ -1,0 +1,79 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "4d5047e7-3cfb-534b-bb70-b9e36343bf39",
+  "skill_name": "负性事件想象暴露与应对演练",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "f742c4f6-c4ab-5129-ad8a-2125164726d7",
+      "doc_id": "e1056d31-5cd1-5ec8-8f19-6e8fecaf4247",
+      "document_title": "tppc20210310713-721.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20210310713-721.md",
+      "section": "3 辅导过程",
+      "span": {
+        "start": 5947,
+        "end": 6512
+      },
+      "relation_type": "support",
+      "confidence": 0.94,
+      "quote": "己现实生活中的感受。\n\n3.2.3家庭作业\n规定每月手机上网套餐30M流量用完后，绝不再另外充值；减少独自待在宿舍的时间，和同学一起到图书馆或教室自习；继续坚持看小说不超过晚上2点钟；写日记时重点记录自己每天最高兴的事情和最不高兴的事情，并记下对事件的感想；坚持记录克制住不阅读网络小说的次数和原因，注意变化情况。\n\n3.3心理帮助阶段（第5-6次面询）\n这一阶段主要与来访者探讨如何调整情绪，并帮助来访者从自己的应对方式与行为中发现自己的认知偏差。\n\n3.3.1积极情绪调整\n请来访者观看有关《积极情绪》的教学视频，并讨论积极心理学家Sonja Lyubomirsk 的研究。通过观看教学视频，来访者发觉自己是在以不断阅读小说这种静默的思考方式来试图给自己减压，但这种做法其实非常不利于情绪的宣泄。来访者意识到这种应对方式并不是很好的情绪调节方式，情绪宣泄可以采用更积极更有效的方式。同时也表示明白“写日记时要重点记录自己每天最高兴的事情和最不高兴的事情，并记下对事件的感想”这项家庭作业的意义何在。\n\n3.3.2想象训练与认知分析\n咨询师对来访者进行行为想象训练，让来访者假想面对负性事件的场景做出反应，例如被男朋友抛弃、或是被父母指责、学习考试成绩不够理想、找工作过程中碰到挫折与失败等各种情况，并借以演练其合理的应对方式。",
+      "metadata": {
+        "document_title": "tppc20210310713-721.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "负性事件想象暴露与应对演练",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "降低对负性事件的灾难化预期，提升现实情境中的认知灵活性与行为反应效能",
+        "task_family": "行为实验与暴露",
+        "method_family": "CBT",
+        "stage": "心理帮助阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "efc24fa2-d23c-56f4-896f-918d9dd5725f",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 16,
+        "paragraph_end": 20,
+        "heading_path": [
+          "3 辅导过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1引言",
+          "2对象与方法",
+          "4 结果",
+          "5 讨论"
+        ],
+        "subsection_headings": [
+          "3.1.1成瘾过程自述",
+          "3.1.2成瘾原因认知分析",
+          "3.1.3家庭作业",
+          "3.2.1恋爱经历与辅导",
+          "3.2.2恋爱观点认知分析",
+          "3.2.3家庭作业",
+          "3.3心理帮助阶段（第5-6次面询）",
+          "3.3.1积极情绪调整",
+          "3.3.2想象训练与认知分析",
+          "3.3.3家庭作业",
+          "3.4认知巩固与咨询结束阶段（第7-8次面询）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "当考上了研究生，男友却远在异地而且总是敷衍搪塞，常说要来看望却没有来，这令自己非常伤心。感觉自己是独自一人在校园里生活，很压抑。在放弃还是坚持这份感情中两难，又矛盾又伤心，只要一想到这件事就觉得无比痛苦。后来发现在阅读网络小说时看到患难中的情侣最后能在一起的情节才能使自己得到一种安慰和精神上的缓解，这种种感受使自己再次沉迷于小说。"
+      }
+    }
+  ]
+}

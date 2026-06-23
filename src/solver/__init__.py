@@ -3,18 +3,9 @@ from typing import Optional, Union, Dict
 
 from src import memory_systems
 
-# Eager imports preserve the original behavior of failing fast at import time
-# if a baseline's dependencies are missing.
-from src.solver.base import BaseAgentConfig
-from src.solver.bm25 import BM25AgentConfig
-from src.solver.bm25_dialog import BM25DialogAgentConfig
-from src.solver.embedder import EmbedderAgentConfig
-from src.solver.embedder_dialog import EmbedderDialogAgentConfig
-from src.solver.a_mem import AMemAgentConfig
-from src.solver.mem0 import Mem0AgentConfig
-from src.solver.graphiti import GraphitiAgentConfig
-from src.solver.memoryos import MemoryOSAgentConfig
-# from src.solver.raptor import RAPTORAgentConfig
+# Baseline classes are loaded lazily by SolverFactory.create. This keeps one
+# baseline's optional dependency (for example mem0) from blocking unrelated
+# baselines such as AutoSkill at import time.
 
 
 def load_class(class_type):
@@ -41,6 +32,15 @@ class SolverFactory:
     # SolverFactory.method_to_class continues to work.
     method_to_class = None  # populated below
 
+    @staticmethod
+    def _config_accepts(config_class, key: str) -> bool:
+        fields = getattr(config_class, "model_fields", None) or getattr(config_class, "__fields__", None)
+        if isinstance(fields, dict) and key in fields:
+            return True
+        init = getattr(config_class, "__init__", None)
+        code = getattr(init, "__code__", None)
+        return bool(code is not None and key in code.co_varnames)
+
     @classmethod
     def create(cls, method_name: str, config: Dict, **kwargs):
         spec = memory_systems.get(method_name)
@@ -48,10 +48,10 @@ class SolverFactory:
         config_class = load_class(spec.config_class)
 
         memory_cache_dir = kwargs.get("memory_cache_dir", None)
-        if memory_cache_dir is not None and "memory_cache_dir" in config_class.__init__.__code__.co_varnames:
+        if memory_cache_dir is not None and cls._config_accepts(config_class, "memory_cache_dir"):
             config["memory_cache_dir"] = memory_cache_dir
         for key, value in kwargs.items():
-            if key in config_class.__init__.__code__.co_varnames:
+            if cls._config_accepts(config_class, key):
                 config[key] = value
         agent_config = config_class(**config)
         return solver_class(agent_config, memory_cache_dir=memory_cache_dir)

@@ -1,0 +1,77 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "b8d7e815-f9c2-5521-ba1a-5d19f41a26af",
+  "skill_name": "NLP混合法情绪干预",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "18a4b2a8-815b-5f67-9126-656fa2bf92da",
+      "doc_id": "1b90f671-78bc-5e46-853c-02d4d4d62434",
+      "document_title": "一例初中女生分离焦虑的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/bt/一例初中女生分离焦虑的心理咨询案例报告.md",
+      "section": "# 五、咨询过程",
+      "span": {
+        "start": 2287,
+        "end": 2748
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "# 1.心理评估和诊断阶段\n第一次咨询\n\n目的：收集资料，建立咨询关系，进行心理诊断，确定咨询目标。鉴于求助者焦虑情绪过于强烈，做必要的情绪处理。\n\n方法：会谈法、心理测试、NLP情绪处理法。\n\n过程：在咨询开始时，充分尊重求助者，用开放性的问题收集她详细的资料。通过倾听、共情、积极关注，让求助者尽情地倾诉，与其建立良好的咨询关系，并完成心理测试。\n\n小琳刚进入咨询室时，眼圈红肿得象个桃子，神情悲伤，在谈到和父母、姐姐浓浓的亲情时，泪水似断线的珠子一样从眼眶涌出，以泪洗面不能自已。在谈到在学校中备受煎熬时，坐立不安，双手互搓，描述自己“头痛、心痛、全身冰凉，快要发疯了”。鉴于这种强烈的焦虑情绪反应，我运用NLP技术中的混合法，为其处理情绪。具体做法：我以90度直角坐在小琳右边，以左手按在她背后的大椎穴上，右手则以拇指及食指二指做成一个叉型，轻轻按在她左右两眉中点的上面位置，引导她深呼吸加以配合，轻按三分钟后，她的情绪有所好转。同时教给她NLP中消减自己不良情绪的技巧一一生理平衡法，在生活中练习。\n\n具体做法：",
+      "metadata": {
+        "document_title": "一例初中女生分离焦虑的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "NLP混合法情绪干预",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "降低自主神经高唤醒水平，恢复情绪调节基础能力",
+        "task_family": "情绪调节",
+        "method_family": "NLP身体锚定技术",
+        "stage": "初始评估与情绪稳定化",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "85079c02-9c43-5262-ad2a-f775899da52e",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标",
+          "会谈"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 5,
+        "heading_path": [
+          "# 五、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 一、个案介绍",
+          "4.咨询师观察",
+          "# 二、评估与诊断",
+          "3.诊断",
+          "# 三、咨询目标的制定",
+          "2.最终目标和长期目标"
+        ],
+        "subsection_headings": [
+          "# 1.心理评估和诊断阶段",
+          "第二次咨询",
+          "求助者：（点点头）“当然想。”",
+          "求助者：（看出我的意图，经过艰难的思考）“我知道父母希望我在学校里独自生活学习，我也想长大，但是如果要选择，我宁愿选择不长大！”（眼圈一红，又哭了起来)",
+          "咨询师：“你很爱你家，对吧。”",
+          "求助者：“这就是我的家。”(没有半点思考，在纸上刷刷几笔，画出一个红色的心，并注明“全家人的心”）",
+          "3巩固和结束阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一次咨询"
+      }
+    }
+  ]
+}

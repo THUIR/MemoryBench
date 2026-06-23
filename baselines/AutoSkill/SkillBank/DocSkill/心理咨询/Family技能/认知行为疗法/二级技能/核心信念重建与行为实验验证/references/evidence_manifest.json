@@ -1,0 +1,77 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "7ff98091-3c7b-5529-b672-c907264f3d0f",
+  "skill_name": "核心信念重建与行为实验验证",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "f9b7432b-6a8c-5695-99a8-2d7cdbde361b",
+      "doc_id": "016b12a4-540d-53a5-adb6-fc0e8d0183b6",
+      "document_title": "tppc20230510765-773.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/tppc20230510765-773.md",
+      "section": "3 个案概念化",
+      "span": {
+        "start": 4420,
+        "end": 5209
+      },
+      "relation_type": "support",
+      "confidence": 0.9,
+      "quote": "# （3）亲子关系\n\n考虑到“适应障碍”面临的现实压力，此阶段还运用问题解决策略来处理来访者与父亲、同伴沟通不良的问题，通过行为安排，鼓励来访者扩展业余生活（如健身、寻找自身高能时刻），通过姐姐的协助来加强来访与父亲之间更深层次的沟通，使得来访从回避型依恋和混乱型（焦虑 $^ +$ 逃避）依恋转向安全型依恋。\n\n3.4.3　第三方面：针对中间信念和核心信念进行工作，激发改变\n经过前6次咨询，来访者已能有意识地使用学到的认知技术对习惯化的自动思维叫“停”，并进行更全面、更合理的分析，日常的负面情绪有了明显的改善。同时，来访者也进一步思考“为什么自己总是在类似情境中有如此习惯化的反应？”这类问题提示针对信念工作的时机已经到来。运用箭头向下技术引导来访者看到表层的自动思维与深处的核心信念之间的关系，再对不同情境的类似反应模式进行归纳，找出来访者为了应对“我无能”的核心信念而发展出的中间信念。通过引导性发现、效益一成本分析等方法，引导其形成适应性、功能性更强的规则和假设。最后，引导来访者对形成和强化核心信念“我无能”的因素进行探索，通过重建早期记忆等技术对自身能力进行全面评估。行为实验也可用于帮助来访者意识到即使不能获得所有人的认可、不能做好每件事情，也是有能力的。\n\n3.4.4第四方面：巩固咨询效果，准备结束，预防复发\n随着咨询的进展，来访者的问题已经有了明显改善，最初的咨询目标基本达到。来访也在咨询中越来越多地参与并作出决定，逐渐担任起做“自己的咨询师”这一角色，咨询结束的时机已经到来。在最后阶段，咨询师首先帮助来访者总结其在咨询中的收获，引导其将改变的因素再次与CBT的原理相结合并反复强化。鼓励来访者在生活中持续比较新旧信念，不断收集“我有能力”的证据并积极地按照新信念行动。最后，与来访者建立了对未来的现实期待，讨论如何识别复发的征兆及采取哪些应对措施。",
+      "metadata": {
+        "document_title": "tppc20230510765-773.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "核心信念重建与行为实验验证",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "修正核心信念并验证其替代性信念的现实有效性",
+        "task_family": "信念修正",
+        "method_family": "CBT",
+        "stage": "信念工作",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "886bcc3e-b0fc-5a51-a205-4b1c80831c87",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标"
+        ],
+        "paragraph_start": 13,
+        "paragraph_end": 16,
+        "heading_path": [
+          "3 个案概念化"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "运用认知行为疗法对一名双相情感障碍学生的干预报告",
+          "1 个案信息",
+          "2咨询信息",
+          "4 咨询方案",
+          "5 咨询过程",
+          "6 咨询效果"
+        ],
+        "subsection_headings": [
+          "3.1 确定评估目标",
+          "3.2采用量表和访谈法进行评估",
+          "3.3工作诊断",
+          "3.4个案概念化",
+          "3.4.1　第一方面：横向概念化和纵向概念化分析",
+          "3.4.2　第二方面：识别和挑战自动思维，同时贯穿问题解决的策略",
+          "3.4.3　第三方面：针对中间信念和核心信念进行工作，激发改变",
+          "3.4.4第四方面：巩固咨询效果，准备结束，预防复发"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "首先，由于来访曾在医院被诊断为双相情感障碍并伴有精神病性症状的重度抑郁发作，曾因学业压力巨大和失恋产生自伤行为，因此需要对其进行危机评估，了解来访以往自伤自杀经历、目前有无自伤自杀计划以及社会支持。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-21T15:23:03+00:00",
+  "family_name": "人本-存在主义",
+  "skill_id": "76d8c13e-cc73-570c-a4e8-190f4936bcf8",
+  "skill_name": "格式塔空椅子双焦点对话",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "b3fe634b-4cd1-58c9-be01-af2c07ecbe0d",
+      "doc_id": "26d26ae9-4898-516a-93ed-a91de4ffa964",
+      "document_title": "格式塔疗法改善大学生亲密关系问题1例_吴玉芝.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/het/格式塔疗法改善大学生亲密关系问题1例_吴玉芝.md",
+      "section": "4咨询过程",
+      "span": {
+        "start": 4824,
+        "end": 5442
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "效果：来访者完整、直观地感受了自己的成长历程，从不同的维度重新认识了自己，最终找到了生命中的重大事件：15岁那年未被妥善处理的分离。随着地图层层推进,来访者觉察到自己在关系中的固有模式,要么拒绝要么被动地接受。\n\n4.3第三阶段：接触与阻断（第5\\~6次咨询）\n理论：接触是人与人、人与环境的相遇,是人们成长和改变的媒介，也是针对未完成事件工作的重要步骤，良好的接触表现为有机体和环境之间的创造性调整[。然而当自我的需要在环境中无法真实呈现时，自我为了应对环境的压迫会发展出与之相对的抗衡模式,包括投射、回射、融合、偏转、低敏感等,这些抗衡模式使得真实的自我体验无法流动，体验循环被阻断，从而产生未被满足的需求和固着的格式塔。\n\n方法：利用“空椅子”技术可以帮助来访者回归当下,展开充分的接触,修复被阻断的体验循环。\n\n过程：在本案例中,来访者说到梦中奶奶嘱托自己要和爸爸和妈妈好好相处，自己为此感到愧疚和自责,因为自己目前做不到。咨询师邀请来访者对着一把空椅子,想象坐着去世的奶奶,并与之展开对话,在利用空椅子对话的过程中她重新获得了奶奶的理解和原谅，并从奶奶那里获得了积极面对生活的力量。在下一次咨询中咨询师让来访者面对一个小椅子,让其想象是15岁时被迫分离的自己,并与之展开对话,来访者在此过程中发现当时的自己并不是弱小无力的，自己也顺利考上了大学并这样走了过来，来访者看到了当时自己的坚强和勇敢，并从中找到了积极应对环境的资源。",
+      "metadata": {
+        "document_title": "格式塔疗法改善大学生亲密关系问题1例_吴玉芝.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "格式塔空椅子双焦点对话",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "修复被阻断的体验循环，激活来访者对自身力量与资源的觉察",
+        "task_family": "格式塔治疗",
+        "method_family": "人本-存在主义",
+        "stage": "接触与阻断",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "41fce9d2-ab24-5819-9a7b-5cff87c8afeb",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 21,
+        "paragraph_end": 24,
+        "heading_path": [
+          "4咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1案例描述",
+          "2个案概念化及评估",
+          "3咨询目标与方案",
+          "5咨询效果评估",
+          "6讨论"
+        ],
+        "subsection_headings": [
+          "4.1第一阶段：觉察与感知（第1\\~2次咨询）",
+          "4.2第二阶段：系统与个人（第3\\~4次咨询）",
+          "4.3第三阶段：接触与阻断（第5\\~6次咨询）",
+          "4.4第四阶段：赋能与行动（第7\\~8次咨询）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本案例共咨询8次,持续1个月，每周2次。因是学校心理咨询,不收费。具体过程如下。"
+      }
+    }
+  ]
+}

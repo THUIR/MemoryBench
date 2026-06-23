@@ -1,0 +1,40 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "cfee88c5-a34e-5742-9d5f-bd589ec283b6",
+  "parent_name": "行为激活四主题远程干预框架",
+  "children": [
+    {
+      "skill_id": "1554ef13-7202-510e-a0a7-739aa2cb1dbc",
+      "name": "情绪监测：疾病认知与自我关怀转移",
+      "description": "在行为激活干预初始阶段，通过结构化疾病知识导入与简明压力舒缓技术，协助认知症家庭照顾者将注意力从患者异常行为中抽离，转向识别自身被剥夺的需求与身体/情绪信号，挑战‘全然付出’的孝道内化认知惯性。",
+      "child_type": "抑郁干预",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "cfee88c5-a34e-5742-9d5f-bd589ec283b6",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在行为激活干预初始阶段，通过结构化疾病知识导入与简明压力舒缓技术，协助认知症家庭照顾者将注意力从患者异常行为中抽离，转向识别自身被剥夺的需求与身体/情绪信号，挑战‘全然付出’的孝道内化认知惯性。",
+      "selector_terms": [
+        "服务对象描述患者行为时使用高频重复性语言（如‘总是’‘又’‘天天’）",
+        "主动提及‘没时间想自己’‘顾不上’‘应该的’等绝对化责任表述",
+        "行为激活",
+        "照顾者支持",
+        "文化适配",
+        "关注点转移",
+        "PHQ-9≥10",
+        "PHQ-9评分≥10（中度及以上抑郁）",
+        "自我报告日常活动能力下降",
+        "回避社交、减少外出、拒绝访客",
+        "情绪监测：疾病认知与自我关怀转移",
+        "在行为激活干预初始阶段，通过结构化疾病知识导入与简明压力舒缓技术，协助认知症家庭照顾者将注意力从患者异常行为中抽离，转向识别自身被剥夺的需求与身体/情绪信号，挑战‘全然付出’的孝道内化认知惯性。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/情绪监测：疾病认知与自我关怀转移/SKILL.md"
+    }
+  ]
+}

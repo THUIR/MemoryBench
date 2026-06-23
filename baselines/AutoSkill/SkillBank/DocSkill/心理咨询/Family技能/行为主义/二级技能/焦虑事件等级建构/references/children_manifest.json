@@ -1,0 +1,37 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "行为主义",
+  "profile_id": "psychology::行为主义",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "65ff719a-2772-55e1-bac1-8b74bf3fa550",
+  "parent_name": "焦虑事件等级建构",
+  "children": [
+    {
+      "skill_id": "f2023934-a20f-56cd-9e8d-36c1db99b0ef",
+      "name": "系统脱敏等级表构建",
+      "description": "指导来访者系统列出、标定、排序并具象化考试相关焦虑刺激情境，形成由弱到强、梯度平缓、可操作的5–10项书面等级表，为后续想象暴露与放松配对奠定结构化基础。",
+      "child_type": "行为矫正",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "65ff719a-2772-55e1-bac1-8b74bf3fa550",
+      "level_label": "微技能",
+      "taxonomy_class": "行为主义",
+      "applicable_when": "指导来访者系统列出、标定、排序并具象化考试相关焦虑刺激情境，形成由弱到强、梯度平缓、可操作的5–10项书面等级表，为后续想象暴露与放松配对奠定结构化基础。",
+      "selector_terms": [
+        "来访者主诉明确聚焦于具体考试情境的焦虑反应",
+        "已完成肌肉放松训练并能自主调用放松状态",
+        "SCL-90或HAMA显示焦虑维度显著，无突出抑郁/精神病性症状",
+        "行为主义",
+        "系统脱敏",
+        "暴露疗法",
+        "考试焦虑",
+        "等级表构建",
+        "系统脱敏等级表构建"
+      ],
+      "relative_path": "心理咨询/Family技能/行为主义/微技能/系统脱敏等级表构建/SKILL.md"
+    }
+  ]
+}

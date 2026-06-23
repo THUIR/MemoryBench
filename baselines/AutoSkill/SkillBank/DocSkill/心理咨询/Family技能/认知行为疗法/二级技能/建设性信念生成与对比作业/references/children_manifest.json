@@ -1,0 +1,40 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "d2e50e8d-f439-522c-bc98-754df04c926b",
+  "parent_name": "建设性信念生成与对比作业",
+  "children": [
+    {
+      "skill_id": "a4a450ff-110e-5ca7-a432-3db95d8845ba",
+      "name": "负性中间信念现实检验作业布置",
+      "description": "当来访者对人际冲突后果产生担忧且出现初步信念松动时，协同设计低风险、限时、结构化的现实沟通任务（如与室友、班主任进行≤3分钟中性提问），通过第三方实际反馈与预期反馈的对比，锚定负性中间信念的认知偏差证据。",
+      "child_type": "行为实验",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "d2e50e8d-f439-522c-bc98-754df04c926b",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "当来访者对人际冲突后果产生担忧且出现初步信念松动时，协同设计低风险、限时、结构化的现实沟通任务（如与室友、班主任进行≤3分钟中性提问），通过第三方实际反馈与预期反馈的对比，锚定负性中间信念的认知偏差证据。",
+      "selector_terms": [
+        "来访者主动表达对冲突后果的担忧（如‘他们会怎么看我’）",
+        "已有初步信念松动迹象",
+        "CBT",
+        "行为实验",
+        "中间信念",
+        "现实检验",
+        "家庭作业",
+        "来访者在讨论冲突时出现认知犹豫（如停顿、自我修正）",
+        "能初步命名自身情绪但难以解释来源",
+        "对咨询师技术反馈表现出理解性点头或复述",
+        "负性中间信念现实检验作业布置",
+        "当来访者对人际冲突后果产生担忧且出现初步信念松动时，协同设计低风险、限时、结构化的现实沟通任务（如与室友、班主任进行≤3分钟中性提问），通过第三方实际反馈与预期反馈的对比，锚定负性中间信念的认知偏差证据。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/负性中间信念现实检验作业布置/SKILL.md"
+    }
+  ]
+}

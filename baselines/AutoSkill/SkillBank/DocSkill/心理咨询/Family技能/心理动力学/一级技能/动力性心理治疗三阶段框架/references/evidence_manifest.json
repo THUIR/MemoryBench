@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "644cc405-8b95-5412-94c9-9fab77dedffd",
+  "skill_name": "动力性心理治疗三阶段框架",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "28c67b84-8a1b-5fcf-810a-824305c07dc4",
+      "doc_id": "a0e4a4c7-e5d9-5d77-963b-be459429a378",
+      "document_title": "1例大学生的动力性心理治疗案例报告_王煜.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/1例大学生的动力性心理治疗案例报告_王煜.md",
+      "section": "1例大学生的动力性心理治疗案例报告",
+      "span": {
+        "start": 2323,
+        "end": 2939
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "其次，运用了分裂这种原始防御机制。当与人初次见面时，往往容易将对方理想化，觉得对方符合自己心目中的形象，会轻易地将自己交给对方，但在相处一段时间以后，发现对方身上的不足，特别是不能满足自己的需求时，就会觉得对方特别坏，这是内心无法整合的表现。\n\n但是来访者身上仍然具有较好的现实检验功能和自省能力，这得益于姑姑给予来访者类似母亲的情感支持以及来访者自身向上的力量。\n\n# 4咨询方法和过程\n采用动力性心理治疗方法，在建立治疗联盟的基础上关注移情和防御机制，多种咨询技术综合使用。整个咨询过程分为3个阶段：\n\n第1个阶段：评估阶段。4次咨询，主要目标了解相关背景，进行动力性评估及建立治疗联盟。此阶段咨询师主要运用的技术为共情、支持、倾听。对其背景资料和总体状态进行评估，形成假设。来访者的心理发育阶段位于前俄狄浦斯期。因此，咨询师需要在咨询的过程中提供长期稳定的支持。即稳定的治疗联盟，包括咨询师自身的稳定、设置的稳定及与来访者关系的稳定等可能比咨询的技巧更重要。\n\n在此基础上，与来访者对治疗的设置进行了约定。设置涉及的内容为咨询次数、咨询间隔、每次咨询时间长度、如果在两次咨询过程中需要与咨询师联络采用的方式等。咨询师与来访者经过探讨后达成一致，咨询时间为两个学期，持续1年左右。每周1次，每次咨询时间为50分钟左右。在两次咨询过程需要与咨询师联络时可通过电子邮件方式。如果在咨询过程中想中断咨询，必须与咨询师讨论之后才能决定。",
+      "metadata": {
+        "document_title": "1例大学生的动力性心理治疗案例报告_王煜.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "动力性心理治疗三阶段框架",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "提供跨阶段、可复用的动力性治疗结构化路径",
+        "task_family": "心理治疗流程设计",
+        "method_family": "心理动力学",
+        "stage": "全程",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "f6593dd0-87cd-59fd-8e32-fbc07fe59080",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "现实检验",
+          "阶段"
+        ],
+        "paragraph_start": 13,
+        "paragraph_end": 17,
+        "heading_path": [
+          "1例大学生的动力性心理治疗案例报告"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 利培酮合用西酞普兰治疗强迫症对照观察"
+        ],
+        "subsection_headings": [
+          "# 1来访者症状描述",
+          "# 2来访者相关背景",
+          "# 3来访者症状分析",
+          "# 4咨询方法和过程"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "王煜①郑立波②"
+      }
+    }
+  ]
+}

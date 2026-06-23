@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "d81fd9cb-1a02-5643-b117-aff249c6e5a8",
+  "parent_name": "五栏表作业协同指导",
+  "children": [
+    {
+      "skill_id": "fa20aa27-e998-5538-b199-cf169909e306",
+      "name": "五栏表认知重构引导",
+      "description": "在CBT会话中引导来访者使用五栏表（情境-自动思维-情绪-替代思维-行为结果）识别并重构非适应性认知，适用于存在明显自动思维扭曲且情绪反应强烈的情境。",
+      "child_type": "认知重构",
+      "asset_node_id": "micro_intervention",
+      "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+      "asset_level": 3,
+      "parent_skill_id": "d81fd9cb-1a02-5643-b117-aff249c6e5a8",
+      "level_label": "微技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "在CBT会话中引导来访者使用五栏表（情境-自动思维-情绪-替代思维-行为结果）识别并重构非适应性认知，适用于存在明显自动思维扭曲且情绪反应强烈的情境。",
+      "selector_terms": [
+        "来访者报告强烈情绪反应",
+        "存在可识别的自动思维内容",
+        "已建立基本治疗联盟",
+        "CBT",
+        "五栏表",
+        "自动思维",
+        "认知重构",
+        "替代思维",
+        "来访者使用绝对化用语（如‘永远’‘彻底’‘肯定失败’）",
+        "情绪反应强度与事件表观严重度明显不匹配",
+        "出现重复性自我贬低陈述",
+        "五栏表认知重构引导",
+        "在CBT会话中引导来访者使用五栏表（情境-自动思维-情绪-替代思维-行为结果）识别并重构非适应性认知，适用于存在明显自动思维扭曲且情绪反应强烈的情境。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/微技能/五栏表认知重构引导/SKILL.md"
+    }
+  ]
+}

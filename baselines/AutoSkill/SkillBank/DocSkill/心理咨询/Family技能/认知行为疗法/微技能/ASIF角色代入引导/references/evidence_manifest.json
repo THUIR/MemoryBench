@@ -1,0 +1,74 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "08eaffc0-49c5-5610-802e-7b8783b32ae6",
+  "skill_name": "ASIF角色代入引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "05d4c9bb-71a8-5c73-80b3-f423aaacce99",
+      "doc_id": "0746897c-9a83-5e5d-b202-0329f83ef3ea",
+      "document_title": "1例家庭矛盾大学生整合式心理咨询案例报告_孙路遥.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例家庭矛盾大学生整合式心理咨询案例报告_孙路遥.md",
+      "section": "5 咨询过程",
+      "span": {
+        "start": 6392,
+        "end": 6976
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "X：我受到了很好的教育，我没有继续生活在那种重男轻女的环境里，我有我自已评价事物的标准。\n\n家庭作业：继续完善家谱图，思考下次想重点讨论的人物。\n\n5.3第3次咨询：感受母亲人生经历，促进与母亲和解\n主要技术：家谱图，ASIF技术（重点讨论妈妈）。\n\n咨询过程：X认为家庭中很多的问题都是妈妈带来的，她可怜又可恨。咨询师通过家谱图带来访者全面地补充妈妈的成长经历和环境，使用ASIF技术让来访者“成为”妈妈，亲身感受妈妈从小至今的人生经历，帮助来访者理解妈妈的行为，从而理解家庭中一些问题出现的原因。\n\n使用ASIF技术做引导（节选）：\n\n咨询师：你生活在一个重男轻女的家庭，你有一个弟弟，父母更加偏爱弟弟而常常忽视你的感受。母亲脾气暴躁，常常情绪不稳定，坏的情绪常常冲你发泄。你能感受到父母对自己的嫌弃，所以很小就出去打工，逃离这个家。十几岁的年纪外出打工，你会有什么样的感受？\n\nX：孤独，也害怕吧，可能也因为逃离那样的家庭感到一点自由。\n\n咨询师：你带着这样的情绪打工赚钱，遇到形形色色的人，很多事情搞不清楚，直到遇到一个帅气的男人，他很帅，也对你很好，会给你很多帮助，会关注你的需求。你会对他有什么样的感情？\n\nX：像是救命稻草，想要紧紧抓住他。\n\nAS IF技术呈现母亲的经历，直到当下的故事。呈现之后再次与来访者探讨母亲这个人物的行为和认知。\n\n咨询片段：",
+      "metadata": {
+        "document_title": "1例家庭矛盾大学生整合式心理咨询案例报告_孙路遥.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ASIF角色代入引导",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促进家庭成员间理解与情感和解",
+        "task_family": "家庭关系修复",
+        "method_family": "后现代主义",
+        "stage": "干预中段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "6dbc9c9c-412a-524e-a137-83358a37dcf3",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业",
+          "第3次咨询"
+        ],
+        "paragraph_start": 22,
+        "paragraph_end": 32,
+        "heading_path": [
+          "5 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案信息",
+          "2 个案评估",
+          "3基于4P模型的个案概念化",
+          "4 咨询方案",
+          "6 咨询效果",
+          "7讨论"
+        ],
+        "subsection_headings": [
+          "5.2第2次咨询：建立家庭问题的系统观，增进自我认知，建立边界",
+          "5.3第3次咨询：感受母亲人生经历，促进与母亲和解",
+          "5.4第4次咨询：感受姐姐的成长经历，促进和解",
+          "5.5第5次咨询：巩固咨询收获，整合自我认知，促进与家庭和解。"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "5.1第1次咨询：建立关系，收集信息，问题评估，建立设置主要技术：摄入性会谈、渐进性放松训练。"
+      }
+    }
+  ]
+}

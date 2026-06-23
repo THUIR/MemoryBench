@@ -1,0 +1,592 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "036bb451-2730-565b-97a8-dc46ff8a9344",
+  "skill_name": "外化问题与寻找例外",
+  "support_count": 10,
+  "supports": [
+    {
+      "support_id": "1fc45c6d-4218-5d8b-98a4-c45bc320a507",
+      "doc_id": "6a8c5060-1e69-5f9c-8c8e-c1deffece4be",
+      "document_title": "tppc20240604202-207.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/tppc20240604202-207.md",
+      "section": "3 辅导过程",
+      "span": {
+        "start": 2922,
+        "end": 4757
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "![](images/c95bed694e00c8f4b309da914051296939e437700c7176d7a77f9f38c4c04105.jpg)  \n图2辅导过程  \nFigure 2 Consultation process\n\n3.1　第二阶段：心理健康教育\n在与小花进行交流时，提及学习相关话题，小花基本处于被动交流的状态。于是笔者采用“外化人不是问题，问题才是问题”“寻找例外”的原则[2]，将小花和数学学习困难这一问题分开，先从小花的兴趣爱好入手。小花最初也不大愿意交流而总低着头。结合前期从其他同学处了解到的小花的特长，笔者不经意间提起最近观看的一部名为《黑塔利亚》的动漫，观察到小花抬起了头，便顺势询问：“你喜欢动漫吗？喜欢的话一起聊聊放松一下也好啊”这才让小花打开了话匣子，谈起了喜欢的动漫和手绘。尽管二次元的世界不是我熟悉的领域，但从小花流畅的表达中可以感受到她对这件事的热情和投入。因为听到了太多新词汇，笔者向小花请教：“刚提到的名词我不太理解，很想听明白，你愿意具体说说吗？”小花很耐心地给我讲解，听后笔者真诚地感谢并赞美小花：“非常了不起！这是我第一次听这些名词，每一个都讲解的如此清晰”，随后笔者又问：“很多人物关系、绘画中的控笔技巧听上去真不简单，我很好奇，你是从什么时候开始对这个感兴趣的？又是怎么了解这么清楚的呢？”小花滔滔不绝地讲述起来，从她讲述的内容中，笔者逐渐梳理出答案：其实她具备非常良好的信息检索和探究式学习的能力。如果能将在动漫上的探索精神迁移到数学学习上，当前的一些困难自然会迎刃而解「3]。当笔者将这一想法表达给小花时，小花立刻表示：“我学不好数学，班里某某同学很聪明…数学不适合我”笔者听后回应道：“我们可以先把适不适合学习数学的问题放在一边，听一个关于思维方式的研究故事。”接着,笔者向小花讲述了美国斯坦福大学德韦克教授提出的固定型思维和成长型思维理论[4]。听完后，笔者让小花举例说明自己在哪些方面拥有成长型思维，哪些方面可能存在固定型思维。在来回地交流中，小花意识到自己在数学学习上存在固定型思维方式。因此，小花决定尝试在数学学习上也能建立成长型思维，这也是改变小花在价值决策的核心关键。之后的几次交流中，笔者分别在建立成长型思维的具体想法上给予纠正。期间，小花表示：“老师,我时不时总会想到自己太笨了，不适合学数学每次这样我就很泄气\"笔者回应道：“针对刚刚这个念头,我们把它转化为成长型思维,你会怎么想？”经过几轮调整，小花说：“下次，脑袋里再蹦出这个想法，我可以想每个人的学习方式不同，而我需要找到合适的学习方法。”类似的对话还有很多。总之，帮助小花在学习过程中建立成长型思维有助于她在数学学科上重拾自信。当然，仅仅让小花有所改变还远远不够。\n\n3.2　第三阶段：家庭教育指导\n在帮助小花掌握成长型思维的思考方式后，笔者秉持叙事疗法在家庭教育中“不问责”态度的立场，和小花妈妈进行了多次沟通。与小花母亲沟通时，母亲说：“老师，我和她爸爸都是博士，当年我们学习都很不错，怎么到她这儿这么费劲？成绩不好不努力，天天就知道画画，画画能有什么用？每次说两句就甩脸他爸回来，每次都因为数学火冒三丈还有她这个自伤，我小时候我爸经常打我，有一次我受不了也割腕，我父母也没怎么管，就这样熬过来了，她这样就是求关注，越搭理她越来劲”听完小花妈妈的心里话，笔者首先肯定小花妈妈在孩子养育中的付出与辛劳。接着与母亲表达：“过去您们是成绩优异的好学生，孩子当前学习中遇到的问题可能和您们当初的问题存在差异，而且好成绩是无法通过遗传直接获得的。作为父母，在孩子遇到学业问题时吼骂斥责只会让孩子感到害怕、不安、焦虑、抑郁、自我怀疑等系列负面情绪体验。负面的情绪体验对陈述性记忆、程序性记忆有明显的抑制作用，这会大大降低孩子学习的效果。反之，如果孩子在学习过程中遇到困难，家长能有力提供支持，给予孩子肯定与鼓励，让孩子将学习困难与积极情绪体验建立联系，不惧怕学习挑战，也会逐渐找到自信、保持自信，最终有助于孩子学习成果最大化。”和小花妈妈讲解了积极情绪对学习的重要性后，也提示小花妈妈需要与孩子父亲沟通达成一致，在家中为小花创造积极的家庭学习氛围，不随便吼骂斥责孩子。同时，笔者试着引导小花妈妈让孩子认识到学习是自己的事情，家长要慢慢将学习的主动权交给孩子，从家长给孩子安排学习内容逐渐过渡到，由小花自己来安排自己的学习内容。",
+      "metadata": {
+        "document_title": "tppc20240604202-207.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "外化问题与寻找例外",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "解构问题内化，激活来访者资源感",
+        "task_family": "叙事疗法",
+        "method_family": "后现代主义",
+        "stage": "初始访谈/问题重构",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "27c32372-a40e-594c-9fb4-b68c009940e3",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 2,
+        "paragraph_end": 4,
+        "heading_path": [
+          "3 辅导过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 个案概况",
+          "2分析与评估",
+          "4 个案反思"
+        ],
+        "subsection_headings": [
+          "3.1　第二阶段：心理健康教育",
+          "3.2　第三阶段：家庭教育指导"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "从小花母亲处了解到，小花父母均为博士学历，父亲从事理工科研究，母亲从事财会相关工作，两人自幼数学成绩优异，对数学学科的学习极为重视。然而小花的数学成绩从小就不怎么理想，进入初中后更是直线下降。父亲因为工作繁忙不常在家，但只要在家，父女关系就会因为数学学习问题而变得紧张。几次不理想的数学成绩，加之父母的强硬态度，使小花愈发觉得自己学不好数学，甚至对这门学科产生"
+      }
+    },
+    {
+      "support_id": "ebf796db-8312-5daf-8316-55bfd0b2aa33",
+      "doc_id": "44c709b6-6f9a-5dc7-b56b-2495b6a20dc0",
+      "document_title": "tppc2025070149-55.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/tppc2025070149-55.md",
+      "section": "3 辅导过程",
+      "span": {
+        "start": 3018,
+        "end": 3895
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "3.3　探索正向资源，寻求例外情况\n（1）重新审视自己的问题：引导小林思考“社恐一定不好吗？”这一问题。讨论发现，社恐有时候也会有一些好处，比如可以更专注地独立思考，享受独处时光，还能提前规避不愉快的社交场景。\n\n3.4　修复创伤，宣泄情绪\n当小林暴露过去的创伤事件时，咨询师给予接纳与支持，采用空椅子技术帮助她修复创伤。让小林将过往积压的负面情绪发泄出来，尽管过去的伤害不能消除，也难以忘记，且无法回到过去改变，但要让她明白，自己能够决定的是不再让这件事影响自己的发展。如今的小林已经长大，咨询师启发她看到自己的能量，认识到自己有能力保护自己。\n\n3.5　制定方案，练习社交技能\n家－校－医合作协同工作机制贯穿咨询全过程。心理咨询师与辅导员、班主任、小林母亲、精神科医生形成治疗同盟，定期召开帮扶小林的专题研讨会。心理咨询师从心理疏导角度出发，辅导员提供生活指导，班主任提供学习指导，小林母亲给予家庭支持。小林的复查频率从最初的每两周一次逐渐调整为每月一次，每次复查医生都会与咨询师交流小林的近况，以便根据实际情况调整咨询方案。",
+      "metadata": {
+        "document_title": "tppc2025070149-55.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "例外情况探索引导",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "解构问题普遍性，激活来访者内在资源觉察",
+        "task_family": "资源取向干预",
+        "method_family": "后现代主义",
+        "stage": "资源探索",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "945cc0b7-3228-51ab-9439-30b38e886a63",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 10,
+        "paragraph_end": 13,
+        "heading_path": [
+          "3 辅导过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 案例介绍",
+          "2案例分析",
+          "4 效果评估",
+          "5 成果展示",
+          "6 经验启示"
+        ],
+        "subsection_headings": [
+          "3.1 建立关系，收集信息",
+          "3.2加深关系，深入咨询",
+          "3.3　探索正向资源，寻求例外情况",
+          "3.4　修复创伤，宣泄情绪",
+          "3.5　制定方案，练习社交技能",
+          "3.6巩固完成，结束咨询"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "（1）了解并收集小林目前的心理状态信息，进行评估。咨询师与来访者建立良好的咨询关系，积极倾听，给予共情，帮助她梳理对自己“社恐”的看法。"
+      }
+    },
+    {
+      "support_id": "7fb14f92-964d-5d53-86f2-a804e82d86e0",
+      "doc_id": "cc83dd5e-0b23-5f73-b94a-fec51028ee1c",
+      "document_title": "tppc20250704211-217.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/tppc20250704211-217.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 4496,
+        "end": 5373
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "在谈话中，咨询师发现可可的叙述构成了一个“孤立无援”的主导故事。咨询师帮助可可识别那些内化了的信念，例如“我很糟糕”“我很可怜”“我不被重视”等。这种故事导致可可形成了边缘化自我，认为自己在关系中常常处于被忽视的位置。从这些故事里，咨询师看到了可可内心的渴望：她渴望被看见，渴望得到帮助和指导。\n\n4.2　第二阶段：问题外化与寻找例外故事（第7-12次）\n在第7次咨询中，可可因为之前看到了自己的渴望，表达了希望咨询师能给她一些关于考研的实际指导。最终，她坚定地想要考研，虽然知道困难重重，但她还是想尝试。在第二阶段，咨询内容主要包括以下几个方面。\n\n（2）学习层面：可可多次提到自己比较笨，不清楚为什么学习。通过探索价值观的方法，咨询师和可可讨论如果不为成绩，她希望学习可以带来什么。可可表示是对知识的好奇，为了未来可以更好地教导学生。通过改写能力叙事，咨询师引导可可思考：“如果‘笨’是一个住在你脑海里的声音，它是什么时候开始说话的？谁最早对它说过这句话？”可可发现这个声音来源于小学的老师和父母，并不来源于自己。她意识到，自己的学习和考试能力，其实并不是“笨”的人能做到的。",
+      "metadata": {
+        "document_title": "tppc20250704211-217.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "问题外化中的声音拟人化探询",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "实现问题外化，切断问题与身份的绑定",
+        "task_family": "叙事疗法",
+        "method_family": "后现代主义",
+        "stage": "问题外化",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "b330674a-f45a-512e-9e47-55a35aac35e4",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 3,
+        "paragraph_end": 6,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一例运用叙事疗法解决大学生自我认同问题的心理咨询案例报告",
+          "1引言",
+          "2个案基本情况",
+          "3 个案概念化",
+          "5 咨询师总结"
+        ],
+        "subsection_headings": [
+          "4.1　第一阶段：初步评估与建立咨访关系，澄清问题与渴望（第1-6次）",
+          "4.2　第二阶段：问题外化与寻找例外故事（第7-12次）",
+          "4.3　第三阶段：重构自我认同与探索新的故事（第13-16次）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "在第一阶段，咨询师着重收集资料，与可可建立咨访关系。通过陪伴、共情与积极倾听的方式，营造了一个安全、私密的咨询环境。可可详细回顾了自己的家庭背景和成长经历，提到了对自己影响很大的两段经历：一是哥哥的不认同和否定。哥哥总是要求可可按照他的想法做事，比如考驾照、节省开支、人党等。如果可可没做到，哥哥就会责怪她甚至发怒，认为可可不知道赚钱的辛苦和社会的压力。二是父"
+      }
+    },
+    {
+      "support_id": "cefed7c4-7463-5b3b-83c1-8cc41583c030",
+      "doc_id": "8bd6119c-22b7-52b6-9d55-7d9e216fb8c3",
+      "document_title": "叙事治疗运用于公安院校心理咨询探析_吴夏麒.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/叙事治疗运用于公安院校心理咨询探析_吴夏麒.md",
+      "section": "三、叙事治疗运用于公安院校心理咨询案例分析",
+      "span": {
+        "start": 2709,
+        "end": 4868
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "来访者系公安院校公安专业大三学生，有严重的自卑情结，因感到自己处处不如别人而难过，临近毕业面对公务员考试和招警考试缺乏信心，被担心和焦虑情绪严重困扰，无法正常学习，前来求助心理咨询老师。以下是心理咨询老师基于叙事治疗方式和来访者的谈话，体现了叙事治疗的基本步骤和关键技术。\n\n咨询师：你说自己最近特别紧张和焦虑，能具体谈谈吗？\n\n来访者：我马上面临毕业,我们公安专业唯一的出路就是考上公务员，成为一名真正的警察，否则四年的知识白学了，可是公务员考试这么难，我根本没信心能考上，但又无法接受自己考试失败，整日被这种思想困扰，精神压力很大，已经不能专心复习了，不知道该怎么办。(神情沮丧)\n\n咨询师：我从你的话中听出你似乎有一点点不相信自己，是这样吗？\n\n来访者：是的，因为我觉得自己什么方面都不好，从小就不如别人，虽然成绩还可以，但是在班里很不起眼，也从来没引起过老师和同学的注意，更别提像其他同学那样当班干部了，甚至有老师当面说我笨，同学也会开玩笑似的说我反应迟钝，从那以后我就一直也认为自己比别人笨，做什么都不如别人成功。\n\n咨询师：听了你的叙述，我感觉你好像对自己有些失望，也很能理解你的感受。但是你现在来到这里，说明你还是有勇气重新构筑希望的，这就是很不错的，让我们一起努力，找回你的自信,好吗？\n\n来访者：我也很想重塑自信，可是连我自己都找不到喜欢自己的理由，又凭什么相信自己呢？\n\n咨询师：我按你的思路归纳出你给自己定义的问题有：老师说你笨、同学说你反应迟钝，你也就认为自己很难成功。是这样吗？\n\n来访者：是的。\n\n咨询师：你注意到了吗，笨和迟钝都是别人对你的评价，这些只是你遇到的问题，而非你就是如此。\n\n来访者：您的意思是说,我也许并不笨，并不迟钝？\n\n咨询师：当然不是。你是你，问题是问题，而且我们相信你有能力解决发生在你身上的这些问题。\n\n来访者：可是别人对我这么评价肯定也是有根据的，说明我还是又笨又迟钝。\n\n咨询师：有什么根据呢？你说自己从小成绩还可以，现在又考上了本科，老师判断你笨是从何而得的呢？\n\n来访者：可能就是因为我胆小不敢说话，显得不机灵,不像其他同学那么活泼讨老师喜欢吧。\n\n咨询师：而事实上性格上的拘谨和行为上的缓慢并不能就定义为笨或者迟钝，你觉得对吗？\n\n来访者：哦，您这么一说我有点明白了，并没有证据证明我智商比别人低，也就是说我并不笨。\n\n咨询师：对了，很高兴你能明白这一点。同样的道理，迟钝也是别人强加给你的评价，在我看来你就不迟钝，那在这两种评价中你相信哪种呢？所以你应该要有自己的判断。\n\n来访者：听您这么分析，我也没有必要把同学的评价看得这么重了。\n\n咨询师：是的。老师说你笨或者同学说你迟钝，我们换一种角度来想的话，是否可以对你的生活产生另一种良性影响呢？\n\n来访者：嗯….如果说有好的影响的话，就是后来一直谨记自己比较笨，所以学习上也比其他同学花时间多。既然我比较迟钝，反应不那么快，就会三思而后行，做事求稳，提醒自己欲速则不达。\n\n咨询师：这就是独特的结果，你完全可以看到事物的另一面影响，不是吗？现在请你基于对我们刚才讨论的认识，重新讲述一遍自己的人生经历和感悟，好吗？\n\n来访者：我从小就内向胆小，虽然同学不太关注我，老师也认为我笨，但是我并没有因此消沉，而是在学习上踏实刻苦，现在考上大学足以证明我并不比别人笨。虽然我显得不那么机灵聪明，但是我踏实稳重，做事力求有把握，不骄傲不浮躁。所以只要我认真学习，努力复习，完全有可能考上公务员，成为一名真正的警察。\n\n咨询师：太棒了，你是一个聪明有悟性的孩子。希望你能坚持这种信念，遇到问题时能正确分析，不轻易否定自己，相信自己是值得肯定的。\n\n在这个案例中，心理咨询师首先确定了来访者的问题在于因被别人评价为笨\"和迟钝\"而导致自卑，找到了解构问题的关键；继而使来访者明白，问题的出现不是因为他本身，而是受到社会价值观和社会文化强行建构而成，因性格拘谨而定义为笨”“迟钝\"而否定整个人，本身就是错误的判断，这是问题解构的过程；咨询师鼓励来访者从这种错误的标签中跳出来，寻找属于自己的意义，发掘出勤能补拙\"的领悟，用正确的叙事代替了旧叙事，重新建构了积极向上的生活。\n\n综上，叙事治疗不仅在理论上和公安院校心理咨询结合很紧密，实践也证明这是一种有效的治疗模式，可以在协助公安院校学生顺利成长方面发挥积极的作用。\n\n# 参考文献：\n\n[1]李明,杨广学.叙事心理治疗导论[M].济南:山东人民出版社,2005.6.\n\n[2]马闻均.公安院校学院心理问题与心理健康教育研究[J].辽宁师范大学教育硕士研究生学院论文,2008.6.\n\n[3]张英莉,张世彤.谈叙事治疗及其对高校心理咨询的后示[J].辽宁师专学报(社会科学版),2000,(2):57- 58.\n\n[4]侯军.公安院校学生攻击性倾向心理的防范与矫治[J].科技情报开发与经济,2007,(17).\n\n[5]Freedman&Combs.易之新译.叙事治疗：解构并重写生活的故事[M].台北:张老师文化出版社,2000.64,110.\n\n吴夏麒 江西警察学院学生处 教育学硕士曹倩江西警察学院科研处法学硕士张诗琦 江西警察学院宣传处 传播学学士(责编樊誉）",
+      "metadata": {
+        "document_title": "叙事治疗运用于公安院校心理咨询探析_吴夏麒.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "叙事解构：分离问题与人",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "外化问题，阻断评价到身份的错误归因",
+        "task_family": "叙事治疗",
+        "method_family": "后现代主义",
+        "stage": "问题解构",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "0cb11eb5-4249-5655-bea0-c5e85b5bd01c",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 32,
+        "heading_path": [
+          "三、叙事治疗运用于公安院校心理咨询案例分析"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、叙事治疗的内涵",
+          "二、叙事疗法运用于公安院校学生心理咨询工作"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "来访者系公安院校公安专业大三学生，有严重的自卑情结，因感到自己处处不如别人而难过，临近毕业面对公务员考试和招警考试缺乏信心，被担心和焦虑情绪严重困扰，无法正常学习，前来求助心理咨询老师。以下是心理咨询老师基于叙事治疗方式和来访者的谈话，体现了叙事治疗的基本步骤和关键技术。"
+      }
+    },
+    {
+      "support_id": "f7604227-5f79-5b86-8317-7c1aec74f453",
+      "doc_id": "8a53574b-0c9c-5fd4-a079-1e1e9cd8ae66",
+      "document_title": "担心复课不适应的女孩.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/担心复课不适应的女孩.md",
+      "section": "担心复课不适应的女孩",
+      "span": {
+        "start": 270,
+        "end": 1430
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "# 二、担忧的背后\n叙事疗法认为，决定我们自身的不是过去的经历，而是我们自己赋予经历的意义。我从小琪的讲述中看到她自我评价偏低、高敏感低自尊。她认为自己没有能力应对新环境，产生了担心和焦虑的情绪。除此之外，小琪父母的高期待和焦虑情绪也给她带来了不良影响。\n\n基于以上分析,我和小琪共同商定辅导目标为调整情绪、重塑信心,逐步提高自我评价和适应新环境的能力,确保开学后一个月内按时到校。\n\n# 三、辅导过程\n1.建立关系，外化问题\n\n第1、2次辅导,小琪讲述了生病休学的经历以及相关想法和感受。我首先用一般化、正常化的咨询技巧进行回应。我告诉小琪，人们进入新环境时会产生一些焦虑、担心的情绪,这是正常的心理反应。其次，肯定小琪的主动求助意识,帮助她认识到积极主动是解决问题的重要资源,鼓励小琪继续保持。我们在倾听和陪伴中建立了良好的咨访关系。最后，我将人和问题分开，和小琪一起讨论\"担心\"带给她的影响。小琪把\"担心\"命名为\"丧气包”“丧气包”让她整天惴惴不安,无法专心学习,让她一听到家人提学习，就烦躁生气；“丧气包”一出现就会打击她，告诉她\"你不行”,也会提醒她要做好复课准备。问题外化后，小琪能够更加放松地和我交流。\n\n# 2.寻找“闪光事件”,挖掘内在资源\n第3、4次辅导，我在小琪描述问题的同时积极探寻\"闪光事件”,通过提问引导小琪探索自身隐藏的资源。如\"为了不被‘丧气包'影响，你作了哪些努力？\"\"这些努力让你出现了哪些变化?\"\"听起来‘丧气包'让你很难专注学习，你是如何做到一天学习6个小时的?\"我通过探寻和追问，充分挖掘小琪的自身资源,帮助她认识到自己一直在积极准备，如按时服药,每天和妈妈骑行锻炼，每天复习功课等。这些准备活动削弱了“丧气包\"的影响力，提高了小琪的适应能力。\n\n# 3.设置行动目标，定格闪光画面\n第5～7次辅导，我通过达成合理目标，帮助小琪建立自信,获得成就感。具体而言，小琪希望每天能专注学习的时间是6个小时，但她只能坚持一两天。不能按时完成学习计划让她感受到挫败。首先,我从“那一两天是怎么坚持做到的\"为切入口进行启发,引导她总结有效方法，如布置学习环境、调整学习方法、合理的时间设定和任务安排等。其次，我们一起讨论制定了更合理的目标,即每天学习4个小时，坚持1个月。这1个月，我持续跟进小琪的任务完成情况。最后，她顺利完成了既定任务。这次目标的达成,成为她生活中的又一个\"闪光事件”。\n\n在找到\"闪光事件\"后，我继续和小琪讨论她如何看待\"闪光事件\"中的自己，引导她重新认识自己,提高自我认同感。她认为,坐在书桌前专注学习最能代表自己打败了“丧气包”。那个时刻的自己是稳定、平静、专注的,更是积极、努力、有力量的。我充分肯定小琪自身的努力和能力，鼓励她带着对自己的新发现面对开学新生活。",
+      "metadata": {
+        "document_title": "担心复课不适应的女孩.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "问题外化命名",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "解构问题内化，增强主体感",
+        "task_family": "叙事重构",
+        "method_family": "后现代主义",
+        "stage": "关系建立",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "1e1729d1-195c-5df6-a6aa-ee54004b2abb",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 5,
+        "paragraph_end": 11,
+        "heading_path": [
+          "担心复课不适应的女孩"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "担心复课不适应的女孩.md"
+        ],
+        "subsection_headings": [
+          "# 一、小琪的担忧",
+          "# 二、担忧的背后",
+          "# 三、辅导过程",
+          "# 2.寻找“闪光事件”,挖掘内在资源",
+          "# 3.设置行动目标，定格闪光画面",
+          "# 4.家校相结合，完善支持系统",
+          "# 四、辅导反思"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "王婷"
+      }
+    },
+    {
+      "support_id": "36f414ad-3e5f-56ec-8483-9d3b9dc6fc8d",
+      "doc_id": "ca4373e0-67ab-56ab-9d0e-fd64cde8c93a",
+      "document_title": "焦点解决短期心理咨询及个案报告_娄骥.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/焦点解决短期心理咨询及个案报告_娄骥.md",
+      "section": "# 三、案例示例",
+      "span": {
+        "start": 4033,
+        "end": 4493
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "王某：（沉默）成为受同学们欢迎，能侃侃而谈，谈笑风生，和同学们打成一片，朋友很多，大家都很喜欢的人。\n\n咨询师：那你的目标是几分呢？\n\n王某：首先是7分，之后再努力争取达到8分吧。对于我来说，8分就足够了。\n\n咨询师：那么8分的人际交往，你觉得是什么样的状态呢？\n\n王某：受同学们欢迎，找到几个有共同爱好的朋友，班里有一部分同学喜欢我。\n\n咨询师：嗯，你做得非常好，我看到你勇敢地朝着自己的目标迈出了第一步。你感觉自己有小小的改变吗？\n\n王某：嗯，有点，之前只是觉得孤独，不知道怎么跟大家交往，非常想摆脱这种状态，但是也没想过要做到什么样子。\n\n例外事件的发生，可以启发王某发现自身存在的很多解决问题的资源，引导王某对自身资源进行整合。摘取本次咨询过程的一段对话如下。\n\n咨询师：其实你很想跟大家搞好关系，成为好朋友，但是自己却不知道怎么去做，我很理解你的心情。你愿意在目前3分的基础上再加上1分吗？\n\n王某：可以，正在朝着自己的目标靠近。\n\n咨询师：在以往与同学的交往过程中，有没有一次和别人相处中觉得很舒服的体验呢？",
+      "metadata": {
+        "document_title": "焦点解决短期心理咨询及个案报告_娄骥.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "例外事件引导提问",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "激活既有资源与例外经验",
+        "task_family": "资源探索",
+        "method_family": "后现代主义",
+        "stage": "问题解决",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "c355311b-b2d4-5ef5-b0b5-7556a0e259d6",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 18,
+        "paragraph_end": 28,
+        "heading_path": [
+          "# 三、案例示例"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "焦点解决短期心理咨询及个案报告_娄骥.md",
+          "焦点解决短期心理咨询及个案报告",
+          "一、焦点解决短期咨询的理论概述",
+          "二、焦点解决短期咨询的具体过程与技术",
+          "# 4.开展心理健康教育专题讲座， 进行心理咨询",
+          "# 四、总结"
+        ],
+        "subsection_headings": [
+          "# （一）个案问题描述",
+          "# (二）解决过程"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "来访者王某是一位18岁的大学一年级女学生，入学两个月左右，独生子女，中学阶段以学习为主，成绩优秀，家人对其期望很高，考入了一所满意的大学。但学校远在北京，王某第一次离家，并且与其他五名来自全国不同地区的同学同住宿舍。"
+      }
+    },
+    {
+      "support_id": "261d8105-f084-5a2d-8858-b7e250289201",
+      "doc_id": "cf8193e7-adf7-5294-9ddc-1b4d3df257a4",
+      "document_title": "自杀意念的叙事疗法干预个案报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/自杀意念的叙事疗法干预个案报告.md",
+      "section": "1个案与方法",
+      "span": {
+        "start": 4216,
+        "end": 5360
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "青少年心理韧性量表（ResilienceScale forChinese Adolescents，RSCA）[@：共 27个条目，总分27～135，得分越高心理韧性越好。\n\n1.3.3咨询进展的评估\n治疗效果评定量表（Outcome Rating Scale,ORS）[：是由Miller和 Duncan 共同开发的可替代OQ-45的极短问卷，共4个条目，用于评估个体过去1周的身心健康、人际关系、生活社交和整体生活状态和监控咨询进展情况，这4方面的改变是测量咨询效果的有效指标[。使用视觉模拟评分，每个条目要求个体在 $1 0 \\ \\mathrm { c m }$ 线段上做标记，越往左标记代表状况不好，越往右标记代表状况良好。计分使用直尺测量，线段长度即为该条目分数。量表总分 $0 \\sim 4 0$ ，高分表明心理痛苦程度低，咨询进展和干预效果好，反之亦然。本研究中，在每次叙事干预前进行ORS 测量，其中，第1次干预前测量的ORS得分即为ORS的基线值，第2次干预前测量的ORS得分即为反映第1次咨询效果的ORS 得分，以此类推。\n\n1.3.4个案主观报告\n自编叙事干预主观体验访谈提纲：共10个条目，内容涉及个案接受7次叙事干预的体验、感受、想法和觉察以及咨询对于自杀意念/态度的影响作用等，如“你对此次叙事咨询的整体评价D（没帮助）～10（非常有帮助）11点计分]”、“咨询目标的达成程度如何[（完全没达到）～7（完全达到）7点计分”、“请描述一下你对这7次心理咨询的体验”、“7次叙事咨询对于自杀想法和态度的变化有怎样的作用，你有觉察到咨询是如何发挥作用的吗”。\n\n1.4干预过程\nX的总体咨询目标为减少（自杀/自残）消极想法，具体咨询目标为学习与舍友、朋友、父母和陌生人的沟通交流技巧；能够更加果断地做出决定。因此，叙事干预围绕同伴关系、亲子关系和自我认识3个主题展开，涉及4个咨询阶段。\n\n1.4.1阶段1：同伴关系 (第1～2次咨询)\n初次咨询，咨询师带着好奇和尊重的态度倾听X叙说有关“不想与舍友A进行更深层次交往”的“主线故事”。外化提问帮助X看到问题给她的生活以及与A的关系带来的负面影响。同时，“X最近曾成功有效地与A沟通”这个支线故事浮现出来。通过对主线和支线故事的穿插提问，X发现缺乏明确的表达和严肃的态度是问题的核心症结。第2次咨询，X愉快地提及“事情有了进展”（X与A实践了“明确而严肃”的沟通)，这个“独特事件”成为咨询的焦点，并被细致地剖析。通过重新诉说，X从“独特事件”的成功沟通经验中提炼和制作出“人际交往之说话锦囊”，里面记载了X在人际交往过程中所拥有的直面问题的技能、真实表达内心想法的技巧和有关如何减少人际猜疑以及纠正认知偏见的新认识。",
+      "metadata": {
+        "document_title": "自杀意念的叙事疗法干预个案报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "独特事件重述与技能萃取",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "将偶然成功转化为稳定可调用的自我能力认知",
+        "task_family": "能力建构",
+        "method_family": "后现代主义",
+        "stage": "中期干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "2c8ba45c-5b32-5a2e-8f39-d7a29d004c66",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "第1次咨询",
+          "咨询目标",
+          "阶段",
+          "第2次咨询"
+        ],
+        "paragraph_start": 7,
+        "paragraph_end": 11,
+        "heading_path": [
+          "1个案与方法"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "阶段2：亲子关系 (第3\\~4次咨询)",
+          "2结果",
+          "3讨论"
+        ],
+        "subsection_headings": [
+          "1.1个案概况",
+          "1.2干预思路",
+          "1.3.1自杀意念出现频率评估",
+          "1.3.2心理状况的评估",
+          "1.3.3咨询进展的评估",
+          "1.3.4个案主观报告",
+          "1.4干预过程",
+          "1.4.1阶段1：同伴关系 (第1～2次咨询)"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "在广州某高校2020 年5次校内心理健康筛查中，大二学生X连续4次报告出现“自杀意念”，被识别为重点干预对象。学校咨询中心主动提供心理咨询服务，邀请和鼓励X参与叙事心理干预。在知情同意的前提下，X参与了干预前会谈，对叙事干预研究知情，并表现出一定的求助意愿和咨询动机，愿意作为本研究的对象。在心理筛查、干预前会谈及正式叙事干预前X均签署知情同意书，整个研究过程"
+      }
+    },
+    {
+      "support_id": "dcadd662-592c-5cef-9019-f3aff300442d",
+      "doc_id": "4d8c986a-5d42-5646-9c17-bc6d7f0a704b",
+      "document_title": "运用焦点解决短期咨询技术解决人际交往问题.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/运用焦点解决短期咨询技术解决人际交往问题.md",
+      "section": "5.咨询反思",
+      "span": {
+        "start": 7366,
+        "end": 7641
+      },
+      "relation_type": "support",
+      "confidence": 0.93,
+      "quote": "2）要相信当事人是自己问题的专家。只要是人的问题，都有解决的方法，只不过解铃仍需系铃人，别人都无法代劳。人们拥有解决自身问题所需的能力。作为心理咨询师，要相信每一位个体都有能力及丰富的资源去解决他们的问题。心理咨询师需要协助个案发现自己所拥有的资源。\n\n3）焦点解决短期咨询看重“雪球效应”，看重小的改变。看似很复杂的问题，一个小小的改变就是成功的一半，小的目标可以带动个案解决行动的信心与动机，只要持续小改变，就会累积成大改变。所以教师要学会引导来访者看到自己身上小改变的存在，看重小改变的价值，而愿意促进小改变的发生与持续，使之发展成为大的改变。",
+      "metadata": {
+        "document_title": "运用焦点解决短期咨询技术解决人际交往问题.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "小改变识别与放大",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "增强行为改变动机",
+        "task_family": "动机激发",
+        "method_family": "后现代主义",
+        "stage": "工作阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "b2f7a035-ee91-51c5-8e7c-e447d66790b8",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 1,
+        "paragraph_end": 2,
+        "heading_path": [
+          "5.咨询反思"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1.引言",
+          "2.理论背景",
+          "3.来访者个人信息",
+          "4.问题解决",
+          "6.效度分析",
+          "7.结语"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "1）“焦点”认为原因和结果间的关系很难认定，探究问题原因的讨论常会陷入鸡生蛋或蛋生鸡的逻辑矛盾中，最后反而减少了解决问题的可能。在治疗中与其耗费时间去寻找原因，不如指向目标，尽快寻找解决之道。因而咨询的核心任务是帮助来访者想象她所期望的情形会发生什么变化、有什么不同、想得到解决的必要条件是什么。运用焦点解决短期咨询的发展性观点，着眼于问题的解决，可以更好地引"
+      }
+    },
+    {
+      "support_id": "255a930c-b1ec-588e-82fa-b652a0f96bad",
+      "doc_id": "ee18c52f-fdda-5123-bdc1-336aa8b94b64",
+      "document_title": "驱散“情绪乌云”的小涵_吴宁.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/驱散“情绪乌云”的小涵_吴宁.md",
+      "section": "# 三、辅导过程",
+      "span": {
+        "start": 1104,
+        "end": 1711
+      },
+      "relation_type": "support",
+      "confidence": 0.97,
+      "quote": "第3次辅导,我首先请小涵谈谈那场让她感到特别沮丧和挫败的数学考试,通过认知行为疗法帮助她识别自动思维,如\"我觉得自己很笨，以后肯定学不好数学”。其次,引导小涵找出“反对这个想法的证据”，从而发现自动思维的不合理性。小涵说：“上周我还解出一道很难的数学题,很有成就感。这么看来，我也不是学不好数学。\"最后,引导小涵找到数学错题的原因、制订解决步骤,帮助她逐步改变不合理认知。\n\n第4次辅导,重点用焦点解决短期治疗的相关技术发掘小涵的自身资源。首先,我和她确定期望达到的状态：“哪门学科成绩提升让你更自信？\"在目标具体化后，她觉得困难变小了。其次，通过\"例外提问\"帮她找到曾经的“自信时刻”,如\"回想过去一周,有没有哪个时刻让你觉得特别自信?\"这些\"例外\"是她的内部资源,让她明白自己并非一无是处。再次,通过\"预设性提问\"技术帮她提升实现目标的行动力,如\"你在自己特别自信时有哪些具体表现?\"这两次辅导主要帮助小涵识别自己的不合理认知,帮她细化应对困难的具体做法,鼓励她运用于生活。\n\n第5次辅导，主要梳理小涵近期的有效行动,给予积极反馈,强调她具备的资源和能力，肯定她在解决问题过程中作出的努力，如\"你如何提高课堂学习效率？哪些方法有效？”小涵说：“我每天晚上都花时间预习，重点标注不懂的地方。这样,第二天上课时会特别专注。\"本次辅导主要协助小涵制订短期的学习提升计划。小涵想到自己将以全新的姿态投人学习时充满信心。",
+      "metadata": {
+        "document_title": "驱散“情绪乌云”的小涵_吴宁.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "预设性提问促进行动力转化",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "促进行动启动",
+        "task_family": "行为启动",
+        "method_family": "后现代主义",
+        "stage": "行动规划",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 3,
+        "window_id": "d28273b1-71f7-5700-b2fa-c97168678015",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 4,
+        "paragraph_end": 6,
+        "heading_path": [
+          "# 三、辅导过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 一、被\"情绪乌云\"笼罩的小涵",
+          "# 二、“情绪乌云\"的背后",
+          "# 三、辅导反思"
+        ],
+        "subsection_headings": [
+          "# 2.发掘资源，调整认知",
+          "# 4.家校协同,促进成长"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "1.建立关系，共情支持"
+      }
+    },
+    {
+      "support_id": "6a29a966-7531-5d94-9e8b-e5f2c87ff755",
+      "doc_id": "920fdbec-1518-54df-a1d2-cd3a185b0c5d",
+      "document_title": "叙事疗法与德式桌游相结合在大学生心理咨询案例中的运用_蒲昕艳.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/叙事疗法与德式桌游相结合在大学生心理咨询案例中的运用_蒲昕艳.md",
+      "section": "四、两种方法运用于大学生心理咨询的案例分析",
+      "span": {
+        "start": 4065,
+        "end": 4231
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "咨询师协助来访者将此焦虑情绪定名为“亚历山大”。每当\"亚历山大\"出现时，当事人一旦觉察会选择离开现场或听音乐等方式，让“压力山大\"离他远一点，让焦虑的情绪有所舒缓。\n\n2.第二阶段：外化问题一—德式桌游卡坦岛。本阶段咨询师利用德式桌游将个案中的困难外化在游戏中。在游戏中，咨询师让来访者扮演\"拓荒者”。\n\n来访者：我在家里并不开心。",
+      "metadata": {
+        "document_title": "叙事疗法与德式桌游相结合在大学生心理咨询案例中的运用_蒲昕艳.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "外化命名焦虑情绪",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "情绪外化与主体解离",
+        "task_family": "叙事疗法",
+        "method_family": "后现代主义",
+        "stage": "初始外化",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "f544c8d0-d40c-57af-9991-15d8a6ad5d80",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段"
+        ],
+        "paragraph_start": 14,
+        "paragraph_end": 16,
+        "heading_path": [
+          "四、两种方法运用于大学生心理咨询的案例分析"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、叙事心理疗法介绍",
+          "二、叙事疗法与大学生心理咨询的契合点",
+          "三、桌游在心理咨询中的运用",
+          "五、结语"
+        ],
+        "subsection_headings": [
+          "(一)案例背景",
+          "（二)症状分析",
+          "（三)咨询目标",
+          "(四)叙事疗法在心理咨询中的技术运用",
+          "（五)个案的变化"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "小雨18岁，男，在父母及来访者同意的情况下进行焦虑症量表评量，评断为轻度焦虑症。来访者的母亲与父亲感情不睦，经常吵闹，教育方式也不一致，导致当事人从小在家庭中感到异常焦虑。来访者对外的人际关系非常好，外形高大帅气、阳光。但是,经常会为自己的未来人生以及与家人的相处模式烦恼。来访者母亲性格焦虑，在教育过程中要求严格，时常伴有打骂行为，因此，随着小雨年龄的增长，"
+      }
+    }
+  ]
+}

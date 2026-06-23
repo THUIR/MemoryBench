@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "38a949f1-0f33-585c-a966-8a1e65817f3d",
+  "skill_name": "合理情绪疗法结构化会谈引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "1c902dd4-e574-5679-b47c-7799ef43f1e6",
+      "doc_id": "e08b772e-8bcd-5837-a07b-e0147cd78183",
+      "document_title": "一例高职生情感挫折的咨询案例报告_胡文.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例高职生情感挫折的咨询案例报告_胡文.md",
+      "section": "八、咨询过程",
+      "span": {
+        "start": 2849,
+        "end": 3145
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "目的进一步巩固咨询关系,分析来访者问题出现的原因，介绍并商定咨询方法。\n\n方法会谈法，合理情绪疗法\n\n具体过程向来访者介绍采用的疗法，运用合理情绪疗法帮助来访者领悟到自己情绪不适的根本原因不是失恋本身，而是在于自己对感情的认识偏差，把所有的情绪、情感都寄托在恋爱上。一旦出现感情挫折，就会出现自己一事无成等非理性、费客观的认知，引导来访者与自己存在的不合理观念进行辩论。通过引导来访者掌握呼吸放松方法，让他在自己压力大失眠、无法集中注意力时，使用这些方法让自己放松、平静下来，逐步改善睡眠。向来访者举例讲解不同归因方式所造成主观体验的不同以及认知偏差可能带来的后果，并引导其做更深层次的思考。",
+      "metadata": {
+        "document_title": "一例高职生情感挫折的咨询案例报告_胡文.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "合理情绪疗法结构化会谈引导",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "建立疗法共识并启动认知重构准备",
+        "task_family": "认知重构准备",
+        "method_family": "CBT",
+        "stage": "初期介入",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "6e37ed10-9fc0-53de-acae-37ae1b048d43",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈"
+        ],
+        "paragraph_start": 10,
+        "paragraph_end": 12,
+        "heading_path": [
+          "八、咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、一般资料",
+          "二、主诉和个人陈述",
+          "三、个人成长史",
+          "四、观察和收集到的其他材料",
+          "五、评估与诊断",
+          "六、病因分析"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# $\\left( \\ - \\right)$ 咨询过程阶段划分"
+      }
+    }
+  ]
+}

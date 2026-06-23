@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "1feba4e8-13a7-542e-8414-c5c2d9810284",
+  "skill_name": "SFBT三步目标设定协议",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "068b9cdd-8a3f-59a5-9c57-f036873f7fff",
+      "doc_id": "c62b83c5-6827-5de2-ada4-3e4e7eb753b2",
+      "document_title": "应用焦点解决短期心理咨询技术缓解大学生抑郁情绪的个案探究_钱宇航.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/应用焦点解决短期心理咨询技术缓解大学生抑郁情绪的个案探究_钱宇航.md",
+      "section": "4咨询过程",
+      "span": {
+        "start": 3185,
+        "end": 3874
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "第一阶段:搜集资料,建立咨访关系，探讨其对咨询的态度、心理测评、确定咨询目标(第1～2次咨询)。\n\n初次咨询要做的是收集资料，评估来访者的心理问题，初步对目标进行聚焦。在明确来访者的问题属于学业压力引发的抑郁情绪的一般心理问题后，正式与来访者建立咨访关系，探讨咨询目标。\n\n在判断来访者抑郁情绪程度时，主要运用了刻度化询问技术，以量化方式使其定义自身问题的严重程度,为后续的技术使用创造条件。由于来访者难以确定自己的咨询目标,因此使用了奇迹询问技术,向来访者传递“未来是可以创造和协商的”这一信息，将咨询会谈的重点放在“问题已经解决的未来”上，以帮助来访者对自己的状态进行客观的描述，澄清咨询目标。\n\n节选与来访者进行目标设定过程的一段对话：\n\n咨询师:你最近考试比较多，因此比较忙碌,感觉压力有点大，这是正常的,很多同学面对这种情况都会有和你相似的感受(正常化技术）。你说自己最近心情不太好,如果用 $1 \\sim 1 0$ 来表示你此刻的心情,1表示心情很差，10表示心情很好，那么你现在的心情是几分？\n\n来访者：3分吧。\n\n咨询师：你希望通过咨询将分数提高到几分呢？\n\n来访者:7\\~8分吧,至少7分。\n\n咨询师：那么为了使代表心情的分数由3分提高到7分,你希望通过咨询实现什么样的改变呢(预设性询问技术)？\n\n来访者：就是心情好起来吧。\n\n咨询师：心情好起来有哪些具体的表现呢（询问细节)？\n\n来访者：我也不知道。\n\n咨询师：那我们换个问法,如果在你面前有一个充满魔力的水晶球,透过它你可以看到你的美好未来,你猜你可能会看到什么(奇迹询问技术)？\n\n来访者：那我得想想。",
+      "metadata": {
+        "document_title": "应用焦点解决短期心理咨询技术缓解大学生抑郁情绪的个案探究_钱宇航.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "焦点解决取向的初始目标设定流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "将抑郁情绪等模糊主诉转化为SFBT风格的具体、正向、可观察的目标陈述",
+        "task_family": "目标协商",
+        "method_family": "后现代主义",
+        "stage": "初始评估与目标确立",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "39e22cf7-78df-52f3-9f7a-dab5b74f2389",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标",
+          "会谈"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 13,
+        "heading_path": [
+          "4咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1基本信息",
+          "2个案评估",
+          "3咨询方案",
+          "5咨询效果",
+          "6案例评价及反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一阶段:搜集资料,建立咨访关系，探讨其对咨询的态度、心理测评、确定咨询目标(第1～2次咨询)。"
+      }
+    }
+  ]
+}

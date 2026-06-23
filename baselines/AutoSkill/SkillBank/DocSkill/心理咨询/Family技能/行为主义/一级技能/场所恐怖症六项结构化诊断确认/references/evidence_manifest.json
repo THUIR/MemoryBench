@@ -1,0 +1,100 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+<<<<<<<< HEAD:SkillBank/DocSkill/心理咨询/Family技能/认知行为疗法/二级技能/场所恐怖症CBT诊断确认清单/references/evidence_manifest.json
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "abedf56a-a755-5ff3-819f-7e8ee89ecbed",
+  "skill_name": "场所恐怖症CBT诊断确认清单",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "1d4c68d5-0d9a-537d-a3e4-586edb30f8ef",
+      "doc_id": "b77826e9-005c-5b00-847e-27d6bc81e071",
+========
+  "generated_at": "2026-03-26T20:29:06+00:00",
+  "family_name": "行为主义",
+  "skill_id": "74a5a9fc-dc68-5e5c-854b-88b1c35697fe",
+  "skill_name": "场所恐怖症六项结构化诊断确认",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "f9dbe08b-2f46-5222-a759-fc34559943b0",
+      "doc_id": "4c7df34a-6dfc-5f54-9e30-4a503fff68c7",
+>>>>>>>> df073c1eb (updata new DocSkill):SkillBank/DocSkill/心理咨询/Family技能/行为主义/一级技能/场所恐怖症六项结构化诊断确认/references/evidence_manifest.json
+      "document_title": "一例场所恐怖症的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一例场所恐怖症的心理咨询案例报告.md",
+      "section": "3咨询过程",
+      "span": {
+        "start": 3188,
+        "end": 4745
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "3.2 诊断评估来访者诊断为场所恐怖症，依据：（1)经各项检查，无器质性病变；（2）对独自乘车及去离家远的场所有强烈恐惧感，明知不合理，却无法控制；（3）症状存在时间超过6个月；（4）在恐惧发作时有明显的自主神经症状；（5）有回避行为，影响正常的生活和工作；（6）神经症评分 $[ 2 ] _ { > 6 }$ 分。来访者思维逻辑基本正常，自知力完整，无幻觉、妄想，排除精神病性障碍。\n\n3.3咨询目标（1）近期目标。修正灾难化、过度概括等错误认知，以及“我不被喜欢、我很无助”的核心信念；矫正回避行为，实现独自乘车及去离家远的场所目标；增强人际沟通能力，改善行为习惯，增加生活情趣，掌握情绪调节技巧。（2）远期目标。在以上具体目标的基础上，让来访者性格变得坚强、独立、自信；形成理性、乐观的健康心态。\n\n3.4 呼吸放松法[3]让来访者心身放松下来，缓解恐惧情绪。（1)放松训练。指导来访者用舒适的姿势坐好，让身体完全放松下来。用鼻子吸气，嘴巴呼气。吸气4 s，保持1s，呼气6s。深深吸气，慢慢呼气，仿佛把身体内所有的浊气以及负面情绪全部呼出去，体会并记住这种身体放松的感觉。与来访者一起练习，闭上眼睛，调整好姿势，吸气（1、2、3、4)，保持1s,呼气（1、2、3、4、5、6)。重复步骤，一起再做3次。（2）家庭作业。建议来访者感受到恐惧时，做深慢呼吸，让心身慢慢放松下来。建议来访者每天坚持训练深慢呼吸放松，每天2次，每次 $5 ~ \\mathrm { m i n }$ ，缓解恐惧情绪。每日坚持跑步，放松心身。（3）总结评估。之后来访者每次咨询时，总结评估上周的情况，并商定会谈的内容，结束时根据会谈的内容布置家庭作业。\n\n3.5 认知行为疗法[4]（1)修正错误认知。修正来访者的“恐惧情绪会发作精神疾病、会没人管，脆弱情绪很丢脸”等灾难化思维和过度概括的错误认知，通过使用苏格拉底式提问，引导来访者意识到那位老师也会经常说别人“有病”，原来那只是他的口头禅，不是自己真得了精神疾病；对于“恐惧发作没人管”过度概括的想法，发现会有很多人安慰自己，是自己太片面了；针对“脆弱情绪很丢脸”，咨询师与来访者一起寻找此想法的根源[5]。原因为来访者父母早年家境贫寒，常被看不起，来访者的脆弱激发了父母的脆弱感，此时父母是无力安慰孩子的，来访者由此对父母产生了怜悯感。当咨询师引导来访者在想象中听到父母对孩子表达内疚感时，来访者感觉到了放松和释然。修正过度概括的错误认知之后，来访者反馈发现了很多被自己忽略的内容，比如认识到：父亲其实是一位正直、有能力、受人尊敬的校长；妈妈更是在家人遇到官司的时候挺身而出、据理力争，并取得圆满成功，是一个非常有勇气的人。他们其实是很有力量的，作为他们的儿女，来访者也倍感自豪，觉得自己很有力量，由此修正“我不被喜欢、我很无助”的核心信念。引导来访者找到了一些关于自己有力量的证据，比如：在那么焦虑的状态下考上了大学并找到工作；找到了心爱之人，组建家庭；努力工作和生活，工作能力强，一直深得客户的喜爱和上司的欣赏。同时找到了自己被喜欢的证据：当知道自己惧怕乘车，年迈的父母亲自坐车来接自己。父母只是性格和表达方式使然，他们其实是喜欢自己的，也发现了他们对自己的爱和关心；无论在哪个阶段，都有喜欢自己的老师和同学；丈夫其实很体谅自己，自己现在这个状态，他从未抱怨过。修正核心信念之后，来访者内心感觉温暖，有了力量。通过家庭作业继续觉察情绪及“过度概括、灾难化”的错误认知并修正，寻找“我是被喜欢的、我是有力量”的证据。\n\n过度概括的错误认知修正后，来访者认识到自己不是什么也不会做，只是自己觉得什么都不会，所以就不做了。来访者表示，今后将会从做一点家务及参与孩子的教育开始做起。",
+      "metadata": {
+        "document_title": "一例场所恐怖症的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+<<<<<<<< HEAD:SkillBank/DocSkill/心理咨询/Family技能/认知行为疗法/二级技能/场所恐怖症CBT诊断确认清单/references/evidence_manifest.json
+        "skill_name": "场所恐怖症CBT诊断确认清单",
+        "asset_type": "safety_rule",
+        "granularity": "micro",
+        "asset_node_id": "safety_micro",
+        "asset_path": "family_root/safety_module/safety_micro",
+        "asset_level": 2,
+        "visible_role": "leaf",
+        "objective": "诊断确认",
+        "task_family": "诊断评估",
+        "method_family": "CBT",
+        "stage": "初始评估",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "6afe6c49-4ac6-5876-b6a4-78e4950c210f",
+========
+        "skill_name": "场所恐怖症诊断评估清单",
+        "asset_type": "knowledge_reference",
+        "granularity": "session",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "标准化诊断确认",
+        "task_family": "diagnostic_assessment",
+        "method_family": "clinical_interview",
+        "stage": "initial_assessment",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "4cb914cf-fde0-5ddc-b85e-9bb23885fba0",
+>>>>>>>> df073c1eb (updata new DocSkill):SkillBank/DocSkill/心理咨询/Family技能/行为主义/一级技能/场所恐怖症六项结构化诊断确认/references/evidence_manifest.json
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "咨询目标",
+          "会谈",
+          "家庭作业",
+          "作业",
+          "阶段",
+          "苏格拉底"
+        ],
+        "paragraph_start": 1,
+        "paragraph_end": 5,
+        "heading_path": [
+          "3咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 咨询对象",
+          "2咨询思路",
+          "4咨询效果评估",
+          "5总结"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "3.1 量表测试（1）采用症状自评量表（SymptomChecklist90，SCL-90）评估来访者的心理状态。躯体化1.9分；强迫3.0分；人际关系敏感2.5分；抑郁1.8分；焦虑3.0分，敌对2.6分；恐怖3.6分；偏执1.9分；精神病性 2.8分；其他2.4分。以上各因子分除躯体化、抑郁及偏执外均高于常模。（2）采用焦虑自评量表（Self-ratin"
+      }
+    }
+  ]
+}

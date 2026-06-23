@@ -1,0 +1,41 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "bd01d01b-48e1-5104-8670-87edee15b06e",
+  "parent_name": "正念认知疗法结构化疗程框架",
+  "children": [
+    {
+      "skill_id": "2451cf3e-2393-5e4b-9f15-20dcd1fcbe1d",
+      "name": "渐进式肌肉放松训练（PMR）会话技能",
+      "description": "通过结构化、时长可控的渐进式肌肉放松训练（PMR），引导来访者系统体验紧张-释放的生理对比，激活躯体-情绪双向调节通路，从而降低轻中度情境性焦虑的躯体唤醒水平。",
+      "child_type": "焦虑干预",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "bd01d01b-48e1-5104-8670-87edee15b06e",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "通过结构化、时长可控的渐进式肌肉放松训练（PMR），引导来访者系统体验紧张-释放的生理对比，激活躯体-情绪双向调节通路，从而降低轻中度情境性焦虑的躯体唤醒水平。",
+      "selector_terms": [
+        "来访者报告明显肌肉紧张、呼吸急促等躯体化表现",
+        "焦虑未泛化，仍具情境特异性",
+        "来访者有基本放松意愿和身体觉察基础",
+        "放松训练",
+        "PMR",
+        "躯体调节",
+        "焦虑缓解",
+        "CBT",
+        "主诉‘胸口发紧’‘肩膀僵硬’‘手心出汗’‘呼吸短促’",
+        "观察到坐姿僵直、眉头紧锁、语速快伴气息浅",
+        "自评焦虑量表（如GAD-7）躯体条目得分≥2",
+        "渐进式肌肉放松训练（PMR）会话技能",
+        "通过结构化、时长可控的渐进式肌肉放松训练（PMR），引导来访者系统体验紧张-释放的生理对比，激活躯体-情绪双向调节通路，从而降低轻中度情境性焦虑的躯体唤醒水平。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/渐进式肌肉放松训练（PMR）会话技能/SKILL.md"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "943067c2-74a8-546f-a664-8e9d5d3cebcc",
+  "skill_name": "移空技术单次心身症状干预",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "a98d2187-1808-5906-bc10-5ea69ba68afe",
+      "doc_id": "b5bf8a83-3cb0-54d2-971b-8ab7c3a507e9",
+      "document_title": "一则运用移空技术处理高中生厌学的案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/一则运用移空技术处理高中生厌学的案例报告.md",
+      "section": "# 4 咨询师反思",
+      "span": {
+        "start": 3744,
+        "end": 4565
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "# 4.1 移空技术的特点和作用机制在本案例中的应用和体现\n移空技术的见效机制是通过把来访者带到没有问题的地方（心理空境）来解决来访者的问题。这个案例中的来访者在做移空之前，其母亲曾带领她去过多家医院，耗资数万元治疗，但均未见效。然而，仅通过一次移空咨询就缓解了来访者的主要症状——眩晕。移空技术直接针对心身症状，起效快。本案例中以头晕的象征物“皮革护套”为媒介，并将其放入它的承载物“玻璃罐”中，而后使之移动并渐行渐远，当它们消失在看不见的远方时，心理空境就出现了。在此状态下，“头晕”的症状自然减轻甚至消失。“心理空境”提供了一个可以疗愈各种心理障碍、放下各种心理问题的心理空间。咨询师引导来访者到达这个没有问题的地方，移空后的第二天，来访者就恢复上学，解决了困扰自己和整个家庭两个多月的问题。\n\n移空技术的特点是只处理症状，不问缘由，不分析，不解释。本案例的第二次移空咨询过程就是秉承着这个原则，例如，在可见移动过程中，当来访者出现了“不平静”时，咨询师并没有中断移空操作去和来访者探讨，而是继续进行后续的操作，整体把握住了移空技术的主要思路，从而取得了较好的效果。\n\n# 4.2　移空和精神分析结合使用\n移空技术简便易行，与其他流派和技术结合使用时，有着相互增强的效果。咨询师具备针对长程案例的结合使用经验，因此在第三次咨询中，做了些尝试：使用精神分析流派中的技术，将深藏于潜意识中发生“晕倒”的原因意识化。这既起到了降低头晕复发的概率，巩固了本次移空的长远疗效，同时也让来访者对自身其他的躯体化症状有了初步的认识（来访者还有许多其他比较严重的情绪问题和躯体化症状）。\n\n“错题本”对于来访者来讲是一个重大事件，但是在初始访谈时，咨询师曾询问第一次晕倒当天发生的重要事情，来访者并未想起此事。可能是此事过于痛苦，来访者使用了“遗忘”的防御机制，将之压抑到潜意识里去。经过一次移空咨询后，潜意识的阀门被打开，相关记忆得以释放到意识层面。",
+      "metadata": {
+        "document_title": "一则运用移空技术处理高中生厌学的案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "移空技术单次心身症状干预",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "快速缓解具象化心身症状",
+        "task_family": "symptom_intervention",
+        "method_family": "psychodynamic",
+        "stage": "acute_symptom_management",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "945bac77-16a8-524f-92aa-b882bf9a7a46",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "# 4 咨询师反思"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1 来访者简况",
+          "# 2来访者主要生活事件",
+          "# 3 咨询过程"
+        ],
+        "subsection_headings": [
+          "# 4.1 移空技术的特点和作用机制在本案例中的应用和体现",
+          "# 4.2　移空和精神分析结合使用",
+          "# 4.3 “小约定”与移空效果的关系"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "移空技术的见效机制是通过把来访者带到没有问题的地方（心理空境）来解决来访者的问题。这个案例中的来访者在做移空之前，其母亲曾带领她去过多家医院，耗资数万元治疗，但均未见效。然而，仅通过一次移空咨询就缓解了来访者的主要症状——眩晕。移空技术直接针对心身症状，起效快。本案例中以头晕的象征物“皮革护套”为媒介，并将其放入它的承载物“玻璃罐”中，而后使之移动并渐行渐远"
+      }
+    }
+  ]
+}

@@ -58,6 +58,9 @@ def load_corpus_to_memory(solver, dataset):
             f"`memory_{fmt}_conversation` for corpus format '{fmt}'."
         )
     method(dataset.corpus, session_cnt=dataset.session_cnt)
+    record_all_memories = getattr(solver, "record_all_memories", None)
+    if callable(record_all_memories):
+        record_all_memories()
 
 
 def dataset_has_corpus(dataset) -> bool:
@@ -229,4 +232,4 @@ def mark_memory_cached(memory_cache_dir: str):
 #         conversation[f"session_{sid}"] = sess
 #     return conversation, len(sessions)
 
-# # ----------------------- [end] Locomo and DialSim ------------------------- 
+# # ----------------------- [end] Locomo and DialSim -------------------------

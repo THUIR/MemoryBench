@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "2caa5c54-7249-58c6-bc11-a8f342103059",
+  "skill_name": "合理想象技术引导流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "4af66591-2c52-5c83-8049-e62b5d801be4",
+      "doc_id": "bc488648-10a8-5f96-937a-c3abee43822c",
+      "document_title": "1例焦虑情绪表现的个案心理辅导_覃丽燕.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例焦虑情绪表现的个案心理辅导_覃丽燕.md",
+      "section": "4咨询过程和效果",
+      "span": {
+        "start": 2979,
+        "end": 3182
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "来：“我觉得我付出了就应该有回报，她就应该喜欢我，其实是我的自尊心作祟，而且我从来没想过我的这些做法带给她的却是负担。\n\n4.3第三次咨询\n使用技术：合理想象技术。\n\n工作内容：进一步帮助来访者摆脱原有的不合理信念及思维方式，使新的观念得以强化，从而更好地适应现实生活。让来访者，身心放松，缓解紧张、焦虑等情绪，帮助其树立信心，相信自己能对抗困境，激发内在动力，形成更加积极、健康的思维模式，咨询片段如下。",
+      "metadata": {
+        "document_title": "1例焦虑情绪表现的个案心理辅导_覃丽燕.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "合理想象技术引导流程",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "缓解焦虑情绪、巩固新认知、增强自我效能感",
+        "task_family": "认知重构",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "中期干预",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "49ea5878-ea0a-5ae8-8a0c-8dfab94d0b86",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 18,
+        "paragraph_end": 20,
+        "heading_path": [
+          "4咨询过程和效果"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例焦虑情绪表现的个案心理辅导",
+          "1个案信息",
+          "2 评估和个案概念化",
+          "3制定咨询方案",
+          "5 案例总结及启发"
+        ],
+        "subsection_headings": [
+          "4.1第一次咨询",
+          "4.2第二次咨询",
+          "4.3第三次咨询",
+          "4.4第四次咨询",
+          "4.5咨询效果"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询目的：与来访者建立信任、安全和尊重的关系，了解来访者的基本背景信息，当前困扰的具体问题，商定咨询目标和计划，说明保密原则和保密例外。"
+      }
+    }
+  ]
+}

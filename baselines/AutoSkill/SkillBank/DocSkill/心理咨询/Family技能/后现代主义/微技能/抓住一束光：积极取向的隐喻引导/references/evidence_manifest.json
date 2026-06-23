@@ -1,0 +1,75 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "9feef5ae-00f7-571d-a195-faeb82c2b9d2",
+  "skill_name": "抓住一束光：积极取向的隐喻引导",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "b1857cfb-e1c0-52b2-b8ee-5d9be82e6e2e",
+      "doc_id": "9d824b3f-3fe7-5f70-8994-52bc03b82ff4",
+      "document_title": "tppc20240604194-201.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/tppc20240604194-201.md",
+      "section": "4 开展咨询",
+      "span": {
+        "start": 5607,
+        "end": 6001
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "4.2.3抓住一束光、积极回应\n来访者回忆起一次因舍友对她讲话时声音变大而感到自己被讨厌，趁大家睡觉之后独自在走廊哭泣，一位舍友发现后立即出来陪伴并安慰她，随后其他舍友也相继出来陪伴着她。尽管那时候天气已经很冷了，她们都穿着睡衣，但没有人抱怨或厌烦，直到她情绪好转再一同回宿舍睡觉。她深受感动，称这些舍友如同一束光照进了她的生活，她非常害怕会失去。咨询师引导她观察门口夕阳斜射进来的光束，指出光束随着太阳运行角度而变化，如果想要一直沐浴其中，是需要同步移动的。来访者表示希望抓住这束光，愿意主动地、有建设性地给予积极回应，并与咨询师共同探讨和练习可接受和尝试的回应方式。\n\n4.3巩固与结束阶段（第6次咨询）\n咨、访双方共同回顾了咨询过程，反馈咨询作业，总结来访者在各个方面的转变和成长，强化与并巩固其获得的积极资源，鼓励将所学方法应用到生活中的其他方面，再次进行心理测验，与咨询前对照。",
+      "metadata": {
+        "document_title": "tppc20240604194-201.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "抓住一束光：积极取向的隐喻引导",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "将抽象积极体验具象化为可观察、可移动、可主动回应的隐喻客体，促发来访者主体性行动意向",
+        "task_family": "资源取向干预",
+        "method_family": "后现代主义",
+        "stage": "咨询中段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "93fde367-9535-5bb1-8ebb-bbb987cf7802",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "作业"
+        ],
+        "paragraph_start": 5,
+        "paragraph_end": 6,
+        "heading_path": [
+          "4 开展咨询"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "抓住一束光：积极取向的叙事疗法帮助学生体验生命之美",
+          "1 资料收集",
+          "2心理评估",
+          "3 确定目标及方案",
+          "5 干预效果评估",
+          "6 经验启示"
+        ],
+        "subsection_headings": [
+          "4.1 诊断评估与咨询关系建立阶段（第1、2次咨询）",
+          "4.2心理咨询帮助阶段（第3、4、5次咨询）",
+          "4.2.1解构问题、重构故事",
+          "4.2.2丰厚生活、灌注希望",
+          "4.2.3抓住一束光、积极回应",
+          "4.3巩固与结束阶段（第6次咨询）"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "通过摄入性会谈建立良好的咨、访关系，收集来访者的资料，完成心理测验，确定主要问题，进行诊断评估；提高求助者对心理咨询的认识；引导宣泄积压的不良情绪；确立咨询目标和方案。"
+      }
+    }
+  ]
+}

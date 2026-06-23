@@ -1,0 +1,65 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "51bfa63a-dcee-5e2b-bb40-93b67714618b",
+  "skill_name": "认知重构教育干预",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "008a2486-4414-539c-979e-92a5896c1321",
+      "doc_id": "2a1e3c7a-5fe4-5b77-b815-e2ae744c95e4",
+      "document_title": "一例失眠、焦虑问题咨询的案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/一例失眠、焦虑问题咨询的案例报告.md",
+      "section": "六、咨询方案",
+      "span": {
+        "start": 3017,
+        "end": 3233
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "# 1.方法与原理\n\n(1)认知疗法。主要解决求助者与口吃、疾病、失眠相关的认知问题。结合来访者的特殊情况，通过介绍口吃的成因及矫正方法，介绍疾病的正确知识，以及考试压力与失眠的关系，等等，帮其确立正确的合理的认知，澄清一些不健康、不科学的观念与认识。后期结合行为干预，帮助来访者懂得高考并不是成材的唯一道路，条条大路通罗马。\n\n(2）行为疗法。运用行为主义心理治疗中的系统脱敏原理，通过想象和放松治疗，逐渐缓解焦虑带来的失眠问题。",
+      "metadata": {
+        "document_title": "一例失眠、焦虑问题咨询的案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "认知重构教育干预",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "矫正病理性认知",
+        "task_family": "认知教育",
+        "method_family": "CBT",
+        "stage": "认知澄清",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "d1aac8f6-795b-51ef-9906-3a798ba1327e",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "六、咨询方案"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、求助者一般资料",
+          "二、主诉和个人陈述",
+          "五、结语",
+          "三、观察和他人的反映",
+          "四、评估与诊断",
+          "求助者问题归纳："
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# 1.方法与原理"
+      }
+    }
+  ]
+}

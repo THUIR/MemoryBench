@@ -1,0 +1,78 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "421a3805-c6a2-5d18-88af-88f55b0a72c5",
+  "skill_name": "多维素质提升型咨询作业布置",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "986f22eb-3308-5e01-b635-e4518067633e",
+      "doc_id": "e507e5e0-272c-5bd3-bf08-7d9f71931070",
+      "document_title": "一位高中男生焦虑情绪的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/一位高中男生焦虑情绪的心理咨询案例报告.md",
+      "section": "# 一应高中男生焦虑情绪的心理咨询案例报告",
+      "span": {
+        "start": 6195,
+        "end": 6618
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "$\\textcircled{3}$ 巩固咨询效果。针对C所焦虑的威信降低问题，帮助C进行合理归因。首先，明确C所认为的威信高的同学有哪些，并尽可能全面地描述他们的特点。除了C所强调的对同学大吼大叫以外，还有别的方面，例如学习、生活、与同学相处等，与他们进行比较，明确自己还需要改进的方面，以及引导C思考改进的方法，并帮助C建立改进的信心 心。\n\n$\\textcircled{4}$ 布置咨询作业。有意识地改变C头脑中的不合理信念，多与同学沟通交流，提高自身多方面的素质，例如学习、生活、人际交往等。对于C班干部经验不足的问题，可以多向班级或年级里，甚至校外有经验的同学、朋友和老师请教，学习并实践班级管理的方法和经验，记录这段时间的心得与感受。\n\n# 六、咨询效果评估\n$\\textcircled{1}$ 前两次咨询结束后进行阶段评估，C的焦虑情绪问题逐步得到缓解。\n\n$\\textcircled{2}$ 班主任老师反映C情绪明显好转，更加自信。",
+      "metadata": {
+        "document_title": "一位高中男生焦虑情绪的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "多维素质提升型咨询作业布置",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "促进认知-行为一致性转化",
+        "task_family": "行为激活",
+        "method_family": "CBT（认知行为疗法）",
+        "stage": "咨询巩固期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "201b085c-841d-5552-b12a-ba2e9e299e01",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "作业",
+          "阶段"
+        ],
+        "paragraph_start": 61,
+        "paragraph_end": 64,
+        "heading_path": [
+          "# 一应高中男生焦虑情绪的心理咨询案例报告"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [],
+        "subsection_headings": [
+          "# 1.一般情况",
+          "# 2.问题表现",
+          "# 3.主诉和个人陈诉",
+          "# 4.咨询师观察",
+          "# 二、评估与诊断",
+          "2.对该来访者诊断的依据如下：",
+          "# 三、咨询目标的制定",
+          "# 四、咨询方案的制定",
+          "# 2.咨询原理：",
+          "# 1.咨询关系的建立与评估诊断阶段",
+          "第一次咨询的主要任务：",
+          "# ★第二次咨询：",
+          "第二次咨询的主要任务：",
+          "# 六、咨询效果评估",
+          "# 七、讨论与思考",
+          "# 专家点评"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "C，男，16岁，身高约1.70米，某中学高一年级重点班学生，身材中等，为本班班长。家庭经济条件较富裕，家中有一个弟弟。C无重大躯体疾病历史，家族成员无精神疾病史，父母婚姻状况良好，未接受过心理咨询。"
+      }
+    }
+  ]
+}

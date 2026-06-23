@@ -1,0 +1,69 @@
+{
+  "schema": "autoskill.document.parent_children_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "domain_root_name": "心理咨询",
+  "family_name": "认知行为疗法",
+  "profile_id": "psychology::认知行为疗法",
+  "taxonomy_axis": "疗法",
+  "parent_skill_id": "657ea477-a63f-50b5-8241-82202eef6587",
+  "parent_name": "CBT社交焦虑阶段性咨询框架",
+  "children": [
+    {
+      "skill_id": "71f25abb-ddb3-5802-b11d-edb6ec5a866c",
+      "name": "CBT行为实验设计与实施",
+      "description": "协同来访者设计可检验的假设性行为实验，用真实结果挑战适应不良信念，降低回避行为并提升情境自信。",
+      "child_type": "信念验证",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "657ea477-a63f-50b5-8241-82202eef6587",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "协同来访者设计可检验的假设性行为实验，用真实结果挑战适应不良信念，降低回避行为并提升情境自信。",
+      "selector_terms": [
+        "来访者表达对某类社交/环境情境的预测性担忧",
+        "担忧内容可转化为可观察、可记录的行为假设",
+        "来访者有中等以上改变动机",
+        "CBT",
+        "行为实验",
+        "假设检验",
+        "信念修正",
+        "社交焦虑",
+        "来访者使用'如果…就…'句式表达担忧",
+        "能具体描述预期他人反应或自身生理反应",
+        "对'试试看'表现出开放而非强烈抗拒",
+        "CBT行为实验设计与实施",
+        "协同来访者设计可检验的假设性行为实验，用真实结果挑战适应不良信念，降低回避行为并提升情境自信。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/CBT行为实验设计与实施/SKILL.md"
+    },
+    {
+      "skill_id": "fe2379d7-b3b3-56e2-8d45-2dd9dfd42f3b",
+      "name": "社交焦虑CBT心理教育模块",
+      "description": "向来访者系统介绍社交焦虑的成因、维持机制及CBT治疗原理，建立共同理解与治疗动机。",
+      "child_type": "CBT心理教育",
+      "asset_node_id": "session_framework",
+      "asset_path": "family_root/treatment_framework/session_framework",
+      "asset_level": 2,
+      "parent_skill_id": "657ea477-a63f-50b5-8241-82202eef6587",
+      "level_label": "二级技能",
+      "taxonomy_class": "认知行为疗法",
+      "applicable_when": "向来访者系统介绍社交焦虑的成因、维持机制及CBT治疗原理，建立共同理解与治疗动机。",
+      "selector_terms": [
+        "来访者对社交焦虑缺乏病理理解",
+        "治疗关系尚未稳固",
+        "需增强治疗依从性",
+        "社交焦虑",
+        "心理教育",
+        "CBT入门",
+        "治疗联盟",
+        "来访者频繁提问‘我是不是有病？’",
+        "表达‘别人不会这样想’等孤立感",
+        "对布置家庭作业表现出疑虑或回避",
+        "社交焦虑CBT心理教育模块",
+        "向来访者系统介绍社交焦虑的成因、维持机制及CBT治疗原理，建立共同理解与治疗动机。"
+      ],
+      "relative_path": "心理咨询/Family技能/认知行为疗法/二级技能/社交焦虑CBT心理教育模块/SKILL.md"
+    }
+  ]
+}

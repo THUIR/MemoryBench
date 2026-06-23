@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-23T04:39:08+00:00",
+  "family_name": "后现代主义",
+  "skill_id": "a5ea59a8-cd92-5e6c-8254-fdf247150d31",
+  "skill_name": "奇迹询问：理想未来具象化",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "1253a77f-e15e-5f33-bb4b-683201269289",
+      "doc_id": "4ba4d7cb-cbbf-529a-a6d9-96b4e74864c5",
+      "document_title": "1例焦点解决短期疗法在考前焦虑问题中的应用_兰栋栋.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pmt/1例焦点解决短期疗法在考前焦虑问题中的应用_兰栋栋.md",
+      "section": "# 6 咨询过程",
+      "span": {
+        "start": 6931,
+        "end": 7052
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "来访者：可以。\n\n咨询师：如果1年后你睁开眼睛，自己走在大学的校园里，阳光很好，你背着书包去图书馆，一路上有相识的同学在跟你打招呼，专业的学习让你感觉疲惫但充实，你会怎样评价今天的自己。（奇迹询问技术）\n\n来访者（思考）：我会非常感谢我自己。",
+      "metadata": {
+        "document_title": "1例焦点解决短期疗法在考前焦虑问题中的应用_兰栋栋.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "焦点解决短期疗法中的奇迹询问技术",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "激发来访者对理想状态的具象化想象与自我赋能感",
+        "task_family": "目标建构",
+        "method_family": "后现代主义",
+        "stage": "初始评估与关系建立",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "0905d111-0212-563e-945e-2291cc336d56",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 59,
+        "paragraph_end": 61,
+        "heading_path": [
+          "# 6 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1例焦点解决短期疗法在考前焦虑问题中的应用",
+          "# 1一般资料",
+          "# 2 主诉和个人陈述",
+          "# 3评估",
+          "# 4 咨询目标的制定",
+          "# 5制定咨询方案"
+        ],
+        "subsection_headings": [
+          "# 6.1第一次咨询：开场",
+          "# 6.2第二次咨询：心理咨询阶段",
+          "6.3第三次咨询：心理咨询阶段",
+          "6.4第四次咨询：结束与巩固阶段"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "（1）目的：确立咨询关系；全面了解来访者的基本情况收集具体资料；明确咨访双方在咨询过程中的角色，共同确定咨询目标。（2）方法：开场技术。（3）咨询过程如下： $\\textcircled{1}$ 填写咨询登记表，签订知情同意书，陈述保密协议，明确咨访双方在咨询中的责任、权利和义务； $\\textcircled{2}$ 进行自我介绍并对焦点解决短期疗法进行介绍，"
+      }
+    }
+  ]
+}

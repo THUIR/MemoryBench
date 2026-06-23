@@ -1,0 +1,68 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "3401034b-909e-5547-9708-e8d0e94a7852",
+  "skill_name": "CBT焦虑干预四阶段流程",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "d7879182-d3dd-5a4b-9e01-84130913aba7",
+      "doc_id": "6bd11079-beb4-53ab-bd31-1b76fbdcd268",
+      "document_title": "1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+      "section": "8 咨询过程",
+      "span": {
+        "start": 4717,
+        "end": 5089
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "主要方法：放松训练；合理情绪疗法。\n\n主要流程：分析来访者的经历，了解其感受，探究来访者的性格特征；教授来访者放松技巧和练习，以缓解他们对学习的紧张和焦虑；简要介绍ABC模型；安排家庭作业，加强来访者对ABC关系的梳理，要求来访者尽量按照ABC形式表达自己的所有问题；来访者的精神反应还是比较强烈的，不知道该怎么办。心理咨询师传达理解和接受，让来访者进一步详细讨论自己在得知挫折后内心的想法和痛苦，深挖其不合理的信念；通过谈话、启发和引导，最终帮助来访者寻求与此问题相关的令人沮丧和痛苦的非理性信念。\n\n咨询任务：要求来访者仔细思考上述非理性信念通过关注自己的非理性信念并理解自己的问题与非理性信念之间的关系而转移的事件、之前列出的信念，心理咨询师与来访者来回论辩，指导来访者分清不合理信念以及如何用合理信念替代不合理信念。下面是主要咨询片段。",
+      "metadata": {
+        "document_title": "1例因学习受挫致焦虑的高中生心理干预个案报告_吴学琴.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT焦虑干预四阶段流程",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "提供跨会话的阶段性干预路线图",
+        "task_family": "anxiety_intervention",
+        "method_family": "CBT",
+        "stage": "cross_session",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "a1293711-046e-5fe0-afd3-56dfd5b46ff4",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 7,
+        "paragraph_end": 9,
+        "heading_path": [
+          "8 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2 主诉与个人陈述",
+          "3 观察和他人反映",
+          "4 咨询前心理测验结果",
+          "5评估",
+          "6 制定咨询目标"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "咨询分4个阶段，共8次，每周1次， $0 . 5 \\ : \\mathrm { h } \\iota$ 次。"
+      }
+    }
+  ]
+}

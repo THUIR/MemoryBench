@@ -1,0 +1,70 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:12+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "1c396a6c-2634-5249-a8d6-308f20d51645",
+  "skill_name": "核心信念靶向挑战",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "ff67fe48-9bd7-5517-a6d2-9bd0bb35a493",
+      "doc_id": "c588679e-3502-57a3-8b29-ee3acb3267c4",
+      "document_title": "认知疗法视角下的心理咨询案例报告.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/认知疗法视角下的心理咨询案例报告.md",
+      "section": "4咨询过程",
+      "span": {
+        "start": 2727,
+        "end": 2968
+      },
+      "relation_type": "support",
+      "confidence": 0.92,
+      "quote": "4.1咨询关系\n较好.在咨询过程中，小王对咨询师比较信任，自我暴露比较多，也比较配合.\n\n4.2具体的干预措施\n$\\textcircled{1}$ 针对小王人际关系方面的问题，与她进行角色扮演(咨询师扮演室友、来访者扮演自己),在打破室友水壶这起冲突事件中，观察其情绪反应，让其描述具体想法 $\\textcircled{2}$ 针对小王自卑敏感的性格，着重处理她内心中\"她们是故意针对我\"的自动思维和\"我不可爱\"的核心信念。\n\n4.3具体咨询过程\n(1)第一次，2014年4月16日",
+      "metadata": {
+        "document_title": "认知疗法视角下的心理咨询案例报告.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "核心信念靶向挑战",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "松动并修正深层核心信念",
+        "task_family": "认知行为干预",
+        "method_family": "CBT",
+        "stage": "核心信念工作",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "852f77a0-c6c8-5f1f-8667-eee7fe3f7c4f",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 0,
+        "paragraph_end": 2,
+        "heading_path": [
+          "4咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "认知疗法视角下的心理咨询案例报告",
+          "1个案基本情况",
+          "2个案分析",
+          "3咨询计划",
+          "5对个案的总结与思考"
+        ],
+        "subsection_headings": [
+          "4.1咨询关系",
+          "4.2具体的干预措施",
+          "4.3具体咨询过程",
+          "(4)第四次，2014年5月7日",
+          "4.4干预结果"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "较好.在咨询过程中，小王对咨询师比较信任，自我暴露比较多，也比较配合."
+      }
+    }
+  ]
+}

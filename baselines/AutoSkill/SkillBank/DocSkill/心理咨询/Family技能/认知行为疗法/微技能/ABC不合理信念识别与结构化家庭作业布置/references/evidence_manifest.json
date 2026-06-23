@@ -1,0 +1,128 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "b75e5b6c-4859-583a-83b7-a84bad21ee14",
+  "skill_name": "ABC不合理信念识别与结构化家庭作业布置",
+  "support_count": 2,
+  "supports": [
+    {
+      "support_id": "1012ff0e-6176-5306-8c31-c10ccc7fffa0",
+      "doc_id": "fbaa1948-b4d3-50a5-89ae-820c4c0b90bd",
+      "document_title": "1例大学生宿舍人际交往关系引发的一般心理问题的案例_张艳霞.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例大学生宿舍人际交往关系引发的一般心理问题的案例_张艳霞.md",
+      "section": "6 咨询过程",
+      "span": {
+        "start": 3240,
+        "end": 4362
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "第一阶段：诊断评估与咨询关系建立阶段（第一次）。咨询目的：在搜集背景资料的基础上，建立心理咨询师和求助者两者之间良性的咨询关系，并进行初步心理诊断，确定今后进行心理咨询的目标。过程：咨询初期，充分尊重求助者意愿的前提下，利用开放性问题搜集个人相关的背景资料；向求助者简单介绍合理情绪疗法的理论依据和注意事项；通过会谈法等心理咨询方法，引导求助者能够吐纳心声，逐步与其建立良性的咨询关系。基于合理情绪疗法的理论基础，进行初步心理鉴别与诊断，与求助者及其父母进行协商，最终确定心理咨询的目标。\n\n第二阶段：心理帮助阶段——领悟阶段（第二次和第三次）。此次咨询主要目的是： $\\textcircled{1}$ 促进心理咨询师加深对求助者心理求助内容的了解； $\\textcircled{2}$ 深入分析求助者的目前的认知方式。过程：通过咨询师的帮助和引导，促使闫某更好地面对“和舍友吵架”这件事，并认真分析这件事对自身信念产生的不良后果。用ABC理论从深层次挖掘自己的不合理信念，如“就因为前几天和舍友吵架，她们每日刻意排斥我，吵架之后我更不喜欢她们”“要不是和她吵架，我也不会这么憋屈，感觉自己人际关系太糟了”等。针对上述情况，要求闫某对上述列出的不合理信念进行认真分析，为其布置家庭作业，引导其从过度注重自己的内心世界和“吵架”这个诱发事件转移到自身对这件事的不合理信念上来。通过心理咨询，指导求助者渐渐认识到自己的那些“焦虑”等负性情绪是由本人的不合理信念导致的。\n\n第三次咨询主要目的：利用合理情绪疗法进行心理调整，利用角色扮演法让其换位思考，协同求助者分析和解决目前面临的和宿舍同学人际交往不良的“困境”，帮助其学习人际交往中一些沟通的技巧和技能，例如说话方式等。与此同时，在解决“困境”的过程中，引导求助者不断改变自我不良认知、情绪和行为方式。过程：咨询师运用修通技术与闫某对“吵架”这件事进行了深入讨论，就此进行辩论，并利用换位思考的方法帮助闫某建立合理信念。此后，咨询师布置家庭作业：将原来列出的不合理信念与合理信念一一对比；引导闫某细细斟酌作业，使她认识到合理信念对自我情绪和行为的积极作用。\n\n诱发事件：和舍友李某的吵架，并导致宿舍内人际关系很糟糕。求助者的不合理信念： $\\textcircled{1}$ 在晚上宿舍统一熄灯后，李某让其早点睡觉；第二天早上，闫某认为李某以早起的行为来报复她晚睡。 $\\textcircled{2}$ 与宿舍同学李某“吵架”这一件琐事，本人就认定自己在人际交往过程中的表现都很糟糕。自我感受结果：日日感觉如履薄冰，说话、行动谨小慎微，唯恐出差错。一踏入宿舍，就觉得焦虑和压抑的气氛始终围绕着自己。",
+      "metadata": {
+        "document_title": "1例大学生宿舍人际交往关系引发的一般心理问题的案例_张艳霞.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "ABC不合理信念识别与家庭作业布置",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "外化并结构化不合理信念以启动认知重构",
+        "task_family": "cognitive_restructuring",
+        "method_family": "CBT",
+        "stage": "insight_phase",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "87854602-e526-551c-9357-254930ea7e1c",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "会谈",
+          "家庭作业",
+          "作业"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 3,
+        "heading_path": [
+          "6 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1一般资料",
+          "2个人成长经历",
+          "3 主诉和个人自述",
+          "4 评估与诊断",
+          "5 咨询方案"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "第一阶段：诊断评估与咨询关系建立阶段（第一次）。咨询目的：在搜集背景资料的基础上，建立心理咨询师和求助者两者之间良性的咨询关系，并进行初步心理诊断，确定今后进行心理咨询的目标。过程：咨询初期，充分尊重求助者意愿的前提下，利用开放性问题搜集个人相关的背景资料；向求助者简单介绍合理情绪疗法的理论依据和注意事项；通过会谈法等心理咨询方法，引导求助者能够吐纳心声，逐"
+      }
+    },
+    {
+      "support_id": "52e2a842-ae82-510b-a962-e1fcc3c5124d",
+      "doc_id": "66c4b401-25d1-5060-8fc6-028a4d62d1f5",
+      "document_title": "1例考研焦虑的心理咨询案例报告_张欣.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/1例考研焦虑的心理咨询案例报告_张欣.md",
+      "section": "4心理咨询方案",
+      "span": {
+        "start": 2733,
+        "end": 3105
+      },
+      "relation_type": "support",
+      "confidence": 0.98,
+      "quote": "4.3咨询方法\n4.3.1放松训练：因考研在即，小王又急需要缓解自己的焦虑，所以考虑采用呼吸放松法和渐进式肌肉放松训练，能够快速帮助小王平定内心、减轻焦虑、改善睡眠。\n\n4.3.2认知疗法：小王认为自己放弃了保研资格，并且相信自己已经认真学习这么久了，一定可以考上X院校的研究生，不然自己人生就完了。通过提问和自我审查，帮助小王明确自己目前的焦虑主要是自己过分看重考研结果。通过检验错误理念，帮助小王认识到，其实考研也是一场考试，考试结果不仅取决于个人因素（努力程度、心态、身体状况等），还取决于客观因素（考纲、考试难易程度、录取比例等），如果自己真考不上X院校，自己的人生并不会像想象中的糟糕。最后通过语义分析技术和行为矫正技术，纠正小王过分看重考研结果，理性平和面对学习，最终以新的视角看待考研结果和学习，从而达到心理健康、人格完善的状态。",
+      "metadata": {
+        "document_title": "1例考研焦虑的心理咨询案例报告_张欣.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "考研结果归因重构认知干预",
+        "asset_type": "session_skill",
+        "granularity": "session",
+        "asset_node_id": "micro_intervention",
+        "asset_path": "family_root/treatment_framework/session_framework/micro_intervention",
+        "asset_level": 3,
+        "visible_role": "leaf",
+        "objective": "修正灾难化归因与过度个人化认知偏差",
+        "task_family": "cognitive_restructuring",
+        "method_family": "CBT",
+        "stage": "cognitive_reappraisal",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 2,
+        "window_id": "7359edef-8eaa-599c-b607-7bf8aa2f9d27",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 5,
+        "paragraph_end": 6,
+        "heading_path": [
+          "4心理咨询方案"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1个案信息",
+          "2 来访者心理问题评估",
+          "3 评估与诊断",
+          "5 咨询过程",
+          "6 咨询效果",
+          "7 咨询反思"
+        ],
+        "subsection_headings": [
+          "4.1咨询目标",
+          "4.2咨询原理",
+          "4.3咨询方法"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "结合以上评估和诊断，以及来访者当前的状态，咨询师与来访者共同确定咨询方案：自10月25日起，每周一次疗程，一次 $5 0 \\mathrm { { m i n } }$ ，一共7次结案，期间小王依旧接受医院开的泌尿系统的药物治疗，学校心理咨询免费对学生开放。"
+      }
+    }
+  ]
+}

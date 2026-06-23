@@ -1,0 +1,65 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-08T11:05:11+00:00",
+  "family_name": "认知行为疗法",
+  "skill_id": "4bbb9191-446d-599d-b33d-e954078ab418",
+  "skill_name": "CBT-based Self-Acceptance and Perspective Shift Protocol",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "d3536cb1-2db2-5df4-bc51-36b00fe37907",
+      "doc_id": "62e03c66-85e5-5157-b6b0-e526b641255d",
+      "document_title": "少数民族大学生人际关系心理咨询案例分析_吕艾桐.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/cbt/少数民族大学生人际关系心理咨询案例分析_吕艾桐.md",
+      "section": "三、辅导策略及过程",
+      "span": {
+        "start": 2199,
+        "end": 2736
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "# (一)辅导目标与辅导策略\n\n# 1.辅导目标\n\n将小Q对自己的正确认知定为短期目标，将改善人际关系定位为长期目标。\n\n# 2.辅导策略\n\n首先，要以改变认知为主要目标，良好的人际关系一定是要以自我接纳为前提。只有小Q对自己有信心时，接纳不完美的自己,才会去包容他人，才会有下一步的人际交往。其次,要改变其视角，要通过与父母沟通或其他日常事件引导小Q了解到事件总是有其积极的一面，从而培养积极视角。也要引导小Q学会使用积极视角看待自己，看到自己的优势,利用优势部分解决自己面临的问题。最后，长期的咨询过程,可能会出现新的挑战与新的问题，引导小Q学会在遇到问题时如何解决问题，进而在未来的生活中不再惧怕挑战，学会如何应对挑战。\n\n# 3.理论依据\n\n人际关系困难是小Q的诉求，认知行为疗法可以帮助小Q突破已有视角，重新正确看待自己和周围同学。2积极心理疗法可以帮助小Q接纳自己的不足，关注自己的优势,悦纳自我。3鼓励小Q勇敢迈出第一步，并让小Q习得解决问题的能力，在未来能够独自面对困难与挑战，更重要的是能够积极改善情绪问题，提升小Q的积极情绪。\n\n# 4.辅导设置\n\n咨询会谈每周固定时间段一次，一次45分钟，咨询地点在学校心理咨询室，共咨询18次。\n\n# (二)咨询过程",
+      "metadata": {
+        "document_title": "少数民族大学生人际关系心理咨询案例分析_吕艾桐.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "CBT-based Self-Acceptance and Perspective Shift Protocol",
+        "asset_type": "macro_protocol",
+        "granularity": "macro",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "Establish foundational self-acceptance and restructure maladaptive cognitive framing to enable sustainable interpersonal improvement",
+        "task_family": "interpersonal functioning",
+        "method_family": "CBT",
+        "stage": "early-to-mid treatment",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "4b5849e9-3590-50c0-af81-91aaa9eb70a4",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "会谈"
+        ],
+        "paragraph_start": 0,
+        "paragraph_end": 9,
+        "heading_path": [
+          "三、辅导策略及过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "一、个案基本情况",
+          "二、心理评估与诊断",
+          "四、咨询效果评估",
+          "五、反思"
+        ],
+        "subsection_headings": [],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "# (一)辅导目标与辅导策略"
+      }
+    }
+  ]
+}

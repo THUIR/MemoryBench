@@ -1,0 +1,67 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "6cb67b20-4aa8-5993-815f-3c73efdbf11b",
+  "skill_name": "五方联动风险响应协议",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "d08bf6d4-b6c0-50a9-b330-12043e1bc5e5",
+      "doc_id": "02f5b565-c06a-52bc-966a-9a8c1e45233a",
+      "document_title": "针对自伤自杀高风险学生的社会协同干预案例_史明鑫.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/针对自伤自杀高风险学生的社会协同干预案例_史明鑫.md",
+      "section": "# 4 干预策略",
+      "span": {
+        "start": 5019,
+        "end": 5670
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "# 4.2家校社医警五方联动\n4.2.1优化协作机制：教育、卫生健康、公安、家庭等各方建立健全协同机制[5]。各方明确各自的职责和任务，共同开展学生心理健康宣传教育。例如，教育部门组织学校开展心理健康主题班会、讲座等活动，提高学生对心理健康的认识；卫生健康部门提供专业的心理健康知识和治疗资源；公安部门保障学生的人身安全。通过优化协作机制，各方能够形成合力，共同为小林的安全保驾护航。\n\n4.2.2学校主导作用：学校在及时发现小林的情况后，立刻上报教育局。心理教师充分研判案例，明确小林进入一级预警名单，保障小林安全。学校组建“五个一联动包生专班”，包括校级领导、中层干部、班主任、心理老师、关护同学，逐级联动，切实落实安全责任人。在校期间，学校安全负责人加强安全管理。学校还定期开展居家关怀和家访工作，了解小林病情发展情况，与家长共同商讨干预方法。\n\n4.2.3社区资源利用：学校与小林所在社区建立密切联系，将小林的风险及时告知社区书记与网格员，实现小林居家安全24小时动态关注。社区邀请了专业的心理咨询师为小林进行一对一的心理辅导，帮助小林缓解心理压力。同时，社区组织志愿者为小林提供学业辅导。\n\n4.2.4警方介入保障：由于小林父亲可能存在情绪冲动，对孩子实施语言暴力或其他暴力行为，警方及时开展回访工作，充分保障小林在家的人身安全。警方加强了对小林家长的法制教育，提高家长对家庭暴力等违法行为的认识和防范意识。同时，警方提高了对小林网络使用情况及日常生活安全的关注，及时反应，守住生命安全底线。",
+      "metadata": {
+        "document_title": "针对自伤自杀高风险学生的社会协同干预案例_史明鑫.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "五方联动风险响应协议",
+        "asset_type": "safety_rule",
+        "granularity": "session",
+        "asset_node_id": "treatment_framework",
+        "asset_path": "family_root/treatment_framework",
+        "asset_level": 1,
+        "visible_role": "parent",
+        "objective": "建立跨系统风险响应机制",
+        "task_family": "危机干预",
+        "method_family": "社会协同",
+        "stage": "危机稳定期",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "ae1479bd-74a3-58f8-99d8-a13c63d5bc09",
+        "window_strategy": "strict",
+        "anchor_hits": [],
+        "paragraph_start": 3,
+        "paragraph_end": 6,
+        "heading_path": [
+          "# 4 干预策略"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "# 1 案例分析",
+          "# 2 小林的心理评估",
+          "# 3从心理动力学角度对小林进行个案概念化：基于人际关系的视角",
+          "# 4 案例启示"
+        ],
+        "subsection_headings": [
+          "# 4.1开通绿色就医通道，及时转介",
+          "# 4.2家校社医警五方联动",
+          "# 4.3学校心理咨询方案"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "小林的情况表明，学校在处理学生心理问题时需要采取多维度、综合性的应对策略。因此，学校从以下方面提出了应对举措。"
+      }
+    }
+  ]
+}

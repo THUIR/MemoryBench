@@ -1,0 +1,73 @@
+{
+  "schema": "autoskill.document.evidence_manifest.v1",
+  "generated_at": "2026-04-22T03:12:11+00:00",
+  "family_name": "心理动力学",
+  "skill_id": "6a157a5d-e2bc-56ad-97e1-47ea641e498e",
+  "skill_name": "动力学咨询结束阶段结构化整合",
+  "support_count": 1,
+  "supports": [
+    {
+      "support_id": "dec17c9a-5140-5872-8b94-15f828ea5bb7",
+      "doc_id": "c9b685b1-c209-5c9a-838d-f123625fe012",
+      "document_title": "1例心理动力学取向的大学生心理咨询案例报告_陆瑾.md",
+      "source_file": "/Users/panc/AutoSkill/Psy_markdown/pdt/1例心理动力学取向的大学生心理咨询案例报告_陆瑾.md",
+      "section": "4 咨询过程",
+      "span": {
+        "start": 7620,
+        "end": 8168
+      },
+      "relation_type": "support",
+      "confidence": 0.95,
+      "quote": "咨询师：你也发现了你的思维特点了。\n\n4.4 好好再见：在结束中整合自主性（第25次～第28次）\n结束对来访者意味着希望和恐惧，需要充分的时间被讨论。咨询师在进行到20次～24次时，观察发现来访者症状的逐渐消除（咨询中不再伴随大量对焦虑事件的描述，并且来访者常常表示“反正早晚会做完的”“最近好像不那么焦虑了”），在第25次咨询中，咨询师主动和来访者讨论了咨询目标的实现程度以及咨询结束的期望时间，并约定在接下去的几次咨询中为咨询结束做准备，这部分准备包括以下议题：对整个咨询阶段的收获和感受；自己的变化；未来如果面对同类型的问题，应该如何处理；结束咨询引发的分离体验等。\n\n结束阶段的整合帮助小云吸收在咨询中得到的东西，把它们化为己用，提高自主性，在告别中感受成长。\n\n4.5接受督导情况\n本案例在咨询期间，共接受4次注册督导师的个人督导及2次团体督导。督导重要探讨了不同咨询阶段的以下3个难点：一是明确个案概念化，在来访者没有外部压力的前提下，如何理解其内心深处对于既定任务的自发的“焦虑来源”，以及这种“焦虑”和来访者“生存性焦虑”之间的关联。二是如何在咨询过程中引导来访者意识到其过度理智化的叙述特点以及帮助其建立更多情感层面的链接。三是如何理解和处理来访者在咨询中回避及转移话题的动力。",
+      "metadata": {
+        "document_title": "1例心理动力学取向的大学生心理咨询案例报告_陆瑾.md",
+        "domain": "psychology",
+        "extraction_unit": "window",
+        "skill_name": "动力学咨询结束阶段结构化整合",
+        "asset_type": "micro_skill",
+        "granularity": "micro",
+        "asset_node_id": "session_framework",
+        "asset_path": "family_root/treatment_framework/session_framework",
+        "asset_level": 2,
+        "visible_role": "parent",
+        "objective": "促进咨询成果内化与分离体验整合",
+        "task_family": "咨询结束管理",
+        "method_family": "心理动力学",
+        "stage": "结束阶段",
+        "domain_type": "psychology",
+        "taxonomy_id": "psychology",
+        "candidate_slot": 1,
+        "window_id": "05f50b72-ac38-5011-ba4a-8c188066fd30",
+        "window_strategy": "strict",
+        "anchor_hits": [
+          "阶段",
+          "咨询目标"
+        ],
+        "paragraph_start": 63,
+        "paragraph_end": 66,
+        "heading_path": [
+          "4 咨询过程"
+        ],
+        "parent_heading": "",
+        "sibling_headings": [
+          "1 个案信息",
+          "2 个案概念化",
+          "3 咨询方案",
+          "5 咨询效果",
+          "6 案例思考"
+        ],
+        "subsection_headings": [
+          "4.1认真看见：个案概念化绘制咨询地图（第1次～第4次）",
+          "4.2用心听见：非指导性倾听构建咨访同盟（第5次～第10次）",
+          "4.3制造洞见：指导性倾听及诠释让潜意识意识化（第11次～第24次）",
+          "4.4 好好再见：在结束中整合自主性（第25次～第28次）",
+          "4.5接受督导情况"
+        ],
+        "context_snippets": [],
+        "heading_number": "",
+        "heading_kind": "outline_llm",
+        "section_summary": "本阶段主要通过动力学访谈及初始评估，明确来访者的咨询目的。并且通过了解其成长史，构建来访者的成长地图和心理画像（自我、人际关系、防御与适应、认知）。通过了解，小云有3段重要的创伤经历：幼年时期与母亲长达半年的分离，造成分离创伤，并且在童年成长过程中被父母忽视；小学时期曾在公交车上被猥亵，没有告诉父母；高中有过2段被同学霸凌的经历，主要集中在语言的人身攻击上。"
+      }
+    }
+  ]
+}
