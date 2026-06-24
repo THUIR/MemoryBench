@@ -161,10 +161,19 @@ register(MemorySystemSpec(
 ))
 
 register(MemorySystemSpec(
-    name="autoskill",
+    name="autoskill_with_library",
     solver_class="src.solver.autoskill.AutoSkillSolver",
     config_class="src.solver.autoskill.AutoSkillAgentConfig",
-    config_file="configs/memory_systems/autoskill.json",
+    config_file="configs/memory_systems/autoskill_with_library.json",
+    paper_name="AutoSkill + Library",
+    supports_on_policy=False,
+))
+
+register(MemorySystemSpec(
+    name="autoskill_without_library",
+    solver_class="src.solver.autoskill.AutoSkillSolver",
+    config_class="src.solver.autoskill.AutoSkillAgentConfig",
+    config_file="configs/memory_systems/autoskill_without_library.json",
     paper_name="AutoSkill",
     supports_on_policy=False,
 ))

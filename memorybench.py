@@ -7,6 +7,7 @@ from tqdm import tqdm
 from dotenv import load_dotenv
 from typing import List, Dict, Literal
 from src.dataset.base import BaseDataset
+from src.load_results import MemoryBenchResults
 
 load_dotenv()
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -289,3 +290,28 @@ def summary_results(
         overall_z = sum(z_scores) / total_count if total_count > 0 else 0.0
         total_ret["summary"]["z_score"] = overall_z
         return total_ret
+
+# ------------------------------------------------- Load Results -------------------------------------------------
+
+def load_result_summary_table(
+    metric: str,
+    exp: str = "off-policy",
+    dataset_type: str = None,
+    set_name: str = None,
+    baselines=None,
+    models=None,
+    results: MemoryBenchResults | None = None,
+    repo_id: str = None,
+    as_pandas: bool = True,
+):
+    if results is None:
+        results = MemoryBenchResults.from_hf(repo_id=repo_id) if repo_id else MemoryBenchResults.from_hf()
+    return results.summary_table(
+        metric=metric,
+        exp=exp,
+        dataset_type=dataset_type,
+        set_name=set_name,
+        baselines=baselines,
+        models=models,
+        as_pandas=as_pandas,
+    )

@@ -21,6 +21,9 @@
     <img alt="ICML 2026" src="https://img.shields.io/badge/ICML-2026%20Spotlight-red">
   </a>
   <img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%2B-blue">
+  <a href="https://github.com/QingyaoAi/MemoryBench/stargazers">
+    <img alt="Stars" src="https://img.shields.io/github/stars/THUIR/MemoryBench?style=social">
+  </a>
 </p>
 
 <p align="center">
@@ -37,6 +40,7 @@
 
 ## 📢 News
 
+- **2026-06-24** — Off-policy experiment results released on [`LittleDinoC/MemoryBench-Results`](https://huggingface.co/datasets/LittleDinoC/MemoryBench-Results), with Python APIs for loading result files and summary tables.
 - **2026-05-26** — 🌟 Accepted to **ICML 2026** as a **Spotlight paper**.
 - **2026-04-15** — Streamlit frontend released. Configure and run experiments without touching any YAML. See [frontend/README.md](frontend/README.md).
 - **2025-12-08** — Extended version released: [`THUIR/MemoryBench-Full`](https://huggingface.co/datasets/THUIR/MemoryBench-Full).
@@ -88,7 +92,7 @@ MemoryBench tests the harder regime: **multi-task, multi-domain, multilingual ev
 conda create -n memorybench python=3.10 -y
 conda activate memorybench
 
-git clone https://github.com/QingyaoAi/MemoryBench.git
+git clone https://github.com/THUIR/MemoryBench.git
 cd MemoryBench
 
 pip install -r requirements.txt
@@ -97,13 +101,7 @@ pip install -e baselines/mem0          # editable install required by Mem0
 python -c "import nltk; [nltk.download(p) for p in ('punkt','wordnet','stopwords')]"
 ```
 
-### Smoke test (no API keys, no downloads)
-
-```bash
-python smoke_test.py
-```
-
-### Hello World
+### Quick Use 
 
 ```python
 from memorybench import load_memory_bench, evaluate, summary_results
@@ -127,20 +125,11 @@ python -m src.off-policy \
     --set_name Open-Domain
 ```
 
-### Develop offline against the TinyDataset
-
-```bash
-# The TinyDataset ships 3 train + 2 test rows per dataset; no HF download needed.
-export MEMORY_BENCH_PATH=$(pwd)/../TinyDataset
-python -m src.off-policy --memory_system bm25_message --dataset_type single --set_name Locomo-0
-python -m unittest tests.test_refactor -v
-```
-
 ---
 
 ## 📊 Datasets
 
-The full dataset is on Hugging Face: **[`THUIR/MemoryBench`](https://huggingface.co/datasets/THUIR/MemoryBench)**.
+The dataset is on Hugging Face: **[`THUIR/MemoryBench`](https://huggingface.co/datasets/THUIR/MemoryBench)**.
 
 | Domain                | Task Shape  | Datasets                                                                     |
 |-----------------------|-------------|-------------------------------------------------------------------------------|
@@ -259,13 +248,15 @@ With these ports the default `configs/memory_systems/*.json` files work as-is.
 
 ## 🐍 Python API
 
-The benchmark exposes three top-level functions in [`memorybench.py`](memorybench.py).
+The benchmark exposes dataset/evaluation helpers and a small result-loading client in [`memorybench.py`](memorybench.py).
 
-### `load_memory_bench(dataset_type, name, eval_mode=False)`
+### Load MemoryBench
 
-Returns a `BaseDataset` (when `dataset_type="single"`) or a `list[BaseDataset]` (for `"domain"` / `"task"`).
+The API is `load_memory_bench(dataset_type, name, eval_mode=False)`. It returns a `BaseDataset` (when `dataset_type="single"`) or a `list[BaseDataset]` (for `"domain"` / `"task"`).
 
 ```python
+from memorybench import load_memory_bench
+
 ds = load_memory_bench("single", "JRE-L")
 ds.dataset_name           # "JRE-L"
 ds.dataset                # HF DatasetDict with "train" and "test" splits
@@ -273,27 +264,127 @@ ds.has_corpus             # bool — True for LoCoMo/DialSim
 ds.get_data(test_idx=42)  # → row dict
 ```
 
-### `evaluate(dataset_type, name, predicts) → list[dict]`
+### Evaluate
+
+The API is `evaluate(dataset_type, name, predicts) → list[dict]`.
 
 ```python
+from memorybench import evaluate
+
 predicts = [{"test_idx": 0, "response": "...", "dataset": "JRE-L"}, ...]
 details  = evaluate("single", "JRE-L", predicts)
 # [{"dataset": "JRE-L", "test_idx": 0, "metrics": {"Rouge-L": ..., ...}}, ...]
 ```
 
-### `summary_results(dataset_type, name, predicts, evaluate_details)`
+### Summary Results
 
-Mean metrics for a single dataset; min-max-normalized + z-normalized aggregates for a domain or task.
+The API is `summary_results(dataset_type, name, predicts, evaluate_details)`. It returns a mean metrics for a single dataset while also computing min-max-normalized and z-normalized aggregates for a domain or task.
 
 ```python
+from memorybench import summary_results
+
 summary = summary_results("domain", "Open-Domain", predicts, details)
 summary["summary"]["weighted_average"]
 summary["minmax_normalized_average"]
 ```
 
-### Local dataset path
+### Load Published Experiment Results
 
-By default `load_memory_bench` pulls from `THUIR/MemoryBench` and caches under `~/.cache/huggingface/`. Override either via `MEMORY_BENCH_PATH=/abs/path/to/local/dataset` or the **Dataset source** selector in the frontend.
+Published off-policy result files can be loaded from the Hugging Face dataset
+[`LittleDinoC/MemoryBench-Results`](https://huggingface.co/datasets/LittleDinoC/MemoryBench-Results).
+
+Key APIs:
+
+- `MemoryBenchResults.from_hf()` loads the published results from Hugging Face.
+- `load_summary(...)`, `load_predict(...)`, `load_evaluate_details(...)`, and `load_run_config(...)` load one result file.
+- `list_exps()`, `list_models(...)`, `list_set_names(...)`, and `list_baselines(...)` inspect available results.
+
+The example below loads the result for one off-policy run: Qwen3-8B on the Open-Domain group with the A-Mem baseline.
+
+```python
+from memorybench import MemoryBenchResults
+
+results = MemoryBenchResults.from_hf()
+summary = results.load_summary(
+    exp="off-policy",
+    model="Qwen3-8B",
+    dataset_type="domain",
+    set_name="Open-Domain",
+    baseline="a_mem",
+)
+print(summary["summary"])
+```
+
+<details>
+<summary><b>More result-loading examples</b></summary>
+
+```python
+from memorybench import MemoryBenchResults
+
+results = MemoryBenchResults.from_hf()
+
+predicts = results.load_predict(
+    exp="off-policy",
+    model="Qwen3-8B",
+    dataset_type="domain",
+    set_name="Open-Domain",
+    baseline="a_mem",
+)
+
+evaluate_details = results.load_evaluate_details(
+    exp="off-policy",
+    model="Qwen3-8B",
+    dataset_type="domain",
+    set_name="Open-Domain",
+    baseline="a_mem",
+)
+
+run_config = results.load_run_config(
+    exp="off-policy",
+    model="Qwen3-8B",
+    dataset_type="domain",
+    set_name="Open-Domain",
+    baseline="a_mem",
+)
+```
+
+Read a local staged result directory that contains `manifest.jsonl`:
+
+```python
+results = MemoryBenchResults.from_local("/path/to/MemoryBench-Results")
+```
+
+Inspect available results:
+
+```python
+results.list_exps()
+results.list_models(exp="off-policy")
+results.list_set_names(exp="off-policy", model="Qwen3-8B", dataset_type="domain")
+results.list_baselines(
+    exp="off-policy",
+    model="Qwen3-8B",
+    dataset_type="domain",
+    set_name="Open-Domain",
+)
+```
+
+</details>
+
+### Load Result Summaries as a Table
+
+Use `load_result_summary_table(...)` to collect one metric from the `summary` field of matching `summary.json` files and organize the results as a `pandas.DataFrame`.
+
+```python
+from memorybench import load_result_summary_table
+
+table = load_result_summary_table(
+    metric="z_score",
+    exp="off-policy",
+    models=["Qwen3-8B"],
+    dataset_type=None,  # None means both domain and task results.
+    set_name=None,
+)
+```
 
 ---
 
