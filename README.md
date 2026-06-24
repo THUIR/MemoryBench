@@ -40,7 +40,7 @@
 
 ## 📢 News
 
-- **2026-06-24** — Off-policy experiment results released on [`LittleDinoC/MemoryBench-Results`](https://huggingface.co/datasets/LittleDinoC/MemoryBench-Results), with Python APIs for loading result files and summary tables.
+- **2026-06-24** — Off-policy experiment results released on [`THUIR/MemoryBench-Results`](https://huggingface.co/datasets/THUIR/MemoryBench-Results), with Python APIs for loading result files and summary tables.
 - **2026-05-26** — 🌟 Accepted to **ICML 2026** as a **Spotlight paper**.
 - **2026-04-15** — Streamlit frontend released. Configure and run experiments without touching any YAML. See [frontend/README.md](frontend/README.md).
 - **2025-12-08** — Extended version released: [`THUIR/MemoryBench-Full`](https://huggingface.co/datasets/THUIR/MemoryBench-Full).
@@ -290,7 +290,7 @@ summary["minmax_normalized_average"]
 ### Load Published Experiment Results
 
 Published off-policy result files can be loaded from the Hugging Face dataset
-[`LittleDinoC/MemoryBench-Results`](https://huggingface.co/datasets/LittleDinoC/MemoryBench-Results).
+[`THUIR/MemoryBench-Results`](https://huggingface.co/datasets/THUIR/MemoryBench-Results).
 
 Key APIs:
 
