@@ -1,3 +1,10 @@
+"""
+AutoSkill adapted to MemoryBench with native extraction, retrieval, query rewriting, library retrieval, and context rendering.
+
+The generic MemoryBench/off-policy `--retrieve_k` argument is intentionally ignored by AutoSkill;
+use the AutoSkill config JSON to change retrieval settings or run ablations.
+"""
+
 import os
 import sys
 from typing import Any, Dict, List, Literal, Optional, Union
@@ -19,8 +26,15 @@ if AUTOSKILL_ROOT not in sys.path:
     sys.path.insert(0, AUTOSKILL_ROOT)
 
 from autoskill import AutoSkill, AutoSkillConfig  # noqa: E402
-from autoskill.render import _render_one  # noqa: E402
-from autoskill.utils.units import text_units  # noqa: E402
+from autoskill.interactive.app import _top_reference_from_hits  # noqa: E402
+from autoskill.interactive.retrieval import retrieve_hits_by_scope  # noqa: E402
+from autoskill.interactive.rewriting import LLMQueryRewriter  # noqa: E402
+from autoskill.llm.factory import build_llm  # noqa: E402
+from autoskill.render import _render_one, render_skills_context, select_skills_for_context  # noqa: E402
+
+
+def _autoskill_default_common_skillbank() -> str:
+    return os.path.join(AUTOSKILL_ROOT, "SkillBank", "Common")
 
 
 class AutoSkillAgentConfig(BaseModel):
@@ -37,27 +51,27 @@ class AutoSkillAgentConfig(BaseModel):
         description="Directory where AutoSkill writes its SkillBank cache.",
     )
     retrieve_k: int = Field(
-        default=5,
-        description="Number of AutoSkill skills to retrieve for each test query.",
+        default=1,
+        description="Number of AutoSkill skills to retrieve for each test query. AutoSkill interactive default is 1.",
     )
     user_id: str = Field(
         default="memorybench",
         description="User id used by AutoSkill's user-scoped SkillBank.",
     )
     skill_scope: Literal["user", "library", "all"] = Field(
-        default="user",
-        description="Retrieval scope. Off-policy baseline defaults to train-derived user skills only.",
+        default="all",
+        description="Retrieval scope. AutoSkill interactive default is all.",
     )
     min_score: float = Field(
-        default=0.0,
-        description="Minimum retrieval score for skills injected into the prompt.",
+        default=0.4,
+        description="Minimum retrieval score for skills injected into the prompt. AutoSkill interactive default is 0.4.",
     )
     max_context_chars: int = Field(
         default=6000,
         description="Maximum AutoSkill context size injected into the answer prompt.",
     )
     ingest_window: int = Field(
-        default=0,
+        default=6,
         description="If >0, keep only the latest N messages of each training dialog for extraction.",
     )
     autoskill_llm_config: Optional[dict] = Field(
@@ -83,6 +97,26 @@ class AutoSkillAgentConfig(BaseModel):
     bm25_weight: float = Field(
         default=0.1,
         description="Hybrid retrieval BM25 weight inside AutoSkill.",
+    )
+    include_libraries: Optional[bool] = Field(
+        default=None,
+        description="Whether to load AutoSkill shared libraries. Defaults to True when skill_scope is all/library.",
+    )
+    rewrite_mode: Literal["auto", "always", "never"] = Field(
+        default="always",
+        description="AutoSkill interactive retrieval query rewriting mode.",
+    )
+    rewrite_history_turns: int = Field(
+        default=6,
+        description="Recent turns used by AutoSkill's query rewriter.",
+    )
+    rewrite_history_chars: int = Field(
+        default=2000,
+        description="Maximum history units used by AutoSkill's query rewriter.",
+    )
+    rewrite_max_query_chars: int = Field(
+        default=256,
+        description="Maximum units in the rewritten retrieval query.",
     )
 
 
@@ -166,23 +200,33 @@ class AutoSkillAgent(BaseAgent):
         os.makedirs(config.memory_cache_dir, exist_ok=True)
         self.skillbank_dir = os.path.join(config.memory_cache_dir, "SkillBank")
 
+        include_libraries = config.include_libraries
+        if include_libraries is None:
+            include_libraries = str(config.skill_scope or "").strip().lower() in {"all", "library"}
+
         store_config = dict(
             config.autoskill_store_config
             or {
                 "provider": "local",
                 "path": self.skillbank_dir,
-                "include_libraries": False,
+                "include_libraries": bool(include_libraries),
             }
         )
         store_config.setdefault("provider", "local")
         store_config.setdefault("path", self.skillbank_dir)
+        store_config.setdefault("include_libraries", bool(include_libraries))
+        if include_libraries and not (store_config.get("library_dirs") or store_config.get("libraries")):
+            common_skillbank = _autoskill_default_common_skillbank()
+            if os.path.isdir(common_skillbank):
+                store_config["library_dirs"] = [{"name": "Common", "path": common_skillbank}]
 
+        autoskill_llm_config = _to_autoskill_llm_config(
+            config.llm_provider,
+            config.llm_config,
+            config.autoskill_llm_config,
+        )
         autoskill_config = AutoSkillConfig(
-            llm=_to_autoskill_llm_config(
-                config.llm_provider,
-                config.llm_config,
-                config.autoskill_llm_config,
-            ),
+            llm=autoskill_llm_config,
             embeddings=dict(config.autoskill_embeddings_config or {"provider": "hashing", "dims": 256}),
             store=store_config,
             maintenance_strategy=str(config.maintenance_strategy or "llm"),
@@ -192,6 +236,17 @@ class AutoSkillAgent(BaseAgent):
             bm25_weight=float(config.bm25_weight),
         )
         self.sdk = AutoSkill(autoskill_config)
+        self.query_rewriter = None
+        if str(config.rewrite_mode or "never").strip().lower() != "never":
+            try:
+                self.query_rewriter = LLMQueryRewriter(
+                    build_llm(autoskill_llm_config),
+                    max_history_turns=int(config.rewrite_history_turns),
+                    max_history_chars=int(config.rewrite_history_chars),
+                    max_query_chars=int(config.rewrite_max_query_chars),
+                )
+            except Exception:
+                self.query_rewriter = None
 
     def _skill_artifact_path(self, skill) -> str:
         store = getattr(self.sdk, "store", None)
@@ -295,39 +350,47 @@ class AutoSkillAgent(BaseAgent):
         return "\n".join(lines).rstrip() + "\n"
 
     def _render_context_and_trace(self, question: str, hits) -> tuple[str, List[Dict[str, Any]]]:
-        header = (
-            "## AutoSkill Skills\n"
-            "Instructions: Choose the most relevant skill and follow its prompt; ignore if none applies."
+        skills_for_use = [hit.skill for hit in hits if getattr(hit, "skill", None) is not None]
+        selected = select_skills_for_context(
+            skills_for_use,
+            query=question,
+            max_chars=int(self.config.max_context_chars),
         )
-        if question:
-            header += f"\nQuery: {question}"
+        selected_ids = {str(getattr(skill, "id", "") or "") for skill in selected}
+        context = render_skills_context(
+            selected,
+            query=question,
+            max_chars=int(self.config.max_context_chars),
+        ) if selected else ""
 
-        parts = [header]
         trace = []
-        used = text_units(header)
-        max_chars = int(self.config.max_context_chars)
-
-        for rank, hit in enumerate(hits, start=1):
-            remaining = max_chars - used
-            if remaining <= 0:
-                break
-            block = _render_one(hit.skill, index=rank, max_chars=remaining)
-            if not block.strip():
+        rank = 0
+        for hit in hits:
+            skill = getattr(hit, "skill", None)
+            if skill is None or str(getattr(skill, "id", "") or "") not in selected_ids:
                 continue
-            block_units = text_units(block)
-            if used + block_units > max_chars:
-                continue
-            parts.append(block)
-            used += block_units
+            rank += 1
             trace.append(self._skill_to_record(
-                hit.skill,
+                skill,
                 score=float(getattr(hit, "score", 0.0) or 0.0),
                 rank=rank,
                 include_skill_md=False,
-                retrieved_text=block.strip(),
+                retrieved_text=_render_one(skill, index=rank, max_chars=None).strip(),
             ))
 
-        return "\n\n".join(parts).strip() + "\n", trace
+        return context, trace
+
+    def _rewrite_query(self, query: str, messages: Optional[List[Dict[str, str]]] = None) -> str:
+        q = str(query or "").strip()
+        if not q:
+            return ""
+
+        rewrite_mode = str(self.config.rewrite_mode or "never").strip().lower()
+        if rewrite_mode == "never" or self.query_rewriter is None:
+            return q
+        if rewrite_mode not in {"auto", "always"}:
+            return q
+        return self.query_rewriter.rewrite(query=q, messages=_normalize_messages(messages or [])) or q
 
     def add_conversation_to_memory(
         self,
@@ -339,24 +402,36 @@ class AutoSkillAgent(BaseAgent):
             normalized = normalized[-int(self.config.ingest_window):]
         if not normalized:
             return []
+        query = ""
+        for msg in reversed(normalized):
+            if str(msg.get("role") or "").strip().lower() == "user":
+                query = str(msg.get("content") or "").strip()
+                break
+        hits = self.retrieve_memory(query, k=int(self.config.retrieve_k), messages=normalized) if query else []
+        top_ref = _top_reference_from_hits(hits, user_id=self.config.user_id)
         return self.sdk.ingest(
             user_id=self.config.user_id,
             messages=normalized,
             metadata={
                 "channel": "memorybench_off_policy",
                 "conversation_idx": str(conversation_idx),
+                "extraction_reference": top_ref,
             },
         )
 
-    def retrieve_memory(self, content: str, k: int = None):
-        limit = int(k or self.config.retrieve_k)
-        hits = self.sdk.search(
-            str(content or ""),
+    def retrieve_memory(self, content: str, k: int = None, messages: Optional[List[Dict[str, str]]] = None):
+        query = self._rewrite_query(str(content or ""), messages) if messages is not None else str(content or "")
+        limit = int(self.config.retrieve_k)
+        retrieved = retrieve_hits_by_scope(
+            sdk=self.sdk,
+            query=query,
             user_id=self.config.user_id,
-            limit=limit,
             scope=self.config.skill_scope,
+            top_k=limit,
+            min_score=float(self.config.min_score),
+            allow_partial_vectors=False,
         )
-        return [h for h in hits if float(getattr(h, "score", 0.0) or 0.0) >= self.config.min_score]
+        return list(retrieved.get("hits") or [])
 
     def save_memories(self):
         # LocalSkillStore persists every upsert immediately. This method exists for BaseSolver.
@@ -373,30 +448,31 @@ class AutoSkillAgent(BaseAgent):
         retrieve_k: int = None,
     ) -> str:
         question = messages[-1]["content"]
-        hits = self.retrieve_memory(question, k=retrieve_k)
+        search_query = self._rewrite_query(question, messages)
+        hits = self.retrieve_memory(search_query, k=retrieve_k)
         context = ""
         if hits:
-            context, trace = self._render_context_and_trace(question, hits)
+            context, trace = self._render_context_and_trace(search_query, hits)
             self.set_last_memory_trace(trace)
         else:
             self.set_last_memory_trace([])
 
         if lang == "en":
-            user_prompt = f"""AutoSkill context:
+            user_prompt = f"""Skill context:
 {context}
 
 User:
 {question}
 
-Use the AutoSkill context only when it is relevant. Respond naturally and appropriately to the user's input above."""
+Use the skill context only when it is relevant. Respond naturally and appropriately to the user's input above."""
         elif lang == "zh":
-            user_prompt = f"""AutoSkill 记忆技能：
+            user_prompt = f"""可用技能：
 {context}
 
 用户输入：
 {question}
 
-仅在 AutoSkill 技能与当前问题相关时使用它。请准确、自然地回答用户的输入。"""
+仅在技能与当前问题相关时使用它。请准确、自然地回答用户的输入。"""
         else:
             user_prompt = f"{context}\n\nUser:\n{question}"
 

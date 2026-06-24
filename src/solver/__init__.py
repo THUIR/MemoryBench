@@ -51,6 +51,8 @@ class SolverFactory:
         if memory_cache_dir is not None and cls._config_accepts(config_class, "memory_cache_dir"):
             config["memory_cache_dir"] = memory_cache_dir
         for key, value in kwargs.items():
+            if method_name.startswith("autoskill") and key == "retrieve_k":
+                continue
             if cls._config_accepts(config_class, key):
                 config[key] = value
         agent_config = config_class(**config)
