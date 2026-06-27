@@ -466,11 +466,11 @@ If you use MemoryBench in your research, please cite:
 
 ```bibtex
 @inproceedings{ai2026memorybench,
-  title     ={MemoryBench: A Benchmark for Memory and Continual Learning in {LLM} Systems},
-  author    ={Qingyao Ai and Yichen Tang and Changyue Wang and Jianming Long and Weihang Su and Yiqun LIU},
-  booktitle ={Forty-third International Conference on Machine Learning},
-  year      ={2026},
-  url       ={https://openreview.net/forum?id=If4X4W2HWx}
+  title     = {MemoryBench: A Benchmark for Memory and Continual Learning in {LLM} Systems},
+  author    = {Qingyao Ai and Yichen Tang and Changyue Wang and Jianming Long and Weihang Su and Yiqun LIU},
+  booktitle = {Forty-third International Conference on Machine Learning},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=If4X4W2HWx}
 }
 ```
 
