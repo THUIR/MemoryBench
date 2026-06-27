@@ -453,12 +453,10 @@ MemoryBench/
 
 ---
 
-## 📝 Notes & Caveats
+## 📝 Notes
 
-- **`bert_score` truncation bug.** Some datasets (e.g. `JRE-L`) evaluate with [`bert_score`](https://github.com/Tiiiger/bert_score). Locally-loaded models don't truncate inputs — load from Hugging Face Hub to avoid "exceeding max length" errors.
 - **WritingBench evaluator.** Long-form writing datasets use a 7 B critic; we recommend serving [WritingBench-Critic-Model-Qwen-7B](https://huggingface.co/AQuarterMile/WritingBench-Critic-Model-Qwen-7B) via vLLM and pointing `WRITINGBENCH_EVAL_BASE_URL` at it.
 - **Mem0 cost.** `mem0` is slow on `Open-Domain` and `Long-Short`; the run scripts skip these combinations by default — `skip_combinations` in the registry entry.
-- **Secrets.** `API_config.json`, `.env*` (except `.env.example`), and `frontend/runtime_configs/` are all gitignored — see [`.gitignore`](.gitignore).
 
 ---
 
@@ -467,12 +465,12 @@ MemoryBench/
 If you use MemoryBench in your research, please cite:
 
 ```bibtex
-@inproceedings{memorybench2026,
-  title     = {MemoryBench: A Benchmark for Memory and Continual Learning in LLM Systems},
-  author    = {Qingyao Ai, Yichen Tang, Changyue Wang, Jianming Long, Weihang Su, Yiqun Liu},
-  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
-  year      = {2026},
-  note      = {Spotlight}
+@inproceedings{ai2026memorybench,
+  title     ={MemoryBench: A Benchmark for Memory and Continual Learning in {LLM} Systems},
+  author    ={Qingyao Ai and Yichen Tang and Changyue Wang and Jianming Long and Weihang Su and Yiqun LIU},
+  booktitle ={Forty-third International Conference on Machine Learning},
+  year      ={2026},
+  url       ={https://openreview.net/forum?id=If4X4W2HWx}
 }
 ```
 
