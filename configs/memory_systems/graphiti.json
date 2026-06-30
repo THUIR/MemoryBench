@@ -1,0 +1,13 @@
+{
+    "llm_provider": "anthropic",
+    "llm_config": {
+        "model": "glm-5",
+        "temperature": 0.1
+    },
+    "embedder_provider": "huggingface",
+    "embedder_config": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2"
+    },
+    "retrieve_k": 20,
+    "messages_per_episode": 20
+}
