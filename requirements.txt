@@ -33,6 +33,11 @@ nltk
 # mem0
 # mem0ai
 
+# Graphiti (embedded Kuzu graph DB, no server needed)
+# Pinned: the Kuzu backend is deprecated upstream and the baseline relies on
+# this exact extraction pipeline for reproducible benchmark results.
+graphiti-core[kuzu]==0.29.2
+
 # BM25
 whoosh
 
