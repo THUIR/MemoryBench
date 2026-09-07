@@ -40,6 +40,7 @@
 
 ## 📢 News
 
+- **2026-09-07** — Added the llm-as-judge branch, replacing fixed automatic metrics with a unified [0, 1] `llm_judge_score` across all datasets.
 - **2026-06-24** — Off-policy experiment results released on [`THUIR/MemoryBench-Results`](https://huggingface.co/datasets/THUIR/MemoryBench-Results), with Python APIs for loading result files and summary tables.
 - **2026-05-26** — 🌟 Accepted to **ICML 2026** as a **Spotlight paper**.
 - **2026-04-15** — Streamlit frontend released. Configure and run experiments without touching any YAML. See [frontend/README.md](frontend/README.md).
