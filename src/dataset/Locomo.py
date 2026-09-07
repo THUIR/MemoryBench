@@ -1,4 +1,5 @@
 import json
+import os
 from collections import Counter
 import json
 from typing import List, Dict, Any
@@ -9,6 +10,61 @@ ps = PorterStemmer()
 import numpy as np
 import string
 from nltk.translate.meteor_score import meteor_score
+from src.dataset.llm_judge import judge_prompt
+
+LOCOMO_RUBRIC = """Judge factual correctness using only the question, reference answer,
+and evidence. The evidence is authoritative; do not reward unsupported details or
+penalize style, verbosity, or harmless formatting differences.
+
+Score 0-10: 10 fully correct; 8 correct with a minor omission; 5 partially
+correct; 2 mostly incorrect; 0 wrong, contradicted, or unanswered. Use integer
+scores between these anchors when appropriate.
+
+For multi-hop questions, require all requested facts. For temporal questions,
+check dates against the conversation. For lists, penalize missing or unsupported
+items, but not harmless reordering.
+
+CATEGORY 5 RULE (important): the reference for these questions is an option map,
+not the answer itself. Determine which option answers the question by checking
+the subject and claim against the evidence. Select the adversarial option only
+when that exact claim is supported for the person asked about. Otherwise select
+the option whose text is "Not mentioned in the conversation". A response that
+gives the correct option letter, the option text, or a concise equivalent is
+fully correct. Do not mark a correct "Not mentioned" answer wrong merely because
+the evidence mentions a similar event involving a different person."""
+
+LOCOMO_JUDGE_PROMPT_TEMPLATE = """Return ONLY valid JSON with exactly two keys:
+\"score\" (an integer from 0 to 10) and \"reason\" (a concise string).
+
+RUBRIC:
+{rubric}
+
+<QUESTION>
+{question}
+</QUESTION>
+
+<REFERENCE>
+{reference}
+</REFERENCE>
+
+<EVIDENCE>
+{evidence}
+</EVIDENCE>
+
+QUESTION CATEGORY:
+{category}
+
+{category_5_guidance}
+
+<MODEL_RESPONSE>
+{response}
+</MODEL_RESPONSE>
+
+Assign the score after comparing the response with the reference and evidence.
+Before scoring category 5, explicitly resolve the correct option from the
+question's subject and the evidence. If the response selects that option, score
+it as fully correct even when it does not repeat the entire option text.
+Do not include markdown fences or additional keys."""
 
 QA_PROMPT = """
 Based on the above context, write an answer in the form of a short phrase for the following question. Answer with exact words from the context whenever possible.
@@ -130,8 +186,9 @@ class Locomo_Dataset(BaseDataset):
 
     corpus_format = "locomo"
     summary_group_name = "Locomo"
+    evaluate_threads = int(os.getenv("EVALUATE_MAX_CONCURRENT_REQUESTS", "32"))
 
-    def __init__(self, data_path: str = None, dataset_name: str = "Locomo-0", test_metrics: List[str] = ["f1"], max_output_len: int = 8192, eval_mode: bool = True):
+    def __init__(self, data_path: str = None, dataset_name: str = "Locomo-0", test_metrics: List[str] = ["llm_judge_score"], max_output_len: int = 8192, eval_mode: bool = True):
         self.dataset_name = dataset_name
         assert int(self.dataset_name.split("-")[-1]) in list(range(10))
         # self.feedback_type = feedback_type
@@ -202,38 +259,37 @@ class Locomo_Dataset(BaseDataset):
     #     return raw_data
 
     def evaluate_single(self, user_prompt: str, info: Dict[str, Any], llm_response: str) -> Dict[str, float]:
-        if info['category'] == 5:
-            output = get_cat_5_answer(llm_response, info['golden_answer'])
-        else:
-            output = llm_response.strip()
-        answer = info['golden_answer']
-        if info['category'] == 3:
-            answer = answer.split(';')[0].strip()
-        
-        answer = str(answer)
-        
-        # single-hop, temporal, open-domain eval without splitting for sub-answers 
-        if info['category'] in [2, 3, 4]:
-            ems = f1_score(output, answer)
-        
-        # multi-hop eval by splitting entire phrase into sub-answers and computing partial F1 for each
-        elif info['category'] in [1]:
-            ems = f1(output, answer)
+        category = info.get("category", "unknown")
+        reference = info.get("golden_answer", "")
+        evidence = info.get("evidence", [])
+        category_5_guidance = ""
+        if str(category) == "5":
+            category_5_guidance = """CATEGORY 5 OPTION MAP:
+The REFERENCE ANSWER below is a JSON object mapping option letters to option
+text. It intentionally contains both choices and must not be compared as one
+literal answer. Resolve the correct letter from the evidence. In particular,
+attribute each evidence statement to its recorded speaker before deciding
+whether it answers the person named in the question."""
+        prompt = LOCOMO_JUDGE_PROMPT_TEMPLATE.format(
+            rubric=LOCOMO_RUBRIC,
+            question=user_prompt,
+            reference=reference,
+            evidence=evidence,
+            category=category,
+            category_5_guidance=category_5_guidance,
+            response=llm_response,
+        )
+        result = judge_prompt(self.dataset_name, prompt)
+        metrics = {"llm_judge_score": result["llm_judge_score"] / 10.0,
+                "judge_reason": result["judge_reason"],
+                "judge_prompt": result["judge_prompt"],
+                "judge_raw_response": result["judge_raw_response"],
+                "golden_answer": info["golden_answer"],
+                "evidence": info["evidence"]}
+        if result.get("judge_error"):
+            metrics["judge_error"] = True
+        return metrics
 
-        # adversarial eval --> check for selection of correct option
-        elif info['category'] in [5]:
-            if 'no information available' in output.lower() or 'not mentioned' in output.lower():
-                ems = 1
-            else:
-                ems = 0
-        else:
-            raise ValueError
-        return {
-            "f1": ems,
-            'golden_answer': info['golden_answer'],
-            'evidence': info['evidence'],
-        }
-    
 if __name__ == "__main__":
     # Example usage 
     dataset = Locomo_Dataset("./raw/Locomo/locomo10.json", "Locomo-9")
@@ -255,4 +311,3 @@ if __name__ == "__main__":
     }])
     print(">>>>> Evaluation Score:")
     print(json.dumps(score, ensure_ascii=False, indent=2))
-    

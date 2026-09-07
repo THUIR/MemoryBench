@@ -125,14 +125,44 @@ class OpenAILLM(LLMBase):
         Returns:
             str or dict: The processed response.
         """
+        message = response.choices[0].message
+
+        def message_text(value):
+            if isinstance(value, str):
+                return value
+            if isinstance(value, list):
+                parts = []
+                for item in value:
+                    if isinstance(item, str):
+                        parts.append(item)
+                    elif isinstance(item, dict) and isinstance(item.get("text"), str):
+                        parts.append(item["text"])
+                    elif hasattr(item, "text") and isinstance(item.text, str):
+                        parts.append(item.text)
+                return "".join(parts)
+            return ""
+
+        content = message_text(getattr(message, "content", None))
+        if not content.strip():
+            # Some OpenAI-compatible Qwen endpoints put generated text in
+            # reasoning_content and leave content as null, even when thinking
+            # is disabled. Preserve that text for dataset-level parsers.
+            content = message_text(getattr(message, "reasoning_content", None))
+        if not content.strip():
+            extra = getattr(message, "model_extra", {}) or {}
+            for key in ("text", "output", "response"):
+                content = message_text(extra.get(key))
+                if content.strip():
+                    break
+
         if tools:
             processed_response = {
-                "content": response.choices[0].message.content,
+                "content": content,
                 "tool_calls": [],
             }
 
-            if response.choices[0].message.tool_calls:
-                for tool_call in response.choices[0].message.tool_calls:
+            if message.tool_calls:
+                for tool_call in message.tool_calls:
                     processed_response["tool_calls"].append(
                         {
                             "name": tool_call.function.name,
@@ -142,7 +172,7 @@ class OpenAILLM(LLMBase):
 
             return processed_response
         else:
-            return response.choices[0].message.content
+            return content
 
     def generate_response(
         self,

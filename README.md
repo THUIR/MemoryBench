@@ -277,12 +277,12 @@ ds.get_data(test_idx=42)  # → row dict
 ```python
 predicts = [{"test_idx": 0, "response": "...", "dataset": "JRE-L"}, ...]
 details  = evaluate("single", "JRE-L", predicts)
-# [{"dataset": "JRE-L", "test_idx": 0, "metrics": {"Rouge-L": ..., ...}}, ...]
+# [{"dataset": "JRE-L", "test_idx": 0, "metrics": {"llm_judge_score": ...}}, ...]
 ```
 
 ### `summary_results(dataset_type, name, predicts, evaluate_details)`
 
-Mean metrics for a single dataset; min-max-normalized + z-normalized aggregates for a domain or task.
+Mean metrics for a single dataset; min‑max‑normalized and z‑normalized aggregates for a domain or task. Because every current judge score is already in the common [0, 1] range, the original min‑max normalization can directly aggregate those values.
 
 ```python
 summary = summary_results("domain", "Open-Domain", predicts, details)

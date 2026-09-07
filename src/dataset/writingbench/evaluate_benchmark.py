@@ -1,6 +1,7 @@
 import json
 import os
 import argparse
+import re
 import jsonlines
 from tqdm import tqdm
 from .prompt import evaluate_system, evaluate_prompt
@@ -12,11 +13,27 @@ class EvalAgent(object):
     def __init__(self, agent):
         self.agent = agent
     
+    @staticmethod
+    def _parse_json_response(response):
+        if isinstance(response, dict):
+            return response
+        if not isinstance(response, str):
+            raise ValueError("judge response must be a string or object")
+        text = response.strip()
+        text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.IGNORECASE).strip()
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError:
+            start, end = text.find("{"), text.rfind("}")
+            if start < 0 or end <= start:
+                raise ValueError("judge response is not valid JSON")
+            return json.loads(text[start:end + 1])
+
     def success_check_fn_score(self, response):
         try:
-            result = json.loads(response.strip('json|```'))
-        except json.JSONDecodeError as e:
-            print("JSON decode error:", e)
+            result = self._parse_json_response(response)
+        except (TypeError, ValueError, json.JSONDecodeError) as e:
+            print(f"JSON decode error: {e}; response_type={type(response).__name__}; response={response!r}")
             return False
         
         valid_score_values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -46,10 +63,13 @@ class EvalAgent(object):
                 success_check_fn=self.success_check_fn_score
             )
             try:
-                response = json.loads(response.strip('json|```'))
-            except json.JSONDecodeError as e:
-                print("JSON decode error:", e)
-                response = eval(response.strip('json|```'))
+                parsed_response = self._parse_json_response(response)
+            except (TypeError, ValueError, json.JSONDecodeError) as e:
+                print(f"JSON decode error: {e}; response_type={type(response).__name__}; response={response!r}")
+                success = False
+                retry += 1
+                continue
+            response = parsed_response
             retry += 1
         if success:
             return response

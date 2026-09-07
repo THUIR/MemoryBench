@@ -5,6 +5,7 @@ import jsonlines
 import os
 import re
 from src.llms import LlmFactory
+from src.dataset.llm_judge import judge_prompt
 from pydantic import BaseModel, Field
 
 
@@ -30,6 +31,28 @@ Rating Criteria:
 - 3 points: The generated limitation is related to the ground truth, but not identical.
 - 2 points: The generated limitation is only loosely related to the ground truth.
 - 1 point: There is no connection between the generated limitation and the ground truth."""
+
+merge_score_prompt = """Evaluate the overall quality of generated limitations for a scientific paper.
+
+## Request
+{INPUT_PROMPT}
+
+## Generated Limitations
+{GENERATED_LIMITATIONS}
+
+## Reference Limitation
+{GROUND_TRUTH}
+
+## Independent LLM Evaluation Scores
+Each score is produced by an LLM judge and normalized to 0.00-1.00, where higher is better.
+
+1. Whether at least one generated limitation belongs to the requested category: {CATEGORY_SCORE}
+2. Specificity and relatedness to the reference limitation: {RELATEDNESS_SCORE}
+
+## Task
+Give one holistic score from 0 to 10 for whether the generated limitations are valid, specific, in the requested category, and appropriately related to the reference limitation.
+Return ONLY valid JSON with exactly two keys: score (integer 0-10) and reason (string). Do not mention the names or numeric values of the supporting scores in the reason.
+"""
 
 def find_ground_truth(error_type):
     if error_type == "ablation":
@@ -185,7 +208,7 @@ Output only the corresponding number."""
 
 class LimitGen_Dataset(BaseDataset):
 
-    def __init__(self, data_path: str = None, dataset_name: str = "LimitGen-Syn", test_metrics: List[str] = ["accuracy", "rating"], max_output_len: int = 8192, eval_mode: bool = True):
+    def __init__(self, data_path: str = None, dataset_name: str = "LimitGen-Syn", test_metrics: List[str] = ["llm_judge_score"], max_output_len: int = 8192, eval_mode: bool = True):
         self.evaluate_threads = 4
         self.dataset_name = dataset_name
         # self.feedback_type = feedback_type
@@ -374,22 +397,20 @@ class LimitGen_Dataset(BaseDataset):
     def evaluate_single(self, user_prompt: str, info: Dict[str, Any], llm_response: str) -> Dict[str, float]:    
         for cnt in range(5):
             try:
-                return self._evaluate_single(user_prompt, info, llm_response)
+                result = self._evaluate_single(user_prompt, info, llm_response)
+                final_prompt = merge_score_prompt.format(
+                    INPUT_PROMPT=user_prompt,
+                    GENERATED_LIMITATIONS=llm_response,
+                    GROUND_TRUTH=info.get("ground_truth", ""),
+                    CATEGORY_SCORE=f"{1.0 if result['accuracy'] else 0.0:.4f}",
+                    RELATEDNESS_SCORE=f"{result['rating'] / 5.0:.4f}",
+                )
+                final = judge_prompt(self.dataset_name, final_prompt)
+                return {"llm_judge_score": final["llm_judge_score"] / 10.0}
             except Exception as e:
                 print(f"Error during evaluation (attempt {cnt+1}/5): {e}")
         return {
-            "accuracy": False,
-            "rating": 0,
-            "explanation_list": ["Error"],
-            "rating_list": [0],
-            "accuracy_list": [False],
-            "predicted_subtype_list": ["Error"],
-            "ground_truth_subtype": find_ground_truth(info['category']),
-        }
-
-    def evaluate_single_only_one_metric(self, user_prompt: str, info: Dict[str, Any], llm_response: str, evaluate_single_result: Dict[str, float]) -> Dict[str, float]:
-        return {
-            "rating": evaluate_single_result["rating"]
+            "llm_judge_score": 0.0,
         }
     
 if __name__ == "__main__":

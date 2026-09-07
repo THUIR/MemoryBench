@@ -10,13 +10,10 @@ class CriticAgent(object):
                  model_path: str = "",  # Your local path. Please download critic model from https://huggingface.co/AQuarterMile/WritingBench-Critic-Model-Qwen-7B.
                  device: str = "auto"):
         self.system_prompt = system_prompt
-        provider = os.getenv("WRITINGBENCH_EVAL_PROVIDER", "vllm").strip().lower()
-        if provider not in {"vllm", "openai"}:
-            provider = "vllm"
-
-        model_name = os.getenv("WRITINGBENCH_EVAL_MODEL", os.getenv("WRITINGBENCH_VLLM_MODEL", model_path))
-        base_url = os.getenv("WRITINGBENCH_EVAL_BASE_URL", os.getenv("WRITINGBENCH_VLLM_BASE_URL", "http://localhost:12388/v1"))
-        api_key = os.getenv("WRITINGBENCH_EVAL_API_KEY", "").strip()
+        provider = "openai"
+        model_name = os.getenv("EVALUATE_MODEL")
+        base_url = os.getenv("EVALUATE_BASE_URL")
+        api_key = os.getenv("EVALUATE_API_KEY", "").strip()
 
         model_config = {
             "model": model_name,
@@ -52,7 +49,7 @@ class CriticAgent(object):
             max_length: int = 2048):
 
         attempt = 0
-        max_attempts = 1
+        max_attempts = 3
         wait_time = 1
 
         while attempt < max_attempts:
@@ -62,7 +59,10 @@ class CriticAgent(object):
                     max_tokens=max_length,
                     temperature=temperature,
                     top_p=top_p,
+                    extra_body={"chat_template_kwargs": {"enable_thinking": False}},
                 )
+                if response is None or (isinstance(response, str) and not response.strip()):
+                    raise ValueError("judge returned empty content")
                 return response
 
                 # # Apply chat template
@@ -136,12 +136,17 @@ class CriticAgent(object):
         try_times = 0
 
         while try_times < max_try:
-            response = self.call_critic(
-                messages=messages,
-                top_p=top_p,
-                temperature=temperature,
-                max_length=max_length,
-            )
+            try:
+                response = self.call_critic(
+                    messages=messages,
+                    top_p=top_p,
+                    temperature=temperature,
+                    max_length=max_length,
+                )
+            except Exception as exc:
+                print(f"Critic evaluation attempt {try_times + 1} failed: {exc}")
+                try_times += 1
+                continue
 
             if success_check_fn is None:
                 success_check_fn = lambda x: True

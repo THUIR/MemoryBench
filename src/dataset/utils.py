@@ -4,6 +4,7 @@ import ast
 import json
 import datasets
 import importlib
+from pathlib import Path
 from tqdm import tqdm
 from dotenv import load_dotenv
 from typing import List, Dict, Literal, Tuple
@@ -70,13 +71,49 @@ def convert_str_to_obj(example):
     return example
 
 
+def _local_dataset_root(dataset_source: str) -> Path | None:
+    """Return the local dataset root when ``dataset_source`` is a directory."""
+    source = Path(dataset_source).expanduser()
+    return source if source.is_dir() else None
+
+
+def _load_local_dataset(dataset_source: str, dataset_name: str):
+    root = _local_dataset_root(dataset_source)
+    if root is None:
+        return None
+
+    dataset_dir = root / "dataset" / dataset_name
+    if not (dataset_dir / "dataset_dict.json").is_file():
+        return None
+    return datasets.load_from_disk(str(dataset_dir))
+
+
+def _load_local_corpus(dataset_source: str, dataset_name: str):
+    root = _local_dataset_root(dataset_source)
+    if root is None:
+        return None
+
+    corpus_path = root / "corpus" / f"{dataset_name}.jsonl"
+    if not corpus_path.is_file():
+        return None
+    with corpus_path.open("r", encoding="utf-8") as fin:
+        first_line = fin.readline()
+    if not first_line:
+        return None
+    return json.loads(first_line)["text"]
+
+
 def load_from_hf(dataset_name: str):
     hf_datasets_path = os.getenv("MEMORY_BENCH_PATH", "THUIR/MemoryBench")
-    dataset = datasets.load_dataset(hf_datasets_path, dataset_name)
+    dataset = _load_local_dataset(hf_datasets_path, dataset_name)
+    if dataset is None:
+        dataset = datasets.load_dataset(hf_datasets_path, dataset_name)
     dataset = dataset.map(convert_str_to_obj)
     if "Locomo" in dataset_name or "DialSim" in dataset_name:
-        corpus = datasets.load_dataset(hf_datasets_path, data_files=f"corpus/{dataset_name}.jsonl")
-        corpus_text = corpus["train"][0]['text']
+        corpus_text = _load_local_corpus(hf_datasets_path, dataset_name)
+        if corpus_text is None:
+            corpus = datasets.load_dataset(hf_datasets_path, data_files=f"corpus/{dataset_name}.jsonl")
+            corpus_text = corpus["train"][0]['text']
         if "Locomo" in dataset_name:
             corpus = json.loads(corpus_text)["conversation"]
             for session_idx in range(1, len(corpus.keys())):

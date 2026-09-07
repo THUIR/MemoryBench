@@ -54,7 +54,7 @@ class DialSim_Dataset(BaseDataset):
 
     corpus_format = "dialsim"
 
-    def __init__(self, data_path: str = None, dataset_name: str = "DialSim-friends", dataset_size: int = 3000, test_metrics: List[str] = ["accuracy"], max_output_len: int = 8192, eval_mode: bool = True):
+    def __init__(self, data_path: str = None, dataset_name: str = "DialSim-friends", dataset_size: int = 3000, test_metrics: List[str] = ["llm_judge_score"], max_output_len: int = 8192, eval_mode: bool = True):
         self.evaluate_threads = 4
         self.dataset_name = dataset_name
         self.dataset_size = dataset_size
@@ -93,9 +93,9 @@ class DialSim_Dataset(BaseDataset):
 
     def evaluate_single(self, user_prompt: str, info: Dict[str, Any], llm_response: str) -> Dict[str, Any]:
         if llm_response.lower().strip() == info['golden_answer'].lower().strip():
-            return {"accuracy": True}
+            return {"llm_judge_score": 1.0}
         elif llm_response.lower().strip() == f"{info['golden_answer'].lower().strip()}.":
-            return {"accuracy": True}
+            return {"llm_judge_score": 1.0}
         else:
             is_correct = gpt_judge(
                 question=user_prompt,
@@ -103,7 +103,7 @@ class DialSim_Dataset(BaseDataset):
                 answer=llm_response,
                 openai_model=self.openai_model
             )
-            return {"accuracy": is_correct}
+            return {"llm_judge_score": 1.0 if is_correct else 0.0}
 
 if __name__ == "__main__":
     dataset = DialSim_Dataset(data_path="./raw/DialSim")

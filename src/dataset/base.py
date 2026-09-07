@@ -38,6 +38,18 @@ class BaseDataset:
 
         self.data_path = data_path
         self.test_metrics = test_metrics
+        try:
+            self.evaluate_threads = int(
+                os.getenv("EVALUATE_MAX_CONCURRENT_REQUESTS", "8")
+            )
+        except ValueError as exc:
+            raise ValueError(
+                "EVALUATE_MAX_CONCURRENT_REQUESTS must be a positive integer"
+            ) from exc
+        if self.evaluate_threads < 1:
+            raise ValueError(
+                "EVALUATE_MAX_CONCURRENT_REQUESTS must be a positive integer"
+            )
         self.dataset = self._load_data()
         self.max_output_len = max_output_len if max_output_len is not None else 8192
         for set_name in ["train", "test"]:
@@ -162,20 +174,6 @@ class BaseDataset:
         """
         raise NotImplementedError
     
-    def evaluate_single_only_one_metric(self, user_prompt: str, info: Dict[str, Any], llm_response: str, evaluate_single_result: Dict[str, float]) -> Dict[str, float]:
-        """
-        用于根据模型的输出执行自动化评估，只返回主实验表格展示的一个指标
-
-        Args:
-            user_prompt (str): 提供给模型的用户提示
-            info (Dict[str, Any]): 该数据点的附加信息，通常包含真实标签（ground truth）
-            llm_response (str): 大语言模型生成的输出
-
-        Returns:
-            Dict[str, float]: 返回一个包含评估指标的字典，例如 {'accuracy': 1.0}。
-        """
-        return evaluate_single_result
-
     def evaluate(self, responses: List[Dict]) -> List[Dict]:
         """
         评估模型的响应
@@ -208,7 +206,7 @@ class BaseDataset:
                 "test_idx": test_idx,
                 "metrics": metrics
             }
-        max_threads = self.evaluate_threads if hasattr(self, 'evaluate_threads') else 1
+        max_threads = self.evaluate_threads
         with ThreadPoolExecutor(max_workers=max_threads) as executor:
             futures = [executor.submit(_evaluate_single, resp) for resp in responses]
             for future in tqdm(
@@ -223,25 +221,6 @@ class BaseDataset:
         results.sort(key=lambda x: x["test_idx"])
         assert len(results) == len(responses), "Some evaluations are missing"
 
-        # for resp in tqdm(responses, desc="Evaluating responses"):
-        #     test_idx = resp["test_idx"]
-        #     llm_response = resp["response"]
-        #     data = self.get_data(test_idx)
-        #     user_prompt = data.get("input_prompt", "")
-        #     if not user_prompt:
-        #         if "input_chat_messages" in data:
-        #             user_prompt = data["input_chat_messages"]
-        #         else:
-        #             raise ValueError("Data must contain either 'input_prompt' or 'input_chat_messages'")
-        #     info = data["info"]
-        #     # if single_metrics:
-        #     #     metrics = self.evaluate_single_only_one_metric(user_prompt, info, llm_response)
-        #     # else:
-        #     metrics = self.evaluate_single(user_prompt, info, llm_response)
-        #     results.append({
-        #         "test_idx": test_idx,
-        #         "metrics": metrics
-        #     })
         return results
     
     def evaluate_test(self, responses: List[Dict]) -> List[Dict]:

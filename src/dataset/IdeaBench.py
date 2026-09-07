@@ -2,23 +2,19 @@ import os
 import json
 import re
 import random
-import time
 from typing import List, Dict, Any
 
-import torch
 from src.dataset.base import BaseDataset
 from src.llms import LlmFactory
+from src.dataset.llm_judge import judge_metric, judge_prompt
 
-import pandas as pd
-import numpy as np
-from tqdm import tqdm
 from pydantic import BaseModel, Field
 
 
-# import evaluate
-from bert_score import BERTScorer
 
 def extract_info(pattern, text):
+    if not isinstance(text, str):
+        return None
     match = re.search(pattern, text, re.DOTALL)
     if match:
         return match.group(1)
@@ -37,13 +33,13 @@ Format each hypothesis as a brief and concise paragraph.
 IMPORTANT: Separate the 3 hypotheses with '{IDEA_SEPARATOR}'."""
 
 
-RATING_PROMPT_TEMPLATE = """You are an expert in understanding and analyzing scientific content. Your task is to evaluate the degree of overlap between the ideas presented in a hypothesis and the abstract of a scientific paper. Please read both the hypothesis and the abstract carefully. Then, rate the overlap on a scale of 1 to 10, where 1 indicates minimal or no overlap, and 10 indicates a perfect or nearly perfect overlap. Provide a brief explanation for your rating.
+RATING_PROMPT_TEMPLATE = """You are an expert in understanding and analyzing scientific content. Your task is to evaluate the strongest meaningful overlap between the generated hypotheses and the abstract of a scientific paper. Consider every generated hypothesis and do not give preference based on its position. Then, rate the best-supported overlap on a scale of 1 to 10, where 1 indicates minimal or no overlap, and 10 indicates a perfect or nearly perfect overlap. Provide a brief explanation for your rating.
 
 Your output MUST be a JSON object with two keys: "rating" (integer 1-10) and "explanation" (string).
 
-<Hypothesis>
-{hypothesis}
-</Hypothesis>
+<GeneratedHypotheses>
+{hypotheses}
+</GeneratedHypotheses>
 
 <Abstract>
 {abstract}
@@ -57,10 +53,26 @@ Please rank the following hypotheses. Your output should be a numbered list, sta
 2. **Hypothesis A**: (brief rationale)
 ...
 
+You must include every candidate exactly once. Use only the candidate labels
+shown below (for example, A, B, C, D). Do not invent labels or omit labels.
+
 Here are the hypotheses to rank:
 """
 
-merge_score_prompt = """You are an expert scientific researcher and AI assistant. Your task is to evaluate the overall quality of an automatically generated research idea based on the provided context and a set of pre-calculated metrics.
+SHORT_SEMANTIC_ALIGNMENT_PROMPT = """You are evaluating semantic alignment for IdeaBench.
+Return ONLY valid JSON with exactly two keys: score (integer 0-10) and reason (string).
+Compare the generated research hypotheses with the reference abstract. Score only
+meaning preservation, scientific topic alignment, and coverage; do not reward
+surface wording or general fluency.
+
+REFERENCE ABSTRACT:
+{reference}
+
+GENERATED HYPOTHESES:
+{generated}
+"""
+
+merge_score_prompt = """You are an expert scientific researcher and AI assistant. Your task is to evaluate the overall quality of an automatically generated research idea based on the provided context and a set of independent LLM-based evaluation scores.
 
 ## Background Knowledge (Input)
 {INPUT_CONTEXT}
@@ -71,35 +83,50 @@ merge_score_prompt = """You are an expert scientific researcher and AI assistant
 ## Ground Truth Research Idea (Reference)
 {GOLDEN_IDEA}
 
-## Evaluation Metrics
-Below are the calculated metrics comparing the 'Generated Research Idea' to the 'Ground Truth'. Please use them to inform your overall score.
+## Evaluation Scores
+Below are scores produced by separate LLM judges. Every score is normalized to the range 0.00 to 1.00, where a higher score is better. Each description defines what that judge evaluated. These are supporting signals, not ground-truth measurements.
 
-1. Semantic Similarity (bert_score): Measures the semantic similarity between the 'Generated Research Idea' and the 'Ground Truth Research Idea'. Scores range from 0.00 (no similarity) to 1.00 (perfect semantic match).
-bert_score: {bert_score}
+1. Semantic Alignment and Coverage: Measures how well the generated research ideas preserve the meaning, important content, and scientific concepts of the reference idea. Surface wording differences should not be penalized.
+semantic_alignment_score: {SEMANTIC_ALIGNMENT_SCORE}
 
-2. Idea Overlap (llm_rating_score): An LLM-based rating of the idea overlap between the 'Generated Research Idea' and the 'Ground Truth'. Scores range from 1 (minimal overlap) to 10 (perfect overlap).
-llm_rating_score: {llm_rating_score}
+2. Meaningful Idea Overlap: Measures how meaningfully the generated idea overlaps with the reference idea, considering relevance, correspondence of the proposed research direction, and substantive alignment.
+idea_overlap_score: {IDEA_OVERLAP_SCORE}
 
-3. Novelty Insight Score (llm_novelty_ranking_score): Quantifies the novelty of the 'Generated Research Idea' relative to the 'Ground Truth'. This score is derived by ranking the generated idea(s) against the ground truth idea. Scores range from 0.00 to 1.00.
-    * A score near **0.00** means the generated idea is significantly less novel than the ground truth.
-    * A score near **0.50** suggests comparable novelty.
-    * A score near **1.00** means the generated idea is significantly more novel than the ground truth.
-llm_novelty_ranking_score: {llm_novelty_ranking_score}
+3. Novelty: Measures the originality and distinctiveness of the generated ideas relative to the reference idea and the provided background knowledge. A higher score means stronger useful novelty.
+novelty_score: {NOVELTY_SCORE}
 
-4. Feasibility Insight Score (llm_feasibility_ranking_score): Quantifies the feasibility of the 'Generated Research Idea' relative to the 'Ground Truth', using the same ranking methodology as the Novelty Insight Score. Scores range from 0.00 to 1.00.
-    * A score near **0.00** means the generated idea is significantly less feasible than the ground truth.
-    * A score near **0.50** suggests comparable feasibility.
-    * A score near **1.00** means the generated idea is significantly more feasible than the ground truth.
-llm_feasibility_ranking_score: {llm_feasibility_ranking_score}
+4. Feasibility: Measures whether the generated ideas are scientifically plausible, implementable, and supported by a credible research plan. A higher score means stronger feasibility.
+feasibility_score: {FEASIBILITY_SCORE}
 
 ## Task
-Based on a holistic review of the input, output, ground truth, and all the metrics provided above, provide a single integer score from 1 to 10 to represent the overall quality of the generated research idea.
-- 1: Represents extremely poor quality (e.g., incoherent, irrelevant, factually incorrect).
-- 10: Represents excellent quality (e.g., coherent, insightful, novel, feasible, and well-aligned with the background knowledge, nearly indistinguishable from an idea proposed by a human expert).
+Based on the input, generated ideas, reference idea, and the evaluation scores, provide one holistic score from 0 to 10 for the overall quality of the generated research idea.
+- 0: Completely irrelevant, incoherent, or unusable.
+- 10: Scientifically relevant, insightful, novel, feasible, coherent, and well aligned with the research context.
 
-Your response should be only a single integer.
+Return ONLY valid JSON with exactly two keys: score (integer 0-10) and reason (string). Do not mention the names or numeric values of the independent evaluation scores in the reason.
+"""
 
-## Final Score
+COMPACT_MERGE_SCORE_PROMPT = """You are the final evaluator for the IdeaBench research-idea task.
+Return ONLY valid JSON with exactly two keys: score (integer 0-10) and reason (string).
+
+Evaluate the generated research ideas against the reference abstract. Consider:
+scientific relevance, substantive alignment, novelty, feasibility, coherence, and
+whether the response proposes usable research hypotheses. Do not require lexical
+overlap. A response that is fluent but scientifically unrelated must score low.
+
+REFERENCE ABSTRACT:
+{GOLDEN_IDEA}
+
+GENERATED IDEAS:
+{GENERATED_IDEA}
+
+SUPPORTING SCORES:
+semantic alignment: {SEMANTIC_ALIGNMENT_SCORE}
+idea overlap: {IDEA_OVERLAP_SCORE}
+novelty: {NOVELTY_SCORE}
+feasibility: {FEASIBILITY_SCORE}
+
+Return the JSON object now.
 """
 
 class BaseAgentConfig(BaseModel):
@@ -115,7 +142,7 @@ class BaseAgentConfig(BaseModel):
 
 class IdeaBench_Dataset(BaseDataset):
 
-    def __init__(self, data_path: str = "", num_ref: int = 3, all_ref: bool = False, bert_score_model: str = 'microsoft/deberta-xlarge-mnli', test_metrics: List[str] = ['bert_score', 'llm_rating_score', 'llm_novelty_ranking_score', 'llm_feasibility_ranking_score'], max_output_len: int = 8192, eval_mode: bool = True) -> None:
+    def __init__(self, data_path: str = "", num_ref: int = 3, all_ref: bool = False, test_metrics: List[str] = ['llm_judge_score'], max_output_len: int = 8192, eval_mode: bool = True) -> None:
         """
         初始化 IdeaBench 数据集
 
@@ -132,14 +159,6 @@ class IdeaBench_Dataset(BaseDataset):
         # self.feedback_type = feedback_type
         super().__init__(data_path, test_metrics, max_output_len=max_output_len)
 
-        # 初始化评估器
-        if eval_mode:
-            print("Initializing evaluators...")
-            self.scorer = BERTScorer(model_type=bert_score_model, device='cuda:0' if torch.cuda.is_available() else 'cpu')
-        else:
-            self.scorer = None
-        # self.rouge = evaluate.load('rouge')
-        # self.bleu = evaluate.load('bleu')
         
         config = BaseAgentConfig(
             llm_config = {
@@ -201,43 +220,143 @@ class IdeaBench_Dataset(BaseDataset):
     #     print(f"Data loading complete. {len(dataset)} items loaded.")
     #     return dataset
 
-    def _get_llm_rating(self, hypothesis: str, abstract: str) -> Dict:
-        """使用 LLM 对单个 hypothesis 和 abstract 的重叠度进行打分"""
-        prompt = RATING_PROMPT_TEMPLATE.format(hypothesis=hypothesis, abstract=abstract)
+    def _get_llm_rating(self, hypotheses: str, abstract: str) -> Dict:
+        """使用 LLM 对全部 hypotheses 与 abstract 的最佳重叠度进行打分"""
+        prompt = RATING_PROMPT_TEMPLATE.format(hypotheses=hypotheses, abstract=abstract)
         messages = [{'role': 'user', 'content': prompt}]
         
-        response_str = self.openai_model.generate_response(messages)
-        if '```json' in response_str:
-            response_str = extract_info(r'```json\n(.*?)\n```', response_str)
-        try:
-            return json.loads(response_str)
-        except (json.JSONDecodeError, TypeError):
-            print(f"Warning: Could not parse LLM rating response as JSON. Response: {response_str}")
-            return {"rating": None, "explanation": response_str}
+        last_response = None
+        for _ in range(3):
+            try:
+                last_response = self.openai_model.generate_response(
+                    messages,
+                    extra_body={"chat_template_kwargs": {"enable_thinking": False}},
+                )
+            except Exception as exc:
+                last_response = f"API error: {exc}"
+                continue
+            response_str = last_response if isinstance(last_response, str) else str(last_response or "")
+            if '```json' in response_str:
+                response_str = extract_info(r'```json\s*(.*?)\s*```', response_str) or response_str
+            try:
+                result = self._parse_json_object(response_str)
+                rating = int(result.get("rating"))
+                if 1 <= rating <= 10:
+                    return {"rating": rating, "explanation": str(result.get("explanation", ""))}
+            except (AttributeError, TypeError, ValueError, json.JSONDecodeError):
+                pass
+        print(f"Warning: Could not parse LLM rating response as JSON. Response: {last_response}")
+        return {"rating": 0, "explanation": str(last_response or ""), "judge_error": True}
 
     def _get_llm_ranking(self, hypotheses: List[str], abstract: str, criteria: str) -> Dict:
         """使用 LLM 对一组 ideas (包括 ground truth) 进行排序"""
-        candidates = [f"**Hypothesis A**:\n{abstract}"]
+        # IdeaBench only uses the reference idea's position. Asking for that
+        # position directly is much more reliable than asking the endpoint to
+        # generate a long, formatted permutation.
+        candidates = [f"A: {self._compact_text(abstract, 350)}"]
         for i, hyp in enumerate(hypotheses):
             letter = chr(ord('A') + i + 1)
-            candidates.append(f"**Hypothesis {letter}**:\n{hyp}")
+            candidates.append(f"{letter}: {self._compact_text(hyp, 350)}")
         
         
         candidates_text = "\n\n".join(candidates)
-        prompt = f"{RANKING_PROMPT_PREFIX.format(ranking_criteria=criteria)}\n\n{candidates_text}"
+        prompt = (
+            f"Rank these {len(hypotheses) + 1} research ideas by {criteria}, highest first.\n"
+            "Candidate A is the reference idea. What position should candidate A have?\n"
+            f"Return ONLY JSON: {{\"rank\": integer from 1 to {len(hypotheses) + 1}, \"reason\": \"short\"}}.\n\n"
+            f"{candidates_text}"
+        )
         messages = [{'role': 'user', 'content': prompt}]
         
-        response_str = self.openai_model.generate_response(messages)
-        
-        ranking_order = re.findall(r'\*\*\s*Hypothesis\s+([A-Z])\s*\*\*', response_str)
-        
-        ## Hypothesis A的排名
-        if not ranking_order:
-            r_target = 0
-        else:
-            r_target = ranking_order.index('A') + 1
+        last_response = None
+        for _ in range(3):
+            try:
+                last_response = self.openai_model.generate_response(
+                    messages,
+                    max_tokens=128,
+                    extra_body={"chat_template_kwargs": {"enable_thinking": False}},
+                )
+            except Exception as exc:
+                last_response = f"API error: {exc}"
+                continue
+            response_str = last_response if isinstance(last_response, str) else str(last_response or "")
+            rank = self._parse_target_rank(response_str, len(hypotheses) + 1)
+            if rank is not None:
+                return {"r_target": rank, "ranking": ["A"], "raw_text": response_str}
+        print(f"Warning: Could not parse valid {criteria} ranking. Response: {last_response}")
+        return {"r_target": 0, "ranking": [], "raw_text": str(last_response or ""), "judge_error": True}
 
-        return {"r_target": r_target, "ranking": ranking_order, "raw_text": response_str}
+    @staticmethod
+    def _parse_target_rank(response: str, size: int) -> int | None:
+        if not isinstance(response, str):
+            return None
+        text = response.strip()
+        try:
+            obj = IdeaBench_Dataset._parse_json_object(text)
+            value = int(obj.get("rank"))
+            if 1 <= value <= size:
+                return value
+        except (TypeError, ValueError, json.JSONDecodeError):
+            pass
+        if text.isdigit() and 1 <= int(text) <= size:
+            return int(text)
+        return None
+
+    @staticmethod
+    def _parse_ranking_labels(response: str, expected: set[str]) -> List[str] | None:
+        """Extract the first complete ranking when a model repeats its answer."""
+        if not isinstance(response, str):
+            return None
+        # Preferred compact format: ``A,B,C,D``. Restrict this to a line made
+        # solely of labels so letters in the rationale cannot be mistaken for
+        # ranking positions.
+        size = len(expected)
+        for line in response.splitlines():
+            compact = [part.strip().upper() for part in re.split(r"[,;>\s]+", line.strip()) if part.strip()]
+            if len(compact) == size and set(compact) == expected and len(set(compact)) == size:
+                return compact
+
+        labels = [label.upper() for label in re.findall(
+            r"(?:^|\n)\s*(?:\d+\s*[.)-]?\s*)?(?:\*\*)?\s*Hypothesis\s*\(?\s*([A-Z])\s*\)?\b",
+            response,
+            flags=re.IGNORECASE,
+        )]
+        for start in range(max(0, len(labels) - size + 1)):
+            candidate = labels[start:start + size]
+            if len(candidate) == size and set(candidate) == expected and len(set(candidate)) == size:
+                return candidate
+
+        # Also accept inline labels such as "Hypothesis A" when the model
+        # ignores the requested numbered-list format. Still require a complete
+        # permutation so prose cannot silently become a ranking.
+        labels = [label.upper() for label in re.findall(
+            r"\bHypothesis\s*\(?\s*([A-Z])\s*\)?\b", response, flags=re.IGNORECASE
+        )]
+        for start in range(max(0, len(labels) - size + 1)):
+            candidate = labels[start:start + size]
+            if len(candidate) == size and set(candidate) == expected and len(set(candidate)) == size:
+                return candidate
+        return None
+
+    @staticmethod
+    def _parse_json_object(response: str) -> Dict[str, Any]:
+        text = str(response or "").strip()
+        try:
+            value = json.loads(text)
+        except (TypeError, ValueError, json.JSONDecodeError):
+            start = text.find("{")
+            end = text.rfind("}")
+            if start < 0 or end <= start:
+                raise ValueError("rating response is not valid JSON")
+            fragment = text[start:end + 1]
+            try:
+                value = json.loads(fragment)
+            except json.JSONDecodeError:
+                # Qwen occasionally leaves a trailing comma before the close.
+                value = json.loads(re.sub(r",\s*([}\]])", r"\1", fragment))
+        if not isinstance(value, dict):
+            raise ValueError("rating response must be a JSON object")
+        return value
 
 
     def evaluate_single(self, user_prompt: str, info: Dict[str, Any], llm_response: str) -> Dict[str, Any]:
@@ -246,121 +365,86 @@ class IdeaBench_Dataset(BaseDataset):
         if len(hypotheses) < 3:
             # 补齐到 3 个 hypothesis
             hypotheses += ["NULL"] * (3 - len(hypotheses))
+        hypotheses = sorted(hypotheses)
+        hypotheses_text = "\n\n".join(
+            f"Hypothesis {index}: {hypothesis}"
+            for index, hypothesis in enumerate(hypotheses, start=1)
+        )
         
         ground_truth_abstract = info['abstract']
         
-        P, R, F1 = self.scorer.score(hypotheses, [ground_truth_abstract] * len(hypotheses))
-        best_f1_idx = F1.argmax()
-        best_hypothesis = hypotheses[best_f1_idx]
-        
-        # bert_scores = {
-        #     'precision': P[best_f1_idx].item(),
-        #     'recall': R[best_f1_idx].item(),
-        #     'f1': F1[best_f1_idx].item()
-        # }
-        bert_scores_f1 = F1[best_f1_idx].item()
-        # rouge_scores = self.rouge.compute(predictions=[best_hypothesis], references=[ground_truth_abstract])
-        # bleu_scores = self.bleu.compute(predictions=[best_hypothesis], references=[ground_truth_abstract])
+        semantic_prompt = SHORT_SEMANTIC_ALIGNMENT_PROMPT.format(
+            reference=self._compact_text(ground_truth_abstract, 700),
+            generated=self._compact_text(hypotheses_text, 700),
+        )
+        bert_result = judge_prompt(self.dataset_name, semantic_prompt)
+        bert_scores_f1 = bert_result["llm_judge_score"] / 10.0
         
 
-        llm_rating = self._get_llm_rating(best_hypothesis, ground_truth_abstract)
+        llm_rating = self._get_llm_rating(hypotheses_text, ground_truth_abstract)
         
         llm_novelty_ranking = self._get_llm_ranking(hypotheses, ground_truth_abstract, "novelty")
         llm_feasibility_ranking = self._get_llm_ranking(hypotheses, ground_truth_abstract, "feasibility")
 
-        llm_rating_score = llm_rating.get("rating", None)
-        llm_novelty_ranking_score = (llm_novelty_ranking["r_target"] - 1) / len(hypotheses)
-        llm_feasibility_ranking_score = (llm_feasibility_ranking["r_target"] - 1) / len(hypotheses)
+        llm_rating_score = llm_rating.get("rating", 0) or 0
+        llm_novelty_ranking_score = self._ranking_score(llm_novelty_ranking["r_target"], len(hypotheses))
+        llm_feasibility_ranking_score = self._ranking_score(llm_feasibility_ranking["r_target"], len(hypotheses))
+        final_prompt = merge_score_prompt.format(
+            INPUT_CONTEXT=user_prompt,
+            GENERATED_IDEA=hypotheses_text,
+            GOLDEN_IDEA=ground_truth_abstract,
+            SEMANTIC_ALIGNMENT_SCORE=f"{bert_scores_f1:.4f}",
+            IDEA_OVERLAP_SCORE=f"{llm_rating_score / 10.0:.4f}",
+            NOVELTY_SCORE=f"{llm_novelty_ranking_score:.4f}",
+            FEASIBILITY_SCORE=f"{llm_feasibility_ranking_score:.4f}",
+        )
+        final = judge_prompt(self.dataset_name, final_prompt)
+        if final.get("judge_error"):
+            # The full merge prompt contains all three source abstracts and can
+            # exceed the remote judge's reliable request size. Retry with the
+            # information needed for the final decision only.
+            compact_prompt = COMPACT_MERGE_SCORE_PROMPT.format(
+                # This endpoint occasionally returns content=null for longer
+                # judge prompts. Keep the retry well below that request-size
+                # boundary while retaining enough scientific context.
+                GOLDEN_IDEA=self._compact_text(ground_truth_abstract, 900),
+                GENERATED_IDEA=self._compact_text(hypotheses_text, 900),
+                SEMANTIC_ALIGNMENT_SCORE=f"{bert_scores_f1:.4f}",
+                IDEA_OVERLAP_SCORE=f"{llm_rating_score / 10.0:.4f}",
+                NOVELTY_SCORE=f"{llm_novelty_ranking_score:.4f}",
+                FEASIBILITY_SCORE=f"{llm_feasibility_ranking_score:.4f}",
+            )
+            final = judge_prompt(self.dataset_name, compact_prompt)
         return {
-            "generated_hypotheses": hypotheses,
-            "best_hypothesis_by_bertf1": best_hypothesis,
-            "bert_score": bert_scores_f1,
-            "llm_rating_score": llm_rating_score,
-            "llm_novelty_ranking_score": llm_novelty_ranking_score,
-            "llm_feasibility_ranking_score": llm_feasibility_ranking_score,
-            "llm_rating": llm_rating,
-            "llm_novelty_ranking": llm_novelty_ranking,
-            "llm_feasibility_ranking": llm_feasibility_ranking
+            "llm_judge_score": final["llm_judge_score"] / 10.0,
+            "judge_error": bool(
+                llm_rating.get("judge_error")
+                or llm_novelty_ranking.get("judge_error")
+                or llm_feasibility_ranking.get("judge_error")
+                or final.get("judge_error")
+            ),
+            "semantic_alignment_error": bool(bert_result.get("judge_error")),
+            "rating_error": bool(llm_rating.get("judge_error")),
+            "novelty_ranking_error": bool(llm_novelty_ranking.get("judge_error")),
+            "feasibility_ranking_error": bool(llm_feasibility_ranking.get("judge_error")),
+            "merge_error": bool(final.get("judge_error")),
+            "idea_rating": llm_rating.get("rating", 0),
+            "idea_novelty_rank": llm_novelty_ranking.get("r_target", 0),
+            "idea_feasibility_rank": llm_feasibility_ranking.get("r_target", 0),
+            "idea_novelty_ranking": llm_novelty_ranking.get("ranking", []),
+            "idea_feasibility_ranking": llm_feasibility_ranking.get("ranking", []),
         }
-    
-    def from_save_data_to_full_data(self, user_prompt: str, info: Dict[str, Any], llm_response: str, saved_data: Dict[str, Any]) -> Dict[str, Any]:
-        hypotheses = [h.strip() for h in llm_response.split(IDEA_SEPARATOR) if h.strip()]
-        if len(hypotheses) < 3:
-            # 补齐到 3 个 hypothesis
-            hypotheses += ["NULL"] * (3 - len(hypotheses))
-        
-        ground_truth_abstract = info['abstract']
-        
-        P, R, F1 = self.scorer.score(hypotheses, [ground_truth_abstract] * len(hypotheses))
-        best_f1_idx = F1.argmax()
-        best_hypothesis = hypotheses[best_f1_idx]
-        
-        # bert_scores = {
-        #     'precision': P[best_f1_idx].item(),
-        #     'recall': R[best_f1_idx].item(),
-        #     'f1': F1[best_f1_idx].item()
-        # }
-        bert_scores_f1 = F1[best_f1_idx].item()
-        assert bert_scores_f1 == saved_data['bert_score'], f"Mismatch in bert_score: {bert_scores_f1} vs {saved_data['bert_score']}"
-        # rouge_scores = self.rouge.compute(predictions=[best_hypothesis], references=[ground_truth_abstract])
-        # bleu_scores = self.bleu.compute(predictions=[best_hypothesis], references=[ground_truth_abstract])
 
-        # llm_rating = self._get_llm_rating(best_hypothesis, ground_truth_abstract)
-        
-        # llm_novelty_ranking = self._get_llm_ranking(hypotheses, ground_truth_abstract, "novelty")
-        # llm_feasibility_ranking = self._get_llm_ranking(hypotheses, ground_truth_abstract, "feasibility")
+    @staticmethod
+    def _ranking_score(rank: int, hypothesis_count: int) -> float:
+        if rank <= 0 or hypothesis_count <= 0:
+            return 0.0
+        return (rank - 1) / hypothesis_count
 
-        # llm_rating_score = llm_rating.get("rating", None)
-        # llm_novelty_ranking_score = (llm_novelty_ranking["r_target"] - 1) / len(hypotheses)
-        # llm_feasibility_ranking_score = (llm_feasibility_ranking["r_target"] - 1) / len(hypotheses)
-        return {
-            "generated_hypotheses": hypotheses,
-            "best_hypothesis_by_bertf1": best_hypothesis,
-            "bert_score": bert_scores_f1,
-            "llm_rating_score": saved_data['llm_rating_score'],
-            "llm_novelty_ranking_score": saved_data['llm_novelty_ranking_score'],
-            "llm_feasibility_ranking_score": saved_data['llm_feasibility_ranking_score'],
-            # "llm_rating": llm_rating,
-            # "llm_novelty_ranking": llm_novelty_ranking,
-            # "llm_feasibility_ranking": llm_feasibility_ranking
-        }
-        
-    def evaluate_single_only_one_metric(self, user_prompt: str, info: Dict[str, Any], llm_response: str, evaluate_single_result: Dict[str, float]) -> Dict[str, float]:
-        score = evaluate_single_result
-        to_template_dict = {
-            "INPUT_CONTEXT": user_prompt,
-            "GENERATED_IDEA": score['best_hypothesis_by_bertf1'],
-            "GOLDEN_IDEA": info['abstract'],
-            "bert_score": f"{score['bert_score']:.4f}",
-            "llm_rating_score": score['llm_rating_score'] if score['llm_rating_score'] is not None else "N/A",
-            "llm_novelty_ranking_score": f"{score['llm_novelty_ranking_score']:.4f}",
-            "llm_feasibility_ranking_score": f"{score['llm_feasibility_ranking_score']:.4f}",
-        }
-        
-        final_prompt = merge_score_prompt.format(**to_template_dict)
-        # print("Final Prompt:", final_prompt)
-        
-        tries = 3
-        for _ in range(tries):
-            try:
-                llm_final_response = self.openai_model.generate_response([{
-                    "role": "system", "content": "You are a helpful assistant."
-                },
-                {
-                    "role": "user", "content": final_prompt
-                }
-                ])
-                final_score = re.findall(r"\b([1-9]|10)\b", llm_final_response.strip())
-                if len(final_score) > 0:
-                    final_score = int(final_score[0])
-                    break
-            except Exception as e:
-                print("Error in LLM response:", e)
-                final_score = 0
-        
-        return {
-            "llm_as_judge_score": final_score
-        }
+    @staticmethod
+    def _compact_text(value: Any, limit: int) -> str:
+        text = value if isinstance(value, str) else str(value or "")
+        return text if len(text) <= limit else text[:limit] + "\n[truncated]"
 
 if __name__ == "__main__":
 
@@ -394,12 +478,3 @@ if __name__ == "__main__":
     print("\n>>>>> COMPLETE EVALUATION RESULT:")
     print(json.dumps(evaluation_result, indent=2))
     
-    print(">>>>> Only One Metric Evaluation Score:")
-    score = dataset.evaluate_single_only_one_metric(
-        user_prompt = sample_item['input_prompt'],
-        info = sample_item['info'],
-        llm_response = generated_response
-    )
-    
-    print(json.dumps(score, ensure_ascii=False, indent=2))
-

@@ -21,7 +21,7 @@ def check_domain(dataset_name: str, domain1: str, domain2: str) -> bool:
 
 class WritingBench_Dataset(BaseDataset):
 
-    def __init__(self, data_path: str = None, dataset_name: str = "WritingBench-Politics&Law", critic_model_path: str = None, test_metrics: List[str] = ["score"], max_output_len: int = 8192, eval_mode: bool = True):
+    def __init__(self, data_path: str = None, dataset_name: str = "WritingBench-Politics&Law", critic_model_path: str = None, test_metrics: List[str] = ["llm_judge_score"], max_output_len: int = 8192, eval_mode: bool = True):
         self.evaluate_threads = 4
         self.dataset_name = dataset_name
         # self.feedback_type = feedback_type
@@ -61,6 +61,8 @@ class WritingBench_Dataset(BaseDataset):
 
     def evaluate_single(self, user_prompt: str, info: Dict[str, Any], llm_response: str) -> Dict[str, float]:
         result = self._eval_agent.generate_score(llm_response, user_prompt, info['criteria'])
+        result["llm_judge_score"] = float(result["score"]) / 10.0
+        del result["score"]
         result["criteria"] = info['criteria']
         return result
     

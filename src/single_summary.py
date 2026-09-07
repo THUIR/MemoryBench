@@ -10,6 +10,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+def get_llm_judge_score(metrics):
+    score = metrics.get("llm_judge_score")
+    if isinstance(score, bool) or not isinstance(score, (int, float)):
+        raise ValueError("metrics must contain a numeric llm_judge_score")
+    if not 0.0 <= score <= 1.0:
+        raise ValueError("llm_judge_score must be in [0, 1]")
+    return float(score)
+
+
 def main(config_path, result_path, old_min_max_data):
     with open(config_path, "r") as f:
         config = json.load(f)
@@ -17,8 +26,6 @@ def main(config_path, result_path, old_min_max_data):
     tasks = set([config[k]["task_tag"] for k in config])
     domains = set([config[k]["domain_tag"] for k in config])
     end_results = {}
-    
-    datasetname_to_class = {k: get_single_dataset(k, config_path, False) for k in config if len(config[k]["test_metrics"]) > 1}
     
     for tag_type, tags in [("task", tasks), ("domain", domains)]:
         for tag in tags:
@@ -54,26 +61,9 @@ def main(config_path, result_path, old_min_max_data):
                     assert len(evaluate_details) == len(predict_results), f"{baseline_dir} {result_dirs[0]} Length mismatch: {len(evaluate_details)} vs {len(predict_results)}"
 
                     def solve_item(cur_idx, item):
-                        # if item["dataset"].startswith("Locomo") or item["dataset"].startswith("DialSim"):
-                        #     return None, None
-
                         if item["dataset"].startswith("Locomo"):
                             item["dataset"] = "Locomo"
-                        if item["dataset"] in datasetname_to_class:
-                            dataset_class = datasetname_to_class[item["dataset"]]
-                            # if predict_results is None:
-                                # predict_results = json.load(open(os.path.join(baseline_dir, result_dirs[0], "predict.json"), "r"))
-                            predict_result = predict_results[cur_idx]
-                            assert item["test_idx"] == predict_result["test_idx"], f"{baseline_dir} {result_dirs[0]} Index mismatch: {item['test_idx']}-{item['dataset']} vs {predict_result['test_idx']}-{predict_result['dataset']}"
-                            data_item = dataset_class.get_data(item["test_idx"])
-                            assert data_item["test_idx"] == item["test_idx"]
-                            # res = item["metrics"]
-                            res = dataset_class.evaluate_single_only_one_metric(
-                                data_item["input_prompt"] if "input_prompt" in data_item else data_item["input_chat_messages"][-1]['content'],
-                                data_item['info'], predict_result["response"], item["metrics"]
-                            )
-                        else:
-                            res = item["metrics"]
+                        res = item["metrics"]
                         return item["dataset"], res
 
 
@@ -96,10 +86,9 @@ def main(config_path, result_path, old_min_max_data):
                     print(len(total_res))
                     values = {}
                     for dataset_name, res in total_res:
-                        metrics_name = list(res.keys())[0]
                         if dataset_name not in values:
                             values[dataset_name] = []
-                        values[dataset_name].append(res[metrics_name] if type(res[metrics_name]) in [int, float] else (1 if res[metrics_name] is True else 0))
+                        values[dataset_name].append(get_llm_judge_score(res))
 
                     total_ret = {"summary": {}, "average": {}, "minmax_normalized_average": {}, "z_normalized_average": {}}
                     for dataset in values:

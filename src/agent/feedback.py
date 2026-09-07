@@ -167,9 +167,7 @@ class FeedbackAgent(BaseAgent):
             llm_response=llm_response
         )
         
-        # Check if the answer is correct (f1 > 0.5 means correct)
-        f1_score = evaluation_result.get("f1", 0)
-        is_correct = f1_score > 0.5
+        is_correct = self._is_correct_judge_score(evaluation_result)
         
         if is_correct:
             # Positive feedback - end conversation with upvote
@@ -195,8 +193,7 @@ class FeedbackAgent(BaseAgent):
             llm_response=llm_response
         )
         
-        # Check if the answer is correct (accuracy True means correct)
-        is_correct = evaluation_result.get("accuracy", False)
+        is_correct = self._is_correct_judge_score(evaluation_result)
         
         if is_correct:
             # Positive feedback - end conversation with upvote
@@ -204,6 +201,15 @@ class FeedbackAgent(BaseAgent):
         else:
             # Negative feedback - ask to retry with downvote
             return False, "That doesn't seem quite right. Could you please try again and provide a more accurate answer?", ImplicitAction.dislike
+
+    @staticmethod
+    def _is_correct_judge_score(evaluation_result: Dict[str, Any]) -> bool:
+        score = evaluation_result.get("llm_judge_score")
+        if isinstance(score, bool) or not isinstance(score, (int, float)):
+            raise ValueError("Dataset evaluation must return a numeric llm_judge_score")
+        if not 0.0 <= score <= 1.0:
+            raise ValueError("llm_judge_score must be in [0, 1]")
+        return score > 0.5
     
     def _generate_llm_based_feedback(
         self, 

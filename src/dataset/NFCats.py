@@ -35,7 +35,7 @@ class BaseAgentConfig(BaseModel):
 
 class NFCats_Dataset(BaseDataset):
 
-    def __init__(self, data_path: str = None, dataset_name: str = "NFCats", test_metrics: List[str] = ["score"], max_output_len: int = 8192, eval_mode: bool = True):
+    def __init__(self, data_path: str = None, dataset_name: str = "NFCats", test_metrics: List[str] = ["llm_judge_score"], max_output_len: int = 8192, eval_mode: bool = True):
         self.evaluate_threads = 4
         self.dataset_name = dataset_name
         # self.feedback_type = feedback_type
@@ -74,6 +74,7 @@ class NFCats_Dataset(BaseDataset):
 #         return raw_data
 
     def evaluate_single(self, user_prompt: str, info: Dict[str, Any], llm_response: str) -> Dict[str, float]:
+        final_score = 1
         tries = 3
         for _ in range(tries):
             try:
@@ -85,14 +86,14 @@ class NFCats_Dataset(BaseDataset):
                 }
                 ])
                 llm_final_response = llm_final_response.split("###Score of the answer:")[-1].strip()
-                final_score = re.findall(r"\b([1-9]|10)\b", llm_final_response.strip())
-                if len(final_score) > 0:
-                    final_score = int(final_score[0])
+                parsed_scores = re.findall(r"\b([1-5])\b", llm_final_response.strip())
+                if parsed_scores:
+                    final_score = int(parsed_scores[0])
                     break
             except Exception as e:
                 print("Error in LLM response:", e)
                 final_score = 1
-        return {"score": final_score}
+        return {"llm_judge_score": final_score / 5.0}
     
 if __name__ == "__main__":
     # Example usage 

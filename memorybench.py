@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 from typing import List, Dict, Literal
 from src.dataset.base import BaseDataset
 
-load_dotenv()
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+load_dotenv(os.path.join(CURRENT_DIR, ".env"))
 
 os.environ.setdefault("TQDM_ASCII", "1")
 os.environ.setdefault("TQDM_DYNAMIC_NCOLS", "0")
@@ -101,6 +101,12 @@ def load_memory_bench(
 
 def _evaluate(dataset_list: List[BaseDataset], predicts: List[Dict]) -> List[Dict]:
     total_detailed_results = []
+    dataset_names = {dataset.dataset_name for dataset in dataset_list}
+    unknown_names = sorted({item["dataset"] for item in predicts} - dataset_names)
+    if unknown_names:
+        raise ValueError(
+            f"Predictions contain datasets outside the requested group: {unknown_names}"
+        )
     for dataset in dataset_list:
         dataset_name = dataset.dataset_name
         print(f"=== Evaluating dataset: {dataset_name} ===")
@@ -112,6 +118,11 @@ def _evaluate(dataset_list: List[BaseDataset], predicts: List[Dict]) -> List[Dic
         for ret in detailed_results:
             ret["dataset"] = dataset_name
             total_detailed_results.append(ret)
+    if len(total_detailed_results) != len(predicts):
+        raise ValueError(
+            "Evaluation did not return exactly one result per prediction: "
+            f"{len(total_detailed_results)} results for {len(predicts)} predictions"
+        )
     return total_detailed_results
 
 
@@ -157,17 +168,36 @@ def summary_results(
     evaluate_details: List[Dict], 
     min_max_config_file: str = "configs/final_evaluate_summary_wo_details.json",
 ):
+    def _score(item):
+        metrics = item.get("metrics", {})
+        if "llm_judge_score" not in metrics:
+            raise KeyError(
+                f"Missing llm_judge_score for dataset={item.get('dataset')!r}, "
+                f"test_idx={item.get('test_idx')!r}"
+            )
+        value = metrics["llm_judge_score"]
+        if isinstance(value, bool) or not isinstance(value, (int, float)):
+            raise TypeError(
+                f"llm_judge_score must be numeric for dataset={item.get('dataset')!r}, "
+                f"test_idx={item.get('test_idx')!r}; got {value!r}"
+            )
+        if not 0.0 <= value <= 1.0:
+            raise ValueError(
+                f"llm_judge_score must be in [0, 1] for dataset={item.get('dataset')!r}, "
+                f"test_idx={item.get('test_idx')!r}; got {value!r}"
+            )
+        return float(value)
+
     if dataset_type == "single":
         # for single dataset, just average the metrics
-        dataset = load_single_dataset(name, eval_mode=False)
-        test_metrics = dataset.test_metrics
         assert len(predicts) == len(evaluate_details), f"Length mismatch: {len(predicts)} vs {len(evaluate_details)}"
-        summary = {met: [] for met in test_metrics}
+        predict_keys = sorted((name, item["test_idx"]) for item in predicts)
+        detail_keys = sorted((item.get("dataset"), item["test_idx"]) for item in evaluate_details)
+        assert predict_keys == detail_keys, f"Prediction/evaluation case mismatch: {predict_keys} vs {detail_keys}"
+        summary = {"llm_judge_score": []}
         for item in evaluate_details:
             assert item["dataset"] == name, f"Dataset name mismatch: {item['dataset']} vs {name}"
-            for met in test_metrics:
-                value = item["metrics"].get(met, 0.0)
-                summary[met].append(value if type(value) in [int, float] else (1 if value is True else 0))
+            summary["llm_judge_score"].append(_score(item))
         for met in summary:
             scores = summary[met]
             avg_score = sum(scores) / len(scores) if len(scores) > 0 else 0.0
@@ -176,26 +206,34 @@ def summary_results(
 
     else:
         # for domain and task, need to load min_max_config_file and merge metrics
+        if not os.path.isabs(min_max_config_file):
+            min_max_config_file = os.path.join(CURRENT_DIR, min_max_config_file)
         assert os.path.exists(min_max_config_file), f"min_max_config_file {min_max_config_file} not found"
         with open(min_max_config_file, "r") as fin:
             old_min_max_data = json.load(fin)
         try:
-            dataset_min = old_min_max_data[dataset_type][name]["summary"]["dataset_min"]
-            dataset_max = old_min_max_data[dataset_type][name]["summary"]["dataset_max"]
-            dataset_mu = old_min_max_data[dataset_type][name]["summary"]["dataset_mu"]
-            dataset_sigma = old_min_max_data[dataset_type][name]["summary"]["dataset_sigma"]
+            calibration = old_min_max_data[dataset_type][name]["summary"]
         except KeyError:
             raise KeyError(f"{dataset_type} {name} not found in {min_max_config_file}, please check the file")
+
+        has_llm_judge_calibration = calibration.get("metric") == "llm_judge_score"
+        if has_llm_judge_calibration:
+            dataset_min = calibration["dataset_min"]
+            dataset_max = calibration["dataset_max"]
+            dataset_mu = calibration["dataset_mu"]
+            dataset_sigma = calibration["dataset_sigma"]
+        else:
+            raise ValueError(f"{dataset_type} {name} not found in {min_max_config_file}, please check the file")
 
         predicts = sorted(predicts, key=lambda x: (x["dataset"], x["test_idx"]))
         evaluate_details = sorted(evaluate_details, key=lambda x: (x["dataset"], x["test_idx"]))
         assert len(evaluate_details) == len(predicts), f"Length mismatch: {len(evaluate_details)} vs {len(predicts)}"
+        predict_keys = [(item["dataset"], item["test_idx"]) for item in predicts]
+        detail_keys = [(item.get("dataset"), item["test_idx"]) for item in evaluate_details]
+        assert predict_keys == detail_keys, f"Prediction/evaluation case mismatch: {predict_keys} vs {detail_keys}"
 
-        assert os.path.exists(os.path.join(CURRENT_DIR, "configs/datasets/each.json")), "configs/datasets/each.json not found"
         with open(os.path.join(CURRENT_DIR, "configs/datasets/each.json"), "r") as fin:
-            config = json.load(fin) 
-
-        datasetname_to_class = {k: load_single_dataset(k, eval_mode=True) for k in config if len(config[k]["test_metrics"]) > 1} # datasets need to merge metrics
+            config = json.load(fin)
 
         def _summary_group(name):
             """Map a per-row dataset name to its normalization group key.
@@ -223,26 +261,10 @@ def summary_results(
             dynamic_ncols=False,
             ncols=80,
         ):
-            test_metrics = config[item["dataset"]]["test_metrics"]
-            item["dataset"] = _summary_group(item["dataset"])
-            if item["dataset"] in datasetname_to_class: # merge metrics
-                dataset_class = datasetname_to_class[item["dataset"]]
-                predict_result = predicts[cur_idx]
-                assert item["test_idx"] == predict_result["test_idx"], f"Index mismatch: {item['test_idx']}-{item['dataset']} vs {predict_result['test_idx']}-{predict_result['dataset']}"
-                data_item = dataset_class.get_data(item["test_idx"])
-                assert data_item["test_idx"] == item["test_idx"]
-                res = dataset_class.evaluate_single_only_one_metric(
-                    data_item["input_prompt"] if "input_prompt" in data_item else data_item["input_chat_messages"][-1]['content'],
-                    data_item['info'], predict_result["response"], item["metrics"]
-                )
-                metrics_name = list(res.keys())[0]
-            else:
-                res = item["metrics"]
-                metrics_name = test_metrics[0]
-            dataset_name = item["dataset"]
+            dataset_name = _summary_group(item["dataset"])
             if dataset_name not in values:
                 values[dataset_name] = []
-            values[dataset_name].append(res[metrics_name] if type(res[metrics_name]) in [int, float] else (1 if res[metrics_name] is True else 0))
+            values[dataset_name].append(_score(item))
 
         total_ret = {"summary": {}, "average": {}, "minmax_normalized_average": {}, "z_normalized_average": {}, "details": {}}
         for dataset_name, scores in values.items():
@@ -253,17 +275,29 @@ def summary_results(
             avg_score = sum(scores) / len(scores) if len(scores) > 0 else 0.0
             total_ret["average"][dataset] = avg_score
 
-            normalized_score = [
-                (s - dataset_min[dataset]) / (dataset_max[dataset] - dataset_min[dataset]) if dataset_max[dataset] > dataset_min[dataset] else 0.0
-                for s in scores
-            ]
+            if has_llm_judge_calibration:
+                normalized_score = [
+                    (s - dataset_min[dataset]) / (dataset_max[dataset] - dataset_min[dataset])
+                    if dataset_max[dataset] > dataset_min[dataset] else 0.0
+                    for s in scores
+                ]
+            else:
+                # All current evaluators already expose the same 0-1 range.
+                # The checked-in calibration file describes legacy metrics.
+                normalized_score = list(scores)
             normalized_avg_score = sum(normalized_score) / len(normalized_score) if len(normalized_score) > 0 else 0.0
             total_ret["minmax_normalized_average"][dataset] = (sum(normalized_score), len(normalized_score), normalized_avg_score)
 
-            z_scores = [
-                (s - dataset_mu[dataset]) / dataset_sigma[dataset] if dataset_sigma[dataset] > 1e-6 else 0.0
-                for s in scores
-            ]
+            if has_llm_judge_calibration:
+                z_scores = [
+                    (s - dataset_mu[dataset]) / dataset_sigma[dataset]
+                    if dataset_sigma[dataset] > 1e-6 else 0.0
+                    for s in scores
+                ]
+            else:
+                # No judge-specific z calibration exists yet; never mix in
+                # distributions from unrelated ROUGE/F1/1-10 metrics.
+                z_scores = [0.0 for _ in scores]
             z_avg_score = sum(z_scores) / len(z_scores) if len(z_scores) > 0 else 0.0
             total_ret["z_normalized_average"][dataset] = (sum(z_scores), len(z_scores), z_avg_score)
 

@@ -205,10 +205,25 @@ def gpt4o_ckwise_evaluation(instruction, response, checklist, openai_model):
     return llm_judge_response_list
 
 
+def average_normalized_score(checklist_results):
+    if not checklist_results:
+        return 0.0
+
+    scores = []
+    for item in checklist_results:
+        score = item.get("evaluation_score")
+        if isinstance(score, bool) or not isinstance(score, (int, float)):
+            raise ValueError("evaluation_score must be numeric")
+        if not 0.0 <= score <= 10.0:
+            raise ValueError("evaluation_score must be in [0, 10]")
+        scores.append(float(score))
+    return sum(scores) / len(scores) / 10.0
+
+
     
 class HelloBench_Dataset(BaseDataset):
 
-    def __init__(self, data_path: str = None, dataset_name: str = "HelloBench-Creative&Design", test_metrics: List[str] = ["avg_score"], max_output_len: int = 8192, eval_mode: bool = True):
+    def __init__(self, data_path: str = None, dataset_name: str = "HelloBench-Creative&Design", test_metrics: List[str] = ["llm_judge_score"], max_output_len: int = 8192, eval_mode: bool = True):
         self.evaluate_threads = 4
         self.dataset_name = dataset_name
         # self.feedback_type = feedback_type
@@ -264,7 +279,7 @@ class HelloBench_Dataset(BaseDataset):
         )
         # print(">> Checklist-wise Evaluation:", ckwise_evaluation)
         evaluate_results = {
-            "avg_score": sum([item["evaluation_score"] for item in ckwise_evaluation]) / len(ckwise_evaluation) if ckwise_evaluation else 0.0,
+            "llm_judge_score": average_normalized_score(ckwise_evaluation),
             "checklist_evaluation": ckwise_evaluation,
             "checklist": info['checklist'],
         }
