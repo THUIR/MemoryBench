@@ -37,6 +37,7 @@
 
 ## 📢 News
 
+- **2026-09-07** — Added the LLM-as-Judge branch, replacing fixed automatic metrics with a unified [0, 1] `llm_judge_score` across all datasets.
 - **2026-05-26** — 🌟 Accepted to **ICML 2026** as a **Spotlight paper**.
 - **2026-04-15** — Streamlit frontend released. Configure and run experiments without touching any YAML. See [frontend/README.md](frontend/README.md).
 - **2025-12-08** — Extended version released: [`THUIR/MemoryBench-Full`](https://huggingface.co/datasets/THUIR/MemoryBench-Full).
@@ -61,6 +62,8 @@ MemoryBench tests the harder regime: **multi-task, multi-domain, multilingual ev
 - **Plug-and-play extension** via a single registry entry. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 > This repository hosts the lightweight benchmark interface and baseline implementations. The full reproduction code for the paper lives at [LittleDinoC/MemoryBench-code](https://github.com/LittleDinoC/MemoryBench-code).
+
+> **LLM-as-Judge branch:** This branch replaces all fixed automatic metrics (such as BLEU, ROUGE, and F1) with LLM-as-a-Judge evaluation. Every dataset reports a unified `llm_judge_score` normalized to [0, 1], where higher is better.
 
 ---
 
