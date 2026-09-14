@@ -6,7 +6,10 @@ from typing import List, Dict, Any
 
 from src.dataset.base import BaseDataset
 from src.llms import LlmFactory
-from src.dataset.llm_judge import judge_metric, judge_prompt
+from src.dataset.llm_judge import (
+    judge_metric, judge_prompt, RATING_EXPLANATION_SCHEMA, rank_reason_schema,
+    json_schema_response_format,
+)
 
 from pydantic import BaseModel, Field
 
@@ -230,7 +233,12 @@ class IdeaBench_Dataset(BaseDataset):
             try:
                 last_response = self.openai_model.generate_response(
                     messages,
-                    extra_body={"chat_template_kwargs": {"enable_thinking": False}},
+                    response_format=json_schema_response_format(
+                        RATING_EXPLANATION_SCHEMA, "ideabench_rating"
+                    ),
+                    extra_body={
+                        "chat_template_kwargs": {"enable_thinking": False},
+                    },
                 )
             except Exception as exc:
                 last_response = f"API error: {exc}"
@@ -274,7 +282,12 @@ class IdeaBench_Dataset(BaseDataset):
                 last_response = self.openai_model.generate_response(
                     messages,
                     max_tokens=128,
-                    extra_body={"chat_template_kwargs": {"enable_thinking": False}},
+                    response_format=json_schema_response_format(
+                        rank_reason_schema(len(hypotheses) + 1), "ideabench_rank"
+                    ),
+                    extra_body={
+                        "chat_template_kwargs": {"enable_thinking": False},
+                    },
                 )
             except Exception as exc:
                 last_response = f"API error: {exc}"
@@ -398,7 +411,9 @@ class IdeaBench_Dataset(BaseDataset):
             NOVELTY_SCORE=f"{llm_novelty_ranking_score:.4f}",
             FEASIBILITY_SCORE=f"{llm_feasibility_ranking_score:.4f}",
         )
-        final = judge_prompt(self.dataset_name, final_prompt)
+        # Keep the complete final evaluation, including its compact fallback,
+        # within three API attempts total rather than 3 + 3 attempts.
+        final = judge_prompt(self.dataset_name, final_prompt, max_attempts=1)
         if final.get("judge_error"):
             # The full merge prompt contains all three source abstracts and can
             # exceed the remote judge's reliable request size. Retry with the
@@ -414,7 +429,7 @@ class IdeaBench_Dataset(BaseDataset):
                 NOVELTY_SCORE=f"{llm_novelty_ranking_score:.4f}",
                 FEASIBILITY_SCORE=f"{llm_feasibility_ranking_score:.4f}",
             )
-            final = judge_prompt(self.dataset_name, compact_prompt)
+            final = judge_prompt(self.dataset_name, compact_prompt, max_attempts=2)
         return {
             "llm_judge_score": final["llm_judge_score"] / 10.0,
             "judge_error": bool(

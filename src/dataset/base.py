@@ -80,6 +80,34 @@ class BaseDataset:
             int: 数据集的大小
         """
         return self.total_size
+
+    @staticmethod
+    def _contains_judge_error(value: Any) -> bool:
+        """Return whether a metric payload contains a marked judge failure."""
+        if isinstance(value, dict):
+            if value.get("judge_error") is True:
+                return True
+            return any(BaseDataset._contains_judge_error(item) for item in value.values())
+        if isinstance(value, list):
+            return any(BaseDataset._contains_judge_error(item) for item in value)
+        return False
+
+    @classmethod
+    def _case_statistics(cls, detailed_results: List[Dict]) -> Dict[str, Any]:
+        """Summarize successful and failed cases without dropping failures."""
+        total = len(detailed_results)
+        failed = sum(
+            1 for item in detailed_results
+            if cls._contains_judge_error(item.get("metrics", {}))
+        )
+        success = total - failed
+        return {
+            "total_cases": total,
+            "success_cases": success,
+            "failed_cases": failed,
+            "success_rate": success / total if total else 0.0,
+            "failure_rate": failed / total if total else 0.0,
+        }
     
     # def get_test_ids(self, truncate_size: int = 500, test_ratio: float = 0.2) -> Dict[str, List[int]]:
     #     """
@@ -192,20 +220,35 @@ class BaseDataset:
 
         def _evaluate_single(resp):
             test_idx = resp["test_idx"]
-            llm_response = resp["response"]
-            data = self.get_data(test_idx)
-            user_prompt = data.get("input_prompt", "")
-            if not user_prompt:
-                if "input_chat_messages" in data:
-                    user_prompt = data["input_chat_messages"]
-                else:
-                    raise ValueError("Data must contain either 'input_prompt' or 'input_chat_messages'")
-            info = data["info"]
-            metrics = self.evaluate_single(user_prompt, info, llm_response) 
-            return {
-                "test_idx": test_idx,
-                "metrics": metrics
-            }
+            try:
+                llm_response = resp["response"]
+                data = self.get_data(test_idx)
+                user_prompt = data.get("input_prompt", "")
+                if not user_prompt:
+                    if "input_chat_messages" in data:
+                        user_prompt = data["input_chat_messages"]
+                    else:
+                        raise ValueError("Data must contain either 'input_prompt' or 'input_chat_messages'")
+                info = data["info"]
+                metrics = self.evaluate_single(user_prompt, info, llm_response)
+                return {
+                    "test_idx": test_idx,
+                    "metrics": metrics
+                }
+            except Exception as exc:
+                # Evaluation failures are case-level failures. Preserve the
+                # case and continue evaluating the rest of this dataset.
+                return {
+                    "test_idx": test_idx,
+                    "metrics": {
+                        "llm_judge_score": 0.0,
+                        "judge_error": True,
+                        "judge_status": "failed",
+                        "judge_reason": (
+                            f"Case evaluation failure: {type(exc).__name__}: {exc}"
+                        ),
+                    },
+                }
         max_threads = self.evaluate_threads
         with ThreadPoolExecutor(max_workers=max_threads) as executor:
             futures = [executor.submit(_evaluate_single, resp) for resp in responses]
@@ -240,7 +283,14 @@ class BaseDataset:
         test_results = []
         for result in results:
             test_idx = result["test_idx"]
-            metrics = {k: v for k, v in result["metrics"].items() if k in self.test_metrics}
+            # Keep judge diagnostics even when callers request only the score;
+            # otherwise a failed case becomes indistinguishable from a real
+            # zero score in evaluate_test/evaluate_and_summary.
+            metrics = {
+                k: v for k, v in result["metrics"].items()
+                if k in self.test_metrics
+                or k in {"judge_error", "judge_status", "judge_reason"}
+            }
             test_results.append({
                 "test_idx": test_idx,
                 "metrics": metrics

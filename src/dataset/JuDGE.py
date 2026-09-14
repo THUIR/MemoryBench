@@ -117,9 +117,11 @@ class JuDGE_Dataset(BaseDataset):
             "amount_score": "Extract every reference fine or other explicit monetary order and compare amount, currency, and whether it is imposed. Score 10 only when each stated amount and its imposed/waived status matches. A materially wrong or invented fine is a serious error; if the reference states no monetary amount, do not invent a penalty for omission.",
         }
         intermediate_scores = []
+        intermediate_errors = []
         for metric, rubric in rubrics.items():
             result = judge_metric(self.dataset_name, metric, user_prompt, llm_response, info['golden_answer'], rubric)
             intermediate_scores.append(result['llm_judge_score'] / 10.0)
+            intermediate_errors.append(bool(result.get("judge_error")))
         final_prompt = merge_score_prompt.format(
             INPUT_FACTS=user_prompt,
             GENERATED_JUDGMENT=llm_response,
@@ -127,7 +129,14 @@ class JuDGE_Dataset(BaseDataset):
             **{f"S{i}": f"{score:.4f}" for i, score in enumerate(intermediate_scores, 1)},
         )
         final = judge_prompt(self.dataset_name, final_prompt)
-        return {"llm_judge_score": final["llm_judge_score"] / 10.0}
+        judge_failed = bool(any(intermediate_errors) or final.get("judge_error"))
+        return {
+            "llm_judge_score": 0.0 if judge_failed else final["llm_judge_score"] / 10.0,
+            "judge_error": judge_failed,
+            "judge_reason": final.get("judge_reason", ""),
+            "judge_prompt": final.get("judge_prompt", final_prompt),
+            "judge_raw_response": final.get("judge_raw_response", ""),
+        }
     
     
 if __name__ == "__main__":

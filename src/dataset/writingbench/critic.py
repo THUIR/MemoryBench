@@ -3,6 +3,7 @@ import time
 from typing import Callable
 
 from src.llms import LlmFactory
+from src.dataset.llm_judge import SCORE_REASON_SCHEMA, json_schema_response_format
 
 class CriticAgent(object):
     def __init__(self,
@@ -49,7 +50,9 @@ class CriticAgent(object):
             max_length: int = 2048):
 
         attempt = 0
-        max_attempts = 3
+        # EvalAgent owns the three-attempt judge retry policy. Keep one API
+        # attempt here so nested retries do not silently exceed that limit.
+        max_attempts = 1
         wait_time = 1
 
         while attempt < max_attempts:
@@ -59,7 +62,12 @@ class CriticAgent(object):
                     max_tokens=max_length,
                     temperature=temperature,
                     top_p=top_p,
-                    extra_body={"chat_template_kwargs": {"enable_thinking": False}},
+                    response_format=json_schema_response_format(
+                        SCORE_REASON_SCHEMA, "writingbench_score"
+                    ),
+                    extra_body={
+                        "chat_template_kwargs": {"enable_thinking": False},
+                    },
                 )
                 if response is None or (isinstance(response, str) and not response.strip()):
                     raise ValueError("judge returned empty content")
@@ -125,7 +133,7 @@ class CriticAgent(object):
             top_p: float = 0.95,
             temperature: float = 1.0,
             max_length: int = 2048,
-            max_try: int = 5,
+            max_try: int = 1,
             success_check_fn: Callable = None):
         
         messages = [

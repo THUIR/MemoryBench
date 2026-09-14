@@ -32,7 +32,62 @@ MODEL RESPONSE:
 """
 
 
-def _call_api(messages: list[dict], max_tokens: int = 1024) -> str:
+SCORE_REASON_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "score": {"type": "integer", "minimum": 0, "maximum": 10},
+        "reason": {"type": "string"},
+    },
+    "required": ["score", "reason"],
+    "additionalProperties": False,
+}
+
+RATING_EXPLANATION_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "rating": {"type": "integer", "minimum": 1, "maximum": 10},
+        "explanation": {"type": "string"},
+    },
+    "required": ["rating", "explanation"],
+    "additionalProperties": False,
+}
+
+RATING_1_5_EXPLANATION_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "rating": {"type": "integer", "minimum": 1, "maximum": 5},
+        "explanation": {"type": "string"},
+    },
+    "required": ["rating", "explanation"],
+    "additionalProperties": False,
+}
+
+
+def rank_reason_schema(size: int) -> Dict[str, Any]:
+    return {
+        "type": "object",
+        "properties": {
+            "rank": {"type": "integer", "minimum": 1, "maximum": size},
+            "reason": {"type": "string"},
+        },
+        "required": ["rank", "reason"],
+        "additionalProperties": False,
+    }
+
+
+def json_schema_response_format(schema: Dict[str, Any], name: str) -> Dict[str, Any]:
+    """Build the OpenAI-compatible strict JSON Schema response format."""
+    return {
+        "type": "json_schema",
+        "json_schema": {
+            "name": name,
+            "strict": True,
+            "schema": schema,
+        },
+    }
+
+
+def _call_api(messages: list[dict], schema: Dict[str, Any], max_tokens: int = 1024) -> str:
     """Call the configured OpenAI-compatible judge API."""
     from src.llms import LlmFactory
     client = LlmFactory.create("openai", {
@@ -45,6 +100,7 @@ def _call_api(messages: list[dict], max_tokens: int = 1024) -> str:
     })
     return client.generate_response(
         messages,
+        response_format=json_schema_response_format(schema, "memorybench_judge"),
         extra_body={"chat_template_kwargs": {"enable_thinking": False}},
     )
 
@@ -77,23 +133,27 @@ def _parse_score(raw: str) -> tuple[int, str]:
             raise ValueError("judge response is not valid JSON") from nested_exc
     if not isinstance(obj, dict) or "score" not in obj or "reason" not in obj:
         raise ValueError("judge JSON must contain score and reason")
-    try:
-        score = max(0, min(10, int(round(float(obj["score"])))) )
-    except (TypeError, ValueError) as exc:
-        raise ValueError("judge score must be numeric") from exc
-    return score, str(obj["reason"])
+    score_value = obj["score"]
+    if isinstance(score_value, bool) or not isinstance(score_value, int):
+        raise ValueError("judge score must be an integer")
+    if not 0 <= score_value <= 10:
+        raise ValueError("judge score must be in [0, 10]")
+    if not isinstance(obj["reason"], str):
+        raise ValueError("judge reason must be a string")
+    return score_value, obj["reason"]
 
 
 def judge_one(dataset: str, user_prompt: Any, response: Any, info: Dict[str, Any],
-              rubric: str) -> Dict[str, Any]:
+              rubric: str, schema: Dict[str, Any] = None,
+              max_attempts: int = 3) -> Dict[str, Any]:
     prompt = build_judge_prompt(dataset, user_prompt, response, info, rubric)
     last_error = ""
-    for _ in range(3):
+    for _ in range(max_attempts):
         try:
             raw = _call_api([
                 {"role": "system", "content": "You are a strict, evidence-based evaluator."},
                 {"role": "user", "content": prompt},
-            ])
+            ], schema or SCORE_REASON_SCHEMA)
             if not raw:
                 raise ValueError("judge returned empty content")
             score, reason = _parse_score(raw)
@@ -114,17 +174,16 @@ def judge_one(dataset: str, user_prompt: Any, response: Any, info: Dict[str, Any
     }
 
 
-def judge_prompt(dataset: str, prompt: str) -> Dict[str, Any]:
+def judge_prompt(dataset: str, prompt: str, schema: Dict[str, Any] = None,
+                 max_attempts: int = 3) -> Dict[str, Any]:
     """Run a dataset-owned final judge prompt and parse its JSON score."""
     last_error = ""
-    # Empty responses and malformed JSON are transient with the remote judge;
-    # retry enough times that one failed request cannot become a false zero.
-    for _ in range(5):
+    for _ in range(max_attempts):
         try:
             raw = _call_api([
                 {"role": "system", "content": "You are a strict, evidence-based evaluator."},
                 {"role": "user", "content": prompt},
-            ], max_tokens=512)
+            ], schema or SCORE_REASON_SCHEMA, max_tokens=512)
             score, reason = _parse_score(raw)
             return {
                 "llm_judge_score": score,

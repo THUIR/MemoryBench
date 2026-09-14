@@ -84,7 +84,9 @@ class NFCats_Dataset(BaseDataset):
                 {
                     "role": "user", "content": prompt_template.format(user_prompt, llm_response)
                 }
-                ])
+                ], extra_body={
+                    "chat_template_kwargs": {"enable_thinking": False},
+                })
                 llm_final_response = llm_final_response.split("###Score of the answer:")[-1].strip()
                 parsed_scores = re.findall(r"\b([1-5])\b", llm_final_response.strip())
                 if parsed_scores:

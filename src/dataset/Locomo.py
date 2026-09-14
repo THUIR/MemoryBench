@@ -287,6 +287,7 @@ whether it answers the person named in the question."""
                 "golden_answer": info["golden_answer"],
                 "evidence": info["evidence"]}
         if result.get("judge_error"):
+            metrics["llm_judge_score"] = 0.0
             metrics["judge_error"] = True
         return metrics
 

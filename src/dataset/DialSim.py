@@ -40,9 +40,11 @@ def gpt_judge(question, true_answer, answer, openai_model, patience=3):
     user_message = USER_PROMPT.replace("<<<QUESTION>>>", question).replace("<<<TRUEANSWER>>>", true_answer).replace("<<<PREDICTION>>>", answer)
     while patience > 0:
         response = openai_model.generate_response([
-                    {'role': 'system', 'content': SYS_PROMPT},
-                    {'role': 'user', 'content': user_message}
-                ])
+            {'role': 'system', 'content': SYS_PROMPT},
+            {'role': 'user', 'content': user_message}
+        ], extra_body={
+            "chat_template_kwargs": {"enable_thinking": False},
+        })
         if response.lower().strip() in ["correct", "wrong", "correct.", "wrong."]:
             return response.lower().strip().startswith("correct")
         else:

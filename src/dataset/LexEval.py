@@ -141,9 +141,18 @@ class LexEval_Dataset(BaseDataset):
             _rubric_for(self.dataset_name, llm_response),
         )
         if result.get("judge_error"):
-            raise RuntimeError(
-                f"{self.dataset_name} judge failed: {result['judge_reason']}"
-            )
+            # A single malformed/failed judge response must not abort the
+            # dataset's thread pool. Keep the case in the output so summary
+            # code can count it as a failed case and assign zero provisionally.
+            return {
+                "llm_judge_score": 0.0,
+                "judge_error": True,
+                "judge_status": "failed",
+                "judge_reason": result["judge_reason"],
+                "judge_prompt": result.get("judge_prompt", ""),
+                "judge_raw_response": result.get("judge_raw_response", ""),
+                "golden_answer": info["golden_answer"],
+            }
         return {
             "llm_judge_score": result["llm_judge_score"] / 10.0,
             "judge_reason": result["judge_reason"],

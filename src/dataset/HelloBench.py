@@ -3,6 +3,7 @@ from src.llms import LlmFactory
 from typing import List, Dict, Any, Type
 
 from pydantic import Field, BaseModel
+from src.dataset.llm_judge import json_schema_response_format
 import re
 import jsonlines
 import json
@@ -178,19 +179,48 @@ def gpt4o_ckwise_evaluation(instruction, response, checklist, openai_model):
     ]
 
     llm_judge_response_list = []
+    checklist_ids = [int(item["checklist_id"]) for item in checklist]
+    checklist_schema = {
+        "type": "array",
+        "minItems": len(checklist),
+        "maxItems": len(checklist),
+        "items": {
+            "type": "object",
+            "properties": {
+                "checklist_id": {"type": "integer", "enum": checklist_ids},
+                "reason": {"type": "string"},
+                "evaluation_score": {"type": "number", "minimum": 0, "maximum": 10},
+            },
+            "required": ["checklist_id", "reason", "evaluation_score"],
+            "additionalProperties": False,
+        },
+    }
     for _ in range(3):
         try:
-            llm_judge_response = openai_model.generate_response(messages)
-            llm_judge_response = (llm_judge_response.replace("```json", "").replace("```python", "")
-                                    .replace("```", "").replace("\n", "").replace("\\", ""))
+            llm_judge_response = openai_model.generate_response(
+                messages,
+                response_format=json_schema_response_format(
+                    checklist_schema, "hellobench_checklist"
+                ),
+                extra_body={
+                    "chat_template_kwargs": {"enable_thinking": False},
+                },
+            )
             llm_judge_response_list = json.loads(llm_judge_response)
 
             # Ensure the number of checklist items matches the model response
             assert len(llm_judge_response_list) == len(checklist)
+            returned_ids = [int(item["checklist_id"]) for item in llm_judge_response_list]
+            assert set(returned_ids) == set(checklist_ids)
+            assert len(returned_ids) == len(set(returned_ids))
             break
         except Exception as e:
             print(e)
             continue
+
+    if len(llm_judge_response_list) != len(checklist):
+        return [{"checklist_id": -1, "evaluation_score": 0.0,
+                 "reason": "Judge failed after 3 attempts.", "judge_error": True}]
 
     # Process and store evaluation results
     for llm_judge_response_dict in llm_judge_response_list:
@@ -201,6 +231,7 @@ def gpt4o_ckwise_evaluation(instruction, response, checklist, openai_model):
             llm_judge_response_dict["checklist_id"] = -1
             llm_judge_response_dict["evaluation_score"] = 0.0
             llm_judge_response_dict["reason"] = "Error in parsing checklist_id or evaluation_score."
+            llm_judge_response_dict["judge_error"] = True
     
     return llm_judge_response_list
 
@@ -283,6 +314,9 @@ class HelloBench_Dataset(BaseDataset):
             "checklist_evaluation": ckwise_evaluation,
             "checklist": info['checklist'],
         }
+        if any(item.get("judge_error") for item in ckwise_evaluation):
+            evaluate_results["llm_judge_score"] = 0.0
+            evaluate_results["judge_error"] = True
         return evaluate_results
     
     # def get_test_ids(self, truncate_size: int = 500, test_ratio: float = 0.2):

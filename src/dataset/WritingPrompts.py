@@ -48,11 +48,14 @@ class WritingPrompts_Dataset(BaseDataset):
             "detail, and completion. Do not use lexical overlap with the reference "
             "story as a requirement; it is only a reference for task intent.",
         )
-        return {"llm_judge_score": result["llm_judge_score"] / 10.0,
+        metrics = {"llm_judge_score": result["llm_judge_score"] / 10.0,
                 "judge_reason": result["judge_reason"],
                 "judge_prompt": result["judge_prompt"],
                 "judge_raw_response": result["judge_raw_response"],
                 "golden_answer": info["golden_answer"]}
+        if result.get("judge_error"):
+            metrics["judge_error"] = True
+        return metrics
     
 if __name__ == "__main__":
     # Example usage 

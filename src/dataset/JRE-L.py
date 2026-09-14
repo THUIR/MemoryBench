@@ -100,9 +100,11 @@ class JRE_L_Dataset(BaseDataset):
             ),
         }
         intermediate_scores = []
+        intermediate_errors = []
         for metric, rubric in rubrics.items():
             result = judge_metric(self.dataset_name, metric, user_prompt, llm_response, reference, rubric)
             intermediate_scores.append(result['llm_judge_score'] / 10.0)
+            intermediate_errors.append(bool(result.get("judge_error")))
         final_prompt = merge_score_prompt.format(
             INPUT_TEXT=user_prompt,
             GENERATED_ARTICLE=llm_response,
@@ -114,7 +116,14 @@ class JRE_L_Dataset(BaseDataset):
             LANGUAGE_SCORE=f"{intermediate_scores[4]:.4f}",
         )
         final = judge_prompt(self.dataset_name, final_prompt)
-        return {"llm_judge_score": final["llm_judge_score"] / 10.0}
+        judge_failed = bool(any(intermediate_errors) or final.get("judge_error"))
+        return {
+            "llm_judge_score": 0.0 if judge_failed else final["llm_judge_score"] / 10.0,
+            "judge_error": judge_failed,
+            "judge_reason": final.get("judge_reason", ""),
+            "judge_prompt": final.get("judge_prompt", final_prompt),
+            "judge_raw_response": final.get("judge_raw_response", ""),
+        }
         
 if __name__ == "__main__":
     # Example usage

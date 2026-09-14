@@ -5,7 +5,9 @@ import jsonlines
 import os
 import re
 from src.llms import LlmFactory
-from src.dataset.llm_judge import judge_prompt
+from src.dataset.llm_judge import (
+    judge_prompt, RATING_1_5_EXPLANATION_SCHEMA, json_schema_response_format,
+)
 from pydantic import BaseModel, Field
 
 
@@ -304,7 +306,7 @@ class LimitGen_Dataset(BaseDataset):
         except (json.JSONDecodeError, TypeError):
             limits = ["Invalid Message"]
             
-        result = {"ground_truth": info["ground_truth"]}
+        result = {"ground_truth": info["ground_truth"], "judge_error": False}
         
         # print(USER_INPUT)
         acc_list = []
@@ -322,7 +324,13 @@ class LimitGen_Dataset(BaseDataset):
             # print("Generated Limitation:", limit)
             msgs = prepare_aspect_check_message(info['category'], limit)
             # print("Aspect Check Message:", msgs)
-            response = self.openai_model.generate_response(msgs)
+            response = self.openai_model.generate_response(
+                msgs,
+                extra_body={
+                    "guided_choice": ["yes", "no"],
+                    "chat_template_kwargs": {"enable_thinking": False},
+                },
+            )
             
             
             # print("Aspect Check Response:", response)
@@ -332,6 +340,7 @@ class LimitGen_Dataset(BaseDataset):
                 response = "no"
             else:
                 response = "invalid"
+                result["judge_error"] = True
                 
             if response == "yes":
                 if info['category'] in ["data", "inappropriate"]:
@@ -346,13 +355,21 @@ class LimitGen_Dataset(BaseDataset):
                     print("invalid subtype")
                     raise ValueError("invalid subtype")
                 
-                response = self.openai_model.generate_response(prepare_subtype_classification_message(info['category'], limit))
+                subtype_count = 4 if info['category'] in ["citation", "review", "description"] else 5
+                response = self.openai_model.generate_response(
+                    prepare_subtype_classification_message(info['category'], limit),
+                    extra_body={
+                        "guided_choice": [str(i) for i in range(1, subtype_count + 1)],
+                        "chat_template_kwargs": {"enable_thinking": False},
+                    },
+                )
                         
                 try:
                     aspect = response
                     subtype = aspects[int(aspect.strip()[0])-1]
                 except:
                     subtype = response
+                    result["judge_error"] = True
                 
                 if subtype == ground_truth_subtype:
                     acc = True
@@ -367,7 +384,11 @@ class LimitGen_Dataset(BaseDataset):
                             "role": "user",
                             "content": USER_INPUT
                         }
-                    ])
+                    ], response_format=json_schema_response_format(
+                        RATING_1_5_EXPLANATION_SCHEMA, "limitgen_rating"
+                    ), extra_body={
+                        "chat_template_kwargs": {"enable_thinking": False},
+                    })
                     # print("Rating Response:", response)
                     try:
                         response_data = extract_info(r'```json\n(.*?)\n```', response)
@@ -377,6 +398,7 @@ class LimitGen_Dataset(BaseDataset):
                     except (json.JSONDecodeError, TypeError, KeyError):
                         explanation = "Invalid Message"
                         rating = 0
+                        result["judge_error"] = True
                         
             acc_list.append(acc)
             rating_list.append(rating)
@@ -395,7 +417,10 @@ class LimitGen_Dataset(BaseDataset):
         return result
 
     def evaluate_single(self, user_prompt: str, info: Dict[str, Any], llm_response: str) -> Dict[str, float]:    
-        for cnt in range(5):
+        # judge_prompt itself performs the three attempts. Retrying the whole
+        # pipeline here would multiply every nested judge call beyond the
+        # requested limit.
+        for cnt in range(1):
             try:
                 result = self._evaluate_single(user_prompt, info, llm_response)
                 final_prompt = merge_score_prompt.format(
@@ -406,11 +431,19 @@ class LimitGen_Dataset(BaseDataset):
                     RELATEDNESS_SCORE=f"{result['rating'] / 5.0:.4f}",
                 )
                 final = judge_prompt(self.dataset_name, final_prompt)
-                return {"llm_judge_score": final["llm_judge_score"] / 10.0}
+                return {
+                    "llm_judge_score": final["llm_judge_score"] / 10.0,
+                    "judge_error": bool(result.get("judge_error") or final.get("judge_error")),
+                    "judge_reason": final.get("judge_reason", ""),
+                    "judge_prompt": final.get("judge_prompt", final_prompt),
+                    "judge_raw_response": final.get("judge_raw_response", ""),
+                }
             except Exception as e:
-                print(f"Error during evaluation (attempt {cnt+1}/5): {e}")
+                print(f"Error during evaluation (attempt {cnt+1}/1): {e}")
         return {
             "llm_judge_score": 0.0,
+            "judge_error": True,
+            "judge_reason": "LimitGen evaluation failed after the allowed attempts.",
         }
     
 if __name__ == "__main__":
