@@ -11,6 +11,9 @@ import nltk
 import math
 import os
 
+
+HELLOBENCH_CHECKLIST_SCORE_VALUES = [0, 0.25, 0.5, 0.75, 1]
+
 def check_domain(dataset_name: str, domain1: str, domain2: str) -> bool:
     if dataset_name == "HelloBench-Academic&Knowledge-QA":
         if domain1 == "open_ended_qa":
@@ -189,7 +192,10 @@ def gpt4o_ckwise_evaluation(instruction, response, checklist, openai_model):
             "properties": {
                 "checklist_id": {"type": "integer", "enum": checklist_ids},
                 "reason": {"type": "string"},
-                "evaluation_score": {"type": "number", "minimum": 0, "maximum": 10},
+                "evaluation_score": {
+                    "type": "number",
+                    "enum": HELLOBENCH_CHECKLIST_SCORE_VALUES,
+                },
             },
             "required": ["checklist_id", "reason", "evaluation_score"],
             "additionalProperties": False,
@@ -245,10 +251,13 @@ def average_normalized_score(checklist_results):
         score = item.get("evaluation_score")
         if isinstance(score, bool) or not isinstance(score, (int, float)):
             raise ValueError("evaluation_score must be numeric")
-        if not 0.0 <= score <= 10.0:
-            raise ValueError("evaluation_score must be in [0, 10]")
+        if score not in HELLOBENCH_CHECKLIST_SCORE_VALUES:
+            raise ValueError(
+                "evaluation_score must be one of "
+                f"{HELLOBENCH_CHECKLIST_SCORE_VALUES}"
+            )
         scores.append(float(score))
-    return sum(scores) / len(scores) / 10.0
+    return sum(scores) / len(scores)
 
 
     
