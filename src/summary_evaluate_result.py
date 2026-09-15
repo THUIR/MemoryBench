@@ -1,7 +1,6 @@
 import json
 import argparse
 import os
-from src.utils import get_single_dataset
 from tqdm import tqdm
 import numpy as np
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -36,13 +35,8 @@ def main(config_path, result_path):
             baslines = os.listdir(result_dir)
             for b in baslines:
                 baseline_dir = os.path.join(result_dir, b)
-                result_dirs = os.listdir(baseline_dir)
-                # 取最新的一个结果目录
-                result_dirs = sorted(result_dirs, key=lambda x: os.path.getmtime(os.path.join(baseline_dir, x)), reverse=True)
-                evaluate_details = json.load(open(os.path.join(baseline_dir, result_dirs[0], "evaluate_details.json"), "r"))
-                predict_results = json.load(open(os.path.join(baseline_dir, result_dirs[0], "predict.json"), "r"))
+                evaluate_details = json.load(open(os.path.join(baseline_dir, "evaluate_details.json"), "r"))
                 evaluate_details = sorted(evaluate_details, key=lambda x: (x["dataset"], x["test_idx"]))
-                predict_results = sorted(predict_results, key=lambda x: (x["dataset"], x["test_idx"]))
                 
                 def solve_item(cur_idx, item):
                     if item["dataset"].startswith("Locomo"):
@@ -57,8 +51,6 @@ def main(config_path, result_path):
                 
                     res = item["metrics"]
                     return item["dataset"], res
-
-                assert len(evaluate_details) == len(predict_results), f"{baseline_dir} {result_dirs[0]} Length mismatch: {len(evaluate_details)} vs {len(predict_results)}"
                 
                 total_res = []
                 with ThreadPoolExecutor(max_workers=4) as executor:       

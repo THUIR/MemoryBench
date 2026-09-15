@@ -37,7 +37,7 @@
 
 ## 📢 News
 
-- **2026-09-07** — Added the LLM-as-Judge branch, replacing fixed automatic metrics with a unified [0, 1] `llm_judge_score` across all datasets.
+- **2026-09-07** — Added the [llm-as-judge branch](https://github.com/THUIR/MemoryBench/tree/llm-as-judge), replacing fixed automatic metrics with a unified [0, 1] `llm_judge_score` across all datasets.
 - **2026-05-26** — 🌟 Accepted to **ICML 2026** as a **Spotlight paper**.
 - **2026-04-15** — Streamlit frontend released. Configure and run experiments without touching any YAML. See [frontend/README.md](frontend/README.md).
 - **2025-12-08** — Extended version released: [`THUIR/MemoryBench-Full`](https://huggingface.co/datasets/THUIR/MemoryBench-Full).
