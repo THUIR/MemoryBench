@@ -188,6 +188,9 @@ All baselines are registered in [`src/memory_systems.py`](src/memory_systems.py)
 | MemoryOS   | `memoryos`          | Hierarchical OS-style      | [`memoryos.json`](configs/memory_systems/memoryos.json) |
 
 Upstream sources for `a_mem`, `mem0`, and `memoryos` are vendored under [`baselines/`](baselines/).
+A-Mem now uses the updated WujiangXu implementation. Existing `vllm` configs still work,
+but old A-Mem memory caches must be rebuilt using a new `--memory_cache_prefix`
+(e.g. `a_mem_v2_`). See [migration and test instructions](baselines/A_mem/MEMORYBENCH_NOTES.md).
 
 ---
 
@@ -400,6 +403,6 @@ Released under the MIT License. Upstream baseline code under [`baselines/`](base
 
 ## Acknowledgements
 
-MemoryBench builds on prior datasets and memory systems from many open-source efforts: [LoCoMo](https://snap-research.github.io/locomo/), [DialSim](https://dialsim.github.io/), [HelloBench](https://github.com/Quehry/HelloBench), [WritingBench](https://github.com/X-PLUG/WritingBench), [IdeaBench](https://github.com/IdeaBench/IdeaBench), [LimitGen](https://github.com/zhenfenglu/LimitGen), [JRE-L](https://github.com/JRE-L), [JuDGE](https://github.com/JuDGE), [LexEval](https://github.com/CSHaitao/LexEval), [NFCats](https://github.com/NFCats), [WritingPrompts](https://github.com/aitorparra/writingprompts), [A-Mem](https://github.com/agiresearch/A-mem), [Mem0](https://github.com/mem0ai/mem0), and [MemoryOS](https://github.com/BAI-LAB/MemoryOS). Thank you to all upstream authors.
+MemoryBench builds on prior datasets and memory systems from many open-source efforts: [LoCoMo](https://snap-research.github.io/locomo/), [DialSim](https://dialsim.github.io/), [HelloBench](https://github.com/Quehry/HelloBench), [WritingBench](https://github.com/X-PLUG/WritingBench), [IdeaBench](https://github.com/IdeaBench/IdeaBench), [LimitGen](https://github.com/zhenfenglu/LimitGen), [JRE-L](https://github.com/JRE-L), [JuDGE](https://github.com/JuDGE), [LexEval](https://github.com/CSHaitao/LexEval), [NFCats](https://github.com/NFCats), [WritingPrompts](https://github.com/aitorparra/writingprompts), [A-Mem](https://github.com/WujiangXu/A-mem), [Mem0](https://github.com/mem0ai/mem0), and [MemoryOS](https://github.com/BAI-LAB/MemoryOS). Thank you to all upstream authors.
 
 For questions and feedback, open an issue on GitHub or contact the maintainers.

@@ -55,11 +55,11 @@ class BaseSolver:
                 ):
                     try:
                         self.agent.add_conversation_to_memory(dialog["dialog"], dialog["test_idx"])
-                    except:
+                    except Exception as exc:
                         print(dialog["test_idx"], dialog["dataset"], "failed to memory.")
                         import json
                         print(json.dumps(dialog["dialog"], indent=4, ensure_ascii=False))
-                        raise ValueError("Memorying failed.")
+                        raise ValueError("Memorying failed.") from exc
             self.agent.save_memories()
             mark_memory_cached(self.memory_cache_dir)
         else:
