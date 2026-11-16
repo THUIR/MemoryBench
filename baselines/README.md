@@ -9,7 +9,7 @@ for the corresponding baselines to load.
 
 | Folder            | Upstream                                                | How it ships |
 |-------------------|---------------------------------------------------------|--------------|
-| `A_mem/`          | https://github.com/agiresearch/A-mem                    | Tracked in git |
+| `A_mem/`          | https://github.com/WujiangXu/A-mem                    | Tracked in git |
 | `MemoryOS/`       | https://github.com/BAI-LAB/MemoryOS                     | Tracked in git |
 | `mem0/`           | https://github.com/mem0ai/mem0                          | Tracked in git (editable install — see below) |
 
@@ -25,6 +25,14 @@ upstream import) needs no vendored source at all. If you keep the upstream
 around purely for code-reading, treat it as a **reference-only mirror**:
 keep it on your machine and list the folder in the top-level
 [`.gitignore`](../.gitignore) so `git status` stays clean.
+
+## A-Mem version and caches
+
+`A_mem/` vendors WujiangXu/A-mem at commit
+`f9a173dec325d84fcc97e7828775c7b241c33466`. MemoryBench imports its
+`memory_layer.py`; the former `agentic_memory/` implementation is removed.
+See [A-Mem integration notes](A_mem/MEMORYBENCH_NOTES.md) for the small local
+patch, endpoint configuration, cache rebuild instructions, and regression tests.
 
 ## Editable-install requirement for `mem0`
 
