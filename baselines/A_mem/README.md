@@ -2,6 +2,12 @@
 
 A novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way.
 
+> **Note:** This repository is specifically designed to reproduce the results presented in our paper. If you want to use the A-Mem system in building your agents, please refer to our official implementation at: [A-mem-sys](https://github.com/WujiangXu/A-mem-sys)
+
+For more details, please refer to our paper: [A-Mem: Agentic Memory for LLM Agents](https://arxiv.org/pdf/2502.12110)
+
+> 🔥 **News (Oct 2026):** We provide a stronger version of A-Mem, **FlexA-Mem: Budget-Adaptive Agentic Memory for LLM Agents** ([paper](https://arxiv.org/html/2610.33274v1), [code](https://github.com/WujiangXu/Flex-Amem)). FlexA-Mem keeps A-Mem's linked notes but uses them as the compressed history itself: at every step, the agent sees the whole history as a timeline of notes, and the notes most relevant to the current step are expanded in place into their raw content or excerpts, so the prompt fits any token budget. It is evaluated on LongMemEval-S, LoCoMo, SWE-bench Verified and AppWorld.
+
 ## Introduction 🌟
 
 Large Language Model (LLM) agents have demonstrated remarkable capabilities in handling complex real-world tasks through external tool usage. However, to effectively leverage historical experiences, they require sophisticated memory systems. Traditional memory systems, while providing basic storage and retrieval functionality, often lack advanced memory organization capabilities.
@@ -15,18 +21,13 @@ Our project introduces an innovative **Agentic Memory** system that revolutioniz
   <em>Comparison between traditional memory system (top) and our proposed agentic memory (bottom). Our system enables dynamic memory operations and flexible agent-memory interactions.</em>
 </div>
 
-> **Note:** This repository provides a memory system to facilitate agent construction. If you want to reproduce the results presented in our paper, please refer to: [https://github.com/WujiangXu/AgenticMemory](https://github.com/WujiangXu/AgenticMemory)
-
-For more details, please refer to our paper: [A-MEM: Agentic Memory for LLM Agents](https://arxiv.org/pdf/2502.12110)
-
-
 ## Key Features ✨
 
 - 🔄 Dynamic memory organization based on Zettelkasten principles
-- 🔍 Intelligent indexing and linking of memories via ChromaDB
+- 🔍 Intelligent indexing and linking of memories
 - 📝 Comprehensive note generation with structured attributes
 - 🌐 Interconnected knowledge networks
-- 🧬 Continuous memory evolution and refinement
+- 🔄 Continuous memory evolution and refinement
 - 🤖 Agent-driven decision making for adaptive memory management
 
 ## Framework 🏗️
@@ -54,140 +55,105 @@ Empirical experiments conducted on six foundation models demonstrate superior pe
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/agiresearch/A-mem.git
-cd A-mem
+git clone https://github.com/WujiangXu/AgenticMemory.git
+cd AgenticMemory
 ```
 
 2. Install dependencies:
-Create and activate a virtual environment (recommended):
+Option 1: Using venv (Python virtual environment)
 ```bash
-python -m venv .venv
-source .venv/bin/activate  # On Windows, use: .venv\Scripts\activate
+# Create and activate virtual environment
+python -m venv a-mem
+source a-mem/bin/activate  # Linux/Mac
+a-mem\Scripts\activate     # Windows
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
-Install the package:
+Option 2: Using Conda
 ```bash
-pip install .
+# Create and activate conda environment
+conda create -n myenv python=3.9
+conda activate myenv
+
+# Install dependencies
+pip install -r requirements.txt
 ```
-For development, you can install it in editable mode:
+
+3. Run the experiments in LoCoMo dataset:
+
+**Option A — Original evaluation (requires OpenAI JSON schema support):**
 ```bash
-pip install -e .
+python test_advanced.py
 ```
 
-3. Usage Examples 💡
+**Option B — Robust evaluation (recommended, works with any LLM backend):**
 
-Here's how to use the Agentic Memory system for basic operations:
+The robust evaluation (`test_advanced_robust.py`) removes the JSON schema dependency and supports OpenAI API, vLLM, and Ollama backends.
 
-```python
-from agentic_memory.memory_system import AgenticMemorySystem
+```bash
+# OpenAI models
+python test_advanced_robust.py --backend openai --model gpt-4o-mini \
+    --dataset data/locomo10.json --output results_robust_gpt-4o-mini.json
 
-# Initialize the memory system 🚀
-memory_system = AgenticMemorySystem(
-    model_name='all-MiniLM-L6-v2',  # Embedding model for ChromaDB
-    llm_backend="openai",           # LLM backend (openai/ollama)
-    llm_model="gpt-4o-mini"         # LLM model name
-)
+# vLLM-served open-source models (start vLLM server first)
+python -m vllm.entrypoints.openai.api_server \
+    --model Qwen/Qwen2.5-3B-Instruct --port 30000 \
+    --dtype float16 --enforce-eager --max-model-len 8192
+python test_advanced_robust.py --backend vllm --model Qwen/Qwen2.5-3B-Instruct \
+    --dataset data/locomo10.json --output results_robust_qwen3b.json \
+    --sglang_port 30000
 
-# Add Memories ➕
-# Simple addition
-memory_id = memory_system.add_note("Deep learning neural networks")
-
-# Addition with metadata
-memory_id = memory_system.add_note(
-    content="Machine learning project notes",
-    tags=["ml", "project"],
-    category="Research",
-    timestamp="202503021500"  # YYYYMMDDHHmm format
-)
-
-# Read (Retrieve) Memories 📖
-# Get memory by ID
-memory = memory_system.read(memory_id)
-print(f"Content: {memory.content}")
-print(f"Tags: {memory.tags}")
-print(f"Context: {memory.context}")
-print(f"Keywords: {memory.keywords}")
-
-# Search memories
-results = memory_system.search_agentic("neural networks", k=5)
-for result in results:
-    print(f"ID: {result['id']}")
-    print(f"Content: {result['content']}")
-    print(f"Tags: {result['tags']}")
-    print("---")
-
-# Update Memories 🔄
-memory_system.update(memory_id, content="Updated content about deep learning")
-
-# Delete Memories ❌
-memory_system.delete(memory_id)
-
-# Memory Evolution 🧬
-# The system automatically evolves memories by:
-# 1. Finding semantic relationships using ChromaDB
-# 2. Updating metadata and context
-# 3. Creating connections between related memories
-# This happens automatically when adding or updating memories!
+# Ollama models
+python test_advanced_robust.py --backend ollama --model qwen2.5:3b \
+    --dataset data/locomo10.json --output results_robust_ollama_qwen3b.json
 ```
 
-### Advanced Features 🌟
+Key arguments:
+- `--retrieve_k`: Number of memories to retrieve per query (default: 10). Tune this per model for best results.
+- `--ratio`: Fraction of dataset to evaluate (e.g., `--ratio 0.1` for 10% quick test).
+- `--backend`: One of `openai`, `vllm`, `ollama`.
+- `--sglang_port`: Port for vLLM/SGLang server (default: 30000).
 
-1. **ChromaDB Vector Storage** 📦
-   - Efficient vector embedding storage and retrieval
-   - Fast semantic similarity search
-   - Automatic metadata handling
-   - Persistent memory storage
+4. Run the full k-sweep to find optimal retrieval k per model:
+```bash
+bash run_k_sweep.sh
+```
 
-2. **Memory Evolution** 🧬
-   - Automatically analyzes content relationships
-   - Updates tags and context based on related memories
-   - Creates semantic connections between memories
+**Note:** To achieve the optimal performance reported in our paper, please adjust the hyperparameter `k` value accordingly. Memories are cached after the first run, so subsequent k-sweep evaluations only re-run the QA answering step.
 
-3. **Flexible Metadata** 📋
-   - Custom tags and categories
-   - Automatic keyword extraction
-   - Context generation
-   - Timestamp tracking
+**Categories Information:** The LoCoMo dataset contains the following categories:
+* Category 1: Multi-hop
+* Category 2: Temporal
+* Category 3: Open-domain
+* Category 4: Single-hop
+* Category 5: Adversarial
 
-4. **Multiple LLM Backends** 🤖
-   - OpenAI (GPT-4, GPT-3.5)
-   - Ollama (for local deployment)
-
-### Best Practices 💪
-
-1. **Memory Creation** ✨:
-   - Provide clear, specific content
-   - Add relevant tags for better organization
-   - Let the system handle context and keyword generation
-
-2. **Memory Retrieval** 🔍:
-   - Use specific search queries
-   - Adjust 'k' parameter based on needed results
-   - Consider both exact and semantic matches
-
-3. **Memory Evolution** 🧬:
-   - Allow automatic evolution to organize memories
-   - Review generated connections periodically
-   - Use consistent tagging conventions
-
-4. **Error Handling** ⚠️:
-   - Always check return values
-   - Handle potential KeyError for non-existent memories
-   - Use try-except blocks for LLM operations
+For more details about the categories, please refer to [this GitHub issue](https://github.com/snap-research/locomo/issues/6). 
 
 ## Citation 📚
 
-If you use this code in your research, please cite our work:
+If you use this code in your research, please cite our series of works on agentic memory:
 
 ```bibtex
-@article{xu2025mem,
-  title={A-mem: Agentic memory for llm agents},
+@inproceedings{xu2025amem,
+  title={A-Mem: Agentic memory for llm agents},
   author={Xu, Wujiang and Liang, Zujie and Mei, Kai and Gao, Hang and Tan, Juntao and Zhang, Yongfeng},
-  journal={arXiv preprint arXiv:2502.12110},
+  booktitle={Advances in Neural Information Processing Systems},
   year={2025}
+}
+
+@article{xu2026flexamem,
+  title={FlexA-Mem: Budget-Adaptive Agentic Memory for LLM Agents},
+  author={Xu, Wujiang and Han, Jiaojiao and Zhu, Xi and Zhang, Qizheng and Liang, Kaiqu and Yin, Yutong and Mei, Kai and Metaxas, Dimitris N.},
+  journal={arXiv preprint arXiv:2610.33274},
+  year={2026}
 }
 ```
 
 ## License 📄
 
 This project is licensed under the MIT License. See LICENSE for details.
+
+
