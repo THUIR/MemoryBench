@@ -1,5 +1,7 @@
 from tqdm import tqdm
 from typing import List, Dict
+import hashlib
+import json
 
 from src.agent.a_mem import AMemAgent, AMemAgentConfig
 from src.solver.base import BaseSolver
@@ -11,9 +13,11 @@ class AMemSolver(BaseSolver):
     def __init__(self, config: AMemAgentConfig, memory_cache_dir):
         super().__init__(config, memory_cache_dir)
         self.method_name = "A-Mem"
-        self.current_conversation_memories = []
 
     def create_or_load_memory(self, dialogs: List[Dict]):
+        self.agent.memory_input_hash = hashlib.sha256(
+            json.dumps(dialogs, ensure_ascii=False, sort_keys=True).encode("utf-8")
+        ).hexdigest()
         return super()._create_or_load_memory(dialogs, can_thread=False)
 
     def memory_locomo_conversation(self, conversation, session_cnt: int):
@@ -25,20 +29,15 @@ class AMemSolver(BaseSolver):
             for turn in session:
                 turn_date_time = session_date_time + " Turn " + turn["dia_id"].split(":")[1]
                 content = "Speaker "+ turn["speaker"] + "says : " + turn["text"]
-                memory_id, memory_content = self.agent.add_memory(
+                self.agent.add_memory(
                     content=content, 
                     time=turn_date_time
                 )
-                self.current_conversation_memories.append((memory_id, memory_content))
             session_idx += 1
             pbar.update(1)
     
     def memory_dialsim_conversation(self, conversation, session_cnt: int):
         return self.memory_locomo_conversation(conversation, session_cnt)
             
-    def delete_conversation_memory(self):
-        if len(self.current_conversation_memories) > 0:
-            self.agent.delete_to_end(
-                delete_memories=self.current_conversation_memories
-            )
-        self.current_conversation_memories = []
+    # Corpus evaluation uses a separate solver loaded from the base cache.
+    # Deleting just appended notes cannot undo evolution of existing notes.
